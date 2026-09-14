@@ -23,7 +23,7 @@ deliberately does not do.
 Requirements: a working `dsh` installation and `pnpm` on `PATH`.
 
 ```powershell
-git clone <this repository>
+git clone https://github.com/0xDevDav/dsh-addons.git
 cd dsh-addons
 pwsh -File install/install.ps1          # or: sh install/install.sh
 ```
@@ -103,3 +103,9 @@ the newest one on disk.
 - **No credential ever reaches the browser.** The balance is read host-side through the `credentials`
   service (the same reference the Models page writes), never through a second key store, and never
   crosses to the page.
+
+## License
+
+MIT — see [`LICENSE`](LICENSE), the same license the two packages declare in their `package.json`.
+Nothing here is affiliated with or endorsed by DeepSeek; both packages are local additions that touch
+no shipped file.
