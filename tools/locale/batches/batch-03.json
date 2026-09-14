@@ -1,0 +1,211 @@
+{
+ "batch": "settings.agentPreset",
+ "namespace": "settings.agentPreset",
+ "total": 51,
+ "keys": {
+  "error": {
+   "en": "Could not load agent presets.",
+   "zh": "无法加载 Agent 预设。"
+  },
+  "userTrust": {
+   "en": "Custom",
+   "zh": "自定义"
+  },
+  "seatHint": {
+   "en": "Agent preset for the session you are about to start",
+   "zh": "即将开始的这个会话所用的 Agent 预设"
+  },
+  "headerHint": {
+   "en": "The agent preset this session runs, fixed when it started",
+   "zh": "本会话运行的 Agent 预设，开始时即固定"
+  },
+  "nav": {
+   "en": "Agent presets",
+   "zh": "Agent 预设"
+  },
+  "sectionIntro": {
+   "en": "A preset is the plugin composition one session's agent runs — its tools, prompt, and capabilities. Duplicate an existing one and make it yours, or let the agent draft one for you in Creator mode.",
+   "zh": "预设即一个会话的 Agent 所运行的插件组装 —— 它的工具、提示词与能力。复制一份既有预设改成自己的，或用「创造模式」让 Agent 帮你创建。"
+  },
+  "builtIn": {
+   "en": "Built-in",
+   "zh": "内置"
+  },
+  "setDefault": {
+   "en": "Set as default",
+   "zh": "设为默认"
+  },
+  "view": {
+   "en": "View",
+   "zh": "查看"
+  },
+  "presetStandardName": {
+   "en": "Standard mode",
+   "zh": "标准模式"
+  },
+  "presetStandardDescription": {
+   "en": "Full coding agent with file editing, shell, file and web search, skills, planning, goals, subagents, and workflows.",
+   "zh": "功能完整的编码 Agent，支持文件编辑、Shell、文件与网页检索、Skills、计划、目标、子代理和工作流。"
+  },
+  "presetPtcName": {
+   "en": "PTC mode",
+   "zh": "PTC 模式"
+  },
+  "presetPtcDescription": {
+   "en": "Full coding agent without the workflow tool; other tools are exposed through the PTC mode SDK so the model can combine multi-step operations in one TypeScript program.",
+   "zh": "功能完整的编码 Agent，但默认不提供 workflow 工具；其他工具通过 PTC 模式 SDK 呈现，让模型用一个 TypeScript 程序组合多步操作。"
+  },
+  "presetMinimalName": {
+   "en": "Minimal mode",
+   "zh": "极简模式"
+  },
+  "presetMinimalDescription": {
+   "en": "Single-tool coding agent with a persistent shell.",
+   "zh": "仅提供持久 shell 的单工具编码 Agent。"
+  },
+  "presetCordisName": {
+   "en": "Creator mode",
+   "zh": "创造模式"
+  },
+  "presetCordisDescription": {
+   "en": "Built for creating custom agent presets, with all Standard mode capabilities plus runtime inspection, plugin experiments, and preset-authoring guidance.",
+   "zh": "用于创建自定义 Agent preset：具备标准模式的全部能力，并提供运行时检查、插件实验和 preset 创作指导。"
+  },
+  "duplicate": {
+   "en": "Duplicate",
+   "zh": "复制"
+  },
+  "duplicateUnavailable": {
+   "en": "This deployment has no writable preset directory",
+   "zh": "此部署未配置可写的预设目录"
+  },
+  "delete": {
+   "en": "Delete",
+   "zh": "删除"
+  },
+  "presetId": {
+   "en": "Identifier",
+   "zh": "标识符"
+  },
+  "presetIdPlaceholder": {
+   "en": "my-agent",
+   "zh": "my-agent"
+  },
+  "displayName": {
+   "en": "Name",
+   "zh": "名称"
+  },
+  "displayNamePlaceholder": {
+   "en": "Shown in the picker; defaults to the identifier",
+   "zh": "选择器中显示的名字，缺省用标识符"
+  },
+  "inUse": {
+   "en": "In use",
+   "zh": "当前使用"
+  },
+  "builtInGroup": {
+   "en": "Built-in",
+   "zh": "内置"
+  },
+  "customGroup": {
+   "en": "Custom",
+   "zh": "自定义"
+  },
+  "noDescription": {
+   "en": "No description.",
+   "zh": "暂无描述。"
+  },
+  "brokenBadge": {
+   "en": "Failed to load",
+   "zh": "加载失败"
+  },
+  "brokenNoCopy": {
+   "en": "A preset that failed to load cannot be duplicated",
+   "zh": "预设加载失败，不能复制"
+  },
+  "switchRefused": {
+   "en": "Could not switch to {name}: {reason}",
+   "zh": "无法切换到「{name}」：{reason}"
+  },
+  "copyOf": {
+   "en": "Copied from",
+   "zh": "复制自"
+  },
+  "composition": {
+   "en": "Composition (agent.cordis.yml)",
+   "zh": "组装（agent.cordis.yml）"
+  },
+  "cancel": {
+   "en": "Cancel",
+   "zh": "取消"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试"
+  },
+  "copyTitle": {
+   "en": "Duplicate preset",
+   "zh": "复制预设"
+  },
+  "copyIntro": {
+   "en": "The whole preset is copied on this machine. The identifier becomes its directory name and cannot be changed later; everything else is edited in the preset's own files.",
+   "zh": "整个预设会在本机复制一份。标识符将成为目录名，事后无法更改；其余内容之后直接在预设自己的文件里编辑。"
+  },
+  "create": {
+   "en": "Create",
+   "zh": "创建"
+  },
+  "creating": {
+   "en": "Creating…",
+   "zh": "正在创建…"
+  },
+  "creatorDraft": {
+   "en": "Draft a custom preset with Creator mode",
+   "zh": "用「创造模式」创作自定义预设"
+  },
+  "openLocation": {
+   "en": "Open folder",
+   "zh": "打开目录"
+  },
+  "showLocation": {
+   "en": "Show location",
+   "zh": "查看路径"
+  },
+  "revealedPathLabel": {
+   "en": "Preset files:",
+   "zh": "预设文件："
+  },
+  "idRequired": {
+   "en": "Give the preset an identifier.",
+   "zh": "请填写标识符。"
+  },
+  "idInvalid": {
+   "en": "Use lowercase letters, digits, and hyphens, starting with a letter or digit.",
+   "zh": "只能使用小写字母、数字与连字符，且以字母或数字开头。"
+  },
+  "idTaken": {
+   "en": "A preset with this identifier already exists.",
+   "zh": "该标识符已被占用。"
+  },
+  "deleteTitle": {
+   "en": "Delete this preset?",
+   "zh": "删除该预设？"
+  },
+  "deleteDescription": {
+   "en": "The preset directory is deleted. Sessions already running on it keep working; new sessions cannot select it.",
+   "zh": "预设目录将被删除。已在其上运行的会话不受影响；新会话将无法再选择它。"
+  },
+  "deleteConfirm": {
+   "en": "Delete",
+   "zh": "删除"
+  },
+  "deleting": {
+   "en": "Deleting…",
+   "zh": "正在删除…"
+  }
+ }
+}

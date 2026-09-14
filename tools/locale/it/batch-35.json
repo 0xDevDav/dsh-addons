@@ -1,0 +1,9 @@
+{
+ "batch": "sidebarCodePreview",
+ "namespace": "sidebarCodePreview",
+ "keys": {
+  "title": "Codice",
+  "copy": "Copia",
+  "copied": "Copiato"
+ }
+}

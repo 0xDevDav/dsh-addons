@@ -1,0 +1,11 @@
+{
+  "trajectory": {
+    "details.toolCalls": "Chiamate a strumento",
+    "details.subtoolCalls": "Chiamate a sottostrumenti",
+    "details.retryDelay": "Ritardo nuovo tentativo",
+    "usage.cached": "In cache"
+  },
+  "chat": {
+    "message.turnUsage.model": "Provider / modello"
+  }
+}

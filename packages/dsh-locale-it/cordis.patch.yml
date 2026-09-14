@@ -1,0 +1,6 @@
+# dsh-locale-it bundle patch: mounts the Italian language pack as one client
+# row. Applied after the dsh-base and dsh-web-app layers, so the row lands
+# after the locale plugin whose service it injects.
+- insert:
+    - id: locale-it
+      name: dsh-locale-it

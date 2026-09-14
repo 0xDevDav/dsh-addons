@@ -1,0 +1,7 @@
+{
+ "batch": "settings.locale",
+ "namespace": "settings.locale",
+ "keys": {
+  "language.title": "Lingua"
+ }
+}

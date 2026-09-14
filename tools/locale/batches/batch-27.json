@@ -1,0 +1,127 @@
+{
+ "batch": "settings.models#2",
+ "namespace": "settings.models",
+ "total": 30,
+ "keys": {
+  "fetchSelectAll": {
+   "en": "Select all",
+   "zh": "全选"
+  },
+  "fetchDeselectAll": {
+   "en": "Deselect all",
+   "zh": "取消全选"
+  },
+  "fetchAdopt": {
+   "en": "Add selected",
+   "zh": "添加所选"
+  },
+  "customAdd": {
+   "en": "Add a custom provider",
+   "zh": "添加自定义提供方"
+  },
+  "customTitle": {
+   "en": "Custom provider",
+   "zh": "自定义提供方"
+  },
+  "customTag": {
+   "en": "Custom",
+   "zh": "自定义"
+  },
+  "customRoute": {
+   "en": "Provider ID",
+   "zh": "Provider ID"
+  },
+  "customRouteHint": {
+   "en": "Lowercase identifier, starting with a letter, that uniquely names this provider in requests and as its credential name.",
+   "zh": "以小写字母开头的标识，在请求中唯一标识该提供方，并用于派生凭据名。"
+  },
+  "customRouteInvalid": {
+   "en": "Start with a lowercase letter; then lowercase letters, digits, and dashes.",
+   "zh": "需以小写字母开头，之后可用小写字母、数字和短横线。"
+  },
+  "customRouteTaken": {
+   "en": "A provider already uses this ID.",
+   "zh": "已有提供方使用了这个 ID。"
+  },
+  "customDisplayName": {
+   "en": "Display name",
+   "zh": "显示名称"
+  },
+  "customApi": {
+   "en": "API protocol",
+   "zh": "API 协议"
+  },
+  "customApiUnset": {
+   "en": "Not selected",
+   "zh": "未选择"
+  },
+  "customNeedsBaseUrl": {
+   "en": "A custom provider needs a base URL.",
+   "zh": "自定义提供方需要填写 API 地址。"
+  },
+  "customBaseUrlInvalid": {
+   "en": "Enter a valid HTTP or HTTPS URL.",
+   "zh": "请输入有效的 HTTP 或 HTTPS 地址。"
+  },
+  "customNeedsModels": {
+   "en": "A custom provider needs at least one model.",
+   "zh": "自定义提供方至少需要一个模型。"
+  },
+  "customBaseUrlPlaceholder": {
+   "en": "https://gateway.example/v1",
+   "zh": "https://gateway.example/v1"
+  },
+  "settingsPathUnresolvable": {
+   "en": "unresolvable settings path",
+   "zh": "无法解析设置路径"
+  },
+  "create": {
+   "en": "Create provider",
+   "zh": "创建提供方"
+  },
+  "creating": {
+   "en": "Creating…",
+   "zh": "创建中…"
+  },
+  "welcomeTitle": {
+   "en": "Internal Testing Notice",
+   "zh": "内测声明"
+  },
+  "welcomeBody": {
+   "en": "DeepSeek Harness 0.1 remains in testing for Harness developers. Many areas need further improvement, and we welcome feedback from the developer community. DeepSeek Harness's core plugins and foundational APIs will continue to evolve rapidly over the coming months.\n\nWe look forward to exploring the limits of intelligence with developers around the world, building on open-source, open, reusable, and composable infrastructure. We welcome Harness developers everywhere to join the DSH plugin ecosystem.",
+   "zh": "DeepSeek Harness 目前的 0.1 版本仍处在面向 Harness 开发者进行测试的阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者的反馈建议。预计 DeepSeek Harness 的核心插件以及基础 API 都会在接下来的一段时间内快速迭代、持续演化。\n\n我们期待与全球开发者一起，在开源、开放、可复用、可组合的基础设施之上，共同探索智能上限。欢迎全球 Harness 开发者加入 DSH 插件生态。"
+  },
+  "welcomeContinue": {
+   "en": "Continue",
+   "zh": "继续"
+  },
+  "welcomeError": {
+   "en": "The acknowledgement could not be saved. Please try again.",
+   "zh": "暂时无法保存确认状态，请重试。"
+  },
+  "onboardingTitle": {
+   "en": "Add an API key to get started",
+   "zh": "添加一个 API Key 开始使用"
+  },
+  "onboardingDescription": {
+   "en": "Configure the official DeepSeek provider to start building.",
+   "zh": "配置 DeepSeek 官方模型，即可开始使用。"
+  },
+  "onboardingLater": {
+   "en": "Configure later",
+   "zh": "稍后配置"
+  },
+  "onboardingSave": {
+   "en": "Save and continue",
+   "zh": "保存并继续"
+  },
+  "onboardingSaving": {
+   "en": "Saving…",
+   "zh": "保存中…"
+  },
+  "keyRequired": {
+   "en": "Enter an API key to continue.",
+   "zh": "请输入 API 密钥后继续。"
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "batch": "command",
+ "namespace": "command",
+ "keys": {
+  "description.compact": "Compatta la cronologia della conversazione precedente",
+  "description.export": "Scarica il log di questa sessione come archivio ZIP",
+  "description.feedback": "registra un feedback su questa sessione",
+  "description.goal": "imposta o visualizza l'obiettivo di un'attività di lunga durata",
+  "description.permission": "Cambia il preset di autorizzazione (modalità Sandbox + politica di approvazione)",
+  "description.plan": "Entra o esci dalla modalità piano",
+  "search.placeholder": "Cerca…",
+  "search.aria": "Filtra le opzioni",
+  "status.loading": "Caricamento opzioni…",
+  "status.applying": "Applicazione…",
+  "status.empty": "Nessuna opzione",
+  "overlay.aria": "Opzioni di /{command}",
+  "listbox.aria": "Corrispondenze di /{command}",
+  "notice.attachmentsUnsupported": "/{command} non accetta allegati; rimuovili prima"
+ }
+}

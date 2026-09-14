@@ -1,0 +1,18 @@
+{
+ "batch": "goal",
+ "namespace": "goal",
+ "keys": {
+  "phase.active": "Obiettivo in corso",
+  "phase.active.disarmed": "Obiettivo inattivo",
+  "phase.paused": "Obiettivo in pausa",
+  "phase.blocked": "Obiettivo bloccato",
+  "objective.aria": "Obiettivo",
+  "commandInput.aria": "Input comando",
+  "action.save": "Salva obiettivo",
+  "action.cancel": "Annulla modifica",
+  "action.pause": "Metti in pausa l'obiettivo",
+  "action.resume": "Riprendi obiettivo",
+  "action.edit": "Modifica obiettivo",
+  "action.clear": "Elimina obiettivo"
+ }
+}

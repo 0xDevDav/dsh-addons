@@ -1,0 +1,14 @@
+{
+ "batch": "permission.access",
+ "namespace": "permission.access",
+ "keys": {
+  "preset.readOnly": "Sola lettura",
+  "preset.workspaceWrite": "Scrittura nell'area di lavoro",
+  "preset.fullAccess": "Accesso completo",
+  "confirm.title": "Attivare l'accesso completo?",
+  "confirm.description": "L'accesso completo riduce i passi di conferma e consente all'agente di eseguire più azioni direttamente, incluse operazioni sensibili, modifiche ai file o comandi esterni. Usalo solo quando ti fidi del compito corrente.",
+  "confirm.acknowledge": "Ho capito i rischi e voglio continuare",
+  "confirm.cancel": "Annulla",
+  "confirm.enable": "Attiva l'accesso completo"
+ }
+}

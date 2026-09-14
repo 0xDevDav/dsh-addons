@@ -1,0 +1,15 @@
+{
+ "batch": "settings.theme",
+ "namespace": "settings.theme",
+ "keys": {
+  "appearance.title": "Aspetto",
+  "appearance.light": "Chiaro",
+  "appearance.dark": "Scuro",
+  "appearance.system": "Sistema",
+  "fontSize.title": "Dimensione carattere",
+  "fontSize.description": "Influisce solo sul contenuto della conversazione",
+  "fontSize.unit": "px",
+  "fontSize.increase": "Aumenta dimensione carattere",
+  "fontSize.decrease": "Riduci dimensione carattere"
+ }
+}

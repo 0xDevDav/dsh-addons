@@ -1,0 +1,19 @@
+{
+ "batch": "sidebarFiles",
+ "namespace": "sidebarFiles",
+ "keys": {
+  "type.label": "File",
+  "guide.title": "File dell'area di lavoro",
+  "guide.description": "Sfoglia i file nell'area di lavoro di questa sessione",
+  "loading": "Lettura…",
+  "empty": "Directory vuota",
+  "truncated": "Troppe voci, ne viene mostrata solo una parte.",
+  "noWorkspace": "Questa sessione non ha una directory dell'area di lavoro.",
+  "reload": "Ricarica",
+  "entry.other": "Non è un file né una directory, quindi non può essere aperto.",
+  "error.notFound": "La directory non esiste più. Potrebbe essere stata spostata o eliminata.",
+  "error.outsideWorkspace": "La directory è fuori dall'area di lavoro, quindi la barra laterale non la leggerà.",
+  "error.notDirectory": "Non è una directory.",
+  "error.unavailable": "Lettura non riuscita: {message}"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "batch": "feedback",
+ "namespace": "feedback",
+ "keys": {
+  "action.like": "Risposta buona",
+  "action.likeActive": "Rimuovi valutazione",
+  "action.dislike": "Risposta scadente",
+  "action.dislikeActive": "Rimuovi valutazione",
+  "dialog.title": "Invia feedback",
+  "dialog.categories": "Categoria del feedback",
+  "dialog.detail": "Dettagli del feedback",
+  "dialog.hint": "Aggiungi dettagli per aiutarci a migliorare. L'invio includerà il log della conversazione corrente.",
+  "category.task-result": "Risultato del task",
+  "category.instruction-following": "Comprensione e rispetto delle istruzioni",
+  "category.product-interaction": "Funzionalità e interazione del prodotto",
+  "category.service-stability": "Stabilità e velocità",
+  "category.resource-cost": "Uso delle risorse e costi",
+  "category.security-privacy-permission": "Sicurezza, privacy e autorizzazioni",
+  "category.other": "Altro",
+  "toast.recorded": "Grazie per il feedback",
+  "error.conflict": "Questo feedback è stato modificato altrove; è mostrato lo stato più recente",
+  "error.load": "Impossibile caricare il feedback",
+  "error.generic": "Impossibile salvare il feedback",
+  "error.noteTooLarge": "La descrizione è troppo lunga; accorciala e invia di nuovo"
+ }
+}

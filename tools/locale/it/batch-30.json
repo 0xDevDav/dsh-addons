@@ -1,0 +1,11 @@
+{
+ "batch": "sidebar",
+ "namespace": "sidebar",
+ "keys": {
+  "session.new": "Nuova sessione",
+  "session.new.label": "Nuova sessione",
+  "toggle.open": "Apri barra laterale",
+  "toggle.collapse": "Comprimi barra laterale",
+  "panels.label": "Pannelli globali"
+ }
+}

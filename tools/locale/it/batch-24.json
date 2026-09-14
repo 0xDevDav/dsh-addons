@@ -1,0 +1,24 @@
+{
+ "batch": "schedule.catalog",
+ "namespace": "schedule.catalog",
+ "keys": {
+  "trigger.one": "{count} promemoria",
+  "trigger.other": "{count} promemoria",
+  "list.aria": "Promemoria attivi",
+  "status.scheduled": "Programmato",
+  "status.overdue": "Scaduto",
+  "frequency.once": "Una volta",
+  "frequency.every": "Ogni {value} {unit}",
+  "unit.day.one": "giorno",
+  "unit.day.other": "giorni",
+  "unit.hour.one": "ora",
+  "unit.hour.other": "ore",
+  "unit.minute.one": "minuto",
+  "unit.minute.other": "minuti",
+  "unit.second.one": "secondo",
+  "unit.second.other": "secondi",
+  "relative.now": "In scadenza ora",
+  "relative.future": "tra {value} {unit}",
+  "relative.overdue": "{value} {unit} di ritardo"
+ }
+}

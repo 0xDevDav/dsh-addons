@@ -1,0 +1,23 @@
+{
+ "batch": "documentHtml",
+ "namespace": "documentHtml",
+ "total": 4,
+ "keys": {
+  "title": {
+   "en": "HTML",
+   "zh": "HTML"
+  },
+  "frame": {
+   "en": "HTML document preview",
+   "zh": "HTML 文档预览"
+  },
+  "loading": {
+   "en": "Preparing HTML preview…",
+   "zh": "正在准备 HTML 预览…"
+  },
+  "failed": {
+   "en": "This HTML document could not be previewed.",
+   "zh": "无法预览这份 HTML 文档。"
+  }
+ }
+}

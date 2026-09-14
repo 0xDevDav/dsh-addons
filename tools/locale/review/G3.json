@@ -1,0 +1,948 @@
+{
+ "settings.models": {
+  "nav": {
+   "en": "Models",
+   "zh": "模型",
+   "it": "Modelli"
+  },
+  "title": {
+   "en": "Models",
+   "zh": "模型",
+   "it": "Modelli"
+  },
+  "intro": {
+   "en": "Enter your API keys to use models from the following providers.",
+   "zh": "填入各提供方的 API 密钥即可使用其模型。",
+   "it": "Inserisci le tue chiavi API per usare i modelli dei seguenti provider."
+  },
+  "edit": {
+   "en": "Edit",
+   "zh": "编辑",
+   "it": "Modifica"
+  },
+  "editProvider": {
+   "en": "Edit {provider}",
+   "zh": "编辑 {provider}",
+   "it": "Modifica {provider}"
+  },
+  "remove": {
+   "en": "Delete",
+   "zh": "删除",
+   "it": "Elimina"
+  },
+  "removeProvider": {
+   "en": "Delete {provider}",
+   "zh": "删除 {provider}",
+   "it": "Elimina {provider}"
+  },
+  "deleteTitle": {
+   "en": "Delete {provider}?",
+   "zh": "删除 {provider}？",
+   "it": "Eliminare {provider}?"
+  },
+  "deleteDescription": {
+   "en": "Deleting {provider} removes its configuration. Any credential it uses is managed elsewhere and will be kept.",
+   "zh": "删除 {provider} 会移除其配置；其使用的凭证（如有）由其他位置管理，将会保留。",
+   "it": "Eliminando {provider} si rimuove la sua configurazione. Le credenziali che usa sono gestite altrove e verranno conservate."
+  },
+  "deleteDescriptionWithCredential": {
+   "en": "Deleting {provider} removes its configuration and stored API key.",
+   "zh": "删除 {provider} 会移除其配置和存储的 API 密钥。",
+   "it": "Eliminando {provider} si rimuovono la sua configurazione e la chiave API memorizzata."
+  },
+  "deleteConfirm": {
+   "en": "Delete {provider}",
+   "zh": "删除 {provider}",
+   "it": "Elimina {provider}"
+  },
+  "deleting": {
+   "en": "Deleting {provider}…",
+   "zh": "正在删除 {provider}…",
+   "it": "Eliminazione di {provider}…"
+  },
+  "add": {
+   "en": "Add provider",
+   "zh": "添加提供方",
+   "it": "Aggiungi provider"
+  },
+  "provider": {
+   "en": "Provider",
+   "zh": "提供方",
+   "it": "Provider"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
+  "cancel": {
+   "en": "Cancel",
+   "zh": "取消",
+   "it": "Annulla"
+  },
+  "apply": {
+   "en": "Apply",
+   "zh": "保存",
+   "it": "Applica"
+  },
+  "applying": {
+   "en": "Applying…",
+   "zh": "保存中…",
+   "it": "Applicazione…"
+  },
+  "savedProvider": {
+   "en": "Saved {provider}.",
+   "zh": "已保存 {provider}。",
+   "it": "{provider} salvato."
+  },
+  "credentialConfigured": {
+   "en": "API key configured",
+   "zh": "API 密钥已配置",
+   "it": "Chiave API configurata"
+  },
+  "credentialMissing": {
+   "en": "API key missing",
+   "zh": "API 密钥缺失",
+   "it": "Chiave API mancante"
+  },
+  "readOnly": {
+   "en": "The settings document is read-only in this deployment.",
+   "zh": "当前部署的设置文档为只读。",
+   "it": "Il documento delle impostazioni è in sola lettura in questa installazione."
+  },
+  "loadFailed": {
+   "en": "Loading the provider directory failed",
+   "zh": "加载提供方目录失败",
+   "it": "Caricamento dell'elenco dei provider non riuscito"
+  },
+  "conflict": {
+   "en": "Someone else changed these settings while this card was open. Close it and reopen to edit the current values.",
+   "zh": "这张卡片打开期间，这些设置已被其他地方改动。请关闭后重新打开，在当前值上编辑。",
+   "it": "Qualcun altro ha modificato queste impostazioni mentre questa scheda era aperta. Chiudila e riaprila per modificare i valori attuali."
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "keyInput": {
+   "en": "API key",
+   "zh": "API 密钥",
+   "it": "Chiave API"
+  },
+  "keyPlaceholder": {
+   "en": "Enter your API key",
+   "zh": "输入 API 密钥",
+   "it": "Inserisci la chiave API"
+  },
+  "keyPlaceholderNative": {
+   "en": "Enter an API key, or leave blank to use environment authentication",
+   "zh": "输入 API 密钥，或留空使用环境认证",
+   "it": "Inserisci una chiave API o lascia vuoto per usare l'autenticazione dell'ambiente"
+  },
+  "keyStored": {
+   "en": "Configured — enter a new value to replace",
+   "zh": "已配置——输入新值可替换",
+   "it": "Configurata — inserisci un nuovo valore per sostituirla"
+  },
+  "keyEnvLocked": {
+   "en": "Provided by the launch environment (read-only)",
+   "zh": "由启动环境提供（只读）",
+   "it": "Fornita dall'ambiente di avvio (sola lettura)"
+  },
+  "customized": {
+   "en": "Customized settings",
+   "zh": "自定义设置",
+   "it": "Impostazioni personalizzate"
+  },
+  "baseUrl": {
+   "en": "Base URL",
+   "zh": "API 地址",
+   "it": "URL di base"
+  },
+  "baseUrlDefault": {
+   "en": "Provider default",
+   "zh": "提供方默认",
+   "it": "Predefinito del provider"
+  },
+  "models": {
+   "en": "Models",
+   "zh": "模型目录",
+   "it": "Modelli"
+  },
+  "modelsInherited": {
+   "en": "Using the adapter defaults",
+   "zh": "正在使用适配器默认模型",
+   "it": "Usa i valori predefiniti dell'adattatore"
+  },
+  "modelsCustomized": {
+   "en": "Customized model catalog",
+   "zh": "已自定义模型目录",
+   "it": "Catalogo dei modelli personalizzato"
+  },
+  "resetModels": {
+   "en": "Restore defaults",
+   "zh": "恢复默认模型",
+   "it": "Ripristina predefiniti"
+  },
+  "model": {
+   "en": "Model",
+   "zh": "模型",
+   "it": "Modello"
+  },
+  "modelId": {
+   "en": "Model ID",
+   "zh": "模型 ID",
+   "it": "Model ID"
+  },
+  "modelName": {
+   "en": "Display name",
+   "zh": "显示名称",
+   "it": "Nome visualizzato"
+  },
+  "modelNamePlaceholder": {
+   "en": "Uses the model ID when empty",
+   "zh": "留空时使用模型 ID",
+   "it": "Se vuoto, usa il Model ID"
+  },
+  "contextWindow": {
+   "en": "Context window",
+   "zh": "上下文窗口",
+   "it": "Finestra di contesto"
+  },
+  "contextWindowPlaceholder": {
+   "en": "Uses the provider default",
+   "zh": "使用提供方默认值",
+   "it": "Usa il valore predefinito del provider"
+  },
+  "maxTokens": {
+   "en": "Max output tokens",
+   "zh": "最大输出 token 数",
+   "it": "Token massimi in output"
+  },
+  "maxTokensPlaceholder": {
+   "en": "Uses the provider default",
+   "zh": "使用提供方默认值",
+   "it": "Usa il valore predefinito del provider"
+  },
+  "modelAdvanced": {
+   "en": "Capacities",
+   "zh": "容量",
+   "it": "Capacità"
+  },
+  "addModel": {
+   "en": "Add model",
+   "zh": "添加模型",
+   "it": "Aggiungi modello"
+  },
+  "removeModel": {
+   "en": "Delete model",
+   "zh": "删除模型",
+   "it": "Elimina modello"
+  },
+  "modelsEmpty": {
+   "en": "No models will be shown in the selector. Unlisted IDs can still be sent directly.",
+   "zh": "模型选择器中将不显示任何模型；目录外 ID 仍可直接发送。",
+   "it": "Nel selettore non verrà mostrato alcun modello. Gli ID non elencati possono comunque essere inviati direttamente."
+  },
+  "keyBlank": {
+   "en": "Enter the API key, or leave the field empty to keep the stored one.",
+   "zh": "请输入 API 密钥；留空则保持已存储的密钥。",
+   "it": "Inserisci la chiave API o lascia il campo vuoto per mantenere quella memorizzata."
+  },
+  "keyBlankNew": {
+   "en": "Enter the API key, or leave the field empty if this provider authenticates another way.",
+   "zh": "请输入 API 密钥；若该提供方以其他方式鉴权，可以留空。",
+   "it": "Inserisci la chiave API o lascia il campo vuoto se questo provider si autentica in un altro modo."
+  },
+  "keyIllegalCharacters": {
+   "en": "This API key is not in a valid format. Please check it.",
+   "zh": "该 API 密钥格式错误，请检查。",
+   "it": "Questa chiave API non ha un formato valido. Controllala."
+  },
+  "modelIdRequired": {
+   "en": "Model ID is required.",
+   "zh": "模型 ID 不能为空。",
+   "it": "Il Model ID è obbligatorio."
+  },
+  "modelIdDuplicate": {
+   "en": "Model ID must be unique.",
+   "zh": "模型 ID 不能重复。",
+   "it": "Il Model ID deve essere univoco."
+  },
+  "modelNameInvalid": {
+   "en": "Display name cannot be empty.",
+   "zh": "显示名称不能为空。",
+   "it": "Il nome visualizzato non può essere vuoto."
+  },
+  "modelContextInvalid": {
+   "en": "Context window must be a positive count, like 131072, 256K, or 1M.",
+   "zh": "上下文窗口必须是正数，例如 131072、256K 或 1M。",
+   "it": "La finestra di contesto deve essere un numero positivo, come 131072, 256K o 1M."
+  },
+  "modelMaxTokensInvalid": {
+   "en": "Max output tokens must be a positive count, like 8192, 64K, or 1M.",
+   "zh": "最大输出 token 数必须是正数，例如 8192、64K 或 1M。",
+   "it": "I token massimi in output devono essere un numero positivo, come 8192, 64K o 1M."
+  },
+  "advancedHint": {
+   "en": "Other fields live in settings.yaml; edit that section directly.",
+   "zh": "其余字段在 settings.yaml 中，请直接编辑对应段。",
+   "it": "Gli altri campi si trovano in settings.yaml; modifica direttamente quella sezione."
+  },
+  "modelCapacityInvalid": {
+   "en": "A capacity must be a number, optionally suffixed K or M.",
+   "zh": "容量需为数字，可加 K 或 M 后缀。",
+   "it": "Una capacità deve essere un numero, con suffisso K o M facoltativo."
+  },
+  "modelDuplicate": {
+   "en": "Each model ID may appear once.",
+   "zh": "每个模型 ID 只能出现一次。",
+   "it": "Ogni Model ID può comparire una sola volta."
+  },
+  "modelContextWindow": {
+   "en": "Context window",
+   "zh": "上下文窗口",
+   "it": "Finestra di contesto"
+  },
+  "modelMaxTokens": {
+   "en": "Max output tokens",
+   "zh": "最大输出 token",
+   "it": "Token massimi in output"
+  },
+  "fetchModels": {
+   "en": "Fetch available models",
+   "zh": "获取可用模型",
+   "it": "Recupera i modelli disponibili"
+  },
+  "fetching": {
+   "en": "Asking the provider…",
+   "zh": "正在询问提供方…",
+   "it": "Interrogazione del provider…"
+  },
+  "fetchNeedsBaseUrl": {
+   "en": "Enter the base URL first, then fetch.",
+   "zh": "请先填写 API 地址，再获取。",
+   "it": "Inserisci prima l'URL di base, poi recupera."
+  },
+  "fetchEmpty": {
+   "en": "The provider listed no models. Add them by hand.",
+   "zh": "该提供方没有列出任何模型，请手动添加。",
+   "it": "Il provider non ha elencato alcun modello. Aggiungili manualmente."
+  },
+  "fetchTitle": {
+   "en": "Choose models to add",
+   "zh": "选择要添加的模型",
+   "it": "Scegli i modelli da aggiungere"
+  },
+  "fetchDescription": {
+   "en": "These are the models this provider has available. Choose the ones to add.",
+   "zh": "以下是模型提供方的可用模型，勾选要添加的模型。",
+   "it": "Questi sono i modelli disponibili presso il provider. Scegli quelli da aggiungere."
+  },
+  "fetchSearch": {
+   "en": "Search models",
+   "zh": "搜索模型",
+   "it": "Cerca modelli"
+  },
+  "fetchNoMatches": {
+   "en": "No matching models.",
+   "zh": "没有匹配的模型。",
+   "it": "Nessun modello corrispondente."
+  },
+  "fetchSelectAll": {
+   "en": "Select all",
+   "zh": "全选",
+   "it": "Seleziona tutto"
+  },
+  "fetchDeselectAll": {
+   "en": "Deselect all",
+   "zh": "取消全选",
+   "it": "Deseleziona tutto"
+  },
+  "fetchAdopt": {
+   "en": "Add selected",
+   "zh": "添加所选",
+   "it": "Aggiungi selezionati"
+  },
+  "customAdd": {
+   "en": "Add a custom provider",
+   "zh": "添加自定义提供方",
+   "it": "Aggiungi un provider personalizzato"
+  },
+  "customTitle": {
+   "en": "Custom provider",
+   "zh": "自定义提供方",
+   "it": "Provider personalizzato"
+  },
+  "customTag": {
+   "en": "Custom",
+   "zh": "自定义",
+   "it": "Personalizzato"
+  },
+  "customRoute": {
+   "en": "Provider ID",
+   "zh": "Provider ID",
+   "it": "Provider ID"
+  },
+  "customRouteHint": {
+   "en": "Lowercase identifier, starting with a letter, that uniquely names this provider in requests and as its credential name.",
+   "zh": "以小写字母开头的标识，在请求中唯一标识该提供方，并用于派生凭据名。",
+   "it": "Identificatore in minuscolo, che inizia con una lettera, che nomina in modo univoco questo provider nelle richieste e come nome della sua credenziale."
+  },
+  "customRouteInvalid": {
+   "en": "Start with a lowercase letter; then lowercase letters, digits, and dashes.",
+   "zh": "需以小写字母开头，之后可用小写字母、数字和短横线。",
+   "it": "Inizia con una lettera minuscola; poi lettere minuscole, cifre e trattini."
+  },
+  "customRouteTaken": {
+   "en": "A provider already uses this ID.",
+   "zh": "已有提供方使用了这个 ID。",
+   "it": "Un provider usa già questo ID."
+  },
+  "customDisplayName": {
+   "en": "Display name",
+   "zh": "显示名称",
+   "it": "Nome visualizzato"
+  },
+  "customApi": {
+   "en": "API protocol",
+   "zh": "API 协议",
+   "it": "Protocollo API"
+  },
+  "customApiUnset": {
+   "en": "Not selected",
+   "zh": "未选择",
+   "it": "Non selezionato"
+  },
+  "customNeedsBaseUrl": {
+   "en": "A custom provider needs a base URL.",
+   "zh": "自定义提供方需要填写 API 地址。",
+   "it": "Un provider personalizzato richiede un URL di base."
+  },
+  "customBaseUrlInvalid": {
+   "en": "Enter a valid HTTP or HTTPS URL.",
+   "zh": "请输入有效的 HTTP 或 HTTPS 地址。",
+   "it": "Inserisci un URL HTTP o HTTPS valido."
+  },
+  "customNeedsModels": {
+   "en": "A custom provider needs at least one model.",
+   "zh": "自定义提供方至少需要一个模型。",
+   "it": "Un provider personalizzato richiede almeno un modello."
+  },
+  "customBaseUrlPlaceholder": {
+   "en": "https://gateway.example/v1",
+   "zh": "https://gateway.example/v1",
+   "it": "https://gateway.example/v1"
+  },
+  "settingsPathUnresolvable": {
+   "en": "unresolvable settings path",
+   "zh": "无法解析设置路径",
+   "it": "percorso delle impostazioni non risolvibile"
+  },
+  "create": {
+   "en": "Create provider",
+   "zh": "创建提供方",
+   "it": "Crea provider"
+  },
+  "creating": {
+   "en": "Creating…",
+   "zh": "创建中…",
+   "it": "Creazione…"
+  },
+  "welcomeTitle": {
+   "en": "Internal Testing Notice",
+   "zh": "内测声明",
+   "it": "Avviso di test interno"
+  },
+  "welcomeBody": {
+   "en": "DeepSeek Harness 0.1 remains in testing for Harness developers. Many areas need further improvement, and we welcome feedback from the developer community. DeepSeek Harness's core plugins and foundational APIs will continue to evolve rapidly over the coming months.\n\nWe look forward to exploring the limits of intelligence with developers around the world, building on open-source, open, reusable, and composable infrastructure. We welcome Harness developers everywhere to join the DSH plugin ecosystem.",
+   "zh": "DeepSeek Harness 目前的 0.1 版本仍处在面向 Harness 开发者进行测试的阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者的反馈建议。预计 DeepSeek Harness 的核心插件以及基础 API 都会在接下来的一段时间内快速迭代、持续演化。\n\n我们期待与全球开发者一起，在开源、开放、可复用、可组合的基础设施之上，共同探索智能上限。欢迎全球 Harness 开发者加入 DSH 插件生态。",
+   "it": "DeepSeek Harness 0.1 è ancora in fase di test per gli sviluppatori Harness. Molte aree necessitano di ulteriori miglioramenti e accogliamo con favore il feedback della comunità degli sviluppatori. I Plugin principali e le API di base di DeepSeek Harness continueranno a evolversi rapidamente nei prossimi mesi.\n\nNon vediamo l'ora di esplorare i limiti dell'intelligenza con gli sviluppatori di tutto il mondo, su un'infrastruttura open source, aperta, riutilizzabile e componibile. Invitiamo gli sviluppatori Harness di tutto il mondo a unirsi all'ecosistema di Plugin DSH."
+  },
+  "welcomeContinue": {
+   "en": "Continue",
+   "zh": "继续",
+   "it": "Continua"
+  },
+  "welcomeError": {
+   "en": "The acknowledgement could not be saved. Please try again.",
+   "zh": "暂时无法保存确认状态，请重试。",
+   "it": "Non è stato possibile salvare la conferma. Riprova."
+  },
+  "onboardingTitle": {
+   "en": "Add an API key to get started",
+   "zh": "添加一个 API Key 开始使用",
+   "it": "Aggiungi una chiave API per iniziare"
+  },
+  "onboardingDescription": {
+   "en": "Configure the official DeepSeek provider to start building.",
+   "zh": "配置 DeepSeek 官方模型，即可开始使用。",
+   "it": "Configura il provider ufficiale DeepSeek per iniziare a costruire."
+  },
+  "onboardingLater": {
+   "en": "Configure later",
+   "zh": "稍后配置",
+   "it": "Configura più tardi"
+  },
+  "onboardingSave": {
+   "en": "Save and continue",
+   "zh": "保存并继续",
+   "it": "Salva e continua"
+  },
+  "onboardingSaving": {
+   "en": "Saving…",
+   "zh": "保存中…",
+   "it": "Salvataggio…"
+  },
+  "keyRequired": {
+   "en": "Enter an API key to continue.",
+   "zh": "请输入 API 密钥后继续。",
+   "it": "Inserisci una chiave API per continuare."
+  }
+ },
+ "settings.plugins": {
+  "nav": {
+   "en": "Plugins",
+   "zh": "插件",
+   "it": "Plugin"
+  },
+  "title": {
+   "en": "Plugins",
+   "zh": "插件",
+   "it": "Plugin"
+  },
+  "intro": {
+   "en": "Configure and inspect the plugins installed in this deployment.",
+   "zh": "配置和查看本部署已安装的插件。",
+   "it": "Configura e ispeziona i Plugin installati in questa distribuzione."
+  },
+  "tabs": {
+   "en": "Plugin views",
+   "zh": "插件视图",
+   "it": "Viste dei Plugin"
+  },
+  "configurableTab": {
+   "en": "Plugin configuration",
+   "zh": "插件配置",
+   "it": "Configurazione dei Plugin"
+  },
+  "empty": {
+   "en": "This deployment exposes no plugin settings.",
+   "zh": "本部署没有开放任何插件设置。",
+   "it": "Questa distribuzione non espone impostazioni dei Plugin."
+  },
+  "overridden": {
+   "en": "Overridden",
+   "zh": "已覆盖",
+   "it": "Sovrascritto"
+  },
+  "reset": {
+   "en": "Reset to default",
+   "zh": "恢复默认",
+   "it": "Reimposta predefinito"
+  },
+  "readOnly": {
+   "en": "This deployment stores settings read-only.",
+   "zh": "本部署的设置为只读。",
+   "it": "Questa distribuzione archivia le impostazioni in sola lettura."
+  },
+  "expand": {
+   "en": "Show settings",
+   "zh": "展开设置",
+   "it": "Mostra impostazioni"
+  },
+  "collapse": {
+   "en": "Hide settings",
+   "zh": "收起设置",
+   "it": "Nascondi impostazioni"
+  },
+  "save": {
+   "en": "Save",
+   "zh": "保存",
+   "it": "Salva"
+  },
+  "saving": {
+   "en": "Saving…",
+   "zh": "保存中…",
+   "it": "Salvataggio…"
+  },
+  "discard": {
+   "en": "Discard",
+   "zh": "放弃修改",
+   "it": "Scarta"
+  },
+  "unsaved": {
+   "en": "Unsaved",
+   "zh": "未保存",
+   "it": "Non salvato"
+  },
+  "saveFailed": {
+   "en": "The deployment did not accept these values; they were left for you to correct.",
+   "zh": "本部署没有接受这些值，已保留供你修改。",
+   "it": "La distribuzione non ha accettato questi valori; sono stati lasciati per la correzione."
+  },
+  "invalidNumber": {
+   "en": "Enter a number, or leave blank to use the default.",
+   "zh": "请填数字；留空表示使用默认值。",
+   "it": "Inserisci un numero o lascia vuoto per usare il valore predefinito."
+  },
+  "bashTitle": {
+   "en": "Shell",
+   "zh": "终端",
+   "it": "Terminale"
+  },
+  "bashDescription": {
+   "en": "Limits every command the agent runs.",
+   "zh": "限制 agent 运行的每一条命令。",
+   "it": "Limita ogni comando eseguito dall'agente."
+  },
+  "bashTimeoutMs": {
+   "en": "Command timeout (ms)",
+   "zh": "命令超时（毫秒）",
+   "it": "Timeout del comando (ms)"
+  },
+  "bashTimeoutMsHint": {
+   "en": "How long one command may run before it is terminated.",
+   "zh": "单条命令允许运行多久，超时即终止。",
+   "it": "Per quanto un comando può essere eseguito prima di essere terminato."
+  },
+  "bashMaxOutputBytes": {
+   "en": "Output cap per stream (bytes)",
+   "zh": "单流输出上限（字节）",
+   "it": "Limite di output per flusso (byte)"
+  },
+  "bashMaxOutputBytesHint": {
+   "en": "Output beyond this spills to a temporary file rather than being lost.",
+   "zh": "超出部分会转存到临时文件，而不是被丢弃。",
+   "it": "L'output in eccesso viene salvato in un file temporaneo invece di andare perso."
+  },
+  "agentLoopTitle": {
+   "en": "Agent loop",
+   "zh": "Agent 循环",
+   "it": "Ciclo dell'agente"
+  },
+  "agentLoopDescription": {
+   "en": "How the agent dispatches tool calls.",
+   "zh": "Agent 如何派发工具调用。",
+   "it": "Come l'agente distribuisce le chiamate a strumento."
+  },
+  "agentLoopMaxParallel": {
+   "en": "Parallel tool calls",
+   "zh": "并行工具调用数",
+   "it": "Chiamate a strumento in parallelo"
+  },
+  "agentLoopMaxParallelHint": {
+   "en": "Upper bound on parallel-safe calls running at once within one step.",
+   "zh": "同一步内最多同时运行多少个可并行的调用。",
+   "it": "Numero massimo di chiamate parallelizzabili eseguite contemporaneamente in un passo."
+  },
+  "webSearchTitle": {
+   "en": "Web search",
+   "zh": "网页搜索",
+   "it": "Ricerca web"
+  },
+  "webSearchDescription": {
+   "en": "The DeepSeek search provider.",
+   "zh": "DeepSeek 搜索提供方。",
+   "it": "Il provider di ricerca DeepSeek."
+  },
+  "webSearchApiKey": {
+   "en": "API key",
+   "zh": "API Key",
+   "it": "Chiave API"
+  },
+  "webSearchApiKeyHint": {
+   "en": "Stored outside the settings file. Leave blank to keep the current key.",
+   "zh": "不写入设置文件。留空表示保持当前密钥。",
+   "it": "Memorizzata fuori dal file delle impostazioni. Lascia vuoto per mantenere la chiave attuale."
+  },
+  "webSearchApiKeySet": {
+   "en": "A key is configured.",
+   "zh": "已配置密钥。",
+   "it": "Una chiave è configurata."
+  },
+  "webSearchApiKeyUnset": {
+   "en": "No key is configured; search is unavailable until one is.",
+   "zh": "未配置密钥；配置之前搜索不可用。",
+   "it": "Nessuna chiave configurata; la ricerca non è disponibile finché non ne viene configurata una."
+  },
+  "webSearchBaseUrl": {
+   "en": "Endpoint",
+   "zh": "接口地址",
+   "it": "Endpoint"
+  },
+  "webSearchBaseUrlHint": {
+   "en": "Leave blank to use the provider default.",
+   "zh": "留空则使用提供方默认地址。",
+   "it": "Lascia vuoto per usare il valore predefinito del provider."
+  },
+  "webSearchMaxUses": {
+   "en": "Max searches per request",
+   "zh": "单次请求最多搜索次数",
+   "it": "Ricerche massime per richiesta"
+  },
+  "webSearchMaxUsesHint": {
+   "en": "How many times one request may search before it must answer.",
+   "zh": "一次请求在必须作答前最多可以搜索多少次。",
+   "it": "Quante volte una richiesta può cercare prima di dover rispondere."
+  },
+  "subagentModelSelectionTitle": {
+   "en": "Subagent",
+   "zh": "Subagent",
+   "it": "Subagente"
+  },
+  "subagentModelSelectionDescription": {
+   "en": "Control which models agents may choose for subagents.",
+   "zh": "控制 Agent 为 Subagent 选择模型的权限。",
+   "it": "Controlla quali modelli gli agenti possono scegliere per i subagenti."
+  },
+  "subagentModelSelectionToggle": {
+   "en": "Allow agents to choose models for subagents",
+   "zh": "允许 Agent 为 Subagent 选择模型",
+   "it": "Consenti agli agenti di scegliere i modelli per i subagenti"
+  },
+  "subagentModelSelectionChoose": {
+   "en": "When enabled, agents can choose a provider, model, and reasoning effort for each subagent from the authorized models below. Applies only to new sessions.",
+   "zh": "开启后，Agent 可以从下方授权模型中，为每个 Subagent 选择提供方、模型和推理强度。仅影响新会话。",
+   "it": "Se attivo, gli agenti possono scegliere un provider, un modello e il reasoning effort per ogni subagente tra i modelli autorizzati riportati sotto. Si applica solo alle nuove sessioni."
+  },
+  "subagentModelSelectionAllowed": {
+   "en": "Models agents may choose",
+   "zh": "Agent 可选择的模型",
+   "it": "Modelli che gli agenti possono scegliere"
+  },
+  "subagentModelSelectionLoading": {
+   "en": "Loading models…",
+   "zh": "正在加载模型…",
+   "it": "Caricamento modelli…"
+  },
+  "subagentModelSelectionLoadFailed": {
+   "en": "Models could not be loaded.",
+   "zh": "无法加载模型。",
+   "it": "Impossibile caricare i modelli."
+  },
+  "subagentModelSelectionRetry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "subagentModelSelectionPartial": {
+   "en": "Some model providers could not be loaded; saved choices remain removable.",
+   "zh": "部分模型提供方暂时无法加载；已保存的选择仍可移除。",
+   "it": "Alcuni provider di modelli non sono stati caricati; le scelte salvate restano rimovibili."
+  },
+  "subagentModelSelectionUnavailable": {
+   "en": "Currently unavailable",
+   "zh": "当前不可用",
+   "it": "Attualmente non disponibile"
+  },
+  "subagentModelSelectionUnavailableGroup": {
+   "en": "Saved but currently unavailable",
+   "zh": "已保存但当前不可用",
+   "it": "Salvato ma attualmente non disponibile"
+  },
+  "subagentModelSelectionEmpty": {
+   "en": "No model provider currently advertises a model.",
+   "zh": "当前没有模型提供方公布模型。",
+   "it": "Nessun provider di modelli pubblica attualmente un modello."
+  },
+  "subagentModelSelectionRequired": {
+   "en": "Select at least one model before saving.",
+   "zh": "保存前请至少选择一个模型。",
+   "it": "Seleziona almeno un modello prima di salvare."
+  },
+  "subagentModelSelectionConflict": {
+   "en": "Settings changed elsewhere. Discard your draft and try again.",
+   "zh": "设置已在其他位置更新。请放弃修改后重试。",
+   "it": "Le impostazioni sono cambiate altrove. Scarta la bozza e riprova."
+  },
+  "subagentModelSelectionOff": {
+   "en": "Subagents use configured defaults or inherit the parent agent's model. Saved model choices are retained.",
+   "zh": "关闭后，Subagent 使用配置的默认模型或继承父 Agent 的模型；已选模型会保留。",
+   "it": "I subagenti usano i valori predefiniti configurati o ereditano il modello dell'agente padre. Le scelte di modello salvate vengono mantenute."
+  }
+ },
+ "settings.pluginInventory": {
+  "tab": {
+   "en": "Plugin list",
+   "zh": "插件列表",
+   "it": "Elenco plugin"
+  },
+  "loading": {
+   "en": "Reading plugins…",
+   "zh": "正在读取插件…",
+   "it": "Lettura plugin…"
+  },
+  "error": {
+   "en": "Plugins are temporarily unavailable.",
+   "zh": "暂时无法读取插件。",
+   "it": "Plugin temporaneamente non disponibili."
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "search": {
+   "en": "Search plugins",
+   "zh": "搜索插件",
+   "it": "Cerca plugin"
+  },
+  "empty": {
+   "en": "No plugins are available.",
+   "zh": "暂无插件。",
+   "it": "Nessun plugin disponibile."
+  },
+  "emptySearch": {
+   "en": "No matching plugins.",
+   "zh": "没有匹配的插件。",
+   "it": "Nessun plugin corrispondente."
+  },
+  "presetTitle": {
+   "en": "Session plugins",
+   "zh": "会话插件",
+   "it": "Plugin della sessione"
+  },
+  "presetSubtitle": {
+   "en": "Composed per session by agent presets",
+   "zh": "由 Agent 预设按会话组成",
+   "it": "Composti per sessione dai preset degli agenti"
+  },
+  "countUnit": {
+   "en": "plugins",
+   "zh": "个",
+   "it": "plugin"
+  },
+  "switcherLabel": {
+   "en": "Choose the agent preset to inspect",
+   "zh": "选择要查看的 Agent 预设",
+   "it": "Scegli il preset dell'agente da ispezionare"
+  },
+  "presetOptionDefault": {
+   "en": "{name} (default)",
+   "zh": "{name}（默认）",
+   "it": "«{name}» (predefinito)"
+  },
+  "presetOptionBroken": {
+   "en": "{name} (failed to load)",
+   "zh": "{name}（加载失败）",
+   "it": "«{name}» (caricamento non riuscito)"
+  },
+  "globalTitle": {
+   "en": "Global plugins",
+   "zh": "全局插件",
+   "it": "Plugin globali"
+  },
+  "globalSubtitle": {
+   "en": "Shared by the system and every session",
+   "zh": "系统与所有会话共用",
+   "it": "Condivisi dal sistema e da ogni sessione"
+  },
+  "presetProvidedDetail": {
+   "en": "Disabled globally; agent presets provide it per session",
+   "zh": "全局已停用，由 Agent 预设按会话提供",
+   "it": "Disattivato a livello globale; i preset degli agenti lo forniscono per sessione"
+  },
+  "enabledIn": {
+   "en": "Enabled in",
+   "zh": "启用于",
+   "it": "Attivo in"
+  },
+  "viewInPreset": {
+   "en": "View in the preset group",
+   "zh": "去预设分组查看",
+   "it": "Vedi nel gruppo del preset"
+  },
+  "matchesInOtherPresets": {
+   "en": "{count} more matches in other presets: ",
+   "zh": "其他预设中还有 {count} 个匹配：",
+   "it": "Altri {count} risultati negli altri preset: "
+  },
+  "failedCountLabel": {
+   "en": "failed",
+   "zh": "个失败",
+   "it": "non riusciti"
+  },
+  "enabledTag": {
+   "en": "Enabled",
+   "zh": "已启用",
+   "it": "Attivo"
+  },
+  "disabledTag": {
+   "en": "Disabled",
+   "zh": "已停用",
+   "it": "Disattivato"
+  },
+  "conditionalTag": {
+   "en": "Conditional",
+   "zh": "条件启用",
+   "it": "Condizionale"
+  },
+  "presetEnabledTag": {
+   "en": "Enabled via presets",
+   "zh": "预设中启用",
+   "it": "Attivo tramite i preset"
+  },
+  "failedTag": {
+   "en": "Failed",
+   "zh": "启动失败",
+   "it": "Non riuscito"
+  },
+  "moduleLabel": {
+   "en": "Module",
+   "zh": "完整名称",
+   "it": "Modulo"
+  },
+  "fromPreset": {
+   "en": "From",
+   "zh": "来自",
+   "it": "Da"
+  },
+  "condition": {
+   "en": "Disabled when",
+   "zh": "禁用条件",
+   "it": "Disattivato quando"
+  },
+  "configuration": {
+   "en": "Configuration",
+   "zh": "配置状态",
+   "it": "Configurazione"
+  },
+  "runtime": {
+   "en": "Status",
+   "zh": "运行状态",
+   "it": "Stato"
+  },
+  "unobserved": {
+   "en": "Not running",
+   "zh": "未运行",
+   "it": "Non in esecuzione"
+  },
+  "pending": {
+   "en": "Waiting for dependencies",
+   "zh": "等待依赖",
+   "it": "In attesa delle dipendenze"
+  },
+  "loadingPhase": {
+   "en": "Loading",
+   "zh": "加载中",
+   "it": "Caricamento"
+  },
+  "active": {
+   "en": "Running",
+   "zh": "运行中",
+   "it": "In esecuzione"
+  },
+  "failed": {
+   "en": "Failed to start",
+   "zh": "启动失败",
+   "it": "Avvio non riuscito"
+  },
+  "unloading": {
+   "en": "Unloading",
+   "zh": "卸载中",
+   "it": "Scaricamento"
+  }
+ }
+}

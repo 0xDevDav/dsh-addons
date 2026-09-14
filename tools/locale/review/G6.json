@@ -1,0 +1,1232 @@
+{
+ "sidebarDocumentPreview": {
+  "loading": {
+   "en": "Reading…",
+   "zh": "正在读取…",
+   "it": "Lettura…"
+  },
+  "loadMore": {
+   "en": "Load more",
+   "zh": "加载更多",
+   "it": "Carica altro"
+  },
+  "changed": {
+   "en": "The file has changed, showing the previous content.",
+   "zh": "文件已更新，当前显示为旧内容。",
+   "it": "Il file è cambiato, è mostrato il contenuto precedente."
+  },
+  "reloadNow": {
+   "en": "Reload",
+   "zh": "重新载入",
+   "it": "Ricarica"
+  },
+  "reload": {
+   "en": "Read the file again",
+   "zh": "重新读取文件",
+   "it": "Leggi di nuovo il file"
+  },
+  "wrap.enable": {
+   "en": "Turn on line wrap",
+   "zh": "自动换行",
+   "it": "Attiva a capo automatico"
+  },
+  "wrap.disable": {
+   "en": "Turn off line wrap",
+   "zh": "取消换行",
+   "it": "Disattiva a capo automatico"
+  },
+  "wrap.aria": {
+   "en": "Line wrap",
+   "zh": "自动换行",
+   "it": "A capo automatico"
+  },
+  "openWith": {
+   "en": "Open with",
+   "zh": "打开方式",
+   "it": "Apri con"
+  },
+  "viewer.text": {
+   "en": "Plain text",
+   "zh": "纯文本",
+   "it": "Testo semplice"
+  },
+  "resourceUnavailable": {
+   "en": "The file resource service is unavailable.",
+   "zh": "文件资源服务不可用。",
+   "it": "Il servizio di risorse dei file non è disponibile."
+  },
+  "rendererUnavailable": {
+   "en": "The {name} preview is unavailable.",
+   "zh": "预览器 {name} 不可用。",
+   "it": "L'anteprima {name} non è disponibile."
+  },
+  "error.notFound": {
+   "en": "File not found. It may have been moved or deleted.",
+   "zh": "文件不存在，可能已被移动或删除。",
+   "it": "File non trovato. Potrebbe essere stato spostato o eliminato."
+  },
+  "error.tooLarge": {
+   "en": "This page exceeds the {limit} limit and cannot be read.",
+   "zh": "单页内容超过 {limit} 上限，无法读取。",
+   "it": "Questa pagina supera il limite {limit} e non può essere letta."
+  },
+  "error.notText": {
+   "en": "Not a text file, preview is unavailable for now.",
+   "zh": "非文本文件，暂时无法预览。",
+   "it": "Non è un file di testo, l'anteprima al momento non è disponibile."
+  },
+  "error.notRegularFile": {
+   "en": "Not a regular file, nothing to display.",
+   "zh": "该路径不是普通文件，没有可显示的内容。",
+   "it": "Non è un file normale, non c'è nulla da mostrare."
+  },
+  "error.unavailable": {
+   "en": "Read failed: {message}",
+   "zh": "读取失败：{message}",
+   "it": "Lettura non riuscita: {message}"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  }
+ },
+ "workflowRun": {
+  "run.title": {
+   "en": "{name}",
+   "zh": "{name}",
+   "it": "{name}"
+  },
+  "run.members.one": {
+   "en": "{count} member",
+   "zh": "{count} 个成员",
+   "it": "{count} membro"
+  },
+  "run.members.other": {
+   "en": "{count} members",
+   "zh": "{count} 个成员",
+   "it": "{count} membri"
+  },
+  "run.empty": {
+   "en": "No members started",
+   "zh": "没有启动成员",
+   "it": "Nessun membro avviato"
+  },
+  "phase.unassigned": {
+   "en": "Unphased",
+   "zh": "未分阶段",
+   "it": "Senza fase"
+  },
+  "phase.empty": {
+   "en": "Empty phase name",
+   "zh": "空阶段名",
+   "it": "Nome della fase mancante"
+  },
+  "statusCount.running": {
+   "en": "Running {count}",
+   "zh": "运行中 {count}",
+   "it": "In esecuzione {count}"
+  },
+  "statusCount.completed": {
+   "en": "Completed {count}",
+   "zh": "已完成 {count}",
+   "it": "Completati {count}"
+  },
+  "statusCount.failed": {
+   "en": "Failed {count}",
+   "zh": "失败 {count}",
+   "it": "Non riusciti {count}"
+  },
+  "statusCount.cancelled": {
+   "en": "Cancelled {count}",
+   "zh": "已取消 {count}",
+   "it": "Annullati {count}"
+  },
+  "statusCount.interrupted": {
+   "en": "Interrupted {count}",
+   "zh": "已中断 {count}",
+   "it": "Interrotti {count}"
+  },
+  "member.empty": {
+   "en": "Empty member name",
+   "zh": "空成员名",
+   "it": "Nome del membro mancante"
+  },
+  "member.open": {
+   "en": "Open {name}",
+   "zh": "打开 {name}",
+   "it": "Apri {name}"
+  },
+  "status.running": {
+   "en": "Running",
+   "zh": "运行中",
+   "it": "In esecuzione"
+  },
+  "status.completed": {
+   "en": "Completed",
+   "zh": "已完成",
+   "it": "Completato"
+  },
+  "status.failed": {
+   "en": "Failed",
+   "zh": "失败",
+   "it": "Non riuscito"
+  },
+  "status.cancelled": {
+   "en": "Cancelled",
+   "zh": "已取消",
+   "it": "Annullato"
+  },
+  "status.interrupted": {
+   "en": "Interrupted",
+   "zh": "已中断",
+   "it": "Interrotto"
+  }
+ },
+ "job": {
+  "count.live.one": {
+   "en": "{count} background job running",
+   "zh": "{count} 个后台任务运行中",
+   "it": "{count} attività in background in esecuzione"
+  },
+  "count.live.other": {
+   "en": "{count} background jobs running",
+   "zh": "{count} 个后台任务运行中",
+   "it": "{count} attività in background in esecuzione"
+  },
+  "count.idle.one": {
+   "en": "{count} background job",
+   "zh": "{count} 个后台任务",
+   "it": "{count} attività in background"
+  },
+  "count.idle.other": {
+   "en": "{count} background jobs",
+   "zh": "{count} 个后台任务",
+   "it": "{count} attività in background"
+  },
+  "list.aria": {
+   "en": "Background jobs",
+   "zh": "后台任务",
+   "it": "Attività in background"
+  },
+  "status.running": {
+   "en": "running",
+   "zh": "运行中",
+   "it": "in esecuzione"
+  },
+  "status.stopping": {
+   "en": "stopping",
+   "zh": "正在停止",
+   "it": "in arresto"
+  },
+  "status.completed": {
+   "en": "completed",
+   "zh": "已完成",
+   "it": "completata"
+  },
+  "status.killed": {
+   "en": "cancelled",
+   "zh": "已取消",
+   "it": "annullata"
+  },
+  "status.failed": {
+   "en": "failed",
+   "zh": "已失败",
+   "it": "non riuscita"
+  },
+  "duration.seconds": {
+   "en": "{seconds}s",
+   "zh": "{seconds}秒",
+   "it": "{seconds}s"
+  },
+  "duration.minutes": {
+   "en": "{minutes}m {seconds}s",
+   "zh": "{minutes}分{seconds}秒",
+   "it": "{minutes}m {seconds}s"
+  },
+  "duration.hours": {
+   "en": "{hours}h {minutes}m",
+   "zh": "{hours}小时{minutes}分",
+   "it": "{hours}h {minutes}m"
+  },
+  "duration.title.live": {
+   "en": "Running for {duration}",
+   "zh": "已运行 {duration}",
+   "it": "In esecuzione da {duration}"
+  },
+  "duration.title.done": {
+   "en": "Took {duration}",
+   "zh": "耗时 {duration}",
+   "it": "Ha richiesto {duration}"
+  }
+ },
+ "question": {
+  "error.incomplete": {
+   "en": "Please complete this question first.",
+   "zh": "请先完成这道问题。",
+   "it": "Completa prima questa domanda."
+  },
+  "error.unanswered": {
+   "en": "Please select an option or enter a custom answer.",
+   "zh": "请选择一个选项或填写自定义答案。",
+   "it": "Seleziona un'opzione o inserisci una risposta personalizzata."
+  },
+  "nav.prev": {
+   "en": "Previous question",
+   "zh": "上一题",
+   "it": "Domanda precedente"
+  },
+  "nav.next": {
+   "en": "Next question",
+   "zh": "下一题",
+   "it": "Domanda successiva"
+  },
+  "nav.minimize": {
+   "en": "Collapse the question card",
+   "zh": "收起问题卡片",
+   "it": "Comprimi la scheda della domanda"
+  },
+  "nav.maximize": {
+   "en": "Expand the question card",
+   "zh": "展开问题卡片",
+   "it": "Espandi la scheda della domanda"
+  },
+  "nav.cancel": {
+   "en": "Dismiss all questions",
+   "zh": "放弃整组问题",
+   "it": "Ignora tutte le domande"
+  },
+  "option.recommended": {
+   "en": "Recommended",
+   "zh": "推荐",
+   "it": "Consigliato"
+  },
+  "custom.placeholder": {
+   "en": "Type your answer",
+   "zh": "输入你的答案",
+   "it": "Scrivi la tua risposta"
+  },
+  "action.skip": {
+   "en": "Skip this question",
+   "zh": "跳过本题",
+   "it": "Salta questa domanda"
+  },
+  "action.next": {
+   "en": "Next",
+   "zh": "下一题",
+   "it": "Avanti"
+  },
+  "plan.header": {
+   "en": "Plan review",
+   "zh": "计划待审",
+   "it": "Revisione del piano"
+  },
+  "plan.approve": {
+   "en": "Approve",
+   "zh": "确认执行",
+   "it": "Approva"
+  },
+  "plan.decline": {
+   "en": "Refuse",
+   "zh": "拒绝",
+   "it": "Rifiuta"
+  },
+  "plan.discuss": {
+   "en": "Chat about it",
+   "zh": "去聊天里说",
+   "it": "Discuti in chat"
+  }
+ },
+ "command": {
+  "description.compact": {
+   "en": "Compact older conversation history",
+   "zh": "压缩以上对话内容",
+   "it": "Compatta la cronologia della conversazione precedente"
+  },
+  "description.export": {
+   "en": "Download this Session log as a ZIP archive",
+   "zh": "将当前会话内容导出为 ZIP",
+   "it": "Scarica il log di questa sessione come archivio ZIP"
+  },
+  "description.feedback": {
+   "en": "record feedback about this session",
+   "zh": "发送关于当前会话的反馈",
+   "it": "registra un feedback su questa sessione"
+  },
+  "description.goal": {
+   "en": "set or view the goal for a long-running task",
+   "zh": "设置或查看长期任务目标",
+   "it": "imposta o visualizza l'obiettivo di un'attività di lunga durata"
+  },
+  "description.permission": {
+   "en": "Switch the permission preset (sandbox mode + approval policy)",
+   "zh": "切换权限预设（沙箱模式与审批策略）",
+   "it": "Cambia il preset di autorizzazione (modalità Sandbox + politica di approvazione)"
+  },
+  "description.plan": {
+   "en": "Enter or leave plan mode",
+   "zh": "进入或退出计划模式",
+   "it": "Entra o esci dalla modalità piano"
+  },
+  "search.placeholder": {
+   "en": "Search…",
+   "zh": "搜索…",
+   "it": "Cerca…"
+  },
+  "search.aria": {
+   "en": "Filter options",
+   "zh": "筛选选项",
+   "it": "Filtra le opzioni"
+  },
+  "status.loading": {
+   "en": "Loading options…",
+   "zh": "正在加载选项…",
+   "it": "Caricamento opzioni…"
+  },
+  "status.applying": {
+   "en": "Applying…",
+   "zh": "正在应用…",
+   "it": "Applicazione…"
+  },
+  "status.empty": {
+   "en": "No options",
+   "zh": "无选项",
+   "it": "Nessuna opzione"
+  },
+  "overlay.aria": {
+   "en": "/{command} options",
+   "zh": "/{command} 选项",
+   "it": "Opzioni di /{command}"
+  },
+  "listbox.aria": {
+   "en": "/{command} matches",
+   "zh": "/{command} 匹配项",
+   "it": "Corrispondenze di /{command}"
+  },
+  "notice.attachmentsUnsupported": {
+   "en": "/{command} does not accept attachments; remove them first",
+   "zh": "/{command} 不接受附件，请先移除附件",
+   "it": "/{command} non accetta allegati; rimuovili prima"
+  }
+ },
+ "directory-browser": {
+  "browser.title": {
+   "en": "Select Workspace Directory",
+   "zh": "选择工作区目录",
+   "it": "Seleziona la cartella dell'area di lavoro"
+  },
+  "browser.home": {
+   "en": "Home",
+   "zh": "主目录",
+   "it": "Home"
+  },
+  "browser.newFolder": {
+   "en": "New folder",
+   "zh": "新建文件夹",
+   "it": "Nuova cartella"
+  },
+  "browser.folderName": {
+   "en": "Folder name",
+   "zh": "文件夹名称",
+   "it": "Nome cartella"
+  },
+  "browser.createIn": {
+   "en": "New folder in \"{name}\"",
+   "zh": "在\"{name}\"中新建文件夹",
+   "it": "Nuova cartella in «{name}»"
+  },
+  "browser.untitledFolder": {
+   "en": "Untitled folder",
+   "zh": "未命名文件夹",
+   "it": "Cartella senza titolo"
+  },
+  "browser.create": {
+   "en": "Create",
+   "zh": "创建",
+   "it": "Crea"
+  },
+  "browser.cancel": {
+   "en": "Cancel",
+   "zh": "取消",
+   "it": "Annulla"
+  },
+  "browser.open": {
+   "en": "Open",
+   "zh": "打开",
+   "it": "Apri"
+  },
+  "browser.editPath": {
+   "en": "Edit path",
+   "zh": "编辑路径",
+   "it": "Modifica percorso"
+  },
+  "browser.loading": {
+   "en": "Loading…",
+   "zh": "加载中…",
+   "it": "Caricamento…"
+  },
+  "browser.truncated": {
+   "en": "Too many folders to list; only the beginning is shown.",
+   "zh": "文件夹过多，仅显示开头部分。",
+   "it": "Troppe cartelle da elencare; è mostrato solo l'inizio."
+  },
+  "browser.showHidden": {
+   "en": "Show hidden files",
+   "zh": "显示隐藏文件",
+   "it": "Mostra file nascosti"
+  }
+ },
+ "sidebarFiles": {
+  "type.label": {
+   "en": "Files",
+   "zh": "文件",
+   "it": "File"
+  },
+  "guide.title": {
+   "en": "Workspace files",
+   "zh": "工作区文件",
+   "it": "File dell'area di lavoro"
+  },
+  "guide.description": {
+   "en": "Browse files in this session's workspace",
+   "zh": "浏览会话工作区的文件",
+   "it": "Sfoglia i file nell'area di lavoro di questa sessione"
+  },
+  "loading": {
+   "en": "Reading…",
+   "zh": "正在读取…",
+   "it": "Lettura…"
+  },
+  "empty": {
+   "en": "Empty directory",
+   "zh": "空目录",
+   "it": "Directory vuota"
+  },
+  "truncated": {
+   "en": "Too many entries, showing only some of them.",
+   "zh": "条目太多，只显示了一部分。",
+   "it": "Troppe voci, ne viene mostrata solo una parte."
+  },
+  "noWorkspace": {
+   "en": "This session has no workspace directory.",
+   "zh": "这个会话没有工作区目录。",
+   "it": "Questa sessione non ha una directory dell'area di lavoro."
+  },
+  "reload": {
+   "en": "Reload",
+   "zh": "重新读取",
+   "it": "Ricarica"
+  },
+  "entry.other": {
+   "en": "Not a file or a directory, so it cannot be opened.",
+   "zh": "这不是文件或目录，没法打开。",
+   "it": "Non è un file né una directory, quindi non può essere aperto."
+  },
+  "error.notFound": {
+   "en": "That directory is gone. It may have been moved or deleted.",
+   "zh": "这个目录不在了。可能已被移动或删除。",
+   "it": "La directory non esiste più. Potrebbe essere stata spostata o eliminata."
+  },
+  "error.outsideWorkspace": {
+   "en": "That directory is outside the workspace, so the sidebar will not read it.",
+   "zh": "这个目录在工作区之外，侧栏不会读取它。",
+   "it": "La directory è fuori dall'area di lavoro, quindi la barra laterale non la leggerà."
+  },
+  "error.notDirectory": {
+   "en": "That is not a directory.",
+   "zh": "这不是一个目录。",
+   "it": "Non è una directory."
+  },
+  "error.unavailable": {
+   "en": "Read failed: {message}",
+   "zh": "读取失败：{message}",
+   "it": "Lettura non riuscita: {message}"
+  }
+ },
+ "goal": {
+  "phase.active": {
+   "en": "Ongoing Goal",
+   "zh": "进行中的目标",
+   "it": "Obiettivo in corso"
+  },
+  "phase.active.disarmed": {
+   "en": "Inactive Goal",
+   "zh": "未运行的目标",
+   "it": "Obiettivo inattivo"
+  },
+  "phase.paused": {
+   "en": "Paused Goal",
+   "zh": "已暂停的目标",
+   "it": "Obiettivo in pausa"
+  },
+  "phase.blocked": {
+   "en": "Blocked Goal",
+   "zh": "受阻的目标",
+   "it": "Obiettivo bloccato"
+  },
+  "objective.aria": {
+   "en": "Goal objective",
+   "zh": "目标内容",
+   "it": "Obiettivo"
+  },
+  "commandInput.aria": {
+   "en": "Command input",
+   "zh": "指令输入",
+   "it": "Input comando"
+  },
+  "action.save": {
+   "en": "Save goal",
+   "zh": "保存目标",
+   "it": "Salva obiettivo"
+  },
+  "action.cancel": {
+   "en": "Cancel edit",
+   "zh": "取消编辑",
+   "it": "Annulla modifica"
+  },
+  "action.pause": {
+   "en": "Pause goal",
+   "zh": "暂停目标",
+   "it": "Metti in pausa l'obiettivo"
+  },
+  "action.resume": {
+   "en": "Resume goal",
+   "zh": "恢复目标",
+   "it": "Riprendi obiettivo"
+  },
+  "action.edit": {
+   "en": "Edit goal",
+   "zh": "编辑目标",
+   "it": "Modifica obiettivo"
+  },
+  "action.clear": {
+   "en": "Clear goal",
+   "zh": "清除目标",
+   "it": "Elimina obiettivo"
+  }
+ },
+ "settings.permission": {
+  "title": {
+   "en": "Permission",
+   "zh": "权限",
+   "it": "Autorizzazione"
+  },
+  "description": {
+   "en": "Choose the default permission mode for new sessions",
+   "zh": "选择新会话的默认权限模式",
+   "it": "Scegli la modalità di autorizzazione predefinita per le nuove sessioni"
+  },
+  "loading": {
+   "en": "Loading",
+   "zh": "加载中",
+   "it": "Caricamento"
+  },
+  "unavailable": {
+   "en": "Unavailable",
+   "zh": "不可用",
+   "it": "Non disponibile"
+  },
+  "preset.readOnly": {
+   "en": "Read Only",
+   "zh": "仅可查看",
+   "it": "Sola lettura"
+  },
+  "preset.workspaceWrite": {
+   "en": "Workspace Write",
+   "zh": "工作区内修改",
+   "it": "Scrittura area di lavoro"
+  },
+  "preset.fullAccess": {
+   "en": "Full access",
+   "zh": "完全权限",
+   "it": "Accesso completo"
+  },
+  "confirm.title": {
+   "en": "Enable Full access?",
+   "zh": "确认启用完全权限？",
+   "it": "Attivare l'accesso completo?"
+  },
+  "confirm.description": {
+   "en": "Full access lets new sessions reduce confirmation steps and perform more actions directly, including sensitive operations, file changes, or external commands. Only use it when you trust subsequent tasks.",
+   "zh": "启用完全权限后，新会话将减少确认步骤，并且可以直接执行更多操作，包括敏感操作、文件修改或外部命令。仅建议在你信任后续任务时使用。",
+   "it": "L'accesso completo consente alle nuove sessioni di ridurre i passaggi di conferma ed eseguire più azioni direttamente, incluse operazioni sensibili, modifiche ai file o comandi esterni. Usalo solo se ti fidi delle attività successive."
+  },
+  "confirm.acknowledge": {
+   "en": "I understand the risks and want to continue",
+   "zh": "我已了解风险，并愿意继续",
+   "it": "Comprendo i rischi e voglio continuare"
+  },
+  "confirm.cancel": {
+   "en": "Cancel",
+   "zh": "取消",
+   "it": "Annulla"
+  },
+  "confirm.enable": {
+   "en": "Enable Full access",
+   "zh": "启用完全权限",
+   "it": "Attiva accesso completo"
+  }
+ },
+ "settings": {
+  "trigger": {
+   "en": "Settings",
+   "zh": "设置",
+   "it": "Impostazioni"
+  },
+  "title": {
+   "en": "Settings",
+   "zh": "设置",
+   "it": "Impostazioni"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
+  "openDocument": {
+   "en": "Open configuration file",
+   "zh": "打开配置文件",
+   "it": "Apri file di configurazione"
+  },
+  "openDocument.error": {
+   "en": "Could not open configuration file",
+   "zh": "无法打开配置文件",
+   "it": "Impossibile aprire il file di configurazione"
+  },
+  "general.nav": {
+   "en": "General",
+   "zh": "通用设置",
+   "it": "Generali"
+  },
+  "connection.error": {
+   "en": "Disconnected",
+   "zh": "连接异常",
+   "it": "Disconnesso"
+  },
+  "connection.retry": {
+   "en": "Reconnect now",
+   "zh": "立即重连",
+   "it": "Riconnetti ora"
+  },
+  "connection.connecting": {
+   "en": "Reconnecting",
+   "zh": "自动重连中",
+   "it": "Riconnessione in corso"
+  },
+  "connection.connected": {
+   "en": "Connected",
+   "zh": "连接成功",
+   "it": "Connesso"
+  },
+  "connection.reconnect": {
+   "en": "Disconnected, reconnect now",
+   "zh": "连接异常，点击立即重连",
+   "it": "Disconnesso, riconnetti ora"
+  },
+  "connection.restart": {
+   "en": "Reconnecting automatically, reconnect now",
+   "zh": "连接中断，正在自动重试，点击立即重连",
+   "it": "Riconnessione automatica in corso, riconnetti ora"
+  }
+ },
+ "reference": {
+  "section.files": {
+   "en": "Files & folders",
+   "zh": "文件与文件夹",
+   "it": "File e cartelle"
+  },
+  "section.sessions": {
+   "en": "Sessions",
+   "zh": "对话",
+   "it": "Sessioni"
+  },
+  "candidate.noCwd": {
+   "en": "(no cwd)",
+   "zh": "（无工作目录）",
+   "it": "(nessuna dir. di lavoro)"
+  },
+  "crumb.root": {
+   "en": "Workspace",
+   "zh": "工作区",
+   "it": "Area di lavoro"
+  },
+  "time.now": {
+   "en": "now",
+   "zh": "刚刚",
+   "it": "adesso"
+  },
+  "time.minutes": {
+   "en": "{n}min",
+   "zh": "{n}分钟",
+   "it": "{n}min"
+  },
+  "time.hours": {
+   "en": "{n}h",
+   "zh": "{n}小时",
+   "it": "{n}h"
+  },
+  "time.days": {
+   "en": "{n}d",
+   "zh": "{n}天",
+   "it": "{n}g"
+  },
+  "time.months": {
+   "en": "{n}mo",
+   "zh": "{n}个月",
+   "it": "{n}mes"
+  },
+  "time.years": {
+   "en": "{n}y",
+   "zh": "{n}年",
+   "it": "{n}a"
+  }
+ },
+ "slash.menu": {
+  "command": {
+   "en": "Commands",
+   "zh": "指令",
+   "it": "Comandi"
+  },
+  "skill": {
+   "en": "Skills",
+   "zh": "技能",
+   "it": "Skill"
+  },
+  "subagent": {
+   "en": "Subagents",
+   "zh": "子智能体",
+   "it": "Subagenti"
+  },
+  "loading": {
+   "en": "Loading…",
+   "zh": "正在加载…",
+   "it": "Caricamento…"
+  },
+  "drill.aria": {
+   "en": "Browse folder",
+   "zh": "进入目录",
+   "it": "Sfoglia cartella"
+  },
+  "drill.hint": {
+   "en": "Browse folder",
+   "zh": "进入目录",
+   "it": "Sfoglia cartella"
+  },
+  "drill.key": {
+   "en": "Tab",
+   "zh": "Tab",
+   "it": "Tab"
+  },
+  "crumbs.aria": {
+   "en": "Folder navigation",
+   "zh": "目录导航",
+   "it": "Navigazione cartelle"
+  },
+  "suggestions.aria": {
+   "en": "Trigger suggestions",
+   "zh": "触发候选建议",
+   "it": "Attiva suggerimenti"
+  }
+ },
+ "sidebarPdf": {
+  "title": {
+   "en": "PDF",
+   "zh": "PDF",
+   "it": "PDF"
+  },
+  "pageImage": {
+   "en": "PDF page {page}",
+   "zh": "PDF 第 {page} 页",
+   "it": "Pagina PDF {page}"
+  },
+  "loading": {
+   "en": "Opening PDF…",
+   "zh": "正在打开 PDF…",
+   "it": "Apertura PDF…"
+  },
+  "rendering": {
+   "en": "Rendering page…",
+   "zh": "正在绘制页面…",
+   "it": "Rendering pagina…"
+  },
+  "failed": {
+   "en": "Cannot display PDF: {message}",
+   "zh": "无法显示 PDF：{message}",
+   "it": "Impossibile visualizzare il PDF: {message}"
+  },
+  "password": {
+   "en": "This PDF requires a password; password-protected previews are not supported.",
+   "zh": "此 PDF 需要密码，暂不支持预览。",
+   "it": "Questo PDF richiede una password; le anteprime protette da password non sono supportate."
+  },
+  "workerFailed": {
+   "en": "The PDF rendering process could not continue. Please retry.",
+   "zh": "PDF 渲染进程无法继续，请重试。",
+   "it": "Il processo di rendering del PDF non può continuare. Riprova."
+  },
+  "unsupported": {
+   "en": "PDF preview requires the complete file contents.",
+   "zh": "PDF 预览需要完整文件内容。",
+   "it": "L'anteprima PDF richiede il contenuto completo del file."
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  }
+ },
+ "settings.theme": {
+  "appearance.title": {
+   "en": "Appearance",
+   "zh": "外观",
+   "it": "Aspetto"
+  },
+  "appearance.light": {
+   "en": "Light",
+   "zh": "浅色",
+   "it": "Chiaro"
+  },
+  "appearance.dark": {
+   "en": "Dark",
+   "zh": "深色",
+   "it": "Scuro"
+  },
+  "appearance.system": {
+   "en": "System",
+   "zh": "跟随系统",
+   "it": "Sistema"
+  },
+  "fontSize.title": {
+   "en": "Font size",
+   "zh": "字号大小",
+   "it": "Dimensione carattere"
+  },
+  "fontSize.description": {
+   "en": "Only affects conversation content",
+   "zh": "仅影响会话内容的字号",
+   "it": "Influisce solo sul contenuto della conversazione"
+  },
+  "fontSize.unit": {
+   "en": "px",
+   "zh": "px",
+   "it": "px"
+  },
+  "fontSize.increase": {
+   "en": "Increase font size",
+   "zh": "增大字号",
+   "it": "Aumenta dimensione carattere"
+  },
+  "fontSize.decrease": {
+   "en": "Decrease font size",
+   "zh": "减小字号",
+   "it": "Riduci dimensione carattere"
+  }
+ },
+ "session-log-download": {
+  "header.more": {
+   "en": "More actions",
+   "zh": "更多操作",
+   "it": "Altre azioni"
+  },
+  "menu.download": {
+   "en": "Download session log",
+   "zh": "下载 Session 日志",
+   "it": "Scarica il log della sessione"
+  },
+  "dialog.preparingTitle": {
+   "en": "Exporting Session",
+   "zh": "正在导出 Session",
+   "it": "Esportazione della sessione"
+  },
+  "dialog.preparingDescription": {
+   "en": "Preparing a ZIP containing this Session, its sub-Sessions, and attachments.",
+   "zh": "正在准备包含当前 Session、子 Session 和附件的 ZIP 文件。",
+   "it": "Preparazione di un ZIP contenente questa sessione, le sue sotto-sessioni e gli allegati."
+  },
+  "dialog.successTitle": {
+   "en": "Session download started",
+   "zh": "Session 导出已开始下载",
+   "it": "Download della sessione avviato"
+  },
+  "dialog.successDescription": {
+   "en": "The browser is downloading the Session ZIP.",
+   "zh": "浏览器正在下载 Session ZIP 文件。",
+   "it": "Il browser sta scaricando lo ZIP della sessione."
+  },
+  "dialog.errorTitle": {
+   "en": "Session export failed",
+   "zh": "Session 导出失败",
+   "it": "Esportazione della sessione non riuscita"
+  },
+  "dialog.close": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
+  "dialog.commandFailed": {
+   "en": "Could not start the Session export.",
+   "zh": "无法启动 Session 导出。",
+   "it": "Impossibile avviare l'esportazione della sessione."
+  }
+ },
+ "permission.access": {
+  "preset.readOnly": {
+   "en": "Read Only",
+   "zh": "仅可查看",
+   "it": "Sola lettura"
+  },
+  "preset.workspaceWrite": {
+   "en": "Workspace Write",
+   "zh": "工作区内修改",
+   "it": "Scrittura nell'area di lavoro"
+  },
+  "preset.fullAccess": {
+   "en": "Full access",
+   "zh": "完全权限",
+   "it": "Accesso completo"
+  },
+  "confirm.title": {
+   "en": "Enable Full access?",
+   "zh": "确认启用完全权限？",
+   "it": "Attivare l'accesso completo?"
+  },
+  "confirm.description": {
+   "en": "Full access reduces confirmation steps and lets the agent perform more actions directly, including sensitive operations, file changes, or external commands. Only use it when you trust the current task.",
+   "zh": "启用完全权限后，智能体将减少确认步骤，并且可以直接执行更多操作，包括敏感操作、文件修改或外部命令。仅建议在你信任当前任务时使用。",
+   "it": "L'accesso completo riduce i passi di conferma e consente all'agente di eseguire più azioni direttamente, incluse operazioni sensibili, modifiche ai file o comandi esterni. Usalo solo quando ti fidi del compito corrente."
+  },
+  "confirm.acknowledge": {
+   "en": "I understand the risks and want to continue",
+   "zh": "我已了解风险，并愿意继续",
+   "it": "Ho capito i rischi e voglio continuare"
+  },
+  "confirm.cancel": {
+   "en": "Cancel",
+   "zh": "取消",
+   "it": "Annulla"
+  },
+  "confirm.enable": {
+   "en": "Enable Full access",
+   "zh": "启用完全权限",
+   "it": "Attiva l'accesso completo"
+  }
+ },
+ "skill": {
+  "row.title": {
+   "en": "Skill",
+   "zh": "Skill",
+   "it": "Skill"
+  },
+  "row.running": {
+   "en": "Loading skill",
+   "zh": "正在加载 skill",
+   "it": "Caricamento Skill"
+  },
+  "row.failed": {
+   "en": "Skill load failed",
+   "zh": "skill 加载失败",
+   "it": "Caricamento Skill non riuscito"
+  },
+  "row.stopped": {
+   "en": "Skill load stopped",
+   "zh": "skill 加载已中止",
+   "it": "Caricamento Skill interrotto"
+  },
+  "row.instructions": {
+   "en": "Instructions",
+   "zh": "说明",
+   "it": "Istruzioni"
+  },
+  "row.inspect": {
+   "en": "Inspect",
+   "zh": "查看",
+   "it": "Ispeziona"
+  },
+  "menu.userOnly": {
+   "en": "user-only",
+   "zh": "仅用户",
+   "it": "solo utente"
+  }
+ },
+ "plan": {
+  "chip.label": {
+   "en": "Plan",
+   "zh": "Plan",
+   "it": "Piano"
+  },
+  "chip.on.aria": {
+   "en": "Plan mode on, press to turn off",
+   "zh": "plan mode 已开启，按下关闭",
+   "it": "Modalità piano attiva, premi per disattivarla"
+  },
+  "chip.on.title": {
+   "en": "Plan mode on — click to turn off (/plan off)",
+   "zh": "plan mode 已开启 — 点击关闭（/plan off）",
+   "it": "Modalità piano attiva — fai clic per disattivarla (/plan off)"
+  },
+  "chip.off.aria": {
+   "en": "Plan mode off, press to turn on",
+   "zh": "plan mode 已关闭，按下开启",
+   "it": "Modalità piano disattiva, premi per attivarla"
+  },
+  "chip.off.title": {
+   "en": "Plan mode off — click to turn on (/plan)",
+   "zh": "plan mode 已关闭 — 点击开启（/plan）",
+   "it": "Modalità piano disattiva — fai clic per attivarla (/plan)"
+  },
+  "chip.exitFailed": {
+   "en": "Failed to exit plan mode",
+   "zh": "退出 plan mode 失败",
+   "it": "Uscita dalla modalità piano non riuscita"
+  }
+ },
+ "approval": {
+  "waiting": {
+   "en": "Waiting for approval",
+   "zh": "等待审批",
+   "it": "In attesa di approvazione"
+  },
+  "detail.aria": {
+   "en": "Approval details",
+   "zh": "审批详情",
+   "it": "Dettagli dell'approvazione"
+  },
+  "escalation": {
+   "en": "Tool {toolName} requests privileged execution",
+   "zh": "工具 {toolName} 请求越权执行",
+   "it": "Lo strumento {toolName} richiede un'esecuzione privilegiata"
+  },
+  "reject": {
+   "en": "Reject",
+   "zh": "拒绝",
+   "it": "Rifiuta"
+  },
+  "allowOnce": {
+   "en": "Allow once",
+   "zh": "允许一次",
+   "it": "Consenti una volta"
+  }
+ },
+ "sidebar": {
+  "session.new": {
+   "en": "New Session",
+   "zh": "新会话",
+   "it": "Nuova sessione"
+  },
+  "session.new.label": {
+   "en": "New session",
+   "zh": "新建会话",
+   "it": "Nuova sessione"
+  },
+  "toggle.open": {
+   "en": "Open sidebar",
+   "zh": "打开侧边栏",
+   "it": "Apri barra laterale"
+  },
+  "toggle.collapse": {
+   "en": "Collapse sidebar",
+   "zh": "收起侧边栏",
+   "it": "Comprimi barra laterale"
+  },
+  "panels.label": {
+   "en": "Global panels",
+   "zh": "全局面板",
+   "it": "Pannelli globali"
+  }
+ },
+ "sidebarImage": {
+  "title": {
+   "en": "Image",
+   "zh": "图片",
+   "it": "Immagine"
+  },
+  "preview": {
+   "en": "Image preview: {name}",
+   "zh": "图片预览：{name}",
+   "it": "Anteprima immagine: {name}"
+  },
+  "loading": {
+   "en": "Opening image…",
+   "zh": "正在打开图片…",
+   "it": "Apertura immagine…"
+  },
+  "failed": {
+   "en": "This image could not be displayed.",
+   "zh": "无法显示这张图片。",
+   "it": "Impossibile visualizzare questa immagine."
+  },
+  "unsupported": {
+   "en": "Image preview requires the complete file contents.",
+   "zh": "图片预览需要完整文件内容。",
+   "it": "L'anteprima immagine richiede il contenuto completo del file."
+  }
+ },
+ "documentMarkdown": {
+  "viewer.label": {
+   "en": "Markdown",
+   "zh": "Markdown",
+   "it": "Markdown"
+  },
+  "code.copy": {
+   "en": "Copy",
+   "zh": "复制",
+   "it": "Copia"
+  },
+  "code.copied": {
+   "en": "Copied",
+   "zh": "已复制",
+   "it": "Copiato"
+  },
+  "footnotes": {
+   "en": "Footnotes",
+   "zh": "脚注",
+   "it": "Note a piè di pagina"
+  }
+ },
+ "documentHtml": {
+  "title": {
+   "en": "HTML",
+   "zh": "HTML",
+   "it": "HTML"
+  },
+  "frame": {
+   "en": "HTML document preview",
+   "zh": "HTML 文档预览",
+   "it": "Anteprima documento HTML"
+  },
+  "loading": {
+   "en": "Preparing HTML preview…",
+   "zh": "正在准备 HTML 预览…",
+   "it": "Preparazione anteprima HTML…"
+  },
+  "failed": {
+   "en": "This HTML document could not be previewed.",
+   "zh": "无法预览这份 HTML 文档。",
+   "it": "Impossibile visualizzare l'anteprima di questo documento HTML."
+  }
+ },
+ "sidebarCodePreview": {
+  "title": {
+   "en": "Code",
+   "zh": "代码",
+   "it": "Codice"
+  },
+  "copy": {
+   "en": "Copy",
+   "zh": "复制",
+   "it": "Copia"
+  },
+  "copied": {
+   "en": "Copied",
+   "zh": "已复制",
+   "it": "Copiato"
+  }
+ },
+ "settings.locale": {
+  "language.title": {
+   "en": "Language",
+   "zh": "语言",
+   "it": "Lingua"
+  }
+ }
+}

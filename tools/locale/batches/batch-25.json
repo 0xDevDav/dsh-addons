@@ -1,0 +1,55 @@
+{
+ "batch": "settings",
+ "namespace": "settings",
+ "total": 12,
+ "keys": {
+  "trigger": {
+   "en": "Settings",
+   "zh": "设置"
+  },
+  "title": {
+   "en": "Settings",
+   "zh": "设置"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭"
+  },
+  "openDocument": {
+   "en": "Open configuration file",
+   "zh": "打开配置文件"
+  },
+  "openDocument.error": {
+   "en": "Could not open configuration file",
+   "zh": "无法打开配置文件"
+  },
+  "general.nav": {
+   "en": "General",
+   "zh": "通用设置"
+  },
+  "connection.error": {
+   "en": "Disconnected",
+   "zh": "连接异常"
+  },
+  "connection.retry": {
+   "en": "Reconnect now",
+   "zh": "立即重连"
+  },
+  "connection.connecting": {
+   "en": "Reconnecting",
+   "zh": "自动重连中"
+  },
+  "connection.connected": {
+   "en": "Connected",
+   "zh": "连接成功"
+  },
+  "connection.reconnect": {
+   "en": "Disconnected, reconnect now",
+   "zh": "连接异常，点击立即重连"
+  },
+  "connection.restart": {
+   "en": "Reconnecting automatically, reconnect now",
+   "zh": "连接中断，正在自动重试，点击立即重连"
+  }
+ }
+}

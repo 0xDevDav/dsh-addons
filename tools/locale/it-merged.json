@@ -1,0 +1,6371 @@
+{
+ "common": {
+  "ok": {
+   "en": "OK",
+   "zh": "确定",
+   "it": "OK"
+  },
+  "cancel": {
+   "en": "Cancel",
+   "zh": "取消",
+   "it": "Annulla"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
+  "copy": {
+   "en": "Copy",
+   "zh": "复制",
+   "it": "Copia"
+  },
+  "copied": {
+   "en": "Copied",
+   "zh": "复制成功",
+   "it": "Copiato"
+  },
+  "copy.failed": {
+   "en": "Copy failed",
+   "zh": "复制失败",
+   "it": "Copia non riuscita"
+  },
+  "copy.value": {
+   "en": "Copy value",
+   "zh": "复制值",
+   "it": "Copia valore"
+  },
+  "copy.json": {
+   "en": "Copy JSON",
+   "zh": "复制 JSON",
+   "it": "Copia JSON"
+  },
+  "copy.path": {
+   "en": "Copy property path",
+   "zh": "复制属性路径",
+   "it": "Copia percorso proprietà"
+  },
+  "copy.prettyJson": {
+   "en": "Copy pretty JSON",
+   "zh": "复制格式化 JSON",
+   "it": "Copia JSON formattato"
+  },
+  "copy.compactJson": {
+   "en": "Copy compact JSON",
+   "zh": "复制紧凑 JSON",
+   "it": "Copia JSON compatto"
+  },
+  "copy.optionsHint": {
+   "en": "{action}; right-click for copy options",
+   "zh": "{action}；右键点击可选择复制方式",
+   "it": "{action}; clic destro per le opzioni di copia"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "loading": {
+   "en": "Loading…",
+   "zh": "加载中…",
+   "it": "Caricamento…"
+  },
+  "load.failed": {
+   "en": "Failed to load",
+   "zh": "加载失败",
+   "it": "Caricamento non riuscito"
+  },
+  "submit": {
+   "en": "Submit",
+   "zh": "提交",
+   "it": "Invia"
+  },
+  "submitting": {
+   "en": "Submitting…",
+   "zh": "正在提交…",
+   "it": "Invio…"
+  },
+  "next": {
+   "en": "Next",
+   "zh": "下一步",
+   "it": "Avanti"
+  },
+  "previous": {
+   "en": "Previous",
+   "zh": "上一步",
+   "it": "Precedente"
+  },
+  "skip": {
+   "en": "Skip",
+   "zh": "跳过",
+   "it": "Salta"
+  },
+  "delete": {
+   "en": "Delete",
+   "zh": "删除",
+   "it": "Elimina"
+  },
+  "edit": {
+   "en": "Edit",
+   "zh": "编辑",
+   "it": "Modifica"
+  },
+  "save": {
+   "en": "Save",
+   "zh": "保存",
+   "it": "Salva"
+  },
+  "search": {
+   "en": "Search",
+   "zh": "搜索",
+   "it": "Cerca"
+  },
+  "more": {
+   "en": "More",
+   "zh": "更多",
+   "it": "Altro"
+  },
+  "collapse": {
+   "en": "Collapse",
+   "zh": "收起",
+   "it": "Comprimi"
+  },
+  "expand": {
+   "en": "Expand",
+   "zh": "展开",
+   "it": "Espandi"
+  },
+  "back": {
+   "en": "Back",
+   "zh": "返回",
+   "it": "Indietro"
+  },
+  "brand.localBuild": {
+   "en": "DSH Local Build",
+   "zh": "DSH 本地构建",
+   "it": "DSH Local Build"
+  },
+  "unknown": {
+   "en": "Unknown",
+   "zh": "未知",
+   "it": "Sconosciuto"
+  },
+  "none": {
+   "en": "None",
+   "zh": "无",
+   "it": "Nessuno"
+  },
+  "truncated": {
+   "en": "Truncated",
+   "zh": "已截断",
+   "it": "Troncato"
+  },
+  "json.collapseNode": {
+   "en": "Collapse JSON node",
+   "zh": "收起 JSON 节点",
+   "it": "Comprimi nodo JSON"
+  },
+  "json.expandNode": {
+   "en": "Expand JSON node",
+   "zh": "展开 JSON 节点",
+   "it": "Espandi nodo JSON"
+  },
+  "json.label": {
+   "en": "JSON",
+   "zh": "JSON",
+   "it": "JSON"
+  },
+  "markdown.footnotes": {
+   "en": "Footnotes",
+   "zh": "脚注",
+   "it": "Note a piè di pagina"
+  },
+  "markdown.truncatedCharacters": {
+   "en": "… truncated at {total} characters",
+   "zh": "… 已截断，共 {total} 字符",
+   "it": "… troncato a {total} caratteri"
+  },
+  "number.thousand": {
+   "en": "{value}K",
+   "zh": "{value}K",
+   "it": "{value}K"
+  },
+  "number.million": {
+   "en": "{value}M",
+   "zh": "{value}M",
+   "it": "{value}M"
+  }
+ },
+ "settings.locale": {
+  "language.title": {
+   "en": "Language",
+   "zh": "语言",
+   "it": "Lingua"
+  }
+ },
+ "settings.agentPreset": {
+  "error": {
+   "en": "Could not load agent presets.",
+   "zh": "无法加载 Agent 预设。",
+   "it": "Impossibile caricare i preset degli agenti."
+  },
+  "userTrust": {
+   "en": "Custom",
+   "zh": "自定义",
+   "it": "Personalizzato"
+  },
+  "seatHint": {
+   "en": "Agent preset for the session you are about to start",
+   "zh": "即将开始的这个会话所用的 Agent 预设",
+   "it": "Preset dell'agente per la sessione che stai per avviare"
+  },
+  "headerHint": {
+   "en": "The agent preset this session runs, fixed when it started",
+   "zh": "本会话运行的 Agent 预设，开始时即固定",
+   "it": "Il preset dell'agente con cui gira questa sessione, fissato all'avvio"
+  },
+  "nav": {
+   "en": "Agent presets",
+   "zh": "Agent 预设",
+   "it": "Preset degli agenti"
+  },
+  "sectionIntro": {
+   "en": "A preset is the plugin composition one session's agent runs — its tools, prompt, and capabilities. Duplicate an existing one and make it yours, or let the agent draft one for you in Creator mode.",
+   "zh": "预设即一个会话的 Agent 所运行的插件组装 —— 它的工具、提示词与能力。复制一份既有预设改成自己的，或用「创造模式」让 Agent 帮你创建。",
+   "it": "Un preset è la composizione di Plugin con cui gira l'agente di una sessione: i suoi strumenti, il suo prompt e le sue capacità. Duplicane uno esistente e personalizzalo, oppure lascia che l'agente ne abbozzi uno per te in modalità Creator."
+  },
+  "builtIn": {
+   "en": "Built-in",
+   "zh": "内置",
+   "it": "Integrato"
+  },
+  "setDefault": {
+   "en": "Set as default",
+   "zh": "设为默认",
+   "it": "Imposta come predefinito"
+  },
+  "view": {
+   "en": "View",
+   "zh": "查看",
+   "it": "Visualizza"
+  },
+  "presetStandardName": {
+   "en": "Standard mode",
+   "zh": "标准模式",
+   "it": "Modalità standard"
+  },
+  "presetStandardDescription": {
+   "en": "Full coding agent with file editing, shell, file and web search, skills, planning, goals, subagents, and workflows.",
+   "zh": "功能完整的编码 Agent，支持文件编辑、Shell、文件与网页检索、Skills、计划、目标、子代理和工作流。",
+   "it": "Agente di codifica completo con modifica dei file, shell, ricerca su file e web, Skill, pianificazione, obiettivi, subagenti e Workflow."
+  },
+  "presetPtcName": {
+   "en": "PTC mode",
+   "zh": "PTC 模式",
+   "it": "Modalità PTC"
+  },
+  "presetPtcDescription": {
+   "en": "Full coding agent without the workflow tool; other tools are exposed through the PTC mode SDK so the model can combine multi-step operations in one TypeScript program.",
+   "zh": "功能完整的编码 Agent，但默认不提供 workflow 工具；其他工具通过 PTC 模式 SDK 呈现，让模型用一个 TypeScript 程序组合多步操作。",
+   "it": "Agente di codifica completo senza lo strumento workflow; gli altri strumenti sono esposti tramite l'SDK della modalità PTC, così il modello può combinare operazioni multi-passo in un unico programma TypeScript."
+  },
+  "presetMinimalName": {
+   "en": "Minimal mode",
+   "zh": "极简模式",
+   "it": "Modalità minimale"
+  },
+  "presetMinimalDescription": {
+   "en": "Single-tool coding agent with a persistent shell.",
+   "zh": "仅提供持久 shell 的单工具编码 Agent。",
+   "it": "Agente di codifica con un solo strumento e una shell persistente."
+  },
+  "presetCordisName": {
+   "en": "Creator mode",
+   "zh": "创造模式",
+   "it": "Modalità Creator"
+  },
+  "presetCordisDescription": {
+   "en": "Built for creating custom agent presets, with all Standard mode capabilities plus runtime inspection, plugin experiments, and preset-authoring guidance.",
+   "zh": "用于创建自定义 Agent preset：具备标准模式的全部能力，并提供运行时检查、插件实验和 preset 创作指导。",
+   "it": "Pensata per creare preset di agenti personalizzati: offre tutte le capacità della modalità standard più l'ispezione a runtime, gli esperimenti con i Plugin e le linee guida per la creazione dei preset."
+  },
+  "duplicate": {
+   "en": "Duplicate",
+   "zh": "复制",
+   "it": "Duplica"
+  },
+  "duplicateUnavailable": {
+   "en": "This deployment has no writable preset directory",
+   "zh": "此部署未配置可写的预设目录",
+   "it": "Questa installazione non ha una cartella dei preset scrivibile"
+  },
+  "delete": {
+   "en": "Delete",
+   "zh": "删除",
+   "it": "Elimina"
+  },
+  "presetId": {
+   "en": "Identifier",
+   "zh": "标识符",
+   "it": "Identificatore"
+  },
+  "presetIdPlaceholder": {
+   "en": "my-agent",
+   "zh": "my-agent",
+   "it": "my-agent"
+  },
+  "displayName": {
+   "en": "Name",
+   "zh": "名称",
+   "it": "Nome"
+  },
+  "displayNamePlaceholder": {
+   "en": "Shown in the picker; defaults to the identifier",
+   "zh": "选择器中显示的名字，缺省用标识符",
+   "it": "Mostrato nel selettore; predefinito all'identificatore"
+  },
+  "inUse": {
+   "en": "In use",
+   "zh": "当前使用",
+   "it": "In uso"
+  },
+  "builtInGroup": {
+   "en": "Built-in",
+   "zh": "内置",
+   "it": "Integrati"
+  },
+  "customGroup": {
+   "en": "Custom",
+   "zh": "自定义",
+   "it": "Personalizzati"
+  },
+  "noDescription": {
+   "en": "No description.",
+   "zh": "暂无描述。",
+   "it": "Nessuna descrizione."
+  },
+  "brokenBadge": {
+   "en": "Failed to load",
+   "zh": "加载失败",
+   "it": "Caricamento non riuscito"
+  },
+  "brokenNoCopy": {
+   "en": "A preset that failed to load cannot be duplicated",
+   "zh": "预设加载失败，不能复制",
+   "it": "Un preset il cui caricamento non è riuscito non può essere duplicato"
+  },
+  "switchRefused": {
+   "en": "Could not switch to {name}: {reason}",
+   "zh": "无法切换到「{name}」：{reason}",
+   "it": "Impossibile passare a {name}: {reason}"
+  },
+  "copyOf": {
+   "en": "Copied from",
+   "zh": "复制自",
+   "it": "Copiato da"
+  },
+  "composition": {
+   "en": "Composition (agent.cordis.yml)",
+   "zh": "组装（agent.cordis.yml）",
+   "it": "Composizione (agent.cordis.yml)"
+  },
+  "cancel": {
+   "en": "Cancel",
+   "zh": "取消",
+   "it": "Annulla"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "copyTitle": {
+   "en": "Duplicate preset",
+   "zh": "复制预设",
+   "it": "Duplica preset"
+  },
+  "copyIntro": {
+   "en": "The whole preset is copied on this machine. The identifier becomes its directory name and cannot be changed later; everything else is edited in the preset's own files.",
+   "zh": "整个预设会在本机复制一份。标识符将成为目录名，事后无法更改；其余内容之后直接在预设自己的文件里编辑。",
+   "it": "L'intero preset viene copiato su questa macchina. L'identificatore diventa il nome della cartella e non potrà più essere cambiato; tutto il resto si modifica nei file del preset stesso."
+  },
+  "create": {
+   "en": "Create",
+   "zh": "创建",
+   "it": "Crea"
+  },
+  "creating": {
+   "en": "Creating…",
+   "zh": "正在创建…",
+   "it": "Creazione…"
+  },
+  "creatorDraft": {
+   "en": "Draft a custom preset with Creator mode",
+   "zh": "用「创造模式」创作自定义预设",
+   "it": "Abbozza un preset personalizzato con la modalità Creator"
+  },
+  "openLocation": {
+   "en": "Open folder",
+   "zh": "打开目录",
+   "it": "Apri cartella"
+  },
+  "showLocation": {
+   "en": "Show location",
+   "zh": "查看路径",
+   "it": "Mostra percorso"
+  },
+  "revealedPathLabel": {
+   "en": "Preset files:",
+   "zh": "预设文件：",
+   "it": "File del preset:"
+  },
+  "idRequired": {
+   "en": "Give the preset an identifier.",
+   "zh": "请填写标识符。",
+   "it": "Assegna un identificatore al preset."
+  },
+  "idInvalid": {
+   "en": "Use lowercase letters, digits, and hyphens, starting with a letter or digit.",
+   "zh": "只能使用小写字母、数字与连字符，且以字母或数字开头。",
+   "it": "Usa lettere minuscole, cifre e trattini, iniziando con una lettera o una cifra."
+  },
+  "idTaken": {
+   "en": "A preset with this identifier already exists.",
+   "zh": "该标识符已被占用。",
+   "it": "Esiste già un preset con questo identificatore."
+  },
+  "deleteTitle": {
+   "en": "Delete this preset?",
+   "zh": "删除该预设？",
+   "it": "Eliminare questo preset?"
+  },
+  "deleteDescription": {
+   "en": "The preset directory is deleted. Sessions already running on it keep working; new sessions cannot select it.",
+   "zh": "预设目录将被删除。已在其上运行的会话不受影响；新会话将无法再选择它。",
+   "it": "La cartella del preset viene eliminata. Le sessioni già in esecuzione su di esso continuano a funzionare; le nuove sessioni non potranno più selezionarlo."
+  },
+  "deleteConfirm": {
+   "en": "Delete",
+   "zh": "删除",
+   "it": "Elimina"
+  },
+  "deleting": {
+   "en": "Deleting…",
+   "zh": "正在删除…",
+   "it": "Eliminazione…"
+  }
+ },
+ "approval": {
+  "waiting": {
+   "en": "Waiting for approval",
+   "zh": "等待审批",
+   "it": "In attesa di approvazione"
+  },
+  "detail.aria": {
+   "en": "Approval details",
+   "zh": "审批详情",
+   "it": "Dettagli dell'approvazione"
+  },
+  "escalation": {
+   "en": "Tool {toolName} requests privileged execution",
+   "zh": "工具 {toolName} 请求越权执行",
+   "it": "Lo strumento {toolName} richiede un'esecuzione privilegiata"
+  },
+  "reject": {
+   "en": "Reject",
+   "zh": "拒绝",
+   "it": "Rifiuta"
+  },
+  "allowOnce": {
+   "en": "Allow once",
+   "zh": "允许一次",
+   "it": "Consenti una volta"
+  }
+ },
+ "chat": {
+  "view.chat": {
+   "en": "Chat",
+   "zh": "对话",
+   "it": "Chat"
+  },
+  "number.groupSeparator": {
+   "en": ",",
+   "zh": ",",
+   "it": ","
+  },
+  "duration.compactSeconds": {
+   "en": "{seconds}s",
+   "zh": "{seconds}秒",
+   "it": "{seconds}s"
+  },
+  "duration.compactMinutes": {
+   "en": "{minutes}m{seconds}s",
+   "zh": "{minutes}分{seconds}秒",
+   "it": "{minutes}m{seconds}s"
+  },
+  "duration.milliseconds": {
+   "en": "{milliseconds}ms",
+   "zh": "{milliseconds}毫秒",
+   "it": "{milliseconds}ms"
+  },
+  "stats.counts": {
+   "en": "{turns} turns {steps} steps",
+   "zh": "{turns} 轮 {steps} 步",
+   "it": "{turns} turni {steps} passi"
+  },
+  "stats.cacheHit": {
+   "en": "Cache hit {percent}%",
+   "zh": "缓存命中 {percent}%",
+   "it": "Cache hit {percent}%"
+  },
+  "stats.dialog.title": {
+   "en": "Session statistics",
+   "zh": "会话统计",
+   "it": "Statistiche della sessione"
+  },
+  "stats.dialog.usageTitle": {
+   "en": "Token usage",
+   "zh": "Token 用量",
+   "it": "Utilizzo dei token"
+  },
+  "stats.dialog.llmTime": {
+   "en": "LLM time",
+   "zh": "模型用时",
+   "it": "Tempo LLM"
+  },
+  "stats.dialog.toolTime": {
+   "en": "Tool time",
+   "zh": "工具调用用时",
+   "it": "Tempo strumenti"
+  },
+  "stats.dialog.ttft": {
+   "en": "Avg time to first token (TTFT)",
+   "zh": "首 token 平均（TTFT）",
+   "it": "Tempo medio al primo token (TTFT)"
+  },
+  "stats.dialog.speed": {
+   "en": "Tokens per second (TPS)",
+   "zh": "输出速度（TPS）",
+   "it": "Token al secondo (TPS)"
+  },
+  "chat.loadingHistory": {
+   "en": "Loading history…",
+   "zh": "载入历史…",
+   "it": "Caricamento cronologia…"
+  },
+  "chat.loadError": {
+   "en": "Failed to load history: {message} ({code})",
+   "zh": "历史加载失败：{message}（{code}）",
+   "it": "Caricamento cronologia non riuscito: {message} ({code})"
+  },
+  "chat.loadOlder": {
+   "en": "Load earlier",
+   "zh": "加载更早",
+   "it": "Carica precedenti"
+  },
+  "chat.toBottom": {
+   "en": "Back to bottom",
+   "zh": "回到底部",
+   "it": "Torna in fondo"
+  },
+  "chat.deepDiving": {
+   "en": "Deep diving...",
+   "zh": "深度求索中...",
+   "it": "Deep diving..."
+  },
+  "chat.turnNavigation.label": {
+   "en": "Turn navigation",
+   "zh": "轮次导航",
+   "it": "Navigazione turni"
+  },
+  "chat.turnNavigation.jump": {
+   "en": "Jump to turn {turn}",
+   "zh": "跳转到第 {turn} 轮",
+   "it": "Vai al turno {turn}"
+  },
+  "chat.turnNavigation.jumpLoad": {
+   "en": "Load and jump to turn {turn}",
+   "zh": "加载并跳转到第 {turn} 轮",
+   "it": "Carica e vai al turno {turn}"
+  },
+  "chat.turnNavigation.turn": {
+   "en": "Turn {turn}",
+   "zh": "第 {turn} 轮",
+   "it": "Turno {turn}"
+  },
+  "settings.transcript.title": {
+   "en": "Conversation display",
+   "zh": "对话显示",
+   "it": "Visualizzazione conversazione"
+  },
+  "settings.transcript.description": {
+   "en": "Controls process content in completed turns",
+   "zh": "控制已完成轮次的过程内容",
+   "it": "Controlla il contenuto di processo nei turni completati"
+  },
+  "settings.transcript.normal": {
+   "en": "Normal",
+   "zh": "标准",
+   "it": "Normale"
+  },
+  "settings.transcript.compact": {
+   "en": "Compact",
+   "zh": "紧凑",
+   "it": "Compatto"
+  },
+  "fileOpen.title": {
+   "en": "Couldn’t open file",
+   "zh": "无法打开文件",
+   "it": "Impossibile aprire il file"
+  },
+  "fileOpen.unknown": {
+   "en": "Couldn’t open this file",
+   "zh": "无法打开此文件",
+   "it": "Impossibile aprire questo file"
+  },
+  "message.extraBlock": {
+   "en": "Extra content block",
+   "zh": "附加内容块",
+   "it": "Blocco di contenuto aggiuntivo"
+  },
+  "message.systemPrompt": {
+   "en": "System prompt",
+   "zh": "系统提示词",
+   "it": "Prompt di sistema"
+  },
+  "message.systemPromptUpdate": {
+   "en": "System prompt update",
+   "zh": "系统提示词更新",
+   "it": "Aggiornamento del prompt di sistema"
+  },
+  "message.contextInjection": {
+   "en": "Context injection",
+   "zh": "上下文注入",
+   "it": "Iniezione di contesto"
+  },
+  "message.contextRecall": {
+   "en": "Session recall",
+   "zh": "跨会话召回",
+   "it": "Richiamo della sessione"
+  },
+  "message.referenceSummary": {
+   "en": "Referenced session · {labels}",
+   "zh": "引用会话 · {labels}",
+   "it": "Sessione di riferimento · {labels}"
+  },
+  "message.referenceSeparator": {
+   "en": ", ",
+   "zh": "、",
+   "it": ", "
+  },
+  "message.context.instructions.loaded": {
+   "en": "loaded",
+   "zh": "已载入",
+   "it": "caricato"
+  },
+  "message.context.instructions.added": {
+   "en": "added",
+   "zh": "已新增",
+   "it": "aggiunto"
+  },
+  "message.context.instructions.updated": {
+   "en": "updated",
+   "zh": "已更新",
+   "it": "aggiornato"
+  },
+  "message.context.instructions.removed": {
+   "en": "removed",
+   "zh": "已移除",
+   "it": "rimosso"
+  },
+  "message.context.catalog.replaced": {
+   "en": "Replacement catalog",
+   "zh": "替换目录",
+   "it": "Catalogo sostitutivo"
+  },
+  "message.context.catalog.more": {
+   "en": "… {count} more",
+   "zh": "…还有 {count} 条",
+   "it": "… altri {count}"
+  },
+  "message.context.snapshot.supersedes": {
+   "en": "Supersedes earlier snapshots",
+   "zh": "取代先前的快照",
+   "it": "Sostituisce le istantanee precedenti"
+  },
+  "message.context.relay.from": {
+   "en": "From session {session}",
+   "zh": "来自会话 {session}",
+   "it": "Dalla sessione {session}"
+  },
+  "message.context.recall.counts": {
+   "en": "{retained} kept · {omitted} omitted",
+   "zh": "保留 {retained} 条 · 省略 {omitted} 条",
+   "it": "{retained} mantenuti · {omitted} omessi"
+  },
+  "message.context.recall.truncated": {
+   "en": "truncated",
+   "zh": "已截断",
+   "it": "troncato"
+  },
+  "message.compaction": {
+   "en": "Context compacted",
+   "zh": "上下文已压缩",
+   "it": "Contesto compattato"
+  },
+  "message.compaction.running": {
+   "en": "Compacting context…",
+   "zh": "正在压缩…",
+   "it": "Compattazione del contesto…"
+  },
+  "message.compaction.completed": {
+   "en": "Compacted {items} history items (~{tokens} tokens)",
+   "zh": "已压缩 {items} 条历史记录（约 {tokens} tokens）",
+   "it": "Compattati {items} elementi della cronologia (~{tokens} token)"
+  },
+  "message.compaction.expand": {
+   "en": "View compaction summary",
+   "zh": "点击查看压缩摘要",
+   "it": "Vedi riepilogo della compattazione"
+  },
+  "message.compaction.unavailable": {
+   "en": "Compaction summary unavailable",
+   "zh": "压缩摘要不可用",
+   "it": "Riepilogo della compattazione non disponibile"
+  },
+  "message.compaction.commandTitle": {
+   "en": "compact",
+   "zh": "compact",
+   "it": "compact"
+  },
+  "message.think": {
+   "en": "Think",
+   "zh": "思考",
+   "it": "Ragiona"
+  },
+  "message.unknownSurface": {
+   "en": "Unknown surface event: {type}",
+   "zh": "未知 surface 事件：{type}",
+   "it": "Evento surface sconosciuto: {type}"
+  },
+  "message.unknownBlock": {
+   "en": "Unknown content block",
+   "zh": "未知内容块",
+   "it": "Blocco di contenuto sconosciuto"
+  },
+  "message.turnProcess.toolCalls.one": {
+   "en": "{count} tool call",
+   "zh": "{count} 次工具调用",
+   "it": "{count} chiamata a strumento"
+  },
+  "message.turnProcess.toolCalls.other": {
+   "en": "{count} tool calls",
+   "zh": "{count} 次工具调用",
+   "it": "{count} chiamate a strumento"
+  },
+  "message.turnProcess.messages.one": {
+   "en": "{count} message",
+   "zh": "{count} 条消息",
+   "it": "{count} messaggio"
+  },
+  "message.turnProcess.messages.other": {
+   "en": "{count} messages",
+   "zh": "{count} 条消息",
+   "it": "{count} messaggi"
+  },
+  "message.turnProcess.subagents.one": {
+   "en": "{count} subagent",
+   "zh": "{count} 个 subagent",
+   "it": "{count} subagente"
+  },
+  "message.turnProcess.subagents.other": {
+   "en": "{count} subagents",
+   "zh": "{count} 个 subagent",
+   "it": "{count} subagenti"
+  },
+  "message.turnProcess.thoughtForAWhile": {
+   "en": "Thought for a while",
+   "zh": "已思考",
+   "it": "Ha riflettuto per un po'"
+  },
+  "message.turnProcess.separator": {
+   "en": " · ",
+   "zh": " · ",
+   "it": " · "
+  },
+  "message.stopped": {
+   "en": "Stopped",
+   "zh": "已停止",
+   "it": "Interrotto"
+  },
+  "message.branch": {
+   "en": "Branch into a new conversation",
+   "zh": "在新对话中分支",
+   "it": "Dirama in una nuova conversazione"
+  },
+  "message.branchUnavailable": {
+   "en": "Available only on the last message of a completed turn",
+   "zh": "仅可从已完成轮次的最后一条消息分支",
+   "it": "Disponibile solo sull'ultimo messaggio di un turno completato"
+  },
+  "message.retry.active": {
+   "en": "Retrying model request",
+   "zh": "正在重试模型请求",
+   "it": "Nuovo tentativo della richiesta al modello"
+  },
+  "message.retry.cancelled": {
+   "en": "Model request retry cancelled",
+   "zh": "模型请求重试已取消",
+   "it": "Nuovo tentativo della richiesta al modello annullato"
+  },
+  "message.retry.started": {
+   "en": "Retried model request",
+   "zh": "已重试模型请求",
+   "it": "Nuovo tentativo della richiesta al modello eseguito"
+  },
+  "message.retry.scheduled": {
+   "en": "Waiting to retry model request",
+   "zh": "等待重试模型请求",
+   "it": "In attesa di riprovare la richiesta al modello"
+  },
+  "message.retry.status": {
+   "en": "{label} ({retry}/{maximum}) · {seconds}s",
+   "zh": "{label}（{retry}/{maximum}） · {seconds}s",
+   "it": "{label} ({retry}/{maximum}) · {seconds}s"
+  },
+  "message.retry.delay": {
+   "en": "Retry delay: ",
+   "zh": "重试延迟：",
+   "it": "Ritardo nuovo tentativo: "
+  },
+  "message.retry.failure": {
+   "en": "Failure reason: ",
+   "zh": "失败原因：",
+   "it": "Motivo dell'errore: "
+  },
+  "message.failure.auth": {
+   "en": "API key is invalid",
+   "zh": "API 密钥无效",
+   "it": "La chiave API non è valida"
+  },
+  "message.turnError": {
+   "en": "This turn failed",
+   "zh": "本轮运行失败",
+   "it": "Questo turno non è riuscito"
+  },
+  "message.maxTokens": {
+   "en": "Output token limit reached",
+   "zh": "已达到输出 token 上限",
+   "it": "Limite di token di output raggiunto"
+  },
+  "message.maxTokens.hint": {
+   "en": "The reply was cut off; earlier output is preserved in the conversation. Send \"continue\" to let the model resume.",
+   "zh": "回答被截断，已有输出保留在对话中。发送“继续”可让模型接着输出。",
+   "it": "La risposta è stata interrotta; l'output precedente è conservato nella conversazione. Invia \"continue\" per far riprendere il modello."
+  },
+  "message.ranFor": {
+   "en": "Ran for {duration}",
+   "zh": "用时 {duration}",
+   "it": "Durata {duration}"
+  },
+  "message.tokensPerSecond": {
+   "en": "{tps} tok/s",
+   "zh": "{tps} tok/s",
+   "it": "{tps} tok/s"
+  },
+  "message.turnUsage.title": {
+   "en": "Turn usage",
+   "zh": "本轮用量",
+   "it": "Utilizzo del turno"
+  },
+  "message.turnUsage.consumed": {
+   "en": "Usage {total}",
+   "zh": "用量 {total}",
+   "it": "Utilizzo {total}"
+  },
+  "message.turnUsage.model": {
+   "en": "Provider / model",
+   "zh": "提供方 / 模型",
+   "it": "Fornitore / modello"
+  },
+  "message.turnUsage.cacheHit": {
+   "en": "Cache hit",
+   "zh": "缓存命中",
+   "it": "Cache hit"
+  },
+  "message.turnUsage.input": {
+   "en": "Uncached input",
+   "zh": "未缓存输入",
+   "it": "Input non in cache"
+  },
+  "message.turnUsage.cacheRead": {
+   "en": "Cached input",
+   "zh": "缓存读取",
+   "it": "Input in cache"
+  },
+  "message.turnUsage.cacheWrite": {
+   "en": "Cache write",
+   "zh": "缓存写入",
+   "it": "Scrittura in cache"
+  },
+  "message.turnUsage.output": {
+   "en": "Output",
+   "zh": "输出",
+   "it": "Output"
+  },
+  "message.turnUsage.reasoning": {
+   "en": " ({tokens} reasoning)",
+   "zh": "（其中推理 {tokens}）",
+   "it": " ({tokens} ragionamento)"
+  },
+  "message.turnUsage.count": {
+   "en": "{count} tok",
+   "zh": "{count} tok",
+   "it": "{count} tok"
+  },
+  "message.turnTime.title": {
+   "en": "Turn time and speed",
+   "zh": "本轮用时和速度",
+   "it": "Tempo e velocità del turno"
+  },
+  "message.turnTime.duration": {
+   "en": "Total run time",
+   "zh": "本轮总用时",
+   "it": "Tempo di esecuzione totale"
+  },
+  "message.turnTime.speed": {
+   "en": "Tokens per second (TPS)",
+   "zh": "输出速度（TPS）",
+   "it": "Token al secondo (TPS)"
+  },
+  "message.turnTime.ttft": {
+   "en": "Time to first token (TTFT)",
+   "zh": "首 token 用时（TTFT）",
+   "it": "Tempo al primo token (TTFT)"
+  },
+  "duration.seconds": {
+   "en": "{seconds}s",
+   "zh": "{seconds}秒",
+   "it": "{seconds}s"
+  },
+  "duration.minutes": {
+   "en": "{minutes}m {seconds}s",
+   "zh": "{minutes}分{seconds}秒",
+   "it": "{minutes}m {seconds}s"
+  },
+  "command.running": {
+   "en": "Running…",
+   "zh": "执行中…",
+   "it": "In esecuzione…"
+  },
+  "command.failed": {
+   "en": "Command failed",
+   "zh": "指令失败",
+   "it": "Comando non riuscito"
+  },
+  "command.done": {
+   "en": "Completed",
+   "zh": "已完成",
+   "it": "Completato"
+  },
+  "command.title": {
+   "en": "Command",
+   "zh": "指令",
+   "it": "Comando"
+  },
+  "row.running": {
+   "en": "Running",
+   "zh": "运行中",
+   "it": "In esecuzione"
+  },
+  "row.failed": {
+   "en": "Failed",
+   "zh": "失败",
+   "it": "Non riuscito"
+  },
+  "json.truncated": {
+   "en": "… truncated, {total} characters total",
+   "zh": "… 已截断，共 {total} 字符",
+   "it": "… troncato, {total} caratteri in totale"
+  },
+  "clock.md": {
+   "en": "{m}/{d}",
+   "zh": "{m}月{d}日",
+   "it": "{m}/{d}"
+  },
+  "clock.ymd": {
+   "en": "{y}-{m}-{d}",
+   "zh": "{y}年{m}月{d}日",
+   "it": "{y}-{m}-{d}"
+  }
+ },
+ "command": {
+  "description.compact": {
+   "en": "Compact older conversation history",
+   "zh": "压缩以上对话内容",
+   "it": "Compatta la cronologia della conversazione precedente"
+  },
+  "description.export": {
+   "en": "Download this Session log as a ZIP archive",
+   "zh": "将当前会话内容导出为 ZIP",
+   "it": "Scarica il log di questa sessione come archivio ZIP"
+  },
+  "description.feedback": {
+   "en": "record feedback about this session",
+   "zh": "发送关于当前会话的反馈",
+   "it": "registra un feedback su questa sessione"
+  },
+  "description.goal": {
+   "en": "set or view the goal for a long-running task",
+   "zh": "设置或查看长期任务目标",
+   "it": "imposta o visualizza l'obiettivo di un'attività di lunga durata"
+  },
+  "description.permission": {
+   "en": "Switch the permission preset (sandbox mode + approval policy)",
+   "zh": "切换权限预设（沙箱模式与审批策略）",
+   "it": "Cambia il preset di autorizzazione (modalità Sandbox + politica di approvazione)"
+  },
+  "description.plan": {
+   "en": "Enter or leave plan mode",
+   "zh": "进入或退出计划模式",
+   "it": "Entra o esci dalla modalità piano"
+  },
+  "search.placeholder": {
+   "en": "Search…",
+   "zh": "搜索…",
+   "it": "Cerca…"
+  },
+  "search.aria": {
+   "en": "Filter options",
+   "zh": "筛选选项",
+   "it": "Filtra le opzioni"
+  },
+  "status.loading": {
+   "en": "Loading options…",
+   "zh": "正在加载选项…",
+   "it": "Caricamento opzioni…"
+  },
+  "status.applying": {
+   "en": "Applying…",
+   "zh": "正在应用…",
+   "it": "Applicazione…"
+  },
+  "status.empty": {
+   "en": "No options",
+   "zh": "无选项",
+   "it": "Nessuna opzione"
+  },
+  "overlay.aria": {
+   "en": "/{command} options",
+   "zh": "/{command} 选项",
+   "it": "Opzioni di /{command}"
+  },
+  "listbox.aria": {
+   "en": "/{command} matches",
+   "zh": "/{command} 匹配项",
+   "it": "Corrispondenze di /{command}"
+  },
+  "notice.attachmentsUnsupported": {
+   "en": "/{command} does not accept attachments; remove them first",
+   "zh": "/{command} 不接受附件，请先移除附件",
+   "it": "/{command} non accetta allegati; rimuovili prima"
+  }
+ },
+ "conversation": {
+  "hint.plan": {
+   "en": "describe your task to generate plan",
+   "zh": "描述你的任务以生成计划",
+   "it": "descrivi l'attività per generare il piano"
+  },
+  "hint.goal": {
+   "en": "describe the objective for a long-running task",
+   "zh": "输入目标，智能体将持续执行",
+   "it": "descrivi l'obiettivo per un'attività di lunga durata"
+  },
+  "hint.goal.active": {
+   "en": "goal active — edit / pause / resume / clear",
+   "zh": "当前目标进行中。可输入 edit 修改 / pause 暂停 / resume 继续 / clear 清除",
+   "it": "obiettivo attivo — edit / pause / resume / clear"
+  },
+  "placeholder.plan": {
+   "en": "describe your task to generate plan",
+   "zh": "描述你的任务以生成计划",
+   "it": "descrivi l'attività per generare il piano"
+  },
+  "placeholder.default": {
+   "en": "Message or run a task, / commands, @ files or sessions",
+   "zh": "发消息或创建任务, / 调用指令, @ 文件或对话",
+   "it": "Invia un messaggio o avvia un'attività, / comandi, @ file o sessioni"
+  },
+  "placeholder.unavailable": {
+   "en": "Session unavailable",
+   "zh": "会话不可用",
+   "it": "Sessione non disponibile"
+  },
+  "placeholder.parentOffline": {
+   "en": "Parent session offline; sending is unavailable but you can still stop the run",
+   "zh": "父会话已离线，无法继续发送；仍可停止当前运行",
+   "it": "Sessione principale offline; invio non disponibile ma puoi comunque interrompere l'esecuzione"
+  },
+  "placeholder.hero": {
+   "en": "Describe what you want to build, / commands, @ files or sessions",
+   "zh": "描述你想要构建的内容, / 调用指令, @ 文件或对话",
+   "it": "Descrivi cosa vuoi creare, / comandi, @ file o sessioni"
+  },
+  "placeholder.workspace": {
+   "en": "Choose a workspace to start",
+   "zh": "选择一个工作区开始",
+   "it": "Scegli un'area di lavoro per iniziare"
+  },
+  "placeholder.steerQueue": {
+   "en": "Cmd/Ctrl+Enter steers all queued messages",
+   "zh": "Cmd/Ctrl+Enter 插话发送全部排队消息",
+   "it": "Cmd/Ctrl+Enter guida tutti i messaggi in coda"
+  },
+  "input.commands": {
+   "en": "Commands",
+   "zh": "指令",
+   "it": "Comandi"
+  },
+  "input.stop": {
+   "en": "Stop generating",
+   "zh": "停止生成",
+   "it": "Interrompi generazione"
+  },
+  "input.send": {
+   "en": "Send message",
+   "zh": "发送消息",
+   "it": "Invia messaggio"
+  },
+  "input.send.queue": {
+   "en": "Queue message",
+   "zh": "排队发送",
+   "it": "Accoda messaggio"
+  },
+  "input.send.steer": {
+   "en": "Steer message",
+   "zh": "插话发送",
+   "it": "Guida messaggio"
+  },
+  "input.accessMode": {
+   "en": "Access mode, current: {name}",
+   "zh": "访问模式，当前：{name}",
+   "it": "Modalità di accesso, attuale: {name}"
+  },
+  "attachment.pending": {
+   "en": "Pending attachments",
+   "zh": "待发送附件",
+   "it": "Allegati in attesa"
+  },
+  "attachment.scrollLeft": {
+   "en": "Scroll attachments left",
+   "zh": "向左滚动附件",
+   "it": "Scorri gli allegati a sinistra"
+  },
+  "attachment.scrollRight": {
+   "en": "Scroll attachments right",
+   "zh": "向右滚动附件",
+   "it": "Scorri gli allegati a destra"
+  },
+  "attachment.dropTitle": {
+   "en": "Drag files or images here to add them",
+   "zh": "文件或图片拖动到此处即可添加",
+   "it": "Trascina qui file o immagini per aggiungerli"
+  },
+  "attachment.dropDesc": {
+   "en": "Image limit: up to {count} images, {size} each",
+   "zh": "图片限制：最多 {count} 张，每张 {size}",
+   "it": "Limite immagini: fino a {count} immagini, {size} ciascuna"
+  },
+  "attachment.dropBlocked": {
+   "en": "Files and images cannot be added right now",
+   "zh": "当前无法添加文件或图片",
+   "it": "Al momento non è possibile aggiungere file o immagini"
+  },
+  "image.pending": {
+   "en": "Pending images",
+   "zh": "待发送图片",
+   "it": "Immagini in attesa"
+  },
+  "image.openOriginal": {
+   "en": "View original",
+   "zh": "查看原图",
+   "it": "Vedi originale"
+  },
+  "image.openOriginalLabel": {
+   "en": "{label}, click to view original",
+   "zh": "{label}，点击查看原图",
+   "it": "{label}, fai clic per vedere l'originale"
+  },
+  "image.remove": {
+   "en": "Remove image {name}",
+   "zh": "移除图片 {name}",
+   "it": "Rimuovi immagine {name}"
+  },
+  "image.original": {
+   "en": "Original image",
+   "zh": "原图",
+   "it": "Immagine originale"
+  },
+  "image.label": {
+   "en": "Image",
+   "zh": "图片",
+   "it": "Immagine"
+  },
+  "image.loadFailed": {
+   "en": "Image failed to load; click to retry",
+   "zh": "图片加载失败，点击重试",
+   "it": "Caricamento immagine non riuscito; fai clic per riprovare"
+  },
+  "image.loading": {
+   "en": "Loading image…",
+   "zh": "图片加载中…",
+   "it": "Caricamento immagine…"
+  },
+  "image.preview": {
+   "en": "Original image preview",
+   "zh": "原图预览",
+   "it": "Anteprima immagine originale"
+  },
+  "image.closePreview": {
+   "en": "Close original image preview",
+   "zh": "关闭原图预览",
+   "it": "Chiudi anteprima immagine originale"
+  },
+  "image.unsupportedType": {
+   "en": "Only PNG, JPG, WebP, and GIF images are supported",
+   "zh": "仅支持 PNG、JPG、WebP、GIF 格式的图片",
+   "it": "Sono supportate solo immagini PNG, JPG, WebP e GIF"
+  },
+  "image.tooMany": {
+   "en": "A message can include up to {count} images",
+   "zh": "一条消息最多添加 {count} 张图片",
+   "it": "Un messaggio può includere fino a {count} immagini"
+  },
+  "image.fileTooLarge": {
+   "en": "Each image must be smaller than {size}",
+   "zh": "单张图片不能超过 {size}",
+   "it": "Ogni immagine deve essere inferiore a {size}"
+  },
+  "image.totalTooLarge": {
+   "en": "Images exceed {size} in total; remove some and try again",
+   "zh": "图片总大小超过 {size}，请移除部分图片",
+   "it": "Le immagini superano {size} in totale; rimuovine alcune e riprova"
+  },
+  "image.tooManyPixels": {
+   "en": "Image resolution is too high; compress it and try again",
+   "zh": "图片分辨率过大，请压缩后重试",
+   "it": "La risoluzione dell'immagine è troppo alta; comprimila e riprova"
+  },
+  "image.dimensionTooLarge": {
+   "en": "Image sides must be at most {size}px; downscale it and try again",
+   "zh": "图片宽高不能超过 {size}px，请缩小后重试",
+   "it": "I lati dell'immagine non devono superare {size}px; ridimensionala e riprova"
+  },
+  "image.modelUnsupported": {
+   "en": "The current model does not support images; switch to a model that does",
+   "zh": "当前模型不支持图片，请切换支持图片的模型",
+   "it": "Il modello attuale non supporta le immagini; passa a un modello che le supporta"
+  },
+  "image.sendFailed": {
+   "en": "Sending images failed ({reason}); re-add them and try again",
+   "zh": "图片发送失败（{reason}），请重新添加图片后再试",
+   "it": "Invio immagini non riuscito ({reason}); aggiungile di nuovo e riprova"
+  },
+  "file.attach": {
+   "en": "Add attachment",
+   "zh": "添加附件",
+   "it": "Aggiungi allegato"
+  },
+  "file.pending": {
+   "en": "Pending files",
+   "zh": "待发送文件",
+   "it": "File in attesa"
+  },
+  "file.remove": {
+   "en": "Remove file {name}",
+   "zh": "移除文件 {name}",
+   "it": "Rimuovi file {name}"
+  },
+  "file.uploading": {
+   "en": "Uploading…",
+   "zh": "上传中…",
+   "it": "Caricamento…"
+  },
+  "file.uploadFailed": {
+   "en": "Upload failed; click to retry",
+   "zh": "上传失败，点击重试",
+   "it": "Caricamento non riuscito; fai clic per riprovare"
+  },
+  "file.retry": {
+   "en": "Retry uploading {name}",
+   "zh": "重试上传 {name}",
+   "it": "Riprova a caricare {name}"
+  },
+  "file.stillUploading": {
+   "en": "Files are still uploading; send after they finish",
+   "zh": "文件还在上传，请等待上传完成后发送",
+   "it": "I file sono ancora in caricamento; invia al termine"
+  },
+  "file.sessionUnavailable": {
+   "en": "Session unavailable; files cannot be uploaded",
+   "zh": "会话不可用，无法上传文件",
+   "it": "Sessione non disponibile; impossibile caricare file"
+  },
+  "file.notStaged": {
+   "en": "The file has not finished uploading; re-add it and try again",
+   "zh": "文件尚未上传成功，请重新添加后再试",
+   "it": "Il file non ha terminato il caricamento; aggiungilo di nuovo e riprova"
+  },
+  "file.label": {
+   "en": "File",
+   "zh": "文件",
+   "it": "File"
+  },
+  "context.aria": {
+   "en": "{percent} of context used",
+   "zh": "上下文已用 {percent}",
+   "it": "{percent} di contesto utilizzato"
+  },
+  "context.used": {
+   "en": "of context used",
+   "zh": "上下文已用",
+   "it": "di contesto utilizzato"
+  },
+  "context.system": {
+   "en": "System prompt",
+   "zh": "系统提示词",
+   "it": "Prompt di sistema"
+  },
+  "context.tools": {
+   "en": "Tool definitions",
+   "zh": "工具定义",
+   "it": "Definizioni degli strumenti"
+  },
+  "context.messages": {
+   "en": "Messages",
+   "zh": "对话消息",
+   "it": "Messaggi"
+  },
+  "settings.enter.title": {
+   "en": "Send behavior while busy",
+   "zh": "繁忙时的发送行为",
+   "it": "Comportamento di invio quando occupato"
+  },
+  "settings.enter.description": {
+   "en": "What Enter and the Send button do while the agent is running; Cmd/Ctrl+Enter uses the other behavior",
+   "zh": "智能体运行时 Enter 键和发送按钮的行为；Cmd/Ctrl+Enter 使用另一行为",
+   "it": "Cosa fanno Invio e il pulsante Invia mentre l'agente è in esecuzione; Cmd/Ctrl+Enter usa l'altro comportamento"
+  },
+  "settings.enter.queue": {
+   "en": "Queue",
+   "zh": "排队发送",
+   "it": "Coda"
+  },
+  "settings.enter.steer": {
+   "en": "Steer",
+   "zh": "插话发送",
+   "it": "Guida"
+  },
+  "access.preset.readOnly": {
+   "en": "Read Only",
+   "zh": "仅可查看",
+   "it": "Sola lettura"
+  },
+  "access.preset.workspaceWrite": {
+   "en": "Workspace Write",
+   "zh": "工作区内修改",
+   "it": "Scrittura nell'area di lavoro"
+  },
+  "access.preset.fullAccess": {
+   "en": "Full access",
+   "zh": "完全权限",
+   "it": "Accesso completo"
+  },
+  "access.confirm.title": {
+   "en": "Enable Full access?",
+   "zh": "确认启用完全权限？",
+   "it": "Attivare l'accesso completo?"
+  },
+  "access.confirm.description": {
+   "en": "Full access reduces confirmation steps and lets the agent perform more actions directly, including sensitive operations, file changes, or external commands. Only use it when you trust the current task.",
+   "zh": "启用完全权限后，智能体将减少确认步骤，并且可以直接执行更多操作，包括敏感操作、文件修改或外部命令。仅建议在你信任当前任务时使用。",
+   "it": "L'accesso completo riduce i passaggi di conferma e consente all'agente di eseguire più azioni direttamente, incluse operazioni sensibili, modifiche ai file o comandi esterni. Usalo solo quando ti fidi dell'attività corrente."
+  },
+  "access.confirm.acknowledge": {
+   "en": "I understand the risks and want to continue",
+   "zh": "我已了解风险，并愿意继续",
+   "it": "Ho capito i rischi e voglio continuare"
+  },
+  "access.confirm.cancel": {
+   "en": "Cancel",
+   "zh": "取消",
+   "it": "Annulla"
+  },
+  "access.confirm.enable": {
+   "en": "Enable Full access",
+   "zh": "启用完全权限",
+   "it": "Attiva accesso completo"
+  },
+  "hero.headline": {
+   "en": "Into the Unknown",
+   "zh": "探索未至之境",
+   "it": "Verso l'ignoto"
+  },
+  "hero.preview": {
+   "en": "Preview",
+   "zh": "预览版",
+   "it": "Anteprima"
+  },
+  "hero.chooseWorkspace": {
+   "en": "Choose workspace",
+   "zh": "选择工作区",
+   "it": "Scegli area di lavoro"
+  },
+  "session.hierarchy": {
+   "en": "Session hierarchy",
+   "zh": "会话层级",
+   "it": "Gerarchia delle sessioni"
+  },
+  "todo.title": {
+   "en": "To-dos",
+   "zh": "任务",
+   "it": "Attività"
+  },
+  "todo.progress.done": {
+   "en": "{done} completed",
+   "zh": "{done} 已完成",
+   "it": "{done} completate"
+  },
+  "todo.progress.active": {
+   "en": "{active} in progress",
+   "zh": "{active} 进行中",
+   "it": "{active} in corso"
+  },
+  "todo.progress.pending": {
+   "en": "{pending} pending",
+   "zh": "{pending} 待处理",
+   "it": "{pending} in attesa"
+  },
+  "todo.rowTitle": {
+   "en": "Update to-do list",
+   "zh": "更新任务清单",
+   "it": "Aggiorna elenco attività"
+  },
+  "todo.completed": {
+   "en": "{done}/{total} completed",
+   "zh": "{done}/{total} 已完成",
+   "it": "{done}/{total} completate"
+  },
+  "command.attachmentsUnsupported": {
+   "en": "/{command} does not accept attachments; remove them first",
+   "zh": "/{command} 不接受附件，请先移除附件",
+   "it": "/{command} non accetta allegati; rimuovili prima"
+  },
+  "ask.rowTitle": {
+   "en": "Ask question",
+   "zh": "提问",
+   "it": "Poni domanda"
+  },
+  "ask.waiting": {
+   "en": "waiting",
+   "zh": "等待回答",
+   "it": "in attesa"
+  },
+  "ask.cancelled": {
+   "en": "cancelled",
+   "zh": "已取消",
+   "it": "annullata"
+  },
+  "ask.cancelledDetail": {
+   "en": "This question set was cancelled before answers were submitted.",
+   "zh": "本轮已取消，未提交回答",
+   "it": "Questa serie di domande è stata annullata prima dell'invio delle risposte."
+  },
+  "ask.interrupted": {
+   "en": "interrupted",
+   "zh": "已中断",
+   "it": "interrotta"
+  },
+  "ask.interruptedDetail": {
+   "en": "This question set was interrupted before answers were submitted.",
+   "zh": "本轮已中断，未提交回答",
+   "it": "Questa serie di domande è stata interrotta prima dell'invio delle risposte."
+  },
+  "ask.answered": {
+   "en": "{answered}/{total} answered",
+   "zh": "{answered}/{total} 已回答",
+   "it": "{answered}/{total} con risposta"
+  },
+  "ask.skipped": {
+   "en": "Not answered",
+   "zh": "未回答",
+   "it": "Senza risposta"
+  },
+  "bash.running": {
+   "en": "Running",
+   "zh": "运行中",
+   "it": "In esecuzione"
+  },
+  "bash.failed": {
+   "en": "Failed",
+   "zh": "失败",
+   "it": "Non riuscito"
+  },
+  "bash.stopped": {
+   "en": "Stopped",
+   "zh": "已停止",
+   "it": "Interrotto"
+  },
+  "row.running": {
+   "en": "Running",
+   "zh": "运行中",
+   "it": "In esecuzione"
+  },
+  "row.failed": {
+   "en": "Failed",
+   "zh": "失败",
+   "it": "Non riuscito"
+  },
+  "row.stopped": {
+   "en": "Stopped",
+   "zh": "已停止",
+   "it": "Interrotto"
+  },
+  "row.input": {
+   "en": "IN",
+   "zh": "输入",
+   "it": "IN"
+  },
+  "row.output": {
+   "en": "OUT",
+   "zh": "输出",
+   "it": "OUT"
+  },
+  "row.inspect": {
+   "en": "Inspect",
+   "zh": "查看",
+   "it": "Ispeziona"
+  },
+  "tool.title.search": {
+   "en": "Search",
+   "zh": "搜索",
+   "it": "Ricerca"
+  },
+  "tool.title.read": {
+   "en": "Read",
+   "zh": "读取",
+   "it": "Lettura"
+  },
+  "tool.title.bash": {
+   "en": "Bash",
+   "zh": "Bash",
+   "it": "Bash"
+  },
+  "tool.title.write": {
+   "en": "Write",
+   "zh": "写入",
+   "it": "Scrittura"
+  },
+  "tool.title.edit": {
+   "en": "Edit",
+   "zh": "编辑",
+   "it": "Modifica"
+  },
+  "tool.title.code": {
+   "en": "Code",
+   "zh": "代码",
+   "it": "Codice"
+  },
+  "tool.title.generic": {
+   "en": "Tool call",
+   "zh": "工具调用",
+   "it": "Chiamata a strumento"
+  },
+  "tool.title.inspect": {
+   "en": "Inspect",
+   "zh": "查看",
+   "it": "Ispeziona"
+  },
+  "tool.title.runCordis": {
+   "en": "Run Cordis Plugin",
+   "zh": "运行 Cordis 插件",
+   "it": "Esegui Plugin Cordis"
+  },
+  "tool.title.stopCordis": {
+   "en": "Stop Cordis Plugin",
+   "zh": "停止 Cordis 插件",
+   "it": "Interrompi Plugin Cordis"
+  },
+  "tool.title.removeCordis": {
+   "en": "Remove Cordis Plugin",
+   "zh": "移除 Cordis 插件",
+   "it": "Rimuovi Plugin Cordis"
+  },
+  "tool.title.pwsh": {
+   "en": "Pwsh",
+   "zh": "Pwsh",
+   "it": "Pwsh"
+  },
+  "tool.title.readImage": {
+   "en": "Read image",
+   "zh": "读取图片",
+   "it": "Leggi immagine"
+  },
+  "tool.title.grep": {
+   "en": "Grep",
+   "zh": "Grep",
+   "it": "Grep"
+  },
+  "tool.title.glob": {
+   "en": "Glob",
+   "zh": "Glob",
+   "it": "Glob"
+  },
+  "tool.title.webSearch": {
+   "en": "Search",
+   "zh": "网页搜索",
+   "it": "Ricerca"
+  },
+  "tool.title.webFetch": {
+   "en": "Fetch",
+   "zh": "网页获取",
+   "it": "Recupera"
+  },
+  "diff.files.one": {
+   "en": "{count} file",
+   "zh": "{count} 个文件",
+   "it": "{count} file"
+  },
+  "diff.files.other": {
+   "en": "{count} files",
+   "zh": "{count} 个文件",
+   "it": "{count} file"
+  },
+  "diff.collapseAria": {
+   "en": "Collapse diff",
+   "zh": "收起差异",
+   "it": "Comprimi diff"
+  },
+  "diff.expandAria": {
+   "en": "Expand {count} more diff lines",
+   "zh": "展开其余 {count} 行差异",
+   "it": "Espandi altre {count} righe di diff"
+  },
+  "diff.expandRest": {
+   "en": "… {count} more lines",
+   "zh": "… 其余 {count} 行",
+   "it": "… altre {count} righe"
+  },
+  "read.window": {
+   "en": "Showing {shown} of {total} lines",
+   "zh": "显示 {shown} / {total} 行",
+   "it": "Visualizzate {shown} di {total} righe"
+  },
+  "read.collapseAria": {
+   "en": "Collapse content",
+   "zh": "收起内容",
+   "it": "Comprimi contenuto"
+  },
+  "read.expandAria": {
+   "en": "Expand {count} more lines",
+   "zh": "展开其余 {count} 行",
+   "it": "Espandi altre {count} righe"
+  },
+  "read.expandRest": {
+   "en": "… {count} more lines",
+   "zh": "… 其余 {count} 行",
+   "it": "… altre {count} righe"
+  },
+  "search.paths": {
+   "en": "{shown} paths",
+   "zh": "{shown} 个路径",
+   "it": "{shown} percorsi"
+  },
+  "search.paths.truncated": {
+   "en": "Showing {shown} of {total} paths",
+   "zh": "显示 {shown} / 共 {total} 个路径",
+   "it": "Visualizzati {shown} di {total} percorsi"
+  },
+  "search.matches": {
+   "en": "{shown} matches · {files} files",
+   "zh": "{shown} 处匹配 · {files} 个文件",
+   "it": "{shown} corrispondenze · {files} file"
+  },
+  "search.matches.truncated": {
+   "en": "Showing {shown} of {total} matches · {files} files",
+   "zh": "显示 {shown} / 共 {total} 处匹配 · {files} 个文件",
+   "it": "Visualizzate {shown} di {total} corrispondenze · {files} file"
+  },
+  "search.noResults": {
+   "en": "No results",
+   "zh": "无结果",
+   "it": "Nessun risultato"
+  },
+  "search.collapseAria": {
+   "en": "Collapse results",
+   "zh": "收起结果",
+   "it": "Comprimi risultati"
+  },
+  "search.expandAria": {
+   "en": "Expand {count} more result lines",
+   "zh": "展开其余 {count} 行结果",
+   "it": "Espandi altre {count} righe di risultati"
+  },
+  "search.expandRest": {
+   "en": "… {count} more lines",
+   "zh": "… 其余 {count} 行",
+   "it": "… altre {count} righe"
+  },
+  "web.noResults": {
+   "en": "No results found",
+   "zh": "未找到结果",
+   "it": "Nessun risultato trovato"
+  },
+  "web.sourcesTruncated": {
+   "en": "Source list truncated",
+   "zh": "来源列表已截断",
+   "it": "Elenco delle fonti troncato"
+  },
+  "web.http": {
+   "en": "HTTP",
+   "zh": "HTTP",
+   "it": "HTTP"
+  },
+  "web.contentTruncated": {
+   "en": "Content truncated",
+   "zh": "内容已截断",
+   "it": "Contenuto troncato"
+  },
+  "details.running": {
+   "en": "Running…",
+   "zh": "运行中…",
+   "it": "In esecuzione…"
+  },
+  "queue.count": {
+   "en": "{n} queued messages",
+   "zh": "{n} 条排队消息",
+   "it": "{n} messaggi in coda"
+  },
+  "queue.sending": {
+   "en": "Sending…",
+   "zh": "发送中…",
+   "it": "Invio…"
+  },
+  "queue.image": {
+   "en": "Queued message image",
+   "zh": "排队消息图片",
+   "it": "Immagine del messaggio in coda"
+  },
+  "queue.file": {
+   "en": "Queued file {name}",
+   "zh": "排队文件 {name}",
+   "it": "File in coda {name}"
+  },
+  "queue.edit": {
+   "en": "Edit queued message",
+   "zh": "编辑排队消息",
+   "it": "Modifica messaggio in coda"
+  },
+  "queue.edit.unsupported": {
+   "en": "Contains non-text content; editing is not supported yet",
+   "zh": "包含非文本内容，暂不支持编辑",
+   "it": "Contiene contenuto non testuale; la modifica non è ancora supportata"
+  },
+  "queue.save": {
+   "en": "Save queued message",
+   "zh": "保存排队消息",
+   "it": "Salva messaggio in coda"
+  },
+  "queue.cancelEdit": {
+   "en": "Cancel editing",
+   "zh": "取消编辑",
+   "it": "Annulla modifica"
+  },
+  "queue.remove": {
+   "en": "Remove queued message",
+   "zh": "删除排队消息",
+   "it": "Rimuovi messaggio in coda"
+  },
+  "queue.steer": {
+   "en": "Steer queued message",
+   "zh": "插话发送",
+   "it": "Guida messaggio in coda"
+  },
+  "queue.steer.unavailable": {
+   "en": "Steering is available only while the agent is running",
+   "zh": "仅运行中可插话发送",
+   "it": "La guida è disponibile solo mentre l'agente è in esecuzione"
+  },
+  "queue.editFailed": {
+   "en": "Edit failed: this message may have already started sending.",
+   "zh": "编辑失败：这条消息可能已经开始发送。",
+   "it": "Modifica non riuscita: questo messaggio potrebbe essere già stato inviato."
+  },
+  "queue.removeFailed": {
+   "en": "Removal failed: this message may have already started sending.",
+   "zh": "删除失败：这条消息可能已经开始发送。",
+   "it": "Rimozione non riuscita: questo messaggio potrebbe essere già stato inviato."
+  },
+  "queue.steerFailed": {
+   "en": "Steering failed. Try again.",
+   "zh": "插话发送失败，请重试。",
+   "it": "Guida non riuscita. Riprova."
+  },
+  "terminal.signal": {
+   "en": "signal {signal}",
+   "zh": "信号 {signal}",
+   "it": "signal {signal}"
+  },
+  "terminal.exitCode": {
+   "en": "exit code {code}",
+   "zh": "退出码 {code}",
+   "it": "codice di uscita {code}"
+  },
+  "terminal.running": {
+   "en": "Running",
+   "zh": "运行中",
+   "it": "In esecuzione"
+  },
+  "terminal.failed": {
+   "en": "Failed",
+   "zh": "失败",
+   "it": "Non riuscito"
+  },
+  "terminal.done": {
+   "en": "Done",
+   "zh": "已完成",
+   "it": "Completato"
+  },
+  "terminal.noOutput": {
+   "en": "No output",
+   "zh": "无输出",
+   "it": "Nessun output"
+  },
+  "terminal.collapseAria": {
+   "en": "Collapse output",
+   "zh": "收起输出",
+   "it": "Comprimi output"
+  },
+  "terminal.expandAria": {
+   "en": "Expand the remaining {n} output lines",
+   "zh": "展开其余 {n} 行输出",
+   "it": "Espandi le restanti {n} righe di output"
+  },
+  "terminal.expandRest": {
+   "en": "… {n} more lines",
+   "zh": "… 其余 {n} 行",
+   "it": "… {n} righe"
+  },
+  "terminal.sendInput": {
+   "en": "(send input)",
+   "zh": "（发送输入）",
+   "it": "(invia input)"
+  },
+  "terminal.session": {
+   "en": "Terminal {sessionId}",
+   "zh": "终端 {sessionId}",
+   "it": "Terminale {sessionId}"
+  }
+ },
+ "cordis": {
+  "row.defineTitle": {
+   "en": "Register Cordis Plugin",
+   "zh": "注册 Cordis 插件",
+   "it": "Registra Plugin Cordis"
+  },
+  "row.runTitle": {
+   "en": "Run Cordis Plugin",
+   "zh": "运行 Cordis 插件",
+   "it": "Esegui Plugin Cordis"
+  },
+  "row.updateTitle": {
+   "en": "Update Cordis Plugin",
+   "zh": "更新 Cordis 插件",
+   "it": "Aggiorna Plugin Cordis"
+  },
+  "row.stopTitle": {
+   "en": "Stop Cordis Plugin",
+   "zh": "停止 Cordis 插件",
+   "it": "Interrompi Plugin Cordis"
+  },
+  "row.removeTitle": {
+   "en": "Remove Cordis Plugin",
+   "zh": "移除 Cordis 插件",
+   "it": "Rimuovi Plugin Cordis"
+  },
+  "purpose.missing": {
+   "en": "(no purpose given)",
+   "zh": "(未填写用途)",
+   "it": "(nessuno scopo indicato)"
+  },
+  "status.idle": {
+   "en": "Ready",
+   "zh": "待激活",
+   "it": "Pronto"
+  },
+  "status.awaitingApproval": {
+   "en": "Awaiting approval",
+   "zh": "待审批",
+   "it": "In attesa di approvazione"
+  },
+  "status.failed": {
+   "en": "Run failed",
+   "zh": "运行失败",
+   "it": "Esecuzione non riuscita"
+  },
+  "status.clientPending": {
+   "en": "Client ready to activate",
+   "zh": "Client 待激活",
+   "it": "Client pronto all'attivazione"
+  },
+  "status.running": {
+   "en": "Running",
+   "zh": "运行中",
+   "it": "In esecuzione"
+  },
+  "status.removed": {
+   "en": "Removed",
+   "zh": "已移除",
+   "it": "Rimosso"
+  },
+  "status.superseded": {
+   "en": "Newer run available",
+   "zh": "已有更新",
+   "it": "Disponibile un'esecuzione più recente"
+  },
+  "run.removed": {
+   "en": "This package no longer exists",
+   "zh": "包已不存在",
+   "it": "Questo pacchetto non esiste più"
+  },
+  "run.superseded": {
+   "en": "A newer run card is available below",
+   "zh": "已有更新的运行卡片，请查看下方",
+   "it": "Una scheda di esecuzione più recente è disponibile sotto"
+  },
+  "panel.hint": {
+   "en": "Run controls live in the Cordis panel above Settings",
+   "zh": "运行控制在左下角设置上方的 Cordis 面板",
+   "it": "I controlli di esecuzione sono nel pannello Cordis sopra Impostazioni"
+  },
+  "panel.plugins.aria": {
+   "en": "Cordis plugins",
+   "zh": "Cordis 插件",
+   "it": "Plugin Cordis"
+  },
+  "panel.approvals.aria": {
+   "en": "Cordis approvals",
+   "zh": "Cordis 审批",
+   "it": "Approvazioni Cordis"
+  },
+  "panel.trigger": {
+   "en": "Cordis Plugin",
+   "zh": "Cordis Plugin",
+   "it": "Plugin Cordis"
+  },
+  "panel.runningCount": {
+   "en": "{count} running",
+   "zh": "{count} running",
+   "it": "{count} in esecuzione"
+  },
+  "panel.title": {
+   "en": "Cordis plugins",
+   "zh": "Cordis 插件",
+   "it": "Plugin Cordis"
+  },
+  "panel.empty": {
+   "en": "No plugins defined yet",
+   "zh": "还没有定义任何插件",
+   "it": "Nessun Plugin ancora definito"
+  },
+  "panel.loading": {
+   "en": "Reading…",
+   "zh": "读取中…",
+   "it": "Lettura…"
+  },
+  "panel.readFailed": {
+   "en": "Reading the plugin inventory failed: {message}",
+   "zh": "读取插件清单失败：{message}",
+   "it": "Lettura dell'inventario dei Plugin non riuscita: {message}"
+  },
+  "panel.group.current": {
+   "en": "This session",
+   "zh": "当前会话",
+   "it": "Questa sessione"
+  },
+  "panel.group.others": {
+   "en": "Other sessions",
+   "zh": "其他会话",
+   "it": "Altre sessioni"
+  },
+  "panel.version": {
+   "en": "Version",
+   "zh": "版本",
+   "it": "Versione"
+  },
+  "panel.current": {
+   "en": "Current: {packageId}",
+   "zh": "当前：{packageId}",
+   "it": "Corrente: {packageId}"
+  },
+  "panel.next": {
+   "en": "Next: {packageId}",
+   "zh": "待切换：{packageId}",
+   "it": "Successivo: {packageId}"
+  },
+  "action.approve": {
+   "en": "Allow",
+   "zh": "允许",
+   "it": "Consenti"
+  },
+  "action.approveOnce": {
+   "en": "Allow this version only",
+   "zh": "仅允许此版本",
+   "it": "Consenti solo questa versione"
+  },
+  "action.approvePlugin": {
+   "en": "Allow future versions of this plugin",
+   "zh": "允许此插件的后续版本",
+   "it": "Consenti le versioni future di questo Plugin"
+  },
+  "action.decline": {
+   "en": "Decline",
+   "zh": "拒绝",
+   "it": "Rifiuta"
+  },
+  "action.run": {
+   "en": "Run",
+   "zh": "运行",
+   "it": "Esegui"
+  },
+  "action.stop": {
+   "en": "Stop",
+   "zh": "停止",
+   "it": "Interrompi"
+  },
+  "action.remove": {
+   "en": "Remove",
+   "zh": "移除",
+   "it": "Rimuovi"
+  },
+  "action.retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "action.rollback": {
+   "en": "Roll back",
+   "zh": "回退",
+   "it": "Rollback"
+  },
+  "action.inspect": {
+   "en": "Inspect",
+   "zh": "查看",
+   "it": "Ispeziona"
+  },
+  "render.failedAbdicated": {
+   "en": "Rendering failed in {slot}; the default UI was restored:",
+   "zh": "{slot} 渲染失败，已恢复默认界面：",
+   "it": "Rendering non riuscito in {slot}; l'interfaccia predefinita è stata ripristinata:"
+  },
+  "render.failedHeld": {
+   "en": "Rendering failed in {slot}:",
+   "zh": "{slot} 渲染失败：",
+   "it": "Rendering non riuscito in {slot}:"
+  },
+  "a11y.defining": {
+   "en": "Defining the plugin",
+   "zh": "正在定义插件",
+   "it": "Definizione del Plugin"
+  },
+  "a11y.failed": {
+   "en": "Definition failed",
+   "zh": "定义失败",
+   "it": "Definizione non riuscita"
+  },
+  "a11y.stopped": {
+   "en": "Definition interrupted",
+   "zh": "定义已中断",
+   "it": "Definizione interrotta"
+  },
+  "body.source": {
+   "en": "Plugin source",
+   "zh": "插件代码",
+   "it": "Codice sorgente del Plugin"
+  },
+  "body.hostCode": {
+   "en": "Host",
+   "zh": "Host",
+   "it": "Host"
+  },
+  "body.clientCode": {
+   "en": "Client",
+   "zh": "Client",
+   "it": "Client"
+  },
+  "body.output": {
+   "en": "Result",
+   "zh": "结果",
+   "it": "Risultato"
+  },
+  "body.copy": {
+   "en": "Copy",
+   "zh": "复制",
+   "it": "Copia"
+  },
+  "body.copied": {
+   "en": "Copied",
+   "zh": "已复制",
+   "it": "Copiato"
+  }
+ },
+ "deliverables": {
+  "presented.nativeUnavailable": {
+   "en": "This file has no available Host path. Preview it in the sidebar.",
+   "zh": "此文件没有可用的主机路径，请在侧边栏预览",
+   "it": "Questo file non ha un percorso Host disponibile. Visualizzalo nella barra laterale."
+  },
+  "presented.revealError": {
+   "en": "Could not show in file manager. Try again.",
+   "zh": "无法在文件管理器中显示，请重试",
+   "it": "Impossibile mostrarlo nel file manager. Riprova."
+  },
+  "presented.directoryError": {
+   "en": "Could not open containing folder. Try again.",
+   "zh": "无法打开所在文件夹，请重试",
+   "it": "Impossibile aprire la cartella contenitrice. Riprova."
+  },
+  "presented.directoryOpening": {
+   "en": "Opening containing folder…",
+   "zh": "正在打开所在文件夹…",
+   "it": "Apertura della cartella contenitrice…"
+  },
+  "presented.directoryOpened": {
+   "en": "Requested opening containing folder",
+   "zh": "已请求打开所在文件夹",
+   "it": "Apertura della cartella contenitrice richiesta"
+  },
+  "presented.revealed": {
+   "en": "Requested display in file manager",
+   "zh": "已请求在文件管理器中显示",
+   "it": "Visualizzazione nel file manager richiesta"
+  },
+  "presented.revealing": {
+   "en": "Showing in file manager…",
+   "zh": "正在文件管理器中显示…",
+   "it": "Visualizzazione nel file manager…"
+  },
+  "presented.unavailable": {
+   "en": "This Host has no desktop available to open files or folders",
+   "zh": "此主机没有可用的桌面，无法打开文件或文件夹",
+   "it": "Questo Host non ha un desktop disponibile per aprire file o cartelle"
+  },
+  "presented.retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "presented.hostError": {
+   "en": "Could not read the Host desktop information",
+   "zh": "无法读取主机桌面信息",
+   "it": "Impossibile leggere le informazioni sul desktop dell'Host"
+  },
+  "presented.directory": {
+   "en": "Open containing folder",
+   "zh": "打开所在文件夹",
+   "it": "Apri cartella contenitrice"
+  },
+  "presented.explorer": {
+   "en": "Show in File Explorer",
+   "zh": "在文件资源管理器中显示",
+   "it": "Mostra in Esplora file"
+  },
+  "presented.finder": {
+   "en": "Show in Finder",
+   "zh": "在 Finder 中显示",
+   "it": "Mostra nel Finder"
+  },
+  "presented.defaultApp": {
+   "en": "Open in default app",
+   "zh": "用默认应用打开",
+   "it": "Apri con l'app predefinita"
+  },
+  "presented.more": {
+   "en": "More file actions for {name}",
+   "zh": "{name} 的更多文件操作",
+   "it": "Altre azioni sui file per {name}"
+  },
+  "presented.action": {
+   "en": "Open",
+   "zh": "打开",
+   "it": "Apri"
+  },
+  "presented.preview": {
+   "en": "Preview in sidebar",
+   "zh": "在侧边栏预览",
+   "it": "Visualizza nella barra laterale"
+  },
+  "presented.previewButton": {
+   "en": "Open {name} in sidebar",
+   "zh": "在侧边栏打开 {name}",
+   "it": "Apri {name} nella barra laterale"
+  },
+  "presented.previewCard": {
+   "en": "Preview {name} in sidebar",
+   "zh": "在侧边栏预览 {name}",
+   "it": "Visualizza {name} nella barra laterale"
+  },
+  "presented.all": {
+   "en": "All {count} files",
+   "zh": "全部 {count} 个文件",
+   "it": "Tutti i {count} file"
+  },
+  "presented.expandAria": {
+   "en": "Show all {count} delivered files",
+   "zh": "展开全部 {count} 个交付文件",
+   "it": "Mostra tutti i {count} file prodotti"
+  },
+  "presented.collapse": {
+   "en": "Collapse",
+   "zh": "收起",
+   "it": "Comprimi"
+  },
+  "presented.collapseAria": {
+   "en": "Collapse delivered files",
+   "zh": "收起交付文件列表",
+   "it": "Comprimi i file prodotti"
+  },
+  "presented.opening": {
+   "en": "Opening…",
+   "zh": "正在打开…",
+   "it": "Apertura…"
+  },
+  "presented.opened": {
+   "en": "Opened in default app",
+   "zh": "已在默认程序中打开",
+   "it": "Aperto con l'app predefinita"
+  },
+  "presented.error": {
+   "en": "Could not open. Click to retry.",
+   "zh": "打开失败，点击重试",
+   "it": "Impossibile aprire. Clicca per riprovare."
+  },
+  "presented.file": {
+   "en": "File",
+   "zh": "文件",
+   "it": "File"
+  },
+  "row.title": {
+   "en": "Present files",
+   "zh": "交付文件",
+   "it": "Presenta i file"
+  },
+  "row.running": {
+   "en": "Delivering",
+   "zh": "正在交付",
+   "it": "Consegna in corso"
+  },
+  "row.ok": {
+   "en": "Delivered",
+   "zh": "已交付",
+   "it": "Consegnato"
+  },
+  "row.error": {
+   "en": "Delivery failed",
+   "zh": "交付失败",
+   "it": "Consegna non riuscita"
+  },
+  "row.stopped": {
+   "en": "Interrupted",
+   "zh": "已中断",
+   "it": "Interrotto"
+  },
+  "row.inspect": {
+   "en": "Inspect call",
+   "zh": "查看调用",
+   "it": "Ispeziona chiamata"
+  },
+  "presented.open": {
+   "en": "Open {name} in default app",
+   "zh": "在默认程序中打开 {name}",
+   "it": "Apri {name} con l'app predefinita"
+  },
+  "produced.label": {
+   "en": "Files changed",
+   "zh": "本轮文件改动",
+   "it": "File modificati"
+  },
+  "produced.moreOne": {
+   "en": "+ 1 file",
+   "zh": "+ 1 个文件",
+   "it": "+ 1 file"
+  },
+  "produced.more": {
+   "en": "+ {count} files",
+   "zh": "+ {count} 个文件",
+   "it": "+ {count} file"
+  },
+  "produced.open": {
+   "en": "Open {name}",
+   "zh": "打开 {name}",
+   "it": "Apri {name}"
+  }
+ },
+ "directory-browser": {
+  "browser.title": {
+   "en": "Select Workspace Directory",
+   "zh": "选择工作区目录",
+   "it": "Seleziona la cartella dell'area di lavoro"
+  },
+  "browser.home": {
+   "en": "Home",
+   "zh": "主目录",
+   "it": "Home"
+  },
+  "browser.newFolder": {
+   "en": "New folder",
+   "zh": "新建文件夹",
+   "it": "Nuova cartella"
+  },
+  "browser.folderName": {
+   "en": "Folder name",
+   "zh": "文件夹名称",
+   "it": "Nome cartella"
+  },
+  "browser.createIn": {
+   "en": "New folder in \"{name}\"",
+   "zh": "在\"{name}\"中新建文件夹",
+   "it": "Nuova cartella in «{name}»"
+  },
+  "browser.untitledFolder": {
+   "en": "Untitled folder",
+   "zh": "未命名文件夹",
+   "it": "Cartella senza titolo"
+  },
+  "browser.create": {
+   "en": "Create",
+   "zh": "创建",
+   "it": "Crea"
+  },
+  "browser.cancel": {
+   "en": "Cancel",
+   "zh": "取消",
+   "it": "Annulla"
+  },
+  "browser.open": {
+   "en": "Open",
+   "zh": "打开",
+   "it": "Apri"
+  },
+  "browser.editPath": {
+   "en": "Edit path",
+   "zh": "编辑路径",
+   "it": "Modifica percorso"
+  },
+  "browser.loading": {
+   "en": "Loading…",
+   "zh": "加载中…",
+   "it": "Caricamento…"
+  },
+  "browser.truncated": {
+   "en": "Too many folders to list; only the beginning is shown.",
+   "zh": "文件夹过多，仅显示开头部分。",
+   "it": "Troppe cartelle da elencare; è mostrato solo l'inizio."
+  },
+  "browser.showHidden": {
+   "en": "Show hidden files",
+   "zh": "显示隐藏文件",
+   "it": "Mostra file nascosti"
+  }
+ },
+ "goal": {
+  "phase.active": {
+   "en": "Ongoing Goal",
+   "zh": "进行中的目标",
+   "it": "Obiettivo in corso"
+  },
+  "phase.active.disarmed": {
+   "en": "Inactive Goal",
+   "zh": "未运行的目标",
+   "it": "Obiettivo inattivo"
+  },
+  "phase.paused": {
+   "en": "Paused Goal",
+   "zh": "已暂停的目标",
+   "it": "Obiettivo in pausa"
+  },
+  "phase.blocked": {
+   "en": "Blocked Goal",
+   "zh": "受阻的目标",
+   "it": "Obiettivo bloccato"
+  },
+  "objective.aria": {
+   "en": "Goal objective",
+   "zh": "目标内容",
+   "it": "Obiettivo"
+  },
+  "commandInput.aria": {
+   "en": "Command input",
+   "zh": "指令输入",
+   "it": "Input comando"
+  },
+  "action.save": {
+   "en": "Save goal",
+   "zh": "保存目标",
+   "it": "Salva obiettivo"
+  },
+  "action.cancel": {
+   "en": "Cancel edit",
+   "zh": "取消编辑",
+   "it": "Annulla modifica"
+  },
+  "action.pause": {
+   "en": "Pause goal",
+   "zh": "暂停目标",
+   "it": "Metti in pausa l'obiettivo"
+  },
+  "action.resume": {
+   "en": "Resume goal",
+   "zh": "恢复目标",
+   "it": "Riprendi obiettivo"
+  },
+  "action.edit": {
+   "en": "Edit goal",
+   "zh": "编辑目标",
+   "it": "Modifica obiettivo"
+  },
+  "action.clear": {
+   "en": "Clear goal",
+   "zh": "清除目标",
+   "it": "Elimina obiettivo"
+  }
+ },
+ "slash.menu": {
+  "command": {
+   "en": "Commands",
+   "zh": "指令",
+   "it": "Comandi"
+  },
+  "skill": {
+   "en": "Skills",
+   "zh": "技能",
+   "it": "Skill"
+  },
+  "subagent": {
+   "en": "Subagents",
+   "zh": "子智能体",
+   "it": "Subagenti"
+  },
+  "loading": {
+   "en": "Loading…",
+   "zh": "正在加载…",
+   "it": "Caricamento…"
+  },
+  "drill.aria": {
+   "en": "Browse folder",
+   "zh": "进入目录",
+   "it": "Sfoglia cartella"
+  },
+  "drill.hint": {
+   "en": "Browse folder",
+   "zh": "进入目录",
+   "it": "Sfoglia cartella"
+  },
+  "drill.key": {
+   "en": "Tab",
+   "zh": "Tab",
+   "it": "Tab"
+  },
+  "crumbs.aria": {
+   "en": "Folder navigation",
+   "zh": "目录导航",
+   "it": "Navigazione cartelle"
+  },
+  "suggestions.aria": {
+   "en": "Trigger suggestions",
+   "zh": "触发候选建议",
+   "it": "Attiva suggerimenti"
+  }
+ },
+ "job": {
+  "count.live.one": {
+   "en": "{count} background job running",
+   "zh": "{count} 个后台任务运行中",
+   "it": "{count} attività in background in esecuzione"
+  },
+  "count.live.other": {
+   "en": "{count} background jobs running",
+   "zh": "{count} 个后台任务运行中",
+   "it": "{count} attività in background in esecuzione"
+  },
+  "count.idle.one": {
+   "en": "{count} background job",
+   "zh": "{count} 个后台任务",
+   "it": "{count} attività in background"
+  },
+  "count.idle.other": {
+   "en": "{count} background jobs",
+   "zh": "{count} 个后台任务",
+   "it": "{count} attività in background"
+  },
+  "list.aria": {
+   "en": "Background jobs",
+   "zh": "后台任务",
+   "it": "Attività in background"
+  },
+  "status.running": {
+   "en": "running",
+   "zh": "运行中",
+   "it": "in esecuzione"
+  },
+  "status.stopping": {
+   "en": "stopping",
+   "zh": "正在停止",
+   "it": "in arresto"
+  },
+  "status.completed": {
+   "en": "completed",
+   "zh": "已完成",
+   "it": "completata"
+  },
+  "status.killed": {
+   "en": "cancelled",
+   "zh": "已取消",
+   "it": "annullata"
+  },
+  "status.failed": {
+   "en": "failed",
+   "zh": "已失败",
+   "it": "non riuscita"
+  },
+  "duration.seconds": {
+   "en": "{seconds}s",
+   "zh": "{seconds}秒",
+   "it": "{seconds}s"
+  },
+  "duration.minutes": {
+   "en": "{minutes}m {seconds}s",
+   "zh": "{minutes}分{seconds}秒",
+   "it": "{minutes}m {seconds}s"
+  },
+  "duration.hours": {
+   "en": "{hours}h {minutes}m",
+   "zh": "{hours}小时{minutes}分",
+   "it": "{hours}h {minutes}m"
+  },
+  "duration.title.live": {
+   "en": "Running for {duration}",
+   "zh": "已运行 {duration}",
+   "it": "In esecuzione da {duration}"
+  },
+  "duration.title.done": {
+   "en": "Took {duration}",
+   "zh": "耗时 {duration}",
+   "it": "Ha richiesto {duration}"
+  }
+ },
+ "feedback": {
+  "action.like": {
+   "en": "Good response",
+   "zh": "好的回答",
+   "it": "Risposta buona"
+  },
+  "action.likeActive": {
+   "en": "Remove rating",
+   "zh": "取消标记",
+   "it": "Rimuovi valutazione"
+  },
+  "action.dislike": {
+   "en": "Bad response",
+   "zh": "有问题的回答",
+   "it": "Risposta scadente"
+  },
+  "action.dislikeActive": {
+   "en": "Remove rating",
+   "zh": "取消标记",
+   "it": "Rimuovi valutazione"
+  },
+  "dialog.title": {
+   "en": "Submit feedback",
+   "zh": "提交反馈",
+   "it": "Invia feedback"
+  },
+  "dialog.categories": {
+   "en": "Feedback category",
+   "zh": "反馈分类",
+   "it": "Categoria del feedback"
+  },
+  "dialog.detail": {
+   "en": "Feedback details",
+   "zh": "反馈详情",
+   "it": "Dettagli del feedback"
+  },
+  "dialog.hint": {
+   "en": "Add details to help us improve. Your submission will include the current conversation log.",
+   "zh": "填写详情以帮助我们改进体验，提交内容会包括当前对话的日志",
+   "it": "Aggiungi dettagli per aiutarci a migliorare. L'invio includerà il log della conversazione corrente."
+  },
+  "category.task-result": {
+   "en": "Task result",
+   "zh": "任务结果",
+   "it": "Risultato del task"
+  },
+  "category.instruction-following": {
+   "en": "Instruction understanding and following",
+   "zh": "指令理解与遵循",
+   "it": "Comprensione e rispetto delle istruzioni"
+  },
+  "category.product-interaction": {
+   "en": "Product features and interaction",
+   "zh": "产品功能与交互",
+   "it": "Funzionalità e interazione del prodotto"
+  },
+  "category.service-stability": {
+   "en": "Stability and speed",
+   "zh": "稳定性和速度",
+   "it": "Stabilità e velocità"
+  },
+  "category.resource-cost": {
+   "en": "Resource usage and cost",
+   "zh": "资源使用与费用",
+   "it": "Uso delle risorse e costi"
+  },
+  "category.security-privacy-permission": {
+   "en": "Security, privacy, and permissions",
+   "zh": "安全隐私与权限",
+   "it": "Sicurezza, privacy e autorizzazioni"
+  },
+  "category.other": {
+   "en": "Other",
+   "zh": "其他",
+   "it": "Altro"
+  },
+  "toast.recorded": {
+   "en": "Thanks for your feedback",
+   "zh": "感谢你的反馈",
+   "it": "Grazie per il feedback"
+  },
+  "error.conflict": {
+   "en": "This feedback changed elsewhere; the latest state is shown",
+   "zh": "这条反馈已在别处改动，已显示最新状态",
+   "it": "Questo feedback è stato modificato altrove; è mostrato lo stato più recente"
+  },
+  "error.load": {
+   "en": "Could not load feedback",
+   "zh": "反馈状态加载失败",
+   "it": "Impossibile caricare il feedback"
+  },
+  "error.generic": {
+   "en": "Could not save feedback",
+   "zh": "反馈保存失败",
+   "it": "Impossibile salvare il feedback"
+  },
+  "error.noteTooLarge": {
+   "en": "The description is too long; shorten it and submit again",
+   "zh": "描述太长，请缩短后再提交",
+   "it": "La descrizione è troppo lunga; accorciala e invia di nuovo"
+  }
+ },
+ "model": {
+  "command.description": {
+   "en": "Select the model for this conversation",
+   "zh": "选择本会话使用的模型",
+   "it": "Seleziona il modello per questa conversazione"
+  },
+  "option.loadError": {
+   "en": "Catalog failed to load: {message}",
+   "zh": "目录加载失败：{message}",
+   "it": "Caricamento del catalogo non riuscito: {message}"
+  },
+  "option.deepseekV4Flash.description": {
+   "en": "Fast, efficient, and economical; suited to focused, routine, or parallel tasks.",
+   "zh": "快速、高效且经济；适合目标明确、常规或并行任务。",
+   "it": "Veloce, efficiente ed economico; adatto a compiti mirati, di routine o paralleli."
+  },
+  "option.deepseekV4Pro.description": {
+   "en": "Stronger agentic coding, knowledge, and difficult reasoning; suited to complex or quality-critical tasks at higher cost.",
+   "zh": "更强的自主编码、知识与复杂推理能力；适合复杂或质量优先的任务，但成本更高。",
+   "it": "Codifica agentica, conoscenza e ragionamento complesso più solidi; adatto a compiti complessi o critici per la qualità, a un costo maggiore."
+  },
+  "trigger.fallback": {
+   "en": "Select model",
+   "zh": "选择模型",
+   "it": "Seleziona modello"
+  },
+  "trigger.loading": {
+   "en": "Loading models…",
+   "zh": "正在加载模型…",
+   "it": "Caricamento dei modelli…"
+  },
+  "trigger.selectAria": {
+   "en": "Select model",
+   "zh": "选择模型",
+   "it": "Seleziona modello"
+  },
+  "trigger.aria": {
+   "en": "Select model, current {model}",
+   "zh": "选择模型，当前 {model}",
+   "it": "Seleziona modello, attuale {model}"
+  },
+  "trigger.ariaEffort": {
+   "en": "Select model, current {model}, reasoning effort {effort}",
+   "zh": "选择模型，当前 {model}，推理等级 {effort}",
+   "it": "Seleziona modello, attuale {model}, reasoning effort {effort}"
+  },
+  "menu.aria": {
+   "en": "Model and reasoning effort",
+   "zh": "模型与推理等级",
+   "it": "Modello e reasoning effort"
+  },
+  "menu.model": {
+   "en": "Model",
+   "zh": "模型",
+   "it": "Modello"
+  },
+  "menu.effort": {
+   "en": "Effort",
+   "zh": "推理等级",
+   "it": "Effort"
+  },
+  "effort.providerDefault": {
+   "en": "Default",
+   "zh": "Default",
+   "it": "Predefinito"
+  },
+  "status.loading": {
+   "en": "Refreshing model list…",
+   "zh": "正在刷新模型列表…",
+   "it": "Aggiornamento dell'elenco dei modelli…"
+  },
+  "error.action": {
+   "en": "Model operation failed: {message}",
+   "zh": "模型操作失败：{message}",
+   "it": "Operazione sul modello non riuscita: {message}"
+  },
+  "action.reload": {
+   "en": "Reload",
+   "zh": "重新加载",
+   "it": "Ricarica"
+  },
+  "warning.groupLoad": {
+   "en": "{name} failed to load: {message}",
+   "zh": "{name} 加载失败：{message}",
+   "it": "Caricamento di {name} non riuscito: {message}"
+  },
+  "empty.models": {
+   "en": "No models available.",
+   "zh": "没有可用的模型。",
+   "it": "Nessun modello disponibile."
+  },
+  "blocked.composer": {
+   "en": "This model is unavailable — select one to continue",
+   "zh": "当前模型不可用，请先选择模型",
+   "it": "Questo modello non è disponibile — selezionane uno per continuare"
+  },
+  "empty.efforts": {
+   "en": "This model provides no reasoning effort levels.",
+   "zh": "当前模型未提供推理等级。",
+   "it": "Questo modello non offre livelli di reasoning effort."
+  }
+ },
+ "open-in-app": {
+  "open.title": {
+   "en": "Open workspace in {app}",
+   "zh": "在 {app} 中打开工作目录",
+   "it": "Apri area di lavoro in {app}"
+  },
+  "open.tooltip": {
+   "en": "Open locally",
+   "zh": "在本地打开",
+   "it": "Apri in locale"
+  },
+  "open.error": {
+   "en": "Failed to open",
+   "zh": "打开失败",
+   "it": "Apertura non riuscita"
+  },
+  "menu.toggle": {
+   "en": "Choose an app to open in",
+   "zh": "选择打开方式",
+   "it": "Scegli l'app con cui aprire"
+  },
+  "menu.aria": {
+   "en": "Open in",
+   "zh": "打开方式",
+   "it": "Apri con"
+  },
+  "app.cursor": {
+   "en": "Cursor",
+   "zh": "Cursor",
+   "it": "Cursor"
+  },
+  "app.vscode": {
+   "en": "VS Code",
+   "zh": "VS Code",
+   "it": "VS Code"
+  },
+  "app.vscodeinsiders": {
+   "en": "VS Code Insiders",
+   "zh": "VS Code Insiders",
+   "it": "VS Code Insiders"
+  },
+  "app.windsurf": {
+   "en": "Windsurf",
+   "zh": "Windsurf",
+   "it": "Windsurf"
+  },
+  "app.zed": {
+   "en": "Zed",
+   "zh": "Zed",
+   "it": "Zed"
+  },
+  "app.sublimetext": {
+   "en": "Sublime Text",
+   "zh": "Sublime Text",
+   "it": "Sublime Text"
+  },
+  "app.xcode": {
+   "en": "Xcode",
+   "zh": "Xcode",
+   "it": "Xcode"
+  },
+  "app.androidstudio": {
+   "en": "Android Studio",
+   "zh": "Android Studio",
+   "it": "Android Studio"
+  },
+  "app.intellij": {
+   "en": "IntelliJ IDEA",
+   "zh": "IntelliJ IDEA",
+   "it": "IntelliJ IDEA"
+  },
+  "app.pycharm": {
+   "en": "PyCharm",
+   "zh": "PyCharm",
+   "it": "PyCharm"
+  },
+  "app.webstorm": {
+   "en": "WebStorm",
+   "zh": "WebStorm",
+   "it": "WebStorm"
+  },
+  "app.phpstorm": {
+   "en": "PhpStorm",
+   "zh": "PhpStorm",
+   "it": "PhpStorm"
+  },
+  "app.goland": {
+   "en": "GoLand",
+   "zh": "GoLand",
+   "it": "GoLand"
+  },
+  "app.rider": {
+   "en": "Rider",
+   "zh": "Rider",
+   "it": "Rider"
+  },
+  "app.rustrover": {
+   "en": "RustRover",
+   "zh": "RustRover",
+   "it": "RustRover"
+  },
+  "app.fork": {
+   "en": "Fork",
+   "zh": "Fork",
+   "it": "Fork"
+  },
+  "app.sourcetree": {
+   "en": "Sourcetree",
+   "zh": "Sourcetree",
+   "it": "Sourcetree"
+  },
+  "app.github": {
+   "en": "GitHub Desktop",
+   "zh": "GitHub Desktop",
+   "it": "GitHub Desktop"
+  },
+  "app.tower": {
+   "en": "Tower",
+   "zh": "Tower",
+   "it": "Tower"
+  },
+  "app.gitkraken": {
+   "en": "GitKraken",
+   "zh": "GitKraken",
+   "it": "GitKraken"
+  },
+  "app.smartgit": {
+   "en": "SmartGit",
+   "zh": "SmartGit",
+   "it": "SmartGit"
+  },
+  "app.sublimemerge": {
+   "en": "Sublime Merge",
+   "zh": "Sublime Merge",
+   "it": "Sublime Merge"
+  },
+  "app.ghostty": {
+   "en": "Ghostty",
+   "zh": "Ghostty",
+   "it": "Ghostty"
+  },
+  "app.warp": {
+   "en": "Warp",
+   "zh": "Warp",
+   "it": "Warp"
+  },
+  "app.iterm": {
+   "en": "iTerm2",
+   "zh": "iTerm2",
+   "it": "iTerm2"
+  },
+  "app.kitty": {
+   "en": "kitty",
+   "zh": "kitty",
+   "it": "kitty"
+  },
+  "app.windowsterminal": {
+   "en": "Windows Terminal",
+   "zh": "Windows Terminal",
+   "it": "Windows Terminal"
+  },
+  "app.gitbash": {
+   "en": "Git Bash",
+   "zh": "Git Bash",
+   "it": "Git Bash"
+  },
+  "app.gnometerminal": {
+   "en": "GNOME Terminal",
+   "zh": "GNOME Terminal",
+   "it": "GNOME Terminal"
+  },
+  "app.konsole": {
+   "en": "Konsole",
+   "zh": "Konsole",
+   "it": "Konsole"
+  },
+  "app.finder": {
+   "en": "Finder",
+   "zh": "访达",
+   "it": "Finder"
+  },
+  "app.explorer": {
+   "en": "File Explorer",
+   "zh": "文件资源管理器",
+   "it": "Esplora file"
+  },
+  "app.filemanager": {
+   "en": "Files",
+   "zh": "文件管理器",
+   "it": "File"
+  },
+  "app.terminal": {
+   "en": "Terminal",
+   "zh": "终端",
+   "it": "Terminale"
+  }
+ },
+ "permission.access": {
+  "preset.readOnly": {
+   "en": "Read Only",
+   "zh": "仅可查看",
+   "it": "Sola lettura"
+  },
+  "preset.workspaceWrite": {
+   "en": "Workspace Write",
+   "zh": "工作区内修改",
+   "it": "Scrittura nell'area di lavoro"
+  },
+  "preset.fullAccess": {
+   "en": "Full access",
+   "zh": "完全权限",
+   "it": "Accesso completo"
+  },
+  "confirm.title": {
+   "en": "Enable Full access?",
+   "zh": "确认启用完全权限？",
+   "it": "Attivare l'accesso completo?"
+  },
+  "confirm.description": {
+   "en": "Full access reduces confirmation steps and lets the agent perform more actions directly, including sensitive operations, file changes, or external commands. Only use it when you trust the current task.",
+   "zh": "启用完全权限后，智能体将减少确认步骤，并且可以直接执行更多操作，包括敏感操作、文件修改或外部命令。仅建议在你信任当前任务时使用。",
+   "it": "L'accesso completo riduce i passi di conferma e consente all'agente di eseguire più azioni direttamente, incluse operazioni sensibili, modifiche ai file o comandi esterni. Usalo solo quando ti fidi del compito corrente."
+  },
+  "confirm.acknowledge": {
+   "en": "I understand the risks and want to continue",
+   "zh": "我已了解风险，并愿意继续",
+   "it": "Ho capito i rischi e voglio continuare"
+  },
+  "confirm.cancel": {
+   "en": "Cancel",
+   "zh": "取消",
+   "it": "Annulla"
+  },
+  "confirm.enable": {
+   "en": "Enable Full access",
+   "zh": "启用完全权限",
+   "it": "Attiva l'accesso completo"
+  }
+ },
+ "settings.permission": {
+  "title": {
+   "en": "Permission",
+   "zh": "权限",
+   "it": "Autorizzazione"
+  },
+  "description": {
+   "en": "Choose the default permission mode for new sessions",
+   "zh": "选择新会话的默认权限模式",
+   "it": "Scegli la modalità di autorizzazione predefinita per le nuove sessioni"
+  },
+  "loading": {
+   "en": "Loading",
+   "zh": "加载中",
+   "it": "Caricamento"
+  },
+  "unavailable": {
+   "en": "Unavailable",
+   "zh": "不可用",
+   "it": "Non disponibile"
+  },
+  "preset.readOnly": {
+   "en": "Read Only",
+   "zh": "仅可查看",
+   "it": "Sola lettura"
+  },
+  "preset.workspaceWrite": {
+   "en": "Workspace Write",
+   "zh": "工作区内修改",
+   "it": "Scrittura area di lavoro"
+  },
+  "preset.fullAccess": {
+   "en": "Full access",
+   "zh": "完全权限",
+   "it": "Accesso completo"
+  },
+  "confirm.title": {
+   "en": "Enable Full access?",
+   "zh": "确认启用完全权限？",
+   "it": "Attivare l'accesso completo?"
+  },
+  "confirm.description": {
+   "en": "Full access lets new sessions reduce confirmation steps and perform more actions directly, including sensitive operations, file changes, or external commands. Only use it when you trust subsequent tasks.",
+   "zh": "启用完全权限后，新会话将减少确认步骤，并且可以直接执行更多操作，包括敏感操作、文件修改或外部命令。仅建议在你信任后续任务时使用。",
+   "it": "L'accesso completo consente alle nuove sessioni di ridurre i passaggi di conferma ed eseguire più azioni direttamente, incluse operazioni sensibili, modifiche ai file o comandi esterni. Usalo solo se ti fidi delle attività successive."
+  },
+  "confirm.acknowledge": {
+   "en": "I understand the risks and want to continue",
+   "zh": "我已了解风险，并愿意继续",
+   "it": "Comprendo i rischi e voglio continuare"
+  },
+  "confirm.cancel": {
+   "en": "Cancel",
+   "zh": "取消",
+   "it": "Annulla"
+  },
+  "confirm.enable": {
+   "en": "Enable Full access",
+   "zh": "启用完全权限",
+   "it": "Attiva accesso completo"
+  }
+ },
+ "plan": {
+  "chip.label": {
+   "en": "Plan",
+   "zh": "Plan",
+   "it": "Piano"
+  },
+  "chip.on.aria": {
+   "en": "Plan mode on, press to turn off",
+   "zh": "plan mode 已开启，按下关闭",
+   "it": "Modalità piano attiva, premi per disattivarla"
+  },
+  "chip.on.title": {
+   "en": "Plan mode on — click to turn off (/plan off)",
+   "zh": "plan mode 已开启 — 点击关闭（/plan off）",
+   "it": "Modalità piano attiva — fai clic per disattivarla (/plan off)"
+  },
+  "chip.off.aria": {
+   "en": "Plan mode off, press to turn on",
+   "zh": "plan mode 已关闭，按下开启",
+   "it": "Modalità piano disattiva, premi per attivarla"
+  },
+  "chip.off.title": {
+   "en": "Plan mode off — click to turn on (/plan)",
+   "zh": "plan mode 已关闭 — 点击开启（/plan）",
+   "it": "Modalità piano disattiva — fai clic per attivarla (/plan)"
+  },
+  "chip.exitFailed": {
+   "en": "Failed to exit plan mode",
+   "zh": "退出 plan mode 失败",
+   "it": "Uscita dalla modalità piano non riuscita"
+  }
+ },
+ "reference": {
+  "section.files": {
+   "en": "Files & folders",
+   "zh": "文件与文件夹",
+   "it": "File e cartelle"
+  },
+  "section.sessions": {
+   "en": "Sessions",
+   "zh": "对话",
+   "it": "Sessioni"
+  },
+  "candidate.noCwd": {
+   "en": "(no cwd)",
+   "zh": "（无工作目录）",
+   "it": "(nessuna dir. di lavoro)"
+  },
+  "crumb.root": {
+   "en": "Workspace",
+   "zh": "工作区",
+   "it": "Area di lavoro"
+  },
+  "time.now": {
+   "en": "now",
+   "zh": "刚刚",
+   "it": "adesso"
+  },
+  "time.minutes": {
+   "en": "{n}min",
+   "zh": "{n}分钟",
+   "it": "{n}min"
+  },
+  "time.hours": {
+   "en": "{n}h",
+   "zh": "{n}小时",
+   "it": "{n}h"
+  },
+  "time.days": {
+   "en": "{n}d",
+   "zh": "{n}天",
+   "it": "{n}g"
+  },
+  "time.months": {
+   "en": "{n}mo",
+   "zh": "{n}个月",
+   "it": "{n}mes"
+  },
+  "time.years": {
+   "en": "{n}y",
+   "zh": "{n}年",
+   "it": "{n}a"
+  }
+ },
+ "schedule.catalog": {
+  "trigger.one": {
+   "en": "{count} reminder",
+   "zh": "{count} 个提醒",
+   "it": "{count} promemoria"
+  },
+  "trigger.other": {
+   "en": "{count} reminders",
+   "zh": "{count} 个提醒",
+   "it": "{count} promemoria"
+  },
+  "list.aria": {
+   "en": "Active reminders",
+   "zh": "活动提醒",
+   "it": "Promemoria attivi"
+  },
+  "status.scheduled": {
+   "en": "Scheduled",
+   "zh": "等待中",
+   "it": "Programmato"
+  },
+  "status.overdue": {
+   "en": "Overdue",
+   "zh": "已逾期",
+   "it": "Scaduto"
+  },
+  "frequency.once": {
+   "en": "Once",
+   "zh": "单次",
+   "it": "Una volta"
+  },
+  "frequency.every": {
+   "en": "Every {value} {unit}",
+   "zh": "{value}{unit}一次",
+   "it": "Ogni {value} {unit}"
+  },
+  "unit.day.one": {
+   "en": "day",
+   "zh": "天",
+   "it": "giorno"
+  },
+  "unit.day.other": {
+   "en": "days",
+   "zh": "天",
+   "it": "giorni"
+  },
+  "unit.hour.one": {
+   "en": "hour",
+   "zh": "小时",
+   "it": "ora"
+  },
+  "unit.hour.other": {
+   "en": "hours",
+   "zh": "小时",
+   "it": "ore"
+  },
+  "unit.minute.one": {
+   "en": "minute",
+   "zh": "分钟",
+   "it": "minuto"
+  },
+  "unit.minute.other": {
+   "en": "minutes",
+   "zh": "分钟",
+   "it": "minuti"
+  },
+  "unit.second.one": {
+   "en": "second",
+   "zh": "秒",
+   "it": "secondo"
+  },
+  "unit.second.other": {
+   "en": "seconds",
+   "zh": "秒",
+   "it": "secondi"
+  },
+  "relative.now": {
+   "en": "Due now",
+   "zh": "现在到期",
+   "it": "In scadenza ora"
+  },
+  "relative.future": {
+   "en": "in {value} {unit}",
+   "zh": "{value}{unit}后",
+   "it": "tra {value} {unit}"
+  },
+  "relative.overdue": {
+   "en": "{value} {unit} overdue",
+   "zh": "已逾期 {value}{unit}",
+   "it": "{value} {unit} di ritardo"
+  }
+ },
+ "settings": {
+  "trigger": {
+   "en": "Settings",
+   "zh": "设置",
+   "it": "Impostazioni"
+  },
+  "title": {
+   "en": "Settings",
+   "zh": "设置",
+   "it": "Impostazioni"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
+  "openDocument": {
+   "en": "Open configuration file",
+   "zh": "打开配置文件",
+   "it": "Apri file di configurazione"
+  },
+  "openDocument.error": {
+   "en": "Could not open configuration file",
+   "zh": "无法打开配置文件",
+   "it": "Impossibile aprire il file di configurazione"
+  },
+  "general.nav": {
+   "en": "General",
+   "zh": "通用设置",
+   "it": "Generali"
+  },
+  "connection.error": {
+   "en": "Disconnected",
+   "zh": "连接异常",
+   "it": "Disconnesso"
+  },
+  "connection.retry": {
+   "en": "Reconnect now",
+   "zh": "立即重连",
+   "it": "Riconnetti ora"
+  },
+  "connection.connecting": {
+   "en": "Reconnecting",
+   "zh": "自动重连中",
+   "it": "Riconnessione in corso"
+  },
+  "connection.connected": {
+   "en": "Connected",
+   "zh": "连接成功",
+   "it": "Connesso"
+  },
+  "connection.reconnect": {
+   "en": "Disconnected, reconnect now",
+   "zh": "连接异常，点击立即重连",
+   "it": "Disconnesso, riconnetti ora"
+  },
+  "connection.restart": {
+   "en": "Reconnecting automatically, reconnect now",
+   "zh": "连接中断，正在自动重试，点击立即重连",
+   "it": "Riconnessione automatica in corso, riconnetti ora"
+  }
+ },
+ "settings.models": {
+  "nav": {
+   "en": "Models",
+   "zh": "模型",
+   "it": "Modelli"
+  },
+  "title": {
+   "en": "Models",
+   "zh": "模型",
+   "it": "Modelli"
+  },
+  "intro": {
+   "en": "Enter your API keys to use models from the following providers.",
+   "zh": "填入各提供方的 API 密钥即可使用其模型。",
+   "it": "Inserisci le tue chiavi API per usare i modelli dei seguenti provider."
+  },
+  "edit": {
+   "en": "Edit",
+   "zh": "编辑",
+   "it": "Modifica"
+  },
+  "editProvider": {
+   "en": "Edit {provider}",
+   "zh": "编辑 {provider}",
+   "it": "Modifica {provider}"
+  },
+  "remove": {
+   "en": "Delete",
+   "zh": "删除",
+   "it": "Elimina"
+  },
+  "removeProvider": {
+   "en": "Delete {provider}",
+   "zh": "删除 {provider}",
+   "it": "Elimina {provider}"
+  },
+  "deleteTitle": {
+   "en": "Delete {provider}?",
+   "zh": "删除 {provider}？",
+   "it": "Eliminare {provider}?"
+  },
+  "deleteDescription": {
+   "en": "Deleting {provider} removes its configuration. Any credential it uses is managed elsewhere and will be kept.",
+   "zh": "删除 {provider} 会移除其配置；其使用的凭证（如有）由其他位置管理，将会保留。",
+   "it": "Eliminando {provider} si rimuove la sua configurazione. Le credenziali che usa sono gestite altrove e verranno conservate."
+  },
+  "deleteDescriptionWithCredential": {
+   "en": "Deleting {provider} removes its configuration and stored API key.",
+   "zh": "删除 {provider} 会移除其配置和存储的 API 密钥。",
+   "it": "Eliminando {provider} si rimuovono la sua configurazione e la chiave API memorizzata."
+  },
+  "deleteConfirm": {
+   "en": "Delete {provider}",
+   "zh": "删除 {provider}",
+   "it": "Elimina {provider}"
+  },
+  "deleting": {
+   "en": "Deleting {provider}…",
+   "zh": "正在删除 {provider}…",
+   "it": "Eliminazione di {provider}…"
+  },
+  "add": {
+   "en": "Add provider",
+   "zh": "添加提供方",
+   "it": "Aggiungi provider"
+  },
+  "provider": {
+   "en": "Provider",
+   "zh": "提供方",
+   "it": "Provider"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
+  "cancel": {
+   "en": "Cancel",
+   "zh": "取消",
+   "it": "Annulla"
+  },
+  "apply": {
+   "en": "Apply",
+   "zh": "保存",
+   "it": "Applica"
+  },
+  "applying": {
+   "en": "Applying…",
+   "zh": "保存中…",
+   "it": "Applicazione…"
+  },
+  "savedProvider": {
+   "en": "Saved {provider}.",
+   "zh": "已保存 {provider}。",
+   "it": "{provider} salvato."
+  },
+  "credentialConfigured": {
+   "en": "API key configured",
+   "zh": "API 密钥已配置",
+   "it": "Chiave API configurata"
+  },
+  "credentialMissing": {
+   "en": "API key missing",
+   "zh": "API 密钥缺失",
+   "it": "Chiave API mancante"
+  },
+  "readOnly": {
+   "en": "The settings document is read-only in this deployment.",
+   "zh": "当前部署的设置文档为只读。",
+   "it": "Il documento delle impostazioni è in sola lettura in questa installazione."
+  },
+  "loadFailed": {
+   "en": "Loading the provider directory failed",
+   "zh": "加载提供方目录失败",
+   "it": "Caricamento dell'elenco dei provider non riuscito"
+  },
+  "conflict": {
+   "en": "Someone else changed these settings while this card was open. Close it and reopen to edit the current values.",
+   "zh": "这张卡片打开期间，这些设置已被其他地方改动。请关闭后重新打开，在当前值上编辑。",
+   "it": "Qualcun altro ha modificato queste impostazioni mentre questa scheda era aperta. Chiudila e riaprila per modificare i valori attuali."
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "keyInput": {
+   "en": "API key",
+   "zh": "API 密钥",
+   "it": "Chiave API"
+  },
+  "keyPlaceholder": {
+   "en": "Enter your API key",
+   "zh": "输入 API 密钥",
+   "it": "Inserisci la chiave API"
+  },
+  "keyPlaceholderNative": {
+   "en": "Enter an API key, or leave blank to use environment authentication",
+   "zh": "输入 API 密钥，或留空使用环境认证",
+   "it": "Inserisci una chiave API o lascia vuoto per usare l'autenticazione dell'ambiente"
+  },
+  "keyStored": {
+   "en": "Configured — enter a new value to replace",
+   "zh": "已配置——输入新值可替换",
+   "it": "Configurata — inserisci un nuovo valore per sostituirla"
+  },
+  "keyEnvLocked": {
+   "en": "Provided by the launch environment (read-only)",
+   "zh": "由启动环境提供（只读）",
+   "it": "Fornita dall'ambiente di avvio (sola lettura)"
+  },
+  "customized": {
+   "en": "Customized settings",
+   "zh": "自定义设置",
+   "it": "Impostazioni personalizzate"
+  },
+  "baseUrl": {
+   "en": "Base URL",
+   "zh": "API 地址",
+   "it": "URL di base"
+  },
+  "baseUrlDefault": {
+   "en": "Provider default",
+   "zh": "提供方默认",
+   "it": "Predefinito del provider"
+  },
+  "models": {
+   "en": "Models",
+   "zh": "模型目录",
+   "it": "Modelli"
+  },
+  "modelsInherited": {
+   "en": "Using the adapter defaults",
+   "zh": "正在使用适配器默认模型",
+   "it": "Usa i valori predefiniti dell'adattatore"
+  },
+  "modelsCustomized": {
+   "en": "Customized model catalog",
+   "zh": "已自定义模型目录",
+   "it": "Catalogo dei modelli personalizzato"
+  },
+  "resetModels": {
+   "en": "Restore defaults",
+   "zh": "恢复默认模型",
+   "it": "Ripristina predefiniti"
+  },
+  "model": {
+   "en": "Model",
+   "zh": "模型",
+   "it": "Modello"
+  },
+  "modelId": {
+   "en": "Model ID",
+   "zh": "模型 ID",
+   "it": "Model ID"
+  },
+  "modelName": {
+   "en": "Display name",
+   "zh": "显示名称",
+   "it": "Nome visualizzato"
+  },
+  "modelNamePlaceholder": {
+   "en": "Uses the model ID when empty",
+   "zh": "留空时使用模型 ID",
+   "it": "Se vuoto, usa il Model ID"
+  },
+  "contextWindow": {
+   "en": "Context window",
+   "zh": "上下文窗口",
+   "it": "Finestra di contesto"
+  },
+  "contextWindowPlaceholder": {
+   "en": "Uses the provider default",
+   "zh": "使用提供方默认值",
+   "it": "Usa il valore predefinito del provider"
+  },
+  "maxTokens": {
+   "en": "Max output tokens",
+   "zh": "最大输出 token 数",
+   "it": "Token massimi in output"
+  },
+  "maxTokensPlaceholder": {
+   "en": "Uses the provider default",
+   "zh": "使用提供方默认值",
+   "it": "Usa il valore predefinito del provider"
+  },
+  "modelAdvanced": {
+   "en": "Capacities",
+   "zh": "容量",
+   "it": "Capacità"
+  },
+  "addModel": {
+   "en": "Add model",
+   "zh": "添加模型",
+   "it": "Aggiungi modello"
+  },
+  "removeModel": {
+   "en": "Delete model",
+   "zh": "删除模型",
+   "it": "Elimina modello"
+  },
+  "modelsEmpty": {
+   "en": "No models will be shown in the selector. Unlisted IDs can still be sent directly.",
+   "zh": "模型选择器中将不显示任何模型；目录外 ID 仍可直接发送。",
+   "it": "Nel selettore non verrà mostrato alcun modello. Gli ID non elencati possono comunque essere inviati direttamente."
+  },
+  "keyBlank": {
+   "en": "Enter the API key, or leave the field empty to keep the stored one.",
+   "zh": "请输入 API 密钥；留空则保持已存储的密钥。",
+   "it": "Inserisci la chiave API o lascia il campo vuoto per mantenere quella memorizzata."
+  },
+  "keyBlankNew": {
+   "en": "Enter the API key, or leave the field empty if this provider authenticates another way.",
+   "zh": "请输入 API 密钥；若该提供方以其他方式鉴权，可以留空。",
+   "it": "Inserisci la chiave API o lascia il campo vuoto se questo provider si autentica in un altro modo."
+  },
+  "keyIllegalCharacters": {
+   "en": "This API key is not in a valid format. Please check it.",
+   "zh": "该 API 密钥格式错误，请检查。",
+   "it": "Questa chiave API non ha un formato valido. Controllala."
+  },
+  "modelIdRequired": {
+   "en": "Model ID is required.",
+   "zh": "模型 ID 不能为空。",
+   "it": "Il Model ID è obbligatorio."
+  },
+  "modelIdDuplicate": {
+   "en": "Model ID must be unique.",
+   "zh": "模型 ID 不能重复。",
+   "it": "Il Model ID deve essere univoco."
+  },
+  "modelNameInvalid": {
+   "en": "Display name cannot be empty.",
+   "zh": "显示名称不能为空。",
+   "it": "Il nome visualizzato non può essere vuoto."
+  },
+  "modelContextInvalid": {
+   "en": "Context window must be a positive count, like 131072, 256K, or 1M.",
+   "zh": "上下文窗口必须是正数，例如 131072、256K 或 1M。",
+   "it": "La finestra di contesto deve essere un numero positivo, come 131072, 256K o 1M."
+  },
+  "modelMaxTokensInvalid": {
+   "en": "Max output tokens must be a positive count, like 8192, 64K, or 1M.",
+   "zh": "最大输出 token 数必须是正数，例如 8192、64K 或 1M。",
+   "it": "I token massimi in output devono essere un numero positivo, come 8192, 64K o 1M."
+  },
+  "advancedHint": {
+   "en": "Other fields live in settings.yaml; edit that section directly.",
+   "zh": "其余字段在 settings.yaml 中，请直接编辑对应段。",
+   "it": "Gli altri campi si trovano in settings.yaml; modifica direttamente quella sezione."
+  },
+  "modelCapacityInvalid": {
+   "en": "A capacity must be a number, optionally suffixed K or M.",
+   "zh": "容量需为数字，可加 K 或 M 后缀。",
+   "it": "Una capacità deve essere un numero, con suffisso K o M facoltativo."
+  },
+  "modelDuplicate": {
+   "en": "Each model ID may appear once.",
+   "zh": "每个模型 ID 只能出现一次。",
+   "it": "Ogni Model ID può comparire una sola volta."
+  },
+  "modelContextWindow": {
+   "en": "Context window",
+   "zh": "上下文窗口",
+   "it": "Finestra di contesto"
+  },
+  "modelMaxTokens": {
+   "en": "Max output tokens",
+   "zh": "最大输出 token",
+   "it": "Token massimi in output"
+  },
+  "fetchModels": {
+   "en": "Fetch available models",
+   "zh": "获取可用模型",
+   "it": "Recupera i modelli disponibili"
+  },
+  "fetching": {
+   "en": "Asking the provider…",
+   "zh": "正在询问提供方…",
+   "it": "Interrogazione del provider…"
+  },
+  "fetchNeedsBaseUrl": {
+   "en": "Enter the base URL first, then fetch.",
+   "zh": "请先填写 API 地址，再获取。",
+   "it": "Inserisci prima l'URL di base, poi recupera."
+  },
+  "fetchEmpty": {
+   "en": "The provider listed no models. Add them by hand.",
+   "zh": "该提供方没有列出任何模型，请手动添加。",
+   "it": "Il provider non ha elencato alcun modello. Aggiungili manualmente."
+  },
+  "fetchTitle": {
+   "en": "Choose models to add",
+   "zh": "选择要添加的模型",
+   "it": "Scegli i modelli da aggiungere"
+  },
+  "fetchDescription": {
+   "en": "These are the models this provider has available. Choose the ones to add.",
+   "zh": "以下是模型提供方的可用模型，勾选要添加的模型。",
+   "it": "Questi sono i modelli disponibili presso il provider. Scegli quelli da aggiungere."
+  },
+  "fetchSearch": {
+   "en": "Search models",
+   "zh": "搜索模型",
+   "it": "Cerca modelli"
+  },
+  "fetchNoMatches": {
+   "en": "No matching models.",
+   "zh": "没有匹配的模型。",
+   "it": "Nessun modello corrispondente."
+  },
+  "fetchSelectAll": {
+   "en": "Select all",
+   "zh": "全选",
+   "it": "Seleziona tutto"
+  },
+  "fetchDeselectAll": {
+   "en": "Deselect all",
+   "zh": "取消全选",
+   "it": "Deseleziona tutto"
+  },
+  "fetchAdopt": {
+   "en": "Add selected",
+   "zh": "添加所选",
+   "it": "Aggiungi selezionati"
+  },
+  "customAdd": {
+   "en": "Add a custom provider",
+   "zh": "添加自定义提供方",
+   "it": "Aggiungi un provider personalizzato"
+  },
+  "customTitle": {
+   "en": "Custom provider",
+   "zh": "自定义提供方",
+   "it": "Provider personalizzato"
+  },
+  "customTag": {
+   "en": "Custom",
+   "zh": "自定义",
+   "it": "Personalizzato"
+  },
+  "customRoute": {
+   "en": "Provider ID",
+   "zh": "Provider ID",
+   "it": "Provider ID"
+  },
+  "customRouteHint": {
+   "en": "Lowercase identifier, starting with a letter, that uniquely names this provider in requests and as its credential name.",
+   "zh": "以小写字母开头的标识，在请求中唯一标识该提供方，并用于派生凭据名。",
+   "it": "Identificatore in minuscolo, che inizia con una lettera, che nomina in modo univoco questo provider nelle richieste e come nome della sua credenziale."
+  },
+  "customRouteInvalid": {
+   "en": "Start with a lowercase letter; then lowercase letters, digits, and dashes.",
+   "zh": "需以小写字母开头，之后可用小写字母、数字和短横线。",
+   "it": "Inizia con una lettera minuscola; poi lettere minuscole, cifre e trattini."
+  },
+  "customRouteTaken": {
+   "en": "A provider already uses this ID.",
+   "zh": "已有提供方使用了这个 ID。",
+   "it": "Un provider usa già questo ID."
+  },
+  "customDisplayName": {
+   "en": "Display name",
+   "zh": "显示名称",
+   "it": "Nome visualizzato"
+  },
+  "customApi": {
+   "en": "API protocol",
+   "zh": "API 协议",
+   "it": "Protocollo API"
+  },
+  "customApiUnset": {
+   "en": "Not selected",
+   "zh": "未选择",
+   "it": "Non selezionato"
+  },
+  "customNeedsBaseUrl": {
+   "en": "A custom provider needs a base URL.",
+   "zh": "自定义提供方需要填写 API 地址。",
+   "it": "Un provider personalizzato richiede un URL di base."
+  },
+  "customBaseUrlInvalid": {
+   "en": "Enter a valid HTTP or HTTPS URL.",
+   "zh": "请输入有效的 HTTP 或 HTTPS 地址。",
+   "it": "Inserisci un URL HTTP o HTTPS valido."
+  },
+  "customNeedsModels": {
+   "en": "A custom provider needs at least one model.",
+   "zh": "自定义提供方至少需要一个模型。",
+   "it": "Un provider personalizzato richiede almeno un modello."
+  },
+  "customBaseUrlPlaceholder": {
+   "en": "https://gateway.example/v1",
+   "zh": "https://gateway.example/v1",
+   "it": "https://gateway.example/v1"
+  },
+  "settingsPathUnresolvable": {
+   "en": "unresolvable settings path",
+   "zh": "无法解析设置路径",
+   "it": "percorso delle impostazioni non risolvibile"
+  },
+  "create": {
+   "en": "Create provider",
+   "zh": "创建提供方",
+   "it": "Crea provider"
+  },
+  "creating": {
+   "en": "Creating…",
+   "zh": "创建中…",
+   "it": "Creazione…"
+  },
+  "welcomeTitle": {
+   "en": "Internal Testing Notice",
+   "zh": "内测声明",
+   "it": "Avviso di test interno"
+  },
+  "welcomeBody": {
+   "en": "DeepSeek Harness 0.1 remains in testing for Harness developers. Many areas need further improvement, and we welcome feedback from the developer community. DeepSeek Harness's core plugins and foundational APIs will continue to evolve rapidly over the coming months.\n\nWe look forward to exploring the limits of intelligence with developers around the world, building on open-source, open, reusable, and composable infrastructure. We welcome Harness developers everywhere to join the DSH plugin ecosystem.",
+   "zh": "DeepSeek Harness 目前的 0.1 版本仍处在面向 Harness 开发者进行测试的阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者的反馈建议。预计 DeepSeek Harness 的核心插件以及基础 API 都会在接下来的一段时间内快速迭代、持续演化。\n\n我们期待与全球开发者一起，在开源、开放、可复用、可组合的基础设施之上，共同探索智能上限。欢迎全球 Harness 开发者加入 DSH 插件生态。",
+   "it": "DeepSeek Harness 0.1 è ancora in fase di test per gli sviluppatori Harness. Molte aree necessitano di ulteriori miglioramenti e accogliamo con favore il feedback della comunità degli sviluppatori. I Plugin principali e le API di base di DeepSeek Harness continueranno a evolversi rapidamente nei prossimi mesi.\n\nNon vediamo l'ora di esplorare i limiti dell'intelligenza con gli sviluppatori di tutto il mondo, su un'infrastruttura open source, aperta, riutilizzabile e componibile. Invitiamo gli sviluppatori Harness di tutto il mondo a unirsi all'ecosistema di Plugin DSH."
+  },
+  "welcomeContinue": {
+   "en": "Continue",
+   "zh": "继续",
+   "it": "Continua"
+  },
+  "welcomeError": {
+   "en": "The acknowledgement could not be saved. Please try again.",
+   "zh": "暂时无法保存确认状态，请重试。",
+   "it": "Non è stato possibile salvare la conferma. Riprova."
+  },
+  "onboardingTitle": {
+   "en": "Add an API key to get started",
+   "zh": "添加一个 API Key 开始使用",
+   "it": "Aggiungi una chiave API per iniziare"
+  },
+  "onboardingDescription": {
+   "en": "Configure the official DeepSeek provider to start building.",
+   "zh": "配置 DeepSeek 官方模型，即可开始使用。",
+   "it": "Configura il provider ufficiale DeepSeek per iniziare a costruire."
+  },
+  "onboardingLater": {
+   "en": "Configure later",
+   "zh": "稍后配置",
+   "it": "Configura più tardi"
+  },
+  "onboardingSave": {
+   "en": "Save and continue",
+   "zh": "保存并继续",
+   "it": "Salva e continua"
+  },
+  "onboardingSaving": {
+   "en": "Saving…",
+   "zh": "保存中…",
+   "it": "Salvataggio…"
+  },
+  "keyRequired": {
+   "en": "Enter an API key to continue.",
+   "zh": "请输入 API 密钥后继续。",
+   "it": "Inserisci una chiave API per continuare."
+  }
+ },
+ "settings.pluginInventory": {
+  "tab": {
+   "en": "Plugin list",
+   "zh": "插件列表",
+   "it": "Elenco plugin"
+  },
+  "loading": {
+   "en": "Reading plugins…",
+   "zh": "正在读取插件…",
+   "it": "Lettura plugin…"
+  },
+  "error": {
+   "en": "Plugins are temporarily unavailable.",
+   "zh": "暂时无法读取插件。",
+   "it": "Plugin temporaneamente non disponibili."
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "search": {
+   "en": "Search plugins",
+   "zh": "搜索插件",
+   "it": "Cerca plugin"
+  },
+  "empty": {
+   "en": "No plugins are available.",
+   "zh": "暂无插件。",
+   "it": "Nessun plugin disponibile."
+  },
+  "emptySearch": {
+   "en": "No matching plugins.",
+   "zh": "没有匹配的插件。",
+   "it": "Nessun plugin corrispondente."
+  },
+  "presetTitle": {
+   "en": "Session plugins",
+   "zh": "会话插件",
+   "it": "Plugin della sessione"
+  },
+  "presetSubtitle": {
+   "en": "Composed per session by agent presets",
+   "zh": "由 Agent 预设按会话组成",
+   "it": "Composti per sessione dai preset degli agenti"
+  },
+  "countUnit": {
+   "en": "plugins",
+   "zh": "个",
+   "it": "plugin"
+  },
+  "switcherLabel": {
+   "en": "Choose the agent preset to inspect",
+   "zh": "选择要查看的 Agent 预设",
+   "it": "Scegli il preset dell'agente da ispezionare"
+  },
+  "presetOptionDefault": {
+   "en": "{name} (default)",
+   "zh": "{name}（默认）",
+   "it": "«{name}» (predefinito)"
+  },
+  "presetOptionBroken": {
+   "en": "{name} (failed to load)",
+   "zh": "{name}（加载失败）",
+   "it": "«{name}» (caricamento non riuscito)"
+  },
+  "globalTitle": {
+   "en": "Global plugins",
+   "zh": "全局插件",
+   "it": "Plugin globali"
+  },
+  "globalSubtitle": {
+   "en": "Shared by the system and every session",
+   "zh": "系统与所有会话共用",
+   "it": "Condivisi dal sistema e da ogni sessione"
+  },
+  "presetProvidedDetail": {
+   "en": "Disabled globally; agent presets provide it per session",
+   "zh": "全局已停用，由 Agent 预设按会话提供",
+   "it": "Disattivato a livello globale; i preset degli agenti lo forniscono per sessione"
+  },
+  "enabledIn": {
+   "en": "Enabled in",
+   "zh": "启用于",
+   "it": "Attivo in"
+  },
+  "viewInPreset": {
+   "en": "View in the preset group",
+   "zh": "去预设分组查看",
+   "it": "Vedi nel gruppo del preset"
+  },
+  "matchesInOtherPresets": {
+   "en": "{count} more matches in other presets: ",
+   "zh": "其他预设中还有 {count} 个匹配：",
+   "it": "Altri {count} risultati negli altri preset: "
+  },
+  "failedCountLabel": {
+   "en": "failed",
+   "zh": "个失败",
+   "it": "non riusciti"
+  },
+  "enabledTag": {
+   "en": "Enabled",
+   "zh": "已启用",
+   "it": "Attivo"
+  },
+  "disabledTag": {
+   "en": "Disabled",
+   "zh": "已停用",
+   "it": "Disattivato"
+  },
+  "conditionalTag": {
+   "en": "Conditional",
+   "zh": "条件启用",
+   "it": "Condizionale"
+  },
+  "presetEnabledTag": {
+   "en": "Enabled via presets",
+   "zh": "预设中启用",
+   "it": "Attivo tramite i preset"
+  },
+  "failedTag": {
+   "en": "Failed",
+   "zh": "启动失败",
+   "it": "Non riuscito"
+  },
+  "moduleLabel": {
+   "en": "Module",
+   "zh": "完整名称",
+   "it": "Modulo"
+  },
+  "fromPreset": {
+   "en": "From",
+   "zh": "来自",
+   "it": "Da"
+  },
+  "condition": {
+   "en": "Disabled when",
+   "zh": "禁用条件",
+   "it": "Disattivato quando"
+  },
+  "configuration": {
+   "en": "Configuration",
+   "zh": "配置状态",
+   "it": "Configurazione"
+  },
+  "runtime": {
+   "en": "Status",
+   "zh": "运行状态",
+   "it": "Stato"
+  },
+  "unobserved": {
+   "en": "Not running",
+   "zh": "未运行",
+   "it": "Non in esecuzione"
+  },
+  "pending": {
+   "en": "Waiting for dependencies",
+   "zh": "等待依赖",
+   "it": "In attesa delle dipendenze"
+  },
+  "loadingPhase": {
+   "en": "Loading",
+   "zh": "加载中",
+   "it": "Caricamento"
+  },
+  "active": {
+   "en": "Running",
+   "zh": "运行中",
+   "it": "In esecuzione"
+  },
+  "failed": {
+   "en": "Failed to start",
+   "zh": "启动失败",
+   "it": "Avvio non riuscito"
+  },
+  "unloading": {
+   "en": "Unloading",
+   "zh": "卸载中",
+   "it": "Scaricamento"
+  }
+ },
+ "settings.plugins": {
+  "nav": {
+   "en": "Plugins",
+   "zh": "插件",
+   "it": "Plugin"
+  },
+  "title": {
+   "en": "Plugins",
+   "zh": "插件",
+   "it": "Plugin"
+  },
+  "intro": {
+   "en": "Configure and inspect the plugins installed in this deployment.",
+   "zh": "配置和查看本部署已安装的插件。",
+   "it": "Configura e ispeziona i Plugin installati in questa distribuzione."
+  },
+  "tabs": {
+   "en": "Plugin views",
+   "zh": "插件视图",
+   "it": "Viste dei Plugin"
+  },
+  "configurableTab": {
+   "en": "Plugin configuration",
+   "zh": "插件配置",
+   "it": "Configurazione dei Plugin"
+  },
+  "empty": {
+   "en": "This deployment exposes no plugin settings.",
+   "zh": "本部署没有开放任何插件设置。",
+   "it": "Questa distribuzione non espone impostazioni dei Plugin."
+  },
+  "overridden": {
+   "en": "Overridden",
+   "zh": "已覆盖",
+   "it": "Sovrascritto"
+  },
+  "reset": {
+   "en": "Reset to default",
+   "zh": "恢复默认",
+   "it": "Reimposta predefinito"
+  },
+  "readOnly": {
+   "en": "This deployment stores settings read-only.",
+   "zh": "本部署的设置为只读。",
+   "it": "Questa distribuzione archivia le impostazioni in sola lettura."
+  },
+  "expand": {
+   "en": "Show settings",
+   "zh": "展开设置",
+   "it": "Mostra impostazioni"
+  },
+  "collapse": {
+   "en": "Hide settings",
+   "zh": "收起设置",
+   "it": "Nascondi impostazioni"
+  },
+  "save": {
+   "en": "Save",
+   "zh": "保存",
+   "it": "Salva"
+  },
+  "saving": {
+   "en": "Saving…",
+   "zh": "保存中…",
+   "it": "Salvataggio…"
+  },
+  "discard": {
+   "en": "Discard",
+   "zh": "放弃修改",
+   "it": "Scarta"
+  },
+  "unsaved": {
+   "en": "Unsaved",
+   "zh": "未保存",
+   "it": "Non salvato"
+  },
+  "saveFailed": {
+   "en": "The deployment did not accept these values; they were left for you to correct.",
+   "zh": "本部署没有接受这些值，已保留供你修改。",
+   "it": "La distribuzione non ha accettato questi valori; sono stati lasciati per la correzione."
+  },
+  "invalidNumber": {
+   "en": "Enter a number, or leave blank to use the default.",
+   "zh": "请填数字；留空表示使用默认值。",
+   "it": "Inserisci un numero o lascia vuoto per usare il valore predefinito."
+  },
+  "bashTitle": {
+   "en": "Shell",
+   "zh": "终端",
+   "it": "Terminale"
+  },
+  "bashDescription": {
+   "en": "Limits every command the agent runs.",
+   "zh": "限制 agent 运行的每一条命令。",
+   "it": "Limita ogni comando eseguito dall'agente."
+  },
+  "bashTimeoutMs": {
+   "en": "Command timeout (ms)",
+   "zh": "命令超时（毫秒）",
+   "it": "Timeout del comando (ms)"
+  },
+  "bashTimeoutMsHint": {
+   "en": "How long one command may run before it is terminated.",
+   "zh": "单条命令允许运行多久，超时即终止。",
+   "it": "Per quanto un comando può essere eseguito prima di essere terminato."
+  },
+  "bashMaxOutputBytes": {
+   "en": "Output cap per stream (bytes)",
+   "zh": "单流输出上限（字节）",
+   "it": "Limite di output per flusso (byte)"
+  },
+  "bashMaxOutputBytesHint": {
+   "en": "Output beyond this spills to a temporary file rather than being lost.",
+   "zh": "超出部分会转存到临时文件，而不是被丢弃。",
+   "it": "L'output in eccesso viene salvato in un file temporaneo invece di andare perso."
+  },
+  "agentLoopTitle": {
+   "en": "Agent loop",
+   "zh": "Agent 循环",
+   "it": "Ciclo dell'agente"
+  },
+  "agentLoopDescription": {
+   "en": "How the agent dispatches tool calls.",
+   "zh": "Agent 如何派发工具调用。",
+   "it": "Come l'agente distribuisce le chiamate a strumento."
+  },
+  "agentLoopMaxParallel": {
+   "en": "Parallel tool calls",
+   "zh": "并行工具调用数",
+   "it": "Chiamate a strumento in parallelo"
+  },
+  "agentLoopMaxParallelHint": {
+   "en": "Upper bound on parallel-safe calls running at once within one step.",
+   "zh": "同一步内最多同时运行多少个可并行的调用。",
+   "it": "Numero massimo di chiamate parallelizzabili eseguite contemporaneamente in un passo."
+  },
+  "webSearchTitle": {
+   "en": "Web search",
+   "zh": "网页搜索",
+   "it": "Ricerca web"
+  },
+  "webSearchDescription": {
+   "en": "The DeepSeek search provider.",
+   "zh": "DeepSeek 搜索提供方。",
+   "it": "Il provider di ricerca DeepSeek."
+  },
+  "webSearchApiKey": {
+   "en": "API key",
+   "zh": "API Key",
+   "it": "Chiave API"
+  },
+  "webSearchApiKeyHint": {
+   "en": "Stored outside the settings file. Leave blank to keep the current key.",
+   "zh": "不写入设置文件。留空表示保持当前密钥。",
+   "it": "Memorizzata fuori dal file delle impostazioni. Lascia vuoto per mantenere la chiave attuale."
+  },
+  "webSearchApiKeySet": {
+   "en": "A key is configured.",
+   "zh": "已配置密钥。",
+   "it": "Una chiave è configurata."
+  },
+  "webSearchApiKeyUnset": {
+   "en": "No key is configured; search is unavailable until one is.",
+   "zh": "未配置密钥；配置之前搜索不可用。",
+   "it": "Nessuna chiave configurata; la ricerca non è disponibile finché non ne viene configurata una."
+  },
+  "webSearchBaseUrl": {
+   "en": "Endpoint",
+   "zh": "接口地址",
+   "it": "Endpoint"
+  },
+  "webSearchBaseUrlHint": {
+   "en": "Leave blank to use the provider default.",
+   "zh": "留空则使用提供方默认地址。",
+   "it": "Lascia vuoto per usare il valore predefinito del provider."
+  },
+  "webSearchMaxUses": {
+   "en": "Max searches per request",
+   "zh": "单次请求最多搜索次数",
+   "it": "Ricerche massime per richiesta"
+  },
+  "webSearchMaxUsesHint": {
+   "en": "How many times one request may search before it must answer.",
+   "zh": "一次请求在必须作答前最多可以搜索多少次。",
+   "it": "Quante volte una richiesta può cercare prima di dover rispondere."
+  },
+  "subagentModelSelectionTitle": {
+   "en": "Subagent",
+   "zh": "Subagent",
+   "it": "Subagente"
+  },
+  "subagentModelSelectionDescription": {
+   "en": "Control which models agents may choose for subagents.",
+   "zh": "控制 Agent 为 Subagent 选择模型的权限。",
+   "it": "Controlla quali modelli gli agenti possono scegliere per i subagenti."
+  },
+  "subagentModelSelectionToggle": {
+   "en": "Allow agents to choose models for subagents",
+   "zh": "允许 Agent 为 Subagent 选择模型",
+   "it": "Consenti agli agenti di scegliere i modelli per i subagenti"
+  },
+  "subagentModelSelectionChoose": {
+   "en": "When enabled, agents can choose a provider, model, and reasoning effort for each subagent from the authorized models below. Applies only to new sessions.",
+   "zh": "开启后，Agent 可以从下方授权模型中，为每个 Subagent 选择提供方、模型和推理强度。仅影响新会话。",
+   "it": "Se attivo, gli agenti possono scegliere un provider, un modello e il reasoning effort per ogni subagente tra i modelli autorizzati riportati sotto. Si applica solo alle nuove sessioni."
+  },
+  "subagentModelSelectionAllowed": {
+   "en": "Models agents may choose",
+   "zh": "Agent 可选择的模型",
+   "it": "Modelli che gli agenti possono scegliere"
+  },
+  "subagentModelSelectionLoading": {
+   "en": "Loading models…",
+   "zh": "正在加载模型…",
+   "it": "Caricamento modelli…"
+  },
+  "subagentModelSelectionLoadFailed": {
+   "en": "Models could not be loaded.",
+   "zh": "无法加载模型。",
+   "it": "Impossibile caricare i modelli."
+  },
+  "subagentModelSelectionRetry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "subagentModelSelectionPartial": {
+   "en": "Some model providers could not be loaded; saved choices remain removable.",
+   "zh": "部分模型提供方暂时无法加载；已保存的选择仍可移除。",
+   "it": "Alcuni provider di modelli non sono stati caricati; le scelte salvate restano rimovibili."
+  },
+  "subagentModelSelectionUnavailable": {
+   "en": "Currently unavailable",
+   "zh": "当前不可用",
+   "it": "Attualmente non disponibile"
+  },
+  "subagentModelSelectionUnavailableGroup": {
+   "en": "Saved but currently unavailable",
+   "zh": "已保存但当前不可用",
+   "it": "Salvato ma attualmente non disponibile"
+  },
+  "subagentModelSelectionEmpty": {
+   "en": "No model provider currently advertises a model.",
+   "zh": "当前没有模型提供方公布模型。",
+   "it": "Nessun provider di modelli pubblica attualmente un modello."
+  },
+  "subagentModelSelectionRequired": {
+   "en": "Select at least one model before saving.",
+   "zh": "保存前请至少选择一个模型。",
+   "it": "Seleziona almeno un modello prima di salvare."
+  },
+  "subagentModelSelectionConflict": {
+   "en": "Settings changed elsewhere. Discard your draft and try again.",
+   "zh": "设置已在其他位置更新。请放弃修改后重试。",
+   "it": "Le impostazioni sono cambiate altrove. Scarta la bozza e riprova."
+  },
+  "subagentModelSelectionOff": {
+   "en": "Subagents use configured defaults or inherit the parent agent's model. Saved model choices are retained.",
+   "zh": "关闭后，Subagent 使用配置的默认模型或继承父 Agent 的模型；已选模型会保留。",
+   "it": "I subagenti usano i valori predefiniti configurati o ereditano il modello dell'agente padre. Le scelte di modello salvate vengono mantenute."
+  }
+ },
+ "sidebar": {
+  "session.new": {
+   "en": "New Session",
+   "zh": "新会话",
+   "it": "Nuova sessione"
+  },
+  "session.new.label": {
+   "en": "New session",
+   "zh": "新建会话",
+   "it": "Nuova sessione"
+  },
+  "toggle.open": {
+   "en": "Open sidebar",
+   "zh": "打开侧边栏",
+   "it": "Apri barra laterale"
+  },
+  "toggle.collapse": {
+   "en": "Collapse sidebar",
+   "zh": "收起侧边栏",
+   "it": "Comprimi barra laterale"
+  },
+  "panels.label": {
+   "en": "Global panels",
+   "zh": "全局面板",
+   "it": "Pannelli globali"
+  }
+ },
+ "documentMarkdown": {
+  "viewer.label": {
+   "en": "Markdown",
+   "zh": "Markdown",
+   "it": "Markdown"
+  },
+  "code.copy": {
+   "en": "Copy",
+   "zh": "复制",
+   "it": "Copia"
+  },
+  "code.copied": {
+   "en": "Copied",
+   "zh": "已复制",
+   "it": "Copiato"
+  },
+  "footnotes": {
+   "en": "Footnotes",
+   "zh": "脚注",
+   "it": "Note a piè di pagina"
+  }
+ },
+ "documentHtml": {
+  "title": {
+   "en": "HTML",
+   "zh": "HTML",
+   "it": "HTML"
+  },
+  "frame": {
+   "en": "HTML document preview",
+   "zh": "HTML 文档预览",
+   "it": "Anteprima documento HTML"
+  },
+  "loading": {
+   "en": "Preparing HTML preview…",
+   "zh": "正在准备 HTML 预览…",
+   "it": "Preparazione anteprima HTML…"
+  },
+  "failed": {
+   "en": "This HTML document could not be previewed.",
+   "zh": "无法预览这份 HTML 文档。",
+   "it": "Impossibile visualizzare l'anteprima di questo documento HTML."
+  }
+ },
+ "sidebarImage": {
+  "title": {
+   "en": "Image",
+   "zh": "图片",
+   "it": "Immagine"
+  },
+  "preview": {
+   "en": "Image preview: {name}",
+   "zh": "图片预览：{name}",
+   "it": "Anteprima immagine: {name}"
+  },
+  "loading": {
+   "en": "Opening image…",
+   "zh": "正在打开图片…",
+   "it": "Apertura immagine…"
+  },
+  "failed": {
+   "en": "This image could not be displayed.",
+   "zh": "无法显示这张图片。",
+   "it": "Impossibile visualizzare questa immagine."
+  },
+  "unsupported": {
+   "en": "Image preview requires the complete file contents.",
+   "zh": "图片预览需要完整文件内容。",
+   "it": "L'anteprima immagine richiede il contenuto completo del file."
+  }
+ },
+ "sidebarPdf": {
+  "title": {
+   "en": "PDF",
+   "zh": "PDF",
+   "it": "PDF"
+  },
+  "pageImage": {
+   "en": "PDF page {page}",
+   "zh": "PDF 第 {page} 页",
+   "it": "Pagina PDF {page}"
+  },
+  "loading": {
+   "en": "Opening PDF…",
+   "zh": "正在打开 PDF…",
+   "it": "Apertura PDF…"
+  },
+  "rendering": {
+   "en": "Rendering page…",
+   "zh": "正在绘制页面…",
+   "it": "Rendering pagina…"
+  },
+  "failed": {
+   "en": "Cannot display PDF: {message}",
+   "zh": "无法显示 PDF：{message}",
+   "it": "Impossibile visualizzare il PDF: {message}"
+  },
+  "password": {
+   "en": "This PDF requires a password; password-protected previews are not supported.",
+   "zh": "此 PDF 需要密码，暂不支持预览。",
+   "it": "Questo PDF richiede una password; le anteprime protette da password non sono supportate."
+  },
+  "workerFailed": {
+   "en": "The PDF rendering process could not continue. Please retry.",
+   "zh": "PDF 渲染进程无法继续，请重试。",
+   "it": "Il processo di rendering del PDF non può continuare. Riprova."
+  },
+  "unsupported": {
+   "en": "PDF preview requires the complete file contents.",
+   "zh": "PDF 预览需要完整文件内容。",
+   "it": "L'anteprima PDF richiede il contenuto completo del file."
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  }
+ },
+ "sidebarCodePreview": {
+  "title": {
+   "en": "Code",
+   "zh": "代码",
+   "it": "Codice"
+  },
+  "copy": {
+   "en": "Copy",
+   "zh": "复制",
+   "it": "Copia"
+  },
+  "copied": {
+   "en": "Copied",
+   "zh": "已复制",
+   "it": "Copiato"
+  }
+ },
+ "sidebarDocumentPreview": {
+  "loading": {
+   "en": "Reading…",
+   "zh": "正在读取…",
+   "it": "Lettura…"
+  },
+  "loadMore": {
+   "en": "Load more",
+   "zh": "加载更多",
+   "it": "Carica altro"
+  },
+  "changed": {
+   "en": "The file has changed, showing the previous content.",
+   "zh": "文件已更新，当前显示为旧内容。",
+   "it": "Il file è cambiato, è mostrato il contenuto precedente."
+  },
+  "reloadNow": {
+   "en": "Reload",
+   "zh": "重新载入",
+   "it": "Ricarica"
+  },
+  "reload": {
+   "en": "Read the file again",
+   "zh": "重新读取文件",
+   "it": "Leggi di nuovo il file"
+  },
+  "wrap.enable": {
+   "en": "Turn on line wrap",
+   "zh": "自动换行",
+   "it": "Attiva a capo automatico"
+  },
+  "wrap.disable": {
+   "en": "Turn off line wrap",
+   "zh": "取消换行",
+   "it": "Disattiva a capo automatico"
+  },
+  "wrap.aria": {
+   "en": "Line wrap",
+   "zh": "自动换行",
+   "it": "A capo automatico"
+  },
+  "openWith": {
+   "en": "Open with",
+   "zh": "打开方式",
+   "it": "Apri con"
+  },
+  "viewer.text": {
+   "en": "Plain text",
+   "zh": "纯文本",
+   "it": "Testo semplice"
+  },
+  "resourceUnavailable": {
+   "en": "The file resource service is unavailable.",
+   "zh": "文件资源服务不可用。",
+   "it": "Il servizio di risorse dei file non è disponibile."
+  },
+  "rendererUnavailable": {
+   "en": "The {name} preview is unavailable.",
+   "zh": "预览器 {name} 不可用。",
+   "it": "L'anteprima {name} non è disponibile."
+  },
+  "error.notFound": {
+   "en": "File not found. It may have been moved or deleted.",
+   "zh": "文件不存在，可能已被移动或删除。",
+   "it": "File non trovato. Potrebbe essere stato spostato o eliminato."
+  },
+  "error.tooLarge": {
+   "en": "This page exceeds the {limit} limit and cannot be read.",
+   "zh": "单页内容超过 {limit} 上限，无法读取。",
+   "it": "Questa pagina supera il limite {limit} e non può essere letta."
+  },
+  "error.notText": {
+   "en": "Not a text file, preview is unavailable for now.",
+   "zh": "非文本文件，暂时无法预览。",
+   "it": "Non è un file di testo, l'anteprima al momento non è disponibile."
+  },
+  "error.notRegularFile": {
+   "en": "Not a regular file, nothing to display.",
+   "zh": "该路径不是普通文件，没有可显示的内容。",
+   "it": "Non è un file normale, non c'è nulla da mostrare."
+  },
+  "error.unavailable": {
+   "en": "Read failed: {message}",
+   "zh": "读取失败：{message}",
+   "it": "Lettura non riuscita: {message}"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  }
+ },
+ "sidebarFiles": {
+  "type.label": {
+   "en": "Files",
+   "zh": "文件",
+   "it": "File"
+  },
+  "guide.title": {
+   "en": "Workspace files",
+   "zh": "工作区文件",
+   "it": "File dell'area di lavoro"
+  },
+  "guide.description": {
+   "en": "Browse files in this session's workspace",
+   "zh": "浏览会话工作区的文件",
+   "it": "Sfoglia i file nell'area di lavoro di questa sessione"
+  },
+  "loading": {
+   "en": "Reading…",
+   "zh": "正在读取…",
+   "it": "Lettura…"
+  },
+  "empty": {
+   "en": "Empty directory",
+   "zh": "空目录",
+   "it": "Directory vuota"
+  },
+  "truncated": {
+   "en": "Too many entries, showing only some of them.",
+   "zh": "条目太多，只显示了一部分。",
+   "it": "Troppe voci, ne viene mostrata solo una parte."
+  },
+  "noWorkspace": {
+   "en": "This session has no workspace directory.",
+   "zh": "这个会话没有工作区目录。",
+   "it": "Questa sessione non ha una directory dell'area di lavoro."
+  },
+  "reload": {
+   "en": "Reload",
+   "zh": "重新读取",
+   "it": "Ricarica"
+  },
+  "entry.other": {
+   "en": "Not a file or a directory, so it cannot be opened.",
+   "zh": "这不是文件或目录，没法打开。",
+   "it": "Non è un file né una directory, quindi non può essere aperto."
+  },
+  "error.notFound": {
+   "en": "That directory is gone. It may have been moved or deleted.",
+   "zh": "这个目录不在了。可能已被移动或删除。",
+   "it": "La directory non esiste più. Potrebbe essere stata spostata o eliminata."
+  },
+  "error.outsideWorkspace": {
+   "en": "That directory is outside the workspace, so the sidebar will not read it.",
+   "zh": "这个目录在工作区之外，侧栏不会读取它。",
+   "it": "La directory è fuori dall'area di lavoro, quindi la barra laterale non la leggerà."
+  },
+  "error.notDirectory": {
+   "en": "That is not a directory.",
+   "zh": "这不是一个目录。",
+   "it": "Non è una directory."
+  },
+  "error.unavailable": {
+   "en": "Read failed: {message}",
+   "zh": "读取失败：{message}",
+   "it": "Lettura non riuscita: {message}"
+  }
+ },
+ "sidebarRight": {
+  "chrome.expand": {
+   "en": "Open sidebar",
+   "zh": "打开侧边栏",
+   "it": "Apri barra laterale"
+  },
+  "chrome.expandAria": {
+   "en": "Open right sidebar",
+   "zh": "打开右侧边栏",
+   "it": "Apri barra laterale destra"
+  },
+  "chrome.collapse": {
+   "en": "Collapse sidebar",
+   "zh": "收起侧边栏",
+   "it": "Comprimi barra laterale"
+  },
+  "chrome.collapseAria": {
+   "en": "Collapse right sidebar",
+   "zh": "收起右侧边栏",
+   "it": "Comprimi barra laterale destra"
+  },
+  "chrome.toFullscreen": {
+   "en": "Fullscreen",
+   "zh": "全屏",
+   "it": "Schermo intero"
+  },
+  "chrome.exitFullscreen": {
+   "en": "Exit fullscreen",
+   "zh": "退出全屏",
+   "it": "Esci da schermo intero"
+  },
+  "dock.emptyPane": {
+   "en": "Empty pane",
+   "zh": "空面板",
+   "it": "Pannello vuoto"
+  },
+  "dock.splitPane": {
+   "en": "Split",
+   "zh": "分栏",
+   "it": "Dividi"
+  },
+  "dock.splitPaneDisabled": {
+   "en": "Two panes is the limit",
+   "zh": "已达两格上限",
+   "it": "Il limite è di due pannelli"
+  },
+  "dock.splitPaneNarrow": {
+   "en": "Not enough width to split, widen the sidebar",
+   "zh": "栏宽不足，拖宽侧边栏后再分栏",
+   "it": "Larghezza insufficiente per dividere, allarga la barra laterale"
+  },
+  "dock.closeTab": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
+  "dock.addTab": {
+   "en": "New tab",
+   "zh": "新标签页",
+   "it": "Nuova scheda"
+  },
+  "dock.dockFloat": {
+   "en": "Send back to the sidebar",
+   "zh": "收回到侧边栏",
+   "it": "Riporta nella barra laterale"
+  },
+  "dock.closeFloat": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
+  "dock.drop.center": {
+   "en": "Move here",
+   "zh": "移到这里",
+   "it": "Sposta qui"
+  },
+  "dock.drop.left": {
+   "en": "Add left split",
+   "zh": "左分栏",
+   "it": "Aggiungi divisione a sinistra"
+  },
+  "dock.drop.right": {
+   "en": "Add right split",
+   "zh": "右分栏",
+   "it": "Aggiungi divisione a destra"
+  },
+  "dock.drop.top": {
+   "en": "Add top split",
+   "zh": "上分栏",
+   "it": "Aggiungi divisione in alto"
+  },
+  "dock.drop.bottom": {
+   "en": "Add bottom split",
+   "zh": "下分栏",
+   "it": "Aggiungi divisione in basso"
+  },
+  "tab.guide.title": {
+   "en": "Start",
+   "zh": "开始",
+   "it": "Inizia"
+  },
+  "tab.unavailable": {
+   "en": "Nothing here can view this kind of content yet.",
+   "zh": "这类内容还没有可用的查看方式。",
+   "it": "Qui non è ancora possibile visualizzare questo tipo di contenuto."
+  }
+ },
+ "skill": {
+  "row.title": {
+   "en": "Skill",
+   "zh": "Skill",
+   "it": "Skill"
+  },
+  "row.running": {
+   "en": "Loading skill",
+   "zh": "正在加载 skill",
+   "it": "Caricamento Skill"
+  },
+  "row.failed": {
+   "en": "Skill load failed",
+   "zh": "skill 加载失败",
+   "it": "Caricamento Skill non riuscito"
+  },
+  "row.stopped": {
+   "en": "Skill load stopped",
+   "zh": "skill 加载已中止",
+   "it": "Caricamento Skill interrotto"
+  },
+  "row.instructions": {
+   "en": "Instructions",
+   "zh": "说明",
+   "it": "Istruzioni"
+  },
+  "row.inspect": {
+   "en": "Inspect",
+   "zh": "查看",
+   "it": "Ispeziona"
+  },
+  "menu.userOnly": {
+   "en": "user-only",
+   "zh": "仅用户",
+   "it": "solo utente"
+  }
+ },
+ "subagent": {
+  "diagnostic.corrupt": {
+   "en": "corrupted session record",
+   "zh": "会话记录损坏",
+   "it": "record della sessione danneggiato"
+  },
+  "diagnostic.unsupported": {
+   "en": "unsupported subagent record version",
+   "zh": "子代理记录版本不受支持",
+   "it": "versione del record del subagente non supportata"
+  },
+  "diagnostic.unavailable": {
+   "en": "session record temporarily unavailable",
+   "zh": "会话记录暂不可用",
+   "it": "record della sessione temporaneamente non disponibile"
+  },
+  "duration.seconds": {
+   "en": "{seconds}s",
+   "zh": "{seconds}秒",
+   "it": "{seconds}s"
+  },
+  "duration.minutes": {
+   "en": "{minutes}m {seconds}s",
+   "zh": "{minutes}分{seconds}秒",
+   "it": "{minutes}m {seconds}s"
+  },
+  "duration.hours": {
+   "en": "{hours}h {minutes}m {seconds}s",
+   "zh": "{hours}小时{minutes}分{seconds}秒",
+   "it": "{hours}h {minutes}m {seconds}s"
+  },
+  "duration.days": {
+   "en": "{days}d",
+   "zh": "{days}天",
+   "it": "{days}g"
+  },
+  "duration.daysHours": {
+   "en": "{days}d {hours}h",
+   "zh": "{days}天{hours}小时",
+   "it": "{days}g {hours}h"
+  },
+  "duration.months": {
+   "en": "~{months}mo",
+   "zh": "约{months}个月",
+   "it": "~{months}mesi"
+  },
+  "duration.monthsDays": {
+   "en": "~{months}mo {days}d",
+   "zh": "约{months}个月{days}天",
+   "it": "~{months}mesi {days}g"
+  },
+  "duration.years": {
+   "en": "~{years}y",
+   "zh": "约{years}年",
+   "it": "~{years}a"
+  },
+  "duration.yearsMonths": {
+   "en": "~{years}y {months}mo",
+   "zh": "约{years}年{months}个月",
+   "it": "~{years}a {months}mesi"
+  },
+  "duration.exactDays": {
+   "en": "{days}d {hours}h {minutes}m {seconds}s",
+   "zh": "{days}天{hours}小时{minutes}分{seconds}秒",
+   "it": "{days}g {hours}h {minutes}m {seconds}s"
+  },
+  "duration.exactTitle": {
+   "en": "Total active duration: {duration}",
+   "zh": "总活跃耗时：{duration}",
+   "it": "Durata attiva totale: {duration}"
+  },
+  "tokens.thousand": {
+   "en": "{value}K",
+   "zh": "{value}K",
+   "it": "{value}K"
+  },
+  "tokens.million": {
+   "en": "{value}M",
+   "zh": "{value}M",
+   "it": "{value}M"
+  },
+  "tokens.total": {
+   "en": "{value} tok",
+   "zh": "{value} tok",
+   "it": "{value} tok"
+  },
+  "loading.label": {
+   "en": "Loading subagents…",
+   "zh": "正在加载子代理…",
+   "it": "Caricamento subagenti…"
+  },
+  "loading.aria": {
+   "en": "Loading subagents",
+   "zh": "正在加载子代理",
+   "it": "Caricamento subagenti"
+  },
+  "load.error": {
+   "en": "Unable to load subagents",
+   "zh": "无法加载子代理",
+   "it": "Impossibile caricare i subagenti"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "mode.oneShot": {
+   "en": "one-shot",
+   "zh": "一次性",
+   "it": "una tantum"
+  },
+  "mode.continuable": {
+   "en": "continuable",
+   "zh": "可继续",
+   "it": "continuabile"
+  },
+  "activity.running": {
+   "en": "running",
+   "zh": "正在运行",
+   "it": "in esecuzione"
+  },
+  "activity.inactive": {
+   "en": "not running",
+   "zh": "当前未运行",
+   "it": "non in esecuzione"
+  },
+  "branch.collapse": {
+   "en": "Collapse {label} descendants",
+   "zh": "收起 {label} 的下级子代理",
+   "it": "Comprimi i discendenti di {label}"
+  },
+  "branch.expand": {
+   "en": "Expand {label} descendants",
+   "zh": "展开 {label} 的下级子代理",
+   "it": "Espandi i discendenti di {label}"
+  },
+  "count.total.one": {
+   "en": "{count} subagent",
+   "zh": "{count} 个子代理",
+   "it": "{count} subagente"
+  },
+  "count.total.other": {
+   "en": "{count} subagents",
+   "zh": "{count} 个子代理",
+   "it": "{count} subagenti"
+  },
+  "count.running.one": {
+   "en": "{count} subagent running",
+   "zh": "{count} 个子代理，正在运行",
+   "it": "{count} subagente in esecuzione"
+  },
+  "count.running.other": {
+   "en": "{count} subagents running",
+   "zh": "{count} 个子代理，正在运行",
+   "it": "{count} subagenti in esecuzione"
+  },
+  "switcher.aria": {
+   "en": "Switch subagent: {title}",
+   "zh": "切换子代理：{title}",
+   "it": "Cambia subagente: {title}"
+  },
+  "tree.aria": {
+   "en": "Subagent sessions",
+   "zh": "子代理会话",
+   "it": "Sessioni dei subagenti"
+  },
+  "readonly.oneShot.title": {
+   "en": "One-shot subagent record",
+   "zh": "一次性子代理记录",
+   "it": "Record del subagente una tantum"
+  },
+  "readonly.title": {
+   "en": "This subagent is read-only for now",
+   "zh": "此子代理暂时只读",
+   "it": "Questo subagente è in sola lettura per ora"
+  },
+  "readonly.oneShot.body": {
+   "en": "One-shot tasks do not accept follow-ups; review the full execution record here.",
+   "zh": "一次性任务不支持后续消息，可在这里查看完整执行记录。",
+   "it": "I task una tantum non accettano messaggi successivi; qui puoi consultare il record di esecuzione completo."
+  },
+  "readonly.body": {
+   "en": "The parent session is offline; reopen it to continue sending messages.",
+   "zh": "父会话当前不在线，重新打开父会话后即可继续发送消息。",
+   "it": "La sessione padre è offline; riaprila per continuare a inviare messaggi."
+  }
+ },
+ "settings.theme": {
+  "appearance.title": {
+   "en": "Appearance",
+   "zh": "外观",
+   "it": "Aspetto"
+  },
+  "appearance.light": {
+   "en": "Light",
+   "zh": "浅色",
+   "it": "Chiaro"
+  },
+  "appearance.dark": {
+   "en": "Dark",
+   "zh": "深色",
+   "it": "Scuro"
+  },
+  "appearance.system": {
+   "en": "System",
+   "zh": "跟随系统",
+   "it": "Sistema"
+  },
+  "fontSize.title": {
+   "en": "Font size",
+   "zh": "字号大小",
+   "it": "Dimensione carattere"
+  },
+  "fontSize.description": {
+   "en": "Only affects conversation content",
+   "zh": "仅影响会话内容的字号",
+   "it": "Influisce solo sul contenuto della conversazione"
+  },
+  "fontSize.unit": {
+   "en": "px",
+   "zh": "px",
+   "it": "px"
+  },
+  "fontSize.increase": {
+   "en": "Increase font size",
+   "zh": "增大字号",
+   "it": "Aumenta dimensione carattere"
+  },
+  "fontSize.decrease": {
+   "en": "Decrease font size",
+   "zh": "减小字号",
+   "it": "Riduci dimensione carattere"
+  }
+ },
+ "trajectory": {
+  "view.trajectory": {
+   "en": "Trajectory",
+   "zh": "轨迹",
+   "it": "Traiettoria"
+  },
+  "toolbar.aria": {
+   "en": "Trajectory toolbar",
+   "zh": "轨迹工具栏",
+   "it": "Barra degli strumenti della traiettoria"
+  },
+  "toolbar.duration": {
+   "en": "Duration",
+   "zh": "时长",
+   "it": "Durata"
+  },
+  "toolbar.useActualDuration": {
+   "en": "Use actual duration",
+   "zh": "使用实际时长",
+   "it": "Usa la durata effettiva"
+  },
+  "toolbar.useEqualWidth": {
+   "en": "Use equal-width operations",
+   "zh": "使用等宽操作",
+   "it": "Usa operazioni di larghezza uguale"
+  },
+  "toolbar.actualTime": {
+   "en": "Actual time",
+   "zh": "实际时间",
+   "it": "Tempo effettivo"
+  },
+  "toolbar.turns": {
+   "en": "Turns",
+   "zh": "轮次",
+   "it": "Turni"
+  },
+  "toolbar.expandTurns": {
+   "en": "Expand turns",
+   "zh": "展开所有轮次",
+   "it": "Espandi i turni"
+  },
+  "toolbar.collapseTurns": {
+   "en": "Collapse turns",
+   "zh": "收起所有轮次",
+   "it": "Comprimi i turni"
+  },
+  "toolbar.calls": {
+   "en": "Calls",
+   "zh": "调用",
+   "it": "Chiamate"
+  },
+  "toolbar.expandCalls": {
+   "en": "Expand calls",
+   "zh": "展开所有调用",
+   "it": "Espandi le chiamate"
+  },
+  "toolbar.collapseCalls": {
+   "en": "Collapse calls",
+   "zh": "收起所有调用",
+   "it": "Comprimi le chiamate"
+  },
+  "toolbar.search": {
+   "en": "Search trajectory",
+   "zh": "搜索轨迹",
+   "it": "Cerca nella traiettoria"
+  },
+  "toolbar.searchPlaceholder": {
+   "en": "Search",
+   "zh": "搜索",
+   "it": "Cerca"
+  },
+  "kind.system": {
+   "en": "SYSTEM",
+   "zh": "系统",
+   "it": "SYSTEM"
+  },
+  "kind.user": {
+   "en": "USER",
+   "zh": "用户",
+   "it": "USER"
+  },
+  "kind.context": {
+   "en": "CONTEXT",
+   "zh": "上下文",
+   "it": "CONTEXT"
+  },
+  "kind.compacted": {
+   "en": "COMPACTED",
+   "zh": "已压缩",
+   "it": "COMPACTED"
+  },
+  "kind.message": {
+   "en": "Message",
+   "zh": "消息",
+   "it": "Messaggio"
+  },
+  "kind.assistant": {
+   "en": "ASSISTANT",
+   "zh": "助手",
+   "it": "ASSISTANT"
+  },
+  "kind.tool": {
+   "en": "TOOL",
+   "zh": "工具",
+   "it": "TOOL"
+  },
+  "kind.subtool": {
+   "en": "SUBTOOL",
+   "zh": "子工具",
+   "it": "SUBTOOL"
+  },
+  "kind.sub": {
+   "en": "Sub",
+   "zh": "子项",
+   "it": "Sub"
+  },
+  "column.input": {
+   "en": "Input",
+   "zh": "输入",
+   "it": "Input"
+  },
+  "column.output": {
+   "en": "Output",
+   "zh": "输出",
+   "it": "Output"
+  },
+  "column.think": {
+   "en": "Think",
+   "zh": "思考",
+   "it": "Pensiero"
+  },
+  "column.time": {
+   "en": "Time",
+   "zh": "时间",
+   "it": "Tempo"
+  },
+  "column.model": {
+   "en": "Model",
+   "zh": "模型",
+   "it": "Modello"
+  },
+  "column.tools": {
+   "en": "Tools",
+   "zh": "工具",
+   "it": "Strumenti"
+  },
+  "turn.label": {
+   "en": "Turn {turn}",
+   "zh": "第 {turn} 轮",
+   "it": "Turno {turn}"
+  },
+  "section.betweenTurns": {
+   "en": "Between turns",
+   "zh": "轮次之间",
+   "it": "Tra i turni"
+  },
+  "group.message": {
+   "en": "Message",
+   "zh": "消息",
+   "it": "Messaggio"
+  },
+  "group.step": {
+   "en": "Step {step}",
+   "zh": "步骤 {step}",
+   "it": "Passo {step}"
+  },
+  "group.compaction": {
+   "en": "Compaction {seq}",
+   "zh": "压缩 {seq}",
+   "it": "Compattazione {seq}"
+  },
+  "status.failed": {
+   "en": "Failed",
+   "zh": "失败",
+   "it": "Non riuscito"
+  },
+  "status.pending": {
+   "en": "Pending",
+   "zh": "等待中",
+   "it": "In attesa"
+  },
+  "status.completed": {
+   "en": "Completed",
+   "zh": "已完成",
+   "it": "Completato"
+  },
+  "timing.notAvailable": {
+   "en": "Not available",
+   "zh": "不可用",
+   "it": "Non disponibile"
+  },
+  "timing.notRecorded": {
+   "en": "Not recorded",
+   "zh": "未记录",
+   "it": "Non registrato"
+  },
+  "timing.stepStartUnavailable": {
+   "en": "Step start unavailable",
+   "zh": "步骤开始时间不可用",
+   "it": "Avvio del passo non disponibile"
+  },
+  "timing.firstTokenUnavailable": {
+   "en": "First token unavailable",
+   "zh": "首 token 时间不可用",
+   "it": "Primo token non disponibile"
+  },
+  "timing.usageUnavailable": {
+   "en": "Usage unavailable",
+   "zh": "用量不可用",
+   "it": "Utilizzo non disponibile"
+  },
+  "timing.outputTokensUnavailable": {
+   "en": "Output tokens unavailable",
+   "zh": "输出 token 数不可用",
+   "it": "Token di output non disponibili"
+  },
+  "timing.durationTooShort": {
+   "en": "Duration too short",
+   "zh": "时长过短",
+   "it": "Durata troppo breve"
+  },
+  "timing.showLocalTime": {
+   "en": "Show local time",
+   "zh": "显示本地时间",
+   "it": "Mostra l'ora locale"
+  },
+  "timing.showUnixTimestamp": {
+   "en": "Show Unix timestamp",
+   "zh": "显示 Unix 时间戳",
+   "it": "Mostra il timestamp Unix"
+  },
+  "timing.started": {
+   "en": "Started",
+   "zh": "开始时间",
+   "it": "Avvio"
+  },
+  "timing.totalDuration": {
+   "en": "Total duration",
+   "zh": "总时长",
+   "it": "Durata totale"
+  },
+  "timing.ttft": {
+   "en": "TTFT",
+   "zh": "首 token 延迟",
+   "it": "TTFT"
+  },
+  "timing.generation": {
+   "en": "Generation",
+   "zh": "生成",
+   "it": "Generazione"
+  },
+  "timing.throughput": {
+   "en": "Throughput",
+   "zh": "吞吐量",
+   "it": "Velocità"
+  },
+  "timing.duration": {
+   "en": "Duration",
+   "zh": "时长",
+   "it": "Durata"
+  },
+  "timing.source": {
+   "en": "Timing source",
+   "zh": "计时来源",
+   "it": "Origine della misurazione"
+  },
+  "timing.sessionTimestamps": {
+   "en": "Session timestamps",
+   "zh": "会话时间戳",
+   "it": "Timestamp della sessione"
+  },
+  "timing.sessionTimestampsRunning": {
+   "en": "Session timestamps (running)",
+   "zh": "会话时间戳（运行中）",
+   "it": "Timestamp della sessione (in esecuzione)"
+  },
+  "timing.request": {
+   "en": "Request Timing",
+   "zh": "请求计时",
+   "it": "Tempi della richiesta"
+  },
+  "unit.milliseconds": {
+   "en": "{value} ms",
+   "zh": "{value} 毫秒",
+   "it": "{value} ms"
+  },
+  "unit.seconds": {
+   "en": "{value} s",
+   "zh": "{value} 秒",
+   "it": "{value} s"
+  },
+  "unit.tokens": {
+   "en": "{value} tok",
+   "zh": "{value} tok",
+   "it": "{value} tok"
+  },
+  "unit.tokensPerSecond": {
+   "en": "{value} tok/s",
+   "zh": "{value} tok/s",
+   "it": "{value} tok/s"
+  },
+  "usage.tokens": {
+   "en": "Tokens",
+   "zh": "Token",
+   "it": "Token"
+  },
+  "usage.reasoning": {
+   "en": "Reasoning",
+   "zh": "推理",
+   "it": "Ragionamento"
+  },
+  "usage.content": {
+   "en": "Content",
+   "zh": "内容",
+   "it": "Contenuto"
+  },
+  "usage.notReported": {
+   "en": "Usage not reported",
+   "zh": "未报告用量",
+   "it": "Utilizzo non segnalato"
+  },
+  "usage.input": {
+   "en": "Input",
+   "zh": "输入",
+   "it": "Input"
+  },
+  "usage.cached": {
+   "en": "Cached",
+   "zh": "缓存读取",
+   "it": "Cache"
+  },
+  "usage.cacheCreated": {
+   "en": "Cache created",
+   "zh": "缓存写入",
+   "it": "Cache creata"
+  },
+  "usage.other": {
+   "en": "Other",
+   "zh": "其他",
+   "it": "Altro"
+  },
+  "usage.output": {
+   "en": "Output",
+   "zh": "输出",
+   "it": "Output"
+  },
+  "usage.thisRequest": {
+   "en": "This request",
+   "zh": "本次请求",
+   "it": "Questa richiesta"
+  },
+  "usage.sessionCumulative": {
+   "en": "Session cumulative",
+   "zh": "会话累计",
+   "it": "Cumulativo della sessione"
+  },
+  "options.notRecorded": {
+   "en": "Options not recorded",
+   "zh": "未记录选项",
+   "it": "Opzioni non registrate"
+  },
+  "options.json": {
+   "en": "Request options JSON",
+   "zh": "请求选项 JSON",
+   "it": "JSON delle opzioni della richiesta"
+  },
+  "source.unknown": {
+   "en": "Unknown",
+   "zh": "未知",
+   "it": "Sconosciuto"
+  },
+  "source.user": {
+   "en": "User",
+   "zh": "用户",
+   "it": "Utente"
+  },
+  "source.plugin": {
+   "en": "Plugin",
+   "zh": "插件",
+   "it": "Plugin"
+  },
+  "source.pluginNamed": {
+   "en": "Plugin · {plugin}",
+   "zh": "插件 · {plugin}",
+   "it": "Plugin · {plugin}"
+  },
+  "source.goal": {
+   "en": "Goal",
+   "zh": "目标",
+   "it": "Obiettivo"
+  },
+  "source.goalRound": {
+   "en": "Goal · Round {round}",
+   "zh": "目标 · Round {round}",
+   "it": "Obiettivo · Round {round}"
+  },
+  "source.notRecorded": {
+   "en": "Source not recorded",
+   "zh": "未记录来源",
+   "it": "Origine non registrata"
+  },
+  "source.messageJson": {
+   "en": "Message source JSON",
+   "zh": "消息来源 JSON",
+   "it": "JSON dell'origine del messaggio"
+  },
+  "tab.summary": {
+   "en": "Summary",
+   "zh": "概述",
+   "it": "Riepilogo"
+  },
+  "tab.rawOutput": {
+   "en": "Raw Output",
+   "zh": "原始输出",
+   "it": "Output non elaborato"
+  },
+  "tab.preview": {
+   "en": "Preview",
+   "zh": "预览",
+   "it": "Anteprima"
+  },
+  "tab.raw": {
+   "en": "Raw",
+   "zh": "原始内容",
+   "it": "Non elaborato"
+  },
+  "tab.source": {
+   "en": "Source",
+   "zh": "来源",
+   "it": "Origine"
+  },
+  "tab.payload": {
+   "en": "Payload",
+   "zh": "参数",
+   "it": "Payload"
+  },
+  "tab.result": {
+   "en": "Result",
+   "zh": "结果",
+   "it": "Risultato"
+  },
+  "tab.schema": {
+   "en": "Schema",
+   "zh": "Schema",
+   "it": "Schema"
+  },
+  "tab.timing": {
+   "en": "Timing",
+   "zh": "计时",
+   "it": "Tempistiche"
+  },
+  "tab.diff": {
+   "en": "Diff",
+   "zh": "差异",
+   "it": "Diff"
+  },
+  "tab.systemPrompt": {
+   "en": "System Prompt",
+   "zh": "系统提示词",
+   "it": "Prompt di sistema"
+  },
+  "tab.tools": {
+   "en": "Tools",
+   "zh": "工具",
+   "it": "Strumenti"
+  },
+  "tab.options": {
+   "en": "Options",
+   "zh": "选项",
+   "it": "Opzioni"
+  },
+  "tab.usage": {
+   "en": "Usage",
+   "zh": "用量",
+   "it": "Utilizzo"
+  },
+  "record.toolCallOnly": {
+   "en": "(tool call only)",
+   "zh": "（仅工具调用）",
+   "it": "(solo chiamata a strumento)"
+  },
+  "record.noContent": {
+   "en": "No content",
+   "zh": "无内容",
+   "it": "Nessun contenuto"
+  },
+  "record.noPayload": {
+   "en": "No payload captured",
+   "zh": "未捕获参数",
+   "it": "Nessun payload acquisito"
+  },
+  "record.noResult": {
+   "en": "No result captured",
+   "zh": "未捕获结果",
+   "it": "Nessun risultato acquisito"
+  },
+  "record.noOutput": {
+   "en": "No output",
+   "zh": "无输出",
+   "it": "Nessun output"
+  },
+  "record.schemaUnavailable": {
+   "en": "Schema unavailable",
+   "zh": "Schema 不可用",
+   "it": "Schema non disponibile"
+  },
+  "record.parameters": {
+   "en": "Parameters",
+   "zh": "参数",
+   "it": "Parametri"
+  },
+  "record.resultJson": {
+   "en": "Result JSON",
+   "zh": "结果 JSON",
+   "it": "Risultato JSON"
+  },
+  "record.json": {
+   "en": "JSON",
+   "zh": "JSON",
+   "it": "JSON"
+  },
+  "record.parametersJson": {
+   "en": "parameters JSON",
+   "zh": "参数 JSON",
+   "it": "JSON dei parametri"
+  },
+  "record.namedParametersJson": {
+   "en": "{name} parameters JSON",
+   "zh": "{name} 参数 JSON",
+   "it": "JSON dei parametri di {name}"
+  },
+  "record.payloadJson": {
+   "en": "Payload JSON",
+   "zh": "参数 JSON",
+   "it": "JSON del payload"
+  },
+  "record.outputJson": {
+   "en": "Result JSON",
+   "zh": "结果 JSON",
+   "it": "Risultato JSON"
+  },
+  "record.thinking": {
+   "en": "Thinking",
+   "zh": "思考",
+   "it": "Ragionamento"
+  },
+  "record.systemPromptMissing": {
+   "en": "No system prompt in this request",
+   "zh": "本次请求没有系统提示词",
+   "it": "Nessun prompt di sistema in questa richiesta"
+  },
+  "record.toolsMissing": {
+   "en": "No tools in this request",
+   "zh": "本次请求没有工具",
+   "it": "Nessuno strumento in questa richiesta"
+  },
+  "record.systemPrompt": {
+   "en": "System Prompt",
+   "zh": "系统提示词",
+   "it": "Prompt di sistema"
+  },
+  "record.tools": {
+   "en": "Tools",
+   "zh": "工具",
+   "it": "Strumenti"
+  },
+  "block.openSummary": {
+   "en": "Open Block #{index} tool call summary",
+   "zh": "打开第 {index} 个块的工具调用概述",
+   "it": "Apri il riepilogo delle chiamate a strumento del blocco #{index}"
+  },
+  "block.openSummaryTitle": {
+   "en": "Open tool call summary",
+   "zh": "打开工具调用概述",
+   "it": "Apri il riepilogo delle chiamate a strumento"
+  },
+  "block.label": {
+   "en": "Block #{index} {type}",
+   "zh": "块 #{index} {type}",
+   "it": "Blocco #{index} {type}"
+  },
+  "history.loadingTrajectory": {
+   "en": "Loading trajectory…",
+   "zh": "正在加载轨迹…",
+   "it": "Caricamento della traiettoria…"
+  },
+  "history.loadingEarlier": {
+   "en": "Loading earlier history…",
+   "zh": "正在加载更早的历史…",
+   "it": "Caricamento della cronologia precedente…"
+  },
+  "history.loadingEarlierAria": {
+   "en": "Loading earlier history…",
+   "zh": "正在加载更早的历史…",
+   "it": "Caricamento della cronologia precedente…"
+  },
+  "history.loadEarlier": {
+   "en": "Load earlier history",
+   "zh": "加载更早的历史",
+   "it": "Carica la cronologia precedente"
+  },
+  "history.clickToLoadEarlier": {
+   "en": "Click to load earlier history",
+   "zh": "点击加载更早的历史",
+   "it": "Fai clic per caricare la cronologia precedente"
+  },
+  "request.label": {
+   "en": "Request #{request}",
+   "zh": "请求 #{request}",
+   "it": "Richiesta #{request}"
+  },
+  "request.labelCompaction": {
+   "en": "Request #{request} · Compaction",
+   "zh": "请求 #{request} · 压缩",
+   "it": "Richiesta #{request} · Compattazione"
+  },
+  "request.compaction": {
+   "en": "Compaction · {section}",
+   "zh": "压缩 · {section}",
+   "it": "Compattazione · {section}"
+  },
+  "request.compactionPurpose": {
+   "en": "Compaction",
+   "zh": "压缩",
+   "it": "Compattazione"
+  },
+  "request.retryProgress": {
+   "en": "{retry} of {maximum}",
+   "zh": "{retry}/{maximum}",
+   "it": "{retry} di {maximum}"
+  },
+  "request.collapsedSummary": {
+   "en": "Collapsed {kind} summary, {summary}",
+   "zh": "已收起的{kind}概述，{summary}",
+   "it": "Riepilogo {kind} compresso, {summary}"
+  },
+  "request.collapsedTurn": {
+   "en": "turn",
+   "zh": "轮次",
+   "it": "turno"
+  },
+  "request.collapsedAssistant": {
+   "en": "assistant",
+   "zh": "助手",
+   "it": "assistente"
+  },
+  "request.rowAria": {
+   "en": "{request}{kind}, {content}",
+   "zh": "{request}{kind}，{content}",
+   "it": "{request}{kind}, {content}"
+  },
+  "request.rowPrefix": {
+   "en": "Request {request}, ",
+   "zh": "请求 {request}，",
+   "it": "Richiesta {request}, "
+  },
+  "request.rowAriaCompaction": {
+   "en": "Request {request}, compaction",
+   "zh": "请求 {request}，压缩",
+   "it": "Richiesta {request}, compattazione"
+  },
+  "request.noContent": {
+   "en": "no content",
+   "zh": "无内容",
+   "it": "nessun contenuto"
+  },
+  "summary.toolCalls.one": {
+   "en": "{count} tool call",
+   "zh": "{count} 个工具调用",
+   "it": "{count} chiamata a strumento"
+  },
+  "summary.toolCalls.other": {
+   "en": "{count} tool calls",
+   "zh": "{count} 个工具调用",
+   "it": "{count} chiamate a strumento"
+  },
+  "summary.steps.one": {
+   "en": "{count} step",
+   "zh": "{count} 个步骤",
+   "it": "{count} passo"
+  },
+  "summary.steps.other": {
+   "en": "{count} steps",
+   "zh": "{count} 个步骤",
+   "it": "{count} passi"
+  },
+  "details.event": {
+   "en": "Event details",
+   "zh": "事件详情",
+   "it": "Dettagli evento"
+  },
+  "details.resize": {
+   "en": "Resize event details",
+   "zh": "调整事件详情宽度",
+   "it": "Ridimensiona i dettagli evento"
+  },
+  "details.resizeTitle": {
+   "en": "Drag to resize. Double-click to reset.",
+   "zh": "拖动调整大小；双击恢复默认值。",
+   "it": "Trascina per ridimensionare. Doppio clic per reimpostare."
+  },
+  "details.close": {
+   "en": "Close details",
+   "zh": "关闭详情",
+   "it": "Chiudi dettagli"
+  },
+  "details.status": {
+   "en": "Status",
+   "zh": "状态",
+   "it": "Stato"
+  },
+  "details.purpose": {
+   "en": "Purpose",
+   "zh": "用途",
+   "it": "Scopo"
+  },
+  "details.provider": {
+   "en": "Provider",
+   "zh": "提供方",
+   "it": "Provider"
+  },
+  "details.model": {
+   "en": "Model",
+   "zh": "模型",
+   "it": "Modello"
+  },
+  "details.toolCalls": {
+   "en": "Tool calls",
+   "zh": "工具调用",
+   "it": "Chiamate a strumenti"
+  },
+  "details.subtoolCalls": {
+   "en": "Subtool calls",
+   "zh": "子工具调用",
+   "it": "Chiamate a sotto-strumenti"
+  },
+  "details.error": {
+   "en": "Error",
+   "zh": "错误",
+   "it": "Errore"
+  },
+  "details.failure.auth": {
+   "en": "API key is invalid",
+   "zh": "API 密钥无效",
+   "it": "La chiave API non è valida"
+  },
+  "details.retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "details.scheduled": {
+   "en": "Scheduled",
+   "zh": "已计划",
+   "it": "Programmato"
+  },
+  "details.retryDelay": {
+   "en": "Retry delay",
+   "zh": "重试延迟",
+   "it": "Ritardo riprova"
+  },
+  "details.result": {
+   "en": "Result",
+   "zh": "结果",
+   "it": "Risultato"
+  },
+  "details.compacted": {
+   "en": "Compacted",
+   "zh": "已压缩",
+   "it": "Compattato"
+  },
+  "details.assistantMessage": {
+   "en": "Assistant Message",
+   "zh": "助手消息",
+   "it": "Messaggio dell'assistente"
+  },
+  "details.source": {
+   "en": "Source",
+   "zh": "来源",
+   "it": "Origine"
+  },
+  "details.hierarchy": {
+   "en": "Hierarchy",
+   "zh": "层级",
+   "it": "Gerarchia"
+  },
+  "details.toolCall": {
+   "en": "Tool Call",
+   "zh": "工具调用",
+   "it": "Chiamata a strumento"
+  },
+  "timeline.aria": {
+   "en": "Trajectory timeline",
+   "zh": "轨迹时间线",
+   "it": "Cronologia della traiettoria"
+  },
+  "timeline.overviewAria": {
+   "en": "Timeline overview; drag horizontally to focus events",
+   "zh": "时间线概览；水平拖动可聚焦事件",
+   "it": "Panoramica della cronologia; trascina in orizzontale per focalizzare gli eventi"
+  },
+  "timeline.noTimingData": {
+   "en": "No timing data",
+   "zh": "无计时数据",
+   "it": "Nessun dato di temporizzazione"
+  },
+  "timeline.total": {
+   "en": "Total {duration}",
+   "zh": "总计 {duration}",
+   "it": "Totale {duration}"
+  },
+  "timeline.started": {
+   "en": "Started {time}",
+   "zh": "开始于 {time}",
+   "it": "Avviato {time}"
+  },
+  "timeline.ttftDecoding": {
+   "en": "TTFT {ttft} · Decoding {decoding}",
+   "zh": "首 token {ttft} · 解码 {decoding}",
+   "it": "TTFT {ttft} · Decoding {decoding}"
+  },
+  "layout.compacting": {
+   "en": "Compacting context…",
+   "zh": "正在压缩上下文…",
+   "it": "Compattazione del contesto…"
+  },
+  "layout.compactionFailed": {
+   "en": "Compaction failed",
+   "zh": "上下文压缩失败",
+   "it": "Compattazione non riuscita"
+  },
+  "layout.compacted": {
+   "en": "Context compacted",
+   "zh": "上下文已压缩",
+   "it": "Contesto compattato"
+  },
+  "layout.toolCallOnly": {
+   "en": "Tool call only",
+   "zh": "仅工具调用",
+   "it": "Solo chiamata a strumento"
+  },
+  "layout.imageOnly": {
+   "en": "Images ×{count}",
+   "zh": "图片 ×{count}",
+   "it": "Immagini ×{count}"
+  },
+  "layout.fileAttachments": {
+   "en": "Files ×{count}",
+   "zh": "文件 ×{count}",
+   "it": "File ×{count}"
+  },
+  "layout.initialSystemPrompt": {
+   "en": "Initial System Prompt",
+   "zh": "初始系统提示词",
+   "it": "Prompt di sistema iniziale"
+  },
+  "layout.systemPromptUpdated": {
+   "en": "System Prompt Updated",
+   "zh": "系统提示词已更新",
+   "it": "Prompt di sistema aggiornato"
+  },
+  "layout.toolsUpdated": {
+   "en": "Tools Updated",
+   "zh": "工具已更新",
+   "it": "Strumenti aggiornati"
+  },
+  "layout.systemPromptAndToolsUpdated": {
+   "en": "System Prompt and Tools Updated",
+   "zh": "系统提示词和工具已更新",
+   "it": "Prompt di sistema e strumenti aggiornati"
+  },
+  "layout.compactionInterrupted": {
+   "en": "Compaction was interrupted before completion.",
+   "zh": "上下文压缩在完成前被中断。",
+   "it": "La compattazione è stata interrotta prima del completamento."
+  }
+ },
+ "question": {
+  "error.incomplete": {
+   "en": "Please complete this question first.",
+   "zh": "请先完成这道问题。",
+   "it": "Completa prima questa domanda."
+  },
+  "error.unanswered": {
+   "en": "Please select an option or enter a custom answer.",
+   "zh": "请选择一个选项或填写自定义答案。",
+   "it": "Seleziona un'opzione o inserisci una risposta personalizzata."
+  },
+  "nav.prev": {
+   "en": "Previous question",
+   "zh": "上一题",
+   "it": "Domanda precedente"
+  },
+  "nav.next": {
+   "en": "Next question",
+   "zh": "下一题",
+   "it": "Domanda successiva"
+  },
+  "nav.minimize": {
+   "en": "Collapse the question card",
+   "zh": "收起问题卡片",
+   "it": "Comprimi la scheda della domanda"
+  },
+  "nav.maximize": {
+   "en": "Expand the question card",
+   "zh": "展开问题卡片",
+   "it": "Espandi la scheda della domanda"
+  },
+  "nav.cancel": {
+   "en": "Dismiss all questions",
+   "zh": "放弃整组问题",
+   "it": "Ignora tutte le domande"
+  },
+  "option.recommended": {
+   "en": "Recommended",
+   "zh": "推荐",
+   "it": "Consigliato"
+  },
+  "custom.placeholder": {
+   "en": "Type your answer",
+   "zh": "输入你的答案",
+   "it": "Scrivi la tua risposta"
+  },
+  "action.skip": {
+   "en": "Skip this question",
+   "zh": "跳过本题",
+   "it": "Salta questa domanda"
+  },
+  "action.next": {
+   "en": "Next",
+   "zh": "下一题",
+   "it": "Avanti"
+  },
+  "plan.header": {
+   "en": "Plan review",
+   "zh": "计划待审",
+   "it": "Revisione del piano"
+  },
+  "plan.approve": {
+   "en": "Approve",
+   "zh": "确认执行",
+   "it": "Approva"
+  },
+  "plan.decline": {
+   "en": "Refuse",
+   "zh": "拒绝",
+   "it": "Rifiuta"
+  },
+  "plan.discuss": {
+   "en": "Chat about it",
+   "zh": "去聊天里说",
+   "it": "Discuti in chat"
+  }
+ },
+ "workflowRun": {
+  "run.title": {
+   "en": "{name}",
+   "zh": "{name}",
+   "it": "{name}"
+  },
+  "run.members.one": {
+   "en": "{count} member",
+   "zh": "{count} 个成员",
+   "it": "{count} membro"
+  },
+  "run.members.other": {
+   "en": "{count} members",
+   "zh": "{count} 个成员",
+   "it": "{count} membri"
+  },
+  "run.empty": {
+   "en": "No members started",
+   "zh": "没有启动成员",
+   "it": "Nessun membro avviato"
+  },
+  "phase.unassigned": {
+   "en": "Unphased",
+   "zh": "未分阶段",
+   "it": "Senza fase"
+  },
+  "phase.empty": {
+   "en": "Empty phase name",
+   "zh": "空阶段名",
+   "it": "Nome della fase mancante"
+  },
+  "statusCount.running": {
+   "en": "Running {count}",
+   "zh": "运行中 {count}",
+   "it": "In esecuzione {count}"
+  },
+  "statusCount.completed": {
+   "en": "Completed {count}",
+   "zh": "已完成 {count}",
+   "it": "Completati {count}"
+  },
+  "statusCount.failed": {
+   "en": "Failed {count}",
+   "zh": "失败 {count}",
+   "it": "Non riusciti {count}"
+  },
+  "statusCount.cancelled": {
+   "en": "Cancelled {count}",
+   "zh": "已取消 {count}",
+   "it": "Annullati {count}"
+  },
+  "statusCount.interrupted": {
+   "en": "Interrupted {count}",
+   "zh": "已中断 {count}",
+   "it": "Interrotti {count}"
+  },
+  "member.empty": {
+   "en": "Empty member name",
+   "zh": "空成员名",
+   "it": "Nome del membro mancante"
+  },
+  "member.open": {
+   "en": "Open {name}",
+   "zh": "打开 {name}",
+   "it": "Apri {name}"
+  },
+  "status.running": {
+   "en": "Running",
+   "zh": "运行中",
+   "it": "In esecuzione"
+  },
+  "status.completed": {
+   "en": "Completed",
+   "zh": "已完成",
+   "it": "Completato"
+  },
+  "status.failed": {
+   "en": "Failed",
+   "zh": "失败",
+   "it": "Non riuscito"
+  },
+  "status.cancelled": {
+   "en": "Cancelled",
+   "zh": "已取消",
+   "it": "Annullato"
+  },
+  "status.interrupted": {
+   "en": "Interrupted",
+   "zh": "已中断",
+   "it": "Interrotto"
+  }
+ },
+ "workspace": {
+  "group.ungrouped": {
+   "en": "Ungrouped",
+   "zh": "未分组",
+   "it": "Non raggruppate"
+  },
+  "session.new": {
+   "en": "New Session",
+   "zh": "新会话",
+   "it": "Nuova sessione"
+  },
+  "section.workspaces": {
+   "en": "Workspaces",
+   "zh": "工作区",
+   "it": "Aree di lavoro"
+  },
+  "section.sessions": {
+   "en": "Sessions",
+   "zh": "会话",
+   "it": "Sessioni"
+  },
+  "viewOptions.label": {
+   "en": "View options",
+   "zh": "视图选项",
+   "it": "Opzioni di visualizzazione"
+  },
+  "groupBy.label": {
+   "en": "Group by",
+   "zh": "分组方式",
+   "it": "Raggruppa per"
+  },
+  "groupBy.workspace": {
+   "en": "WorkSpace",
+   "zh": "按工作区",
+   "it": "WorkSpace"
+  },
+  "groupBy.flat": {
+   "en": "In one list",
+   "zh": "单列表",
+   "it": "In un unico elenco"
+  },
+  "orderBy.label": {
+   "en": "Order by",
+   "zh": "排序方式",
+   "it": "Ordina per"
+  },
+  "orderBy.manual": {
+   "en": "Manual",
+   "zh": "手动排序",
+   "it": "Manuale"
+  },
+  "orderBy.updated": {
+   "en": "Last updated",
+   "zh": "最近更新",
+   "it": "Ultima modifica"
+  },
+  "sessions.expand": {
+   "en": "Show {n} more sessions",
+   "zh": "展开其余 {n} 个会话",
+   "it": "Mostra altre {n} sessioni"
+  },
+  "sessions.collapse": {
+   "en": "Show less",
+   "zh": "收起",
+   "it": "Mostra meno"
+  },
+  "empty.none": {
+   "en": "No sessions yet",
+   "zh": "暂无会话",
+   "it": "Nessuna sessione"
+  },
+  "empty.noMatches": {
+   "en": "No matches",
+   "zh": "无匹配结果",
+   "it": "Nessuna corrispondenza"
+  },
+  "workspace.add": {
+   "en": "Add workspace",
+   "zh": "添加工作区",
+   "it": "Aggiungi area di lavoro"
+  },
+  "search.sessions.aria": {
+   "en": "Search sessions",
+   "zh": "搜索会话",
+   "it": "Cerca sessioni"
+  },
+  "search.placeholder": {
+   "en": "Search sessions...",
+   "zh": "搜索会话…",
+   "it": "Cerca sessioni..."
+  },
+  "search.clear": {
+   "en": "Clear search",
+   "zh": "清除搜索",
+   "it": "Cancella ricerca"
+  },
+  "search.results.aria": {
+   "en": "Search results",
+   "zh": "搜索结果",
+   "it": "Risultati della ricerca"
+  },
+  "search.pending": {
+   "en": "Searching session history…",
+   "zh": "正在搜索会话历史…",
+   "it": "Ricerca nella cronologia delle sessioni…"
+  },
+  "search.unavailable": {
+   "en": "Content search is temporarily unavailable. Showing name matches.",
+   "zh": "内容搜索暂不可用，仅显示名称匹配。",
+   "it": "La ricerca nei contenuti non è disponibile al momento. Sono mostrate le corrispondenze per nome."
+  },
+  "search.noMatches": {
+   "en": "No matching sessions",
+   "zh": "无匹配会话",
+   "it": "Nessuna sessione corrispondente"
+  },
+  "search.hasMore": {
+   "en": "Showing the first {n} results. Narrow your search.",
+   "zh": "仅显示前 {n} 条结果，请缩小搜索范围。",
+   "it": "Sono mostrati i primi {n} risultati. Restringi la ricerca."
+  },
+  "menu.addWorkspace": {
+   "en": "Add workspace…",
+   "zh": "添加工作区…",
+   "it": "Aggiungi area di lavoro…"
+  },
+  "picker.loading": {
+   "en": "Loading workspaces…",
+   "zh": "正在加载工作区…",
+   "it": "Caricamento aree di lavoro…"
+  },
+  "conflict.named": {
+   "en": "A workspace named “{name}” already exists.",
+   "zh": "已存在名为“{name}”的工作区。",
+   "it": "Esiste già un’area di lavoro chiamata “{name}”."
+  },
+  "folderError.title": {
+   "en": "Couldn’t open folder",
+   "zh": "无法打开文件夹",
+   "it": "Impossibile aprire la cartella"
+  },
+  "folderError.retry": {
+   "en": "Choose again",
+   "zh": "重新选择",
+   "it": "Scegli di nuovo"
+  },
+  "rename": {
+   "en": "Rename",
+   "zh": "重命名",
+   "it": "Rinomina"
+  },
+  "rename.workspace.title": {
+   "en": "Rename workspace",
+   "zh": "重命名工作区",
+   "it": "Rinomina area di lavoro"
+  },
+  "rename.session.title": {
+   "en": "Rename session",
+   "zh": "重命名会话",
+   "it": "Rinomina sessione"
+  },
+  "field.workspaceName": {
+   "en": "Workspace name",
+   "zh": "工作区名称",
+   "it": "Nome area di lavoro"
+  },
+  "field.sessionName": {
+   "en": "Session name",
+   "zh": "会话名称",
+   "it": "Nome sessione"
+  },
+  "delete.workspace": {
+   "en": "Delete workspace",
+   "zh": "删除工作区",
+   "it": "Elimina area di lavoro"
+  },
+  "delete.desc": {
+   "en": "This removes “{name}” from the workspace list. The folder and session logs will be kept. Its sessions will appear under Ungrouped.",
+   "zh": "将把“{name}”从工作区列表中移除。文件夹与会话记录会保留，其会话将显示在“未分组”下。",
+   "it": "Rimuove “{name}” dall’elenco delle aree di lavoro. La cartella e i log delle sessioni saranno conservati. Le sue sessioni appariranno in Non raggruppate."
+  },
+  "delete.pending": {
+   "en": "Deleting workspace…",
+   "zh": "正在删除工作区…",
+   "it": "Eliminazione area di lavoro…"
+  },
+  "menu.fork": {
+   "en": "Fork session",
+   "zh": "分叉会话",
+   "it": "Deriva sessione"
+  },
+  "menu.archiveSession": {
+   "en": "Archive session",
+   "zh": "归档会话",
+   "it": "Archivia sessione"
+  },
+  "sessions.count.one": {
+   "en": "{n} session",
+   "zh": "{n} 个会话",
+   "it": "{n} sessione"
+  },
+  "sessions.count.other": {
+   "en": "{n} sessions",
+   "zh": "{n} 个会话",
+   "it": "{n} sessioni"
+  },
+  "actions.workspace.aria": {
+   "en": "Workspace actions for {name}",
+   "zh": "工作区“{name}”的操作",
+   "it": "Azioni area di lavoro per {name}"
+  },
+  "actions.session.aria": {
+   "en": "Session actions for {name}",
+   "zh": "会话“{name}”的操作",
+   "it": "Azioni sessione per {name}"
+  },
+  "actions.newSession.aria": {
+   "en": "New session in {name}",
+   "zh": "在“{name}”中新建会话",
+   "it": "Nuova sessione in {name}"
+  },
+  "status.running": {
+   "en": "Running",
+   "zh": "进行中",
+   "it": "In esecuzione"
+  },
+  "status.subagentsRunning.one": {
+   "en": "{n} subagent running",
+   "zh": "{n} 个子代理运行中",
+   "it": "{n} subagente in esecuzione"
+  },
+  "status.subagentsRunning.other": {
+   "en": "{n} subagents running",
+   "zh": "{n} 个子代理运行中",
+   "it": "{n} subagenti in esecuzione"
+  },
+  "status.idle": {
+   "en": "Idle",
+   "zh": "空闲",
+   "it": "Inattiva"
+  },
+  "status.waitingApproval": {
+   "en": "Waiting for approval",
+   "zh": "等待审批",
+   "it": "In attesa di approvazione"
+  },
+  "status.planReview": {
+   "en": "Plan awaiting review",
+   "zh": "计划待审",
+   "it": "Piano in attesa di revisione"
+  },
+  "status.waitingAnswer": {
+   "en": "Waiting for answer",
+   "zh": "等待回答",
+   "it": "In attesa di risposta"
+  },
+  "status.completed": {
+   "en": "Completed",
+   "zh": "已完成",
+   "it": "Completata"
+  },
+  "schedule.active": {
+   "en": "Has active scheduled task",
+   "zh": "有活动定时任务",
+   "it": "Ha un’attività pianificata attiva"
+  },
+  "hover.created": {
+   "en": "Created {time}",
+   "zh": "创建于 {time}",
+   "it": "Creata {time}"
+  },
+  "hover.copied": {
+   "en": "Copied",
+   "zh": "已复制",
+   "it": "Copiato"
+  },
+  "date.ymd": {
+   "en": "{y}-{m}-{d}",
+   "zh": "{y}年{m}月{d}日",
+   "it": "{y}-{m}-{d}"
+  },
+  "time.now": {
+   "en": "now",
+   "zh": "刚刚",
+   "it": "ora"
+  },
+  "time.minutes": {
+   "en": "{n}min",
+   "zh": "{n}分钟",
+   "it": "{n}min"
+  },
+  "time.hours": {
+   "en": "{n}h",
+   "zh": "{n}小时",
+   "it": "{n}h"
+  },
+  "time.days": {
+   "en": "{n}d",
+   "zh": "{n}天",
+   "it": "{n}g"
+  },
+  "time.months": {
+   "en": "{n}mo",
+   "zh": "{n}个月",
+   "it": "{n}mes"
+  },
+  "time.years": {
+   "en": "{n}y",
+   "zh": "{n}年",
+   "it": "{n}a"
+  },
+  "time.ago": {
+   "en": "{t} ago",
+   "zh": "{t}前",
+   "it": "{t} fa"
+  }
+ },
+ "session-log-download": {
+  "header.more": {
+   "en": "More actions",
+   "zh": "更多操作",
+   "it": "Altre azioni"
+  },
+  "menu.download": {
+   "en": "Download session log",
+   "zh": "下载 Session 日志",
+   "it": "Scarica il log della sessione"
+  },
+  "dialog.preparingTitle": {
+   "en": "Exporting Session",
+   "zh": "正在导出 Session",
+   "it": "Esportazione della sessione"
+  },
+  "dialog.preparingDescription": {
+   "en": "Preparing a ZIP containing this Session, its sub-Sessions, and attachments.",
+   "zh": "正在准备包含当前 Session、子 Session 和附件的 ZIP 文件。",
+   "it": "Preparazione di un ZIP contenente questa sessione, le sue sotto-sessioni e gli allegati."
+  },
+  "dialog.successTitle": {
+   "en": "Session download started",
+   "zh": "Session 导出已开始下载",
+   "it": "Download della sessione avviato"
+  },
+  "dialog.successDescription": {
+   "en": "The browser is downloading the Session ZIP.",
+   "zh": "浏览器正在下载 Session ZIP 文件。",
+   "it": "Il browser sta scaricando lo ZIP della sessione."
+  },
+  "dialog.errorTitle": {
+   "en": "Session export failed",
+   "zh": "Session 导出失败",
+   "it": "Esportazione della sessione non riuscita"
+  },
+  "dialog.close": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
+  "dialog.commandFailed": {
+   "en": "Could not start the Session export.",
+   "zh": "无法启动 Session 导出。",
+   "it": "Impossibile avviare l'esportazione della sessione."
+  }
+ }
+}

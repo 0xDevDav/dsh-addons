@@ -1,0 +1,789 @@
+{
+ "subagent": {
+  "diagnostic.corrupt": {
+   "en": "corrupted session record",
+   "zh": "会话记录损坏",
+   "it": "record della sessione danneggiato"
+  },
+  "diagnostic.unsupported": {
+   "en": "unsupported subagent record version",
+   "zh": "子代理记录版本不受支持",
+   "it": "versione del record del subagente non supportata"
+  },
+  "diagnostic.unavailable": {
+   "en": "session record temporarily unavailable",
+   "zh": "会话记录暂不可用",
+   "it": "record della sessione temporaneamente non disponibile"
+  },
+  "duration.seconds": {
+   "en": "{seconds}s",
+   "zh": "{seconds}秒",
+   "it": "{seconds}s"
+  },
+  "duration.minutes": {
+   "en": "{minutes}m {seconds}s",
+   "zh": "{minutes}分{seconds}秒",
+   "it": "{minutes}m {seconds}s"
+  },
+  "duration.hours": {
+   "en": "{hours}h {minutes}m {seconds}s",
+   "zh": "{hours}小时{minutes}分{seconds}秒",
+   "it": "{hours}h {minutes}m {seconds}s"
+  },
+  "duration.days": {
+   "en": "{days}d",
+   "zh": "{days}天",
+   "it": "{days}g"
+  },
+  "duration.daysHours": {
+   "en": "{days}d {hours}h",
+   "zh": "{days}天{hours}小时",
+   "it": "{days}g {hours}h"
+  },
+  "duration.months": {
+   "en": "~{months}mo",
+   "zh": "约{months}个月",
+   "it": "~{months}mesi"
+  },
+  "duration.monthsDays": {
+   "en": "~{months}mo {days}d",
+   "zh": "约{months}个月{days}天",
+   "it": "~{months}mesi {days}g"
+  },
+  "duration.years": {
+   "en": "~{years}y",
+   "zh": "约{years}年",
+   "it": "~{years}a"
+  },
+  "duration.yearsMonths": {
+   "en": "~{years}y {months}mo",
+   "zh": "约{years}年{months}个月",
+   "it": "~{years}a {months}mesi"
+  },
+  "duration.exactDays": {
+   "en": "{days}d {hours}h {minutes}m {seconds}s",
+   "zh": "{days}天{hours}小时{minutes}分{seconds}秒",
+   "it": "{days}g {hours}h {minutes}m {seconds}s"
+  },
+  "duration.exactTitle": {
+   "en": "Total active duration: {duration}",
+   "zh": "总活跃耗时：{duration}",
+   "it": "Durata attiva totale: {duration}"
+  },
+  "tokens.thousand": {
+   "en": "{value}K",
+   "zh": "{value}K",
+   "it": "{value}K"
+  },
+  "tokens.million": {
+   "en": "{value}M",
+   "zh": "{value}M",
+   "it": "{value}M"
+  },
+  "tokens.total": {
+   "en": "{value} tok",
+   "zh": "{value} tok",
+   "it": "{value} tok"
+  },
+  "loading.label": {
+   "en": "Loading subagents…",
+   "zh": "正在加载子代理…",
+   "it": "Caricamento subagenti…"
+  },
+  "loading.aria": {
+   "en": "Loading subagents",
+   "zh": "正在加载子代理",
+   "it": "Caricamento subagenti"
+  },
+  "load.error": {
+   "en": "Unable to load subagents",
+   "zh": "无法加载子代理",
+   "it": "Impossibile caricare i subagenti"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "mode.oneShot": {
+   "en": "one-shot",
+   "zh": "一次性",
+   "it": "una tantum"
+  },
+  "mode.continuable": {
+   "en": "continuable",
+   "zh": "可继续",
+   "it": "continuabile"
+  },
+  "activity.running": {
+   "en": "running",
+   "zh": "正在运行",
+   "it": "in esecuzione"
+  },
+  "activity.inactive": {
+   "en": "not running",
+   "zh": "当前未运行",
+   "it": "non in esecuzione"
+  },
+  "branch.collapse": {
+   "en": "Collapse {label} descendants",
+   "zh": "收起 {label} 的下级子代理",
+   "it": "Comprimi i discendenti di {label}"
+  },
+  "branch.expand": {
+   "en": "Expand {label} descendants",
+   "zh": "展开 {label} 的下级子代理",
+   "it": "Espandi i discendenti di {label}"
+  },
+  "count.total.one": {
+   "en": "{count} subagent",
+   "zh": "{count} 个子代理",
+   "it": "{count} subagente"
+  },
+  "count.total.other": {
+   "en": "{count} subagents",
+   "zh": "{count} 个子代理",
+   "it": "{count} subagenti"
+  },
+  "count.running.one": {
+   "en": "{count} subagent running",
+   "zh": "{count} 个子代理，正在运行",
+   "it": "{count} subagente in esecuzione"
+  },
+  "count.running.other": {
+   "en": "{count} subagents running",
+   "zh": "{count} 个子代理，正在运行",
+   "it": "{count} subagenti in esecuzione"
+  },
+  "switcher.aria": {
+   "en": "Switch subagent: {title}",
+   "zh": "切换子代理：{title}",
+   "it": "Cambia subagente: {title}"
+  },
+  "tree.aria": {
+   "en": "Subagent sessions",
+   "zh": "子代理会话",
+   "it": "Sessioni dei subagenti"
+  },
+  "readonly.oneShot.title": {
+   "en": "One-shot subagent record",
+   "zh": "一次性子代理记录",
+   "it": "Record del subagente una tantum"
+  },
+  "readonly.title": {
+   "en": "This subagent is read-only for now",
+   "zh": "此子代理暂时只读",
+   "it": "Questo subagente è in sola lettura per ora"
+  },
+  "readonly.oneShot.body": {
+   "en": "One-shot tasks do not accept follow-ups; review the full execution record here.",
+   "zh": "一次性任务不支持后续消息，可在这里查看完整执行记录。",
+   "it": "I task una tantum non accettano messaggi successivi; qui puoi consultare il record di esecuzione completo."
+  },
+  "readonly.body": {
+   "en": "The parent session is offline; reopen it to continue sending messages.",
+   "zh": "父会话当前不在线，重新打开父会话后即可继续发送消息。",
+   "it": "La sessione padre è offline; riaprila per continuare a inviare messaggi."
+  }
+ },
+ "sidebarRight": {
+  "chrome.expand": {
+   "en": "Open sidebar",
+   "zh": "打开侧边栏",
+   "it": "Apri barra laterale"
+  },
+  "chrome.expandAria": {
+   "en": "Open right sidebar",
+   "zh": "打开右侧边栏",
+   "it": "Apri barra laterale destra"
+  },
+  "chrome.collapse": {
+   "en": "Collapse sidebar",
+   "zh": "收起侧边栏",
+   "it": "Comprimi barra laterale"
+  },
+  "chrome.collapseAria": {
+   "en": "Collapse right sidebar",
+   "zh": "收起右侧边栏",
+   "it": "Comprimi barra laterale destra"
+  },
+  "chrome.toFullscreen": {
+   "en": "Fullscreen",
+   "zh": "全屏",
+   "it": "Schermo intero"
+  },
+  "chrome.exitFullscreen": {
+   "en": "Exit fullscreen",
+   "zh": "退出全屏",
+   "it": "Esci da schermo intero"
+  },
+  "dock.emptyPane": {
+   "en": "Empty pane",
+   "zh": "空面板",
+   "it": "Pannello vuoto"
+  },
+  "dock.splitPane": {
+   "en": "Split",
+   "zh": "分栏",
+   "it": "Dividi"
+  },
+  "dock.splitPaneDisabled": {
+   "en": "Two panes is the limit",
+   "zh": "已达两格上限",
+   "it": "Il limite è di due pannelli"
+  },
+  "dock.splitPaneNarrow": {
+   "en": "Not enough width to split, widen the sidebar",
+   "zh": "栏宽不足，拖宽侧边栏后再分栏",
+   "it": "Larghezza insufficiente per dividere, allarga la barra laterale"
+  },
+  "dock.closeTab": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
+  "dock.addTab": {
+   "en": "New tab",
+   "zh": "新标签页",
+   "it": "Nuova scheda"
+  },
+  "dock.dockFloat": {
+   "en": "Send back to the sidebar",
+   "zh": "收回到侧边栏",
+   "it": "Riporta nella barra laterale"
+  },
+  "dock.closeFloat": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
+  "dock.drop.center": {
+   "en": "Move here",
+   "zh": "移到这里",
+   "it": "Sposta qui"
+  },
+  "dock.drop.left": {
+   "en": "Add left split",
+   "zh": "左分栏",
+   "it": "Aggiungi divisione a sinistra"
+  },
+  "dock.drop.right": {
+   "en": "Add right split",
+   "zh": "右分栏",
+   "it": "Aggiungi divisione a destra"
+  },
+  "dock.drop.top": {
+   "en": "Add top split",
+   "zh": "上分栏",
+   "it": "Aggiungi divisione in alto"
+  },
+  "dock.drop.bottom": {
+   "en": "Add bottom split",
+   "zh": "下分栏",
+   "it": "Aggiungi divisione in basso"
+  },
+  "tab.guide.title": {
+   "en": "Start",
+   "zh": "开始",
+   "it": "Inizia"
+  },
+  "tab.unavailable": {
+   "en": "Nothing here can view this kind of content yet.",
+   "zh": "这类内容还没有可用的查看方式。",
+   "it": "Qui non è ancora possibile visualizzare questo tipo di contenuto."
+  }
+ },
+ "feedback": {
+  "action.like": {
+   "en": "Good response",
+   "zh": "好的回答",
+   "it": "Risposta buona"
+  },
+  "action.likeActive": {
+   "en": "Remove rating",
+   "zh": "取消标记",
+   "it": "Rimuovi valutazione"
+  },
+  "action.dislike": {
+   "en": "Bad response",
+   "zh": "有问题的回答",
+   "it": "Risposta scadente"
+  },
+  "action.dislikeActive": {
+   "en": "Remove rating",
+   "zh": "取消标记",
+   "it": "Rimuovi valutazione"
+  },
+  "dialog.title": {
+   "en": "Submit feedback",
+   "zh": "提交反馈",
+   "it": "Invia feedback"
+  },
+  "dialog.categories": {
+   "en": "Feedback category",
+   "zh": "反馈分类",
+   "it": "Categoria del feedback"
+  },
+  "dialog.detail": {
+   "en": "Feedback details",
+   "zh": "反馈详情",
+   "it": "Dettagli del feedback"
+  },
+  "dialog.hint": {
+   "en": "Add details to help us improve. Your submission will include the current conversation log.",
+   "zh": "填写详情以帮助我们改进体验，提交内容会包括当前对话的日志",
+   "it": "Aggiungi dettagli per aiutarci a migliorare. L'invio includerà il log della conversazione corrente."
+  },
+  "category.task-result": {
+   "en": "Task result",
+   "zh": "任务结果",
+   "it": "Risultato del task"
+  },
+  "category.instruction-following": {
+   "en": "Instruction understanding and following",
+   "zh": "指令理解与遵循",
+   "it": "Comprensione e rispetto delle istruzioni"
+  },
+  "category.product-interaction": {
+   "en": "Product features and interaction",
+   "zh": "产品功能与交互",
+   "it": "Funzionalità e interazione del prodotto"
+  },
+  "category.service-stability": {
+   "en": "Stability and speed",
+   "zh": "稳定性和速度",
+   "it": "Stabilità e velocità"
+  },
+  "category.resource-cost": {
+   "en": "Resource usage and cost",
+   "zh": "资源使用与费用",
+   "it": "Uso delle risorse e costi"
+  },
+  "category.security-privacy-permission": {
+   "en": "Security, privacy, and permissions",
+   "zh": "安全隐私与权限",
+   "it": "Sicurezza, privacy e autorizzazioni"
+  },
+  "category.other": {
+   "en": "Other",
+   "zh": "其他",
+   "it": "Altro"
+  },
+  "toast.recorded": {
+   "en": "Thanks for your feedback",
+   "zh": "感谢你的反馈",
+   "it": "Grazie per il feedback"
+  },
+  "error.conflict": {
+   "en": "This feedback changed elsewhere; the latest state is shown",
+   "zh": "这条反馈已在别处改动，已显示最新状态",
+   "it": "Questo feedback è stato modificato altrove; è mostrato lo stato più recente"
+  },
+  "error.load": {
+   "en": "Could not load feedback",
+   "zh": "反馈状态加载失败",
+   "it": "Impossibile caricare il feedback"
+  },
+  "error.generic": {
+   "en": "Could not save feedback",
+   "zh": "反馈保存失败",
+   "it": "Impossibile salvare il feedback"
+  },
+  "error.noteTooLarge": {
+   "en": "The description is too long; shorten it and submit again",
+   "zh": "描述太长，请缩短后再提交",
+   "it": "La descrizione è troppo lunga; accorciala e invia di nuovo"
+  }
+ },
+ "model": {
+  "command.description": {
+   "en": "Select the model for this conversation",
+   "zh": "选择本会话使用的模型",
+   "it": "Seleziona il modello per questa conversazione"
+  },
+  "option.loadError": {
+   "en": "Catalog failed to load: {message}",
+   "zh": "目录加载失败：{message}",
+   "it": "Caricamento del catalogo non riuscito: {message}"
+  },
+  "option.deepseekV4Flash.description": {
+   "en": "Fast, efficient, and economical; suited to focused, routine, or parallel tasks.",
+   "zh": "快速、高效且经济；适合目标明确、常规或并行任务。",
+   "it": "Veloce, efficiente ed economico; adatto a compiti mirati, di routine o paralleli."
+  },
+  "option.deepseekV4Pro.description": {
+   "en": "Stronger agentic coding, knowledge, and difficult reasoning; suited to complex or quality-critical tasks at higher cost.",
+   "zh": "更强的自主编码、知识与复杂推理能力；适合复杂或质量优先的任务，但成本更高。",
+   "it": "Codifica agentica, conoscenza e ragionamento complesso più solidi; adatto a compiti complessi o critici per la qualità, a un costo maggiore."
+  },
+  "trigger.fallback": {
+   "en": "Select model",
+   "zh": "选择模型",
+   "it": "Seleziona modello"
+  },
+  "trigger.loading": {
+   "en": "Loading models…",
+   "zh": "正在加载模型…",
+   "it": "Caricamento dei modelli…"
+  },
+  "trigger.selectAria": {
+   "en": "Select model",
+   "zh": "选择模型",
+   "it": "Seleziona modello"
+  },
+  "trigger.aria": {
+   "en": "Select model, current {model}",
+   "zh": "选择模型，当前 {model}",
+   "it": "Seleziona modello, attuale {model}"
+  },
+  "trigger.ariaEffort": {
+   "en": "Select model, current {model}, reasoning effort {effort}",
+   "zh": "选择模型，当前 {model}，推理等级 {effort}",
+   "it": "Seleziona modello, attuale {model}, reasoning effort {effort}"
+  },
+  "menu.aria": {
+   "en": "Model and reasoning effort",
+   "zh": "模型与推理等级",
+   "it": "Modello e reasoning effort"
+  },
+  "menu.model": {
+   "en": "Model",
+   "zh": "模型",
+   "it": "Modello"
+  },
+  "menu.effort": {
+   "en": "Effort",
+   "zh": "推理等级",
+   "it": "Impegno"
+  },
+  "effort.providerDefault": {
+   "en": "Default",
+   "zh": "Default",
+   "it": "Predefinito"
+  },
+  "status.loading": {
+   "en": "Refreshing model list…",
+   "zh": "正在刷新模型列表…",
+   "it": "Aggiornamento dell'elenco dei modelli…"
+  },
+  "error.action": {
+   "en": "Model operation failed: {message}",
+   "zh": "模型操作失败：{message}",
+   "it": "Operazione sul modello non riuscita: {message}"
+  },
+  "action.reload": {
+   "en": "Reload",
+   "zh": "重新加载",
+   "it": "Ricarica"
+  },
+  "warning.groupLoad": {
+   "en": "{name} failed to load: {message}",
+   "zh": "{name} 加载失败：{message}",
+   "it": "Caricamento di {name} non riuscito: {message}"
+  },
+  "empty.models": {
+   "en": "No models available.",
+   "zh": "没有可用的模型。",
+   "it": "Nessun modello disponibile."
+  },
+  "blocked.composer": {
+   "en": "This model is unavailable — select one to continue",
+   "zh": "当前模型不可用，请先选择模型",
+   "it": "Questo modello non è disponibile — selezionane uno per continuare"
+  },
+  "empty.efforts": {
+   "en": "This model provides no reasoning effort levels.",
+   "zh": "当前模型未提供推理等级。",
+   "it": "Questo modello non offre livelli di reasoning effort."
+  }
+ },
+ "schedule.catalog": {
+  "trigger.one": {
+   "en": "{count} reminder",
+   "zh": "{count} 个提醒",
+   "it": "{count} promemoria"
+  },
+  "trigger.other": {
+   "en": "{count} reminders",
+   "zh": "{count} 个提醒",
+   "it": "{count} promemoria"
+  },
+  "list.aria": {
+   "en": "Active reminders",
+   "zh": "活动提醒",
+   "it": "Promemoria attivi"
+  },
+  "status.scheduled": {
+   "en": "Scheduled",
+   "zh": "等待中",
+   "it": "Programmato"
+  },
+  "status.overdue": {
+   "en": "Overdue",
+   "zh": "已逾期",
+   "it": "Scaduto"
+  },
+  "frequency.once": {
+   "en": "Once",
+   "zh": "单次",
+   "it": "Una volta"
+  },
+  "frequency.every": {
+   "en": "Every {value} {unit}",
+   "zh": "{value}{unit}一次",
+   "it": "Ogni {value} {unit}"
+  },
+  "unit.day.one": {
+   "en": "day",
+   "zh": "天",
+   "it": "giorno"
+  },
+  "unit.day.other": {
+   "en": "days",
+   "zh": "天",
+   "it": "giorni"
+  },
+  "unit.hour.one": {
+   "en": "hour",
+   "zh": "小时",
+   "it": "ora"
+  },
+  "unit.hour.other": {
+   "en": "hours",
+   "zh": "小时",
+   "it": "ore"
+  },
+  "unit.minute.one": {
+   "en": "minute",
+   "zh": "分钟",
+   "it": "minuto"
+  },
+  "unit.minute.other": {
+   "en": "minutes",
+   "zh": "分钟",
+   "it": "minuti"
+  },
+  "unit.second.one": {
+   "en": "second",
+   "zh": "秒",
+   "it": "secondo"
+  },
+  "unit.second.other": {
+   "en": "seconds",
+   "zh": "秒",
+   "it": "secondi"
+  },
+  "relative.now": {
+   "en": "Due now",
+   "zh": "现在到期",
+   "it": "In scadenza ora"
+  },
+  "relative.future": {
+   "en": "in {value} {unit}",
+   "zh": "{value}{unit}后",
+   "it": "tra {value} {unit}"
+  },
+  "relative.overdue": {
+   "en": "{value} {unit} overdue",
+   "zh": "已逾期 {value}{unit}",
+   "it": "{value} {unit} di ritardo"
+  }
+ },
+ "open-in-app": {
+  "open.title": {
+   "en": "Open workspace in {app}",
+   "zh": "在 {app} 中打开工作目录",
+   "it": "Apri area di lavoro in {app}"
+  },
+  "open.tooltip": {
+   "en": "Open locally",
+   "zh": "在本地打开",
+   "it": "Apri in locale"
+  },
+  "open.error": {
+   "en": "Failed to open",
+   "zh": "打开失败",
+   "it": "Apertura non riuscita"
+  },
+  "menu.toggle": {
+   "en": "Choose an app to open in",
+   "zh": "选择打开方式",
+   "it": "Scegli l'app con cui aprire"
+  },
+  "menu.aria": {
+   "en": "Open in",
+   "zh": "打开方式",
+   "it": "Apri con"
+  },
+  "app.cursor": {
+   "en": "Cursor",
+   "zh": "Cursor",
+   "it": "Cursor"
+  },
+  "app.vscode": {
+   "en": "VS Code",
+   "zh": "VS Code",
+   "it": "VS Code"
+  },
+  "app.vscodeinsiders": {
+   "en": "VS Code Insiders",
+   "zh": "VS Code Insiders",
+   "it": "VS Code Insiders"
+  },
+  "app.windsurf": {
+   "en": "Windsurf",
+   "zh": "Windsurf",
+   "it": "Windsurf"
+  },
+  "app.zed": {
+   "en": "Zed",
+   "zh": "Zed",
+   "it": "Zed"
+  },
+  "app.sublimetext": {
+   "en": "Sublime Text",
+   "zh": "Sublime Text",
+   "it": "Sublime Text"
+  },
+  "app.xcode": {
+   "en": "Xcode",
+   "zh": "Xcode",
+   "it": "Xcode"
+  },
+  "app.androidstudio": {
+   "en": "Android Studio",
+   "zh": "Android Studio",
+   "it": "Android Studio"
+  },
+  "app.intellij": {
+   "en": "IntelliJ IDEA",
+   "zh": "IntelliJ IDEA",
+   "it": "IntelliJ IDEA"
+  },
+  "app.pycharm": {
+   "en": "PyCharm",
+   "zh": "PyCharm",
+   "it": "PyCharm"
+  },
+  "app.webstorm": {
+   "en": "WebStorm",
+   "zh": "WebStorm",
+   "it": "WebStorm"
+  },
+  "app.phpstorm": {
+   "en": "PhpStorm",
+   "zh": "PhpStorm",
+   "it": "PhpStorm"
+  },
+  "app.goland": {
+   "en": "GoLand",
+   "zh": "GoLand",
+   "it": "GoLand"
+  },
+  "app.rider": {
+   "en": "Rider",
+   "zh": "Rider",
+   "it": "Rider"
+  },
+  "app.rustrover": {
+   "en": "RustRover",
+   "zh": "RustRover",
+   "it": "RustRover"
+  },
+  "app.fork": {
+   "en": "Fork",
+   "zh": "Fork",
+   "it": "Fork"
+  },
+  "app.sourcetree": {
+   "en": "Sourcetree",
+   "zh": "Sourcetree",
+   "it": "Sourcetree"
+  },
+  "app.github": {
+   "en": "GitHub Desktop",
+   "zh": "GitHub Desktop",
+   "it": "GitHub Desktop"
+  },
+  "app.tower": {
+   "en": "Tower",
+   "zh": "Tower",
+   "it": "Tower"
+  },
+  "app.gitkraken": {
+   "en": "GitKraken",
+   "zh": "GitKraken",
+   "it": "GitKraken"
+  },
+  "app.smartgit": {
+   "en": "SmartGit",
+   "zh": "SmartGit",
+   "it": "SmartGit"
+  },
+  "app.sublimemerge": {
+   "en": "Sublime Merge",
+   "zh": "Sublime Merge",
+   "it": "Sublime Merge"
+  },
+  "app.ghostty": {
+   "en": "Ghostty",
+   "zh": "Ghostty",
+   "it": "Ghostty"
+  },
+  "app.warp": {
+   "en": "Warp",
+   "zh": "Warp",
+   "it": "Warp"
+  },
+  "app.iterm": {
+   "en": "iTerm2",
+   "zh": "iTerm2",
+   "it": "iTerm2"
+  },
+  "app.kitty": {
+   "en": "kitty",
+   "zh": "kitty",
+   "it": "kitty"
+  },
+  "app.windowsterminal": {
+   "en": "Windows Terminal",
+   "zh": "Windows Terminal",
+   "it": "Windows Terminal"
+  },
+  "app.gitbash": {
+   "en": "Git Bash",
+   "zh": "Git Bash",
+   "it": "Git Bash"
+  },
+  "app.gnometerminal": {
+   "en": "GNOME Terminal",
+   "zh": "GNOME Terminal",
+   "it": "GNOME Terminal"
+  },
+  "app.konsole": {
+   "en": "Konsole",
+   "zh": "Konsole",
+   "it": "Konsole"
+  },
+  "app.finder": {
+   "en": "Finder",
+   "zh": "访达",
+   "it": "Finder"
+  },
+  "app.explorer": {
+   "en": "File Explorer",
+   "zh": "文件资源管理器",
+   "it": "Esplora file"
+  },
+  "app.filemanager": {
+   "en": "Files",
+   "zh": "文件管理器",
+   "it": "File"
+  },
+  "app.terminal": {
+   "en": "Terminal",
+   "zh": "终端",
+   "it": "Terminale"
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "batch": "slash.menu",
+ "namespace": "slash.menu",
+ "keys": {
+  "command": "Comandi",
+  "skill": "Skill",
+  "subagent": "Subagenti",
+  "loading": "Caricamento…",
+  "drill.aria": "Sfoglia cartella",
+  "drill.hint": "Sfoglia cartella",
+  "drill.key": "Tab",
+  "crumbs.aria": "Navigazione cartelle",
+  "suggestions.aria": "Attiva suggerimenti"
+ }
+}

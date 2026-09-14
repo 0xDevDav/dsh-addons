@@ -1,0 +1,63 @@
+{
+ "batch": "command",
+ "namespace": "command",
+ "total": 14,
+ "keys": {
+  "description.compact": {
+   "en": "Compact older conversation history",
+   "zh": "压缩以上对话内容"
+  },
+  "description.export": {
+   "en": "Download this Session log as a ZIP archive",
+   "zh": "将当前会话内容导出为 ZIP"
+  },
+  "description.feedback": {
+   "en": "record feedback about this session",
+   "zh": "发送关于当前会话的反馈"
+  },
+  "description.goal": {
+   "en": "set or view the goal for a long-running task",
+   "zh": "设置或查看长期任务目标"
+  },
+  "description.permission": {
+   "en": "Switch the permission preset (sandbox mode + approval policy)",
+   "zh": "切换权限预设（沙箱模式与审批策略）"
+  },
+  "description.plan": {
+   "en": "Enter or leave plan mode",
+   "zh": "进入或退出计划模式"
+  },
+  "search.placeholder": {
+   "en": "Search…",
+   "zh": "搜索…"
+  },
+  "search.aria": {
+   "en": "Filter options",
+   "zh": "筛选选项"
+  },
+  "status.loading": {
+   "en": "Loading options…",
+   "zh": "正在加载选项…"
+  },
+  "status.applying": {
+   "en": "Applying…",
+   "zh": "正在应用…"
+  },
+  "status.empty": {
+   "en": "No options",
+   "zh": "无选项"
+  },
+  "overlay.aria": {
+   "en": "/{command} options",
+   "zh": "/{command} 选项"
+  },
+  "listbox.aria": {
+   "en": "/{command} matches",
+   "zh": "/{command} 匹配项"
+  },
+  "notice.attachmentsUnsupported": {
+   "en": "/{command} does not accept attachments; remove them first",
+   "zh": "/{command} 不接受附件，请先移除附件"
+  }
+ }
+}

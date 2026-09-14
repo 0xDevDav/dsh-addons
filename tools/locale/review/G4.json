@@ -1,0 +1,1020 @@
+{
+ "workspace": {
+  "group.ungrouped": {
+   "en": "Ungrouped",
+   "zh": "未分组",
+   "it": "Non raggruppate"
+  },
+  "session.new": {
+   "en": "New Session",
+   "zh": "新会话",
+   "it": "Nuova sessione"
+  },
+  "section.workspaces": {
+   "en": "Workspaces",
+   "zh": "工作区",
+   "it": "Aree di lavoro"
+  },
+  "section.sessions": {
+   "en": "Sessions",
+   "zh": "会话",
+   "it": "Sessioni"
+  },
+  "viewOptions.label": {
+   "en": "View options",
+   "zh": "视图选项",
+   "it": "Opzioni di visualizzazione"
+  },
+  "groupBy.label": {
+   "en": "Group by",
+   "zh": "分组方式",
+   "it": "Raggruppa per"
+  },
+  "groupBy.workspace": {
+   "en": "WorkSpace",
+   "zh": "按工作区",
+   "it": "Area di lavoro"
+  },
+  "groupBy.flat": {
+   "en": "In one list",
+   "zh": "单列表",
+   "it": "In un unico elenco"
+  },
+  "orderBy.label": {
+   "en": "Order by",
+   "zh": "排序方式",
+   "it": "Ordina per"
+  },
+  "orderBy.manual": {
+   "en": "Manual",
+   "zh": "手动排序",
+   "it": "Manuale"
+  },
+  "orderBy.updated": {
+   "en": "Last updated",
+   "zh": "最近更新",
+   "it": "Ultima modifica"
+  },
+  "sessions.expand": {
+   "en": "Show {n} more sessions",
+   "zh": "展开其余 {n} 个会话",
+   "it": "Mostra altre {n} sessioni"
+  },
+  "sessions.collapse": {
+   "en": "Show less",
+   "zh": "收起",
+   "it": "Mostra meno"
+  },
+  "empty.none": {
+   "en": "No sessions yet",
+   "zh": "暂无会话",
+   "it": "Nessuna sessione"
+  },
+  "empty.noMatches": {
+   "en": "No matches",
+   "zh": "无匹配结果",
+   "it": "Nessuna corrispondenza"
+  },
+  "workspace.add": {
+   "en": "Add workspace",
+   "zh": "添加工作区",
+   "it": "Aggiungi area di lavoro"
+  },
+  "search.sessions.aria": {
+   "en": "Search sessions",
+   "zh": "搜索会话",
+   "it": "Cerca sessioni"
+  },
+  "search.placeholder": {
+   "en": "Search sessions...",
+   "zh": "搜索会话…",
+   "it": "Cerca sessioni..."
+  },
+  "search.clear": {
+   "en": "Clear search",
+   "zh": "清除搜索",
+   "it": "Cancella ricerca"
+  },
+  "search.results.aria": {
+   "en": "Search results",
+   "zh": "搜索结果",
+   "it": "Risultati della ricerca"
+  },
+  "search.pending": {
+   "en": "Searching session history…",
+   "zh": "正在搜索会话历史…",
+   "it": "Ricerca nella cronologia delle sessioni…"
+  },
+  "search.unavailable": {
+   "en": "Content search is temporarily unavailable. Showing name matches.",
+   "zh": "内容搜索暂不可用，仅显示名称匹配。",
+   "it": "La ricerca nei contenuti non è disponibile al momento. Sono mostrate le corrispondenze per nome."
+  },
+  "search.noMatches": {
+   "en": "No matching sessions",
+   "zh": "无匹配会话",
+   "it": "Nessuna sessione corrispondente"
+  },
+  "search.hasMore": {
+   "en": "Showing the first {n} results. Narrow your search.",
+   "zh": "仅显示前 {n} 条结果，请缩小搜索范围。",
+   "it": "Sono mostrati i primi {n} risultati. Restringi la ricerca."
+  },
+  "menu.addWorkspace": {
+   "en": "Add workspace…",
+   "zh": "添加工作区…",
+   "it": "Aggiungi area di lavoro…"
+  },
+  "picker.loading": {
+   "en": "Loading workspaces…",
+   "zh": "正在加载工作区…",
+   "it": "Caricamento aree di lavoro…"
+  },
+  "conflict.named": {
+   "en": "A workspace named “{name}” already exists.",
+   "zh": "已存在名为“{name}”的工作区。",
+   "it": "Esiste già un’area di lavoro chiamata “{name}”."
+  },
+  "folderError.title": {
+   "en": "Couldn’t open folder",
+   "zh": "无法打开文件夹",
+   "it": "Impossibile aprire la cartella"
+  },
+  "folderError.retry": {
+   "en": "Choose again",
+   "zh": "重新选择",
+   "it": "Scegli di nuovo"
+  },
+  "rename": {
+   "en": "Rename",
+   "zh": "重命名",
+   "it": "Rinomina"
+  },
+  "rename.workspace.title": {
+   "en": "Rename workspace",
+   "zh": "重命名工作区",
+   "it": "Rinomina area di lavoro"
+  },
+  "rename.session.title": {
+   "en": "Rename session",
+   "zh": "重命名会话",
+   "it": "Rinomina sessione"
+  },
+  "field.workspaceName": {
+   "en": "Workspace name",
+   "zh": "工作区名称",
+   "it": "Nome area di lavoro"
+  },
+  "field.sessionName": {
+   "en": "Session name",
+   "zh": "会话名称",
+   "it": "Nome sessione"
+  },
+  "delete.workspace": {
+   "en": "Delete workspace",
+   "zh": "删除工作区",
+   "it": "Elimina area di lavoro"
+  },
+  "delete.desc": {
+   "en": "This removes “{name}” from the workspace list. The folder and session logs will be kept. Its sessions will appear under Ungrouped.",
+   "zh": "将把“{name}”从工作区列表中移除。文件夹与会话记录会保留，其会话将显示在“未分组”下。",
+   "it": "Rimuove “{name}” dall’elenco delle aree di lavoro. La cartella e i log delle sessioni saranno conservati. Le sue sessioni appariranno in Non raggruppate."
+  },
+  "delete.pending": {
+   "en": "Deleting workspace…",
+   "zh": "正在删除工作区…",
+   "it": "Eliminazione area di lavoro…"
+  },
+  "menu.fork": {
+   "en": "Fork session",
+   "zh": "分叉会话",
+   "it": "Deriva sessione"
+  },
+  "menu.archiveSession": {
+   "en": "Archive session",
+   "zh": "归档会话",
+   "it": "Archivia sessione"
+  },
+  "sessions.count.one": {
+   "en": "{n} session",
+   "zh": "{n} 个会话",
+   "it": "{n} sessione"
+  },
+  "sessions.count.other": {
+   "en": "{n} sessions",
+   "zh": "{n} 个会话",
+   "it": "{n} sessioni"
+  },
+  "actions.workspace.aria": {
+   "en": "Workspace actions for {name}",
+   "zh": "工作区“{name}”的操作",
+   "it": "Azioni area di lavoro per {name}"
+  },
+  "actions.session.aria": {
+   "en": "Session actions for {name}",
+   "zh": "会话“{name}”的操作",
+   "it": "Azioni sessione per {name}"
+  },
+  "actions.newSession.aria": {
+   "en": "New session in {name}",
+   "zh": "在“{name}”中新建会话",
+   "it": "Nuova sessione in {name}"
+  },
+  "status.running": {
+   "en": "Running",
+   "zh": "进行中",
+   "it": "In esecuzione"
+  },
+  "status.subagentsRunning.one": {
+   "en": "{n} subagent running",
+   "zh": "{n} 个子代理运行中",
+   "it": "{n} subagente in esecuzione"
+  },
+  "status.subagentsRunning.other": {
+   "en": "{n} subagents running",
+   "zh": "{n} 个子代理运行中",
+   "it": "{n} subagenti in esecuzione"
+  },
+  "status.idle": {
+   "en": "Idle",
+   "zh": "空闲",
+   "it": "Inattiva"
+  },
+  "status.waitingApproval": {
+   "en": "Waiting for approval",
+   "zh": "等待审批",
+   "it": "In attesa di approvazione"
+  },
+  "status.planReview": {
+   "en": "Plan awaiting review",
+   "zh": "计划待审",
+   "it": "Piano in attesa di revisione"
+  },
+  "status.waitingAnswer": {
+   "en": "Waiting for answer",
+   "zh": "等待回答",
+   "it": "In attesa di risposta"
+  },
+  "status.completed": {
+   "en": "Completed",
+   "zh": "已完成",
+   "it": "Completata"
+  },
+  "schedule.active": {
+   "en": "Has active scheduled task",
+   "zh": "有活动定时任务",
+   "it": "Ha un’attività pianificata attiva"
+  },
+  "hover.created": {
+   "en": "Created {time}",
+   "zh": "创建于 {time}",
+   "it": "Creata {time}"
+  },
+  "hover.copied": {
+   "en": "Copied",
+   "zh": "已复制",
+   "it": "Copiato"
+  },
+  "date.ymd": {
+   "en": "{y}-{m}-{d}",
+   "zh": "{y}年{m}月{d}日",
+   "it": "{y}-{m}-{d}"
+  },
+  "time.now": {
+   "en": "now",
+   "zh": "刚刚",
+   "it": "ora"
+  },
+  "time.minutes": {
+   "en": "{n}min",
+   "zh": "{n}分钟",
+   "it": "{n}min"
+  },
+  "time.hours": {
+   "en": "{n}h",
+   "zh": "{n}小时",
+   "it": "{n}h"
+  },
+  "time.days": {
+   "en": "{n}d",
+   "zh": "{n}天",
+   "it": "{n}g"
+  },
+  "time.months": {
+   "en": "{n}mo",
+   "zh": "{n}个月",
+   "it": "{n}mes"
+  },
+  "time.years": {
+   "en": "{n}y",
+   "zh": "{n}年",
+   "it": "{n}a"
+  },
+  "time.ago": {
+   "en": "{t} ago",
+   "zh": "{t}前",
+   "it": "{t} fa"
+  }
+ },
+ "settings.agentPreset": {
+  "error": {
+   "en": "Could not load agent presets.",
+   "zh": "无法加载 Agent 预设。",
+   "it": "Impossibile caricare i preset degli agenti."
+  },
+  "userTrust": {
+   "en": "Custom",
+   "zh": "自定义",
+   "it": "Personalizzato"
+  },
+  "seatHint": {
+   "en": "Agent preset for the session you are about to start",
+   "zh": "即将开始的这个会话所用的 Agent 预设",
+   "it": "Preset dell'agente per la sessione che stai per avviare"
+  },
+  "headerHint": {
+   "en": "The agent preset this session runs, fixed when it started",
+   "zh": "本会话运行的 Agent 预设，开始时即固定",
+   "it": "Il preset dell'agente con cui gira questa sessione, fissato all'avvio"
+  },
+  "nav": {
+   "en": "Agent presets",
+   "zh": "Agent 预设",
+   "it": "Preset degli agenti"
+  },
+  "sectionIntro": {
+   "en": "A preset is the plugin composition one session's agent runs — its tools, prompt, and capabilities. Duplicate an existing one and make it yours, or let the agent draft one for you in Creator mode.",
+   "zh": "预设即一个会话的 Agent 所运行的插件组装 —— 它的工具、提示词与能力。复制一份既有预设改成自己的，或用「创造模式」让 Agent 帮你创建。",
+   "it": "Un preset è la composizione di Plugin con cui gira l'agente di una sessione: i suoi strumenti, il suo prompt e le sue capacità. Duplicane uno esistente e personalizzalo, oppure lascia che l'agente ne abbozzi uno per te in modalità Creator."
+  },
+  "builtIn": {
+   "en": "Built-in",
+   "zh": "内置",
+   "it": "Integrato"
+  },
+  "setDefault": {
+   "en": "Set as default",
+   "zh": "设为默认",
+   "it": "Imposta come predefinito"
+  },
+  "view": {
+   "en": "View",
+   "zh": "查看",
+   "it": "Visualizza"
+  },
+  "presetStandardName": {
+   "en": "Standard mode",
+   "zh": "标准模式",
+   "it": "Modalità standard"
+  },
+  "presetStandardDescription": {
+   "en": "Full coding agent with file editing, shell, file and web search, skills, planning, goals, subagents, and workflows.",
+   "zh": "功能完整的编码 Agent，支持文件编辑、Shell、文件与网页检索、Skills、计划、目标、子代理和工作流。",
+   "it": "Agente di codifica completo con modifica dei file, shell, ricerca su file e web, Skill, pianificazione, obiettivi, subagenti e Workflow."
+  },
+  "presetPtcName": {
+   "en": "PTC mode",
+   "zh": "PTC 模式",
+   "it": "Modalità PTC"
+  },
+  "presetPtcDescription": {
+   "en": "Full coding agent without the workflow tool; other tools are exposed through the PTC mode SDK so the model can combine multi-step operations in one TypeScript program.",
+   "zh": "功能完整的编码 Agent，但默认不提供 workflow 工具；其他工具通过 PTC 模式 SDK 呈现，让模型用一个 TypeScript 程序组合多步操作。",
+   "it": "Agente di codifica completo senza lo strumento workflow; gli altri strumenti sono esposti tramite l'SDK della modalità PTC, così il modello può combinare operazioni multi-passo in un unico programma TypeScript."
+  },
+  "presetMinimalName": {
+   "en": "Minimal mode",
+   "zh": "极简模式",
+   "it": "Modalità minimale"
+  },
+  "presetMinimalDescription": {
+   "en": "Single-tool coding agent with a persistent shell.",
+   "zh": "仅提供持久 shell 的单工具编码 Agent。",
+   "it": "Agente di codifica con un solo strumento e una shell persistente."
+  },
+  "presetCordisName": {
+   "en": "Creator mode",
+   "zh": "创造模式",
+   "it": "Modalità Creator"
+  },
+  "presetCordisDescription": {
+   "en": "Built for creating custom agent presets, with all Standard mode capabilities plus runtime inspection, plugin experiments, and preset-authoring guidance.",
+   "zh": "用于创建自定义 Agent preset：具备标准模式的全部能力，并提供运行时检查、插件实验和 preset 创作指导。",
+   "it": "Pensata per creare preset di agenti personalizzati: offre tutte le capacità della modalità standard più l'ispezione a runtime, gli esperimenti con i Plugin e le linee guida per la creazione dei preset."
+  },
+  "duplicate": {
+   "en": "Duplicate",
+   "zh": "复制",
+   "it": "Duplica"
+  },
+  "duplicateUnavailable": {
+   "en": "This deployment has no writable preset directory",
+   "zh": "此部署未配置可写的预设目录",
+   "it": "Questa installazione non ha una cartella dei preset scrivibile"
+  },
+  "delete": {
+   "en": "Delete",
+   "zh": "删除",
+   "it": "Elimina"
+  },
+  "presetId": {
+   "en": "Identifier",
+   "zh": "标识符",
+   "it": "Identificatore"
+  },
+  "presetIdPlaceholder": {
+   "en": "my-agent",
+   "zh": "my-agent",
+   "it": "my-agent"
+  },
+  "displayName": {
+   "en": "Name",
+   "zh": "名称",
+   "it": "Nome"
+  },
+  "displayNamePlaceholder": {
+   "en": "Shown in the picker; defaults to the identifier",
+   "zh": "选择器中显示的名字，缺省用标识符",
+   "it": "Mostrato nel selettore; predefinito all'identificatore"
+  },
+  "inUse": {
+   "en": "In use",
+   "zh": "当前使用",
+   "it": "In uso"
+  },
+  "builtInGroup": {
+   "en": "Built-in",
+   "zh": "内置",
+   "it": "Integrati"
+  },
+  "customGroup": {
+   "en": "Custom",
+   "zh": "自定义",
+   "it": "Personalizzati"
+  },
+  "noDescription": {
+   "en": "No description.",
+   "zh": "暂无描述。",
+   "it": "Nessuna descrizione."
+  },
+  "brokenBadge": {
+   "en": "Failed to load",
+   "zh": "加载失败",
+   "it": "Caricamento non riuscito"
+  },
+  "brokenNoCopy": {
+   "en": "A preset that failed to load cannot be duplicated",
+   "zh": "预设加载失败，不能复制",
+   "it": "Un preset il cui caricamento non è riuscito non può essere duplicato"
+  },
+  "switchRefused": {
+   "en": "Could not switch to {name}: {reason}",
+   "zh": "无法切换到「{name}」：{reason}",
+   "it": "Impossibile passare a {name}: {reason}"
+  },
+  "copyOf": {
+   "en": "Copied from",
+   "zh": "复制自",
+   "it": "Copiato da"
+  },
+  "composition": {
+   "en": "Composition (agent.cordis.yml)",
+   "zh": "组装（agent.cordis.yml）",
+   "it": "Composizione (agent.cordis.yml)"
+  },
+  "cancel": {
+   "en": "Cancel",
+   "zh": "取消",
+   "it": "Annulla"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "copyTitle": {
+   "en": "Duplicate preset",
+   "zh": "复制预设",
+   "it": "Duplica preset"
+  },
+  "copyIntro": {
+   "en": "The whole preset is copied on this machine. The identifier becomes its directory name and cannot be changed later; everything else is edited in the preset's own files.",
+   "zh": "整个预设会在本机复制一份。标识符将成为目录名，事后无法更改；其余内容之后直接在预设自己的文件里编辑。",
+   "it": "L'intero preset viene copiato su questa macchina. L'identificatore diventa il nome della cartella e non potrà più essere cambiato; tutto il resto si modifica nei file del preset stesso."
+  },
+  "create": {
+   "en": "Create",
+   "zh": "创建",
+   "it": "Crea"
+  },
+  "creating": {
+   "en": "Creating…",
+   "zh": "正在创建…",
+   "it": "Creazione…"
+  },
+  "creatorDraft": {
+   "en": "Draft a custom preset with Creator mode",
+   "zh": "用「创造模式」创作自定义预设",
+   "it": "Abbozza un preset personalizzato con la modalità Creator"
+  },
+  "openLocation": {
+   "en": "Open folder",
+   "zh": "打开目录",
+   "it": "Apri cartella"
+  },
+  "showLocation": {
+   "en": "Show location",
+   "zh": "查看路径",
+   "it": "Mostra percorso"
+  },
+  "revealedPathLabel": {
+   "en": "Preset files:",
+   "zh": "预设文件：",
+   "it": "File del preset:"
+  },
+  "idRequired": {
+   "en": "Give the preset an identifier.",
+   "zh": "请填写标识符。",
+   "it": "Assegna un identificatore al preset."
+  },
+  "idInvalid": {
+   "en": "Use lowercase letters, digits, and hyphens, starting with a letter or digit.",
+   "zh": "只能使用小写字母、数字与连字符，且以字母或数字开头。",
+   "it": "Usa lettere minuscole, cifre e trattini, iniziando con una lettera o una cifra."
+  },
+  "idTaken": {
+   "en": "A preset with this identifier already exists.",
+   "zh": "该标识符已被占用。",
+   "it": "Esiste già un preset con questo identificatore."
+  },
+  "deleteTitle": {
+   "en": "Delete this preset?",
+   "zh": "删除该预设？",
+   "it": "Eliminare questo preset?"
+  },
+  "deleteDescription": {
+   "en": "The preset directory is deleted. Sessions already running on it keep working; new sessions cannot select it.",
+   "zh": "预设目录将被删除。已在其上运行的会话不受影响；新会话将无法再选择它。",
+   "it": "La cartella del preset viene eliminata. Le sessioni già in esecuzione su di esso continuano a funzionare; le nuove sessioni non potranno più selezionarlo."
+  },
+  "deleteConfirm": {
+   "en": "Delete",
+   "zh": "删除",
+   "it": "Elimina"
+  },
+  "deleting": {
+   "en": "Deleting…",
+   "zh": "正在删除…",
+   "it": "Eliminazione…"
+  }
+ },
+ "cordis": {
+  "row.defineTitle": {
+   "en": "Register Cordis Plugin",
+   "zh": "注册 Cordis 插件",
+   "it": "Registra Plugin Cordis"
+  },
+  "row.runTitle": {
+   "en": "Run Cordis Plugin",
+   "zh": "运行 Cordis 插件",
+   "it": "Esegui Plugin Cordis"
+  },
+  "row.updateTitle": {
+   "en": "Update Cordis Plugin",
+   "zh": "更新 Cordis 插件",
+   "it": "Aggiorna Plugin Cordis"
+  },
+  "row.stopTitle": {
+   "en": "Stop Cordis Plugin",
+   "zh": "停止 Cordis 插件",
+   "it": "Interrompi Plugin Cordis"
+  },
+  "row.removeTitle": {
+   "en": "Remove Cordis Plugin",
+   "zh": "移除 Cordis 插件",
+   "it": "Rimuovi Plugin Cordis"
+  },
+  "purpose.missing": {
+   "en": "(no purpose given)",
+   "zh": "(未填写用途)",
+   "it": "(nessuno scopo indicato)"
+  },
+  "status.idle": {
+   "en": "Ready",
+   "zh": "待激活",
+   "it": "Pronto"
+  },
+  "status.awaitingApproval": {
+   "en": "Awaiting approval",
+   "zh": "待审批",
+   "it": "In attesa di approvazione"
+  },
+  "status.failed": {
+   "en": "Run failed",
+   "zh": "运行失败",
+   "it": "Esecuzione non riuscita"
+  },
+  "status.clientPending": {
+   "en": "Client ready to activate",
+   "zh": "Client 待激活",
+   "it": "Client pronto all'attivazione"
+  },
+  "status.running": {
+   "en": "Running",
+   "zh": "运行中",
+   "it": "In esecuzione"
+  },
+  "status.removed": {
+   "en": "Removed",
+   "zh": "已移除",
+   "it": "Rimosso"
+  },
+  "status.superseded": {
+   "en": "Newer run available",
+   "zh": "已有更新",
+   "it": "Disponibile un'esecuzione più recente"
+  },
+  "run.removed": {
+   "en": "This package no longer exists",
+   "zh": "包已不存在",
+   "it": "Questo pacchetto non esiste più"
+  },
+  "run.superseded": {
+   "en": "A newer run card is available below",
+   "zh": "已有更新的运行卡片，请查看下方",
+   "it": "Una scheda di esecuzione più recente è disponibile sotto"
+  },
+  "panel.hint": {
+   "en": "Run controls live in the Cordis panel above Settings",
+   "zh": "运行控制在左下角设置上方的 Cordis 面板",
+   "it": "I controlli di esecuzione sono nel pannello Cordis sopra Impostazioni"
+  },
+  "panel.plugins.aria": {
+   "en": "Cordis plugins",
+   "zh": "Cordis 插件",
+   "it": "Plugin Cordis"
+  },
+  "panel.approvals.aria": {
+   "en": "Cordis approvals",
+   "zh": "Cordis 审批",
+   "it": "Approvazioni Cordis"
+  },
+  "panel.trigger": {
+   "en": "Cordis Plugin",
+   "zh": "Cordis Plugin",
+   "it": "Plugin Cordis"
+  },
+  "panel.runningCount": {
+   "en": "{count} running",
+   "zh": "{count} running",
+   "it": "{count} in esecuzione"
+  },
+  "panel.title": {
+   "en": "Cordis plugins",
+   "zh": "Cordis 插件",
+   "it": "Plugin Cordis"
+  },
+  "panel.empty": {
+   "en": "No plugins defined yet",
+   "zh": "还没有定义任何插件",
+   "it": "Nessun Plugin ancora definito"
+  },
+  "panel.loading": {
+   "en": "Reading…",
+   "zh": "读取中…",
+   "it": "Lettura…"
+  },
+  "panel.readFailed": {
+   "en": "Reading the plugin inventory failed: {message}",
+   "zh": "读取插件清单失败：{message}",
+   "it": "Lettura dell'inventario dei Plugin non riuscita: {message}"
+  },
+  "panel.group.current": {
+   "en": "This session",
+   "zh": "当前会话",
+   "it": "Questa sessione"
+  },
+  "panel.group.others": {
+   "en": "Other sessions",
+   "zh": "其他会话",
+   "it": "Altre sessioni"
+  },
+  "panel.version": {
+   "en": "Version",
+   "zh": "版本",
+   "it": "Versione"
+  },
+  "panel.current": {
+   "en": "Current: {packageId}",
+   "zh": "当前：{packageId}",
+   "it": "Corrente: {packageId}"
+  },
+  "panel.next": {
+   "en": "Next: {packageId}",
+   "zh": "待切换：{packageId}",
+   "it": "Successivo: {packageId}"
+  },
+  "action.approve": {
+   "en": "Allow",
+   "zh": "允许",
+   "it": "Consenti"
+  },
+  "action.approveOnce": {
+   "en": "Allow this version only",
+   "zh": "仅允许此版本",
+   "it": "Consenti solo questa versione"
+  },
+  "action.approvePlugin": {
+   "en": "Allow future versions of this plugin",
+   "zh": "允许此插件的后续版本",
+   "it": "Consenti le versioni future di questo Plugin"
+  },
+  "action.decline": {
+   "en": "Decline",
+   "zh": "拒绝",
+   "it": "Rifiuta"
+  },
+  "action.run": {
+   "en": "Run",
+   "zh": "运行",
+   "it": "Esegui"
+  },
+  "action.stop": {
+   "en": "Stop",
+   "zh": "停止",
+   "it": "Interrompi"
+  },
+  "action.remove": {
+   "en": "Remove",
+   "zh": "移除",
+   "it": "Rimuovi"
+  },
+  "action.retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "action.rollback": {
+   "en": "Roll back",
+   "zh": "回退",
+   "it": "Rollback"
+  },
+  "action.inspect": {
+   "en": "Inspect",
+   "zh": "查看",
+   "it": "Ispeziona"
+  },
+  "render.failedAbdicated": {
+   "en": "Rendering failed in {slot}; the default UI was restored:",
+   "zh": "{slot} 渲染失败，已恢复默认界面：",
+   "it": "Rendering non riuscito in {slot}; l'interfaccia predefinita è stata ripristinata:"
+  },
+  "render.failedHeld": {
+   "en": "Rendering failed in {slot}:",
+   "zh": "{slot} 渲染失败：",
+   "it": "Rendering non riuscito in {slot}:"
+  },
+  "a11y.defining": {
+   "en": "Defining the plugin",
+   "zh": "正在定义插件",
+   "it": "Definizione del Plugin"
+  },
+  "a11y.failed": {
+   "en": "Definition failed",
+   "zh": "定义失败",
+   "it": "Definizione non riuscita"
+  },
+  "a11y.stopped": {
+   "en": "Definition interrupted",
+   "zh": "定义已中断",
+   "it": "Definizione interrotta"
+  },
+  "body.source": {
+   "en": "Plugin source",
+   "zh": "插件代码",
+   "it": "Codice sorgente del Plugin"
+  },
+  "body.hostCode": {
+   "en": "Host",
+   "zh": "Host",
+   "it": "Host"
+  },
+  "body.clientCode": {
+   "en": "Client",
+   "zh": "Client",
+   "it": "Client"
+  },
+  "body.output": {
+   "en": "Result",
+   "zh": "结果",
+   "it": "Risultato"
+  },
+  "body.copy": {
+   "en": "Copy",
+   "zh": "复制",
+   "it": "Copia"
+  },
+  "body.copied": {
+   "en": "Copied",
+   "zh": "已复制",
+   "it": "Copiato"
+  }
+ },
+ "deliverables": {
+  "presented.nativeUnavailable": {
+   "en": "This file has no available Host path. Preview it in the sidebar.",
+   "zh": "此文件没有可用的主机路径，请在侧边栏预览",
+   "it": "Questo file non ha un percorso Host disponibile. Visualizzalo nella barra laterale."
+  },
+  "presented.revealError": {
+   "en": "Could not show in file manager. Try again.",
+   "zh": "无法在文件管理器中显示，请重试",
+   "it": "Impossibile mostrarlo nel file manager. Riprova."
+  },
+  "presented.directoryError": {
+   "en": "Could not open containing folder. Try again.",
+   "zh": "无法打开所在文件夹，请重试",
+   "it": "Impossibile aprire la cartella contenitrice. Riprova."
+  },
+  "presented.directoryOpening": {
+   "en": "Opening containing folder…",
+   "zh": "正在打开所在文件夹…",
+   "it": "Apertura della cartella contenitrice…"
+  },
+  "presented.directoryOpened": {
+   "en": "Requested opening containing folder",
+   "zh": "已请求打开所在文件夹",
+   "it": "Apertura della cartella contenitrice richiesta"
+  },
+  "presented.revealed": {
+   "en": "Requested display in file manager",
+   "zh": "已请求在文件管理器中显示",
+   "it": "Visualizzazione nel file manager richiesta"
+  },
+  "presented.revealing": {
+   "en": "Showing in file manager…",
+   "zh": "正在文件管理器中显示…",
+   "it": "Visualizzazione nel file manager…"
+  },
+  "presented.unavailable": {
+   "en": "This Host has no desktop available to open files or folders",
+   "zh": "此主机没有可用的桌面，无法打开文件或文件夹",
+   "it": "Questo Host non ha un desktop disponibile per aprire file o cartelle"
+  },
+  "presented.retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "presented.hostError": {
+   "en": "Could not read the Host desktop information",
+   "zh": "无法读取主机桌面信息",
+   "it": "Impossibile leggere le informazioni sul desktop dell'Host"
+  },
+  "presented.directory": {
+   "en": "Open containing folder",
+   "zh": "打开所在文件夹",
+   "it": "Apri cartella contenitrice"
+  },
+  "presented.explorer": {
+   "en": "Show in File Explorer",
+   "zh": "在文件资源管理器中显示",
+   "it": "Mostra in Esplora file"
+  },
+  "presented.finder": {
+   "en": "Show in Finder",
+   "zh": "在 Finder 中显示",
+   "it": "Mostra nel Finder"
+  },
+  "presented.defaultApp": {
+   "en": "Open in default app",
+   "zh": "用默认应用打开",
+   "it": "Apri con l'app predefinita"
+  },
+  "presented.more": {
+   "en": "More file actions for {name}",
+   "zh": "{name} 的更多文件操作",
+   "it": "Altre azioni sui file per {name}"
+  },
+  "presented.action": {
+   "en": "Open",
+   "zh": "打开",
+   "it": "Apri"
+  },
+  "presented.preview": {
+   "en": "Preview in sidebar",
+   "zh": "在侧边栏预览",
+   "it": "Visualizza nella barra laterale"
+  },
+  "presented.previewButton": {
+   "en": "Open {name} in sidebar",
+   "zh": "在侧边栏打开 {name}",
+   "it": "Apri {name} nella barra laterale"
+  },
+  "presented.previewCard": {
+   "en": "Preview {name} in sidebar",
+   "zh": "在侧边栏预览 {name}",
+   "it": "Visualizza {name} nella barra laterale"
+  },
+  "presented.all": {
+   "en": "All {count} files",
+   "zh": "全部 {count} 个文件",
+   "it": "Tutti i {count} file"
+  },
+  "presented.expandAria": {
+   "en": "Show all {count} delivered files",
+   "zh": "展开全部 {count} 个交付文件",
+   "it": "Mostra tutti i {count} file prodotti"
+  },
+  "presented.collapse": {
+   "en": "Collapse",
+   "zh": "收起",
+   "it": "Comprimi"
+  },
+  "presented.collapseAria": {
+   "en": "Collapse delivered files",
+   "zh": "收起交付文件列表",
+   "it": "Comprimi i file prodotti"
+  },
+  "presented.opening": {
+   "en": "Opening…",
+   "zh": "正在打开…",
+   "it": "Apertura…"
+  },
+  "presented.opened": {
+   "en": "Opened in default app",
+   "zh": "已在默认程序中打开",
+   "it": "Aperto con l'app predefinita"
+  },
+  "presented.error": {
+   "en": "Could not open. Click to retry.",
+   "zh": "打开失败，点击重试",
+   "it": "Impossibile aprire. Clicca per riprovare."
+  },
+  "presented.file": {
+   "en": "File",
+   "zh": "文件",
+   "it": "File"
+  },
+  "row.title": {
+   "en": "Present files",
+   "zh": "交付文件",
+   "it": "Presenta i file"
+  },
+  "row.running": {
+   "en": "Delivering",
+   "zh": "正在交付",
+   "it": "Consegna in corso"
+  },
+  "row.ok": {
+   "en": "Delivered",
+   "zh": "已交付",
+   "it": "Consegnato"
+  },
+  "row.error": {
+   "en": "Delivery failed",
+   "zh": "交付失败",
+   "it": "Consegna non riuscita"
+  },
+  "row.stopped": {
+   "en": "Interrupted",
+   "zh": "已中断",
+   "it": "Interrotto"
+  },
+  "row.inspect": {
+   "en": "Inspect call",
+   "zh": "查看调用",
+   "it": "Ispeziona chiamata"
+  },
+  "presented.open": {
+   "en": "Open {name} in default app",
+   "zh": "在默认程序中打开 {name}",
+   "it": "Apri {name} con l'app predefinita"
+  },
+  "produced.label": {
+   "en": "Files changed",
+   "zh": "本轮文件改动",
+   "it": "File modificati"
+  },
+  "produced.moreOne": {
+   "en": "+ 1 file",
+   "zh": "+ 1 个文件",
+   "it": "+ 1 file"
+  },
+  "produced.more": {
+   "en": "+ {count} files",
+   "zh": "+ {count} 个文件",
+   "it": "+ {count} file"
+  },
+  "produced.open": {
+   "en": "Open {name}",
+   "zh": "打开 {name}",
+   "it": "Apri {name}"
+  }
+ }
+}

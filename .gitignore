@@ -1,0 +1,7 @@
+node_modules/
+*.log
+*.out
+session-dump.json
+test-page.html
+dump-config.txt
+.DS_Store

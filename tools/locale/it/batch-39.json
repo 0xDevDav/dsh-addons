@@ -1,0 +1,13 @@
+{
+ "batch": "skill",
+ "namespace": "skill",
+ "keys": {
+  "row.title": "Skill",
+  "row.running": "Caricamento Skill",
+  "row.failed": "Caricamento Skill non riuscito",
+  "row.stopped": "Caricamento Skill interrotto",
+  "row.instructions": "Istruzioni",
+  "row.inspect": "Ispeziona",
+  "menu.userOnly": "solo utente"
+ }
+}

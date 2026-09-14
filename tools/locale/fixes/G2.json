@@ -1,0 +1,8 @@
+{
+ "conversation": {
+  "placeholder.parentOffline": "Sessione padre offline; invio non disponibile ma puoi comunque interrompere l'esecuzione",
+  "access.confirm.description": "L'accesso completo riduce i passi di conferma e consente all'agente di eseguire più azioni direttamente, incluse operazioni sensibili, modifiche ai file o comandi esterni. Usalo solo quando ti fidi dell'attività corrente.",
+  "ask.rowTitle": "Poni una domanda",
+  "terminal.expandRest": "… altre {n} righe"
+ }
+}

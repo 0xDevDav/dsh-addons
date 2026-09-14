@@ -1,0 +1,27 @@
+{
+ "batch": "approval",
+ "namespace": "approval",
+ "total": 5,
+ "keys": {
+  "waiting": {
+   "en": "Waiting for approval",
+   "zh": "等待审批"
+  },
+  "detail.aria": {
+   "en": "Approval details",
+   "zh": "审批详情"
+  },
+  "escalation": {
+   "en": "Tool {toolName} requests privileged execution",
+   "zh": "工具 {toolName} 请求越权执行"
+  },
+  "reject": {
+   "en": "Reject",
+   "zh": "拒绝"
+  },
+  "allowOnce": {
+   "en": "Allow once",
+   "zh": "允许一次"
+  }
+ }
+}

@@ -1,0 +1,159 @@
+{
+ "batch": "deliverables",
+ "namespace": "deliverables",
+ "total": 38,
+ "keys": {
+  "presented.nativeUnavailable": {
+   "en": "This file has no available Host path. Preview it in the sidebar.",
+   "zh": "此文件没有可用的主机路径，请在侧边栏预览"
+  },
+  "presented.revealError": {
+   "en": "Could not show in file manager. Try again.",
+   "zh": "无法在文件管理器中显示，请重试"
+  },
+  "presented.directoryError": {
+   "en": "Could not open containing folder. Try again.",
+   "zh": "无法打开所在文件夹，请重试"
+  },
+  "presented.directoryOpening": {
+   "en": "Opening containing folder…",
+   "zh": "正在打开所在文件夹…"
+  },
+  "presented.directoryOpened": {
+   "en": "Requested opening containing folder",
+   "zh": "已请求打开所在文件夹"
+  },
+  "presented.revealed": {
+   "en": "Requested display in file manager",
+   "zh": "已请求在文件管理器中显示"
+  },
+  "presented.revealing": {
+   "en": "Showing in file manager…",
+   "zh": "正在文件管理器中显示…"
+  },
+  "presented.unavailable": {
+   "en": "This Host has no desktop available to open files or folders",
+   "zh": "此主机没有可用的桌面，无法打开文件或文件夹"
+  },
+  "presented.retry": {
+   "en": "Retry",
+   "zh": "重试"
+  },
+  "presented.hostError": {
+   "en": "Could not read the Host desktop information",
+   "zh": "无法读取主机桌面信息"
+  },
+  "presented.directory": {
+   "en": "Open containing folder",
+   "zh": "打开所在文件夹"
+  },
+  "presented.explorer": {
+   "en": "Show in File Explorer",
+   "zh": "在文件资源管理器中显示"
+  },
+  "presented.finder": {
+   "en": "Show in Finder",
+   "zh": "在 Finder 中显示"
+  },
+  "presented.defaultApp": {
+   "en": "Open in default app",
+   "zh": "用默认应用打开"
+  },
+  "presented.more": {
+   "en": "More file actions for {name}",
+   "zh": "{name} 的更多文件操作"
+  },
+  "presented.action": {
+   "en": "Open",
+   "zh": "打开"
+  },
+  "presented.preview": {
+   "en": "Preview in sidebar",
+   "zh": "在侧边栏预览"
+  },
+  "presented.previewButton": {
+   "en": "Open {name} in sidebar",
+   "zh": "在侧边栏打开 {name}"
+  },
+  "presented.previewCard": {
+   "en": "Preview {name} in sidebar",
+   "zh": "在侧边栏预览 {name}"
+  },
+  "presented.all": {
+   "en": "All {count} files",
+   "zh": "全部 {count} 个文件"
+  },
+  "presented.expandAria": {
+   "en": "Show all {count} delivered files",
+   "zh": "展开全部 {count} 个交付文件"
+  },
+  "presented.collapse": {
+   "en": "Collapse",
+   "zh": "收起"
+  },
+  "presented.collapseAria": {
+   "en": "Collapse delivered files",
+   "zh": "收起交付文件列表"
+  },
+  "presented.opening": {
+   "en": "Opening…",
+   "zh": "正在打开…"
+  },
+  "presented.opened": {
+   "en": "Opened in default app",
+   "zh": "已在默认程序中打开"
+  },
+  "presented.error": {
+   "en": "Could not open. Click to retry.",
+   "zh": "打开失败，点击重试"
+  },
+  "presented.file": {
+   "en": "File",
+   "zh": "文件"
+  },
+  "row.title": {
+   "en": "Present files",
+   "zh": "交付文件"
+  },
+  "row.running": {
+   "en": "Delivering",
+   "zh": "正在交付"
+  },
+  "row.ok": {
+   "en": "Delivered",
+   "zh": "已交付"
+  },
+  "row.error": {
+   "en": "Delivery failed",
+   "zh": "交付失败"
+  },
+  "row.stopped": {
+   "en": "Interrupted",
+   "zh": "已中断"
+  },
+  "row.inspect": {
+   "en": "Inspect call",
+   "zh": "查看调用"
+  },
+  "presented.open": {
+   "en": "Open {name} in default app",
+   "zh": "在默认程序中打开 {name}"
+  },
+  "produced.label": {
+   "en": "Files changed",
+   "zh": "本轮文件改动"
+  },
+  "produced.moreOne": {
+   "en": "+ 1 file",
+   "zh": "+ 1 个文件"
+  },
+  "produced.more": {
+   "en": "+ {count} files",
+   "zh": "+ {count} 个文件"
+  },
+  "produced.open": {
+   "en": "Open {name}",
+   "zh": "打开 {name}"
+  }
+ }
+}

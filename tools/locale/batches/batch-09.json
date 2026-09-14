@@ -1,0 +1,287 @@
+{
+ "batch": "conversation#2",
+ "namespace": "conversation",
+ "total": 70,
+ "keys": {
+  "session.hierarchy": {
+   "en": "Session hierarchy",
+   "zh": "会话层级"
+  },
+  "todo.title": {
+   "en": "To-dos",
+   "zh": "任务"
+  },
+  "todo.progress.done": {
+   "en": "{done} completed",
+   "zh": "{done} 已完成"
+  },
+  "todo.progress.active": {
+   "en": "{active} in progress",
+   "zh": "{active} 进行中"
+  },
+  "todo.progress.pending": {
+   "en": "{pending} pending",
+   "zh": "{pending} 待处理"
+  },
+  "todo.rowTitle": {
+   "en": "Update to-do list",
+   "zh": "更新任务清单"
+  },
+  "todo.completed": {
+   "en": "{done}/{total} completed",
+   "zh": "{done}/{total} 已完成"
+  },
+  "command.attachmentsUnsupported": {
+   "en": "/{command} does not accept attachments; remove them first",
+   "zh": "/{command} 不接受附件，请先移除附件"
+  },
+  "ask.rowTitle": {
+   "en": "Ask question",
+   "zh": "提问"
+  },
+  "ask.waiting": {
+   "en": "waiting",
+   "zh": "等待回答"
+  },
+  "ask.cancelled": {
+   "en": "cancelled",
+   "zh": "已取消"
+  },
+  "ask.cancelledDetail": {
+   "en": "This question set was cancelled before answers were submitted.",
+   "zh": "本轮已取消，未提交回答"
+  },
+  "ask.interrupted": {
+   "en": "interrupted",
+   "zh": "已中断"
+  },
+  "ask.interruptedDetail": {
+   "en": "This question set was interrupted before answers were submitted.",
+   "zh": "本轮已中断，未提交回答"
+  },
+  "ask.answered": {
+   "en": "{answered}/{total} answered",
+   "zh": "{answered}/{total} 已回答"
+  },
+  "ask.skipped": {
+   "en": "Not answered",
+   "zh": "未回答"
+  },
+  "bash.running": {
+   "en": "Running",
+   "zh": "运行中"
+  },
+  "bash.failed": {
+   "en": "Failed",
+   "zh": "失败"
+  },
+  "bash.stopped": {
+   "en": "Stopped",
+   "zh": "已停止"
+  },
+  "row.running": {
+   "en": "Running",
+   "zh": "运行中"
+  },
+  "row.failed": {
+   "en": "Failed",
+   "zh": "失败"
+  },
+  "row.stopped": {
+   "en": "Stopped",
+   "zh": "已停止"
+  },
+  "row.input": {
+   "en": "IN",
+   "zh": "输入"
+  },
+  "row.output": {
+   "en": "OUT",
+   "zh": "输出"
+  },
+  "row.inspect": {
+   "en": "Inspect",
+   "zh": "查看"
+  },
+  "tool.title.search": {
+   "en": "Search",
+   "zh": "搜索"
+  },
+  "tool.title.read": {
+   "en": "Read",
+   "zh": "读取"
+  },
+  "tool.title.bash": {
+   "en": "Bash",
+   "zh": "Bash"
+  },
+  "tool.title.write": {
+   "en": "Write",
+   "zh": "写入"
+  },
+  "tool.title.edit": {
+   "en": "Edit",
+   "zh": "编辑"
+  },
+  "tool.title.code": {
+   "en": "Code",
+   "zh": "代码"
+  },
+  "tool.title.generic": {
+   "en": "Tool call",
+   "zh": "工具调用"
+  },
+  "tool.title.inspect": {
+   "en": "Inspect",
+   "zh": "查看"
+  },
+  "tool.title.runCordis": {
+   "en": "Run Cordis Plugin",
+   "zh": "运行 Cordis 插件"
+  },
+  "tool.title.stopCordis": {
+   "en": "Stop Cordis Plugin",
+   "zh": "停止 Cordis 插件"
+  },
+  "tool.title.removeCordis": {
+   "en": "Remove Cordis Plugin",
+   "zh": "移除 Cordis 插件"
+  },
+  "tool.title.pwsh": {
+   "en": "Pwsh",
+   "zh": "Pwsh"
+  },
+  "tool.title.readImage": {
+   "en": "Read image",
+   "zh": "读取图片"
+  },
+  "tool.title.grep": {
+   "en": "Grep",
+   "zh": "Grep"
+  },
+  "tool.title.glob": {
+   "en": "Glob",
+   "zh": "Glob"
+  },
+  "tool.title.webSearch": {
+   "en": "Search",
+   "zh": "网页搜索"
+  },
+  "tool.title.webFetch": {
+   "en": "Fetch",
+   "zh": "网页获取"
+  },
+  "diff.files.one": {
+   "en": "{count} file",
+   "zh": "{count} 个文件"
+  },
+  "diff.files.other": {
+   "en": "{count} files",
+   "zh": "{count} 个文件"
+  },
+  "diff.collapseAria": {
+   "en": "Collapse diff",
+   "zh": "收起差异"
+  },
+  "diff.expandAria": {
+   "en": "Expand {count} more diff lines",
+   "zh": "展开其余 {count} 行差异"
+  },
+  "diff.expandRest": {
+   "en": "… {count} more lines",
+   "zh": "… 其余 {count} 行"
+  },
+  "read.window": {
+   "en": "Showing {shown} of {total} lines",
+   "zh": "显示 {shown} / {total} 行"
+  },
+  "read.collapseAria": {
+   "en": "Collapse content",
+   "zh": "收起内容"
+  },
+  "read.expandAria": {
+   "en": "Expand {count} more lines",
+   "zh": "展开其余 {count} 行"
+  },
+  "read.expandRest": {
+   "en": "… {count} more lines",
+   "zh": "… 其余 {count} 行"
+  },
+  "search.paths": {
+   "en": "{shown} paths",
+   "zh": "{shown} 个路径"
+  },
+  "search.paths.truncated": {
+   "en": "Showing {shown} of {total} paths",
+   "zh": "显示 {shown} / 共 {total} 个路径"
+  },
+  "search.matches": {
+   "en": "{shown} matches · {files} files",
+   "zh": "{shown} 处匹配 · {files} 个文件"
+  },
+  "search.matches.truncated": {
+   "en": "Showing {shown} of {total} matches · {files} files",
+   "zh": "显示 {shown} / 共 {total} 处匹配 · {files} 个文件"
+  },
+  "search.noResults": {
+   "en": "No results",
+   "zh": "无结果"
+  },
+  "search.collapseAria": {
+   "en": "Collapse results",
+   "zh": "收起结果"
+  },
+  "search.expandAria": {
+   "en": "Expand {count} more result lines",
+   "zh": "展开其余 {count} 行结果"
+  },
+  "search.expandRest": {
+   "en": "… {count} more lines",
+   "zh": "… 其余 {count} 行"
+  },
+  "web.noResults": {
+   "en": "No results found",
+   "zh": "未找到结果"
+  },
+  "web.sourcesTruncated": {
+   "en": "Source list truncated",
+   "zh": "来源列表已截断"
+  },
+  "web.http": {
+   "en": "HTTP",
+   "zh": "HTTP"
+  },
+  "web.contentTruncated": {
+   "en": "Content truncated",
+   "zh": "内容已截断"
+  },
+  "details.running": {
+   "en": "Running…",
+   "zh": "运行中…"
+  },
+  "queue.count": {
+   "en": "{n} queued messages",
+   "zh": "{n} 条排队消息"
+  },
+  "queue.sending": {
+   "en": "Sending…",
+   "zh": "发送中…"
+  },
+  "queue.image": {
+   "en": "Queued message image",
+   "zh": "排队消息图片"
+  },
+  "queue.file": {
+   "en": "Queued file {name}",
+   "zh": "排队文件 {name}"
+  },
+  "queue.edit": {
+   "en": "Edit queued message",
+   "zh": "编辑排队消息"
+  },
+  "queue.edit.unsupported": {
+   "en": "Contains non-text content; editing is not supported yet",
+   "zh": "包含非文本内容，暂不支持编辑"
+  }
+ }
+}

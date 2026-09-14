@@ -1,0 +1,11 @@
+{
+ "batch": "approval",
+ "namespace": "approval",
+ "keys": {
+  "waiting": "In attesa di approvazione",
+  "detail.aria": "Dettagli dell'approvazione",
+  "escalation": "Lo strumento {toolName} richiede un'esecuzione privilegiata",
+  "reject": "Rifiuta",
+  "allowOnce": "Consenti una volta"
+ }
+}

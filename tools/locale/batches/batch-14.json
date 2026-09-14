@@ -1,0 +1,55 @@
+{
+ "batch": "goal",
+ "namespace": "goal",
+ "total": 12,
+ "keys": {
+  "phase.active": {
+   "en": "Ongoing Goal",
+   "zh": "进行中的目标"
+  },
+  "phase.active.disarmed": {
+   "en": "Inactive Goal",
+   "zh": "未运行的目标"
+  },
+  "phase.paused": {
+   "en": "Paused Goal",
+   "zh": "已暂停的目标"
+  },
+  "phase.blocked": {
+   "en": "Blocked Goal",
+   "zh": "受阻的目标"
+  },
+  "objective.aria": {
+   "en": "Goal objective",
+   "zh": "目标内容"
+  },
+  "commandInput.aria": {
+   "en": "Command input",
+   "zh": "指令输入"
+  },
+  "action.save": {
+   "en": "Save goal",
+   "zh": "保存目标"
+  },
+  "action.cancel": {
+   "en": "Cancel edit",
+   "zh": "取消编辑"
+  },
+  "action.pause": {
+   "en": "Pause goal",
+   "zh": "暂停目标"
+  },
+  "action.resume": {
+   "en": "Resume goal",
+   "zh": "恢复目标"
+  },
+  "action.edit": {
+   "en": "Edit goal",
+   "zh": "编辑目标"
+  },
+  "action.clear": {
+   "en": "Clear goal",
+   "zh": "清除目标"
+  }
+ }
+}

@@ -1,0 +1,9 @@
+{
+ "settings.permission": {
+  "preset.workspaceWrite": "Scrittura nell'area di lavoro",
+  "confirm.description": "L'accesso completo consente alle nuove sessioni di ridurre i passi di conferma ed eseguire più azioni direttamente, incluse operazioni sensibili, modifiche ai file o comandi esterni. Usalo solo se ti fidi delle attività successive."
+ },
+ "job": {
+  "status.stopping": "in interruzione"
+ }
+}

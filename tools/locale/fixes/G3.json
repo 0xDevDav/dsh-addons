@@ -1,0 +1,14 @@
+{
+ "settings.models": {
+  "readOnly": "Il documento delle impostazioni è in sola lettura in questa distribuzione.",
+  "onboardingDescription": "Configura il provider ufficiale DeepSeek per iniziare."
+ },
+ "settings.plugins": {
+  "bashTimeoutMsHint": "Per quanto tempo un comando può essere eseguito prima di essere terminato.",
+  "unloading": "Disattivazione"
+ },
+ "settings.pluginInventory": {
+  "presetOptionDefault": "{name} (predefinito)",
+  "presetOptionBroken": "{name} (caricamento non riuscito)"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "batch": "sidebarCodePreview",
+ "namespace": "sidebarCodePreview",
+ "total": 3,
+ "keys": {
+  "title": {
+   "en": "Code",
+   "zh": "代码"
+  },
+  "copy": {
+   "en": "Copy",
+   "zh": "复制"
+  },
+  "copied": {
+   "en": "Copied",
+   "zh": "已复制"
+  }
+ }
+}

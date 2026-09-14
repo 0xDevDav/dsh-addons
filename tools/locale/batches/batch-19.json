@@ -1,0 +1,163 @@
+{
+ "batch": "open-in-app",
+ "namespace": "open-in-app",
+ "total": 39,
+ "keys": {
+  "open.title": {
+   "en": "Open workspace in {app}",
+   "zh": "在 {app} 中打开工作目录"
+  },
+  "open.tooltip": {
+   "en": "Open locally",
+   "zh": "在本地打开"
+  },
+  "open.error": {
+   "en": "Failed to open",
+   "zh": "打开失败"
+  },
+  "menu.toggle": {
+   "en": "Choose an app to open in",
+   "zh": "选择打开方式"
+  },
+  "menu.aria": {
+   "en": "Open in",
+   "zh": "打开方式"
+  },
+  "app.cursor": {
+   "en": "Cursor",
+   "zh": "Cursor"
+  },
+  "app.vscode": {
+   "en": "VS Code",
+   "zh": "VS Code"
+  },
+  "app.vscodeinsiders": {
+   "en": "VS Code Insiders",
+   "zh": "VS Code Insiders"
+  },
+  "app.windsurf": {
+   "en": "Windsurf",
+   "zh": "Windsurf"
+  },
+  "app.zed": {
+   "en": "Zed",
+   "zh": "Zed"
+  },
+  "app.sublimetext": {
+   "en": "Sublime Text",
+   "zh": "Sublime Text"
+  },
+  "app.xcode": {
+   "en": "Xcode",
+   "zh": "Xcode"
+  },
+  "app.androidstudio": {
+   "en": "Android Studio",
+   "zh": "Android Studio"
+  },
+  "app.intellij": {
+   "en": "IntelliJ IDEA",
+   "zh": "IntelliJ IDEA"
+  },
+  "app.pycharm": {
+   "en": "PyCharm",
+   "zh": "PyCharm"
+  },
+  "app.webstorm": {
+   "en": "WebStorm",
+   "zh": "WebStorm"
+  },
+  "app.phpstorm": {
+   "en": "PhpStorm",
+   "zh": "PhpStorm"
+  },
+  "app.goland": {
+   "en": "GoLand",
+   "zh": "GoLand"
+  },
+  "app.rider": {
+   "en": "Rider",
+   "zh": "Rider"
+  },
+  "app.rustrover": {
+   "en": "RustRover",
+   "zh": "RustRover"
+  },
+  "app.fork": {
+   "en": "Fork",
+   "zh": "Fork"
+  },
+  "app.sourcetree": {
+   "en": "Sourcetree",
+   "zh": "Sourcetree"
+  },
+  "app.github": {
+   "en": "GitHub Desktop",
+   "zh": "GitHub Desktop"
+  },
+  "app.tower": {
+   "en": "Tower",
+   "zh": "Tower"
+  },
+  "app.gitkraken": {
+   "en": "GitKraken",
+   "zh": "GitKraken"
+  },
+  "app.smartgit": {
+   "en": "SmartGit",
+   "zh": "SmartGit"
+  },
+  "app.sublimemerge": {
+   "en": "Sublime Merge",
+   "zh": "Sublime Merge"
+  },
+  "app.ghostty": {
+   "en": "Ghostty",
+   "zh": "Ghostty"
+  },
+  "app.warp": {
+   "en": "Warp",
+   "zh": "Warp"
+  },
+  "app.iterm": {
+   "en": "iTerm2",
+   "zh": "iTerm2"
+  },
+  "app.kitty": {
+   "en": "kitty",
+   "zh": "kitty"
+  },
+  "app.windowsterminal": {
+   "en": "Windows Terminal",
+   "zh": "Windows Terminal"
+  },
+  "app.gitbash": {
+   "en": "Git Bash",
+   "zh": "Git Bash"
+  },
+  "app.gnometerminal": {
+   "en": "GNOME Terminal",
+   "zh": "GNOME Terminal"
+  },
+  "app.konsole": {
+   "en": "Konsole",
+   "zh": "Konsole"
+  },
+  "app.finder": {
+   "en": "Finder",
+   "zh": "访达"
+  },
+  "app.explorer": {
+   "en": "File Explorer",
+   "zh": "文件资源管理器"
+  },
+  "app.filemanager": {
+   "en": "Files",
+   "zh": "文件管理器"
+  },
+  "app.terminal": {
+   "en": "Terminal",
+   "zh": "终端"
+  }
+ }
+}

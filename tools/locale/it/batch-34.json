@@ -1,0 +1,15 @@
+{
+ "batch": "sidebarPdf",
+ "namespace": "sidebarPdf",
+ "keys": {
+  "title": "PDF",
+  "pageImage": "Pagina PDF {page}",
+  "loading": "Apertura PDF…",
+  "rendering": "Rendering pagina…",
+  "failed": "Impossibile visualizzare il PDF: {message}",
+  "password": "Questo PDF richiede una password; le anteprime protette da password non sono supportate.",
+  "workerFailed": "Il processo di rendering del PDF non può continuare. Riprova.",
+  "unsupported": "L'anteprima PDF richiede il contenuto completo del file.",
+  "retry": "Riprova"
+ }
+}

@@ -1,0 +1,1396 @@
+{
+ "trajectory": {
+  "view.trajectory": {
+   "en": "Trajectory",
+   "zh": "轨迹",
+   "it": "Traiettoria"
+  },
+  "toolbar.aria": {
+   "en": "Trajectory toolbar",
+   "zh": "轨迹工具栏",
+   "it": "Barra degli strumenti della traiettoria"
+  },
+  "toolbar.duration": {
+   "en": "Duration",
+   "zh": "时长",
+   "it": "Durata"
+  },
+  "toolbar.useActualDuration": {
+   "en": "Use actual duration",
+   "zh": "使用实际时长",
+   "it": "Usa la durata effettiva"
+  },
+  "toolbar.useEqualWidth": {
+   "en": "Use equal-width operations",
+   "zh": "使用等宽操作",
+   "it": "Usa operazioni di larghezza uguale"
+  },
+  "toolbar.actualTime": {
+   "en": "Actual time",
+   "zh": "实际时间",
+   "it": "Tempo effettivo"
+  },
+  "toolbar.turns": {
+   "en": "Turns",
+   "zh": "轮次",
+   "it": "Turni"
+  },
+  "toolbar.expandTurns": {
+   "en": "Expand turns",
+   "zh": "展开所有轮次",
+   "it": "Espandi i turni"
+  },
+  "toolbar.collapseTurns": {
+   "en": "Collapse turns",
+   "zh": "收起所有轮次",
+   "it": "Comprimi i turni"
+  },
+  "toolbar.calls": {
+   "en": "Calls",
+   "zh": "调用",
+   "it": "Chiamate"
+  },
+  "toolbar.expandCalls": {
+   "en": "Expand calls",
+   "zh": "展开所有调用",
+   "it": "Espandi le chiamate"
+  },
+  "toolbar.collapseCalls": {
+   "en": "Collapse calls",
+   "zh": "收起所有调用",
+   "it": "Comprimi le chiamate"
+  },
+  "toolbar.search": {
+   "en": "Search trajectory",
+   "zh": "搜索轨迹",
+   "it": "Cerca nella traiettoria"
+  },
+  "toolbar.searchPlaceholder": {
+   "en": "Search",
+   "zh": "搜索",
+   "it": "Cerca"
+  },
+  "kind.system": {
+   "en": "SYSTEM",
+   "zh": "系统",
+   "it": "SISTEMA"
+  },
+  "kind.user": {
+   "en": "USER",
+   "zh": "用户",
+   "it": "UTENTE"
+  },
+  "kind.context": {
+   "en": "CONTEXT",
+   "zh": "上下文",
+   "it": "CONTESTO"
+  },
+  "kind.compacted": {
+   "en": "COMPACTED",
+   "zh": "已压缩",
+   "it": "COMPATTATO"
+  },
+  "kind.message": {
+   "en": "Message",
+   "zh": "消息",
+   "it": "Messaggio"
+  },
+  "kind.assistant": {
+   "en": "ASSISTANT",
+   "zh": "助手",
+   "it": "ASSISTENTE"
+  },
+  "kind.tool": {
+   "en": "TOOL",
+   "zh": "工具",
+   "it": "STRUMENTO"
+  },
+  "kind.subtool": {
+   "en": "SUBTOOL",
+   "zh": "子工具",
+   "it": "SOTTOSTRUMENTO"
+  },
+  "kind.sub": {
+   "en": "Sub",
+   "zh": "子项",
+   "it": "SUB"
+  },
+  "column.input": {
+   "en": "Input",
+   "zh": "输入",
+   "it": "Input"
+  },
+  "column.output": {
+   "en": "Output",
+   "zh": "输出",
+   "it": "Output"
+  },
+  "column.think": {
+   "en": "Think",
+   "zh": "思考",
+   "it": "Pensiero"
+  },
+  "column.time": {
+   "en": "Time",
+   "zh": "时间",
+   "it": "Tempo"
+  },
+  "column.model": {
+   "en": "Model",
+   "zh": "模型",
+   "it": "Modello"
+  },
+  "column.tools": {
+   "en": "Tools",
+   "zh": "工具",
+   "it": "Strumenti"
+  },
+  "turn.label": {
+   "en": "Turn {turn}",
+   "zh": "第 {turn} 轮",
+   "it": "Turno {turn}"
+  },
+  "section.betweenTurns": {
+   "en": "Between turns",
+   "zh": "轮次之间",
+   "it": "Tra i turni"
+  },
+  "group.message": {
+   "en": "Message",
+   "zh": "消息",
+   "it": "Messaggio"
+  },
+  "group.step": {
+   "en": "Step {step}",
+   "zh": "步骤 {step}",
+   "it": "Passo {step}"
+  },
+  "group.compaction": {
+   "en": "Compaction {seq}",
+   "zh": "压缩 {seq}",
+   "it": "Compattazione {seq}"
+  },
+  "status.failed": {
+   "en": "Failed",
+   "zh": "失败",
+   "it": "Non riuscito"
+  },
+  "status.pending": {
+   "en": "Pending",
+   "zh": "等待中",
+   "it": "In attesa"
+  },
+  "status.completed": {
+   "en": "Completed",
+   "zh": "已完成",
+   "it": "Completato"
+  },
+  "timing.notAvailable": {
+   "en": "Not available",
+   "zh": "不可用",
+   "it": "Non disponibile"
+  },
+  "timing.notRecorded": {
+   "en": "Not recorded",
+   "zh": "未记录",
+   "it": "Non registrato"
+  },
+  "timing.stepStartUnavailable": {
+   "en": "Step start unavailable",
+   "zh": "步骤开始时间不可用",
+   "it": "Avvio del passo non disponibile"
+  },
+  "timing.firstTokenUnavailable": {
+   "en": "First token unavailable",
+   "zh": "首 token 时间不可用",
+   "it": "Primo token non disponibile"
+  },
+  "timing.usageUnavailable": {
+   "en": "Usage unavailable",
+   "zh": "用量不可用",
+   "it": "Utilizzo non disponibile"
+  },
+  "timing.outputTokensUnavailable": {
+   "en": "Output tokens unavailable",
+   "zh": "输出 token 数不可用",
+   "it": "Token di output non disponibili"
+  },
+  "timing.durationTooShort": {
+   "en": "Duration too short",
+   "zh": "时长过短",
+   "it": "Durata troppo breve"
+  },
+  "timing.showLocalTime": {
+   "en": "Show local time",
+   "zh": "显示本地时间",
+   "it": "Mostra l'ora locale"
+  },
+  "timing.showUnixTimestamp": {
+   "en": "Show Unix timestamp",
+   "zh": "显示 Unix 时间戳",
+   "it": "Mostra il timestamp Unix"
+  },
+  "timing.started": {
+   "en": "Started",
+   "zh": "开始时间",
+   "it": "Avvio"
+  },
+  "timing.totalDuration": {
+   "en": "Total duration",
+   "zh": "总时长",
+   "it": "Durata totale"
+  },
+  "timing.ttft": {
+   "en": "TTFT",
+   "zh": "首 token 延迟",
+   "it": "TTFT"
+  },
+  "timing.generation": {
+   "en": "Generation",
+   "zh": "生成",
+   "it": "Generazione"
+  },
+  "timing.throughput": {
+   "en": "Throughput",
+   "zh": "吞吐量",
+   "it": "Velocità"
+  },
+  "timing.duration": {
+   "en": "Duration",
+   "zh": "时长",
+   "it": "Durata"
+  },
+  "timing.source": {
+   "en": "Timing source",
+   "zh": "计时来源",
+   "it": "Origine della misurazione"
+  },
+  "timing.sessionTimestamps": {
+   "en": "Session timestamps",
+   "zh": "会话时间戳",
+   "it": "Timestamp della sessione"
+  },
+  "timing.sessionTimestampsRunning": {
+   "en": "Session timestamps (running)",
+   "zh": "会话时间戳（运行中）",
+   "it": "Timestamp della sessione (in esecuzione)"
+  },
+  "timing.request": {
+   "en": "Request Timing",
+   "zh": "请求计时",
+   "it": "Tempi della richiesta"
+  },
+  "unit.milliseconds": {
+   "en": "{value} ms",
+   "zh": "{value} 毫秒",
+   "it": "{value} ms"
+  },
+  "unit.seconds": {
+   "en": "{value} s",
+   "zh": "{value} 秒",
+   "it": "{value} s"
+  },
+  "unit.tokens": {
+   "en": "{value} tok",
+   "zh": "{value} tok",
+   "it": "{value} tok"
+  },
+  "unit.tokensPerSecond": {
+   "en": "{value} tok/s",
+   "zh": "{value} tok/s",
+   "it": "{value} tok/s"
+  },
+  "usage.tokens": {
+   "en": "Tokens",
+   "zh": "Token",
+   "it": "Token"
+  },
+  "usage.reasoning": {
+   "en": "Reasoning",
+   "zh": "推理",
+   "it": "Ragionamento"
+  },
+  "usage.content": {
+   "en": "Content",
+   "zh": "内容",
+   "it": "Contenuto"
+  },
+  "usage.notReported": {
+   "en": "Usage not reported",
+   "zh": "未报告用量",
+   "it": "Utilizzo non segnalato"
+  },
+  "usage.input": {
+   "en": "Input",
+   "zh": "输入",
+   "it": "Input"
+  },
+  "usage.cached": {
+   "en": "Cached",
+   "zh": "缓存读取",
+   "it": "Cache"
+  },
+  "usage.cacheCreated": {
+   "en": "Cache created",
+   "zh": "缓存写入",
+   "it": "Cache creata"
+  },
+  "usage.other": {
+   "en": "Other",
+   "zh": "其他",
+   "it": "Altro"
+  },
+  "usage.output": {
+   "en": "Output",
+   "zh": "输出",
+   "it": "Output"
+  },
+  "usage.thisRequest": {
+   "en": "This request",
+   "zh": "本次请求",
+   "it": "Questa richiesta"
+  },
+  "usage.sessionCumulative": {
+   "en": "Session cumulative",
+   "zh": "会话累计",
+   "it": "Cumulativo della sessione"
+  },
+  "options.notRecorded": {
+   "en": "Options not recorded",
+   "zh": "未记录选项",
+   "it": "Opzioni non registrate"
+  },
+  "options.json": {
+   "en": "Request options JSON",
+   "zh": "请求选项 JSON",
+   "it": "JSON delle opzioni della richiesta"
+  },
+  "source.unknown": {
+   "en": "Unknown",
+   "zh": "未知",
+   "it": "Sconosciuto"
+  },
+  "source.user": {
+   "en": "User",
+   "zh": "用户",
+   "it": "Utente"
+  },
+  "source.plugin": {
+   "en": "Plugin",
+   "zh": "插件",
+   "it": "Plugin"
+  },
+  "source.pluginNamed": {
+   "en": "Plugin · {plugin}",
+   "zh": "插件 · {plugin}",
+   "it": "Plugin · {plugin}"
+  },
+  "source.goal": {
+   "en": "Goal",
+   "zh": "目标",
+   "it": "Obiettivo"
+  },
+  "source.goalRound": {
+   "en": "Goal · Round {round}",
+   "zh": "目标 · Round {round}",
+   "it": "Obiettivo · Round {round}"
+  },
+  "source.notRecorded": {
+   "en": "Source not recorded",
+   "zh": "未记录来源",
+   "it": "Origine non registrata"
+  },
+  "source.messageJson": {
+   "en": "Message source JSON",
+   "zh": "消息来源 JSON",
+   "it": "JSON dell'origine del messaggio"
+  },
+  "tab.summary": {
+   "en": "Summary",
+   "zh": "概述",
+   "it": "Riepilogo"
+  },
+  "tab.rawOutput": {
+   "en": "Raw Output",
+   "zh": "原始输出",
+   "it": "Output non elaborato"
+  },
+  "tab.preview": {
+   "en": "Preview",
+   "zh": "预览",
+   "it": "Anteprima"
+  },
+  "tab.raw": {
+   "en": "Raw",
+   "zh": "原始内容",
+   "it": "Non elaborato"
+  },
+  "tab.source": {
+   "en": "Source",
+   "zh": "来源",
+   "it": "Origine"
+  },
+  "tab.payload": {
+   "en": "Payload",
+   "zh": "参数",
+   "it": "Payload"
+  },
+  "tab.result": {
+   "en": "Result",
+   "zh": "结果",
+   "it": "Risultato"
+  },
+  "tab.schema": {
+   "en": "Schema",
+   "zh": "Schema",
+   "it": "Schema"
+  },
+  "tab.timing": {
+   "en": "Timing",
+   "zh": "计时",
+   "it": "Tempistiche"
+  },
+  "tab.diff": {
+   "en": "Diff",
+   "zh": "差异",
+   "it": "Diff"
+  },
+  "tab.systemPrompt": {
+   "en": "System Prompt",
+   "zh": "系统提示词",
+   "it": "Prompt di sistema"
+  },
+  "tab.tools": {
+   "en": "Tools",
+   "zh": "工具",
+   "it": "Strumenti"
+  },
+  "tab.options": {
+   "en": "Options",
+   "zh": "选项",
+   "it": "Opzioni"
+  },
+  "tab.usage": {
+   "en": "Usage",
+   "zh": "用量",
+   "it": "Utilizzo"
+  },
+  "record.toolCallOnly": {
+   "en": "(tool call only)",
+   "zh": "（仅工具调用）",
+   "it": "(solo chiamata a strumento)"
+  },
+  "record.noContent": {
+   "en": "No content",
+   "zh": "无内容",
+   "it": "Nessun contenuto"
+  },
+  "record.noPayload": {
+   "en": "No payload captured",
+   "zh": "未捕获参数",
+   "it": "Nessun payload acquisito"
+  },
+  "record.noResult": {
+   "en": "No result captured",
+   "zh": "未捕获结果",
+   "it": "Nessun risultato acquisito"
+  },
+  "record.noOutput": {
+   "en": "No output",
+   "zh": "无输出",
+   "it": "Nessun output"
+  },
+  "record.schemaUnavailable": {
+   "en": "Schema unavailable",
+   "zh": "Schema 不可用",
+   "it": "Schema non disponibile"
+  },
+  "record.parameters": {
+   "en": "Parameters",
+   "zh": "参数",
+   "it": "Parametri"
+  },
+  "record.resultJson": {
+   "en": "Result JSON",
+   "zh": "结果 JSON",
+   "it": "Risultato JSON"
+  },
+  "record.json": {
+   "en": "JSON",
+   "zh": "JSON",
+   "it": "JSON"
+  },
+  "record.parametersJson": {
+   "en": "parameters JSON",
+   "zh": "参数 JSON",
+   "it": "JSON dei parametri"
+  },
+  "record.namedParametersJson": {
+   "en": "{name} parameters JSON",
+   "zh": "{name} 参数 JSON",
+   "it": "JSON dei parametri di {name}"
+  },
+  "record.payloadJson": {
+   "en": "Payload JSON",
+   "zh": "参数 JSON",
+   "it": "JSON del payload"
+  },
+  "record.outputJson": {
+   "en": "Result JSON",
+   "zh": "结果 JSON",
+   "it": "Risultato JSON"
+  },
+  "record.thinking": {
+   "en": "Thinking",
+   "zh": "思考",
+   "it": "Ragionamento"
+  },
+  "record.systemPromptMissing": {
+   "en": "No system prompt in this request",
+   "zh": "本次请求没有系统提示词",
+   "it": "Nessun prompt di sistema in questa richiesta"
+  },
+  "record.toolsMissing": {
+   "en": "No tools in this request",
+   "zh": "本次请求没有工具",
+   "it": "Nessuno strumento in questa richiesta"
+  },
+  "record.systemPrompt": {
+   "en": "System Prompt",
+   "zh": "系统提示词",
+   "it": "Prompt di sistema"
+  },
+  "record.tools": {
+   "en": "Tools",
+   "zh": "工具",
+   "it": "Strumenti"
+  },
+  "block.openSummary": {
+   "en": "Open Block #{index} tool call summary",
+   "zh": "打开第 {index} 个块的工具调用概述",
+   "it": "Apri il riepilogo delle chiamate a strumento del blocco #{index}"
+  },
+  "block.openSummaryTitle": {
+   "en": "Open tool call summary",
+   "zh": "打开工具调用概述",
+   "it": "Apri il riepilogo delle chiamate a strumento"
+  },
+  "block.label": {
+   "en": "Block #{index} {type}",
+   "zh": "块 #{index} {type}",
+   "it": "Blocco #{index} {type}"
+  },
+  "history.loadingTrajectory": {
+   "en": "Loading trajectory…",
+   "zh": "正在加载轨迹…",
+   "it": "Caricamento della traiettoria…"
+  },
+  "history.loadingEarlier": {
+   "en": "Loading earlier history…",
+   "zh": "正在加载更早的历史…",
+   "it": "Caricamento della cronologia precedente…"
+  },
+  "history.loadingEarlierAria": {
+   "en": "Loading earlier history…",
+   "zh": "正在加载更早的历史…",
+   "it": "Caricamento della cronologia precedente…"
+  },
+  "history.loadEarlier": {
+   "en": "Load earlier history",
+   "zh": "加载更早的历史",
+   "it": "Carica la cronologia precedente"
+  },
+  "history.clickToLoadEarlier": {
+   "en": "Click to load earlier history",
+   "zh": "点击加载更早的历史",
+   "it": "Fai clic per caricare la cronologia precedente"
+  },
+  "request.label": {
+   "en": "Request #{request}",
+   "zh": "请求 #{request}",
+   "it": "Richiesta #{request}"
+  },
+  "request.labelCompaction": {
+   "en": "Request #{request} · Compaction",
+   "zh": "请求 #{request} · 压缩",
+   "it": "Richiesta #{request} · Compattazione"
+  },
+  "request.compaction": {
+   "en": "Compaction · {section}",
+   "zh": "压缩 · {section}",
+   "it": "Compattazione · {section}"
+  },
+  "request.compactionPurpose": {
+   "en": "Compaction",
+   "zh": "压缩",
+   "it": "Compattazione"
+  },
+  "request.retryProgress": {
+   "en": "{retry} of {maximum}",
+   "zh": "{retry}/{maximum}",
+   "it": "{retry} di {maximum}"
+  },
+  "request.collapsedSummary": {
+   "en": "Collapsed {kind} summary, {summary}",
+   "zh": "已收起的{kind}概述，{summary}",
+   "it": "Riepilogo {kind} compresso, {summary}"
+  },
+  "request.collapsedTurn": {
+   "en": "turn",
+   "zh": "轮次",
+   "it": "turno"
+  },
+  "request.collapsedAssistant": {
+   "en": "assistant",
+   "zh": "助手",
+   "it": "assistente"
+  },
+  "request.rowAria": {
+   "en": "{request}{kind}, {content}",
+   "zh": "{request}{kind}，{content}",
+   "it": "{request}{kind}, {content}"
+  },
+  "request.rowPrefix": {
+   "en": "Request {request}, ",
+   "zh": "请求 {request}，",
+   "it": "Richiesta {request}, "
+  },
+  "request.rowAriaCompaction": {
+   "en": "Request {request}, compaction",
+   "zh": "请求 {request}，压缩",
+   "it": "Richiesta {request}, compattazione"
+  },
+  "request.noContent": {
+   "en": "no content",
+   "zh": "无内容",
+   "it": "nessun contenuto"
+  },
+  "summary.toolCalls.one": {
+   "en": "{count} tool call",
+   "zh": "{count} 个工具调用",
+   "it": "{count} chiamata a strumento"
+  },
+  "summary.toolCalls.other": {
+   "en": "{count} tool calls",
+   "zh": "{count} 个工具调用",
+   "it": "{count} chiamate a strumento"
+  },
+  "summary.steps.one": {
+   "en": "{count} step",
+   "zh": "{count} 个步骤",
+   "it": "{count} passo"
+  },
+  "summary.steps.other": {
+   "en": "{count} steps",
+   "zh": "{count} 个步骤",
+   "it": "{count} passi"
+  },
+  "details.event": {
+   "en": "Event details",
+   "zh": "事件详情",
+   "it": "Dettagli evento"
+  },
+  "details.resize": {
+   "en": "Resize event details",
+   "zh": "调整事件详情宽度",
+   "it": "Ridimensiona i dettagli evento"
+  },
+  "details.resizeTitle": {
+   "en": "Drag to resize. Double-click to reset.",
+   "zh": "拖动调整大小；双击恢复默认值。",
+   "it": "Trascina per ridimensionare. Doppio clic per reimpostare."
+  },
+  "details.close": {
+   "en": "Close details",
+   "zh": "关闭详情",
+   "it": "Chiudi dettagli"
+  },
+  "details.status": {
+   "en": "Status",
+   "zh": "状态",
+   "it": "Stato"
+  },
+  "details.purpose": {
+   "en": "Purpose",
+   "zh": "用途",
+   "it": "Scopo"
+  },
+  "details.provider": {
+   "en": "Provider",
+   "zh": "提供方",
+   "it": "Provider"
+  },
+  "details.model": {
+   "en": "Model",
+   "zh": "模型",
+   "it": "Modello"
+  },
+  "details.toolCalls": {
+   "en": "Tool calls",
+   "zh": "工具调用",
+   "it": "Chiamate a strumenti"
+  },
+  "details.subtoolCalls": {
+   "en": "Subtool calls",
+   "zh": "子工具调用",
+   "it": "Chiamate a sotto-strumenti"
+  },
+  "details.error": {
+   "en": "Error",
+   "zh": "错误",
+   "it": "Errore"
+  },
+  "details.failure.auth": {
+   "en": "API key is invalid",
+   "zh": "API 密钥无效",
+   "it": "La chiave API non è valida"
+  },
+  "details.retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "details.scheduled": {
+   "en": "Scheduled",
+   "zh": "已计划",
+   "it": "Programmato"
+  },
+  "details.retryDelay": {
+   "en": "Retry delay",
+   "zh": "重试延迟",
+   "it": "Ritardo riprova"
+  },
+  "details.result": {
+   "en": "Result",
+   "zh": "结果",
+   "it": "Risultato"
+  },
+  "details.compacted": {
+   "en": "Compacted",
+   "zh": "已压缩",
+   "it": "Compattato"
+  },
+  "details.assistantMessage": {
+   "en": "Assistant Message",
+   "zh": "助手消息",
+   "it": "Messaggio dell'assistente"
+  },
+  "details.source": {
+   "en": "Source",
+   "zh": "来源",
+   "it": "Origine"
+  },
+  "details.hierarchy": {
+   "en": "Hierarchy",
+   "zh": "层级",
+   "it": "Gerarchia"
+  },
+  "details.toolCall": {
+   "en": "Tool Call",
+   "zh": "工具调用",
+   "it": "Chiamata a strumento"
+  },
+  "timeline.aria": {
+   "en": "Trajectory timeline",
+   "zh": "轨迹时间线",
+   "it": "Cronologia della traiettoria"
+  },
+  "timeline.overviewAria": {
+   "en": "Timeline overview; drag horizontally to focus events",
+   "zh": "时间线概览；水平拖动可聚焦事件",
+   "it": "Panoramica della cronologia; trascina in orizzontale per focalizzare gli eventi"
+  },
+  "timeline.noTimingData": {
+   "en": "No timing data",
+   "zh": "无计时数据",
+   "it": "Nessun dato di temporizzazione"
+  },
+  "timeline.total": {
+   "en": "Total {duration}",
+   "zh": "总计 {duration}",
+   "it": "Totale {duration}"
+  },
+  "timeline.started": {
+   "en": "Started {time}",
+   "zh": "开始于 {time}",
+   "it": "Avviato {time}"
+  },
+  "timeline.ttftDecoding": {
+   "en": "TTFT {ttft} · Decoding {decoding}",
+   "zh": "首 token {ttft} · 解码 {decoding}",
+   "it": "TTFT {ttft} · Decodifica {decoding}"
+  },
+  "layout.compacting": {
+   "en": "Compacting context…",
+   "zh": "正在压缩上下文…",
+   "it": "Compattazione del contesto…"
+  },
+  "layout.compactionFailed": {
+   "en": "Compaction failed",
+   "zh": "上下文压缩失败",
+   "it": "Compattazione non riuscita"
+  },
+  "layout.compacted": {
+   "en": "Context compacted",
+   "zh": "上下文已压缩",
+   "it": "Contesto compattato"
+  },
+  "layout.toolCallOnly": {
+   "en": "Tool call only",
+   "zh": "仅工具调用",
+   "it": "Solo chiamata a strumento"
+  },
+  "layout.imageOnly": {
+   "en": "Images ×{count}",
+   "zh": "图片 ×{count}",
+   "it": "Immagini ×{count}"
+  },
+  "layout.fileAttachments": {
+   "en": "Files ×{count}",
+   "zh": "文件 ×{count}",
+   "it": "File ×{count}"
+  },
+  "layout.initialSystemPrompt": {
+   "en": "Initial System Prompt",
+   "zh": "初始系统提示词",
+   "it": "Prompt di sistema iniziale"
+  },
+  "layout.systemPromptUpdated": {
+   "en": "System Prompt Updated",
+   "zh": "系统提示词已更新",
+   "it": "Prompt di sistema aggiornato"
+  },
+  "layout.toolsUpdated": {
+   "en": "Tools Updated",
+   "zh": "工具已更新",
+   "it": "Strumenti aggiornati"
+  },
+  "layout.systemPromptAndToolsUpdated": {
+   "en": "System Prompt and Tools Updated",
+   "zh": "系统提示词和工具已更新",
+   "it": "Prompt di sistema e strumenti aggiornati"
+  },
+  "layout.compactionInterrupted": {
+   "en": "Compaction was interrupted before completion.",
+   "zh": "上下文压缩在完成前被中断。",
+   "it": "La compattazione è stata interrotta prima del completamento."
+  }
+ },
+ "chat": {
+  "view.chat": {
+   "en": "Chat",
+   "zh": "对话",
+   "it": "Chat"
+  },
+  "number.groupSeparator": {
+   "en": ",",
+   "zh": ",",
+   "it": ","
+  },
+  "duration.compactSeconds": {
+   "en": "{seconds}s",
+   "zh": "{seconds}秒",
+   "it": "{seconds}s"
+  },
+  "duration.compactMinutes": {
+   "en": "{minutes}m{seconds}s",
+   "zh": "{minutes}分{seconds}秒",
+   "it": "{minutes}m{seconds}s"
+  },
+  "duration.milliseconds": {
+   "en": "{milliseconds}ms",
+   "zh": "{milliseconds}毫秒",
+   "it": "{milliseconds}ms"
+  },
+  "stats.counts": {
+   "en": "{turns} turns {steps} steps",
+   "zh": "{turns} 轮 {steps} 步",
+   "it": "{turns} turni {steps} passi"
+  },
+  "stats.cacheHit": {
+   "en": "Cache hit {percent}%",
+   "zh": "缓存命中 {percent}%",
+   "it": "Cache hit {percent}%"
+  },
+  "stats.dialog.title": {
+   "en": "Session statistics",
+   "zh": "会话统计",
+   "it": "Statistiche della sessione"
+  },
+  "stats.dialog.usageTitle": {
+   "en": "Token usage",
+   "zh": "Token 用量",
+   "it": "Utilizzo dei token"
+  },
+  "stats.dialog.llmTime": {
+   "en": "LLM time",
+   "zh": "模型用时",
+   "it": "Tempo LLM"
+  },
+  "stats.dialog.toolTime": {
+   "en": "Tool time",
+   "zh": "工具调用用时",
+   "it": "Tempo strumenti"
+  },
+  "stats.dialog.ttft": {
+   "en": "Avg time to first token (TTFT)",
+   "zh": "首 token 平均（TTFT）",
+   "it": "Tempo medio al primo token (TTFT)"
+  },
+  "stats.dialog.speed": {
+   "en": "Tokens per second (TPS)",
+   "zh": "输出速度（TPS）",
+   "it": "Token al secondo (TPS)"
+  },
+  "chat.loadingHistory": {
+   "en": "Loading history…",
+   "zh": "载入历史…",
+   "it": "Caricamento cronologia…"
+  },
+  "chat.loadError": {
+   "en": "Failed to load history: {message} ({code})",
+   "zh": "历史加载失败：{message}（{code}）",
+   "it": "Caricamento cronologia non riuscito: {message} ({code})"
+  },
+  "chat.loadOlder": {
+   "en": "Load earlier",
+   "zh": "加载更早",
+   "it": "Carica precedenti"
+  },
+  "chat.toBottom": {
+   "en": "Back to bottom",
+   "zh": "回到底部",
+   "it": "Torna in fondo"
+  },
+  "chat.deepDiving": {
+   "en": "Deep diving...",
+   "zh": "深度求索中...",
+   "it": "Analisi approfondita…"
+  },
+  "chat.turnNavigation.label": {
+   "en": "Turn navigation",
+   "zh": "轮次导航",
+   "it": "Navigazione turni"
+  },
+  "chat.turnNavigation.jump": {
+   "en": "Jump to turn {turn}",
+   "zh": "跳转到第 {turn} 轮",
+   "it": "Vai al turno {turn}"
+  },
+  "chat.turnNavigation.jumpLoad": {
+   "en": "Load and jump to turn {turn}",
+   "zh": "加载并跳转到第 {turn} 轮",
+   "it": "Carica e vai al turno {turn}"
+  },
+  "chat.turnNavigation.turn": {
+   "en": "Turn {turn}",
+   "zh": "第 {turn} 轮",
+   "it": "Turno {turn}"
+  },
+  "settings.transcript.title": {
+   "en": "Conversation display",
+   "zh": "对话显示",
+   "it": "Visualizzazione conversazione"
+  },
+  "settings.transcript.description": {
+   "en": "Controls process content in completed turns",
+   "zh": "控制已完成轮次的过程内容",
+   "it": "Controlla il contenuto di processo nei turni completati"
+  },
+  "settings.transcript.normal": {
+   "en": "Normal",
+   "zh": "标准",
+   "it": "Normale"
+  },
+  "settings.transcript.compact": {
+   "en": "Compact",
+   "zh": "紧凑",
+   "it": "Compatto"
+  },
+  "fileOpen.title": {
+   "en": "Couldn’t open file",
+   "zh": "无法打开文件",
+   "it": "Impossibile aprire il file"
+  },
+  "fileOpen.unknown": {
+   "en": "Couldn’t open this file",
+   "zh": "无法打开此文件",
+   "it": "Impossibile aprire questo file"
+  },
+  "message.extraBlock": {
+   "en": "Extra content block",
+   "zh": "附加内容块",
+   "it": "Blocco di contenuto aggiuntivo"
+  },
+  "message.systemPrompt": {
+   "en": "System prompt",
+   "zh": "系统提示词",
+   "it": "Prompt di sistema"
+  },
+  "message.systemPromptUpdate": {
+   "en": "System prompt update",
+   "zh": "系统提示词更新",
+   "it": "Aggiornamento del prompt di sistema"
+  },
+  "message.contextInjection": {
+   "en": "Context injection",
+   "zh": "上下文注入",
+   "it": "Iniezione di contesto"
+  },
+  "message.contextRecall": {
+   "en": "Session recall",
+   "zh": "跨会话召回",
+   "it": "Richiamo della sessione"
+  },
+  "message.referenceSummary": {
+   "en": "Referenced session · {labels}",
+   "zh": "引用会话 · {labels}",
+   "it": "Sessione di riferimento · {labels}"
+  },
+  "message.referenceSeparator": {
+   "en": ", ",
+   "zh": "、",
+   "it": ", "
+  },
+  "message.context.instructions.loaded": {
+   "en": "loaded",
+   "zh": "已载入",
+   "it": "caricato"
+  },
+  "message.context.instructions.added": {
+   "en": "added",
+   "zh": "已新增",
+   "it": "aggiunto"
+  },
+  "message.context.instructions.updated": {
+   "en": "updated",
+   "zh": "已更新",
+   "it": "aggiornato"
+  },
+  "message.context.instructions.removed": {
+   "en": "removed",
+   "zh": "已移除",
+   "it": "rimosso"
+  },
+  "message.context.catalog.replaced": {
+   "en": "Replacement catalog",
+   "zh": "替换目录",
+   "it": "Catalogo sostitutivo"
+  },
+  "message.context.catalog.more": {
+   "en": "… {count} more",
+   "zh": "…还有 {count} 条",
+   "it": "… altri {count}"
+  },
+  "message.context.snapshot.supersedes": {
+   "en": "Supersedes earlier snapshots",
+   "zh": "取代先前的快照",
+   "it": "Sostituisce le istantanee precedenti"
+  },
+  "message.context.relay.from": {
+   "en": "From session {session}",
+   "zh": "来自会话 {session}",
+   "it": "Dalla sessione {session}"
+  },
+  "message.context.recall.counts": {
+   "en": "{retained} kept · {omitted} omitted",
+   "zh": "保留 {retained} 条 · 省略 {omitted} 条",
+   "it": "{retained} mantenuti · {omitted} omessi"
+  },
+  "message.context.recall.truncated": {
+   "en": "truncated",
+   "zh": "已截断",
+   "it": "troncato"
+  },
+  "message.compaction": {
+   "en": "Context compacted",
+   "zh": "上下文已压缩",
+   "it": "Contesto compattato"
+  },
+  "message.compaction.running": {
+   "en": "Compacting context…",
+   "zh": "正在压缩…",
+   "it": "Compattazione del contesto…"
+  },
+  "message.compaction.completed": {
+   "en": "Compacted {items} history items (~{tokens} tokens)",
+   "zh": "已压缩 {items} 条历史记录（约 {tokens} tokens）",
+   "it": "Compattati {items} elementi della cronologia (~{tokens} token)"
+  },
+  "message.compaction.expand": {
+   "en": "View compaction summary",
+   "zh": "点击查看压缩摘要",
+   "it": "Vedi riepilogo della compattazione"
+  },
+  "message.compaction.unavailable": {
+   "en": "Compaction summary unavailable",
+   "zh": "压缩摘要不可用",
+   "it": "Riepilogo della compattazione non disponibile"
+  },
+  "message.compaction.commandTitle": {
+   "en": "compact",
+   "zh": "compact",
+   "it": "compact"
+  },
+  "message.think": {
+   "en": "Think",
+   "zh": "思考",
+   "it": "Ragiona"
+  },
+  "message.unknownSurface": {
+   "en": "Unknown surface event: {type}",
+   "zh": "未知 surface 事件：{type}",
+   "it": "Evento surface sconosciuto: {type}"
+  },
+  "message.unknownBlock": {
+   "en": "Unknown content block",
+   "zh": "未知内容块",
+   "it": "Blocco di contenuto sconosciuto"
+  },
+  "message.turnProcess.toolCalls.one": {
+   "en": "{count} tool call",
+   "zh": "{count} 次工具调用",
+   "it": "{count} chiamata a strumento"
+  },
+  "message.turnProcess.toolCalls.other": {
+   "en": "{count} tool calls",
+   "zh": "{count} 次工具调用",
+   "it": "{count} chiamate a strumento"
+  },
+  "message.turnProcess.messages.one": {
+   "en": "{count} message",
+   "zh": "{count} 条消息",
+   "it": "{count} messaggio"
+  },
+  "message.turnProcess.messages.other": {
+   "en": "{count} messages",
+   "zh": "{count} 条消息",
+   "it": "{count} messaggi"
+  },
+  "message.turnProcess.subagents.one": {
+   "en": "{count} subagent",
+   "zh": "{count} 个 subagent",
+   "it": "{count} subagente"
+  },
+  "message.turnProcess.subagents.other": {
+   "en": "{count} subagents",
+   "zh": "{count} 个 subagent",
+   "it": "{count} subagenti"
+  },
+  "message.turnProcess.thoughtForAWhile": {
+   "en": "Thought for a while",
+   "zh": "已思考",
+   "it": "Ha riflettuto per un po'"
+  },
+  "message.turnProcess.separator": {
+   "en": " · ",
+   "zh": " · ",
+   "it": " · "
+  },
+  "message.stopped": {
+   "en": "Stopped",
+   "zh": "已停止",
+   "it": "Interrotto"
+  },
+  "message.branch": {
+   "en": "Branch into a new conversation",
+   "zh": "在新对话中分支",
+   "it": "Dirama in una nuova conversazione"
+  },
+  "message.branchUnavailable": {
+   "en": "Available only on the last message of a completed turn",
+   "zh": "仅可从已完成轮次的最后一条消息分支",
+   "it": "Disponibile solo sull'ultimo messaggio di un turno completato"
+  },
+  "message.retry.active": {
+   "en": "Retrying model request",
+   "zh": "正在重试模型请求",
+   "it": "Nuovo tentativo della richiesta al modello"
+  },
+  "message.retry.cancelled": {
+   "en": "Model request retry cancelled",
+   "zh": "模型请求重试已取消",
+   "it": "Nuovo tentativo della richiesta al modello annullato"
+  },
+  "message.retry.started": {
+   "en": "Retried model request",
+   "zh": "已重试模型请求",
+   "it": "Nuovo tentativo della richiesta al modello eseguito"
+  },
+  "message.retry.scheduled": {
+   "en": "Waiting to retry model request",
+   "zh": "等待重试模型请求",
+   "it": "In attesa di riprovare la richiesta al modello"
+  },
+  "message.retry.status": {
+   "en": "{label} ({retry}/{maximum}) · {seconds}s",
+   "zh": "{label}（{retry}/{maximum}） · {seconds}s",
+   "it": "{label} ({retry}/{maximum}) · {seconds}s"
+  },
+  "message.retry.delay": {
+   "en": "Retry delay: ",
+   "zh": "重试延迟：",
+   "it": "Ritardo nuovo tentativo: "
+  },
+  "message.retry.failure": {
+   "en": "Failure reason: ",
+   "zh": "失败原因：",
+   "it": "Motivo dell'errore: "
+  },
+  "message.failure.auth": {
+   "en": "API key is invalid",
+   "zh": "API 密钥无效",
+   "it": "La chiave API non è valida"
+  },
+  "message.turnError": {
+   "en": "This turn failed",
+   "zh": "本轮运行失败",
+   "it": "Questo turno non è riuscito"
+  },
+  "message.maxTokens": {
+   "en": "Output token limit reached",
+   "zh": "已达到输出 token 上限",
+   "it": "Limite di token di output raggiunto"
+  },
+  "message.maxTokens.hint": {
+   "en": "The reply was cut off; earlier output is preserved in the conversation. Send \"continue\" to let the model resume.",
+   "zh": "回答被截断，已有输出保留在对话中。发送“继续”可让模型接着输出。",
+   "it": "La risposta è stata interrotta; l'output precedente è conservato nella conversazione. Invia \"continue\" per far riprendere il modello."
+  },
+  "message.ranFor": {
+   "en": "Ran for {duration}",
+   "zh": "用时 {duration}",
+   "it": "Durata {duration}"
+  },
+  "message.tokensPerSecond": {
+   "en": "{tps} tok/s",
+   "zh": "{tps} tok/s",
+   "it": "{tps} tok/s"
+  },
+  "message.turnUsage.title": {
+   "en": "Turn usage",
+   "zh": "本轮用量",
+   "it": "Utilizzo del turno"
+  },
+  "message.turnUsage.consumed": {
+   "en": "Usage {total}",
+   "zh": "用量 {total}",
+   "it": "Utilizzo {total}"
+  },
+  "message.turnUsage.model": {
+   "en": "Provider / model",
+   "zh": "提供方 / 模型",
+   "it": "Fornitore / modello"
+  },
+  "message.turnUsage.cacheHit": {
+   "en": "Cache hit",
+   "zh": "缓存命中",
+   "it": "Cache hit"
+  },
+  "message.turnUsage.input": {
+   "en": "Uncached input",
+   "zh": "未缓存输入",
+   "it": "Input non in cache"
+  },
+  "message.turnUsage.cacheRead": {
+   "en": "Cached input",
+   "zh": "缓存读取",
+   "it": "Input in cache"
+  },
+  "message.turnUsage.cacheWrite": {
+   "en": "Cache write",
+   "zh": "缓存写入",
+   "it": "Scrittura in cache"
+  },
+  "message.turnUsage.output": {
+   "en": "Output",
+   "zh": "输出",
+   "it": "Output"
+  },
+  "message.turnUsage.reasoning": {
+   "en": " ({tokens} reasoning)",
+   "zh": "（其中推理 {tokens}）",
+   "it": " ({tokens} ragionamento)"
+  },
+  "message.turnUsage.count": {
+   "en": "{count} tok",
+   "zh": "{count} tok",
+   "it": "{count} tok"
+  },
+  "message.turnTime.title": {
+   "en": "Turn time and speed",
+   "zh": "本轮用时和速度",
+   "it": "Tempo e velocità del turno"
+  },
+  "message.turnTime.duration": {
+   "en": "Total run time",
+   "zh": "本轮总用时",
+   "it": "Tempo di esecuzione totale"
+  },
+  "message.turnTime.speed": {
+   "en": "Tokens per second (TPS)",
+   "zh": "输出速度（TPS）",
+   "it": "Token al secondo (TPS)"
+  },
+  "message.turnTime.ttft": {
+   "en": "Time to first token (TTFT)",
+   "zh": "首 token 用时（TTFT）",
+   "it": "Tempo al primo token (TTFT)"
+  },
+  "duration.seconds": {
+   "en": "{seconds}s",
+   "zh": "{seconds}秒",
+   "it": "{seconds}s"
+  },
+  "duration.minutes": {
+   "en": "{minutes}m {seconds}s",
+   "zh": "{minutes}分{seconds}秒",
+   "it": "{minutes}m {seconds}s"
+  },
+  "command.running": {
+   "en": "Running…",
+   "zh": "执行中…",
+   "it": "In esecuzione…"
+  },
+  "command.failed": {
+   "en": "Command failed",
+   "zh": "指令失败",
+   "it": "Comando non riuscito"
+  },
+  "command.done": {
+   "en": "Completed",
+   "zh": "已完成",
+   "it": "Completato"
+  },
+  "command.title": {
+   "en": "Command",
+   "zh": "指令",
+   "it": "Comando"
+  },
+  "row.running": {
+   "en": "Running",
+   "zh": "运行中",
+   "it": "In esecuzione"
+  },
+  "row.failed": {
+   "en": "Failed",
+   "zh": "失败",
+   "it": "Non riuscito"
+  },
+  "json.truncated": {
+   "en": "… truncated, {total} characters total",
+   "zh": "… 已截断，共 {total} 字符",
+   "it": "… troncato, {total} caratteri in totale"
+  },
+  "clock.md": {
+   "en": "{m}/{d}",
+   "zh": "{m}月{d}日",
+   "it": "{m}/{d}"
+  },
+  "clock.ymd": {
+   "en": "{y}-{m}-{d}",
+   "zh": "{y}年{m}月{d}日",
+   "it": "{y}-{m}-{d}"
+  }
+ }
+}

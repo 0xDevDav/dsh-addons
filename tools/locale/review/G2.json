@@ -1,0 +1,996 @@
+{
+ "conversation": {
+  "hint.plan": {
+   "en": "describe your task to generate plan",
+   "zh": "描述你的任务以生成计划",
+   "it": "descrivi l'attività per generare il piano"
+  },
+  "hint.goal": {
+   "en": "describe the objective for a long-running task",
+   "zh": "输入目标，智能体将持续执行",
+   "it": "descrivi l'obiettivo per un'attività di lunga durata"
+  },
+  "hint.goal.active": {
+   "en": "goal active — edit / pause / resume / clear",
+   "zh": "当前目标进行中。可输入 edit 修改 / pause 暂停 / resume 继续 / clear 清除",
+   "it": "obiettivo attivo — edit / pause / resume / clear"
+  },
+  "placeholder.plan": {
+   "en": "describe your task to generate plan",
+   "zh": "描述你的任务以生成计划",
+   "it": "descrivi l'attività per generare il piano"
+  },
+  "placeholder.default": {
+   "en": "Message or run a task, / commands, @ files or sessions",
+   "zh": "发消息或创建任务, / 调用指令, @ 文件或对话",
+   "it": "Invia un messaggio o avvia un'attività, / comandi, @ file o sessioni"
+  },
+  "placeholder.unavailable": {
+   "en": "Session unavailable",
+   "zh": "会话不可用",
+   "it": "Sessione non disponibile"
+  },
+  "placeholder.parentOffline": {
+   "en": "Parent session offline; sending is unavailable but you can still stop the run",
+   "zh": "父会话已离线，无法继续发送；仍可停止当前运行",
+   "it": "Sessione principale offline; invio non disponibile ma puoi comunque interrompere l'esecuzione"
+  },
+  "placeholder.hero": {
+   "en": "Describe what you want to build, / commands, @ files or sessions",
+   "zh": "描述你想要构建的内容, / 调用指令, @ 文件或对话",
+   "it": "Descrivi cosa vuoi creare, / comandi, @ file o sessioni"
+  },
+  "placeholder.workspace": {
+   "en": "Choose a workspace to start",
+   "zh": "选择一个工作区开始",
+   "it": "Scegli un'area di lavoro per iniziare"
+  },
+  "placeholder.steerQueue": {
+   "en": "Cmd/Ctrl+Enter steers all queued messages",
+   "zh": "Cmd/Ctrl+Enter 插话发送全部排队消息",
+   "it": "Cmd/Ctrl+Enter guida tutti i messaggi in coda"
+  },
+  "input.commands": {
+   "en": "Commands",
+   "zh": "指令",
+   "it": "Comandi"
+  },
+  "input.stop": {
+   "en": "Stop generating",
+   "zh": "停止生成",
+   "it": "Interrompi generazione"
+  },
+  "input.send": {
+   "en": "Send message",
+   "zh": "发送消息",
+   "it": "Invia messaggio"
+  },
+  "input.send.queue": {
+   "en": "Queue message",
+   "zh": "排队发送",
+   "it": "Accoda messaggio"
+  },
+  "input.send.steer": {
+   "en": "Steer message",
+   "zh": "插话发送",
+   "it": "Guida messaggio"
+  },
+  "input.accessMode": {
+   "en": "Access mode, current: {name}",
+   "zh": "访问模式，当前：{name}",
+   "it": "Modalità di accesso, attuale: {name}"
+  },
+  "attachment.pending": {
+   "en": "Pending attachments",
+   "zh": "待发送附件",
+   "it": "Allegati in attesa"
+  },
+  "attachment.scrollLeft": {
+   "en": "Scroll attachments left",
+   "zh": "向左滚动附件",
+   "it": "Scorri gli allegati a sinistra"
+  },
+  "attachment.scrollRight": {
+   "en": "Scroll attachments right",
+   "zh": "向右滚动附件",
+   "it": "Scorri gli allegati a destra"
+  },
+  "attachment.dropTitle": {
+   "en": "Drag files or images here to add them",
+   "zh": "文件或图片拖动到此处即可添加",
+   "it": "Trascina qui file o immagini per aggiungerli"
+  },
+  "attachment.dropDesc": {
+   "en": "Image limit: up to {count} images, {size} each",
+   "zh": "图片限制：最多 {count} 张，每张 {size}",
+   "it": "Limite immagini: fino a {count} immagini, {size} ciascuna"
+  },
+  "attachment.dropBlocked": {
+   "en": "Files and images cannot be added right now",
+   "zh": "当前无法添加文件或图片",
+   "it": "Al momento non è possibile aggiungere file o immagini"
+  },
+  "image.pending": {
+   "en": "Pending images",
+   "zh": "待发送图片",
+   "it": "Immagini in attesa"
+  },
+  "image.openOriginal": {
+   "en": "View original",
+   "zh": "查看原图",
+   "it": "Vedi originale"
+  },
+  "image.openOriginalLabel": {
+   "en": "{label}, click to view original",
+   "zh": "{label}，点击查看原图",
+   "it": "{label}, fai clic per vedere l'originale"
+  },
+  "image.remove": {
+   "en": "Remove image {name}",
+   "zh": "移除图片 {name}",
+   "it": "Rimuovi immagine {name}"
+  },
+  "image.original": {
+   "en": "Original image",
+   "zh": "原图",
+   "it": "Immagine originale"
+  },
+  "image.label": {
+   "en": "Image",
+   "zh": "图片",
+   "it": "Immagine"
+  },
+  "image.loadFailed": {
+   "en": "Image failed to load; click to retry",
+   "zh": "图片加载失败，点击重试",
+   "it": "Caricamento immagine non riuscito; fai clic per riprovare"
+  },
+  "image.loading": {
+   "en": "Loading image…",
+   "zh": "图片加载中…",
+   "it": "Caricamento immagine…"
+  },
+  "image.preview": {
+   "en": "Original image preview",
+   "zh": "原图预览",
+   "it": "Anteprima immagine originale"
+  },
+  "image.closePreview": {
+   "en": "Close original image preview",
+   "zh": "关闭原图预览",
+   "it": "Chiudi anteprima immagine originale"
+  },
+  "image.unsupportedType": {
+   "en": "Only PNG, JPG, WebP, and GIF images are supported",
+   "zh": "仅支持 PNG、JPG、WebP、GIF 格式的图片",
+   "it": "Sono supportate solo immagini PNG, JPG, WebP e GIF"
+  },
+  "image.tooMany": {
+   "en": "A message can include up to {count} images",
+   "zh": "一条消息最多添加 {count} 张图片",
+   "it": "Un messaggio può includere fino a {count} immagini"
+  },
+  "image.fileTooLarge": {
+   "en": "Each image must be smaller than {size}",
+   "zh": "单张图片不能超过 {size}",
+   "it": "Ogni immagine deve essere inferiore a {size}"
+  },
+  "image.totalTooLarge": {
+   "en": "Images exceed {size} in total; remove some and try again",
+   "zh": "图片总大小超过 {size}，请移除部分图片",
+   "it": "Le immagini superano {size} in totale; rimuovine alcune e riprova"
+  },
+  "image.tooManyPixels": {
+   "en": "Image resolution is too high; compress it and try again",
+   "zh": "图片分辨率过大，请压缩后重试",
+   "it": "La risoluzione dell'immagine è troppo alta; comprimila e riprova"
+  },
+  "image.dimensionTooLarge": {
+   "en": "Image sides must be at most {size}px; downscale it and try again",
+   "zh": "图片宽高不能超过 {size}px，请缩小后重试",
+   "it": "I lati dell'immagine non devono superare {size}px; ridimensionala e riprova"
+  },
+  "image.modelUnsupported": {
+   "en": "The current model does not support images; switch to a model that does",
+   "zh": "当前模型不支持图片，请切换支持图片的模型",
+   "it": "Il modello attuale non supporta le immagini; passa a un modello che le supporta"
+  },
+  "image.sendFailed": {
+   "en": "Sending images failed ({reason}); re-add them and try again",
+   "zh": "图片发送失败（{reason}），请重新添加图片后再试",
+   "it": "Invio immagini non riuscito ({reason}); aggiungile di nuovo e riprova"
+  },
+  "file.attach": {
+   "en": "Add attachment",
+   "zh": "添加附件",
+   "it": "Aggiungi allegato"
+  },
+  "file.pending": {
+   "en": "Pending files",
+   "zh": "待发送文件",
+   "it": "File in attesa"
+  },
+  "file.remove": {
+   "en": "Remove file {name}",
+   "zh": "移除文件 {name}",
+   "it": "Rimuovi file {name}"
+  },
+  "file.uploading": {
+   "en": "Uploading…",
+   "zh": "上传中…",
+   "it": "Caricamento…"
+  },
+  "file.uploadFailed": {
+   "en": "Upload failed; click to retry",
+   "zh": "上传失败，点击重试",
+   "it": "Caricamento non riuscito; fai clic per riprovare"
+  },
+  "file.retry": {
+   "en": "Retry uploading {name}",
+   "zh": "重试上传 {name}",
+   "it": "Riprova a caricare {name}"
+  },
+  "file.stillUploading": {
+   "en": "Files are still uploading; send after they finish",
+   "zh": "文件还在上传，请等待上传完成后发送",
+   "it": "I file sono ancora in caricamento; invia al termine"
+  },
+  "file.sessionUnavailable": {
+   "en": "Session unavailable; files cannot be uploaded",
+   "zh": "会话不可用，无法上传文件",
+   "it": "Sessione non disponibile; impossibile caricare file"
+  },
+  "file.notStaged": {
+   "en": "The file has not finished uploading; re-add it and try again",
+   "zh": "文件尚未上传成功，请重新添加后再试",
+   "it": "Il file non ha terminato il caricamento; aggiungilo di nuovo e riprova"
+  },
+  "file.label": {
+   "en": "File",
+   "zh": "文件",
+   "it": "File"
+  },
+  "context.aria": {
+   "en": "{percent} of context used",
+   "zh": "上下文已用 {percent}",
+   "it": "{percent} di contesto utilizzato"
+  },
+  "context.used": {
+   "en": "of context used",
+   "zh": "上下文已用",
+   "it": "di contesto utilizzato"
+  },
+  "context.system": {
+   "en": "System prompt",
+   "zh": "系统提示词",
+   "it": "Prompt di sistema"
+  },
+  "context.tools": {
+   "en": "Tool definitions",
+   "zh": "工具定义",
+   "it": "Definizioni degli strumenti"
+  },
+  "context.messages": {
+   "en": "Messages",
+   "zh": "对话消息",
+   "it": "Messaggi"
+  },
+  "settings.enter.title": {
+   "en": "Send behavior while busy",
+   "zh": "繁忙时的发送行为",
+   "it": "Comportamento di invio quando occupato"
+  },
+  "settings.enter.description": {
+   "en": "What Enter and the Send button do while the agent is running; Cmd/Ctrl+Enter uses the other behavior",
+   "zh": "智能体运行时 Enter 键和发送按钮的行为；Cmd/Ctrl+Enter 使用另一行为",
+   "it": "Cosa fanno Invio e il pulsante Invia mentre l'agente è in esecuzione; Cmd/Ctrl+Enter usa l'altro comportamento"
+  },
+  "settings.enter.queue": {
+   "en": "Queue",
+   "zh": "排队发送",
+   "it": "Coda"
+  },
+  "settings.enter.steer": {
+   "en": "Steer",
+   "zh": "插话发送",
+   "it": "Guida"
+  },
+  "access.preset.readOnly": {
+   "en": "Read Only",
+   "zh": "仅可查看",
+   "it": "Sola lettura"
+  },
+  "access.preset.workspaceWrite": {
+   "en": "Workspace Write",
+   "zh": "工作区内修改",
+   "it": "Scrittura nell'area di lavoro"
+  },
+  "access.preset.fullAccess": {
+   "en": "Full access",
+   "zh": "完全权限",
+   "it": "Accesso completo"
+  },
+  "access.confirm.title": {
+   "en": "Enable Full access?",
+   "zh": "确认启用完全权限？",
+   "it": "Attivare l'accesso completo?"
+  },
+  "access.confirm.description": {
+   "en": "Full access reduces confirmation steps and lets the agent perform more actions directly, including sensitive operations, file changes, or external commands. Only use it when you trust the current task.",
+   "zh": "启用完全权限后，智能体将减少确认步骤，并且可以直接执行更多操作，包括敏感操作、文件修改或外部命令。仅建议在你信任当前任务时使用。",
+   "it": "L'accesso completo riduce i passaggi di conferma e consente all'agente di eseguire più azioni direttamente, incluse operazioni sensibili, modifiche ai file o comandi esterni. Usalo solo quando ti fidi dell'attività corrente."
+  },
+  "access.confirm.acknowledge": {
+   "en": "I understand the risks and want to continue",
+   "zh": "我已了解风险，并愿意继续",
+   "it": "Ho capito i rischi e voglio continuare"
+  },
+  "access.confirm.cancel": {
+   "en": "Cancel",
+   "zh": "取消",
+   "it": "Annulla"
+  },
+  "access.confirm.enable": {
+   "en": "Enable Full access",
+   "zh": "启用完全权限",
+   "it": "Attiva accesso completo"
+  },
+  "hero.headline": {
+   "en": "Into the Unknown",
+   "zh": "探索未至之境",
+   "it": "Verso l'ignoto"
+  },
+  "hero.preview": {
+   "en": "Preview",
+   "zh": "预览版",
+   "it": "Anteprima"
+  },
+  "hero.chooseWorkspace": {
+   "en": "Choose workspace",
+   "zh": "选择工作区",
+   "it": "Scegli area di lavoro"
+  },
+  "session.hierarchy": {
+   "en": "Session hierarchy",
+   "zh": "会话层级",
+   "it": "Gerarchia delle sessioni"
+  },
+  "todo.title": {
+   "en": "To-dos",
+   "zh": "任务",
+   "it": "Attività"
+  },
+  "todo.progress.done": {
+   "en": "{done} completed",
+   "zh": "{done} 已完成",
+   "it": "{done} completate"
+  },
+  "todo.progress.active": {
+   "en": "{active} in progress",
+   "zh": "{active} 进行中",
+   "it": "{active} in corso"
+  },
+  "todo.progress.pending": {
+   "en": "{pending} pending",
+   "zh": "{pending} 待处理",
+   "it": "{pending} in attesa"
+  },
+  "todo.rowTitle": {
+   "en": "Update to-do list",
+   "zh": "更新任务清单",
+   "it": "Aggiorna elenco attività"
+  },
+  "todo.completed": {
+   "en": "{done}/{total} completed",
+   "zh": "{done}/{total} 已完成",
+   "it": "{done}/{total} completate"
+  },
+  "command.attachmentsUnsupported": {
+   "en": "/{command} does not accept attachments; remove them first",
+   "zh": "/{command} 不接受附件，请先移除附件",
+   "it": "/{command} non accetta allegati; rimuovili prima"
+  },
+  "ask.rowTitle": {
+   "en": "Ask question",
+   "zh": "提问",
+   "it": "Poni domanda"
+  },
+  "ask.waiting": {
+   "en": "waiting",
+   "zh": "等待回答",
+   "it": "in attesa"
+  },
+  "ask.cancelled": {
+   "en": "cancelled",
+   "zh": "已取消",
+   "it": "annullata"
+  },
+  "ask.cancelledDetail": {
+   "en": "This question set was cancelled before answers were submitted.",
+   "zh": "本轮已取消，未提交回答",
+   "it": "Questa serie di domande è stata annullata prima dell'invio delle risposte."
+  },
+  "ask.interrupted": {
+   "en": "interrupted",
+   "zh": "已中断",
+   "it": "interrotta"
+  },
+  "ask.interruptedDetail": {
+   "en": "This question set was interrupted before answers were submitted.",
+   "zh": "本轮已中断，未提交回答",
+   "it": "Questa serie di domande è stata interrotta prima dell'invio delle risposte."
+  },
+  "ask.answered": {
+   "en": "{answered}/{total} answered",
+   "zh": "{answered}/{total} 已回答",
+   "it": "{answered}/{total} con risposta"
+  },
+  "ask.skipped": {
+   "en": "Not answered",
+   "zh": "未回答",
+   "it": "Senza risposta"
+  },
+  "bash.running": {
+   "en": "Running",
+   "zh": "运行中",
+   "it": "In esecuzione"
+  },
+  "bash.failed": {
+   "en": "Failed",
+   "zh": "失败",
+   "it": "Non riuscito"
+  },
+  "bash.stopped": {
+   "en": "Stopped",
+   "zh": "已停止",
+   "it": "Interrotto"
+  },
+  "row.running": {
+   "en": "Running",
+   "zh": "运行中",
+   "it": "In esecuzione"
+  },
+  "row.failed": {
+   "en": "Failed",
+   "zh": "失败",
+   "it": "Non riuscito"
+  },
+  "row.stopped": {
+   "en": "Stopped",
+   "zh": "已停止",
+   "it": "Interrotto"
+  },
+  "row.input": {
+   "en": "IN",
+   "zh": "输入",
+   "it": "IN"
+  },
+  "row.output": {
+   "en": "OUT",
+   "zh": "输出",
+   "it": "OUT"
+  },
+  "row.inspect": {
+   "en": "Inspect",
+   "zh": "查看",
+   "it": "Ispeziona"
+  },
+  "tool.title.search": {
+   "en": "Search",
+   "zh": "搜索",
+   "it": "Ricerca"
+  },
+  "tool.title.read": {
+   "en": "Read",
+   "zh": "读取",
+   "it": "Lettura"
+  },
+  "tool.title.bash": {
+   "en": "Bash",
+   "zh": "Bash",
+   "it": "Bash"
+  },
+  "tool.title.write": {
+   "en": "Write",
+   "zh": "写入",
+   "it": "Scrittura"
+  },
+  "tool.title.edit": {
+   "en": "Edit",
+   "zh": "编辑",
+   "it": "Modifica"
+  },
+  "tool.title.code": {
+   "en": "Code",
+   "zh": "代码",
+   "it": "Codice"
+  },
+  "tool.title.generic": {
+   "en": "Tool call",
+   "zh": "工具调用",
+   "it": "Chiamata a strumento"
+  },
+  "tool.title.inspect": {
+   "en": "Inspect",
+   "zh": "查看",
+   "it": "Ispeziona"
+  },
+  "tool.title.runCordis": {
+   "en": "Run Cordis Plugin",
+   "zh": "运行 Cordis 插件",
+   "it": "Esegui Plugin Cordis"
+  },
+  "tool.title.stopCordis": {
+   "en": "Stop Cordis Plugin",
+   "zh": "停止 Cordis 插件",
+   "it": "Interrompi Plugin Cordis"
+  },
+  "tool.title.removeCordis": {
+   "en": "Remove Cordis Plugin",
+   "zh": "移除 Cordis 插件",
+   "it": "Rimuovi Plugin Cordis"
+  },
+  "tool.title.pwsh": {
+   "en": "Pwsh",
+   "zh": "Pwsh",
+   "it": "Pwsh"
+  },
+  "tool.title.readImage": {
+   "en": "Read image",
+   "zh": "读取图片",
+   "it": "Leggi immagine"
+  },
+  "tool.title.grep": {
+   "en": "Grep",
+   "zh": "Grep",
+   "it": "Grep"
+  },
+  "tool.title.glob": {
+   "en": "Glob",
+   "zh": "Glob",
+   "it": "Glob"
+  },
+  "tool.title.webSearch": {
+   "en": "Search",
+   "zh": "网页搜索",
+   "it": "Ricerca"
+  },
+  "tool.title.webFetch": {
+   "en": "Fetch",
+   "zh": "网页获取",
+   "it": "Recupera"
+  },
+  "diff.files.one": {
+   "en": "{count} file",
+   "zh": "{count} 个文件",
+   "it": "{count} file"
+  },
+  "diff.files.other": {
+   "en": "{count} files",
+   "zh": "{count} 个文件",
+   "it": "{count} file"
+  },
+  "diff.collapseAria": {
+   "en": "Collapse diff",
+   "zh": "收起差异",
+   "it": "Comprimi diff"
+  },
+  "diff.expandAria": {
+   "en": "Expand {count} more diff lines",
+   "zh": "展开其余 {count} 行差异",
+   "it": "Espandi altre {count} righe di diff"
+  },
+  "diff.expandRest": {
+   "en": "… {count} more lines",
+   "zh": "… 其余 {count} 行",
+   "it": "… altre {count} righe"
+  },
+  "read.window": {
+   "en": "Showing {shown} of {total} lines",
+   "zh": "显示 {shown} / {total} 行",
+   "it": "Visualizzate {shown} di {total} righe"
+  },
+  "read.collapseAria": {
+   "en": "Collapse content",
+   "zh": "收起内容",
+   "it": "Comprimi contenuto"
+  },
+  "read.expandAria": {
+   "en": "Expand {count} more lines",
+   "zh": "展开其余 {count} 行",
+   "it": "Espandi altre {count} righe"
+  },
+  "read.expandRest": {
+   "en": "… {count} more lines",
+   "zh": "… 其余 {count} 行",
+   "it": "… altre {count} righe"
+  },
+  "search.paths": {
+   "en": "{shown} paths",
+   "zh": "{shown} 个路径",
+   "it": "{shown} percorsi"
+  },
+  "search.paths.truncated": {
+   "en": "Showing {shown} of {total} paths",
+   "zh": "显示 {shown} / 共 {total} 个路径",
+   "it": "Visualizzati {shown} di {total} percorsi"
+  },
+  "search.matches": {
+   "en": "{shown} matches · {files} files",
+   "zh": "{shown} 处匹配 · {files} 个文件",
+   "it": "{shown} corrispondenze · {files} file"
+  },
+  "search.matches.truncated": {
+   "en": "Showing {shown} of {total} matches · {files} files",
+   "zh": "显示 {shown} / 共 {total} 处匹配 · {files} 个文件",
+   "it": "Visualizzate {shown} di {total} corrispondenze · {files} file"
+  },
+  "search.noResults": {
+   "en": "No results",
+   "zh": "无结果",
+   "it": "Nessun risultato"
+  },
+  "search.collapseAria": {
+   "en": "Collapse results",
+   "zh": "收起结果",
+   "it": "Comprimi risultati"
+  },
+  "search.expandAria": {
+   "en": "Expand {count} more result lines",
+   "zh": "展开其余 {count} 行结果",
+   "it": "Espandi altre {count} righe di risultati"
+  },
+  "search.expandRest": {
+   "en": "… {count} more lines",
+   "zh": "… 其余 {count} 行",
+   "it": "… altre {count} righe"
+  },
+  "web.noResults": {
+   "en": "No results found",
+   "zh": "未找到结果",
+   "it": "Nessun risultato trovato"
+  },
+  "web.sourcesTruncated": {
+   "en": "Source list truncated",
+   "zh": "来源列表已截断",
+   "it": "Elenco delle fonti troncato"
+  },
+  "web.http": {
+   "en": "HTTP",
+   "zh": "HTTP",
+   "it": "HTTP"
+  },
+  "web.contentTruncated": {
+   "en": "Content truncated",
+   "zh": "内容已截断",
+   "it": "Contenuto troncato"
+  },
+  "details.running": {
+   "en": "Running…",
+   "zh": "运行中…",
+   "it": "In esecuzione…"
+  },
+  "queue.count": {
+   "en": "{n} queued messages",
+   "zh": "{n} 条排队消息",
+   "it": "{n} messaggi in coda"
+  },
+  "queue.sending": {
+   "en": "Sending…",
+   "zh": "发送中…",
+   "it": "Invio…"
+  },
+  "queue.image": {
+   "en": "Queued message image",
+   "zh": "排队消息图片",
+   "it": "Immagine del messaggio in coda"
+  },
+  "queue.file": {
+   "en": "Queued file {name}",
+   "zh": "排队文件 {name}",
+   "it": "File in coda {name}"
+  },
+  "queue.edit": {
+   "en": "Edit queued message",
+   "zh": "编辑排队消息",
+   "it": "Modifica messaggio in coda"
+  },
+  "queue.edit.unsupported": {
+   "en": "Contains non-text content; editing is not supported yet",
+   "zh": "包含非文本内容，暂不支持编辑",
+   "it": "Contiene contenuto non testuale; la modifica non è ancora supportata"
+  },
+  "queue.save": {
+   "en": "Save queued message",
+   "zh": "保存排队消息",
+   "it": "Salva messaggio in coda"
+  },
+  "queue.cancelEdit": {
+   "en": "Cancel editing",
+   "zh": "取消编辑",
+   "it": "Annulla modifica"
+  },
+  "queue.remove": {
+   "en": "Remove queued message",
+   "zh": "删除排队消息",
+   "it": "Rimuovi messaggio in coda"
+  },
+  "queue.steer": {
+   "en": "Steer queued message",
+   "zh": "插话发送",
+   "it": "Guida messaggio in coda"
+  },
+  "queue.steer.unavailable": {
+   "en": "Steering is available only while the agent is running",
+   "zh": "仅运行中可插话发送",
+   "it": "La guida è disponibile solo mentre l'agente è in esecuzione"
+  },
+  "queue.editFailed": {
+   "en": "Edit failed: this message may have already started sending.",
+   "zh": "编辑失败：这条消息可能已经开始发送。",
+   "it": "Modifica non riuscita: questo messaggio potrebbe essere già stato inviato."
+  },
+  "queue.removeFailed": {
+   "en": "Removal failed: this message may have already started sending.",
+   "zh": "删除失败：这条消息可能已经开始发送。",
+   "it": "Rimozione non riuscita: questo messaggio potrebbe essere già stato inviato."
+  },
+  "queue.steerFailed": {
+   "en": "Steering failed. Try again.",
+   "zh": "插话发送失败，请重试。",
+   "it": "Guida non riuscita. Riprova."
+  },
+  "terminal.signal": {
+   "en": "signal {signal}",
+   "zh": "信号 {signal}",
+   "it": "segnale {signal}"
+  },
+  "terminal.exitCode": {
+   "en": "exit code {code}",
+   "zh": "退出码 {code}",
+   "it": "codice di uscita {code}"
+  },
+  "terminal.running": {
+   "en": "Running",
+   "zh": "运行中",
+   "it": "In esecuzione"
+  },
+  "terminal.failed": {
+   "en": "Failed",
+   "zh": "失败",
+   "it": "Non riuscito"
+  },
+  "terminal.done": {
+   "en": "Done",
+   "zh": "已完成",
+   "it": "Completato"
+  },
+  "terminal.noOutput": {
+   "en": "No output",
+   "zh": "无输出",
+   "it": "Nessun output"
+  },
+  "terminal.collapseAria": {
+   "en": "Collapse output",
+   "zh": "收起输出",
+   "it": "Comprimi output"
+  },
+  "terminal.expandAria": {
+   "en": "Expand the remaining {n} output lines",
+   "zh": "展开其余 {n} 行输出",
+   "it": "Espandi le restanti {n} righe di output"
+  },
+  "terminal.expandRest": {
+   "en": "… {n} more lines",
+   "zh": "… 其余 {n} 行",
+   "it": "… {n} righe"
+  },
+  "terminal.sendInput": {
+   "en": "(send input)",
+   "zh": "（发送输入）",
+   "it": "(invia input)"
+  },
+  "terminal.session": {
+   "en": "Terminal {sessionId}",
+   "zh": "终端 {sessionId}",
+   "it": "Terminale {sessionId}"
+  }
+ },
+ "common": {
+  "ok": {
+   "en": "OK",
+   "zh": "确定",
+   "it": "OK"
+  },
+  "cancel": {
+   "en": "Cancel",
+   "zh": "取消",
+   "it": "Annulla"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
+  "copy": {
+   "en": "Copy",
+   "zh": "复制",
+   "it": "Copia"
+  },
+  "copied": {
+   "en": "Copied",
+   "zh": "复制成功",
+   "it": "Copiato"
+  },
+  "copy.failed": {
+   "en": "Copy failed",
+   "zh": "复制失败",
+   "it": "Copia non riuscita"
+  },
+  "copy.value": {
+   "en": "Copy value",
+   "zh": "复制值",
+   "it": "Copia valore"
+  },
+  "copy.json": {
+   "en": "Copy JSON",
+   "zh": "复制 JSON",
+   "it": "Copia JSON"
+  },
+  "copy.path": {
+   "en": "Copy property path",
+   "zh": "复制属性路径",
+   "it": "Copia percorso proprietà"
+  },
+  "copy.prettyJson": {
+   "en": "Copy pretty JSON",
+   "zh": "复制格式化 JSON",
+   "it": "Copia JSON formattato"
+  },
+  "copy.compactJson": {
+   "en": "Copy compact JSON",
+   "zh": "复制紧凑 JSON",
+   "it": "Copia JSON compatto"
+  },
+  "copy.optionsHint": {
+   "en": "{action}; right-click for copy options",
+   "zh": "{action}；右键点击可选择复制方式",
+   "it": "{action}; clic destro per le opzioni di copia"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "loading": {
+   "en": "Loading…",
+   "zh": "加载中…",
+   "it": "Caricamento…"
+  },
+  "load.failed": {
+   "en": "Failed to load",
+   "zh": "加载失败",
+   "it": "Caricamento non riuscito"
+  },
+  "submit": {
+   "en": "Submit",
+   "zh": "提交",
+   "it": "Invia"
+  },
+  "submitting": {
+   "en": "Submitting…",
+   "zh": "正在提交…",
+   "it": "Invio…"
+  },
+  "next": {
+   "en": "Next",
+   "zh": "下一步",
+   "it": "Avanti"
+  },
+  "previous": {
+   "en": "Previous",
+   "zh": "上一步",
+   "it": "Precedente"
+  },
+  "skip": {
+   "en": "Skip",
+   "zh": "跳过",
+   "it": "Salta"
+  },
+  "delete": {
+   "en": "Delete",
+   "zh": "删除",
+   "it": "Elimina"
+  },
+  "edit": {
+   "en": "Edit",
+   "zh": "编辑",
+   "it": "Modifica"
+  },
+  "save": {
+   "en": "Save",
+   "zh": "保存",
+   "it": "Salva"
+  },
+  "search": {
+   "en": "Search",
+   "zh": "搜索",
+   "it": "Cerca"
+  },
+  "more": {
+   "en": "More",
+   "zh": "更多",
+   "it": "Altro"
+  },
+  "collapse": {
+   "en": "Collapse",
+   "zh": "收起",
+   "it": "Comprimi"
+  },
+  "expand": {
+   "en": "Expand",
+   "zh": "展开",
+   "it": "Espandi"
+  },
+  "back": {
+   "en": "Back",
+   "zh": "返回",
+   "it": "Indietro"
+  },
+  "brand.localBuild": {
+   "en": "DSH Local Build",
+   "zh": "DSH 本地构建",
+   "it": "Build locale DSH"
+  },
+  "unknown": {
+   "en": "Unknown",
+   "zh": "未知",
+   "it": "Sconosciuto"
+  },
+  "none": {
+   "en": "None",
+   "zh": "无",
+   "it": "Nessuno"
+  },
+  "truncated": {
+   "en": "Truncated",
+   "zh": "已截断",
+   "it": "Troncato"
+  },
+  "json.collapseNode": {
+   "en": "Collapse JSON node",
+   "zh": "收起 JSON 节点",
+   "it": "Comprimi nodo JSON"
+  },
+  "json.expandNode": {
+   "en": "Expand JSON node",
+   "zh": "展开 JSON 节点",
+   "it": "Espandi nodo JSON"
+  },
+  "json.label": {
+   "en": "JSON",
+   "zh": "JSON",
+   "it": "JSON"
+  },
+  "markdown.footnotes": {
+   "en": "Footnotes",
+   "zh": "脚注",
+   "it": "Note a piè di pagina"
+  },
+  "markdown.truncatedCharacters": {
+   "en": "… truncated at {total} characters",
+   "zh": "… 已截断，共 {total} 字符",
+   "it": "… troncato a {total} caratteri"
+  },
+  "number.thousand": {
+   "en": "{value}K",
+   "zh": "{value}K",
+   "it": "{value}K"
+  },
+  "number.million": {
+   "en": "{value}M",
+   "zh": "{value}M",
+   "it": "{value}M"
+  }
+ }
+}

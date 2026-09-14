@@ -1,0 +1,26 @@
+{
+ "batch": "model",
+ "namespace": "model",
+ "keys": {
+  "command.description": "Seleziona il modello per questa conversazione",
+  "option.loadError": "Caricamento del catalogo non riuscito: {message}",
+  "option.deepseekV4Flash.description": "Veloce, efficiente ed economico; adatto a compiti mirati, di routine o paralleli.",
+  "option.deepseekV4Pro.description": "Codifica agentica, conoscenza e ragionamento complesso più solidi; adatto a compiti complessi o critici per la qualità, a un costo maggiore.",
+  "trigger.fallback": "Seleziona modello",
+  "trigger.loading": "Caricamento dei modelli…",
+  "trigger.selectAria": "Seleziona modello",
+  "trigger.aria": "Seleziona modello, attuale {model}",
+  "trigger.ariaEffort": "Seleziona modello, attuale {model}, reasoning effort {effort}",
+  "menu.aria": "Modello e reasoning effort",
+  "menu.model": "Modello",
+  "menu.effort": "Effort",
+  "effort.providerDefault": "Predefinito",
+  "status.loading": "Aggiornamento dell'elenco dei modelli…",
+  "error.action": "Operazione sul modello non riuscita: {message}",
+  "action.reload": "Ricarica",
+  "warning.groupLoad": "Caricamento di {name} non riuscito: {message}",
+  "empty.models": "Nessun modello disponibile.",
+  "blocked.composer": "Questo modello non è disponibile — selezionane uno per continuare",
+  "empty.efforts": "Questo modello non offre livelli di reasoning effort."
+ }
+}

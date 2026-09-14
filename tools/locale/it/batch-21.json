@@ -1,0 +1,18 @@
+{
+ "batch": "settings.permission",
+ "namespace": "settings.permission",
+ "keys": {
+  "title": "Autorizzazione",
+  "description": "Scegli la modalità di autorizzazione predefinita per le nuove sessioni",
+  "loading": "Caricamento",
+  "unavailable": "Non disponibile",
+  "preset.readOnly": "Sola lettura",
+  "preset.workspaceWrite": "Scrittura area di lavoro",
+  "preset.fullAccess": "Accesso completo",
+  "confirm.title": "Attivare l'accesso completo?",
+  "confirm.description": "L'accesso completo consente alle nuove sessioni di ridurre i passaggi di conferma ed eseguire più azioni direttamente, incluse operazioni sensibili, modifiche ai file o comandi esterni. Usalo solo se ti fidi delle attività successive.",
+  "confirm.acknowledge": "Comprendo i rischi e voglio continuare",
+  "confirm.cancel": "Annulla",
+  "confirm.enable": "Attiva accesso completo"
+ }
+}

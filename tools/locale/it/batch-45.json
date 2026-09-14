@@ -1,0 +1,21 @@
+{
+ "batch": "question",
+ "namespace": "question",
+ "keys": {
+  "error.incomplete": "Completa prima questa domanda.",
+  "error.unanswered": "Seleziona un'opzione o inserisci una risposta personalizzata.",
+  "nav.prev": "Domanda precedente",
+  "nav.next": "Domanda successiva",
+  "nav.minimize": "Comprimi la scheda della domanda",
+  "nav.maximize": "Espandi la scheda della domanda",
+  "nav.cancel": "Ignora tutte le domande",
+  "option.recommended": "Consigliato",
+  "custom.placeholder": "Scrivi la tua risposta",
+  "action.skip": "Salta questa domanda",
+  "action.next": "Avanti",
+  "plan.header": "Revisione del piano",
+  "plan.approve": "Approva",
+  "plan.decline": "Rifiuta",
+  "plan.discuss": "Discuti in chat"
+ }
+}

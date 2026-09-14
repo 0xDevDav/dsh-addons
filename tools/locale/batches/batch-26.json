@@ -1,0 +1,287 @@
+{
+ "batch": "settings.models#1",
+ "namespace": "settings.models",
+ "total": 70,
+ "keys": {
+  "nav": {
+   "en": "Models",
+   "zh": "模型"
+  },
+  "title": {
+   "en": "Models",
+   "zh": "模型"
+  },
+  "intro": {
+   "en": "Enter your API keys to use models from the following providers.",
+   "zh": "填入各提供方的 API 密钥即可使用其模型。"
+  },
+  "edit": {
+   "en": "Edit",
+   "zh": "编辑"
+  },
+  "editProvider": {
+   "en": "Edit {provider}",
+   "zh": "编辑 {provider}"
+  },
+  "remove": {
+   "en": "Delete",
+   "zh": "删除"
+  },
+  "removeProvider": {
+   "en": "Delete {provider}",
+   "zh": "删除 {provider}"
+  },
+  "deleteTitle": {
+   "en": "Delete {provider}?",
+   "zh": "删除 {provider}？"
+  },
+  "deleteDescription": {
+   "en": "Deleting {provider} removes its configuration. Any credential it uses is managed elsewhere and will be kept.",
+   "zh": "删除 {provider} 会移除其配置；其使用的凭证（如有）由其他位置管理，将会保留。"
+  },
+  "deleteDescriptionWithCredential": {
+   "en": "Deleting {provider} removes its configuration and stored API key.",
+   "zh": "删除 {provider} 会移除其配置和存储的 API 密钥。"
+  },
+  "deleteConfirm": {
+   "en": "Delete {provider}",
+   "zh": "删除 {provider}"
+  },
+  "deleting": {
+   "en": "Deleting {provider}…",
+   "zh": "正在删除 {provider}…"
+  },
+  "add": {
+   "en": "Add provider",
+   "zh": "添加提供方"
+  },
+  "provider": {
+   "en": "Provider",
+   "zh": "提供方"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭"
+  },
+  "cancel": {
+   "en": "Cancel",
+   "zh": "取消"
+  },
+  "apply": {
+   "en": "Apply",
+   "zh": "保存"
+  },
+  "applying": {
+   "en": "Applying…",
+   "zh": "保存中…"
+  },
+  "savedProvider": {
+   "en": "Saved {provider}.",
+   "zh": "已保存 {provider}。"
+  },
+  "credentialConfigured": {
+   "en": "API key configured",
+   "zh": "API 密钥已配置"
+  },
+  "credentialMissing": {
+   "en": "API key missing",
+   "zh": "API 密钥缺失"
+  },
+  "readOnly": {
+   "en": "The settings document is read-only in this deployment.",
+   "zh": "当前部署的设置文档为只读。"
+  },
+  "loadFailed": {
+   "en": "Loading the provider directory failed",
+   "zh": "加载提供方目录失败"
+  },
+  "conflict": {
+   "en": "Someone else changed these settings while this card was open. Close it and reopen to edit the current values.",
+   "zh": "这张卡片打开期间，这些设置已被其他地方改动。请关闭后重新打开，在当前值上编辑。"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试"
+  },
+  "keyInput": {
+   "en": "API key",
+   "zh": "API 密钥"
+  },
+  "keyPlaceholder": {
+   "en": "Enter your API key",
+   "zh": "输入 API 密钥"
+  },
+  "keyPlaceholderNative": {
+   "en": "Enter an API key, or leave blank to use environment authentication",
+   "zh": "输入 API 密钥，或留空使用环境认证"
+  },
+  "keyStored": {
+   "en": "Configured — enter a new value to replace",
+   "zh": "已配置——输入新值可替换"
+  },
+  "keyEnvLocked": {
+   "en": "Provided by the launch environment (read-only)",
+   "zh": "由启动环境提供（只读）"
+  },
+  "customized": {
+   "en": "Customized settings",
+   "zh": "自定义设置"
+  },
+  "baseUrl": {
+   "en": "Base URL",
+   "zh": "API 地址"
+  },
+  "baseUrlDefault": {
+   "en": "Provider default",
+   "zh": "提供方默认"
+  },
+  "models": {
+   "en": "Models",
+   "zh": "模型目录"
+  },
+  "modelsInherited": {
+   "en": "Using the adapter defaults",
+   "zh": "正在使用适配器默认模型"
+  },
+  "modelsCustomized": {
+   "en": "Customized model catalog",
+   "zh": "已自定义模型目录"
+  },
+  "resetModels": {
+   "en": "Restore defaults",
+   "zh": "恢复默认模型"
+  },
+  "model": {
+   "en": "Model",
+   "zh": "模型"
+  },
+  "modelId": {
+   "en": "Model ID",
+   "zh": "模型 ID"
+  },
+  "modelName": {
+   "en": "Display name",
+   "zh": "显示名称"
+  },
+  "modelNamePlaceholder": {
+   "en": "Uses the model ID when empty",
+   "zh": "留空时使用模型 ID"
+  },
+  "contextWindow": {
+   "en": "Context window",
+   "zh": "上下文窗口"
+  },
+  "contextWindowPlaceholder": {
+   "en": "Uses the provider default",
+   "zh": "使用提供方默认值"
+  },
+  "maxTokens": {
+   "en": "Max output tokens",
+   "zh": "最大输出 token 数"
+  },
+  "maxTokensPlaceholder": {
+   "en": "Uses the provider default",
+   "zh": "使用提供方默认值"
+  },
+  "modelAdvanced": {
+   "en": "Capacities",
+   "zh": "容量"
+  },
+  "addModel": {
+   "en": "Add model",
+   "zh": "添加模型"
+  },
+  "removeModel": {
+   "en": "Delete model",
+   "zh": "删除模型"
+  },
+  "modelsEmpty": {
+   "en": "No models will be shown in the selector. Unlisted IDs can still be sent directly.",
+   "zh": "模型选择器中将不显示任何模型；目录外 ID 仍可直接发送。"
+  },
+  "keyBlank": {
+   "en": "Enter the API key, or leave the field empty to keep the stored one.",
+   "zh": "请输入 API 密钥；留空则保持已存储的密钥。"
+  },
+  "keyBlankNew": {
+   "en": "Enter the API key, or leave the field empty if this provider authenticates another way.",
+   "zh": "请输入 API 密钥；若该提供方以其他方式鉴权，可以留空。"
+  },
+  "keyIllegalCharacters": {
+   "en": "This API key is not in a valid format. Please check it.",
+   "zh": "该 API 密钥格式错误，请检查。"
+  },
+  "modelIdRequired": {
+   "en": "Model ID is required.",
+   "zh": "模型 ID 不能为空。"
+  },
+  "modelIdDuplicate": {
+   "en": "Model ID must be unique.",
+   "zh": "模型 ID 不能重复。"
+  },
+  "modelNameInvalid": {
+   "en": "Display name cannot be empty.",
+   "zh": "显示名称不能为空。"
+  },
+  "modelContextInvalid": {
+   "en": "Context window must be a positive count, like 131072, 256K, or 1M.",
+   "zh": "上下文窗口必须是正数，例如 131072、256K 或 1M。"
+  },
+  "modelMaxTokensInvalid": {
+   "en": "Max output tokens must be a positive count, like 8192, 64K, or 1M.",
+   "zh": "最大输出 token 数必须是正数，例如 8192、64K 或 1M。"
+  },
+  "advancedHint": {
+   "en": "Other fields live in settings.yaml; edit that section directly.",
+   "zh": "其余字段在 settings.yaml 中，请直接编辑对应段。"
+  },
+  "modelCapacityInvalid": {
+   "en": "A capacity must be a number, optionally suffixed K or M.",
+   "zh": "容量需为数字，可加 K 或 M 后缀。"
+  },
+  "modelDuplicate": {
+   "en": "Each model ID may appear once.",
+   "zh": "每个模型 ID 只能出现一次。"
+  },
+  "modelContextWindow": {
+   "en": "Context window",
+   "zh": "上下文窗口"
+  },
+  "modelMaxTokens": {
+   "en": "Max output tokens",
+   "zh": "最大输出 token"
+  },
+  "fetchModels": {
+   "en": "Fetch available models",
+   "zh": "获取可用模型"
+  },
+  "fetching": {
+   "en": "Asking the provider…",
+   "zh": "正在询问提供方…"
+  },
+  "fetchNeedsBaseUrl": {
+   "en": "Enter the base URL first, then fetch.",
+   "zh": "请先填写 API 地址，再获取。"
+  },
+  "fetchEmpty": {
+   "en": "The provider listed no models. Add them by hand.",
+   "zh": "该提供方没有列出任何模型，请手动添加。"
+  },
+  "fetchTitle": {
+   "en": "Choose models to add",
+   "zh": "选择要添加的模型"
+  },
+  "fetchDescription": {
+   "en": "These are the models this provider has available. Choose the ones to add.",
+   "zh": "以下是模型提供方的可用模型，勾选要添加的模型。"
+  },
+  "fetchSearch": {
+   "en": "Search models",
+   "zh": "搜索模型"
+  },
+  "fetchNoMatches": {
+   "en": "No matching models.",
+   "zh": "没有匹配的模型。"
+  }
+ }
+}

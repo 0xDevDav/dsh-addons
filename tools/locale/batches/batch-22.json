@@ -1,0 +1,31 @@
+{
+ "batch": "plan",
+ "namespace": "plan",
+ "total": 6,
+ "keys": {
+  "chip.label": {
+   "en": "Plan",
+   "zh": "Plan"
+  },
+  "chip.on.aria": {
+   "en": "Plan mode on, press to turn off",
+   "zh": "plan mode 已开启，按下关闭"
+  },
+  "chip.on.title": {
+   "en": "Plan mode on — click to turn off (/plan off)",
+   "zh": "plan mode 已开启 — 点击关闭（/plan off）"
+  },
+  "chip.off.aria": {
+   "en": "Plan mode off, press to turn on",
+   "zh": "plan mode 已关闭，按下开启"
+  },
+  "chip.off.title": {
+   "en": "Plan mode off — click to turn on (/plan)",
+   "zh": "plan mode 已关闭 — 点击开启（/plan）"
+  },
+  "chip.exitFailed": {
+   "en": "Failed to exit plan mode",
+   "zh": "退出 plan mode 失败"
+  }
+ }
+}

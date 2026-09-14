@@ -1,0 +1,83 @@
+{
+ "batch": "conversation#3",
+ "namespace": "conversation",
+ "total": 19,
+ "keys": {
+  "queue.save": {
+   "en": "Save queued message",
+   "zh": "保存排队消息"
+  },
+  "queue.cancelEdit": {
+   "en": "Cancel editing",
+   "zh": "取消编辑"
+  },
+  "queue.remove": {
+   "en": "Remove queued message",
+   "zh": "删除排队消息"
+  },
+  "queue.steer": {
+   "en": "Steer queued message",
+   "zh": "插话发送"
+  },
+  "queue.steer.unavailable": {
+   "en": "Steering is available only while the agent is running",
+   "zh": "仅运行中可插话发送"
+  },
+  "queue.editFailed": {
+   "en": "Edit failed: this message may have already started sending.",
+   "zh": "编辑失败：这条消息可能已经开始发送。"
+  },
+  "queue.removeFailed": {
+   "en": "Removal failed: this message may have already started sending.",
+   "zh": "删除失败：这条消息可能已经开始发送。"
+  },
+  "queue.steerFailed": {
+   "en": "Steering failed. Try again.",
+   "zh": "插话发送失败，请重试。"
+  },
+  "terminal.signal": {
+   "en": "signal {signal}",
+   "zh": "信号 {signal}"
+  },
+  "terminal.exitCode": {
+   "en": "exit code {code}",
+   "zh": "退出码 {code}"
+  },
+  "terminal.running": {
+   "en": "Running",
+   "zh": "运行中"
+  },
+  "terminal.failed": {
+   "en": "Failed",
+   "zh": "失败"
+  },
+  "terminal.done": {
+   "en": "Done",
+   "zh": "已完成"
+  },
+  "terminal.noOutput": {
+   "en": "No output",
+   "zh": "无输出"
+  },
+  "terminal.collapseAria": {
+   "en": "Collapse output",
+   "zh": "收起输出"
+  },
+  "terminal.expandAria": {
+   "en": "Expand the remaining {n} output lines",
+   "zh": "展开其余 {n} 行输出"
+  },
+  "terminal.expandRest": {
+   "en": "… {n} more lines",
+   "zh": "… 其余 {n} 行"
+  },
+  "terminal.sendInput": {
+   "en": "(send input)",
+   "zh": "（发送输入）"
+  },
+  "terminal.session": {
+   "en": "Terminal {sessionId}",
+   "zh": "终端 {sessionId}"
+  }
+ }
+}

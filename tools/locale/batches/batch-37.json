@@ -1,0 +1,59 @@
+{
+ "batch": "sidebarFiles",
+ "namespace": "sidebarFiles",
+ "total": 13,
+ "keys": {
+  "type.label": {
+   "en": "Files",
+   "zh": "文件"
+  },
+  "guide.title": {
+   "en": "Workspace files",
+   "zh": "工作区文件"
+  },
+  "guide.description": {
+   "en": "Browse files in this session's workspace",
+   "zh": "浏览会话工作区的文件"
+  },
+  "loading": {
+   "en": "Reading…",
+   "zh": "正在读取…"
+  },
+  "empty": {
+   "en": "Empty directory",
+   "zh": "空目录"
+  },
+  "truncated": {
+   "en": "Too many entries, showing only some of them.",
+   "zh": "条目太多，只显示了一部分。"
+  },
+  "noWorkspace": {
+   "en": "This session has no workspace directory.",
+   "zh": "这个会话没有工作区目录。"
+  },
+  "reload": {
+   "en": "Reload",
+   "zh": "重新读取"
+  },
+  "entry.other": {
+   "en": "Not a file or a directory, so it cannot be opened.",
+   "zh": "这不是文件或目录，没法打开。"
+  },
+  "error.notFound": {
+   "en": "That directory is gone. It may have been moved or deleted.",
+   "zh": "这个目录不在了。可能已被移动或删除。"
+  },
+  "error.outsideWorkspace": {
+   "en": "That directory is outside the workspace, so the sidebar will not read it.",
+   "zh": "这个目录在工作区之外，侧栏不会读取它。"
+  },
+  "error.notDirectory": {
+   "en": "That is not a directory.",
+   "zh": "这不是一个目录。"
+  },
+  "error.unavailable": {
+   "en": "Read failed: {message}",
+   "zh": "读取失败：{message}"
+  }
+ }
+}

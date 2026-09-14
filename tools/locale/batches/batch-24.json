@@ -1,0 +1,79 @@
+{
+ "batch": "schedule.catalog",
+ "namespace": "schedule.catalog",
+ "total": 18,
+ "keys": {
+  "trigger.one": {
+   "en": "{count} reminder",
+   "zh": "{count} 个提醒"
+  },
+  "trigger.other": {
+   "en": "{count} reminders",
+   "zh": "{count} 个提醒"
+  },
+  "list.aria": {
+   "en": "Active reminders",
+   "zh": "活动提醒"
+  },
+  "status.scheduled": {
+   "en": "Scheduled",
+   "zh": "等待中"
+  },
+  "status.overdue": {
+   "en": "Overdue",
+   "zh": "已逾期"
+  },
+  "frequency.once": {
+   "en": "Once",
+   "zh": "单次"
+  },
+  "frequency.every": {
+   "en": "Every {value} {unit}",
+   "zh": "{value}{unit}一次"
+  },
+  "unit.day.one": {
+   "en": "day",
+   "zh": "天"
+  },
+  "unit.day.other": {
+   "en": "days",
+   "zh": "天"
+  },
+  "unit.hour.one": {
+   "en": "hour",
+   "zh": "小时"
+  },
+  "unit.hour.other": {
+   "en": "hours",
+   "zh": "小时"
+  },
+  "unit.minute.one": {
+   "en": "minute",
+   "zh": "分钟"
+  },
+  "unit.minute.other": {
+   "en": "minutes",
+   "zh": "分钟"
+  },
+  "unit.second.one": {
+   "en": "second",
+   "zh": "秒"
+  },
+  "unit.second.other": {
+   "en": "seconds",
+   "zh": "秒"
+  },
+  "relative.now": {
+   "en": "Due now",
+   "zh": "现在到期"
+  },
+  "relative.future": {
+   "en": "in {value} {unit}",
+   "zh": "{value}{unit}后"
+  },
+  "relative.overdue": {
+   "en": "{value} {unit} overdue",
+   "zh": "已逾期 {value}{unit}"
+  }
+ }
+}

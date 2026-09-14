@@ -1,0 +1,139 @@
+{
+ "batch": "chat#2",
+ "namespace": "chat",
+ "total": 33,
+ "keys": {
+  "message.retry.delay": {
+   "en": "Retry delay: ",
+   "zh": "重试延迟："
+  },
+  "message.retry.failure": {
+   "en": "Failure reason: ",
+   "zh": "失败原因："
+  },
+  "message.failure.auth": {
+   "en": "API key is invalid",
+   "zh": "API 密钥无效"
+  },
+  "message.turnError": {
+   "en": "This turn failed",
+   "zh": "本轮运行失败"
+  },
+  "message.maxTokens": {
+   "en": "Output token limit reached",
+   "zh": "已达到输出 token 上限"
+  },
+  "message.maxTokens.hint": {
+   "en": "The reply was cut off; earlier output is preserved in the conversation. Send \"continue\" to let the model resume.",
+   "zh": "回答被截断，已有输出保留在对话中。发送“继续”可让模型接着输出。"
+  },
+  "message.ranFor": {
+   "en": "Ran for {duration}",
+   "zh": "用时 {duration}"
+  },
+  "message.tokensPerSecond": {
+   "en": "{tps} tok/s",
+   "zh": "{tps} tok/s"
+  },
+  "message.turnUsage.title": {
+   "en": "Turn usage",
+   "zh": "本轮用量"
+  },
+  "message.turnUsage.consumed": {
+   "en": "Usage {total}",
+   "zh": "用量 {total}"
+  },
+  "message.turnUsage.model": {
+   "en": "Provider / model",
+   "zh": "提供方 / 模型"
+  },
+  "message.turnUsage.cacheHit": {
+   "en": "Cache hit",
+   "zh": "缓存命中"
+  },
+  "message.turnUsage.input": {
+   "en": "Uncached input",
+   "zh": "未缓存输入"
+  },
+  "message.turnUsage.cacheRead": {
+   "en": "Cached input",
+   "zh": "缓存读取"
+  },
+  "message.turnUsage.cacheWrite": {
+   "en": "Cache write",
+   "zh": "缓存写入"
+  },
+  "message.turnUsage.output": {
+   "en": "Output",
+   "zh": "输出"
+  },
+  "message.turnUsage.reasoning": {
+   "en": " ({tokens} reasoning)",
+   "zh": "（其中推理 {tokens}）"
+  },
+  "message.turnUsage.count": {
+   "en": "{count} tok",
+   "zh": "{count} tok"
+  },
+  "message.turnTime.title": {
+   "en": "Turn time and speed",
+   "zh": "本轮用时和速度"
+  },
+  "message.turnTime.duration": {
+   "en": "Total run time",
+   "zh": "本轮总用时"
+  },
+  "message.turnTime.speed": {
+   "en": "Tokens per second (TPS)",
+   "zh": "输出速度（TPS）"
+  },
+  "message.turnTime.ttft": {
+   "en": "Time to first token (TTFT)",
+   "zh": "首 token 用时（TTFT）"
+  },
+  "duration.seconds": {
+   "en": "{seconds}s",
+   "zh": "{seconds}秒"
+  },
+  "duration.minutes": {
+   "en": "{minutes}m {seconds}s",
+   "zh": "{minutes}分{seconds}秒"
+  },
+  "command.running": {
+   "en": "Running…",
+   "zh": "执行中…"
+  },
+  "command.failed": {
+   "en": "Command failed",
+   "zh": "指令失败"
+  },
+  "command.done": {
+   "en": "Completed",
+   "zh": "已完成"
+  },
+  "command.title": {
+   "en": "Command",
+   "zh": "指令"
+  },
+  "row.running": {
+   "en": "Running",
+   "zh": "运行中"
+  },
+  "row.failed": {
+   "en": "Failed",
+   "zh": "失败"
+  },
+  "json.truncated": {
+   "en": "… truncated, {total} characters total",
+   "zh": "… 已截断，共 {total} 字符"
+  },
+  "clock.md": {
+   "en": "{m}/{d}",
+   "zh": "{m}月{d}日"
+  },
+  "clock.ymd": {
+   "en": "{y}-{m}-{d}",
+   "zh": "{y}年{m}月{d}日"
+  }
+ }
+}

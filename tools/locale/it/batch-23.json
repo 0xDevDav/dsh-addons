@@ -1,0 +1,16 @@
+{
+ "batch": "reference",
+ "namespace": "reference",
+ "keys": {
+  "section.files": "File e cartelle",
+  "section.sessions": "Sessioni",
+  "candidate.noCwd": "(nessuna dir. di lavoro)",
+  "crumb.root": "Area di lavoro",
+  "time.now": "adesso",
+  "time.minutes": "{n}min",
+  "time.hours": "{n}h",
+  "time.days": "{n}g",
+  "time.months": "{n}mes",
+  "time.years": "{n}a"
+ }
+}

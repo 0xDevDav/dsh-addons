@@ -1,0 +1,11 @@
+{
+ "batch": "settings.locale",
+ "namespace": "settings.locale",
+ "total": 1,
+ "keys": {
+  "language.title": {
+   "en": "Language",
+   "zh": "语言"
+  }
+ }
+}

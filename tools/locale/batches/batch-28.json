@@ -1,0 +1,151 @@
+{
+ "batch": "settings.pluginInventory",
+ "namespace": "settings.pluginInventory",
+ "total": 36,
+ "keys": {
+  "tab": {
+   "en": "Plugin list",
+   "zh": "插件列表"
+  },
+  "loading": {
+   "en": "Reading plugins…",
+   "zh": "正在读取插件…"
+  },
+  "error": {
+   "en": "Plugins are temporarily unavailable.",
+   "zh": "暂时无法读取插件。"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试"
+  },
+  "search": {
+   "en": "Search plugins",
+   "zh": "搜索插件"
+  },
+  "empty": {
+   "en": "No plugins are available.",
+   "zh": "暂无插件。"
+  },
+  "emptySearch": {
+   "en": "No matching plugins.",
+   "zh": "没有匹配的插件。"
+  },
+  "presetTitle": {
+   "en": "Session plugins",
+   "zh": "会话插件"
+  },
+  "presetSubtitle": {
+   "en": "Composed per session by agent presets",
+   "zh": "由 Agent 预设按会话组成"
+  },
+  "countUnit": {
+   "en": "plugins",
+   "zh": "个"
+  },
+  "switcherLabel": {
+   "en": "Choose the agent preset to inspect",
+   "zh": "选择要查看的 Agent 预设"
+  },
+  "presetOptionDefault": {
+   "en": "{name} (default)",
+   "zh": "{name}（默认）"
+  },
+  "presetOptionBroken": {
+   "en": "{name} (failed to load)",
+   "zh": "{name}（加载失败）"
+  },
+  "globalTitle": {
+   "en": "Global plugins",
+   "zh": "全局插件"
+  },
+  "globalSubtitle": {
+   "en": "Shared by the system and every session",
+   "zh": "系统与所有会话共用"
+  },
+  "presetProvidedDetail": {
+   "en": "Disabled globally; agent presets provide it per session",
+   "zh": "全局已停用，由 Agent 预设按会话提供"
+  },
+  "enabledIn": {
+   "en": "Enabled in",
+   "zh": "启用于"
+  },
+  "viewInPreset": {
+   "en": "View in the preset group",
+   "zh": "去预设分组查看"
+  },
+  "matchesInOtherPresets": {
+   "en": "{count} more matches in other presets: ",
+   "zh": "其他预设中还有 {count} 个匹配："
+  },
+  "failedCountLabel": {
+   "en": "failed",
+   "zh": "个失败"
+  },
+  "enabledTag": {
+   "en": "Enabled",
+   "zh": "已启用"
+  },
+  "disabledTag": {
+   "en": "Disabled",
+   "zh": "已停用"
+  },
+  "conditionalTag": {
+   "en": "Conditional",
+   "zh": "条件启用"
+  },
+  "presetEnabledTag": {
+   "en": "Enabled via presets",
+   "zh": "预设中启用"
+  },
+  "failedTag": {
+   "en": "Failed",
+   "zh": "启动失败"
+  },
+  "moduleLabel": {
+   "en": "Module",
+   "zh": "完整名称"
+  },
+  "fromPreset": {
+   "en": "From",
+   "zh": "来自"
+  },
+  "condition": {
+   "en": "Disabled when",
+   "zh": "禁用条件"
+  },
+  "configuration": {
+   "en": "Configuration",
+   "zh": "配置状态"
+  },
+  "runtime": {
+   "en": "Status",
+   "zh": "运行状态"
+  },
+  "unobserved": {
+   "en": "Not running",
+   "zh": "未运行"
+  },
+  "pending": {
+   "en": "Waiting for dependencies",
+   "zh": "等待依赖"
+  },
+  "loadingPhase": {
+   "en": "Loading",
+   "zh": "加载中"
+  },
+  "active": {
+   "en": "Running",
+   "zh": "运行中"
+  },
+  "failed": {
+   "en": "Failed to start",
+   "zh": "启动失败"
+  },
+  "unloading": {
+   "en": "Unloading",
+   "zh": "卸载中"
+  }
+ }
+}

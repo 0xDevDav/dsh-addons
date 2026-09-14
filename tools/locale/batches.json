@@ -1,0 +1,294 @@
+{
+ "batches": [
+  {
+   "id": "common",
+   "namespace": "common",
+   "file": "batch-01.json",
+   "keys": 39
+  },
+  {
+   "id": "settings.locale",
+   "namespace": "settings.locale",
+   "file": "batch-02.json",
+   "keys": 1
+  },
+  {
+   "id": "settings.agentPreset",
+   "namespace": "settings.agentPreset",
+   "file": "batch-03.json",
+   "keys": 51
+  },
+  {
+   "id": "approval",
+   "namespace": "approval",
+   "file": "batch-04.json",
+   "keys": 5
+  },
+  {
+   "id": "chat#1",
+   "namespace": "chat",
+   "file": "batch-05.json",
+   "keys": 70
+  },
+  {
+   "id": "chat#2",
+   "namespace": "chat",
+   "file": "batch-06.json",
+   "keys": 33
+  },
+  {
+   "id": "command",
+   "namespace": "command",
+   "file": "batch-07.json",
+   "keys": 14
+  },
+  {
+   "id": "conversation#1",
+   "namespace": "conversation",
+   "file": "batch-08.json",
+   "keys": 70
+  },
+  {
+   "id": "conversation#2",
+   "namespace": "conversation",
+   "file": "batch-09.json",
+   "keys": 70
+  },
+  {
+   "id": "conversation#3",
+   "namespace": "conversation",
+   "file": "batch-10.json",
+   "keys": 19
+  },
+  {
+   "id": "cordis",
+   "namespace": "cordis",
+   "file": "batch-11.json",
+   "keys": 50
+  },
+  {
+   "id": "deliverables",
+   "namespace": "deliverables",
+   "file": "batch-12.json",
+   "keys": 38
+  },
+  {
+   "id": "directory-browser",
+   "namespace": "directory-browser",
+   "file": "batch-13.json",
+   "keys": 13
+  },
+  {
+   "id": "goal",
+   "namespace": "goal",
+   "file": "batch-14.json",
+   "keys": 12
+  },
+  {
+   "id": "slash.menu",
+   "namespace": "slash.menu",
+   "file": "batch-15.json",
+   "keys": 9
+  },
+  {
+   "id": "job",
+   "namespace": "job",
+   "file": "batch-16.json",
+   "keys": 15
+  },
+  {
+   "id": "feedback",
+   "namespace": "feedback",
+   "file": "batch-17.json",
+   "keys": 20
+  },
+  {
+   "id": "model",
+   "namespace": "model",
+   "file": "batch-18.json",
+   "keys": 20
+  },
+  {
+   "id": "open-in-app",
+   "namespace": "open-in-app",
+   "file": "batch-19.json",
+   "keys": 39
+  },
+  {
+   "id": "permission.access",
+   "namespace": "permission.access",
+   "file": "batch-20.json",
+   "keys": 8
+  },
+  {
+   "id": "settings.permission",
+   "namespace": "settings.permission",
+   "file": "batch-21.json",
+   "keys": 12
+  },
+  {
+   "id": "plan",
+   "namespace": "plan",
+   "file": "batch-22.json",
+   "keys": 6
+  },
+  {
+   "id": "reference",
+   "namespace": "reference",
+   "file": "batch-23.json",
+   "keys": 10
+  },
+  {
+   "id": "schedule.catalog",
+   "namespace": "schedule.catalog",
+   "file": "batch-24.json",
+   "keys": 18
+  },
+  {
+   "id": "settings",
+   "namespace": "settings",
+   "file": "batch-25.json",
+   "keys": 12
+  },
+  {
+   "id": "settings.models#1",
+   "namespace": "settings.models",
+   "file": "batch-26.json",
+   "keys": 70
+  },
+  {
+   "id": "settings.models#2",
+   "namespace": "settings.models",
+   "file": "batch-27.json",
+   "keys": 30
+  },
+  {
+   "id": "settings.pluginInventory",
+   "namespace": "settings.pluginInventory",
+   "file": "batch-28.json",
+   "keys": 36
+  },
+  {
+   "id": "settings.plugins",
+   "namespace": "settings.plugins",
+   "file": "batch-29.json",
+   "keys": 52
+  },
+  {
+   "id": "sidebar",
+   "namespace": "sidebar",
+   "file": "batch-30.json",
+   "keys": 5
+  },
+  {
+   "id": "documentMarkdown",
+   "namespace": "documentMarkdown",
+   "file": "batch-31.json",
+   "keys": 4
+  },
+  {
+   "id": "documentHtml",
+   "namespace": "documentHtml",
+   "file": "batch-32.json",
+   "keys": 4
+  },
+  {
+   "id": "sidebarImage",
+   "namespace": "sidebarImage",
+   "file": "batch-33.json",
+   "keys": 5
+  },
+  {
+   "id": "sidebarPdf",
+   "namespace": "sidebarPdf",
+   "file": "batch-34.json",
+   "keys": 9
+  },
+  {
+   "id": "sidebarCodePreview",
+   "namespace": "sidebarCodePreview",
+   "file": "batch-35.json",
+   "keys": 3
+  },
+  {
+   "id": "sidebarDocumentPreview",
+   "namespace": "sidebarDocumentPreview",
+   "file": "batch-36.json",
+   "keys": 18
+  },
+  {
+   "id": "sidebarFiles",
+   "namespace": "sidebarFiles",
+   "file": "batch-37.json",
+   "keys": 13
+  },
+  {
+   "id": "sidebarRight",
+   "namespace": "sidebarRight",
+   "file": "batch-38.json",
+   "keys": 21
+  },
+  {
+   "id": "skill",
+   "namespace": "skill",
+   "file": "batch-39.json",
+   "keys": 7
+  },
+  {
+   "id": "subagent",
+   "namespace": "subagent",
+   "file": "batch-40.json",
+   "keys": 37
+  },
+  {
+   "id": "settings.theme",
+   "namespace": "settings.theme",
+   "file": "batch-41.json",
+   "keys": 9
+  },
+  {
+   "id": "trajectory#1",
+   "namespace": "trajectory",
+   "file": "batch-42.json",
+   "keys": 70
+  },
+  {
+   "id": "trajectory#2",
+   "namespace": "trajectory",
+   "file": "batch-43.json",
+   "keys": 70
+  },
+  {
+   "id": "trajectory#3",
+   "namespace": "trajectory",
+   "file": "batch-44.json",
+   "keys": 35
+  },
+  {
+   "id": "question",
+   "namespace": "question",
+   "file": "batch-45.json",
+   "keys": 15
+  },
+  {
+   "id": "workflowRun",
+   "namespace": "workflowRun",
+   "file": "batch-46.json",
+   "keys": 18
+  },
+  {
+   "id": "workspace",
+   "namespace": "workspace",
+   "file": "batch-47.json",
+   "keys": 63
+  },
+  {
+   "id": "session-log-download",
+   "namespace": "session-log-download",
+   "file": "batch-48.json",
+   "keys": 9
+  }
+ ],
+ "namespaces": 42,
+ "totalKeys": 1257
+}

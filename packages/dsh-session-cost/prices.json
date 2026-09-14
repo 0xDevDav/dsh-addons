@@ -1,0 +1,40 @@
+{
+  "version": "2026-09-14",
+  "currency": "USD",
+  "unit": "USD per 1,000,000 tokens",
+  "source": {
+    "title": "DeepSeek API Docs — Models & Pricing",
+    "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+    "retrievedAt": "2026-09-14",
+    "note": "Official published rates. Peak is double off-peak; the page reserves the right to change prices, so re-check it periodically and update this file — the projection derives money at view time, so an edit here takes effect without refolding any session."
+  },
+  "peak": {
+    "description": "Peak hours are 01:00-04:00 and 06:00-10:00 UTC, Monday through Friday. Every other hour is off-peak and billed at half the peak rate.",
+    "weekdaysUtc": [1, 2, 3, 4, 5],
+    "windowsUtc": [
+      { "from": 1, "to": 4 },
+      { "from": 6, "to": 10 }
+    ]
+  },
+  "models": {
+    "deepseek-flash": {
+      "label": "DeepSeek-V4.1-Flash",
+      "cacheHit": { "peak": 0.006, "offPeak": 0.003 },
+      "input": { "peak": 0.3, "offPeak": 0.15 },
+      "output": { "peak": 1.2, "offPeak": 0.6 }
+    },
+    "deepseek-v4-pro": {
+      "label": "DeepSeek-V4-Pro-0813",
+      "cacheHit": { "peak": 0.044, "offPeak": 0.022 },
+      "input": { "peak": 1.32, "offPeak": 0.66 },
+      "output": { "peak": 3.96, "offPeak": 1.98 }
+    }
+  },
+  "aliases": {
+    "deepseek-v4-flash": "deepseek-flash",
+    "deepseek-v4-flash-vision-exp": "deepseek-flash"
+  },
+  "freeBuckets": {
+    "cacheWrite": "DeepSeek publishes no cache-write charge: cached prompt tokens are billed at the cache-hit input rate only."
+  }
+}

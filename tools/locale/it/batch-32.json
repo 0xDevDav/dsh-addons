@@ -1,0 +1,10 @@
+{
+ "batch": "documentHtml",
+ "namespace": "documentHtml",
+ "keys": {
+  "title": "HTML",
+  "frame": "Anteprima documento HTML",
+  "loading": "Preparazione anteprima HTML…",
+  "failed": "Impossibile visualizzare l'anteprima di questo documento HTML."
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "settings.agentPreset": {
+  "displayNamePlaceholder": "Mostrato nel selettore; valore predefinito: l'identificatore"
+ },
+ "workspace": {
+  "search.placeholder": "Cerca sessioni…"
+ }
+}

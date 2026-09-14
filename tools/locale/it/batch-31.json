@@ -1,0 +1,10 @@
+{
+ "batch": "documentMarkdown",
+ "namespace": "documentMarkdown",
+ "keys": {
+  "viewer.label": "Markdown",
+  "code.copy": "Copia",
+  "code.copied": "Copiato",
+  "footnotes": "Note a piè di pagina"
+ }
+}

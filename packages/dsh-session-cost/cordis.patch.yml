@@ -1,0 +1,7 @@
+# dsh-session-cost bundle patch: mounts the session cost surface as one row.
+# The row is both halves of the package: the host projection unit and, through
+# the package's `dsh.client` declaration, the composer-dock pill the browser
+# mounts from the same entry.
+- insert:
+    - id: session-cost
+      name: dsh-session-cost

@@ -1,0 +1,21 @@
+{
+ "batch": "job",
+ "namespace": "job",
+ "keys": {
+  "count.live.one": "{count} attività in background in esecuzione",
+  "count.live.other": "{count} attività in background in esecuzione",
+  "count.idle.one": "{count} attività in background",
+  "count.idle.other": "{count} attività in background",
+  "list.aria": "Attività in background",
+  "status.running": "in esecuzione",
+  "status.stopping": "in arresto",
+  "status.completed": "completata",
+  "status.killed": "annullata",
+  "status.failed": "non riuscita",
+  "duration.seconds": "{seconds}s",
+  "duration.minutes": "{minutes}m {seconds}s",
+  "duration.hours": "{hours}h {minutes}m",
+  "duration.title.live": "In esecuzione da {duration}",
+  "duration.title.done": "Ha richiesto {duration}"
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "batch": "plan",
+ "namespace": "plan",
+ "total": 6,
+ "keys": {
+  "chip.label": "Piano",
+  "chip.on.aria": "Modalità piano attiva, premi per disattivarla",
+  "chip.on.title": "Modalità piano attiva — fai clic per disattivarla (/plan off)",
+  "chip.off.aria": "Modalità piano disattiva, premi per attivarla",
+  "chip.off.title": "Modalità piano disattiva — fai clic per attivarla (/plan)",
+  "chip.exitFailed": "Uscita dalla modalità piano non riuscita"
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "batch": "settings",
+ "namespace": "settings",
+ "keys": {
+  "trigger": "Impostazioni",
+  "title": "Impostazioni",
+  "close": "Chiudi",
+  "openDocument": "Apri file di configurazione",
+  "openDocument.error": "Impossibile aprire il file di configurazione",
+  "general.nav": "Generali",
+  "connection.error": "Disconnesso",
+  "connection.retry": "Riconnetti ora",
+  "connection.connecting": "Riconnessione in corso",
+  "connection.connected": "Connesso",
+  "connection.reconnect": "Disconnesso, riconnetti ora",
+  "connection.restart": "Riconnessione automatica in corso, riconnetti ora"
+ }
+}

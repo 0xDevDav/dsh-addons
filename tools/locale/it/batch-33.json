@@ -1,0 +1,11 @@
+{
+ "batch": "sidebarImage",
+ "namespace": "sidebarImage",
+ "keys": {
+  "title": "Immagine",
+  "preview": "Anteprima immagine: {name}",
+  "loading": "Apertura immagine…",
+  "failed": "Impossibile visualizzare questa immagine.",
+  "unsupported": "L'anteprima immagine richiede il contenuto completo del file."
+ }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "dsh-session-cost",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Session cost for the DeepSeek Harness web GUI: a sessionCost projection derived from the durable log's per-request token usage and published per-model peak/off-peak rates, rendered as a pill beside the composer statistics",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./pricing": {
+      "default": "./lib/pricing.js"
+    },
+    "./prices.json": "./prices.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/pricing.js",
+    "lib/tree.js",
+    "lib/client.js",
+    "prices.json",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "zod": "*"
+  },
+  "license": "MIT"
+}

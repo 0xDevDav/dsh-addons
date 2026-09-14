@@ -1,0 +1,87 @@
+{
+ "batch": "feedback",
+ "namespace": "feedback",
+ "total": 20,
+ "keys": {
+  "action.like": {
+   "en": "Good response",
+   "zh": "好的回答"
+  },
+  "action.likeActive": {
+   "en": "Remove rating",
+   "zh": "取消标记"
+  },
+  "action.dislike": {
+   "en": "Bad response",
+   "zh": "有问题的回答"
+  },
+  "action.dislikeActive": {
+   "en": "Remove rating",
+   "zh": "取消标记"
+  },
+  "dialog.title": {
+   "en": "Submit feedback",
+   "zh": "提交反馈"
+  },
+  "dialog.categories": {
+   "en": "Feedback category",
+   "zh": "反馈分类"
+  },
+  "dialog.detail": {
+   "en": "Feedback details",
+   "zh": "反馈详情"
+  },
+  "dialog.hint": {
+   "en": "Add details to help us improve. Your submission will include the current conversation log.",
+   "zh": "填写详情以帮助我们改进体验，提交内容会包括当前对话的日志"
+  },
+  "category.task-result": {
+   "en": "Task result",
+   "zh": "任务结果"
+  },
+  "category.instruction-following": {
+   "en": "Instruction understanding and following",
+   "zh": "指令理解与遵循"
+  },
+  "category.product-interaction": {
+   "en": "Product features and interaction",
+   "zh": "产品功能与交互"
+  },
+  "category.service-stability": {
+   "en": "Stability and speed",
+   "zh": "稳定性和速度"
+  },
+  "category.resource-cost": {
+   "en": "Resource usage and cost",
+   "zh": "资源使用与费用"
+  },
+  "category.security-privacy-permission": {
+   "en": "Security, privacy, and permissions",
+   "zh": "安全隐私与权限"
+  },
+  "category.other": {
+   "en": "Other",
+   "zh": "其他"
+  },
+  "toast.recorded": {
+   "en": "Thanks for your feedback",
+   "zh": "感谢你的反馈"
+  },
+  "error.conflict": {
+   "en": "This feedback changed elsewhere; the latest state is shown",
+   "zh": "这条反馈已在别处改动，已显示最新状态"
+  },
+  "error.load": {
+   "en": "Could not load feedback",
+   "zh": "反馈状态加载失败"
+  },
+  "error.generic": {
+   "en": "Could not save feedback",
+   "zh": "反馈保存失败"
+  },
+  "error.noteTooLarge": {
+   "en": "The description is too long; shorten it and submit again",
+   "zh": "描述太长，请缩短后再提交"
+  }
+ }
+}
