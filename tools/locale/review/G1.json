@@ -3,12 +3,12 @@
   "view.trajectory": {
    "en": "Trajectory",
    "zh": "轨迹",
-   "it": "Traiettoria"
+   "it": "Registro"
   },
   "toolbar.aria": {
    "en": "Trajectory toolbar",
    "zh": "轨迹工具栏",
-   "it": "Barra degli strumenti della traiettoria"
+   "it": "Barra degli strumenti del registro"
   },
   "toolbar.duration": {
    "en": "Duration",
@@ -63,7 +63,7 @@
   "toolbar.search": {
    "en": "Search trajectory",
    "zh": "搜索轨迹",
-   "it": "Cerca nella traiettoria"
+   "it": "Cerca nel registro"
   },
   "toolbar.searchPlaceholder": {
    "en": "Search",
@@ -583,7 +583,7 @@
   "history.loadingTrajectory": {
    "en": "Loading trajectory…",
    "zh": "正在加载轨迹…",
-   "it": "Caricamento della traiettoria…"
+   "it": "Caricamento del registro…"
   },
   "history.loadingEarlier": {
    "en": "Loading earlier history…",
@@ -793,7 +793,7 @@
   "timeline.aria": {
    "en": "Trajectory timeline",
    "zh": "轨迹时间线",
-   "it": "Cronologia della traiettoria"
+   "it": "Sequenza temporale del registro"
   },
   "timeline.overviewAria": {
    "en": "Timeline overview; drag horizontally to focus events",

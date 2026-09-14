@@ -20,7 +20,7 @@
   "details.source": "Origine",
   "details.hierarchy": "Gerarchia",
   "details.toolCall": "Chiamata a strumento",
-  "timeline.aria": "Cronologia della traiettoria",
+  "timeline.aria": "Sequenza temporale del registro",
   "timeline.overviewAria": "Panoramica della cronologia; trascina in orizzontale per focalizzare gli eventi",
   "timeline.noTimingData": "Nessun dato di temporizzazione",
   "timeline.total": "Totale {duration}",

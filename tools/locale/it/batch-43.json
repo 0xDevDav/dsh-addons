@@ -48,7 +48,7 @@
   "block.openSummary": "Apri il riepilogo delle chiamate a strumento del blocco #{index}",
   "block.openSummaryTitle": "Apri il riepilogo delle chiamate a strumento",
   "block.label": "Blocco #{index} {type}",
-  "history.loadingTrajectory": "Caricamento della traiettoria…",
+  "history.loadingTrajectory": "Caricamento del registro…",
   "history.loadingEarlier": "Caricamento della cronologia precedente…",
   "history.loadingEarlierAria": "Caricamento della cronologia precedente…",
   "history.loadEarlier": "Carica la cronologia precedente",
