@@ -1,0 +1,30 @@
+{
+  "name": "dsh-brand-davcode",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DavCode AGENT identity for the DeepSeek Harness web GUI: its own mark and wordmark in the sidebar brand row, the same mark on the blank-session hero, and the product name in the window title and tab icon",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": { "default": "./lib/index.js" },
+    "./client": { "default": "./lib/client.js" },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ],
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,6 @@
+# dsh-brand-davcode bundle patch: mounts the identity pack as one client row.
+# Applied after dsh-base and dsh-web-app, and after the official brand bundle, so the
+# brand seats it occupies already exist and the fish it replaces is already seated.
+- insert:
+    - id: brand-davcode
+      name: dsh-brand-davcode

@@ -6,7 +6,7 @@ $root = Split-Path -Parent $PSScriptRoot
 $dsh = if ($env:DSH_CMD) { $env:DSH_CMD } else { 'dsh' }
 $harnessHome = if ($env:DSH_HOME) { $env:DSH_HOME } else { Join-Path $HOME '.dsh' }
 
-foreach ($pack in @('dsh-locale-it', 'dsh-session-cost')) {
+foreach ($pack in @('dsh-locale-it', 'dsh-session-cost', 'dsh-brand-davcode')) {
   $path = Join-Path $root "packages/$pack"
   Write-Host "installing $pack from $path"
   & $dsh plugin --profile web add $path

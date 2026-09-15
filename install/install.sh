@@ -6,7 +6,7 @@ root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 dsh=${DSH_CMD:-dsh}
 harness_home=${DSH_HOME:-$HOME/.dsh}
 
-for pack in dsh-locale-it dsh-session-cost; do
+for pack in dsh-locale-it dsh-session-cost dsh-brand-davcode; do
   echo "installing $pack from $root/packages/$pack"
   "$dsh" plugin --profile web add "$root/packages/$pack"
 done

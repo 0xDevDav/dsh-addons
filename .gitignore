@@ -5,3 +5,6 @@ session-dump.json
 test-page.html
 dump-config.txt
 .DS_Store
+
+# captures written by tools/brand
+lab/

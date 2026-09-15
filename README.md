@@ -11,9 +11,11 @@ Built and verified on DSH `0.1.6-alpha.1`, Windows, Node 24, pnpm 10.
 |---|---|
 | `packages/dsh-locale-it` | **Italian language pack**: 1 331 strings across all 44 shipped client locale namespaces, registered as the `it` language |
 | `packages/dsh-session-cost` | **Cost surfaces**: the session-tree cost pill beside the composer statistics, a peak/off-peak hour widget above *New session*, and the account balance inside the Settings row |
+| `packages/dsh-brand-davcode` | **The identity**: the DavCode AGENT lockup in the sidebar brand row, the mark in the collapsed rail and the blank-session hero, the product name in the window title, and a tab icon — each in the light and the dark variant of the drawing |
 | `tools/locale` | The pipeline that builds the language pack: dictionary extraction, batching, validation, review data, and the incremental update tools |
 | `tools/cost` | The verification suites for the cost pack, and the reconciliation against the provider's usage page |
-| `install` | Installers that add both packs to the local Web profile |
+| `tools/brand` | The brand pack's suite, its screen captures in a running UI, and the generator for the Windows launcher icon |
+| `install` | Installers that add all three packs to the local Web profile |
 
 Each package has its own README with the design decisions, the exact hooks it uses, and what it
 deliberately does not do.
@@ -41,6 +43,7 @@ Doing it by hand is the same two commands:
 ```sh
 dsh plugin --profile web add /path/to/dsh-addons/packages/dsh-locale-it
 dsh plugin --profile web add /path/to/dsh-addons/packages/dsh-session-cost
+dsh plugin --profile web add /path/to/dsh-addons/packages/dsh-brand-davcode
 ```
 
 ## What you get after the restart
@@ -51,6 +54,10 @@ dsh plugin --profile web add /path/to/dsh-addons/packages/dsh-session-cost
 - **A peak-hour widget** above *New session* saying whether the minute you are in is billed at the peak
   rate, with the schedule in your own timezone.
 - **Your DeepSeek balance** on the Settings row, read from the provider.
+- **The DavCode AGENT brand** instead of the shipped fish: the lockup in the sidebar row, the mark in the
+  collapsed rail, the same artwork on the blank-session screen, `DavCode AGENT` in the window title, and
+  a tab icon — swapping to the light or the dark variant with the theme. It is a *brand replacement*, not
+  a fork: nothing shipped is edited, and removing the bundle puts the fish back.
 
 ## Updating the language pack after a DSH release
 
@@ -98,8 +105,28 @@ The tools discover `$DSH_HOME`, the two packs and the session logs by themselves
 (`tools/paths.mjs`), and the tests that need a session log take one as an argument and otherwise use
 the newest one on disk.
 
+## Verifying the brand pack
+
+```sh
+node tools/brand/test-brand.mjs                     # the drawing, both palettes, the seats, the effects
+node tools/brand/inspect-brand.cjs <url> both       # row, rail and hero in a running UI, both schemes
+node tools/brand/shoot-rail.cjs <url> dark          # the collapsed sidebar, whole
+node tools/brand/shoot-hero.cjs <url> light         # the blank-session screen, whole
+node tools/brand/make-icon.mjs [out.ico]            # the Windows launcher icon, from the same mark
+```
+
+`test-brand.mjs` runs against `packages/dsh-brand-davcode` and, when the pack is installed, also checks
+that the installed bundle is that same file (hash-compared) — so "the repository and the machine agree"
+is a test result rather than an assumption. The three browser tools need a resolvable `playwright`
+(and a running `dsh web`: the `<url>` is the page's own token URL) and write their captures to `lab/`.
+
 ## Things worth knowing before you rely on this
 
+- **The brand artwork is data, not a redraw.** Every coordinate, weight, anchor and colour of the
+  supplied drawings is transcribed into `packages/dsh-brand-davcode/lib/client.js`, and
+  `tools/brand/test-brand.mjs` asserts all of them in both palettes. The row renders the drawn canvas at
+  30 units because that is the scale at which the whole art fits the 24px brand box the shipped CSS
+  gives it — a scale, never a crop or a re-centring. The pack README spells out the arithmetic.
 - **Prices are data, not code.** `packages/dsh-session-cost/prices.json` carries the published rates,
   the peak windows (in UTC), the model aliases, and the URL and date they were read from. Editing that
   file reprices every session on its next read, with no restart and no refold. A release that changes
@@ -117,6 +144,6 @@ the newest one on disk.
 
 ## License
 
-MIT — see [`LICENSE`](LICENSE), the same license the two packages declare in their `package.json`.
-Nothing here is affiliated with or endorsed by DeepSeek; both packages are local additions that touch
+MIT — see [`LICENSE`](LICENSE), the same license the packages declare in their `package.json`.
+Nothing here is affiliated with or endorsed by DeepSeek; every package is a local addition that touches
 no shipped file.
