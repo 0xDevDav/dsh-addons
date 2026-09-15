@@ -239,6 +239,18 @@ window.__ModuleLoader__.load({
 		}
 
 		/**
+		 * The artwork on the blank-session screen. The host's own edge (34) is the width it
+		 * reserves for the fish mark, which is not a size for this artwork: with the greeting
+		 * gone the brand is the whole of that screen's head, so it is drawn at least as large as
+		 * the sidebar row's name (56 here renders the name at 23.3px, against the row's 18.3px).
+		 * A host that asks for something larger still gets it: the pack only sets the floor.
+		 */
+		const HERO_HEIGHT = 56;
+		function HeroLockup({ size }) {
+			return jsx(Lockup, { size: Math.max(typeof size === "number" ? size : 0, HERO_HEIGHT) });
+		}
+
+		/**
 		 * Give the row's artwork the room the row has.
 		 *
 		 * The box that holds the seats declares `height: 24px` and clips at it, which is what
@@ -452,7 +464,7 @@ window.__ModuleLoader__.load({
 			ctx.effect(
 				() =>
 					slots.inject("conversation.hero.brand.mark", () =>
-						slots.register({ name: "conversation.hero.brand.mark", priority: PRIORITY }, Lockup),
+						slots.register({ name: "conversation.hero.brand.mark", priority: PRIORITY }, HeroLockup),
 					),
 				"brand: new-session hero",
 			);

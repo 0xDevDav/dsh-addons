@@ -68,9 +68,12 @@ Two things are structural rather than literal, and neither moves a coordinate:
   (the shipped row's own name size is 18px); at 164px of room the fit gives 164 × 39.75.
 
 `Mark` is the mark alone (the rail and the toggle button, 24×24 as the seat asks), `Lockup`
-is the whole artwork at whatever edge the host passes — 34 in the hero, and in the row
-whatever `fitRow` measures, from 30 on the first paint — and both scale uniformly by that
-one factor.
+is the whole artwork at whatever edge it is given, and both scale uniformly by that one
+factor. The row passes what `fitRow` measures (30 on the first paint, up to 44); the
+blank-session screen passes **56**, which this pack sets as its own floor — the host's edge of
+34 is the width it reserves for the fish mark, not a size for this artwork, and with the
+greeting gone the brand is the whole of that screen's head (231 × 56, the name at 23.3px). A
+host that asks for more than the floor still gets it.
 
 ## How the scheme is followed
 

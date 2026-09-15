@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="it" data-scheme="light" data-rail="no">
+<head>
+<meta charset="utf-8">
+<title>DavCode AGENT — varianti del segno &gt;D</title>
+<style>
+  :root{ --font:-apple-system,"Segoe UI Variable","Segoe UI",Roboto,sans-serif; --accent:#4176e6; }
+  html[data-scheme="light"]{ --page:#eef0f3; --app:#fff; --side:#f9fafb; --ink:#0f1115; --ink2:#61666b;
+    --ink3:#979da6; --line:#00000012; --border:#0000001a; }
+  html[data-scheme="dark"]{ --page:#0a0b0d; --app:#151517; --side:#1b1b1c; --ink:#f9fafb; --ink2:#cfd3d6;
+    --ink3:#979da6; --line:#ffffff14; --border:#ffffff1f; --accent:#679efe; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--page);color:var(--ink);font-family:var(--font);font-size:14px}
+  .bar{position:sticky;top:0;z-index:5;display:flex;gap:8px;align-items:center;flex-wrap:wrap;
+       padding:10px 16px;background:var(--app);border-bottom:1px solid var(--border)}
+  .bar strong{font-weight:600}
+  .bar button{font:inherit;font-size:13px;padding:6px 12px;border-radius:999px;cursor:pointer;
+              background:transparent;color:var(--ink);border:1px solid var(--border)}
+  .bar button[aria-pressed="true"]{background:var(--ink);color:var(--app);border-color:var(--ink)}
+  .bar .note{margin-left:auto;color:var(--ink3);font-size:12.5px;max-width:620px}
+  section{padding:22px 16px 6px}
+  h2{margin:0 0 4px;font-size:15px;font-weight:600}
+  .lede{margin:0 0 16px;color:var(--ink2);font-size:13px;max-width:920px}
+
+  .row{display:inline-flex;align-items:center;gap:6px;height:24px}
+  .mark{width:var(--s,20px);height:var(--s,20px);flex:none;color:inherit;display:block}
+  .name{font-size:18px;font-weight:600;letter-spacing:.02em;line-height:24px;white-space:nowrap}
+  .name .role{font-size:11px;font-weight:400;letter-spacing:.16em;color:var(--ink3);margin-left:6px;vertical-align:2px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:14px}
+  .card{border:1px solid var(--border);border-radius:14px;background:var(--side);padding:14px 16px}
+  .card h3{margin:0 0 2px;font-size:13.5px;font-weight:600}
+  .card .trade{margin:0 0 12px;color:var(--ink2);font-size:12.5px;line-height:1.5}
+  .demo{display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:10px;background:var(--app);
+        border:1px solid var(--line);margin-bottom:10px}
+  .sizes{display:flex;align-items:center;gap:10px;color:var(--ink2);font-size:11.5px}
+  .sizes b{font-weight:500;color:var(--ink3);padding-right:2px}
+  .tile{display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:var(--app);
+        width:var(--box,32px);height:var(--box,32px);border-radius:calc(var(--box,32px) / 4.6)}
+  .tile .mark{--s:calc(var(--box,32px) * .66)}
+
+  .sidebyside{display:flex;gap:18px;flex-wrap:wrap}
+  .app{width:268px;background:var(--app);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+  .sidebar{background:var(--side);padding:10px;display:flex;flex-direction:column;gap:8px;min-height:320px}
+  html[data-rail="yes"] .sidebar{width:56px;align-items:center}
+  html[data-rail="yes"] .hideInRail{display:none}
+  .logoRow{display:flex;justify-content:flex-end;align-items:center;gap:8px;height:40px;overflow:hidden}
+  html[data-rail="yes"] .logoRow{justify-content:center;height:36px}
+  .new{display:flex;align-items:center;height:40px;padding:0 12px;border-radius:12px;
+       border:1px solid var(--line);color:var(--ink);font-size:14px}
+  .peak{font-size:11.5px;color:var(--ink2);padding:6px 10px;border-radius:8px;
+        background:linear-gradient(90deg,#22c55e1f,#22c55e08);border:1px solid #22c55e33}
+  .sess{font-size:13.5px;color:var(--ink2);padding:7px 10px;border-radius:10px}
+  .sess.on{background:#4176e61f;color:var(--ink)}
+  .foot{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ink2);margin-top:auto}
+  .chip{margin-left:auto;padding:3px 8px;border-radius:999px;background:#22c55e2e;color:#15803d;font-size:12px}
+  footer{padding:20px 16px 40px;color:var(--ink3);font-size:12px;line-height:1.6}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <strong>&gt;D — varianti</strong>
+  <button id="scheme">Chiaro / Scuro</button>
+  <button id="rail">Rail (barra compressa)</button>
+  <span class="note">Stesse condizioni del provino precedente: riga 24px, nome 18px/600 · rail 36px col solo segno ·
+    icona 32 e 16px. Il riquadro scuro dell'icona è il segno in negativo, cioè come apparirebbe come icona dell'applicazione.</span>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <!-- A · l'originale: chevron separato, D con asta e pancia -->
+  <symbol id="d-a" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3.6 7.4 8 12l-4.4 4.6"/>
+      <path d="M12.4 6.6v10.8"/>
+      <path d="M12.4 6.6h2.4a5.4 5.4 0 0 1 0 10.8h-2.4"/>
+    </g>
+  </symbol>
+
+  <!-- B · irrobustita: D più grande, tratti più spessi, spazio ridotto -->
+  <symbol id="d-b" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4.6 7.6 8.8 12l-4.2 4.4"/>
+      <path d="M12.2 5.8v12.4"/>
+      <path d="M12.2 5.8h2.9a6.2 6.2 0 0 1 0 12.4h-2.9"/>
+    </g>
+  </symbol>
+
+  <!-- C · il chevron dentro la D: una forma sola, compatta -->
+  <symbol id="d-c" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <g stroke-width="2.2">
+        <path d="M7.4 5.2v13.6"/>
+        <path d="M7.4 5.2h3.4a6.8 6.8 0 0 1 0 13.6H7.4"/>
+      </g>
+      <!-- staccato dalla parete interna della pancia: se la tocca, a piccole misure si fonde in un blocco -->
+      <path d="M11.2 9.6 13.6 12l-2.4 2.4" stroke-width="1.7"/>
+    </g>
+  </symbol>
+
+  <!-- D · tratto unico: il chevron sale e diventa l'asta della D -->
+  <symbol id="d-d" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+      <!-- l'asta resta intera: la diagonale la tocca a metà, non la sostituisce -->
+      <path d="M9.4 5.6v12.4"/>
+      <path d="M9.4 5.6h2.9a6.2 6.2 0 0 1 0 12.4H9.4"/>
+      <path d="M4.4 16.4 9.4 11.6"/>
+    </g>
+  </symbol>
+</defs></svg>
+
+<section>
+  <h2>Quattro modi di risolvere il 16px</h2>
+  <p class="lede">Il problema del <code>&gt;D</code> è che a icona i due elementi si contendono lo spazio. Ogni variante
+    attacca quel punto in modo diverso: spazio, spessore, o fondendo le due parti in una forma sola.</p>
+  <div class="grid">
+
+    <div class="card">
+      <h3>A · l'originale</h3>
+      <p class="trade">Chevron separato e D completa: il più arioso e leggibile a 20-24px, il più affollato a 16.</p>
+      <div class="demo"><span class="row"><svg class="mark" style="--s:22px"><use href="#d-a"/></svg>
+        <span class="name">DavCode<span class="role">AGENT</span></span></span></div>
+      <div class="sizes"><b>rail</b><svg class="mark" style="--s:36px"><use href="#d-a"/></svg>
+        <b>icona</b><span class="tile" style="--box:32px"><svg class="mark"><use href="#d-a"/></svg></span>
+        <span class="tile" style="--box:16px"><svg class="mark"><use href="#d-a"/></svg></span></div>
+    </div>
+
+    <div class="card">
+      <h3>B · irrobustita</h3>
+      <p class="trade">D più grande, tratti più spessi, spazio ridotto: perde un po' di eleganza a 24px e guadagna
+        nettezza a 16. La scelta "sicura".</p>
+      <div class="demo"><span class="row"><svg class="mark" style="--s:22px"><use href="#d-b"/></svg>
+        <span class="name">DavCode<span class="role">AGENT</span></span></span></div>
+      <div class="sizes"><b>rail</b><svg class="mark" style="--s:36px"><use href="#d-b"/></svg>
+        <b>icona</b><span class="tile" style="--box:32px"><svg class="mark"><use href="#d-b"/></svg></span>
+        <span class="tile" style="--box:16px"><svg class="mark"><use href="#d-b"/></svg></span></div>
+    </div>
+
+    <div class="card">
+      <h3>C · chevron dentro la D</h3>
+      <p class="trade">Una forma sola: il chevron vive nella pancia della lettera. Compatto e distintivo, ma la
+        pancia si allarga e a 16px il chevron interno rischia di sparire.</p>
+      <div class="demo"><span class="row"><svg class="mark" style="--s:22px"><use href="#d-c"/></svg>
+        <span class="name">DavCode<span class="role">AGENT</span></span></span></div>
+      <div class="sizes"><b>rail</b><svg class="mark" style="--s:36px"><use href="#d-c"/></svg>
+        <b>icona</b><span class="tile" style="--box:32px"><svg class="mark"><use href="#d-c"/></svg></span>
+        <span class="tile" style="--box:16px"><svg class="mark"><use href="#d-c"/></svg></span></div>
+    </div>
+
+    <div class="card">
+      <h3>D · tratto unico</h3>
+      <p class="trade">Il chevron sale e diventa l'asta della D: un solo segno continuo, monolinea. Il più
+        elegante e il più solido in piccolo — ed è quello che si presta meglio a un'icona disegnata.</p>
+      <div class="demo"><span class="row"><svg class="mark" style="--s:22px"><use href="#d-d"/></svg>
+        <span class="name">DavCode<span class="role">AGENT</span></span></span></div>
+      <div class="sizes"><b>rail</b><svg class="mark" style="--s:36px"><use href="#d-d"/></svg>
+        <b>icona</b><span class="tile" style="--box:32px"><svg class="mark"><use href="#d-d"/></svg></span>
+        <span class="tile" style="--box:16px"><svg class="mark"><use href="#d-d"/></svg></span></div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Nel contesto</h2>
+  <p class="lede">Con <em>Rail</em> attivo resta il solo segno a 36px: qui si vede quale variante tiene quando
+    non c'è il nome a spiegarne il senso.</p>
+  <div class="sidebyside">
+    <div class="app"><div class="sidebar">
+      <div class="logoRow"><svg class="mark" style="--s:20px"><use href="#d-a"/></svg>
+        <span class="name hideInRail">DavCode<span class="role">AGENT</span></span></div>
+      <div class="new hideInRail">＋ Nuova sessione</div>
+      <div class="peak hideInRail">● Fuori picco · fino alle 03:00 costa la metà</div>
+      <div class="sess on hideInRail">Nomi e segno dell'interfaccia</div>
+      <div class="sess hideInRail">Installazione su altro PC</div>
+      <div class="foot hideInRail">⚙ Impostazioni <span class="chip">$19,52</span></div>
+    </div></div>
+    <div class="app"><div class="sidebar">
+      <div class="logoRow"><svg class="mark" style="--s:20px"><use href="#d-b"/></svg>
+        <span class="name hideInRail">DavCode<span class="role">AGENT</span></span></div>
+      <div class="new hideInRail">＋ Nuova sessione</div>
+      <div class="peak hideInRail">● Fuori picco · fino alle 03:00 costa la metà</div>
+      <div class="sess on hideInRail">Nomi e segno dell'interfaccia</div>
+      <div class="sess hideInRail">Installazione su altro PC</div>
+      <div class="foot hideInRail">⚙ Impostazioni <span class="chip">$19,52</span></div>
+    </div></div>
+    <div class="app"><div class="sidebar">
+      <div class="logoRow"><svg class="mark" style="--s:20px"><use href="#d-d"/></svg>
+        <span class="name hideInRail">DavCode<span class="role">AGENT</span></span></div>
+      <div class="new hideInRail">＋ Nuova sessione</div>
+      <div class="peak hideInRail">● Fuori picco · fino alle 03:00 costa la metà</div>
+      <div class="sess on hideInRail">Nomi e segno dell'interfaccia</div>
+      <div class="sess hideInRail">Installazione su altro PC</div>
+      <div class="foot hideInRail">⚙ Impostazioni <span class="chip">$19,52</span></div>
+    </div></div>
+  </div>
+</section>
+
+<footer>
+  Se una variante ti convince ma un dettaglio no — il chevron troppo aperto, la D troppo stretta, il tratto troppo
+  sottile — dimmelo in quei termini: sono numeri, si cambiano in un minuto. Nel frattempo questa pagina è un provino:
+  l'interfaccia non è stata toccata.
+</footer>
+
+<script>
+  const root = document.documentElement
+  const toggle = (button, key, on, off) => {
+    button.onclick = () => {
+      const next = root.dataset[key] === on ? off : on
+      root.dataset[key] = next
+      button.setAttribute('aria-pressed', String(next === on))
+    }
+  }
+  toggle(document.getElementById('scheme'), 'scheme', 'dark', 'light')
+  toggle(document.getElementById('rail'), 'rail', 'yes', 'no')
+</script>
+</body>
+</html>

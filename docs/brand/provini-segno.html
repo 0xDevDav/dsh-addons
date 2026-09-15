@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="it" data-scheme="light" data-rail="no">
+<head>
+<meta charset="utf-8">
+<title>DavCode AGENT — provini del segno</title>
+<style>
+  :root{
+    --font:-apple-system,"Segoe UI Variable","Segoe UI",Roboto,sans-serif;
+    --accent:#4176e6;
+  }
+  html[data-scheme="light"]{
+    --page:#eef0f3; --app:#fff; --side:#f9fafb; --ink:#0f1115; --ink2:#61666b; --ink3:#979da6;
+    --line:#00000012; --border:#0000001a; --hover:#00000008;
+  }
+  html[data-scheme="dark"]{
+    --page:#0a0b0d; --app:#151517; --side:#1b1b1c; --ink:#f9fafb; --ink2:#cfd3d6; --ink3:#979da6;
+    --line:#ffffff14; --border:#ffffff1f; --hover:#ffffff0f; --accent:#679efe;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--page);color:var(--ink);font-family:var(--font);font-size:14px}
+
+  .bar{position:sticky;top:0;z-index:5;display:flex;gap:8px;align-items:center;flex-wrap:wrap;
+       padding:10px 16px;background:var(--app);border-bottom:1px solid var(--border)}
+  .bar strong{font-weight:600;letter-spacing:.02em}
+  .bar button{font:inherit;font-size:13px;padding:6px 12px;border-radius:999px;cursor:pointer;
+              background:transparent;color:var(--ink);border:1px solid var(--border)}
+  .bar button[aria-pressed="true"]{background:var(--ink);color:var(--app);border-color:var(--ink)}
+  .bar .note{margin-left:auto;color:var(--ink3);font-size:12.5px;max-width:560px}
+
+  section{padding:22px 16px 6px}
+  h2{margin:0 0 4px;font-size:15px;font-weight:600}
+  .lede{margin:0 0 16px;color:var(--ink2);font-size:13px;max-width:900px}
+
+  /* la riga del marchio, con le misure vere dell'applicazione */
+  .row{display:inline-flex;align-items:center;gap:6px;height:24px}
+  .mark{width:var(--s,20px);height:var(--s,20px);flex:none;color:inherit;display:block}
+  .name{font-size:18px;font-weight:600;letter-spacing:.02em;line-height:24px;white-space:nowrap}
+  .name .role{font-size:11px;font-weight:400;letter-spacing:.16em;color:var(--ink3);
+              margin-left:6px;vertical-align:2px}
+  .stack{display:inline-flex;flex-direction:column;justify-content:center;gap:1px;height:24px;line-height:1}
+  .stack .top{font-size:13px;font-weight:600;letter-spacing:.02em}
+  .stack .bottom{font-size:9.5px;font-weight:400;letter-spacing:.18em;color:var(--ink3)}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
+  .card{border:1px solid var(--border);border-radius:14px;background:var(--side);padding:14px 16px}
+  .card h3{margin:0 0 2px;font-size:13.5px;font-weight:600}
+  .card p{margin:0 0 12px;color:var(--ink2);font-size:12.5px;line-height:1.5}
+  .demo{display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:10px;background:var(--app);
+        border:1px solid var(--line);margin-bottom:10px}
+  .sizes{display:flex;align-items:center;gap:12px;color:var(--ink2);font-size:11.5px}
+  .sizes b{font-weight:500;color:var(--ink3)}
+  .icon{display:inline-flex;align-items:center;justify-content:center;border-radius:8px;background:var(--ink);
+        color:var(--app);width:var(--box,32px);height:var(--box,32px)}
+  .icon .mark{--s:calc(var(--box,32px) * 0.62)}
+  .icon.round{border-radius:50%}
+
+  /* la barra laterale intera, per giudicare il contesto */
+  .sidebyside{display:flex;gap:18px;flex-wrap:wrap}
+  .app{width:268px;background:var(--app);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+  .sidebar{background:var(--side);padding:10px;display:flex;flex-direction:column;gap:8px;min-height:330px;
+           border-right:1px solid var(--line)}
+  html[data-rail="yes"] .sidebar{width:56px;align-items:center}
+  html[data-rail="yes"] .sidebar .hideInRail{display:none}
+  .logoRow{display:flex;justify-content:flex-end;align-items:center;gap:8px;height:40px;overflow:hidden}
+  html[data-rail="yes"] .logoRow{justify-content:center;height:36px}
+  .new{display:flex;align-items:center;gap:8px;height:40px;padding:0 12px;border-radius:12px;
+       border:1px solid var(--line);color:var(--ink);font-size:14px}
+  .peak{font-size:11.5px;color:var(--ink2);padding:6px 10px;border-radius:8px;
+        background:linear-gradient(90deg,#22c55e1f,#22c55e08);border:1px solid #22c55e33}
+  .sess{font-size:13.5px;color:var(--ink2);padding:7px 10px;border-radius:10px}
+  .sess.on{background:#4176e61f;color:var(--ink)}
+  .foot{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ink2);margin-top:auto}
+  .chip{margin-left:auto;padding:3px 8px;border-radius:999px;background:#22c55e2e;color:#15803d;font-size:12px}
+
+  /* il cursore: fermo per impostazione predefinita, lampeggiante su richiesta */
+  html[data-blink="yes"] .cursor{animation:blink 1.6s steps(1,end) infinite}
+  @keyframes blink{0%,55%{opacity:1}56%,100%{opacity:.15}}
+  footer{padding:20px 16px 40px;color:var(--ink3);font-size:12px}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <strong>DavCode AGENT</strong>
+  <button id="scheme">Chiaro / Scuro</button>
+  <button id="rail">Rail (barra compressa)</button>
+  <button id="blink">Cursore: lampeggiante</button>
+  <span class="note">Misure reali: riga alta 24px · nome 18px/600 · rail 36px con il solo segno · icona 16 e 32px.
+    Il segno è monocromatico: eredita il colore del testo, quindi funziona in entrambi gli schemi senza varianti.</span>
+</div>
+
+<!-- ══════════ i sei segni, disegnati una volta e riusati ══════════ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <mask id="knock-d">
+      <rect width="24" height="24" fill="#fff"/>
+      <path d="M9 6.4h3.1a5.6 5.6 0 0 1 0 11.2H9z" fill="#000"/>
+    </mask>
+
+    <!-- 1 · badge: la D in negativo dentro un quadrato arrotondato -->
+    <symbol id="mark-badge" viewBox="0 0 24 24">
+      <rect x="1.2" y="1.2" width="21.6" height="21.6" rx="6.2" fill="currentColor" mask="url(#knock-d)"/>
+    </symbol>
+
+    <!-- 2 · {D}: le graffe del codice attorno all'iniziale -->
+    <symbol id="mark-braces" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8.6 4.4c-1.7 0-2.1 1.4-2.1 3v2.4c0 1.6-.7 2.4-1.9 2.6 1.2.2 1.9 1 1.9 2.6v2.4c0 1.6.4 3 2.1 3"/>
+        <path d="M15.4 19.6c1.7 0 2.1-1.4 2.1-3v-2.4c0-1.6.7-2.4 1.9-2.6-1.2-.2-1.9-1-1.9-2.6V6.6c0-1.6-.4-3-2.1-3"/>
+      </g>
+      <g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9.4 6.6h1.5a5.4 5.4 0 0 1 0 10.8H9.4z"/>
+        <path d="M9.4 6.6v10.8"/>
+      </g>
+    </symbol>
+
+    <!-- 3 · monogramma D/C: l'asta della D e una pancia che resta aperta, quindi si legge anche come C -->
+    <symbol id="mark-monogram" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7.6 4.6v14.8"/>
+        <path d="M7.6 4.6h2.9a7.4 7.4 0 0 1 0 14.8H7.6"/>
+      </g>
+      <path d="M17.9 7.2a7.4 7.4 0 0 1 0 9.6" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- 4 · >D: il chevron del prompt davanti all'iniziale -->
+    <symbol id="mark-chevron" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3.6 7.4 8 12l-4.4 4.6"/>
+        <path d="M12.4 6.6v10.8"/>
+        <path d="M12.4 6.6h2.4a5.4 5.4 0 0 1 0 10.8h-2.4"/>
+      </g>
+    </symbol>
+
+    <!-- 5 · D con cursore del terminale -->
+    <symbol id="mark-cursor" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4.4 6.6h2.2a5.4 5.4 0 0 1 0 10.8H4.4z"/>
+        <path d="M4.4 6.6v10.8"/>
+      </g>
+      <rect class="cursor" x="15.4" y="11.2" width="3.4" height="6.6" rx="1.1" fill="currentColor"/>
+    </symbol>
+
+    <!-- 6 · il nodo: due quadrati intrecciati, nessuna lettera -->
+    <symbol id="mark-knot" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
+        <rect x="5.2" y="5.2" width="13.6" height="13.6" rx="3.4"/>
+        <rect x="5.2" y="5.2" width="13.6" height="13.6" rx="3.4" transform="rotate(45 12 12)"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<section>
+  <h2>La riga vera, segno per segno</h2>
+  <p class="lede">Ogni riquadro mostra la riga del marchio alla misura dell'applicazione, il segno da solo
+    come appare nel rail (36px) e come icona dell'applicazione (32 e 16px).</p>
+  <div class="grid">
+
+    <div class="card">
+      <h3>1 · Badge con la D in negativo</h3>
+      <p>Quadrato arrotondato pieno, la D ritagliata dentro. A 16px resta leggibile e diventa da solo
+        l'icona del collegamento sul Desktop.</p>
+      <div class="demo">
+        <span class="row"><svg class="mark" style="--s:20px"><use href="#mark-badge"/></svg>
+          <span class="name">DavCode<span class="role">AGENT</span></span></span>
+      </div>
+      <div class="sizes">
+        <b>rail</b> <svg class="mark" style="--s:36px"><use href="#mark-badge"/></svg>
+        <b>icona</b> <span class="icon" style="--box:32px"><svg class="mark"><use href="#mark-badge"/></svg></span>
+        <span class="icon" style="--box:16px;border-radius:5px"><svg class="mark"><use href="#mark-badge"/></svg></span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>2 · <code>{D}</code></h3>
+      <p>Le graffe dicono <em>codice</em> all'istante, e l'iniziale resta centrale. Attenzione: a 16px le
+        graffe si assottigliano, è il segno che soffre più degli altri in piccolo.</p>
+      <div class="demo">
+        <span class="row"><svg class="mark" style="--s:22px"><use href="#mark-braces"/></svg>
+          <span class="name">DavCode<span class="role">AGENT</span></span></span>
+      </div>
+      <div class="sizes">
+        <b>rail</b> <svg class="mark" style="--s:36px"><use href="#mark-braces"/></svg>
+        <b>icona</b> <span class="icon" style="--box:32px"><svg class="mark"><use href="#mark-braces"/></svg></span>
+        <span class="icon" style="--box:16px;border-radius:5px"><svg class="mark"><use href="#mark-braces"/></svg></span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>3 · Monogramma D/C</h3>
+      <p>L'asta della D con una pancia che resta aperta: lo stesso tratto si legge come D e come C.
+        Sobrio, senza tempo, e a 20px tiene bene.</p>
+      <div class="demo">
+        <span class="row"><svg class="mark" style="--s:22px"><use href="#mark-monogram"/></svg>
+          <span class="name">DavCode<span class="role">AGENT</span></span></span>
+      </div>
+      <div class="sizes">
+        <b>rail</b> <svg class="mark" style="--s:36px"><use href="#mark-monogram"/></svg>
+        <b>icona</b> <span class="icon" style="--box:32px"><svg class="mark"><use href="#mark-monogram"/></svg></span>
+        <span class="icon" style="--box:16px;border-radius:5px"><svg class="mark"><use href="#mark-monogram"/></svg></span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>4 · <code>&gt;D</code></h3>
+      <p>Il chevron del prompt davanti all'iniziale: è il segno più "agente" dei sei, e il più discreto.</p>
+      <div class="demo">
+        <span class="row"><svg class="mark" style="--s:22px"><use href="#mark-chevron"/></svg>
+          <span class="name">DavCode<span class="role">AGENT</span></span></span>
+      </div>
+      <div class="sizes">
+        <b>rail</b> <svg class="mark" style="--s:36px"><use href="#mark-chevron"/></svg>
+        <b>icona</b> <span class="icon" style="--box:32px"><svg class="mark"><use href="#mark-chevron"/></svg></span>
+        <span class="icon" style="--box:16px;border-radius:5px"><svg class="mark"><use href="#mark-chevron"/></svg></span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>5 · D con cursore</h3>
+      <p>La D seguita dal blocco del cursore. Il pulsare si può accendere o spegnere dal pulsante in alto:
+        da fermo è un segno pulito, acceso ha un soffio di vita.</p>
+      <div class="demo">
+        <span class="row"><svg class="mark" style="--s:22px"><use href="#mark-cursor"/></svg>
+          <span class="name">DavCode<span class="role">AGENT</span></span></span>
+      </div>
+      <div class="sizes">
+        <b>rail</b> <svg class="mark" style="--s:36px"><use href="#mark-cursor"/></svg>
+        <b>icona</b> <span class="icon" style="--box:32px"><svg class="mark"><use href="#mark-cursor"/></svg></span>
+        <span class="icon" style="--box:16px;border-radius:5px"><svg class="mark"><use href="#mark-cursor"/></svg></span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>6 · Il nodo</h3>
+      <p>Due quadrati intrecciati, nessuna lettera. Elegante e premium, ma non dice "DavCode":
+        funziona <em>accanto</em> al nome, mai da solo come icona.</p>
+      <div class="demo">
+        <span class="row"><svg class="mark" style="--s:22px"><use href="#mark-knot"/></svg>
+          <span class="name">DavCode<span class="role">AGENT</span></span></span>
+      </div>
+      <div class="sizes">
+        <b>rail</b> <svg class="mark" style="--s:36px"><use href="#mark-knot"/></svg>
+        <b>icona</b> <span class="icon" style="--box:32px"><svg class="mark"><use href="#mark-knot"/></svg></span>
+        <span class="icon" style="--box:16px;border-radius:5px"><svg class="mark"><use href="#mark-knot"/></svg></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Il nome: due modi di scrivere "AGENT"</h2>
+  <p class="lede">A sinistra il descrittore sulla stessa riga (più largo, come l'attuale "DEEPSEEK HARNESS");
+    a destra su due righe, riusando una variante che la barra laterale già conosce. Il segno è quello del
+    concetto 1.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Una riga sola</h3>
+      <p>Il nome in evidenza, il ruolo attenuato e spaziato: gerarchia netta, occupa più larghezza.</p>
+      <div class="demo">
+        <span class="row" style="gap:8px">
+          <svg class="mark" style="--s:20px"><use href="#mark-badge"/></svg>
+          <span class="name">DavCode<span class="role">AGENT</span></span>
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Due righe</h3>
+      <p>Più compatto in orizzontale: utile se la barra laterale si restringe o se aggiungi altri elementi
+        nella riga del marchio.</p>
+      <div class="demo">
+        <span class="row" style="gap:8px">
+          <svg class="mark" style="--s:20px"><use href="#mark-badge"/></svg>
+          <span class="stack"><span class="top">DavCode</span><span class="bottom">AGENT</span></span>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Nel contesto: la barra laterale intera</h2>
+  <p class="lede">Con il pulsante <em>Rail</em> in alto vedi cosa succede quando la barra si comprime:
+    resta il solo segno, ed è il test che elimina i segni troppo intricati.</p>
+  <div class="sidebyside">
+    <div class="app">
+      <div class="sidebar">
+        <div class="logoRow">
+          <svg class="mark" style="--s:20px"><use href="#mark-badge"/></svg>
+          <span class="name hideInRail">DavCode<span class="role">AGENT</span></span>
+        </div>
+        <div class="new hideInRail">＋ Nuova sessione</div>
+        <div class="peak hideInRail">● Fuori picco · fino alle 03:00 costa la metà</div>
+        <div class="sess on hideInRail">Nomi e segno dell'interfaccia</div>
+        <div class="sess hideInRail">Installazione su altro PC</div>
+        <div class="foot hideInRail">⚙ Impostazioni <span class="chip">$19,52</span></div>
+      </div>
+    </div>
+    <div class="app">
+      <div class="sidebar">
+        <div class="logoRow">
+          <svg class="mark" style="--s:20px"><use href="#mark-braces"/></svg>
+          <span class="name hideInRail">DavCode<span class="role">AGENT</span></span>
+        </div>
+        <div class="new hideInRail">＋ Nuova sessione</div>
+        <div class="peak hideInRail">● Fuori picco · fino alle 03:00 costa la metà</div>
+        <div class="sess on hideInRail">Nomi e segno dell'interfaccia</div>
+        <div class="sess hideInRail">Installazione su altro PC</div>
+        <div class="foot hideInRail">⚙ Impostazioni <span class="chip">$19,52</span></div>
+      </div>
+    </div>
+    <div class="app">
+      <div class="sidebar">
+        <div class="logoRow">
+          <svg class="mark" style="--s:20px"><use href="#mark-monogram"/></svg>
+          <span class="name hideInRail">DavCode<span class="role">AGENT</span></span>
+        </div>
+        <div class="new hideInRail">＋ Nuova sessione</div>
+        <div class="peak hideInRail">● Fuori picco · fino alle 03:00 costa la metà</div>
+        <div class="sess on hideInRail">Nomi e segno dell'interfaccia</div>
+        <div class="sess hideInRail">Installazione su altro PC</div>
+        <div class="foot hideInRail">⚙ Impostazioni <span class="chip">$19,52</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Provino, non l'interfaccia reale: i colori e le misure sono quelli veri (scala <em>neutral-bluish</em>, nome 18px/600,
+  riga 24px), la disposizione è una ricostruzione. I segni sono disegnati in SVG monocromatico, quindi seguono
+  il colore del testo senza varianti per chiaro e scuro.
+</footer>
+
+<script>
+  const root = document.documentElement
+  const toggle = (button, attribute, on, off) => {
+    button.onclick = () => {
+      const next = root.dataset[attribute] === on ? off : on
+      root.dataset[attribute] = next
+      button.setAttribute('aria-pressed', String(next === on))
+    }
+  }
+  toggle(document.getElementById('scheme'), 'scheme', 'dark', 'light')
+  toggle(document.getElementById('rail'), 'rail', 'yes', 'no')
+  toggle(document.getElementById('blink'), 'blink', 'yes', 'no')
+</script>
+</body>
+</html>

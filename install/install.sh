@@ -1,5 +1,9 @@
 #!/usr/bin/env sh
-# Install these packs into the local DSH Web profile.
+# Install every package of this repository into the local DSH Web profile and leave a
+# DavCode AGENT launcher (and Desktop entry, when there is a Desktop) behind.
+#
+#   sh install/install.sh                    (DSH_VERSION overrides the pinned release,
+#                                             SKIP_SHORTCUT=1 leaves the launcher alone)
 # Requires: the `dsh` CLI and pnpm on PATH. Set DSH_CMD to override the command.
 set -eu
 root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
@@ -21,6 +25,11 @@ if [ -f "$settings" ]; then
   fi
 else
   echo "no settings.yaml yet: pick Italiano in Settings > Generale > Lingua after the first start"
+fi
+
+if [ "${SKIP_SHORTCUT:-0}" != "1" ]; then
+  echo
+  sh "$root/install/shortcut.sh"
 fi
 
 echo

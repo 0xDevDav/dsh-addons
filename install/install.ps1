@@ -1,6 +1,14 @@
-# Install these packs into the local DSH Web profile.
-#   pwsh -File install/install.ps1            (or: powershell -ExecutionPolicy Bypass -File ...)
+# Install every package of this repository into the local DSH Web profile and leave a
+# DavCode AGENT shortcut on the Desktop.
+#
+#   pwsh -File install/install.ps1 [-Version 0.1.6-alpha.1] [-NoShortcut]
+#   (or: powershell -ExecutionPolicy Bypass -File ...)
+#
 # Requires: the `dsh` CLI and pnpm on PATH. Set DSH_CMD to override the command.
+param(
+  [string]$Version = '0.1.6-alpha.1',
+  [switch]$NoShortcut
+)
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
 $dsh = if ($env:DSH_CMD) { $env:DSH_CMD } else { 'dsh' }
@@ -25,6 +33,12 @@ if (Test-Path $settings) {
   }
 } else {
   Write-Host "no settings.yaml yet: pick Italiano in Settings > Generale > Lingua after the first start"
+}
+
+if (-not $NoShortcut) {
+  Write-Host ""
+  Write-Host "creating the Desktop shortcut"
+  & (Join-Path $PSScriptRoot 'shortcut.ps1') -Version $Version
 }
 
 Write-Host ""

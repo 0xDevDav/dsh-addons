@@ -289,11 +289,13 @@ check(mark.props['aria-label'] === 'DavCode', 'the mark has no accessible name f
 check(mark.props.children.type === 'g' && mark.props.children.props.transform === 'translate(-21, -5)', 'the mark is missing the drawn group shift')
 check(mark.props.children.props.children.length === 4, 'the rail mark is not the same four shapes')
 
-// ── the hero: the same artwork, at the edge the host asks for ───────────────
-const hero = componentOf('conversation.hero.brand.mark')({ size: 34 })
+// ── the hero: the same artwork, larger than the edge the host reserves ──────
+const hero = render(componentOf('conversation.hero.brand.mark')({ size: 34 }))
 check(hero.props.viewBox === rowArt.props.viewBox, 'the hero artwork is not the same canvas as the row')
 check(hero.props['aria-label'] === 'DavCode AGENT', 'the hero artwork has no accessible name')
-check(Math.abs(hero.props.width - 34 * (495 / 120)) < 1e-9 && hero.props.height === 34, 'the hero artwork does not scale uniformly')
+const HERO_HEIGHT = 56
+check(Math.abs(hero.props.width - HERO_HEIGHT * (495 / 120)) < 1e-9 && hero.props.height === HERO_HEIGHT, `the hero artwork is ${hero.props.width}x${hero.props.height}, not the pack's own ${HERO_HEIGHT}px floor`)
+check(render(componentOf('conversation.hero.brand.mark')({ size: 80 })).props.height === 80, 'a host asking for more than the floor must get it')
 
 // ── the other ground: the same drawing, in the palette supplied for it ──────
 const schemeObserver = observers.find((observer) => observer.target === root)
