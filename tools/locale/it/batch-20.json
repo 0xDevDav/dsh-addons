@@ -1,7 +1,10 @@
 {
  "batch": "permission.access",
  "namespace": "permission.access",
+ "total": 17,
  "keys": {
+  "mode": "Modalità di accesso, attuale: {name}",
+  "close": "Chiudi",
   "preset.readOnly": "Sola lettura",
   "preset.workspaceWrite": "Scrittura nell'area di lavoro",
   "preset.fullAccess": "Accesso completo",
@@ -9,6 +12,13 @@
   "confirm.description": "L'accesso completo riduce i passi di conferma e consente all'agente di eseguire più azioni direttamente, incluse operazioni sensibili, modifiche ai file o comandi esterni. Usalo solo quando ti fidi del compito corrente.",
   "confirm.acknowledge": "Ho capito i rischi e voglio continuare",
   "confirm.cancel": "Annulla",
-  "confirm.enable": "Attiva l'accesso completo"
+  "confirm.enable": "Attiva l'accesso completo",
+  "auto.label": "Auto review",
+  "auto.badge": "EXP",
+  "auto.description": "Esegue senza sandbox dopo una revisione sperimentale, da parte dello stesso modello, di ogni chiamata a strumento nativa e di ogni chiamata interna PTC.",
+  "auto.confirm.title": "Attivare Auto review (sperimentale)?",
+  "auto.confirm.description": "Auto review viene eseguito senza sandbox. Prima di ogni chiamata a strumento nativa e di ogni chiamata interna PTC, lo stesso modello dell'agente corrente valuta se consentirla. La funzione è sperimentale, può autorizzare o negare azioni per errore e consuma token aggiuntivi.",
+  "auto.confirm.acknowledge": "Ho capito questi rischi e voglio continuare",
+  "auto.confirm.enable": "Attiva Auto review"
  }
 }

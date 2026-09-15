@@ -1,7 +1,7 @@
 {
  "batch": "settings",
  "namespace": "settings",
- "total": 12,
+ "total": 11,
  "keys": {
   "trigger": {
    "en": "Settings",
@@ -29,15 +29,11 @@
   },
   "connection.error": {
    "en": "Disconnected",
-   "zh": "连接异常"
-  },
-  "connection.retry": {
-   "en": "Reconnect now",
-   "zh": "立即重连"
+   "zh": "连接异常，刷新重试"
   },
   "connection.connecting": {
    "en": "Reconnecting",
-   "zh": "自动重连中"
+   "zh": "重新连接中"
   },
   "connection.connected": {
    "en": "Connected",
@@ -48,8 +44,8 @@
    "zh": "连接异常，点击立即重连"
   },
   "connection.restart": {
-   "en": "Reconnecting automatically, reconnect now",
-   "zh": "连接中断，正在自动重试，点击立即重连"
+   "en": "Reconnecting, reconnect now",
+   "zh": "连接中断，正在重试，点击立即重连"
   }
  }
 }

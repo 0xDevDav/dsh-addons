@@ -1,32 +1,8 @@
 {
  "batch": "conversation#3",
  "namespace": "conversation",
- "total": 19,
+ "total": 13,
  "keys": {
-  "queue.save": {
-   "en": "Save queued message",
-   "zh": "保存排队消息"
-  },
-  "queue.cancelEdit": {
-   "en": "Cancel editing",
-   "zh": "取消编辑"
-  },
-  "queue.remove": {
-   "en": "Remove queued message",
-   "zh": "删除排队消息"
-  },
-  "queue.steer": {
-   "en": "Steer queued message",
-   "zh": "插话发送"
-  },
-  "queue.steer.unavailable": {
-   "en": "Steering is available only while the agent is running",
-   "zh": "仅运行中可插话发送"
-  },
-  "queue.editFailed": {
-   "en": "Edit failed: this message may have already started sending.",
-   "zh": "编辑失败：这条消息可能已经开始发送。"
-  },
   "queue.removeFailed": {
    "en": "Removal failed: this message may have already started sending.",
    "zh": "删除失败：这条消息可能已经开始发送。"

@@ -1,6 +1,7 @@
 {
  "batch": "deliverables",
  "namespace": "deliverables",
+ "total": 37,
  "keys": {
   "presented.nativeUnavailable": "Questo file non ha un percorso Host disponibile. Visualizzalo nella barra laterale.",
   "presented.revealError": "Impossibile mostrarlo nel file manager. Riprova.",
@@ -35,7 +36,6 @@
   "row.error": "Consegna non riuscita",
   "row.stopped": "Interrotto",
   "row.inspect": "Ispeziona chiamata",
-  "presented.open": "Apri {name} con l'app predefinita",
   "produced.label": "File modificati",
   "produced.moreOne": "+ 1 file",
   "produced.more": "+ {count} file",

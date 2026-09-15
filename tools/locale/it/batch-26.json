@@ -1,6 +1,7 @@
 {
  "batch": "settings.models#1",
  "namespace": "settings.models",
+ "total": 70,
  "keys": {
   "nav": "Modelli",
   "title": "Modelli",
@@ -35,6 +36,9 @@
   "customized": "Impostazioni personalizzate",
   "baseUrl": "URL di base",
   "baseUrlDefault": "Predefinito del provider",
+  "deepSeekChatBaseUrl": "https://api.deepseek.com",
+  "deepSeekMessagesBaseUrl": "https://api.deepseek.com/anthropic",
+  "deepSeekEndpointHint": "Usa un endpoint compatibile con la connessione configurata.",
   "models": "Modelli",
   "modelsInherited": "Usa i valori predefiniti dell'adattatore",
   "modelsCustomized": "Catalogo dei modelli personalizzato",
@@ -68,9 +72,6 @@
   "fetching": "Interrogazione del provider…",
   "fetchNeedsBaseUrl": "Inserisci prima l'URL di base, poi recupera.",
   "fetchEmpty": "Il provider non ha elencato alcun modello. Aggiungili manualmente.",
-  "fetchTitle": "Scegli i modelli da aggiungere",
-  "fetchDescription": "Questi sono i modelli disponibili presso il provider. Scegli quelli da aggiungere.",
-  "fetchSearch": "Cerca modelli",
-  "fetchNoMatches": "Nessun modello corrispondente."
+  "fetchTitle": "Scegli i modelli da aggiungere"
  }
 }

@@ -1,6 +1,7 @@
 {
  "batch": "slash.menu",
  "namespace": "slash.menu",
+ "total": 9,
  "keys": {
   "command": "Comandi",
   "skill": "Skill",

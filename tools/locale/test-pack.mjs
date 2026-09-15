@@ -59,7 +59,9 @@ for (const [ns, src] of Object.entries(expected)) {
   totalKeys += Object.keys(got.dict).length
 }
 check(mismatched === 0, `${mismatched} namespaces have a different key set than the source`)
-check(totalKeys === 1257, `registered ${totalKeys} keys, expected 1257`)
+// The expected total comes from the dictionary, so this stays true after every update.
+const expectedKeys = Object.values(expected).reduce((sum, dict) => sum + Object.keys(dict).length, 0)
+check(totalKeys === expectedKeys, `registered ${totalKeys} keys, expected ${expectedKeys}`)
 check(effects.length === expectedNs.length + 1, `${effects.length} effects for ${expectedNs.length} namespaces + language`)
 
 // ── disposers must be functions and removal must be symmetric ───────────────

@@ -1,27 +1,23 @@
 {
- "batch": "sidebarImage",
- "namespace": "sidebarImage",
- "total": 5,
+ "batch": "documentHtml",
+ "namespace": "documentHtml",
+ "total": 4,
  "keys": {
   "title": {
-   "en": "Image",
-   "zh": "图片"
+   "en": "HTML",
+   "zh": "HTML"
   },
-  "preview": {
-   "en": "Image preview: {name}",
-   "zh": "图片预览：{name}"
+  "frame": {
+   "en": "HTML document preview",
+   "zh": "HTML 文档预览"
   },
   "loading": {
-   "en": "Opening image…",
-   "zh": "正在打开图片…"
+   "en": "Reading…",
+   "zh": "正在读取…"
   },
   "failed": {
-   "en": "This image could not be displayed.",
-   "zh": "无法显示这张图片。"
-  },
-  "unsupported": {
-   "en": "Image preview requires the complete file contents.",
-   "zh": "图片预览需要完整文件内容。"
+   "en": "This HTML document could not be previewed.",
+   "zh": "无法预览这份 HTML 文档"
   }
  }
 }

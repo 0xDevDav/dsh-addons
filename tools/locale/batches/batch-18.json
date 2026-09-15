@@ -1,8 +1,12 @@
 {
  "batch": "model",
  "namespace": "model",
- "total": 20,
+ "total": 21,
  "keys": {
+  "command.label": {
+   "en": "Model",
+   "zh": "模型"
+  },
   "command.description": {
    "en": "Select the model for this conversation",
    "zh": "选择本会话使用的模型"

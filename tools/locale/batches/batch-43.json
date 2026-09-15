@@ -1,287 +1,43 @@
 {
- "batch": "trajectory#2",
- "namespace": "trajectory",
- "total": 70,
+ "batch": "settings.theme",
+ "namespace": "settings.theme",
+ "total": 9,
  "keys": {
-  "usage.sessionCumulative": {
-   "en": "Session cumulative",
-   "zh": "会话累计"
-  },
-  "options.notRecorded": {
-   "en": "Options not recorded",
-   "zh": "未记录选项"
-  },
-  "options.json": {
-   "en": "Request options JSON",
-   "zh": "请求选项 JSON"
-  },
-  "source.unknown": {
-   "en": "Unknown",
-   "zh": "未知"
-  },
-  "source.user": {
-   "en": "User",
-   "zh": "用户"
-  },
-  "source.plugin": {
-   "en": "Plugin",
-   "zh": "插件"
-  },
-  "source.pluginNamed": {
-   "en": "Plugin · {plugin}",
-   "zh": "插件 · {plugin}"
-  },
-  "source.goal": {
-   "en": "Goal",
-   "zh": "目标"
-  },
-  "source.goalRound": {
-   "en": "Goal · Round {round}",
-   "zh": "目标 · Round {round}"
-  },
-  "source.notRecorded": {
-   "en": "Source not recorded",
-   "zh": "未记录来源"
-  },
-  "source.messageJson": {
-   "en": "Message source JSON",
-   "zh": "消息来源 JSON"
-  },
-  "tab.summary": {
-   "en": "Summary",
-   "zh": "概述"
-  },
-  "tab.rawOutput": {
-   "en": "Raw Output",
-   "zh": "原始输出"
-  },
-  "tab.preview": {
-   "en": "Preview",
-   "zh": "预览"
-  },
-  "tab.raw": {
-   "en": "Raw",
-   "zh": "原始内容"
-  },
-  "tab.source": {
-   "en": "Source",
-   "zh": "来源"
-  },
-  "tab.payload": {
-   "en": "Payload",
-   "zh": "参数"
-  },
-  "tab.result": {
-   "en": "Result",
-   "zh": "结果"
-  },
-  "tab.schema": {
-   "en": "Schema",
-   "zh": "Schema"
-  },
-  "tab.timing": {
-   "en": "Timing",
-   "zh": "计时"
-  },
-  "tab.diff": {
-   "en": "Diff",
-   "zh": "差异"
-  },
-  "tab.systemPrompt": {
-   "en": "System Prompt",
-   "zh": "系统提示词"
-  },
-  "tab.tools": {
-   "en": "Tools",
-   "zh": "工具"
-  },
-  "tab.options": {
-   "en": "Options",
-   "zh": "选项"
-  },
-  "tab.usage": {
-   "en": "Usage",
-   "zh": "用量"
-  },
-  "record.toolCallOnly": {
-   "en": "(tool call only)",
-   "zh": "（仅工具调用）"
-  },
-  "record.noContent": {
-   "en": "No content",
-   "zh": "无内容"
-  },
-  "record.noPayload": {
-   "en": "No payload captured",
-   "zh": "未捕获参数"
-  },
-  "record.noResult": {
-   "en": "No result captured",
-   "zh": "未捕获结果"
-  },
-  "record.noOutput": {
-   "en": "No output",
-   "zh": "无输出"
-  },
-  "record.schemaUnavailable": {
-   "en": "Schema unavailable",
-   "zh": "Schema 不可用"
-  },
-  "record.parameters": {
-   "en": "Parameters",
-   "zh": "参数"
-  },
-  "record.resultJson": {
-   "en": "Result JSON",
-   "zh": "结果 JSON"
-  },
-  "record.json": {
-   "en": "JSON",
-   "zh": "JSON"
-  },
-  "record.parametersJson": {
-   "en": "parameters JSON",
-   "zh": "参数 JSON"
-  },
-  "record.namedParametersJson": {
-   "en": "{name} parameters JSON",
-   "zh": "{name} 参数 JSON"
-  },
-  "record.payloadJson": {
-   "en": "Payload JSON",
-   "zh": "参数 JSON"
-  },
-  "record.outputJson": {
-   "en": "Result JSON",
-   "zh": "结果 JSON"
-  },
-  "record.thinking": {
-   "en": "Thinking",
-   "zh": "思考"
-  },
-  "record.systemPromptMissing": {
-   "en": "No system prompt in this request",
-   "zh": "本次请求没有系统提示词"
-  },
-  "record.toolsMissing": {
-   "en": "No tools in this request",
-   "zh": "本次请求没有工具"
-  },
-  "record.systemPrompt": {
-   "en": "System Prompt",
-   "zh": "系统提示词"
-  },
-  "record.tools": {
-   "en": "Tools",
-   "zh": "工具"
-  },
-  "block.openSummary": {
-   "en": "Open Block #{index} tool call summary",
-   "zh": "打开第 {index} 个块的工具调用概述"
-  },
-  "block.openSummaryTitle": {
-   "en": "Open tool call summary",
-   "zh": "打开工具调用概述"
-  },
-  "block.label": {
-   "en": "Block #{index} {type}",
-   "zh": "块 #{index} {type}"
-  },
-  "history.loadingTrajectory": {
-   "en": "Loading trajectory…",
-   "zh": "正在加载轨迹…"
-  },
-  "history.loadingEarlier": {
-   "en": "Loading earlier history…",
-   "zh": "正在加载更早的历史…"
-  },
-  "history.loadingEarlierAria": {
-   "en": "Loading earlier history…",
-   "zh": "正在加载更早的历史…"
-  },
-  "history.loadEarlier": {
-   "en": "Load earlier history",
-   "zh": "加载更早的历史"
-  },
-  "history.clickToLoadEarlier": {
-   "en": "Click to load earlier history",
-   "zh": "点击加载更早的历史"
-  },
-  "request.label": {
-   "en": "Request #{request}",
-   "zh": "请求 #{request}"
-  },
-  "request.labelCompaction": {
-   "en": "Request #{request} · Compaction",
-   "zh": "请求 #{request} · 压缩"
-  },
-  "request.compaction": {
-   "en": "Compaction · {section}",
-   "zh": "压缩 · {section}"
-  },
-  "request.compactionPurpose": {
-   "en": "Compaction",
-   "zh": "压缩"
-  },
-  "request.retryProgress": {
-   "en": "{retry} of {maximum}",
-   "zh": "{retry}/{maximum}"
-  },
-  "request.collapsedSummary": {
-   "en": "Collapsed {kind} summary, {summary}",
-   "zh": "已收起的{kind}概述，{summary}"
-  },
-  "request.collapsedTurn": {
-   "en": "turn",
-   "zh": "轮次"
-  },
-  "request.collapsedAssistant": {
-   "en": "assistant",
-   "zh": "助手"
-  },
-  "request.rowAria": {
-   "en": "{request}{kind}, {content}",
-   "zh": "{request}{kind}，{content}"
-  },
-  "request.rowPrefix": {
-   "en": "Request {request}, ",
-   "zh": "请求 {request}，"
-  },
-  "request.rowAriaCompaction": {
-   "en": "Request {request}, compaction",
-   "zh": "请求 {request}，压缩"
-  },
-  "request.noContent": {
-   "en": "no content",
-   "zh": "无内容"
-  },
-  "summary.toolCalls.one": {
-   "en": "{count} tool call",
-   "zh": "{count} 个工具调用"
-  },
-  "summary.toolCalls.other": {
-   "en": "{count} tool calls",
-   "zh": "{count} 个工具调用"
-  },
-  "summary.steps.one": {
-   "en": "{count} step",
-   "zh": "{count} 个步骤"
-  },
-  "summary.steps.other": {
-   "en": "{count} steps",
-   "zh": "{count} 个步骤"
-  },
-  "details.event": {
-   "en": "Event details",
-   "zh": "事件详情"
-  },
-  "details.resize": {
-   "en": "Resize event details",
-   "zh": "调整事件详情宽度"
-  },
-  "details.resizeTitle": {
-   "en": "Drag to resize. Double-click to reset.",
-   "zh": "拖动调整大小；双击恢复默认值。"
+  "appearance.title": {
+   "en": "Appearance",
+   "zh": "外观"
+  },
+  "appearance.light": {
+   "en": "Light",
+   "zh": "浅色"
+  },
+  "appearance.dark": {
+   "en": "Dark",
+   "zh": "深色"
+  },
+  "appearance.system": {
+   "en": "System",
+   "zh": "跟随系统"
+  },
+  "fontSize.title": {
+   "en": "Font size",
+   "zh": "字号大小"
+  },
+  "fontSize.description": {
+   "en": "Only affects conversation content",
+   "zh": "仅影响会话内容的字号"
+  },
+  "fontSize.unit": {
+   "en": "px",
+   "zh": "px"
+  },
+  "fontSize.increase": {
+   "en": "Increase font size",
+   "zh": "增大字号"
+  },
+  "fontSize.decrease": {
+   "en": "Decrease font size",
+   "zh": "减小字号"
   }
  }
 }

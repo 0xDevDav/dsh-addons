@@ -1,6 +1,7 @@
 {
  "batch": "schedule.catalog",
  "namespace": "schedule.catalog",
+ "total": 18,
  "keys": {
   "trigger.one": "{count} promemoria",
   "trigger.other": "{count} promemoria",

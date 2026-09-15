@@ -1,0 +1,135 @@
+{
+ "note": "Italian for DSH 0.1.6-alpha.1: the 88 keys the release adds and the 10 whose English text changed. Values identical to English are deliberate: formats, URLs, command tokens, the Auto review feature name and the EXP badge.",
+ "it": {
+  "settings.agentPreset": {
+   "selectionOffDefault": "Predefinito",
+   "showPicker": "Consenti di cambiare modalità agente",
+   "showPickerBeta": "Beta",
+   "showPickerDescription": "Se attivo, le nuove attività possono scegliere le modalità standard, PTC, Creator, minimale e personalizzata. Se disattivo, tutte le nuove attività usano la modalità predefinita (standard, salvo diversa configurazione). Ha effetto solo sulle nuove attività.",
+   "enablePickerToSetDefault": "Attiva la selezione della modalità agente per scegliere un valore predefinito",
+   "enablePickerToCreate": "Attiva la selezione della modalità agente per avviare la modalità Creator",
+   "inUse": "Predefinito per le nuove attività"
+  },
+  "chat": {
+   "duration.hours": "{hours}h {minutes}m {seconds}s"
+  },
+  "command": {
+   "section.add": "Aggiungi",
+   "section.commands": "Comandi",
+   "label.goal": "Obiettivo",
+   "label.plan": "Piano",
+   "label.feedback": "Feedback",
+   "label.compact": "Compatta",
+   "label.permission": "Autorizzazione",
+   "label.export": "Esporta",
+   "token.goal": "goal",
+   "token.plan": "plan",
+   "token.feedback": "feedback",
+   "token.compact": "compact",
+   "token.permission": "permission",
+   "token.export": "export",
+   "description.goal": "Imposta o visualizza l'obiettivo di un'attività di lunga durata",
+   "description.feedback": "Registra un feedback su questa sessione"
+  },
+  "conversation": {
+   "input.file": "File",
+   "input.commands": "Aggiungi file o esegui comandi",
+   "tool.autoReviewRejected": "Rifiutato da Auto review",
+   "tool.autoReviewNotExecuted": "Lo strumento non è stato eseguito. Motivo: {reason}",
+   "tool.autoReviewReasonFallback": "Auto review non ha autorizzato questa azione"
+  },
+  "model": {
+   "command.label": "Modello"
+  },
+  "permission.access": {
+   "mode": "Modalità di accesso, attuale: {name}",
+   "close": "Chiudi",
+   "auto.label": "Auto review",
+   "auto.badge": "EXP",
+   "auto.description": "Esegue senza sandbox dopo una revisione sperimentale, da parte dello stesso modello, di ogni chiamata a strumento nativa e di ogni chiamata interna PTC.",
+   "auto.confirm.title": "Attivare Auto review (sperimentale)?",
+   "auto.confirm.description": "Auto review viene eseguito senza sandbox. Prima di ogni chiamata a strumento nativa e di ogni chiamata interna PTC, lo stesso modello dell'agente corrente valuta se consentirla. La funzione è sperimentale, può autorizzare o negare azioni per errore e consuma token aggiuntivi.",
+   "auto.confirm.acknowledge": "Ho capito questi rischi e voglio continuare",
+   "auto.confirm.enable": "Attiva Auto review"
+  },
+  "settings.models": {
+   "deepSeekChatBaseUrl": "https://api.deepseek.com",
+   "deepSeekMessagesBaseUrl": "https://api.deepseek.com/anthropic",
+   "deepSeekEndpointHint": "Usa un endpoint compatibile con la connessione configurata."
+  },
+  "settings.archivedSessions": {
+   "nav": "Sessioni archiviate",
+   "search": "Cerca nelle sessioni archiviate",
+   "loading": "Lettura delle sessioni…",
+   "empty": "Nessuna sessione archiviata.",
+   "unavailable": "Nessuna sessione archiviata qui può essere ripristinata.",
+   "emptySearch": "Nessuna sessione corrispondente.",
+   "unarchive": "Ripristina",
+   "unarchiveNamed": "Ripristina {title}",
+   "ungrouped": "Senza gruppo",
+   "time.now": "adesso",
+   "time.minutes": "{n}min",
+   "time.hours": "{n}h",
+   "time.days": "{n}g",
+   "time.months": "{n}mes",
+   "time.years": "{n}a"
+  },
+  "sidebarDocumentPreview": {
+   "unsupportedFile": "L'anteprima non è ancora disponibile per questo tipo di file.",
+   "error.notText": "L'anteprima non è ancora disponibile per questo tipo di file."
+  },
+  "sidebarTerminal": {
+   "title": "Terminale",
+   "description": "Esegui comandi nell'area di lavoro della sessione",
+   "new": "Nuovo terminale",
+   "rename": "Nome del terminale",
+   "loading": "Lettura dell'ambiente del terminale…",
+   "creating": "Avvio…",
+   "connecting": "Connessione…",
+   "disconnected": "Connessione interrotta.",
+   "reconnect": "Riconnetti",
+   "readonly": "Questa vista è in sola lettura.",
+   "control": "Prendi il controllo",
+   "closed": "Terminale chiuso.",
+   "exited": "Processo terminato ({code})",
+   "failed": "Errore del terminale: {message}",
+   "unavailable": "Non disponibile",
+   "retry": "Riprova",
+   "recoveryFailed": "Ripristino del terminale non riuscito: {message}",
+   "retryRecovery": "Riprova il ripristino del terminale",
+   "cleanupFailed": "Impossibile terminare il terminale «{title}»: {message}",
+   "missingTerminal": "Questo terminale non esiste più. Aprine uno nuovo.",
+   "inputFull": "Il buffer di input è pieno. Riconnetti e riprova.",
+   "attachmentEnded": "La connessione al terminale è terminata. Riconnetti per continuare.",
+   "invalidOutput": "Impossibile ricevere la schermata del terminale. Riconnetti per ripristinarla.",
+   "terminalLimit": "Hai raggiunto il limite di terminali. Chiudi quelli che non usi e riprova. Anche i terminali terminati contano nel limite.",
+   "shell": "Scegli la shell",
+   "shellLoading": "Caricamento delle shell…",
+   "shellEmpty": "Nessuna shell disponibile"
+  },
+  "trajectory": {
+   "record.wrapLines": "Ritorno a capo automatico",
+   "code.source": "Codice",
+   "code.output": "Output",
+   "code.copySource": "Copia codice",
+   "code.copyOutput": "Copia output",
+   "code.originalJson": "JSON originale",
+   "code.running": "In esecuzione…"
+  },
+  "settings": {
+   "connection.restart": "Riconnessione in corso, riconnetti ora"
+  },
+  "documentHtml": {
+   "loading": "Lettura…"
+  },
+  "sidebarImage": {
+   "loading": "Lettura…"
+  },
+  "sidebarPdf": {
+   "loading": "Lettura…"
+  },
+  "question": {
+   "action.skip": "Salta"
+  }
+ }
+}

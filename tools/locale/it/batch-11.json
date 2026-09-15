@@ -1,6 +1,7 @@
 {
  "batch": "cordis",
  "namespace": "cordis",
+ "total": 50,
  "keys": {
   "row.defineTitle": "Registra Plugin Cordis",
   "row.runTitle": "Esegui Plugin Cordis",

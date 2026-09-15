@@ -1,6 +1,7 @@
 {
  "batch": "settings",
  "namespace": "settings",
+ "total": 11,
  "keys": {
   "trigger": "Impostazioni",
   "title": "Impostazioni",
@@ -9,10 +10,9 @@
   "openDocument.error": "Impossibile aprire il file di configurazione",
   "general.nav": "Generali",
   "connection.error": "Disconnesso",
-  "connection.retry": "Riconnetti ora",
   "connection.connecting": "Riconnessione in corso",
   "connection.connected": "Connesso",
   "connection.reconnect": "Disconnesso, riconnetti ora",
-  "connection.restart": "Riconnessione automatica in corso, riconnetti ora"
+  "connection.restart": "Riconnessione in corso, riconnetti ora"
  }
 }

@@ -1,6 +1,7 @@
 {
  "batch": "chat#2",
  "namespace": "chat",
+ "total": 34,
  "keys": {
   "message.retry.delay": "Ritardo nuovo tentativo: ",
   "message.retry.failure": "Motivo dell'errore: ",
@@ -26,6 +27,7 @@
   "message.turnTime.ttft": "Tempo al primo token (TTFT)",
   "duration.seconds": "{seconds}s",
   "duration.minutes": "{minutes}m {seconds}s",
+  "duration.hours": "{hours}h {minutes}m {seconds}s",
   "command.running": "In esecuzione…",
   "command.failed": "Comando non riuscito",
   "command.done": "Completato",

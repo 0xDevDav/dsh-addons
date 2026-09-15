@@ -1,24 +1,10 @@
 {
- "batch": "sidebarDocumentPreview",
- "namespace": "sidebarDocumentPreview",
+ "batch": "sidebarCodePreview",
+ "namespace": "sidebarCodePreview",
+ "total": 3,
  "keys": {
-  "loading": "Lettura…",
-  "loadMore": "Carica altro",
-  "changed": "Il file è cambiato, è mostrato il contenuto precedente.",
-  "reloadNow": "Ricarica",
-  "reload": "Leggi di nuovo il file",
-  "wrap.enable": "Attiva a capo automatico",
-  "wrap.disable": "Disattiva a capo automatico",
-  "wrap.aria": "A capo automatico",
-  "openWith": "Apri con",
-  "viewer.text": "Testo semplice",
-  "resourceUnavailable": "Il servizio di risorse dei file non è disponibile.",
-  "rendererUnavailable": "L'anteprima {name} non è disponibile.",
-  "error.notFound": "File non trovato. Potrebbe essere stato spostato o eliminato.",
-  "error.tooLarge": "Questa pagina supera il limite {limit} e non può essere letta.",
-  "error.notText": "Non è un file di testo, l'anteprima al momento non è disponibile.",
-  "error.notRegularFile": "Non è un file normale, non c'è nulla da mostrare.",
-  "error.unavailable": "Lettura non riuscita: {message}",
-  "retry": "Riprova"
+  "title": "Codice",
+  "copy": "Copia",
+  "copied": "Copiato"
  }
 }

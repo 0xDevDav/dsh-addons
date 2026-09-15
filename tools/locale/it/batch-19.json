@@ -1,6 +1,7 @@
 {
  "batch": "open-in-app",
  "namespace": "open-in-app",
+ "total": 39,
  "keys": {
   "open.title": "Apri area di lavoro in {app}",
   "open.tooltip": "Apri in locale",

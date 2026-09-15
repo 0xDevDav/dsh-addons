@@ -1,9 +1,16 @@
 {
- "batch": "sidebarCodePreview",
- "namespace": "sidebarCodePreview",
+ "batch": "sidebarPdf",
+ "namespace": "sidebarPdf",
+ "total": 9,
  "keys": {
-  "title": "Codice",
-  "copy": "Copia",
-  "copied": "Copiato"
+  "title": "PDF",
+  "pageImage": "Pagina PDF {page}",
+  "loading": "Lettura…",
+  "rendering": "Rendering pagina…",
+  "failed": "Impossibile visualizzare il PDF: {message}",
+  "password": "Questo PDF richiede una password; le anteprime protette da password non sono supportate.",
+  "workerFailed": "Il processo di rendering del PDF non può continuare. Riprova.",
+  "unsupported": "L'anteprima PDF richiede il contenuto completo del file.",
+  "retry": "Riprova"
  }
 }

@@ -1,6 +1,7 @@
 {
  "batch": "settings.pluginInventory",
  "namespace": "settings.pluginInventory",
+ "total": 36,
  "keys": {
   "tab": "Elenco plugin",
   "loading": "Lettura plugin…",

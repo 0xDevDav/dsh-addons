@@ -1,6 +1,7 @@
 {
  "batch": "directory-browser",
  "namespace": "directory-browser",
+ "total": 13,
  "keys": {
   "browser.title": "Seleziona la cartella dell'area di lavoro",
   "browser.home": "Home",

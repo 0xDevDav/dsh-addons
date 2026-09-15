@@ -1,287 +1,155 @@
 {
- "batch": "trajectory#1",
- "namespace": "trajectory",
- "total": 70,
+ "batch": "subagent",
+ "namespace": "subagent",
+ "total": 37,
  "keys": {
-  "view.trajectory": {
-   "en": "Trajectory",
-   "zh": "轨迹"
+  "diagnostic.corrupt": {
+   "en": "corrupted session record",
+   "zh": "会话记录损坏"
   },
-  "toolbar.aria": {
-   "en": "Trajectory toolbar",
-   "zh": "轨迹工具栏"
+  "diagnostic.unsupported": {
+   "en": "unsupported subagent record version",
+   "zh": "子代理记录版本不受支持"
   },
-  "toolbar.duration": {
-   "en": "Duration",
-   "zh": "时长"
+  "diagnostic.unavailable": {
+   "en": "session record temporarily unavailable",
+   "zh": "会话记录暂不可用"
   },
-  "toolbar.useActualDuration": {
-   "en": "Use actual duration",
-   "zh": "使用实际时长"
+  "duration.seconds": {
+   "en": "{seconds}s",
+   "zh": "{seconds}秒"
   },
-  "toolbar.useEqualWidth": {
-   "en": "Use equal-width operations",
-   "zh": "使用等宽操作"
+  "duration.minutes": {
+   "en": "{minutes}m {seconds}s",
+   "zh": "{minutes}分{seconds}秒"
   },
-  "toolbar.actualTime": {
-   "en": "Actual time",
-   "zh": "实际时间"
+  "duration.hours": {
+   "en": "{hours}h {minutes}m {seconds}s",
+   "zh": "{hours}小时{minutes}分{seconds}秒"
   },
-  "toolbar.turns": {
-   "en": "Turns",
-   "zh": "轮次"
+  "duration.days": {
+   "en": "{days}d",
+   "zh": "{days}天"
   },
-  "toolbar.expandTurns": {
-   "en": "Expand turns",
-   "zh": "展开所有轮次"
+  "duration.daysHours": {
+   "en": "{days}d {hours}h",
+   "zh": "{days}天{hours}小时"
   },
-  "toolbar.collapseTurns": {
-   "en": "Collapse turns",
-   "zh": "收起所有轮次"
+  "duration.months": {
+   "en": "~{months}mo",
+   "zh": "约{months}个月"
   },
-  "toolbar.calls": {
-   "en": "Calls",
-   "zh": "调用"
+  "duration.monthsDays": {
+   "en": "~{months}mo {days}d",
+   "zh": "约{months}个月{days}天"
   },
-  "toolbar.expandCalls": {
-   "en": "Expand calls",
-   "zh": "展开所有调用"
+  "duration.years": {
+   "en": "~{years}y",
+   "zh": "约{years}年"
   },
-  "toolbar.collapseCalls": {
-   "en": "Collapse calls",
-   "zh": "收起所有调用"
+  "duration.yearsMonths": {
+   "en": "~{years}y {months}mo",
+   "zh": "约{years}年{months}个月"
   },
-  "toolbar.search": {
-   "en": "Search trajectory",
-   "zh": "搜索轨迹"
+  "duration.exactDays": {
+   "en": "{days}d {hours}h {minutes}m {seconds}s",
+   "zh": "{days}天{hours}小时{minutes}分{seconds}秒"
   },
-  "toolbar.searchPlaceholder": {
-   "en": "Search",
-   "zh": "搜索"
+  "duration.exactTitle": {
+   "en": "Total active duration: {duration}",
+   "zh": "总活跃耗时：{duration}"
   },
-  "kind.system": {
-   "en": "SYSTEM",
-   "zh": "系统"
+  "tokens.thousand": {
+   "en": "{value}K",
+   "zh": "{value}K"
   },
-  "kind.user": {
-   "en": "USER",
-   "zh": "用户"
+  "tokens.million": {
+   "en": "{value}M",
+   "zh": "{value}M"
   },
-  "kind.context": {
-   "en": "CONTEXT",
-   "zh": "上下文"
-  },
-  "kind.compacted": {
-   "en": "COMPACTED",
-   "zh": "已压缩"
-  },
-  "kind.message": {
-   "en": "Message",
-   "zh": "消息"
-  },
-  "kind.assistant": {
-   "en": "ASSISTANT",
-   "zh": "助手"
-  },
-  "kind.tool": {
-   "en": "TOOL",
-   "zh": "工具"
-  },
-  "kind.subtool": {
-   "en": "SUBTOOL",
-   "zh": "子工具"
-  },
-  "kind.sub": {
-   "en": "Sub",
-   "zh": "子项"
-  },
-  "column.input": {
-   "en": "Input",
-   "zh": "输入"
-  },
-  "column.output": {
-   "en": "Output",
-   "zh": "输出"
-  },
-  "column.think": {
-   "en": "Think",
-   "zh": "思考"
-  },
-  "column.time": {
-   "en": "Time",
-   "zh": "时间"
-  },
-  "column.model": {
-   "en": "Model",
-   "zh": "模型"
-  },
-  "column.tools": {
-   "en": "Tools",
-   "zh": "工具"
-  },
-  "turn.label": {
-   "en": "Turn {turn}",
-   "zh": "第 {turn} 轮"
-  },
-  "section.betweenTurns": {
-   "en": "Between turns",
-   "zh": "轮次之间"
-  },
-  "group.message": {
-   "en": "Message",
-   "zh": "消息"
-  },
-  "group.step": {
-   "en": "Step {step}",
-   "zh": "步骤 {step}"
-  },
-  "group.compaction": {
-   "en": "Compaction {seq}",
-   "zh": "压缩 {seq}"
-  },
-  "status.failed": {
-   "en": "Failed",
-   "zh": "失败"
-  },
-  "status.pending": {
-   "en": "Pending",
-   "zh": "等待中"
-  },
-  "status.completed": {
-   "en": "Completed",
-   "zh": "已完成"
-  },
-  "timing.notAvailable": {
-   "en": "Not available",
-   "zh": "不可用"
-  },
-  "timing.notRecorded": {
-   "en": "Not recorded",
-   "zh": "未记录"
-  },
-  "timing.stepStartUnavailable": {
-   "en": "Step start unavailable",
-   "zh": "步骤开始时间不可用"
-  },
-  "timing.firstTokenUnavailable": {
-   "en": "First token unavailable",
-   "zh": "首 token 时间不可用"
-  },
-  "timing.usageUnavailable": {
-   "en": "Usage unavailable",
-   "zh": "用量不可用"
-  },
-  "timing.outputTokensUnavailable": {
-   "en": "Output tokens unavailable",
-   "zh": "输出 token 数不可用"
-  },
-  "timing.durationTooShort": {
-   "en": "Duration too short",
-   "zh": "时长过短"
-  },
-  "timing.showLocalTime": {
-   "en": "Show local time",
-   "zh": "显示本地时间"
-  },
-  "timing.showUnixTimestamp": {
-   "en": "Show Unix timestamp",
-   "zh": "显示 Unix 时间戳"
-  },
-  "timing.started": {
-   "en": "Started",
-   "zh": "开始时间"
-  },
-  "timing.totalDuration": {
-   "en": "Total duration",
-   "zh": "总时长"
-  },
-  "timing.ttft": {
-   "en": "TTFT",
-   "zh": "首 token 延迟"
-  },
-  "timing.generation": {
-   "en": "Generation",
-   "zh": "生成"
-  },
-  "timing.throughput": {
-   "en": "Throughput",
-   "zh": "吞吐量"
-  },
-  "timing.duration": {
-   "en": "Duration",
-   "zh": "时长"
-  },
-  "timing.source": {
-   "en": "Timing source",
-   "zh": "计时来源"
-  },
-  "timing.sessionTimestamps": {
-   "en": "Session timestamps",
-   "zh": "会话时间戳"
-  },
-  "timing.sessionTimestampsRunning": {
-   "en": "Session timestamps (running)",
-   "zh": "会话时间戳（运行中）"
-  },
-  "timing.request": {
-   "en": "Request Timing",
-   "zh": "请求计时"
-  },
-  "unit.milliseconds": {
-   "en": "{value} ms",
-   "zh": "{value} 毫秒"
-  },
-  "unit.seconds": {
-   "en": "{value} s",
-   "zh": "{value} 秒"
-  },
-  "unit.tokens": {
+  "tokens.total": {
    "en": "{value} tok",
    "zh": "{value} tok"
   },
-  "unit.tokensPerSecond": {
-   "en": "{value} tok/s",
-   "zh": "{value} tok/s"
+  "loading.label": {
+   "en": "Loading subagents…",
+   "zh": "正在加载子代理…"
   },
-  "usage.tokens": {
-   "en": "Tokens",
-   "zh": "Token"
+  "loading.aria": {
+   "en": "Loading subagents",
+   "zh": "正在加载子代理"
   },
-  "usage.reasoning": {
-   "en": "Reasoning",
-   "zh": "推理"
+  "load.error": {
+   "en": "Unable to load subagents",
+   "zh": "无法加载子代理"
   },
-  "usage.content": {
-   "en": "Content",
-   "zh": "内容"
+  "retry": {
+   "en": "Retry",
+   "zh": "重试"
   },
-  "usage.notReported": {
-   "en": "Usage not reported",
-   "zh": "未报告用量"
+  "mode.oneShot": {
+   "en": "one-shot",
+   "zh": "一次性"
   },
-  "usage.input": {
-   "en": "Input",
-   "zh": "输入"
+  "mode.continuable": {
+   "en": "continuable",
+   "zh": "可继续"
   },
-  "usage.cached": {
-   "en": "Cached",
-   "zh": "缓存读取"
+  "activity.running": {
+   "en": "running",
+   "zh": "正在运行"
   },
-  "usage.cacheCreated": {
-   "en": "Cache created",
-   "zh": "缓存写入"
+  "activity.inactive": {
+   "en": "not running",
+   "zh": "当前未运行"
   },
-  "usage.other": {
-   "en": "Other",
-   "zh": "其他"
+  "branch.collapse": {
+   "en": "Collapse {label} descendants",
+   "zh": "收起 {label} 的下级子代理"
   },
-  "usage.output": {
-   "en": "Output",
-   "zh": "输出"
+  "branch.expand": {
+   "en": "Expand {label} descendants",
+   "zh": "展开 {label} 的下级子代理"
   },
-  "usage.thisRequest": {
-   "en": "This request",
-   "zh": "本次请求"
+  "count.total.one": {
+   "en": "{count} subagent",
+   "zh": "{count} 个子代理"
+  },
+  "count.total.other": {
+   "en": "{count} subagents",
+   "zh": "{count} 个子代理"
+  },
+  "count.running.one": {
+   "en": "{count} subagent running",
+   "zh": "{count} 个子代理，正在运行"
+  },
+  "count.running.other": {
+   "en": "{count} subagents running",
+   "zh": "{count} 个子代理，正在运行"
+  },
+  "switcher.aria": {
+   "en": "Switch subagent: {title}",
+   "zh": "切换子代理：{title}"
+  },
+  "tree.aria": {
+   "en": "Subagent sessions",
+   "zh": "子代理会话"
+  },
+  "readonly.oneShot.title": {
+   "en": "One-shot subagent record",
+   "zh": "一次性子代理记录"
+  },
+  "readonly.title": {
+   "en": "This subagent is read-only for now",
+   "zh": "此子代理暂时只读"
+  },
+  "readonly.oneShot.body": {
+   "en": "One-shot tasks do not accept follow-ups; review the full execution record here.",
+   "zh": "一次性任务不支持后续消息，可在这里查看完整执行记录。"
+  },
+  "readonly.body": {
+   "en": "The parent session is offline; reopen it to continue sending messages.",
+   "zh": "父会话当前不在线，重新打开父会话后即可继续发送消息。"
   }
  }
 }

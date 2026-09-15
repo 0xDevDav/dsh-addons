@@ -1,7 +1,7 @@
 {
  "batch": "deliverables",
  "namespace": "deliverables",
- "total": 38,
+ "total": 37,
  "keys": {
   "presented.nativeUnavailable": {
    "en": "This file has no available Host path. Preview it in the sidebar.",
@@ -134,10 +134,6 @@
   "row.inspect": {
    "en": "Inspect call",
    "zh": "查看调用"
-  },
-  "presented.open": {
-   "en": "Open {name} in default app",
-   "zh": "在默认程序中打开 {name}"
   },
   "produced.label": {
    "en": "Files changed",

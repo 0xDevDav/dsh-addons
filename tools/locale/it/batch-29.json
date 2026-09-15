@@ -1,6 +1,7 @@
 {
  "batch": "settings.plugins",
  "namespace": "settings.plugins",
+ "total": 52,
  "keys": {
   "nav": "Plugin",
   "title": "Plugin",

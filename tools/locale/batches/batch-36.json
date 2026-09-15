@@ -1,79 +1,19 @@
 {
- "batch": "sidebarDocumentPreview",
- "namespace": "sidebarDocumentPreview",
- "total": 18,
+ "batch": "sidebarCodePreview",
+ "namespace": "sidebarCodePreview",
+ "total": 3,
  "keys": {
-  "loading": {
-   "en": "Reading…",
-   "zh": "正在读取…"
+  "title": {
+   "en": "Code",
+   "zh": "代码"
   },
-  "loadMore": {
-   "en": "Load more",
-   "zh": "加载更多"
+  "copy": {
+   "en": "Copy",
+   "zh": "复制"
   },
-  "changed": {
-   "en": "The file has changed, showing the previous content.",
-   "zh": "文件已更新，当前显示为旧内容。"
-  },
-  "reloadNow": {
-   "en": "Reload",
-   "zh": "重新载入"
-  },
-  "reload": {
-   "en": "Read the file again",
-   "zh": "重新读取文件"
-  },
-  "wrap.enable": {
-   "en": "Turn on line wrap",
-   "zh": "自动换行"
-  },
-  "wrap.disable": {
-   "en": "Turn off line wrap",
-   "zh": "取消换行"
-  },
-  "wrap.aria": {
-   "en": "Line wrap",
-   "zh": "自动换行"
-  },
-  "openWith": {
-   "en": "Open with",
-   "zh": "打开方式"
-  },
-  "viewer.text": {
-   "en": "Plain text",
-   "zh": "纯文本"
-  },
-  "resourceUnavailable": {
-   "en": "The file resource service is unavailable.",
-   "zh": "文件资源服务不可用。"
-  },
-  "rendererUnavailable": {
-   "en": "The {name} preview is unavailable.",
-   "zh": "预览器 {name} 不可用。"
-  },
-  "error.notFound": {
-   "en": "File not found. It may have been moved or deleted.",
-   "zh": "文件不存在，可能已被移动或删除。"
-  },
-  "error.tooLarge": {
-   "en": "This page exceeds the {limit} limit and cannot be read.",
-   "zh": "单页内容超过 {limit} 上限，无法读取。"
-  },
-  "error.notText": {
-   "en": "Not a text file, preview is unavailable for now.",
-   "zh": "非文本文件，暂时无法预览。"
-  },
-  "error.notRegularFile": {
-   "en": "Not a regular file, nothing to display.",
-   "zh": "该路径不是普通文件，没有可显示的内容。"
-  },
-  "error.unavailable": {
-   "en": "Read failed: {message}",
-   "zh": "读取失败：{message}"
-  },
-  "retry": {
-   "en": "Retry",
-   "zh": "重试"
+  "copied": {
+   "en": "Copied",
+   "zh": "已复制"
   }
  }
 }

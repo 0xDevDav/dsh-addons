@@ -3,7 +3,7 @@
 Italian (`it`) language pack for the DeepSeek Harness web GUI.
 
 - Registers the `it` language with the client `locale` service (fallback `en`).
-- Registers 1257 translated strings across 42 locale namespaces.
+- Registers 1331 translated strings across 44 locale namespaces.
 - Adds nothing to the host plane and changes no shipped package.
 
 ## Use

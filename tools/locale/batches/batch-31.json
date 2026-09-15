@@ -1,23 +1,27 @@
 {
- "batch": "documentMarkdown",
- "namespace": "documentMarkdown",
- "total": 4,
+ "batch": "sidebar",
+ "namespace": "sidebar",
+ "total": 5,
  "keys": {
-  "viewer.label": {
-   "en": "Markdown",
-   "zh": "Markdown"
+  "session.new": {
+   "en": "New Session",
+   "zh": "新会话"
   },
-  "code.copy": {
-   "en": "Copy",
-   "zh": "复制"
+  "session.new.label": {
+   "en": "New session",
+   "zh": "新建会话"
   },
-  "code.copied": {
-   "en": "Copied",
-   "zh": "已复制"
+  "toggle.open": {
+   "en": "Open sidebar",
+   "zh": "打开侧边栏"
   },
-  "footnotes": {
-   "en": "Footnotes",
-   "zh": "脚注"
+  "toggle.collapse": {
+   "en": "Collapse sidebar",
+   "zh": "收起侧边栏"
+  },
+  "panels.label": {
+   "en": "Global panels",
+   "zh": "全局面板"
   }
  }
 }

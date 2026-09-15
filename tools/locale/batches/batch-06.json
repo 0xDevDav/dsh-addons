@@ -1,7 +1,7 @@
 {
  "batch": "chat#2",
  "namespace": "chat",
- "total": 33,
+ "total": 34,
  "keys": {
   "message.retry.delay": {
    "en": "Retry delay: ",
@@ -98,6 +98,10 @@
   "duration.minutes": {
    "en": "{minutes}m {seconds}s",
    "zh": "{minutes}分{seconds}秒"
+  },
+  "duration.hours": {
+   "en": "{hours}h {minutes}m {seconds}s",
+   "zh": "{hours}小时{minutes}分{seconds}秒"
   },
   "command.running": {
    "en": "Running…",

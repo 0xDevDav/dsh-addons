@@ -1,10 +1,11 @@
 {
- "batch": "documentHtml",
- "namespace": "documentHtml",
+ "batch": "documentMarkdown",
+ "namespace": "documentMarkdown",
+ "total": 4,
  "keys": {
-  "title": "HTML",
-  "frame": "Anteprima documento HTML",
-  "loading": "Preparazione anteprima HTML…",
-  "failed": "Impossibile visualizzare l'anteprima di questo documento HTML."
+  "viewer.label": "Markdown",
+  "code.copy": "Copia",
+  "code.copied": "Copiato",
+  "footnotes": "Note a piè di pagina"
  }
 }

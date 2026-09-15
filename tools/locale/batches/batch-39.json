@@ -1,35 +1,91 @@
 {
- "batch": "skill",
- "namespace": "skill",
- "total": 7,
+ "batch": "sidebarRight",
+ "namespace": "sidebarRight",
+ "total": 21,
  "keys": {
-  "row.title": {
-   "en": "Skill",
-   "zh": "Skill"
+  "chrome.expand": {
+   "en": "Open sidebar",
+   "zh": "打开侧边栏"
   },
-  "row.running": {
-   "en": "Loading skill",
-   "zh": "正在加载 skill"
+  "chrome.expandAria": {
+   "en": "Open right sidebar",
+   "zh": "打开右侧边栏"
   },
-  "row.failed": {
-   "en": "Skill load failed",
-   "zh": "skill 加载失败"
+  "chrome.collapse": {
+   "en": "Collapse sidebar",
+   "zh": "收起侧边栏"
   },
-  "row.stopped": {
-   "en": "Skill load stopped",
-   "zh": "skill 加载已中止"
+  "chrome.collapseAria": {
+   "en": "Collapse right sidebar",
+   "zh": "收起右侧边栏"
   },
-  "row.instructions": {
-   "en": "Instructions",
-   "zh": "说明"
+  "chrome.toFullscreen": {
+   "en": "Fullscreen",
+   "zh": "全屏"
   },
-  "row.inspect": {
-   "en": "Inspect",
-   "zh": "查看"
+  "chrome.exitFullscreen": {
+   "en": "Exit fullscreen",
+   "zh": "退出全屏"
   },
-  "menu.userOnly": {
-   "en": "user-only",
-   "zh": "仅用户"
+  "dock.emptyPane": {
+   "en": "Empty pane",
+   "zh": "空面板"
+  },
+  "dock.splitPane": {
+   "en": "Split",
+   "zh": "分栏"
+  },
+  "dock.splitPaneDisabled": {
+   "en": "Two panes is the limit",
+   "zh": "已达两格上限"
+  },
+  "dock.splitPaneNarrow": {
+   "en": "Not enough width to split, widen the sidebar",
+   "zh": "栏宽不足，拖宽侧边栏后再分栏"
+  },
+  "dock.closeTab": {
+   "en": "Close",
+   "zh": "关闭"
+  },
+  "dock.addTab": {
+   "en": "New tab",
+   "zh": "新标签页"
+  },
+  "dock.dockFloat": {
+   "en": "Send back to the sidebar",
+   "zh": "收回到侧边栏"
+  },
+  "dock.closeFloat": {
+   "en": "Close",
+   "zh": "关闭"
+  },
+  "dock.drop.center": {
+   "en": "Move here",
+   "zh": "移到这里"
+  },
+  "dock.drop.left": {
+   "en": "Add left split",
+   "zh": "左分栏"
+  },
+  "dock.drop.right": {
+   "en": "Add right split",
+   "zh": "右分栏"
+  },
+  "dock.drop.top": {
+   "en": "Add top split",
+   "zh": "上分栏"
+  },
+  "dock.drop.bottom": {
+   "en": "Add bottom split",
+   "zh": "下分栏"
+  },
+  "tab.guide.title": {
+   "en": "Start",
+   "zh": "开始"
+  },
+  "tab.unavailable": {
+   "en": "Nothing here can view this kind of content yet.",
+   "zh": "这类内容还没有可用的查看方式。"
   }
  }
 }

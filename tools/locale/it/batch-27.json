@@ -1,7 +1,11 @@
 {
  "batch": "settings.models#2",
  "namespace": "settings.models",
+ "total": 33,
  "keys": {
+  "fetchDescription": "Questi sono i modelli disponibili presso il provider. Scegli quelli da aggiungere.",
+  "fetchSearch": "Cerca modelli",
+  "fetchNoMatches": "Nessun modello corrispondente.",
   "fetchSelectAll": "Seleziona tutto",
   "fetchDeselectAll": "Deseleziona tutto",
   "fetchAdopt": "Aggiungi selezionati",

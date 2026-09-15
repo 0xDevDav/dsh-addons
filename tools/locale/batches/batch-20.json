@@ -1,8 +1,16 @@
 {
  "batch": "permission.access",
  "namespace": "permission.access",
- "total": 8,
+ "total": 17,
  "keys": {
+  "mode": {
+   "en": "Access mode, current: {name}",
+   "zh": "访问模式，当前：{name}"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭"
+  },
   "preset.readOnly": {
    "en": "Read Only",
    "zh": "仅可查看"
@@ -34,6 +42,34 @@
   "confirm.enable": {
    "en": "Enable Full access",
    "zh": "启用完全权限"
+  },
+  "auto.label": {
+   "en": "Auto review",
+   "zh": "Auto review"
+  },
+  "auto.badge": {
+   "en": "EXP",
+   "zh": "EXP"
+  },
+  "auto.description": {
+   "en": "Run without a sandbox after an experimental same-model review of every native tool call and PTC inner call.",
+   "zh": "无沙箱运行；每次原生工具调用和 PTC 内层调用前由同一模型进行实验性审查。"
+  },
+  "auto.confirm.title": {
+   "en": "Enable Auto review (experimental)?",
+   "zh": "确认启用 Auto review（实验）？"
+  },
+  "auto.confirm.description": {
+   "en": "Auto review runs without a sandbox. Before every native tool call and PTC inner call, the same model as the current agent reviews whether to allow it. This feature is experimental, can falsely allow or deny actions, and uses additional tokens.",
+   "zh": "Auto review 不使用沙箱。每次原生工具调用和 PTC 内层调用前，都会由与当前 agent 相同的模型进行审查。此功能仍属实验性，可能误放行或误拒绝，并会消耗额外 token。"
+  },
+  "auto.confirm.acknowledge": {
+   "en": "I understand these risks and want to continue",
+   "zh": "我已了解这些风险，并愿意继续"
+  },
+  "auto.confirm.enable": {
+   "en": "Enable Auto review",
+   "zh": "启用 Auto review"
   }
  }
 }

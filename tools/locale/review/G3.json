@@ -165,6 +165,21 @@
    "zh": "提供方默认",
    "it": "Predefinito del provider"
   },
+  "deepSeekChatBaseUrl": {
+   "en": "https://api.deepseek.com",
+   "zh": "https://api.deepseek.com",
+   "it": "https://api.deepseek.com"
+  },
+  "deepSeekMessagesBaseUrl": {
+   "en": "https://api.deepseek.com/anthropic",
+   "zh": "https://api.deepseek.com/anthropic",
+   "it": "https://api.deepseek.com/anthropic"
+  },
+  "deepSeekEndpointHint": {
+   "en": "Use an endpoint compatible with the configured connection.",
+   "zh": "请填写与当前连接配置兼容的 API 地址。",
+   "it": "Usa un endpoint compatibile con la connessione configurata."
+  },
   "models": {
    "en": "Models",
    "zh": "模型目录",

@@ -1,11 +1,11 @@
 {
- "batch": "sidebarImage",
- "namespace": "sidebarImage",
+ "batch": "documentHtml",
+ "namespace": "documentHtml",
+ "total": 4,
  "keys": {
-  "title": "Immagine",
-  "preview": "Anteprima immagine: {name}",
-  "loading": "Apertura immagine…",
-  "failed": "Impossibile visualizzare questa immagine.",
-  "unsupported": "L'anteprima immagine richiede il contenuto completo del file."
+  "title": "HTML",
+  "frame": "Anteprima documento HTML",
+  "loading": "Lettura…",
+  "failed": "Impossibile visualizzare l'anteprima di questo documento HTML."
  }
 }

@@ -1,6 +1,7 @@
 {
  "batch": "feedback",
  "namespace": "feedback",
+ "total": 20,
  "keys": {
   "action.like": "Risposta buona",
   "action.likeActive": "Rimuovi valutazione",

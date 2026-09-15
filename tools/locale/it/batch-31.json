@@ -1,10 +1,12 @@
 {
- "batch": "documentMarkdown",
- "namespace": "documentMarkdown",
+ "batch": "sidebar",
+ "namespace": "sidebar",
+ "total": 5,
  "keys": {
-  "viewer.label": "Markdown",
-  "code.copy": "Copia",
-  "code.copied": "Copiato",
-  "footnotes": "Note a piè di pagina"
+  "session.new": "Nuova sessione",
+  "session.new.label": "Nuova sessione",
+  "toggle.open": "Apri barra laterale",
+  "toggle.collapse": "Comprimi barra laterale",
+  "panels.label": "Pannelli globali"
  }
 }

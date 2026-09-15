@@ -1,23 +1,23 @@
 {
- "batch": "documentHtml",
- "namespace": "documentHtml",
+ "batch": "documentMarkdown",
+ "namespace": "documentMarkdown",
  "total": 4,
  "keys": {
-  "title": {
-   "en": "HTML",
-   "zh": "HTML"
+  "viewer.label": {
+   "en": "Markdown",
+   "zh": "Markdown"
   },
-  "frame": {
-   "en": "HTML document preview",
-   "zh": "HTML 文档预览"
+  "code.copy": {
+   "en": "Copy",
+   "zh": "复制"
   },
-  "loading": {
-   "en": "Preparing HTML preview…",
-   "zh": "正在准备 HTML 预览…"
+  "code.copied": {
+   "en": "Copied",
+   "zh": "已复制"
   },
-  "failed": {
-   "en": "This HTML document could not be previewed.",
-   "zh": "无法预览这份 HTML 文档。"
+  "footnotes": {
+   "en": "Footnotes",
+   "zh": "脚注"
   }
  }
 }

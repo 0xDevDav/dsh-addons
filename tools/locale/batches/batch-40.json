@@ -1,155 +1,115 @@
 {
- "batch": "subagent",
- "namespace": "subagent",
- "total": 37,
+ "batch": "sidebarTerminal",
+ "namespace": "sidebarTerminal",
+ "total": 27,
  "keys": {
-  "diagnostic.corrupt": {
-   "en": "corrupted session record",
-   "zh": "会话记录损坏"
+  "recoveryFailed": {
+   "en": "Terminal recovery failed: {message}",
+   "zh": "恢复终端失败：{message}"
   },
-  "diagnostic.unsupported": {
-   "en": "unsupported subagent record version",
-   "zh": "子代理记录版本不受支持"
+  "retryRecovery": {
+   "en": "Retry terminal recovery",
+   "zh": "重试恢复终端"
   },
-  "diagnostic.unavailable": {
-   "en": "session record temporarily unavailable",
-   "zh": "会话记录暂不可用"
+  "shell": {
+   "en": "Choose shell",
+   "zh": "选择 Shell"
   },
-  "duration.seconds": {
-   "en": "{seconds}s",
-   "zh": "{seconds}秒"
+  "shellLoading": {
+   "en": "Loading shells…",
+   "zh": "正在读取 Shell…"
   },
-  "duration.minutes": {
-   "en": "{minutes}m {seconds}s",
-   "zh": "{minutes}分{seconds}秒"
+  "shellEmpty": {
+   "en": "No shells available",
+   "zh": "没有可用的 Shell"
   },
-  "duration.hours": {
-   "en": "{hours}h {minutes}m {seconds}s",
-   "zh": "{hours}小时{minutes}分{seconds}秒"
+  "description": {
+   "en": "Run commands in the Session workspace",
+   "zh": "在会话工作区运行命令"
   },
-  "duration.days": {
-   "en": "{days}d",
-   "zh": "{days}天"
+  "title": {
+   "en": "Terminal",
+   "zh": "终端"
   },
-  "duration.daysHours": {
-   "en": "{days}d {hours}h",
-   "zh": "{days}天{hours}小时"
+  "new": {
+   "en": "New terminal",
+   "zh": "新建终端"
   },
-  "duration.months": {
-   "en": "~{months}mo",
-   "zh": "约{months}个月"
+  "loading": {
+   "en": "Reading terminal environment…",
+   "zh": "正在读取终端环境…"
   },
-  "duration.monthsDays": {
-   "en": "~{months}mo {days}d",
-   "zh": "约{months}个月{days}天"
+  "creating": {
+   "en": "Starting…",
+   "zh": "正在启动…"
   },
-  "duration.years": {
-   "en": "~{years}y",
-   "zh": "约{years}年"
+  "connecting": {
+   "en": "Connecting…",
+   "zh": "正在连接…"
   },
-  "duration.yearsMonths": {
-   "en": "~{years}y {months}mo",
-   "zh": "约{years}年{months}个月"
+  "disconnected": {
+   "en": "Disconnected.",
+   "zh": "连接已断开。"
   },
-  "duration.exactDays": {
-   "en": "{days}d {hours}h {minutes}m {seconds}s",
-   "zh": "{days}天{hours}小时{minutes}分{seconds}秒"
+  "reconnect": {
+   "en": "Reconnect",
+   "zh": "重新连接"
   },
-  "duration.exactTitle": {
-   "en": "Total active duration: {duration}",
-   "zh": "总活跃耗时：{duration}"
+  "readonly": {
+   "en": "This view is read-only.",
+   "zh": "此页面当前只读。"
   },
-  "tokens.thousand": {
-   "en": "{value}K",
-   "zh": "{value}K"
+  "control": {
+   "en": "Take control",
+   "zh": "接管输入"
   },
-  "tokens.million": {
-   "en": "{value}M",
-   "zh": "{value}M"
+  "closed": {
+   "en": "Terminal closed.",
+   "zh": "终端已关闭。"
   },
-  "tokens.total": {
-   "en": "{value} tok",
-   "zh": "{value} tok"
+  "exited": {
+   "en": "Process exited ({code})",
+   "zh": "进程已退出（{code}）"
   },
-  "loading.label": {
-   "en": "Loading subagents…",
-   "zh": "正在加载子代理…"
+  "failed": {
+   "en": "Terminal error: {message}",
+   "zh": "终端错误：{message}"
   },
-  "loading.aria": {
-   "en": "Loading subagents",
-   "zh": "正在加载子代理"
+  "rename": {
+   "en": "Terminal name",
+   "zh": "终端名称"
   },
-  "load.error": {
-   "en": "Unable to load subagents",
-   "zh": "无法加载子代理"
+  "unavailable": {
+   "en": "Unavailable",
+   "zh": "不可用"
   },
   "retry": {
    "en": "Retry",
    "zh": "重试"
   },
-  "mode.oneShot": {
-   "en": "one-shot",
-   "zh": "一次性"
+  "cleanupFailed": {
+   "en": "Terminal “{title}” could not be ended: {message}",
+   "zh": "终端「{title}」未能结束：{message}"
   },
-  "mode.continuable": {
-   "en": "continuable",
-   "zh": "可继续"
+  "missingTerminal": {
+   "en": "This terminal no longer exists. Open a new terminal.",
+   "zh": "此终端已不存在，请新建终端。"
   },
-  "activity.running": {
-   "en": "running",
-   "zh": "正在运行"
+  "inputFull": {
+   "en": "The input buffer is full. Reconnect and try again.",
+   "zh": "输入缓冲区已满，请重新连接后重试。"
   },
-  "activity.inactive": {
-   "en": "not running",
-   "zh": "当前未运行"
+  "attachmentEnded": {
+   "en": "The terminal connection ended. Reconnect to continue.",
+   "zh": "终端连接已结束，请重新连接。"
   },
-  "branch.collapse": {
-   "en": "Collapse {label} descendants",
-   "zh": "收起 {label} 的下级子代理"
+  "invalidOutput": {
+   "en": "The terminal screen could not be received. Reconnect to recover it.",
+   "zh": "终端画面传输异常，请重新连接。"
   },
-  "branch.expand": {
-   "en": "Expand {label} descendants",
-   "zh": "展开 {label} 的下级子代理"
-  },
-  "count.total.one": {
-   "en": "{count} subagent",
-   "zh": "{count} 个子代理"
-  },
-  "count.total.other": {
-   "en": "{count} subagents",
-   "zh": "{count} 个子代理"
-  },
-  "count.running.one": {
-   "en": "{count} subagent running",
-   "zh": "{count} 个子代理，正在运行"
-  },
-  "count.running.other": {
-   "en": "{count} subagents running",
-   "zh": "{count} 个子代理，正在运行"
-  },
-  "switcher.aria": {
-   "en": "Switch subagent: {title}",
-   "zh": "切换子代理：{title}"
-  },
-  "tree.aria": {
-   "en": "Subagent sessions",
-   "zh": "子代理会话"
-  },
-  "readonly.oneShot.title": {
-   "en": "One-shot subagent record",
-   "zh": "一次性子代理记录"
-  },
-  "readonly.title": {
-   "en": "This subagent is read-only for now",
-   "zh": "此子代理暂时只读"
-  },
-  "readonly.oneShot.body": {
-   "en": "One-shot tasks do not accept follow-ups; review the full execution record here.",
-   "zh": "一次性任务不支持后续消息，可在这里查看完整执行记录。"
-  },
-  "readonly.body": {
-   "en": "The parent session is offline; reopen it to continue sending messages.",
-   "zh": "父会话当前不在线，重新打开父会话后即可继续发送消息。"
+  "terminalLimit": {
+   "en": "The terminal limit has been reached. Close unused terminals and try again. Exited terminals also count toward the limit.",
+   "zh": "终端数量已达上限，请关闭不用的终端后重试。已退出的终端也计入数量。"
   }
  }
 }

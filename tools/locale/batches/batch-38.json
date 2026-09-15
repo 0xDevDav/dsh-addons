@@ -1,91 +1,59 @@
 {
- "batch": "sidebarRight",
- "namespace": "sidebarRight",
- "total": 21,
+ "batch": "sidebarFiles",
+ "namespace": "sidebarFiles",
+ "total": 13,
  "keys": {
-  "chrome.expand": {
-   "en": "Open sidebar",
-   "zh": "打开侧边栏"
+  "type.label": {
+   "en": "Files",
+   "zh": "文件"
   },
-  "chrome.expandAria": {
-   "en": "Open right sidebar",
-   "zh": "打开右侧边栏"
+  "guide.title": {
+   "en": "Workspace files",
+   "zh": "工作区文件"
   },
-  "chrome.collapse": {
-   "en": "Collapse sidebar",
-   "zh": "收起侧边栏"
+  "guide.description": {
+   "en": "Browse files in this session's workspace",
+   "zh": "浏览会话工作区的文件"
   },
-  "chrome.collapseAria": {
-   "en": "Collapse right sidebar",
-   "zh": "收起右侧边栏"
+  "loading": {
+   "en": "Reading…",
+   "zh": "正在读取…"
   },
-  "chrome.toFullscreen": {
-   "en": "Fullscreen",
-   "zh": "全屏"
+  "empty": {
+   "en": "Empty directory",
+   "zh": "空目录"
   },
-  "chrome.exitFullscreen": {
-   "en": "Exit fullscreen",
-   "zh": "退出全屏"
+  "truncated": {
+   "en": "Too many entries, showing only some of them.",
+   "zh": "条目太多，只显示了一部分。"
   },
-  "dock.emptyPane": {
-   "en": "Empty pane",
-   "zh": "空面板"
+  "noWorkspace": {
+   "en": "This session has no workspace directory.",
+   "zh": "这个会话没有工作区目录。"
   },
-  "dock.splitPane": {
-   "en": "Split",
-   "zh": "分栏"
+  "reload": {
+   "en": "Reload",
+   "zh": "重新读取"
   },
-  "dock.splitPaneDisabled": {
-   "en": "Two panes is the limit",
-   "zh": "已达两格上限"
+  "entry.other": {
+   "en": "Not a file or a directory, so it cannot be opened.",
+   "zh": "这不是文件或目录，没法打开。"
   },
-  "dock.splitPaneNarrow": {
-   "en": "Not enough width to split, widen the sidebar",
-   "zh": "栏宽不足，拖宽侧边栏后再分栏"
+  "error.notFound": {
+   "en": "That directory is gone. It may have been moved or deleted.",
+   "zh": "这个目录不在了。可能已被移动或删除。"
   },
-  "dock.closeTab": {
-   "en": "Close",
-   "zh": "关闭"
+  "error.outsideWorkspace": {
+   "en": "That directory is outside the workspace, so the sidebar will not read it.",
+   "zh": "这个目录在工作区之外，侧栏不会读取它。"
   },
-  "dock.addTab": {
-   "en": "New tab",
-   "zh": "新标签页"
+  "error.notDirectory": {
+   "en": "That is not a directory.",
+   "zh": "这不是一个目录。"
   },
-  "dock.dockFloat": {
-   "en": "Send back to the sidebar",
-   "zh": "收回到侧边栏"
-  },
-  "dock.closeFloat": {
-   "en": "Close",
-   "zh": "关闭"
-  },
-  "dock.drop.center": {
-   "en": "Move here",
-   "zh": "移到这里"
-  },
-  "dock.drop.left": {
-   "en": "Add left split",
-   "zh": "左分栏"
-  },
-  "dock.drop.right": {
-   "en": "Add right split",
-   "zh": "右分栏"
-  },
-  "dock.drop.top": {
-   "en": "Add top split",
-   "zh": "上分栏"
-  },
-  "dock.drop.bottom": {
-   "en": "Add bottom split",
-   "zh": "下分栏"
-  },
-  "tab.guide.title": {
-   "en": "Start",
-   "zh": "开始"
-  },
-  "tab.unavailable": {
-   "en": "Nothing here can view this kind of content yet.",
-   "zh": "这类内容还没有可用的查看方式。"
+  "error.unavailable": {
+   "en": "Read failed: {message}",
+   "zh": "读取失败：{message}"
   }
  }
 }

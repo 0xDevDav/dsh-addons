@@ -160,16 +160,6 @@
    "zh": "已截断",
    "it": "Troncato"
   },
-  "json.collapseNode": {
-   "en": "Collapse JSON node",
-   "zh": "收起 JSON 节点",
-   "it": "Comprimi nodo JSON"
-  },
-  "json.expandNode": {
-   "en": "Expand JSON node",
-   "zh": "展开 JSON 节点",
-   "it": "Espandi nodo JSON"
-  },
   "json.label": {
    "en": "JSON",
    "zh": "JSON",
@@ -325,9 +315,14 @@
    "it": "Mostrato nel selettore; predefinito all'identificatore"
   },
   "inUse": {
-   "en": "In use",
-   "zh": "当前使用",
-   "it": "In uso"
+   "en": "New task default",
+   "zh": "新任务默认",
+   "it": "Predefinito per le nuove attività"
+  },
+  "selectionOffDefault": {
+   "en": "Default",
+   "zh": "默认",
+   "it": "Predefinito"
   },
   "builtInGroup": {
    "en": "Built-in",
@@ -458,6 +453,31 @@
    "en": "Deleting…",
    "zh": "正在删除…",
    "it": "Eliminazione…"
+  },
+  "showPicker": {
+   "en": "Allow switching Agent modes",
+   "zh": "允许切换agent模式",
+   "it": "Consenti di cambiare modalità agente"
+  },
+  "showPickerBeta": {
+   "en": "Beta",
+   "zh": "beta",
+   "it": "Beta"
+  },
+  "showPickerDescription": {
+   "en": "When enabled, new tasks can choose Standard, PTC, Creator, Minimal, and custom modes. When disabled, all new tasks use the default mode (Standard by default; configurable). Only affects new tasks.",
+   "zh": "开启后，新任务可选择标准、PTC、创造、极简及自定义模式；关闭后统一使用默认模式（默认为标准模式，可自定义）。仅影响新任务。",
+   "it": "Se attivo, le nuove attività possono scegliere le modalità standard, PTC, Creator, minimale e personalizzata. Se disattivo, tutte le nuove attività usano la modalità predefinita (standard, salvo diversa configurazione). Ha effetto solo sulle nuove attività."
+  },
+  "enablePickerToSetDefault": {
+   "en": "Turn on Agent mode selection to choose a default",
+   "zh": "请先开启 Agent 模式选择，再设置默认模式",
+   "it": "Attiva la selezione della modalità agente per scegliere un valore predefinito"
+  },
+  "enablePickerToCreate": {
+   "en": "Turn on Agent mode selection to start Creator mode",
+   "zh": "请先开启 Agent 模式选择，再启动创造模式",
+   "it": "Attiva la selezione della modalità agente per avviare la modalità Creator"
   }
  },
  "approval": {
@@ -958,6 +978,11 @@
    "zh": "{minutes}分{seconds}秒",
    "it": "{minutes}m {seconds}s"
   },
+  "duration.hours": {
+   "en": "{hours}h {minutes}m {seconds}s",
+   "zh": "{hours}小时{minutes}分{seconds}秒",
+   "it": "{hours}h {minutes}m {seconds}s"
+  },
   "command.running": {
    "en": "Running…",
    "zh": "执行中…",
@@ -1005,35 +1030,105 @@
   }
  },
  "command": {
+  "section.add": {
+   "en": "Add",
+   "zh": "添加",
+   "it": "Aggiungi"
+  },
+  "section.commands": {
+   "en": "Commands",
+   "zh": "指令",
+   "it": "Comandi"
+  },
+  "label.goal": {
+   "en": "Goal",
+   "zh": "目标",
+   "it": "Obiettivo"
+  },
+  "label.plan": {
+   "en": "Plan",
+   "zh": "计划",
+   "it": "Piano"
+  },
+  "label.feedback": {
+   "en": "Feedback",
+   "zh": "反馈",
+   "it": "Feedback"
+  },
+  "label.compact": {
+   "en": "Compact",
+   "zh": "压缩",
+   "it": "Compatta"
+  },
+  "label.permission": {
+   "en": "Permission",
+   "zh": "权限",
+   "it": "Autorizzazione"
+  },
+  "label.export": {
+   "en": "Export",
+   "zh": "下载日志",
+   "it": "Esporta"
+  },
+  "description.goal": {
+   "en": "Set or view the goal for a long-running task",
+   "zh": "设置或查看长期任务目标",
+   "it": "Imposta o visualizza l'obiettivo di un'attività di lunga durata"
+  },
+  "description.plan": {
+   "en": "Enter or leave plan mode",
+   "zh": "进入或退出计划模式",
+   "it": "Entra o esci dalla modalità piano"
+  },
+  "description.feedback": {
+   "en": "Record feedback about this session",
+   "zh": "发送关于当前会话的反馈",
+   "it": "Registra un feedback su questa sessione"
+  },
   "description.compact": {
    "en": "Compact older conversation history",
    "zh": "压缩以上对话内容",
    "it": "Compatta la cronologia della conversazione precedente"
-  },
-  "description.export": {
-   "en": "Download this Session log as a ZIP archive",
-   "zh": "将当前会话内容导出为 ZIP",
-   "it": "Scarica il log di questa sessione come archivio ZIP"
-  },
-  "description.feedback": {
-   "en": "record feedback about this session",
-   "zh": "发送关于当前会话的反馈",
-   "it": "registra un feedback su questa sessione"
-  },
-  "description.goal": {
-   "en": "set or view the goal for a long-running task",
-   "zh": "设置或查看长期任务目标",
-   "it": "imposta o visualizza l'obiettivo di un'attività di lunga durata"
   },
   "description.permission": {
    "en": "Switch the permission preset (sandbox mode + approval policy)",
    "zh": "切换权限预设（沙箱模式与审批策略）",
    "it": "Cambia il preset di autorizzazione (modalità Sandbox + politica di approvazione)"
   },
-  "description.plan": {
-   "en": "Enter or leave plan mode",
-   "zh": "进入或退出计划模式",
-   "it": "Entra o esci dalla modalità piano"
+  "description.export": {
+   "en": "Download this Session log as a ZIP archive",
+   "zh": "将当前会话内容导出为 ZIP",
+   "it": "Scarica il log di questa sessione come archivio ZIP"
+  },
+  "token.goal": {
+   "en": "goal",
+   "zh": "目标",
+   "it": "goal"
+  },
+  "token.plan": {
+   "en": "plan",
+   "zh": "计划",
+   "it": "plan"
+  },
+  "token.feedback": {
+   "en": "feedback",
+   "zh": "反馈",
+   "it": "feedback"
+  },
+  "token.compact": {
+   "en": "compact",
+   "zh": "压缩",
+   "it": "compact"
+  },
+  "token.permission": {
+   "en": "permission",
+   "zh": "权限",
+   "it": "permission"
+  },
+  "token.export": {
+   "en": "export",
+   "zh": "导出",
+   "it": "export"
   },
   "search.placeholder": {
    "en": "Search…",
@@ -1128,9 +1223,14 @@
    "it": "Cmd/Ctrl+Enter guida tutti i messaggi in coda"
   },
   "input.commands": {
-   "en": "Commands",
-   "zh": "指令",
-   "it": "Comandi"
+   "en": "Add files or run commands",
+   "zh": "添加文件或调用指令",
+   "it": "Aggiungi file o esegui comandi"
+  },
+  "input.file": {
+   "en": "File",
+   "zh": "文件",
+   "it": "File"
   },
   "input.stop": {
    "en": "Stop generating",
@@ -1151,11 +1251,6 @@
    "en": "Steer message",
    "zh": "插话发送",
    "it": "Guida messaggio"
-  },
-  "input.accessMode": {
-   "en": "Access mode, current: {name}",
-   "zh": "访问模式，当前：{name}",
-   "it": "Modalità di accesso, attuale: {name}"
   },
   "attachment.pending": {
    "en": "Pending attachments",
@@ -1277,11 +1372,6 @@
    "zh": "图片发送失败（{reason}），请重新添加图片后再试",
    "it": "Invio immagini non riuscito ({reason}); aggiungile di nuovo e riprova"
   },
-  "file.attach": {
-   "en": "Add attachment",
-   "zh": "添加附件",
-   "it": "Aggiungi allegato"
-  },
   "file.pending": {
    "en": "Pending files",
    "zh": "待发送文件",
@@ -1371,46 +1461,6 @@
    "en": "Steer",
    "zh": "插话发送",
    "it": "Guida"
-  },
-  "access.preset.readOnly": {
-   "en": "Read Only",
-   "zh": "仅可查看",
-   "it": "Sola lettura"
-  },
-  "access.preset.workspaceWrite": {
-   "en": "Workspace Write",
-   "zh": "工作区内修改",
-   "it": "Scrittura nell'area di lavoro"
-  },
-  "access.preset.fullAccess": {
-   "en": "Full access",
-   "zh": "完全权限",
-   "it": "Accesso completo"
-  },
-  "access.confirm.title": {
-   "en": "Enable Full access?",
-   "zh": "确认启用完全权限？",
-   "it": "Attivare l'accesso completo?"
-  },
-  "access.confirm.description": {
-   "en": "Full access reduces confirmation steps and lets the agent perform more actions directly, including sensitive operations, file changes, or external commands. Only use it when you trust the current task.",
-   "zh": "启用完全权限后，智能体将减少确认步骤，并且可以直接执行更多操作，包括敏感操作、文件修改或外部命令。仅建议在你信任当前任务时使用。",
-   "it": "L'accesso completo riduce i passaggi di conferma e consente all'agente di eseguire più azioni direttamente, incluse operazioni sensibili, modifiche ai file o comandi esterni. Usalo solo quando ti fidi dell'attività corrente."
-  },
-  "access.confirm.acknowledge": {
-   "en": "I understand the risks and want to continue",
-   "zh": "我已了解风险，并愿意继续",
-   "it": "Ho capito i rischi e voglio continuare"
-  },
-  "access.confirm.cancel": {
-   "en": "Cancel",
-   "zh": "取消",
-   "it": "Annulla"
-  },
-  "access.confirm.enable": {
-   "en": "Enable Full access",
-   "zh": "启用完全权限",
-   "it": "Attiva accesso completo"
   },
   "hero.headline": {
    "en": "Into the Unknown",
@@ -1636,6 +1686,21 @@
    "en": "Fetch",
    "zh": "网页获取",
    "it": "Recupera"
+  },
+  "tool.autoReviewRejected": {
+   "en": "Rejected by Auto review",
+   "zh": "Auto review 已拒绝",
+   "it": "Rifiutato da Auto review"
+  },
+  "tool.autoReviewNotExecuted": {
+   "en": "Tool was not executed. Reason: {reason}",
+   "zh": "工具未执行。原因：{reason}",
+   "it": "Lo strumento non è stato eseguito. Motivo: {reason}"
+  },
+  "tool.autoReviewReasonFallback": {
+   "en": "Auto review did not authorize this action",
+   "zh": "Auto review 未授权此次操作",
+   "it": "Auto review non ha autorizzato questa azione"
   },
   "diff.files.one": {
    "en": "{count} file",
@@ -2291,11 +2356,6 @@
    "zh": "查看调用",
    "it": "Ispeziona chiamata"
   },
-  "presented.open": {
-   "en": "Open {name} in default app",
-   "zh": "在默认程序中打开 {name}",
-   "it": "Apri {name} con l'app predefinita"
-  },
   "produced.label": {
    "en": "Files changed",
    "zh": "本轮文件改动",
@@ -2673,6 +2733,11 @@
   }
  },
  "model": {
+  "command.label": {
+   "en": "Model",
+   "zh": "模型",
+   "it": "Modello"
+  },
   "command.description": {
    "en": "Select the model for this conversation",
    "zh": "选择本会话使用的模型",
@@ -2972,6 +3037,16 @@
   }
  },
  "permission.access": {
+  "mode": {
+   "en": "Access mode, current: {name}",
+   "zh": "访问模式，当前：{name}",
+   "it": "Modalità di accesso, attuale: {name}"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
   "preset.readOnly": {
    "en": "Read Only",
    "zh": "仅可查看",
@@ -3011,6 +3086,41 @@
    "en": "Enable Full access",
    "zh": "启用完全权限",
    "it": "Attiva l'accesso completo"
+  },
+  "auto.label": {
+   "en": "Auto review",
+   "zh": "Auto review",
+   "it": "Auto review"
+  },
+  "auto.badge": {
+   "en": "EXP",
+   "zh": "EXP",
+   "it": "EXP"
+  },
+  "auto.description": {
+   "en": "Run without a sandbox after an experimental same-model review of every native tool call and PTC inner call.",
+   "zh": "无沙箱运行；每次原生工具调用和 PTC 内层调用前由同一模型进行实验性审查。",
+   "it": "Esegue senza sandbox dopo una revisione sperimentale, da parte dello stesso modello, di ogni chiamata a strumento nativa e di ogni chiamata interna PTC."
+  },
+  "auto.confirm.title": {
+   "en": "Enable Auto review (experimental)?",
+   "zh": "确认启用 Auto review（实验）？",
+   "it": "Attivare Auto review (sperimentale)?"
+  },
+  "auto.confirm.description": {
+   "en": "Auto review runs without a sandbox. Before every native tool call and PTC inner call, the same model as the current agent reviews whether to allow it. This feature is experimental, can falsely allow or deny actions, and uses additional tokens.",
+   "zh": "Auto review 不使用沙箱。每次原生工具调用和 PTC 内层调用前，都会由与当前 agent 相同的模型进行审查。此功能仍属实验性，可能误放行或误拒绝，并会消耗额外 token。",
+   "it": "Auto review viene eseguito senza sandbox. Prima di ogni chiamata a strumento nativa e di ogni chiamata interna PTC, lo stesso modello dell'agente corrente valuta se consentirla. La funzione è sperimentale, può autorizzare o negare azioni per errore e consuma token aggiuntivi."
+  },
+  "auto.confirm.acknowledge": {
+   "en": "I understand these risks and want to continue",
+   "zh": "我已了解这些风险，并愿意继续",
+   "it": "Ho capito questi rischi e voglio continuare"
+  },
+  "auto.confirm.enable": {
+   "en": "Enable Auto review",
+   "zh": "启用 Auto review",
+   "it": "Attiva Auto review"
   }
  },
  "settings.permission": {
@@ -3284,17 +3394,12 @@
   },
   "connection.error": {
    "en": "Disconnected",
-   "zh": "连接异常",
+   "zh": "连接异常，刷新重试",
    "it": "Disconnesso"
-  },
-  "connection.retry": {
-   "en": "Reconnect now",
-   "zh": "立即重连",
-   "it": "Riconnetti ora"
   },
   "connection.connecting": {
    "en": "Reconnecting",
-   "zh": "自动重连中",
+   "zh": "重新连接中",
    "it": "Riconnessione in corso"
   },
   "connection.connected": {
@@ -3308,9 +3413,9 @@
    "it": "Disconnesso, riconnetti ora"
   },
   "connection.restart": {
-   "en": "Reconnecting automatically, reconnect now",
-   "zh": "连接中断，正在自动重试，点击立即重连",
-   "it": "Riconnessione automatica in corso, riconnetti ora"
+   "en": "Reconnecting, reconnect now",
+   "zh": "连接中断，正在重试，点击立即重连",
+   "it": "Riconnessione in corso, riconnetti ora"
   }
  },
  "settings.models": {
@@ -3478,6 +3583,21 @@
    "en": "Provider default",
    "zh": "提供方默认",
    "it": "Predefinito del provider"
+  },
+  "deepSeekChatBaseUrl": {
+   "en": "https://api.deepseek.com",
+   "zh": "https://api.deepseek.com",
+   "it": "https://api.deepseek.com"
+  },
+  "deepSeekMessagesBaseUrl": {
+   "en": "https://api.deepseek.com/anthropic",
+   "zh": "https://api.deepseek.com/anthropic",
+   "it": "https://api.deepseek.com/anthropic"
+  },
+  "deepSeekEndpointHint": {
+   "en": "Use an endpoint compatible with the configured connection.",
+   "zh": "请填写与当前连接配置兼容的 API 地址。",
+   "it": "Usa un endpoint compatibile con la connessione configurata."
   },
   "models": {
    "en": "Models",
@@ -4259,6 +4379,83 @@
    "it": "I subagenti usano i valori predefiniti configurati o ereditano il modello dell'agente padre. Le scelte di modello salvate vengono mantenute."
   }
  },
+ "settings.archivedSessions": {
+  "nav": {
+   "en": "Archived sessions",
+   "zh": "已归档会话",
+   "it": "Sessioni archiviate"
+  },
+  "search": {
+   "en": "Search archived sessions",
+   "zh": "搜索已归档会话",
+   "it": "Cerca nelle sessioni archiviate"
+  },
+  "loading": {
+   "en": "Reading sessions…",
+   "zh": "正在读取会话…",
+   "it": "Lettura delle sessioni…"
+  },
+  "empty": {
+   "en": "No archived sessions.",
+   "zh": "暂无已归档会话。",
+   "it": "Nessuna sessione archiviata."
+  },
+  "unavailable": {
+   "en": "No archived session here can be restored.",
+   "zh": "这里没有可恢复的已归档会话。",
+   "it": "Nessuna sessione archiviata qui può essere ripristinata."
+  },
+  "emptySearch": {
+   "en": "No matching sessions.",
+   "zh": "没有匹配的会话。",
+   "it": "Nessuna sessione corrispondente."
+  },
+  "unarchive": {
+   "en": "Unarchive",
+   "zh": "取消归档",
+   "it": "Ripristina"
+  },
+  "unarchiveNamed": {
+   "en": "Unarchive {title}",
+   "zh": "取消归档 {title}",
+   "it": "Ripristina {title}"
+  },
+  "ungrouped": {
+   "en": "Ungrouped",
+   "zh": "未分组",
+   "it": "Senza gruppo"
+  },
+  "time.now": {
+   "en": "now",
+   "zh": "刚刚",
+   "it": "adesso"
+  },
+  "time.minutes": {
+   "en": "{n}min",
+   "zh": "{n}分钟",
+   "it": "{n}min"
+  },
+  "time.hours": {
+   "en": "{n}h",
+   "zh": "{n}小时",
+   "it": "{n}h"
+  },
+  "time.days": {
+   "en": "{n}d",
+   "zh": "{n}天",
+   "it": "{n}g"
+  },
+  "time.months": {
+   "en": "{n}mo",
+   "zh": "{n}个月",
+   "it": "{n}mes"
+  },
+  "time.years": {
+   "en": "{n}y",
+   "zh": "{n}年",
+   "it": "{n}a"
+  }
+ },
  "sidebar": {
   "session.new": {
    "en": "New Session",
@@ -4320,13 +4517,13 @@
    "it": "Anteprima documento HTML"
   },
   "loading": {
-   "en": "Preparing HTML preview…",
-   "zh": "正在准备 HTML 预览…",
-   "it": "Preparazione anteprima HTML…"
+   "en": "Reading…",
+   "zh": "正在读取…",
+   "it": "Lettura…"
   },
   "failed": {
    "en": "This HTML document could not be previewed.",
-   "zh": "无法预览这份 HTML 文档。",
+   "zh": "无法预览这份 HTML 文档",
    "it": "Impossibile visualizzare l'anteprima di questo documento HTML."
   }
  },
@@ -4342,18 +4539,18 @@
    "it": "Anteprima immagine: {name}"
   },
   "loading": {
-   "en": "Opening image…",
-   "zh": "正在打开图片…",
-   "it": "Apertura immagine…"
+   "en": "Reading…",
+   "zh": "正在读取…",
+   "it": "Lettura…"
   },
   "failed": {
    "en": "This image could not be displayed.",
-   "zh": "无法显示这张图片。",
+   "zh": "无法显示这张图片",
    "it": "Impossibile visualizzare questa immagine."
   },
   "unsupported": {
    "en": "Image preview requires the complete file contents.",
-   "zh": "图片预览需要完整文件内容。",
+   "zh": "图片预览需要完整文件内容",
    "it": "L'anteprima immagine richiede il contenuto completo del file."
   }
  },
@@ -4369,9 +4566,9 @@
    "it": "Pagina PDF {page}"
   },
   "loading": {
-   "en": "Opening PDF…",
-   "zh": "正在打开 PDF…",
-   "it": "Apertura PDF…"
+   "en": "Reading…",
+   "zh": "正在读取…",
+   "it": "Lettura…"
   },
   "rendering": {
    "en": "Rendering page…",
@@ -4385,17 +4582,17 @@
   },
   "password": {
    "en": "This PDF requires a password; password-protected previews are not supported.",
-   "zh": "此 PDF 需要密码，暂不支持预览。",
+   "zh": "此 PDF 需要密码，暂不支持预览",
    "it": "Questo PDF richiede una password; le anteprime protette da password non sono supportate."
   },
   "workerFailed": {
    "en": "The PDF rendering process could not continue. Please retry.",
-   "zh": "PDF 渲染进程无法继续，请重试。",
+   "zh": "PDF 渲染进程无法继续，请重试",
    "it": "Il processo di rendering del PDF non può continuare. Riprova."
   },
   "unsupported": {
    "en": "PDF preview requires the complete file contents.",
-   "zh": "PDF 预览需要完整文件内容。",
+   "zh": "PDF 预览需要完整文件内容",
    "it": "L'anteprima PDF richiede il contenuto completo del file."
   },
   "retry": {
@@ -4434,7 +4631,7 @@
   },
   "changed": {
    "en": "The file has changed, showing the previous content.",
-   "zh": "文件已更新，当前显示为旧内容。",
+   "zh": "文件已更新，当前显示为旧内容",
    "it": "Il file è cambiato, è mostrato il contenuto precedente."
   },
   "reloadNow": {
@@ -4474,32 +4671,37 @@
   },
   "resourceUnavailable": {
    "en": "The file resource service is unavailable.",
-   "zh": "文件资源服务不可用。",
+   "zh": "文件资源服务不可用",
    "it": "Il servizio di risorse dei file non è disponibile."
   },
   "rendererUnavailable": {
    "en": "The {name} preview is unavailable.",
-   "zh": "预览器 {name} 不可用。",
+   "zh": "预览器 {name} 不可用",
    "it": "L'anteprima {name} non è disponibile."
+  },
+  "unsupportedFile": {
+   "en": "Preview is not available for this file type yet.",
+   "zh": "该格式文件暂时无法预览",
+   "it": "L'anteprima non è ancora disponibile per questo tipo di file."
   },
   "error.notFound": {
    "en": "File not found. It may have been moved or deleted.",
-   "zh": "文件不存在，可能已被移动或删除。",
+   "zh": "文件不存在，可能已被移动或删除",
    "it": "File non trovato. Potrebbe essere stato spostato o eliminato."
   },
   "error.tooLarge": {
    "en": "This page exceeds the {limit} limit and cannot be read.",
-   "zh": "单页内容超过 {limit} 上限，无法读取。",
+   "zh": "单页内容超过 {limit} 上限，无法读取",
    "it": "Questa pagina supera il limite {limit} e non può essere letta."
   },
   "error.notText": {
-   "en": "Not a text file, preview is unavailable for now.",
-   "zh": "非文本文件，暂时无法预览。",
-   "it": "Non è un file di testo, l'anteprima al momento non è disponibile."
+   "en": "Preview is not available for this file type yet.",
+   "zh": "该格式文件暂时无法预览",
+   "it": "L'anteprima non è ancora disponibile per questo tipo di file."
   },
   "error.notRegularFile": {
    "en": "Not a regular file, nothing to display.",
-   "zh": "该路径不是普通文件，没有可显示的内容。",
+   "zh": "该路径不是普通文件，没有可显示的内容",
    "it": "Non è un file normale, non c'è nulla da mostrare."
   },
   "error.unavailable": {
@@ -4685,6 +4887,143 @@
    "en": "Nothing here can view this kind of content yet.",
    "zh": "这类内容还没有可用的查看方式。",
    "it": "Qui non è ancora possibile visualizzare questo tipo di contenuto."
+  }
+ },
+ "sidebarTerminal": {
+  "recoveryFailed": {
+   "en": "Terminal recovery failed: {message}",
+   "zh": "恢复终端失败：{message}",
+   "it": "Ripristino del terminale non riuscito: {message}"
+  },
+  "retryRecovery": {
+   "en": "Retry terminal recovery",
+   "zh": "重试恢复终端",
+   "it": "Riprova il ripristino del terminale"
+  },
+  "shell": {
+   "en": "Choose shell",
+   "zh": "选择 Shell",
+   "it": "Scegli la shell"
+  },
+  "shellLoading": {
+   "en": "Loading shells…",
+   "zh": "正在读取 Shell…",
+   "it": "Caricamento delle shell…"
+  },
+  "shellEmpty": {
+   "en": "No shells available",
+   "zh": "没有可用的 Shell",
+   "it": "Nessuna shell disponibile"
+  },
+  "description": {
+   "en": "Run commands in the Session workspace",
+   "zh": "在会话工作区运行命令",
+   "it": "Esegui comandi nell'area di lavoro della sessione"
+  },
+  "title": {
+   "en": "Terminal",
+   "zh": "终端",
+   "it": "Terminale"
+  },
+  "new": {
+   "en": "New terminal",
+   "zh": "新建终端",
+   "it": "Nuovo terminale"
+  },
+  "loading": {
+   "en": "Reading terminal environment…",
+   "zh": "正在读取终端环境…",
+   "it": "Lettura dell'ambiente del terminale…"
+  },
+  "creating": {
+   "en": "Starting…",
+   "zh": "正在启动…",
+   "it": "Avvio…"
+  },
+  "connecting": {
+   "en": "Connecting…",
+   "zh": "正在连接…",
+   "it": "Connessione…"
+  },
+  "disconnected": {
+   "en": "Disconnected.",
+   "zh": "连接已断开。",
+   "it": "Connessione interrotta."
+  },
+  "reconnect": {
+   "en": "Reconnect",
+   "zh": "重新连接",
+   "it": "Riconnetti"
+  },
+  "readonly": {
+   "en": "This view is read-only.",
+   "zh": "此页面当前只读。",
+   "it": "Questa vista è in sola lettura."
+  },
+  "control": {
+   "en": "Take control",
+   "zh": "接管输入",
+   "it": "Prendi il controllo"
+  },
+  "closed": {
+   "en": "Terminal closed.",
+   "zh": "终端已关闭。",
+   "it": "Terminale chiuso."
+  },
+  "exited": {
+   "en": "Process exited ({code})",
+   "zh": "进程已退出（{code}）",
+   "it": "Processo terminato ({code})"
+  },
+  "failed": {
+   "en": "Terminal error: {message}",
+   "zh": "终端错误：{message}",
+   "it": "Errore del terminale: {message}"
+  },
+  "rename": {
+   "en": "Terminal name",
+   "zh": "终端名称",
+   "it": "Nome del terminale"
+  },
+  "unavailable": {
+   "en": "Unavailable",
+   "zh": "不可用",
+   "it": "Non disponibile"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "cleanupFailed": {
+   "en": "Terminal “{title}” could not be ended: {message}",
+   "zh": "终端「{title}」未能结束：{message}",
+   "it": "Impossibile terminare il terminale «{title}»: {message}"
+  },
+  "missingTerminal": {
+   "en": "This terminal no longer exists. Open a new terminal.",
+   "zh": "此终端已不存在，请新建终端。",
+   "it": "Questo terminale non esiste più. Aprine uno nuovo."
+  },
+  "inputFull": {
+   "en": "The input buffer is full. Reconnect and try again.",
+   "zh": "输入缓冲区已满，请重新连接后重试。",
+   "it": "Il buffer di input è pieno. Riconnetti e riprova."
+  },
+  "attachmentEnded": {
+   "en": "The terminal connection ended. Reconnect to continue.",
+   "zh": "终端连接已结束，请重新连接。",
+   "it": "La connessione al terminale è terminata. Riconnetti per continuare."
+  },
+  "invalidOutput": {
+   "en": "The terminal screen could not be received. Reconnect to recover it.",
+   "zh": "终端画面传输异常，请重新连接。",
+   "it": "Impossibile ricevere la schermata del terminale. Riconnetti per ripristinarla."
+  },
+  "terminalLimit": {
+   "en": "The terminal limit has been reached. Close unused terminals and try again. Exited terminals also count toward the limit.",
+   "zh": "终端数量已达上限，请关闭不用的终端后重试。已退出的终端也计入数量。",
+   "it": "Hai raggiunto il limite di terminali. Chiudi quelli che non usi e riprova. Anche i terminali terminati contano nel limite."
   }
  },
  "skill": {
@@ -5121,7 +5460,7 @@
   },
   "group.step": {
    "en": "Step {step}",
-   "zh": "步骤 {step}",
+   "zh": "第 {step} 步",
    "it": "Passo {step}"
   },
   "group.compaction": {
@@ -5504,6 +5843,41 @@
    "zh": "思考",
    "it": "Ragionamento"
   },
+  "record.wrapLines": {
+   "en": "Wrap lines",
+   "zh": "自动换行",
+   "it": "Ritorno a capo automatico"
+  },
+  "code.source": {
+   "en": "Code",
+   "zh": "代码",
+   "it": "Codice"
+  },
+  "code.output": {
+   "en": "Output",
+   "zh": "输出",
+   "it": "Output"
+  },
+  "code.copySource": {
+   "en": "Copy code",
+   "zh": "复制代码",
+   "it": "Copia codice"
+  },
+  "code.copyOutput": {
+   "en": "Copy output",
+   "zh": "复制输出",
+   "it": "Copia output"
+  },
+  "code.originalJson": {
+   "en": "Original JSON",
+   "zh": "原始 JSON",
+   "it": "JSON originale"
+  },
+  "code.running": {
+   "en": "Running…",
+   "zh": "执行中…",
+   "it": "In esecuzione…"
+  },
   "record.systemPromptMissing": {
    "en": "No system prompt in this request",
    "zh": "本次请求没有系统提示词",
@@ -5882,9 +6256,9 @@
    "it": "Scrivi la tua risposta"
   },
   "action.skip": {
-   "en": "Skip this question",
-   "zh": "跳过本题",
-   "it": "Salta questa domanda"
+   "en": "Skip",
+   "zh": "跳过",
+   "it": "Salta"
   },
   "action.next": {
    "en": "Next",

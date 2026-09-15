@@ -1,6 +1,7 @@
 {
  "batch": "settings.agentPreset",
  "namespace": "settings.agentPreset",
+ "total": 57,
  "keys": {
   "error": "Impossibile caricare i preset degli agenti.",
   "userTrust": "Personalizzato",
@@ -26,7 +27,8 @@
   "presetIdPlaceholder": "my-agent",
   "displayName": "Nome",
   "displayNamePlaceholder": "Mostrato nel selettore; predefinito all'identificatore",
-  "inUse": "In uso",
+  "inUse": "Predefinito per le nuove attività",
+  "selectionOffDefault": "Predefinito",
   "builtInGroup": "Integrati",
   "customGroup": "Personalizzati",
   "noDescription": "Nessuna descrizione.",
@@ -52,6 +54,11 @@
   "deleteTitle": "Eliminare questo preset?",
   "deleteDescription": "La cartella del preset viene eliminata. Le sessioni già in esecuzione su di esso continuano a funzionare; le nuove sessioni non potranno più selezionarlo.",
   "deleteConfirm": "Elimina",
-  "deleting": "Eliminazione…"
+  "deleting": "Eliminazione…",
+  "showPicker": "Consenti di cambiare modalità agente",
+  "showPickerBeta": "Beta",
+  "showPickerDescription": "Se attivo, le nuove attività possono scegliere le modalità standard, PTC, Creator, minimale e personalizzata. Se disattivo, tutte le nuove attività usano la modalità predefinita (standard, salvo diversa configurazione). Ha effetto solo sulle nuove attività.",
+  "enablePickerToSetDefault": "Attiva la selezione della modalità agente per scegliere un valore predefinito",
+  "enablePickerToCreate": "Attiva la selezione della modalità agente per avviare la modalità Creator"
  }
 }

@@ -35,6 +35,8 @@
      "unknown": "未知",
      "none": "无",
      "truncated": "已截断",
+     "json.collapseNode": "收起 JSON 节点",
+     "json.expandNode": "展开 JSON 节点",
      "json.label": "JSON",
      "markdown.footnotes": "脚注",
      "markdown.truncatedCharacters": "… 已截断，共 {total} 字符",
@@ -76,6 +78,8 @@
      "unknown": "Unknown",
      "none": "None",
      "truncated": "Truncated",
+     "json.collapseNode": "Collapse JSON node",
+     "json.expandNode": "Expand JSON node",
      "json.label": "JSON",
      "markdown.footnotes": "Footnotes",
      "markdown.truncatedCharacters": "… truncated at {total} characters",
@@ -127,8 +131,7 @@
      "presetIdPlaceholder": "my-agent",
      "displayName": "名称",
      "displayNamePlaceholder": "选择器中显示的名字，缺省用标识符",
-     "inUse": "新任务默认",
-     "selectionOffDefault": "默认",
+     "inUse": "当前使用",
      "builtInGroup": "内置",
      "customGroup": "自定义",
      "noDescription": "暂无描述。",
@@ -154,12 +157,7 @@
      "deleteTitle": "删除该预设？",
      "deleteDescription": "预设目录将被删除。已在其上运行的会话不受影响；新会话将无法再选择它。",
      "deleteConfirm": "删除",
-     "deleting": "正在删除…",
-     "showPicker": "允许切换agent模式",
-     "showPickerBeta": "beta",
-     "showPickerDescription": "开启后，新任务可选择标准、PTC、创造、极简及自定义模式；关闭后统一使用默认模式（默认为标准模式，可自定义）。仅影响新任务。",
-     "enablePickerToSetDefault": "请先开启 Agent 模式选择，再设置默认模式",
-     "enablePickerToCreate": "请先开启 Agent 模式选择，再启动创造模式"
+     "deleting": "正在删除…"
     }
    },
    "en": {
@@ -188,8 +186,7 @@
      "presetIdPlaceholder": "my-agent",
      "displayName": "Name",
      "displayNamePlaceholder": "Shown in the picker; defaults to the identifier",
-     "inUse": "New task default",
-     "selectionOffDefault": "Default",
+     "inUse": "In use",
      "builtInGroup": "Built-in",
      "customGroup": "Custom",
      "noDescription": "No description.",
@@ -215,12 +212,7 @@
      "deleteTitle": "Delete this preset?",
      "deleteDescription": "The preset directory is deleted. Sessions already running on it keep working; new sessions cannot select it.",
      "deleteConfirm": "Delete",
-     "deleting": "Deleting…",
-     "showPicker": "Allow switching Agent modes",
-     "showPickerBeta": "Beta",
-     "showPickerDescription": "When enabled, new tasks can choose Standard, PTC, Creator, Minimal, and custom modes. When disabled, all new tasks use the default mode (Standard by default; configurable). Only affects new tasks.",
-     "enablePickerToSetDefault": "Turn on Agent mode selection to choose a default",
-     "enablePickerToCreate": "Turn on Agent mode selection to start Creator mode"
+     "deleting": "Deleting…"
     }
    }
   }
@@ -345,7 +337,6 @@
      "message.turnTime.ttft": "首 token 用时（TTFT）",
      "duration.seconds": "{seconds}秒",
      "duration.minutes": "{minutes}分{seconds}秒",
-     "duration.hours": "{hours}小时{minutes}分{seconds}秒",
      "command.running": "执行中…",
      "command.failed": "指令失败",
      "command.done": "已完成",
@@ -453,7 +444,6 @@
      "message.turnTime.ttft": "Time to first token (TTFT)",
      "duration.seconds": "{seconds}s",
      "duration.minutes": "{minutes}m {seconds}s",
-     "duration.hours": "{hours}h {minutes}m {seconds}s",
      "command.running": "Running…",
      "command.failed": "Command failed",
      "command.done": "Completed",
@@ -471,26 +461,12 @@
   "dsh-client-ui-commands": {
    "zh": {
     "value": {
-     "section.add": "添加",
-     "section.commands": "指令",
-     "label.goal": "目标",
-     "label.plan": "计划",
-     "label.feedback": "反馈",
-     "label.compact": "压缩",
-     "label.permission": "权限",
-     "label.export": "下载日志",
-     "description.goal": "设置或查看长期任务目标",
-     "description.plan": "进入或退出计划模式",
-     "description.feedback": "发送关于当前会话的反馈",
      "description.compact": "压缩以上对话内容",
-     "description.permission": "切换权限预设（沙箱模式与审批策略）",
      "description.export": "将当前会话内容导出为 ZIP",
-     "token.goal": "目标",
-     "token.plan": "计划",
-     "token.feedback": "反馈",
-     "token.compact": "压缩",
-     "token.permission": "权限",
-     "token.export": "导出",
+     "description.feedback": "发送关于当前会话的反馈",
+     "description.goal": "设置或查看长期任务目标",
+     "description.permission": "切换权限预设（沙箱模式与审批策略）",
+     "description.plan": "进入或退出计划模式",
      "search.placeholder": "搜索…",
      "search.aria": "筛选选项",
      "status.loading": "正在加载选项…",
@@ -503,26 +479,12 @@
    },
    "en": {
     "value": {
-     "section.add": "Add",
-     "section.commands": "Commands",
-     "label.goal": "Goal",
-     "label.plan": "Plan",
-     "label.feedback": "Feedback",
-     "label.compact": "Compact",
-     "label.permission": "Permission",
-     "label.export": "Export",
-     "description.goal": "Set or view the goal for a long-running task",
-     "description.plan": "Enter or leave plan mode",
-     "description.feedback": "Record feedback about this session",
      "description.compact": "Compact older conversation history",
-     "description.permission": "Switch the permission preset (sandbox mode + approval policy)",
      "description.export": "Download this Session log as a ZIP archive",
-     "token.goal": "goal",
-     "token.plan": "plan",
-     "token.feedback": "feedback",
-     "token.compact": "compact",
-     "token.permission": "permission",
-     "token.export": "export",
+     "description.feedback": "record feedback about this session",
+     "description.goal": "set or view the goal for a long-running task",
+     "description.permission": "Switch the permission preset (sandbox mode + approval policy)",
+     "description.plan": "Enter or leave plan mode",
      "search.placeholder": "Search…",
      "search.aria": "Filter options",
      "status.loading": "Loading options…",
@@ -549,12 +511,12 @@
      "placeholder.hero": "描述你想要构建的内容, / 调用指令, @ 文件或对话",
      "placeholder.workspace": "选择一个工作区开始",
      "placeholder.steerQueue": "Cmd/Ctrl+Enter 插话发送全部排队消息",
-     "input.commands": "添加文件或调用指令",
-     "input.file": "文件",
+     "input.commands": "指令",
      "input.stop": "停止生成",
      "input.send": "发送消息",
      "input.send.queue": "排队发送",
      "input.send.steer": "插话发送",
+     "input.accessMode": "访问模式，当前：{name}",
      "attachment.pending": "待发送附件",
      "attachment.scrollLeft": "向左滚动附件",
      "attachment.scrollRight": "向右滚动附件",
@@ -579,6 +541,7 @@
      "image.dimensionTooLarge": "图片宽高不能超过 {size}px，请缩小后重试",
      "image.modelUnsupported": "当前模型不支持图片，请切换支持图片的模型",
      "image.sendFailed": "图片发送失败（{reason}），请重新添加图片后再试",
+     "file.attach": "添加附件",
      "file.pending": "待发送文件",
      "file.remove": "移除文件 {name}",
      "file.uploading": "上传中…",
@@ -597,6 +560,14 @@
      "settings.enter.description": "智能体运行时 Enter 键和发送按钮的行为；Cmd/Ctrl+Enter 使用另一行为",
      "settings.enter.queue": "排队发送",
      "settings.enter.steer": "插话发送",
+     "access.preset.readOnly": "仅可查看",
+     "access.preset.workspaceWrite": "工作区内修改",
+     "access.preset.fullAccess": "完全权限",
+     "access.confirm.title": "确认启用完全权限？",
+     "access.confirm.description": "启用完全权限后，智能体将减少确认步骤，并且可以直接执行更多操作，包括敏感操作、文件修改或外部命令。仅建议在你信任当前任务时使用。",
+     "access.confirm.acknowledge": "我已了解风险，并愿意继续",
+     "access.confirm.cancel": "取消",
+     "access.confirm.enable": "启用完全权限",
      "hero.headline": "探索未至之境",
      "hero.preview": "预览版",
      "hero.chooseWorkspace": "选择工作区",
@@ -642,9 +613,6 @@
      "tool.title.glob": "Glob",
      "tool.title.webSearch": "网页搜索",
      "tool.title.webFetch": "网页获取",
-     "tool.autoReviewRejected": "Auto review 已拒绝",
-     "tool.autoReviewNotExecuted": "工具未执行。原因：{reason}",
-     "tool.autoReviewReasonFallback": "Auto review 未授权此次操作",
      "diff.files.one": "{count} 个文件",
      "diff.files.other": "{count} 个文件",
      "diff.collapseAria": "收起差异",
@@ -706,12 +674,12 @@
      "placeholder.hero": "Describe what you want to build, / commands, @ files or sessions",
      "placeholder.workspace": "Choose a workspace to start",
      "placeholder.steerQueue": "Cmd/Ctrl+Enter steers all queued messages",
-     "input.commands": "Add files or run commands",
-     "input.file": "File",
+     "input.commands": "Commands",
      "input.stop": "Stop generating",
      "input.send": "Send message",
      "input.send.queue": "Queue message",
      "input.send.steer": "Steer message",
+     "input.accessMode": "Access mode, current: {name}",
      "attachment.pending": "Pending attachments",
      "attachment.scrollLeft": "Scroll attachments left",
      "attachment.scrollRight": "Scroll attachments right",
@@ -736,6 +704,7 @@
      "image.dimensionTooLarge": "Image sides must be at most {size}px; downscale it and try again",
      "image.modelUnsupported": "The current model does not support images; switch to a model that does",
      "image.sendFailed": "Sending images failed ({reason}); re-add them and try again",
+     "file.attach": "Add attachment",
      "file.pending": "Pending files",
      "file.remove": "Remove file {name}",
      "file.uploading": "Uploading…",
@@ -754,6 +723,14 @@
      "settings.enter.description": "What Enter and the Send button do while the agent is running; Cmd/Ctrl+Enter uses the other behavior",
      "settings.enter.queue": "Queue",
      "settings.enter.steer": "Steer",
+     "access.preset.readOnly": "Read Only",
+     "access.preset.workspaceWrite": "Workspace Write",
+     "access.preset.fullAccess": "Full access",
+     "access.confirm.title": "Enable Full access?",
+     "access.confirm.description": "Full access reduces confirmation steps and lets the agent perform more actions directly, including sensitive operations, file changes, or external commands. Only use it when you trust the current task.",
+     "access.confirm.acknowledge": "I understand the risks and want to continue",
+     "access.confirm.cancel": "Cancel",
+     "access.confirm.enable": "Enable Full access",
      "hero.headline": "Into the Unknown",
      "hero.preview": "Preview",
      "hero.chooseWorkspace": "Choose workspace",
@@ -799,9 +776,6 @@
      "tool.title.glob": "Glob",
      "tool.title.webSearch": "Search",
      "tool.title.webFetch": "Fetch",
-     "tool.autoReviewRejected": "Rejected by Auto review",
-     "tool.autoReviewNotExecuted": "Tool was not executed. Reason: {reason}",
-     "tool.autoReviewReasonFallback": "Auto review did not authorize this action",
      "diff.files.one": "{count} file",
      "diff.files.other": "{count} files",
      "diff.collapseAria": "Collapse diff",
@@ -1002,6 +976,7 @@
      "row.error": "交付失败",
      "row.stopped": "已中断",
      "row.inspect": "查看调用",
+     "presented.open": "在默认程序中打开 {name}",
      "produced.label": "本轮文件改动",
      "produced.moreOne": "+ 1 个文件",
      "produced.more": "+ {count} 个文件",
@@ -1043,6 +1018,7 @@
      "row.error": "Delivery failed",
      "row.stopped": "Interrupted",
      "row.inspect": "Inspect call",
+     "presented.open": "Open {name} in default app",
      "produced.label": "Files changed",
      "produced.moreOne": "+ 1 file",
      "produced.more": "+ {count} files",
@@ -1253,7 +1229,6 @@
   "dsh-client-ui-model-selection": {
    "zh": {
     "value": {
-     "command.label": "模型",
      "command.description": "选择本会话使用的模型",
      "option.loadError": "目录加载失败：{message}",
      "option.deepseekV4Flash.description": "快速、高效且经济；适合目标明确、常规或并行任务。",
@@ -1278,7 +1253,6 @@
    },
    "en": {
     "value": {
-     "command.label": "Model",
      "command.description": "Select the model for this conversation",
      "option.loadError": "Catalog failed to load: {message}",
      "option.deepseekV4Flash.description": "Fast, efficient, and economical; suited to focused, routine, or parallel tasks.",
@@ -1397,8 +1371,6 @@
   "dsh-client-ui-permission-presets": {
    "zh": {
     "value": {
-     "mode": "访问模式，当前：{name}",
-     "close": "关闭",
      "preset.readOnly": "仅可查看",
      "preset.workspaceWrite": "工作区内修改",
      "preset.fullAccess": "完全权限",
@@ -1406,20 +1378,11 @@
      "confirm.description": "启用完全权限后，智能体将减少确认步骤，并且可以直接执行更多操作，包括敏感操作、文件修改或外部命令。仅建议在你信任当前任务时使用。",
      "confirm.acknowledge": "我已了解风险，并愿意继续",
      "confirm.cancel": "取消",
-     "confirm.enable": "启用完全权限",
-     "auto.label": "Auto review",
-     "auto.badge": "EXP",
-     "auto.description": "无沙箱运行；每次原生工具调用和 PTC 内层调用前由同一模型进行实验性审查。",
-     "auto.confirm.title": "确认启用 Auto review（实验）？",
-     "auto.confirm.description": "Auto review 不使用沙箱。每次原生工具调用和 PTC 内层调用前，都会由与当前 agent 相同的模型进行审查。此功能仍属实验性，可能误放行或误拒绝，并会消耗额外 token。",
-     "auto.confirm.acknowledge": "我已了解这些风险，并愿意继续",
-     "auto.confirm.enable": "启用 Auto review"
+     "confirm.enable": "启用完全权限"
     }
    },
    "en": {
     "value": {
-     "mode": "Access mode, current: {name}",
-     "close": "Close",
      "preset.readOnly": "Read Only",
      "preset.workspaceWrite": "Workspace Write",
      "preset.fullAccess": "Full access",
@@ -1427,14 +1390,7 @@
      "confirm.description": "Full access reduces confirmation steps and lets the agent perform more actions directly, including sensitive operations, file changes, or external commands. Only use it when you trust the current task.",
      "confirm.acknowledge": "I understand the risks and want to continue",
      "confirm.cancel": "Cancel",
-     "confirm.enable": "Enable Full access",
-     "auto.label": "Auto review",
-     "auto.badge": "EXP",
-     "auto.description": "Run without a sandbox after an experimental same-model review of every native tool call and PTC inner call.",
-     "auto.confirm.title": "Enable Auto review (experimental)?",
-     "auto.confirm.description": "Auto review runs without a sandbox. Before every native tool call and PTC inner call, the same model as the current agent reviews whether to allow it. This feature is experimental, can falsely allow or deny actions, and uses additional tokens.",
-     "auto.confirm.acknowledge": "I understand these risks and want to continue",
-     "auto.confirm.enable": "Enable Auto review"
+     "confirm.enable": "Enable Full access"
     }
    }
   }
@@ -1589,11 +1545,12 @@
      "openDocument": "打开配置文件",
      "openDocument.error": "无法打开配置文件",
      "general.nav": "通用设置",
-     "connection.error": "连接异常，刷新重试",
-     "connection.connecting": "重新连接中",
+     "connection.error": "连接异常",
+     "connection.retry": "立即重连",
+     "connection.connecting": "自动重连中",
      "connection.connected": "连接成功",
      "connection.reconnect": "连接异常，点击立即重连",
-     "connection.restart": "连接中断，正在重试，点击立即重连"
+     "connection.restart": "连接中断，正在自动重试，点击立即重连"
     }
    },
    "en": {
@@ -1605,10 +1562,11 @@
      "openDocument.error": "Could not open configuration file",
      "general.nav": "General",
      "connection.error": "Disconnected",
+     "connection.retry": "Reconnect now",
      "connection.connecting": "Reconnecting",
      "connection.connected": "Connected",
      "connection.reconnect": "Disconnected, reconnect now",
-     "connection.restart": "Reconnecting, reconnect now"
+     "connection.restart": "Reconnecting automatically, reconnect now"
     }
    }
   }
@@ -1650,9 +1608,6 @@
      "customized": "自定义设置",
      "baseUrl": "API 地址",
      "baseUrlDefault": "提供方默认",
-     "deepSeekChatBaseUrl": "https://api.deepseek.com",
-     "deepSeekMessagesBaseUrl": "https://api.deepseek.com/anthropic",
-     "deepSeekEndpointHint": "请填写与当前连接配置兼容的 API 地址。",
      "models": "模型目录",
      "modelsInherited": "正在使用适配器默认模型",
      "modelsCustomized": "已自定义模型目录",
@@ -1757,9 +1712,6 @@
      "customized": "Customized settings",
      "baseUrl": "Base URL",
      "baseUrlDefault": "Provider default",
-     "deepSeekChatBaseUrl": "https://api.deepseek.com",
-     "deepSeekMessagesBaseUrl": "https://api.deepseek.com/anthropic",
-     "deepSeekEndpointHint": "Use an endpoint compatible with the configured connection.",
      "models": "Models",
      "modelsInherited": "Using the adapter defaults",
      "modelsCustomized": "Customized model catalog",
@@ -2031,48 +1983,6 @@
    }
   }
  },
- "settings.archivedSessions": {
-  "dsh-client-ui-settings-unarchive-sessions": {
-   "zh": {
-    "value": {
-     "nav": "已归档会话",
-     "search": "搜索已归档会话",
-     "loading": "正在读取会话…",
-     "empty": "暂无已归档会话。",
-     "unavailable": "这里没有可恢复的已归档会话。",
-     "emptySearch": "没有匹配的会话。",
-     "unarchive": "取消归档",
-     "unarchiveNamed": "取消归档 {title}",
-     "ungrouped": "未分组",
-     "time.now": "刚刚",
-     "time.minutes": "{n}分钟",
-     "time.hours": "{n}小时",
-     "time.days": "{n}天",
-     "time.months": "{n}个月",
-     "time.years": "{n}年"
-    }
-   },
-   "en": {
-    "value": {
-     "nav": "Archived sessions",
-     "search": "Search archived sessions",
-     "loading": "Reading sessions…",
-     "empty": "No archived sessions.",
-     "unavailable": "No archived session here can be restored.",
-     "emptySearch": "No matching sessions.",
-     "unarchive": "Unarchive",
-     "unarchiveNamed": "Unarchive {title}",
-     "ungrouped": "Ungrouped",
-     "time.now": "now",
-     "time.minutes": "{n}min",
-     "time.hours": "{n}h",
-     "time.days": "{n}d",
-     "time.months": "{n}mo",
-     "time.years": "{n}y"
-    }
-   }
-  }
- },
  "sidebar": {
   "dsh-client-ui-sidebar": {
    "zh": {
@@ -2121,15 +2031,15 @@
     "value": {
      "title": "HTML",
      "frame": "HTML 文档预览",
-     "loading": "正在读取…",
-     "failed": "无法预览这份 HTML 文档"
+     "loading": "正在准备 HTML 预览…",
+     "failed": "无法预览这份 HTML 文档。"
     }
    },
    "en": {
     "value": {
      "title": "HTML",
      "frame": "HTML document preview",
-     "loading": "Reading…",
+     "loading": "Preparing HTML preview…",
      "failed": "This HTML document could not be previewed."
     }
    }
@@ -2141,16 +2051,16 @@
     "value": {
      "title": "图片",
      "preview": "图片预览：{name}",
-     "loading": "正在读取…",
-     "failed": "无法显示这张图片",
-     "unsupported": "图片预览需要完整文件内容"
+     "loading": "正在打开图片…",
+     "failed": "无法显示这张图片。",
+     "unsupported": "图片预览需要完整文件内容。"
     }
    },
    "en": {
     "value": {
      "title": "Image",
      "preview": "Image preview: {name}",
-     "loading": "Reading…",
+     "loading": "Opening image…",
      "failed": "This image could not be displayed.",
      "unsupported": "Image preview requires the complete file contents."
     }
@@ -2163,12 +2073,12 @@
     "value": {
      "title": "PDF",
      "pageImage": "PDF 第 {page} 页",
-     "loading": "正在读取…",
+     "loading": "正在打开 PDF…",
      "rendering": "正在绘制页面…",
      "failed": "无法显示 PDF：{message}",
-     "password": "此 PDF 需要密码，暂不支持预览",
-     "workerFailed": "PDF 渲染进程无法继续，请重试",
-     "unsupported": "PDF 预览需要完整文件内容",
+     "password": "此 PDF 需要密码，暂不支持预览。",
+     "workerFailed": "PDF 渲染进程无法继续，请重试。",
+     "unsupported": "PDF 预览需要完整文件内容。",
      "retry": "重试"
     }
    },
@@ -2176,7 +2086,7 @@
     "value": {
      "title": "PDF",
      "pageImage": "PDF page {page}",
-     "loading": "Reading…",
+     "loading": "Opening PDF…",
      "rendering": "Rendering page…",
      "failed": "Cannot display PDF: {message}",
      "password": "This PDF requires a password; password-protected previews are not supported.",
@@ -2211,7 +2121,7 @@
     "value": {
      "loading": "正在读取…",
      "loadMore": "加载更多",
-     "changed": "文件已更新，当前显示为旧内容",
+     "changed": "文件已更新，当前显示为旧内容。",
      "reloadNow": "重新载入",
      "reload": "重新读取文件",
      "wrap.enable": "自动换行",
@@ -2219,13 +2129,12 @@
      "wrap.aria": "自动换行",
      "openWith": "打开方式",
      "viewer.text": "纯文本",
-     "resourceUnavailable": "文件资源服务不可用",
-     "rendererUnavailable": "预览器 {name} 不可用",
-     "unsupportedFile": "该格式文件暂时无法预览",
-     "error.notFound": "文件不存在，可能已被移动或删除",
-     "error.tooLarge": "单页内容超过 {limit} 上限，无法读取",
-     "error.notText": "该格式文件暂时无法预览",
-     "error.notRegularFile": "该路径不是普通文件，没有可显示的内容",
+     "resourceUnavailable": "文件资源服务不可用。",
+     "rendererUnavailable": "预览器 {name} 不可用。",
+     "error.notFound": "文件不存在，可能已被移动或删除。",
+     "error.tooLarge": "单页内容超过 {limit} 上限，无法读取。",
+     "error.notText": "非文本文件，暂时无法预览。",
+     "error.notRegularFile": "该路径不是普通文件，没有可显示的内容。",
      "error.unavailable": "读取失败：{message}",
      "retry": "重试"
     }
@@ -2244,10 +2153,9 @@
      "viewer.text": "Plain text",
      "resourceUnavailable": "The file resource service is unavailable.",
      "rendererUnavailable": "The {name} preview is unavailable.",
-     "unsupportedFile": "Preview is not available for this file type yet.",
      "error.notFound": "File not found. It may have been moved or deleted.",
      "error.tooLarge": "This page exceeds the {limit} limit and cannot be read.",
-     "error.notText": "Preview is not available for this file type yet.",
+     "error.notText": "Not a text file, preview is unavailable for now.",
      "error.notRegularFile": "Not a regular file, nothing to display.",
      "error.unavailable": "Read failed: {message}",
      "retry": "Retry"
@@ -2343,72 +2251,6 @@
      "dock.drop.bottom": "Add bottom split",
      "tab.guide.title": "Start",
      "tab.unavailable": "Nothing here can view this kind of content yet."
-    }
-   }
-  }
- },
- "sidebarTerminal": {
-  "dsh-client-ui-sidebar-terminal": {
-   "zh": {
-    "value": {
-     "recoveryFailed": "恢复终端失败：{message}",
-     "retryRecovery": "重试恢复终端",
-     "shell": "选择 Shell",
-     "shellLoading": "正在读取 Shell…",
-     "shellEmpty": "没有可用的 Shell",
-     "description": "在会话工作区运行命令",
-     "title": "终端",
-     "new": "新建终端",
-     "loading": "正在读取终端环境…",
-     "creating": "正在启动…",
-     "connecting": "正在连接…",
-     "disconnected": "连接已断开。",
-     "reconnect": "重新连接",
-     "readonly": "此页面当前只读。",
-     "control": "接管输入",
-     "closed": "终端已关闭。",
-     "exited": "进程已退出（{code}）",
-     "failed": "终端错误：{message}",
-     "rename": "终端名称",
-     "unavailable": "不可用",
-     "retry": "重试",
-     "cleanupFailed": "终端「{title}」未能结束：{message}",
-     "missingTerminal": "此终端已不存在，请新建终端。",
-     "inputFull": "输入缓冲区已满，请重新连接后重试。",
-     "attachmentEnded": "终端连接已结束，请重新连接。",
-     "invalidOutput": "终端画面传输异常，请重新连接。",
-     "terminalLimit": "终端数量已达上限，请关闭不用的终端后重试。已退出的终端也计入数量。"
-    }
-   },
-   "en": {
-    "value": {
-     "recoveryFailed": "Terminal recovery failed: {message}",
-     "retryRecovery": "Retry terminal recovery",
-     "shell": "Choose shell",
-     "shellLoading": "Loading shells…",
-     "shellEmpty": "No shells available",
-     "description": "Run commands in the Session workspace",
-     "title": "Terminal",
-     "new": "New terminal",
-     "loading": "Reading terminal environment…",
-     "creating": "Starting…",
-     "connecting": "Connecting…",
-     "disconnected": "Disconnected.",
-     "reconnect": "Reconnect",
-     "readonly": "This view is read-only.",
-     "control": "Take control",
-     "closed": "Terminal closed.",
-     "exited": "Process exited ({code})",
-     "failed": "Terminal error: {message}",
-     "rename": "Terminal name",
-     "unavailable": "Unavailable",
-     "retry": "Retry",
-     "cleanupFailed": "Terminal “{title}” could not be ended: {message}",
-     "missingTerminal": "This terminal no longer exists. Open a new terminal.",
-     "inputFull": "The input buffer is full. Reconnect and try again.",
-     "attachmentEnded": "The terminal connection ended. Reconnect to continue.",
-     "invalidOutput": "The terminal screen could not be received. Reconnect to recover it.",
-     "terminalLimit": "The terminal limit has been reached. Close unused terminals and try again. Exited terminals also count toward the limit."
     }
    }
   }
@@ -2591,7 +2433,7 @@
      "turn.label": "第 {turn} 轮",
      "section.betweenTurns": "轮次之间",
      "group.message": "消息",
-     "group.step": "第 {step} 步",
+     "group.step": "步骤 {step}",
      "group.compaction": "压缩 {seq}",
      "status.failed": "失败",
      "status.pending": "等待中",
@@ -2668,13 +2510,6 @@
      "record.payloadJson": "参数 JSON",
      "record.outputJson": "结果 JSON",
      "record.thinking": "思考",
-     "record.wrapLines": "自动换行",
-     "code.source": "代码",
-     "code.output": "输出",
-     "code.copySource": "复制代码",
-     "code.copyOutput": "复制输出",
-     "code.originalJson": "原始 JSON",
-     "code.running": "执行中…",
      "record.systemPromptMissing": "本次请求没有系统提示词",
      "record.toolsMissing": "本次请求没有工具",
      "record.systemPrompt": "系统提示词",
@@ -2854,13 +2689,6 @@
      "record.payloadJson": "Payload JSON",
      "record.outputJson": "Result JSON",
      "record.thinking": "Thinking",
-     "record.wrapLines": "Wrap lines",
-     "code.source": "Code",
-     "code.output": "Output",
-     "code.copySource": "Copy code",
-     "code.copyOutput": "Copy output",
-     "code.originalJson": "Original JSON",
-     "code.running": "Running…",
      "record.systemPromptMissing": "No system prompt in this request",
      "record.toolsMissing": "No tools in this request",
      "record.systemPrompt": "System Prompt",
@@ -2944,7 +2772,7 @@
      "nav.cancel": "放弃整组问题",
      "option.recommended": "推荐",
      "custom.placeholder": "输入你的答案",
-     "action.skip": "跳过",
+     "action.skip": "跳过本题",
      "action.next": "下一题",
      "plan.header": "计划待审",
      "plan.approve": "确认执行",
@@ -2963,7 +2791,7 @@
      "nav.cancel": "Dismiss all questions",
      "option.recommended": "Recommended",
      "custom.placeholder": "Type your answer",
-     "action.skip": "Skip",
+     "action.skip": "Skip this question",
      "action.next": "Next",
      "plan.header": "Plan review",
      "plan.approve": "Approve",

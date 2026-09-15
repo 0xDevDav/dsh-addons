@@ -1,67 +1,287 @@
 {
- "batch": "question",
- "namespace": "question",
- "total": 15,
+ "batch": "trajectory#2",
+ "namespace": "trajectory",
+ "total": 70,
  "keys": {
-  "error.incomplete": {
-   "en": "Please complete this question first.",
-   "zh": "请先完成这道问题。"
+  "usage.sessionCumulative": {
+   "en": "Session cumulative",
+   "zh": "会话累计"
   },
-  "error.unanswered": {
-   "en": "Please select an option or enter a custom answer.",
-   "zh": "请选择一个选项或填写自定义答案。"
+  "options.notRecorded": {
+   "en": "Options not recorded",
+   "zh": "未记录选项"
   },
-  "nav.prev": {
-   "en": "Previous question",
-   "zh": "上一题"
+  "options.json": {
+   "en": "Request options JSON",
+   "zh": "请求选项 JSON"
   },
-  "nav.next": {
-   "en": "Next question",
-   "zh": "下一题"
+  "source.unknown": {
+   "en": "Unknown",
+   "zh": "未知"
   },
-  "nav.minimize": {
-   "en": "Collapse the question card",
-   "zh": "收起问题卡片"
+  "source.user": {
+   "en": "User",
+   "zh": "用户"
   },
-  "nav.maximize": {
-   "en": "Expand the question card",
-   "zh": "展开问题卡片"
+  "source.plugin": {
+   "en": "Plugin",
+   "zh": "插件"
   },
-  "nav.cancel": {
-   "en": "Dismiss all questions",
-   "zh": "放弃整组问题"
+  "source.pluginNamed": {
+   "en": "Plugin · {plugin}",
+   "zh": "插件 · {plugin}"
   },
-  "option.recommended": {
-   "en": "Recommended",
-   "zh": "推荐"
+  "source.goal": {
+   "en": "Goal",
+   "zh": "目标"
   },
-  "custom.placeholder": {
-   "en": "Type your answer",
-   "zh": "输入你的答案"
+  "source.goalRound": {
+   "en": "Goal · Round {round}",
+   "zh": "目标 · Round {round}"
   },
-  "action.skip": {
-   "en": "Skip this question",
-   "zh": "跳过本题"
+  "source.notRecorded": {
+   "en": "Source not recorded",
+   "zh": "未记录来源"
   },
-  "action.next": {
-   "en": "Next",
-   "zh": "下一题"
+  "source.messageJson": {
+   "en": "Message source JSON",
+   "zh": "消息来源 JSON"
   },
-  "plan.header": {
-   "en": "Plan review",
-   "zh": "计划待审"
+  "tab.summary": {
+   "en": "Summary",
+   "zh": "概述"
   },
-  "plan.approve": {
-   "en": "Approve",
-   "zh": "确认执行"
+  "tab.rawOutput": {
+   "en": "Raw Output",
+   "zh": "原始输出"
   },
-  "plan.decline": {
-   "en": "Refuse",
-   "zh": "拒绝"
+  "tab.preview": {
+   "en": "Preview",
+   "zh": "预览"
   },
-  "plan.discuss": {
-   "en": "Chat about it",
-   "zh": "去聊天里说"
+  "tab.raw": {
+   "en": "Raw",
+   "zh": "原始内容"
+  },
+  "tab.source": {
+   "en": "Source",
+   "zh": "来源"
+  },
+  "tab.payload": {
+   "en": "Payload",
+   "zh": "参数"
+  },
+  "tab.result": {
+   "en": "Result",
+   "zh": "结果"
+  },
+  "tab.schema": {
+   "en": "Schema",
+   "zh": "Schema"
+  },
+  "tab.timing": {
+   "en": "Timing",
+   "zh": "计时"
+  },
+  "tab.diff": {
+   "en": "Diff",
+   "zh": "差异"
+  },
+  "tab.systemPrompt": {
+   "en": "System Prompt",
+   "zh": "系统提示词"
+  },
+  "tab.tools": {
+   "en": "Tools",
+   "zh": "工具"
+  },
+  "tab.options": {
+   "en": "Options",
+   "zh": "选项"
+  },
+  "tab.usage": {
+   "en": "Usage",
+   "zh": "用量"
+  },
+  "record.toolCallOnly": {
+   "en": "(tool call only)",
+   "zh": "（仅工具调用）"
+  },
+  "record.noContent": {
+   "en": "No content",
+   "zh": "无内容"
+  },
+  "record.noPayload": {
+   "en": "No payload captured",
+   "zh": "未捕获参数"
+  },
+  "record.noResult": {
+   "en": "No result captured",
+   "zh": "未捕获结果"
+  },
+  "record.noOutput": {
+   "en": "No output",
+   "zh": "无输出"
+  },
+  "record.schemaUnavailable": {
+   "en": "Schema unavailable",
+   "zh": "Schema 不可用"
+  },
+  "record.parameters": {
+   "en": "Parameters",
+   "zh": "参数"
+  },
+  "record.resultJson": {
+   "en": "Result JSON",
+   "zh": "结果 JSON"
+  },
+  "record.json": {
+   "en": "JSON",
+   "zh": "JSON"
+  },
+  "record.parametersJson": {
+   "en": "parameters JSON",
+   "zh": "参数 JSON"
+  },
+  "record.namedParametersJson": {
+   "en": "{name} parameters JSON",
+   "zh": "{name} 参数 JSON"
+  },
+  "record.payloadJson": {
+   "en": "Payload JSON",
+   "zh": "参数 JSON"
+  },
+  "record.outputJson": {
+   "en": "Result JSON",
+   "zh": "结果 JSON"
+  },
+  "record.thinking": {
+   "en": "Thinking",
+   "zh": "思考"
+  },
+  "record.wrapLines": {
+   "en": "Wrap lines",
+   "zh": "自动换行"
+  },
+  "code.source": {
+   "en": "Code",
+   "zh": "代码"
+  },
+  "code.output": {
+   "en": "Output",
+   "zh": "输出"
+  },
+  "code.copySource": {
+   "en": "Copy code",
+   "zh": "复制代码"
+  },
+  "code.copyOutput": {
+   "en": "Copy output",
+   "zh": "复制输出"
+  },
+  "code.originalJson": {
+   "en": "Original JSON",
+   "zh": "原始 JSON"
+  },
+  "code.running": {
+   "en": "Running…",
+   "zh": "执行中…"
+  },
+  "record.systemPromptMissing": {
+   "en": "No system prompt in this request",
+   "zh": "本次请求没有系统提示词"
+  },
+  "record.toolsMissing": {
+   "en": "No tools in this request",
+   "zh": "本次请求没有工具"
+  },
+  "record.systemPrompt": {
+   "en": "System Prompt",
+   "zh": "系统提示词"
+  },
+  "record.tools": {
+   "en": "Tools",
+   "zh": "工具"
+  },
+  "block.openSummary": {
+   "en": "Open Block #{index} tool call summary",
+   "zh": "打开第 {index} 个块的工具调用概述"
+  },
+  "block.openSummaryTitle": {
+   "en": "Open tool call summary",
+   "zh": "打开工具调用概述"
+  },
+  "block.label": {
+   "en": "Block #{index} {type}",
+   "zh": "块 #{index} {type}"
+  },
+  "history.loadingTrajectory": {
+   "en": "Loading trajectory…",
+   "zh": "正在加载轨迹…"
+  },
+  "history.loadingEarlier": {
+   "en": "Loading earlier history…",
+   "zh": "正在加载更早的历史…"
+  },
+  "history.loadingEarlierAria": {
+   "en": "Loading earlier history…",
+   "zh": "正在加载更早的历史…"
+  },
+  "history.loadEarlier": {
+   "en": "Load earlier history",
+   "zh": "加载更早的历史"
+  },
+  "history.clickToLoadEarlier": {
+   "en": "Click to load earlier history",
+   "zh": "点击加载更早的历史"
+  },
+  "request.label": {
+   "en": "Request #{request}",
+   "zh": "请求 #{request}"
+  },
+  "request.labelCompaction": {
+   "en": "Request #{request} · Compaction",
+   "zh": "请求 #{request} · 压缩"
+  },
+  "request.compaction": {
+   "en": "Compaction · {section}",
+   "zh": "压缩 · {section}"
+  },
+  "request.compactionPurpose": {
+   "en": "Compaction",
+   "zh": "压缩"
+  },
+  "request.retryProgress": {
+   "en": "{retry} of {maximum}",
+   "zh": "{retry}/{maximum}"
+  },
+  "request.collapsedSummary": {
+   "en": "Collapsed {kind} summary, {summary}",
+   "zh": "已收起的{kind}概述，{summary}"
+  },
+  "request.collapsedTurn": {
+   "en": "turn",
+   "zh": "轮次"
+  },
+  "request.collapsedAssistant": {
+   "en": "assistant",
+   "zh": "助手"
+  },
+  "request.rowAria": {
+   "en": "{request}{kind}, {content}",
+   "zh": "{request}{kind}，{content}"
+  },
+  "request.rowPrefix": {
+   "en": "Request {request}, ",
+   "zh": "请求 {request}，"
+  },
+  "request.rowAriaCompaction": {
+   "en": "Request {request}, compaction",
+   "zh": "请求 {request}，压缩"
+  },
+  "request.noContent": {
+   "en": "no content",
+   "zh": "无内容"
   }
  }
 }

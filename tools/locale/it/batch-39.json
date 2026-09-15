@@ -1,13 +1,28 @@
 {
- "batch": "skill",
- "namespace": "skill",
+ "batch": "sidebarRight",
+ "namespace": "sidebarRight",
+ "total": 21,
  "keys": {
-  "row.title": "Skill",
-  "row.running": "Caricamento Skill",
-  "row.failed": "Caricamento Skill non riuscito",
-  "row.stopped": "Caricamento Skill interrotto",
-  "row.instructions": "Istruzioni",
-  "row.inspect": "Ispeziona",
-  "menu.userOnly": "solo utente"
+  "chrome.expand": "Apri barra laterale",
+  "chrome.expandAria": "Apri barra laterale destra",
+  "chrome.collapse": "Comprimi barra laterale",
+  "chrome.collapseAria": "Comprimi barra laterale destra",
+  "chrome.toFullscreen": "Schermo intero",
+  "chrome.exitFullscreen": "Esci da schermo intero",
+  "dock.emptyPane": "Pannello vuoto",
+  "dock.splitPane": "Dividi",
+  "dock.splitPaneDisabled": "Il limite è di due pannelli",
+  "dock.splitPaneNarrow": "Larghezza insufficiente per dividere, allarga la barra laterale",
+  "dock.closeTab": "Chiudi",
+  "dock.addTab": "Nuova scheda",
+  "dock.dockFloat": "Riporta nella barra laterale",
+  "dock.closeFloat": "Chiudi",
+  "dock.drop.center": "Sposta qui",
+  "dock.drop.left": "Aggiungi divisione a sinistra",
+  "dock.drop.right": "Aggiungi divisione a destra",
+  "dock.drop.top": "Aggiungi divisione in alto",
+  "dock.drop.bottom": "Aggiungi divisione in basso",
+  "tab.guide.title": "Inizia",
+  "tab.unavailable": "Qui non è ancora possibile visualizzare questo tipo di contenuto."
  }
 }

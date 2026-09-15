@@ -1,6 +1,7 @@
 {
  "batch": "reference",
  "namespace": "reference",
+ "total": 10,
  "keys": {
   "section.files": "File e cartelle",
   "section.sessions": "Sessioni",

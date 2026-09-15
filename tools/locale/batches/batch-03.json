@@ -1,7 +1,7 @@
 {
  "batch": "settings.agentPreset",
  "namespace": "settings.agentPreset",
- "total": 51,
+ "total": 57,
  "keys": {
   "error": {
    "en": "Could not load agent presets.",
@@ -100,8 +100,12 @@
    "zh": "选择器中显示的名字，缺省用标识符"
   },
   "inUse": {
-   "en": "In use",
-   "zh": "当前使用"
+   "en": "New task default",
+   "zh": "新任务默认"
+  },
+  "selectionOffDefault": {
+   "en": "Default",
+   "zh": "默认"
   },
   "builtInGroup": {
    "en": "Built-in",
@@ -206,6 +210,26 @@
   "deleting": {
    "en": "Deleting…",
    "zh": "正在删除…"
+  },
+  "showPicker": {
+   "en": "Allow switching Agent modes",
+   "zh": "允许切换agent模式"
+  },
+  "showPickerBeta": {
+   "en": "Beta",
+   "zh": "beta"
+  },
+  "showPickerDescription": {
+   "en": "When enabled, new tasks can choose Standard, PTC, Creator, Minimal, and custom modes. When disabled, all new tasks use the default mode (Standard by default; configurable). Only affects new tasks.",
+   "zh": "开启后，新任务可选择标准、PTC、创造、极简及自定义模式；关闭后统一使用默认模式（默认为标准模式，可自定义）。仅影响新任务。"
+  },
+  "enablePickerToSetDefault": {
+   "en": "Turn on Agent mode selection to choose a default",
+   "zh": "请先开启 Agent 模式选择，再设置默认模式"
+  },
+  "enablePickerToCreate": {
+   "en": "Turn on Agent mode selection to start Creator mode",
+   "zh": "请先开启 Agent 模式选择，再启动创造模式"
   }
  }
 }

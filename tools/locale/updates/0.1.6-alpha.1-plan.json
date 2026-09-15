@@ -1,0 +1,464 @@
+{
+ "added": {
+  "settings.agentPreset": {
+   "selectionOffDefault": {
+    "en": "Default",
+    "zh": "默认"
+   },
+   "showPicker": {
+    "en": "Allow switching Agent modes",
+    "zh": "允许切换agent模式"
+   },
+   "showPickerBeta": {
+    "en": "Beta",
+    "zh": "beta"
+   },
+   "showPickerDescription": {
+    "en": "When enabled, new tasks can choose Standard, PTC, Creator, Minimal, and custom modes. When disabled, all new tasks use the default mode (Standard by default; configurable). Only affects new tasks.",
+    "zh": "开启后，新任务可选择标准、PTC、创造、极简及自定义模式；关闭后统一使用默认模式（默认为标准模式，可自定义）。仅影响新任务。"
+   },
+   "enablePickerToSetDefault": {
+    "en": "Turn on Agent mode selection to choose a default",
+    "zh": "请先开启 Agent 模式选择，再设置默认模式"
+   },
+   "enablePickerToCreate": {
+    "en": "Turn on Agent mode selection to start Creator mode",
+    "zh": "请先开启 Agent 模式选择，再启动创造模式"
+   }
+  },
+  "chat": {
+   "duration.hours": {
+    "en": "{hours}h {minutes}m {seconds}s",
+    "zh": "{hours}小时{minutes}分{seconds}秒"
+   }
+  },
+  "command": {
+   "section.add": {
+    "en": "Add",
+    "zh": "添加"
+   },
+   "section.commands": {
+    "en": "Commands",
+    "zh": "指令"
+   },
+   "label.goal": {
+    "en": "Goal",
+    "zh": "目标"
+   },
+   "label.plan": {
+    "en": "Plan",
+    "zh": "计划"
+   },
+   "label.feedback": {
+    "en": "Feedback",
+    "zh": "反馈"
+   },
+   "label.compact": {
+    "en": "Compact",
+    "zh": "压缩"
+   },
+   "label.permission": {
+    "en": "Permission",
+    "zh": "权限"
+   },
+   "label.export": {
+    "en": "Export",
+    "zh": "下载日志"
+   },
+   "token.goal": {
+    "en": "goal",
+    "zh": "目标"
+   },
+   "token.plan": {
+    "en": "plan",
+    "zh": "计划"
+   },
+   "token.feedback": {
+    "en": "feedback",
+    "zh": "反馈"
+   },
+   "token.compact": {
+    "en": "compact",
+    "zh": "压缩"
+   },
+   "token.permission": {
+    "en": "permission",
+    "zh": "权限"
+   },
+   "token.export": {
+    "en": "export",
+    "zh": "导出"
+   }
+  },
+  "conversation": {
+   "input.file": {
+    "en": "File",
+    "zh": "文件"
+   },
+   "tool.autoReviewRejected": {
+    "en": "Rejected by Auto review",
+    "zh": "Auto review 已拒绝"
+   },
+   "tool.autoReviewNotExecuted": {
+    "en": "Tool was not executed. Reason: {reason}",
+    "zh": "工具未执行。原因：{reason}"
+   },
+   "tool.autoReviewReasonFallback": {
+    "en": "Auto review did not authorize this action",
+    "zh": "Auto review 未授权此次操作"
+   }
+  },
+  "model": {
+   "command.label": {
+    "en": "Model",
+    "zh": "模型"
+   }
+  },
+  "permission.access": {
+   "mode": {
+    "en": "Access mode, current: {name}",
+    "zh": "访问模式，当前：{name}"
+   },
+   "close": {
+    "en": "Close",
+    "zh": "关闭"
+   },
+   "auto.label": {
+    "en": "Auto review",
+    "zh": "Auto review"
+   },
+   "auto.badge": {
+    "en": "EXP",
+    "zh": "EXP"
+   },
+   "auto.description": {
+    "en": "Run without a sandbox after an experimental same-model review of every native tool call and PTC inner call.",
+    "zh": "无沙箱运行；每次原生工具调用和 PTC 内层调用前由同一模型进行实验性审查。"
+   },
+   "auto.confirm.title": {
+    "en": "Enable Auto review (experimental)?",
+    "zh": "确认启用 Auto review（实验）？"
+   },
+   "auto.confirm.description": {
+    "en": "Auto review runs without a sandbox. Before every native tool call and PTC inner call, the same model as the current agent reviews whether to allow it. This feature is experimental, can falsely allow or deny actions, and uses additional tokens.",
+    "zh": "Auto review 不使用沙箱。每次原生工具调用和 PTC 内层调用前，都会由与当前 agent 相同的模型进行审查。此功能仍属实验性，可能误放行或误拒绝，并会消耗额外 token。"
+   },
+   "auto.confirm.acknowledge": {
+    "en": "I understand these risks and want to continue",
+    "zh": "我已了解这些风险，并愿意继续"
+   },
+   "auto.confirm.enable": {
+    "en": "Enable Auto review",
+    "zh": "启用 Auto review"
+   }
+  },
+  "settings.models": {
+   "deepSeekChatBaseUrl": {
+    "en": "https://api.deepseek.com",
+    "zh": "https://api.deepseek.com"
+   },
+   "deepSeekMessagesBaseUrl": {
+    "en": "https://api.deepseek.com/anthropic",
+    "zh": "https://api.deepseek.com/anthropic"
+   },
+   "deepSeekEndpointHint": {
+    "en": "Use an endpoint compatible with the configured connection.",
+    "zh": "请填写与当前连接配置兼容的 API 地址。"
+   }
+  },
+  "settings.archivedSessions": {
+   "nav": {
+    "en": "Archived sessions",
+    "zh": "已归档会话"
+   },
+   "search": {
+    "en": "Search archived sessions",
+    "zh": "搜索已归档会话"
+   },
+   "loading": {
+    "en": "Reading sessions…",
+    "zh": "正在读取会话…"
+   },
+   "empty": {
+    "en": "No archived sessions.",
+    "zh": "暂无已归档会话。"
+   },
+   "unavailable": {
+    "en": "No archived session here can be restored.",
+    "zh": "这里没有可恢复的已归档会话。"
+   },
+   "emptySearch": {
+    "en": "No matching sessions.",
+    "zh": "没有匹配的会话。"
+   },
+   "unarchive": {
+    "en": "Unarchive",
+    "zh": "取消归档"
+   },
+   "unarchiveNamed": {
+    "en": "Unarchive {title}",
+    "zh": "取消归档 {title}"
+   },
+   "ungrouped": {
+    "en": "Ungrouped",
+    "zh": "未分组"
+   },
+   "time.now": {
+    "en": "now",
+    "zh": "刚刚"
+   },
+   "time.minutes": {
+    "en": "{n}min",
+    "zh": "{n}分钟"
+   },
+   "time.hours": {
+    "en": "{n}h",
+    "zh": "{n}小时"
+   },
+   "time.days": {
+    "en": "{n}d",
+    "zh": "{n}天"
+   },
+   "time.months": {
+    "en": "{n}mo",
+    "zh": "{n}个月"
+   },
+   "time.years": {
+    "en": "{n}y",
+    "zh": "{n}年"
+   }
+  },
+  "sidebarDocumentPreview": {
+   "unsupportedFile": {
+    "en": "Preview is not available for this file type yet.",
+    "zh": "该格式文件暂时无法预览"
+   }
+  },
+  "sidebarTerminal": {
+   "recoveryFailed": {
+    "en": "Terminal recovery failed: {message}",
+    "zh": "恢复终端失败：{message}"
+   },
+   "retryRecovery": {
+    "en": "Retry terminal recovery",
+    "zh": "重试恢复终端"
+   },
+   "shell": {
+    "en": "Choose shell",
+    "zh": "选择 Shell"
+   },
+   "shellLoading": {
+    "en": "Loading shells…",
+    "zh": "正在读取 Shell…"
+   },
+   "shellEmpty": {
+    "en": "No shells available",
+    "zh": "没有可用的 Shell"
+   },
+   "description": {
+    "en": "Run commands in the Session workspace",
+    "zh": "在会话工作区运行命令"
+   },
+   "title": {
+    "en": "Terminal",
+    "zh": "终端"
+   },
+   "new": {
+    "en": "New terminal",
+    "zh": "新建终端"
+   },
+   "loading": {
+    "en": "Reading terminal environment…",
+    "zh": "正在读取终端环境…"
+   },
+   "creating": {
+    "en": "Starting…",
+    "zh": "正在启动…"
+   },
+   "connecting": {
+    "en": "Connecting…",
+    "zh": "正在连接…"
+   },
+   "disconnected": {
+    "en": "Disconnected.",
+    "zh": "连接已断开。"
+   },
+   "reconnect": {
+    "en": "Reconnect",
+    "zh": "重新连接"
+   },
+   "readonly": {
+    "en": "This view is read-only.",
+    "zh": "此页面当前只读。"
+   },
+   "control": {
+    "en": "Take control",
+    "zh": "接管输入"
+   },
+   "closed": {
+    "en": "Terminal closed.",
+    "zh": "终端已关闭。"
+   },
+   "exited": {
+    "en": "Process exited ({code})",
+    "zh": "进程已退出（{code}）"
+   },
+   "failed": {
+    "en": "Terminal error: {message}",
+    "zh": "终端错误：{message}"
+   },
+   "rename": {
+    "en": "Terminal name",
+    "zh": "终端名称"
+   },
+   "unavailable": {
+    "en": "Unavailable",
+    "zh": "不可用"
+   },
+   "retry": {
+    "en": "Retry",
+    "zh": "重试"
+   },
+   "cleanupFailed": {
+    "en": "Terminal “{title}” could not be ended: {message}",
+    "zh": "终端「{title}」未能结束：{message}"
+   },
+   "missingTerminal": {
+    "en": "This terminal no longer exists. Open a new terminal.",
+    "zh": "此终端已不存在，请新建终端。"
+   },
+   "inputFull": {
+    "en": "The input buffer is full. Reconnect and try again.",
+    "zh": "输入缓冲区已满，请重新连接后重试。"
+   },
+   "attachmentEnded": {
+    "en": "The terminal connection ended. Reconnect to continue.",
+    "zh": "终端连接已结束，请重新连接。"
+   },
+   "invalidOutput": {
+    "en": "The terminal screen could not be received. Reconnect to recover it.",
+    "zh": "终端画面传输异常，请重新连接。"
+   },
+   "terminalLimit": {
+    "en": "The terminal limit has been reached. Close unused terminals and try again. Exited terminals also count toward the limit.",
+    "zh": "终端数量已达上限，请关闭不用的终端后重试。已退出的终端也计入数量。"
+   }
+  },
+  "trajectory": {
+   "record.wrapLines": {
+    "en": "Wrap lines",
+    "zh": "自动换行"
+   },
+   "code.source": {
+    "en": "Code",
+    "zh": "代码"
+   },
+   "code.output": {
+    "en": "Output",
+    "zh": "输出"
+   },
+   "code.copySource": {
+    "en": "Copy code",
+    "zh": "复制代码"
+   },
+   "code.copyOutput": {
+    "en": "Copy output",
+    "zh": "复制输出"
+   },
+   "code.originalJson": {
+    "en": "Original JSON",
+    "zh": "原始 JSON"
+   },
+   "code.running": {
+    "en": "Running…",
+    "zh": "执行中…"
+   }
+  }
+ },
+ "reworded": {
+  "settings.agentPreset": {
+   "inUse": {
+    "en": "New task default",
+    "wasEn": "In use",
+    "currentIt": "In uso"
+   }
+  },
+  "command": {
+   "description.goal": {
+    "en": "Set or view the goal for a long-running task",
+    "wasEn": "set or view the goal for a long-running task",
+    "currentIt": "imposta o visualizza l'obiettivo di un'attività di lunga durata"
+   },
+   "description.feedback": {
+    "en": "Record feedback about this session",
+    "wasEn": "record feedback about this session",
+    "currentIt": "registra un feedback su questa sessione"
+   }
+  },
+  "conversation": {
+   "input.commands": {
+    "en": "Add files or run commands",
+    "wasEn": "Commands",
+    "currentIt": "Comandi"
+   }
+  },
+  "settings": {
+   "connection.restart": {
+    "en": "Reconnecting, reconnect now",
+    "wasEn": "Reconnecting automatically, reconnect now",
+    "currentIt": "Riconnessione automatica in corso, riconnetti ora"
+   }
+  },
+  "documentHtml": {
+   "loading": {
+    "en": "Reading…",
+    "wasEn": "Preparing HTML preview…",
+    "currentIt": "Preparazione anteprima HTML…"
+   }
+  },
+  "sidebarImage": {
+   "loading": {
+    "en": "Reading…",
+    "wasEn": "Opening image…",
+    "currentIt": "Apertura immagine…"
+   }
+  },
+  "sidebarPdf": {
+   "loading": {
+    "en": "Reading…",
+    "wasEn": "Opening PDF…",
+    "currentIt": "Apertura PDF…"
+   }
+  },
+  "sidebarDocumentPreview": {
+   "error.notText": {
+    "en": "Preview is not available for this file type yet.",
+    "wasEn": "Not a text file, preview is unavailable for now.",
+    "currentIt": "Non è un file di testo, l'anteprima al momento non è disponibile."
+   }
+  },
+  "question": {
+   "action.skip": {
+    "en": "Skip",
+    "wasEn": "Skip this question",
+    "currentIt": "Salta questa domanda"
+   }
+  }
+ },
+ "removed": [
+  "common.json.collapseNode",
+  "common.json.expandNode",
+  "conversation.input.accessMode",
+  "conversation.file.attach",
+  "conversation.access.preset.readOnly",
+  "conversation.access.preset.workspaceWrite",
+  "conversation.access.preset.fullAccess",
+  "conversation.access.confirm.title",
+  "conversation.access.confirm.description",
+  "conversation.access.confirm.acknowledge",
+  "conversation.access.confirm.cancel",
+  "conversation.access.confirm.enable",
+  "deliverables.presented.open",
+  "settings.connection.retry"
+ ]
+}

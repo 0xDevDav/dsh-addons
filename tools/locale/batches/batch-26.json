@@ -135,6 +135,18 @@
    "en": "Provider default",
    "zh": "提供方默认"
   },
+  "deepSeekChatBaseUrl": {
+   "en": "https://api.deepseek.com",
+   "zh": "https://api.deepseek.com"
+  },
+  "deepSeekMessagesBaseUrl": {
+   "en": "https://api.deepseek.com/anthropic",
+   "zh": "https://api.deepseek.com/anthropic"
+  },
+  "deepSeekEndpointHint": {
+   "en": "Use an endpoint compatible with the configured connection.",
+   "zh": "请填写与当前连接配置兼容的 API 地址。"
+  },
   "models": {
    "en": "Models",
    "zh": "模型目录"
@@ -270,18 +282,6 @@
   "fetchTitle": {
    "en": "Choose models to add",
    "zh": "选择要添加的模型"
-  },
-  "fetchDescription": {
-   "en": "These are the models this provider has available. Choose the ones to add.",
-   "zh": "以下是模型提供方的可用模型，勾选要添加的模型。"
-  },
-  "fetchSearch": {
-   "en": "Search models",
-   "zh": "搜索模型"
-  },
-  "fetchNoMatches": {
-   "en": "No matching models.",
-   "zh": "没有匹配的模型。"
   }
  }
 }

@@ -1,31 +1,87 @@
 {
  "batch": "command",
  "namespace": "command",
- "total": 14,
+ "total": 28,
  "keys": {
+  "section.add": {
+   "en": "Add",
+   "zh": "添加"
+  },
+  "section.commands": {
+   "en": "Commands",
+   "zh": "指令"
+  },
+  "label.goal": {
+   "en": "Goal",
+   "zh": "目标"
+  },
+  "label.plan": {
+   "en": "Plan",
+   "zh": "计划"
+  },
+  "label.feedback": {
+   "en": "Feedback",
+   "zh": "反馈"
+  },
+  "label.compact": {
+   "en": "Compact",
+   "zh": "压缩"
+  },
+  "label.permission": {
+   "en": "Permission",
+   "zh": "权限"
+  },
+  "label.export": {
+   "en": "Export",
+   "zh": "下载日志"
+  },
+  "description.goal": {
+   "en": "Set or view the goal for a long-running task",
+   "zh": "设置或查看长期任务目标"
+  },
+  "description.plan": {
+   "en": "Enter or leave plan mode",
+   "zh": "进入或退出计划模式"
+  },
+  "description.feedback": {
+   "en": "Record feedback about this session",
+   "zh": "发送关于当前会话的反馈"
+  },
   "description.compact": {
    "en": "Compact older conversation history",
    "zh": "压缩以上对话内容"
-  },
-  "description.export": {
-   "en": "Download this Session log as a ZIP archive",
-   "zh": "将当前会话内容导出为 ZIP"
-  },
-  "description.feedback": {
-   "en": "record feedback about this session",
-   "zh": "发送关于当前会话的反馈"
-  },
-  "description.goal": {
-   "en": "set or view the goal for a long-running task",
-   "zh": "设置或查看长期任务目标"
   },
   "description.permission": {
    "en": "Switch the permission preset (sandbox mode + approval policy)",
    "zh": "切换权限预设（沙箱模式与审批策略）"
   },
-  "description.plan": {
-   "en": "Enter or leave plan mode",
-   "zh": "进入或退出计划模式"
+  "description.export": {
+   "en": "Download this Session log as a ZIP archive",
+   "zh": "将当前会话内容导出为 ZIP"
+  },
+  "token.goal": {
+   "en": "goal",
+   "zh": "目标"
+  },
+  "token.plan": {
+   "en": "plan",
+   "zh": "计划"
+  },
+  "token.feedback": {
+   "en": "feedback",
+   "zh": "反馈"
+  },
+  "token.compact": {
+   "en": "compact",
+   "zh": "压缩"
+  },
+  "token.permission": {
+   "en": "permission",
+   "zh": "权限"
+  },
+  "token.export": {
+   "en": "export",
+   "zh": "导出"
   },
   "search.placeholder": {
    "en": "Search…",

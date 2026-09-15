@@ -1,6 +1,7 @@
 {
  "batch": "job",
  "namespace": "job",
+ "total": 15,
  "keys": {
   "count.live.one": "{count} attività in background in esecuzione",
   "count.live.other": "{count} attività in background in esecuzione",

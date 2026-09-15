@@ -438,9 +438,14 @@
    "it": "Mostrato nel selettore; predefinito all'identificatore"
   },
   "inUse": {
-   "en": "In use",
-   "zh": "当前使用",
-   "it": "In uso"
+   "en": "New task default",
+   "zh": "新任务默认",
+   "it": "Predefinito per le nuove attività"
+  },
+  "selectionOffDefault": {
+   "en": "Default",
+   "zh": "默认",
+   "it": "Predefinito"
   },
   "builtInGroup": {
    "en": "Built-in",
@@ -571,6 +576,31 @@
    "en": "Deleting…",
    "zh": "正在删除…",
    "it": "Eliminazione…"
+  },
+  "showPicker": {
+   "en": "Allow switching Agent modes",
+   "zh": "允许切换agent模式",
+   "it": "Consenti di cambiare modalità agente"
+  },
+  "showPickerBeta": {
+   "en": "Beta",
+   "zh": "beta",
+   "it": "Beta"
+  },
+  "showPickerDescription": {
+   "en": "When enabled, new tasks can choose Standard, PTC, Creator, Minimal, and custom modes. When disabled, all new tasks use the default mode (Standard by default; configurable). Only affects new tasks.",
+   "zh": "开启后，新任务可选择标准、PTC、创造、极简及自定义模式；关闭后统一使用默认模式（默认为标准模式，可自定义）。仅影响新任务。",
+   "it": "Se attivo, le nuove attività possono scegliere le modalità standard, PTC, Creator, minimale e personalizzata. Se disattivo, tutte le nuove attività usano la modalità predefinita (standard, salvo diversa configurazione). Ha effetto solo sulle nuove attività."
+  },
+  "enablePickerToSetDefault": {
+   "en": "Turn on Agent mode selection to choose a default",
+   "zh": "请先开启 Agent 模式选择，再设置默认模式",
+   "it": "Attiva la selezione della modalità agente per scegliere un valore predefinito"
+  },
+  "enablePickerToCreate": {
+   "en": "Turn on Agent mode selection to start Creator mode",
+   "zh": "请先开启 Agent 模式选择，再启动创造模式",
+   "it": "Attiva la selezione della modalità agente per avviare la modalità Creator"
   }
  },
  "cordis": {
@@ -990,11 +1020,6 @@
    "en": "Inspect call",
    "zh": "查看调用",
    "it": "Ispeziona chiamata"
-  },
-  "presented.open": {
-   "en": "Open {name} in default app",
-   "zh": "在默认程序中打开 {name}",
-   "it": "Apri {name} con l'app predefinita"
   },
   "produced.label": {
    "en": "Files changed",

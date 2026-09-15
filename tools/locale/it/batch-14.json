@@ -1,6 +1,7 @@
 {
  "batch": "goal",
  "namespace": "goal",
+ "total": 12,
  "keys": {
   "phase.active": "Obiettivo in corso",
   "phase.active.disarmed": "Obiettivo inattivo",

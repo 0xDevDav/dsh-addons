@@ -3,42 +3,6 @@
  "namespace": "conversation",
  "total": 70,
  "keys": {
-  "session.hierarchy": {
-   "en": "Session hierarchy",
-   "zh": "会话层级"
-  },
-  "todo.title": {
-   "en": "To-dos",
-   "zh": "任务"
-  },
-  "todo.progress.done": {
-   "en": "{done} completed",
-   "zh": "{done} 已完成"
-  },
-  "todo.progress.active": {
-   "en": "{active} in progress",
-   "zh": "{active} 进行中"
-  },
-  "todo.progress.pending": {
-   "en": "{pending} pending",
-   "zh": "{pending} 待处理"
-  },
-  "todo.rowTitle": {
-   "en": "Update to-do list",
-   "zh": "更新任务清单"
-  },
-  "todo.completed": {
-   "en": "{done}/{total} completed",
-   "zh": "{done}/{total} 已完成"
-  },
-  "command.attachmentsUnsupported": {
-   "en": "/{command} does not accept attachments; remove them first",
-   "zh": "/{command} 不接受附件，请先移除附件"
-  },
-  "ask.rowTitle": {
-   "en": "Ask question",
-   "zh": "提问"
-  },
   "ask.waiting": {
    "en": "waiting",
    "zh": "等待回答"
@@ -171,6 +135,18 @@
    "en": "Fetch",
    "zh": "网页获取"
   },
+  "tool.autoReviewRejected": {
+   "en": "Rejected by Auto review",
+   "zh": "Auto review 已拒绝"
+  },
+  "tool.autoReviewNotExecuted": {
+   "en": "Tool was not executed. Reason: {reason}",
+   "zh": "工具未执行。原因：{reason}"
+  },
+  "tool.autoReviewReasonFallback": {
+   "en": "Auto review did not authorize this action",
+   "zh": "Auto review 未授权此次操作"
+  },
   "diff.files.one": {
    "en": "{count} file",
    "zh": "{count} 个文件"
@@ -282,6 +258,30 @@
   "queue.edit.unsupported": {
    "en": "Contains non-text content; editing is not supported yet",
    "zh": "包含非文本内容，暂不支持编辑"
+  },
+  "queue.save": {
+   "en": "Save queued message",
+   "zh": "保存排队消息"
+  },
+  "queue.cancelEdit": {
+   "en": "Cancel editing",
+   "zh": "取消编辑"
+  },
+  "queue.remove": {
+   "en": "Remove queued message",
+   "zh": "删除排队消息"
+  },
+  "queue.steer": {
+   "en": "Steer queued message",
+   "zh": "插话发送"
+  },
+  "queue.steer.unavailable": {
+   "en": "Steering is available only while the agent is running",
+   "zh": "仅运行中可插话发送"
+  },
+  "queue.editFailed": {
+   "en": "Edit failed: this message may have already started sending.",
+   "zh": "编辑失败：这条消息可能已经开始发送。"
   }
  }
 }

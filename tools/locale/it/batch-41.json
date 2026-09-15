@@ -1,15 +1,14 @@
 {
- "batch": "settings.theme",
- "namespace": "settings.theme",
+ "batch": "skill",
+ "namespace": "skill",
+ "total": 7,
  "keys": {
-  "appearance.title": "Aspetto",
-  "appearance.light": "Chiaro",
-  "appearance.dark": "Scuro",
-  "appearance.system": "Sistema",
-  "fontSize.title": "Dimensione carattere",
-  "fontSize.description": "Influisce solo sul contenuto della conversazione",
-  "fontSize.unit": "px",
-  "fontSize.increase": "Aumenta dimensione carattere",
-  "fontSize.decrease": "Riduci dimensione carattere"
+  "row.title": "Skill",
+  "row.running": "Caricamento Skill",
+  "row.failed": "Caricamento Skill non riuscito",
+  "row.stopped": "Caricamento Skill interrotto",
+  "row.instructions": "Istruzioni",
+  "row.inspect": "Ispeziona",
+  "menu.userOnly": "solo utente"
  }
 }

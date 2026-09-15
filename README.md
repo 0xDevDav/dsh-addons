@@ -3,15 +3,15 @@
 Personal additions for the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) Web surface,
 packaged as **profile bundles** so they survive a DSH update and install on any machine with two commands.
 
-Built and verified on DSH `0.1.5-rc.2`, Windows, Node 24, pnpm 10.
+Built and verified on DSH `0.1.6-alpha.1`, Windows, Node 24, pnpm 10.
 
 ## What is in here
 
 | Path | What it is |
 |---|---|
-| `packages/dsh-locale-it` | **Italian language pack**: 1 257 strings across all 42 shipped client locale namespaces, registered as the `it` language |
+| `packages/dsh-locale-it` | **Italian language pack**: 1 331 strings across all 44 shipped client locale namespaces, registered as the `it` language |
 | `packages/dsh-session-cost` | **Cost surfaces**: the session-tree cost pill beside the composer statistics, a peak/off-peak hour widget above *New session*, and the account balance inside the Settings row |
-| `tools/locale` | The pipeline that builds the language pack: dictionary extraction, batching, validation, review data |
+| `tools/locale` | The pipeline that builds the language pack: dictionary extraction, batching, validation, review data, and the incremental update tools |
 | `tools/cost` | The verification suites for the cost pack, and the reconciliation against the provider's usage page |
 | `install` | Installers that add both packs to the local Web profile |
 
@@ -52,25 +52,36 @@ dsh plugin --profile web add /path/to/dsh-addons/packages/dsh-session-cost
   rate, with the schedule in your own timezone.
 - **Your DeepSeek balance** on the Settings row, read from the provider.
 
-## Regenerating the language pack after a DSH update
+## Updating the language pack after a DSH release
 
-A DSH release that adds locale keys leaves those keys in English (the pack registers only what it
-knows, and the locale runtime falls back to `en` per key). To pick them up:
+A release that adds locale keys leaves those keys in English (the pack registers only what it knows,
+and the locale runtime falls back to `en` per key). Picking them up is an incremental job: the batches
+are regenerated from the new dictionaries, so the existing translations are re-attached by **namespace
+and key**, which is what they are actually about.
 
 ```sh
-node tools/locale/extract2.mjs      # shipped English dictionaries -> dicts.json
-node tools/locale/split.mjs         # dicts.json -> batches/batch-NN.json
-#   translate every batch, writing the results into it/batch-NN.json
-node tools/locale/validate.mjs      # key coverage, placeholders, leftovers
-node tools/locale/fix-and-group.mjs # targeted fixes + review groups
-#   review each group, writing fixes into fixes/GN.json
-node tools/locale/finalize.mjs      # apply the fixes, validate, emit it-dictionaries.json
-node tools/locale/build-pack.mjs    # write packages/dsh-locale-it
-node tools/locale/test-pack.mjs     # prove the bundle registers everything
+node tools/locale/extract2.mjs                                 # shipped dictionaries -> dicts.json
+node tools/locale/plan-update.mjs dicts-<old>.json dicts.json \
+     updates/<version>-plan.json                               # what the release adds and rewrites
+#   write the Italian for the new keys, and review the reworded ones, into updates/<version>.json
+node tools/locale/split.mjs                                    # dicts.json -> batches/batch-NN.json
+node tools/locale/apply-update.mjs updates/<version>.json      # carry + apply -> it/batch-NN.json
+node tools/locale/validate.mjs                                 # placeholders, coverage, leftovers
+node tools/locale/fix-and-group.mjs                            # targeted fixes + review groups
+node tools/locale/finalize.mjs                                 # validate, emit it-dictionaries.json
+node tools/locale/build-pack.mjs                               # write packages/dsh-locale-it
+node tools/locale/test-pack.mjs                                # prove the bundle registers everything
 ```
 
-`tools/locale/GLOSSARIO.md` is the terminology contract the translation was produced under, and
-`it-dictionaries.json` is the finished source of truth behind the shipped bundle.
+`apply-update.mjs` fails the run when a key in a batch has neither a carried translation nor an entry
+in the update file, and also when an entry in the update file matches no key anywhere: that second case
+is how a key split wrongly across namespace and key — `settings` + `connection.restart`, not
+`settings.connection` + `restart` — would otherwise ship in English without anyone noticing. Keys the
+release dropped simply leave the batches.
+
+`tools/locale/GLOSSARIO.md` is the terminology contract the translation was produced under,
+`it-dictionaries.json` is the finished source of truth behind the shipped bundle, and `updates/` keeps,
+per release, exactly what was translated for it.
 
 ## Verifying the cost pack
 

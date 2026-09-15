@@ -1,43 +1,79 @@
 {
- "batch": "session-log-download",
- "namespace": "session-log-download",
- "total": 9,
+ "batch": "workflowRun",
+ "namespace": "workflowRun",
+ "total": 18,
  "keys": {
-  "header.more": {
-   "en": "More actions",
-   "zh": "更多操作"
+  "run.title": {
+   "en": "{name}",
+   "zh": "{name}"
   },
-  "menu.download": {
-   "en": "Download session log",
-   "zh": "下载 Session 日志"
+  "run.members.one": {
+   "en": "{count} member",
+   "zh": "{count} 个成员"
   },
-  "dialog.preparingTitle": {
-   "en": "Exporting Session",
-   "zh": "正在导出 Session"
+  "run.members.other": {
+   "en": "{count} members",
+   "zh": "{count} 个成员"
   },
-  "dialog.preparingDescription": {
-   "en": "Preparing a ZIP containing this Session, its sub-Sessions, and attachments.",
-   "zh": "正在准备包含当前 Session、子 Session 和附件的 ZIP 文件。"
+  "run.empty": {
+   "en": "No members started",
+   "zh": "没有启动成员"
   },
-  "dialog.successTitle": {
-   "en": "Session download started",
-   "zh": "Session 导出已开始下载"
+  "phase.unassigned": {
+   "en": "Unphased",
+   "zh": "未分阶段"
   },
-  "dialog.successDescription": {
-   "en": "The browser is downloading the Session ZIP.",
-   "zh": "浏览器正在下载 Session ZIP 文件。"
+  "phase.empty": {
+   "en": "Empty phase name",
+   "zh": "空阶段名"
   },
-  "dialog.errorTitle": {
-   "en": "Session export failed",
-   "zh": "Session 导出失败"
+  "statusCount.running": {
+   "en": "Running {count}",
+   "zh": "运行中 {count}"
   },
-  "dialog.close": {
-   "en": "Close",
-   "zh": "关闭"
+  "statusCount.completed": {
+   "en": "Completed {count}",
+   "zh": "已完成 {count}"
   },
-  "dialog.commandFailed": {
-   "en": "Could not start the Session export.",
-   "zh": "无法启动 Session 导出。"
+  "statusCount.failed": {
+   "en": "Failed {count}",
+   "zh": "失败 {count}"
+  },
+  "statusCount.cancelled": {
+   "en": "Cancelled {count}",
+   "zh": "已取消 {count}"
+  },
+  "statusCount.interrupted": {
+   "en": "Interrupted {count}",
+   "zh": "已中断 {count}"
+  },
+  "member.empty": {
+   "en": "Empty member name",
+   "zh": "空成员名"
+  },
+  "member.open": {
+   "en": "Open {name}",
+   "zh": "打开 {name}"
+  },
+  "status.running": {
+   "en": "Running",
+   "zh": "运行中"
+  },
+  "status.completed": {
+   "en": "Completed",
+   "zh": "已完成"
+  },
+  "status.failed": {
+   "en": "Failed",
+   "zh": "失败"
+  },
+  "status.cancelled": {
+   "en": "Cancelled",
+   "zh": "已取消"
+  },
+  "status.interrupted": {
+   "en": "Interrupted",
+   "zh": "已中断"
   }
  }
 }

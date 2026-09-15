@@ -1,59 +1,83 @@
 {
- "batch": "sidebarFiles",
- "namespace": "sidebarFiles",
- "total": 13,
+ "batch": "sidebarDocumentPreview",
+ "namespace": "sidebarDocumentPreview",
+ "total": 19,
  "keys": {
-  "type.label": {
-   "en": "Files",
-   "zh": "文件"
-  },
-  "guide.title": {
-   "en": "Workspace files",
-   "zh": "工作区文件"
-  },
-  "guide.description": {
-   "en": "Browse files in this session's workspace",
-   "zh": "浏览会话工作区的文件"
-  },
   "loading": {
    "en": "Reading…",
    "zh": "正在读取…"
   },
-  "empty": {
-   "en": "Empty directory",
-   "zh": "空目录"
+  "loadMore": {
+   "en": "Load more",
+   "zh": "加载更多"
   },
-  "truncated": {
-   "en": "Too many entries, showing only some of them.",
-   "zh": "条目太多，只显示了一部分。"
+  "changed": {
+   "en": "The file has changed, showing the previous content.",
+   "zh": "文件已更新，当前显示为旧内容"
   },
-  "noWorkspace": {
-   "en": "This session has no workspace directory.",
-   "zh": "这个会话没有工作区目录。"
+  "reloadNow": {
+   "en": "Reload",
+   "zh": "重新载入"
   },
   "reload": {
-   "en": "Reload",
-   "zh": "重新读取"
+   "en": "Read the file again",
+   "zh": "重新读取文件"
   },
-  "entry.other": {
-   "en": "Not a file or a directory, so it cannot be opened.",
-   "zh": "这不是文件或目录，没法打开。"
+  "wrap.enable": {
+   "en": "Turn on line wrap",
+   "zh": "自动换行"
+  },
+  "wrap.disable": {
+   "en": "Turn off line wrap",
+   "zh": "取消换行"
+  },
+  "wrap.aria": {
+   "en": "Line wrap",
+   "zh": "自动换行"
+  },
+  "openWith": {
+   "en": "Open with",
+   "zh": "打开方式"
+  },
+  "viewer.text": {
+   "en": "Plain text",
+   "zh": "纯文本"
+  },
+  "resourceUnavailable": {
+   "en": "The file resource service is unavailable.",
+   "zh": "文件资源服务不可用"
+  },
+  "rendererUnavailable": {
+   "en": "The {name} preview is unavailable.",
+   "zh": "预览器 {name} 不可用"
+  },
+  "unsupportedFile": {
+   "en": "Preview is not available for this file type yet.",
+   "zh": "该格式文件暂时无法预览"
   },
   "error.notFound": {
-   "en": "That directory is gone. It may have been moved or deleted.",
-   "zh": "这个目录不在了。可能已被移动或删除。"
+   "en": "File not found. It may have been moved or deleted.",
+   "zh": "文件不存在，可能已被移动或删除"
   },
-  "error.outsideWorkspace": {
-   "en": "That directory is outside the workspace, so the sidebar will not read it.",
-   "zh": "这个目录在工作区之外，侧栏不会读取它。"
+  "error.tooLarge": {
+   "en": "This page exceeds the {limit} limit and cannot be read.",
+   "zh": "单页内容超过 {limit} 上限，无法读取"
   },
-  "error.notDirectory": {
-   "en": "That is not a directory.",
-   "zh": "这不是一个目录。"
+  "error.notText": {
+   "en": "Preview is not available for this file type yet.",
+   "zh": "该格式文件暂时无法预览"
+  },
+  "error.notRegularFile": {
+   "en": "Not a regular file, nothing to display.",
+   "zh": "该路径不是普通文件，没有可显示的内容"
   },
   "error.unavailable": {
    "en": "Read failed: {message}",
    "zh": "读取失败：{message}"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试"
   }
  }
 }

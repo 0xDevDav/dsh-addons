@@ -1,11 +1,22 @@
 {
- "batch": "sidebar",
- "namespace": "sidebar",
+ "batch": "settings.archivedSessions",
+ "namespace": "settings.archivedSessions",
+ "total": 15,
  "keys": {
-  "session.new": "Nuova sessione",
-  "session.new.label": "Nuova sessione",
-  "toggle.open": "Apri barra laterale",
-  "toggle.collapse": "Comprimi barra laterale",
-  "panels.label": "Pannelli globali"
+  "nav": "Sessioni archiviate",
+  "search": "Cerca nelle sessioni archiviate",
+  "loading": "Lettura delle sessioni…",
+  "empty": "Nessuna sessione archiviata.",
+  "unavailable": "Nessuna sessione archiviata qui può essere ripristinata.",
+  "emptySearch": "Nessuna sessione corrispondente.",
+  "unarchive": "Ripristina",
+  "unarchiveNamed": "Ripristina {title}",
+  "ungrouped": "Senza gruppo",
+  "time.now": "adesso",
+  "time.minutes": "{n}min",
+  "time.hours": "{n}h",
+  "time.days": "{n}g",
+  "time.months": "{n}mes",
+  "time.years": "{n}a"
  }
 }

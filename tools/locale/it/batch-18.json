@@ -1,7 +1,9 @@
 {
  "batch": "model",
  "namespace": "model",
+ "total": 21,
  "keys": {
+  "command.label": "Modello",
   "command.description": "Seleziona il modello per questa conversazione",
   "option.loadError": "Caricamento del catalogo non riuscito: {message}",
   "option.deepseekV4Flash.description": "Veloce, efficiente ed economico; adatto a compiti mirati, di routine o paralleli.",

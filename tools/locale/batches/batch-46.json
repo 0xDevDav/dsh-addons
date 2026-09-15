@@ -1,79 +1,175 @@
 {
- "batch": "workflowRun",
- "namespace": "workflowRun",
- "total": 18,
+ "batch": "trajectory#3",
+ "namespace": "trajectory",
+ "total": 42,
  "keys": {
-  "run.title": {
-   "en": "{name}",
-   "zh": "{name}"
+  "summary.toolCalls.one": {
+   "en": "{count} tool call",
+   "zh": "{count} 个工具调用"
   },
-  "run.members.one": {
-   "en": "{count} member",
-   "zh": "{count} 个成员"
+  "summary.toolCalls.other": {
+   "en": "{count} tool calls",
+   "zh": "{count} 个工具调用"
   },
-  "run.members.other": {
-   "en": "{count} members",
-   "zh": "{count} 个成员"
+  "summary.steps.one": {
+   "en": "{count} step",
+   "zh": "{count} 个步骤"
   },
-  "run.empty": {
-   "en": "No members started",
-   "zh": "没有启动成员"
+  "summary.steps.other": {
+   "en": "{count} steps",
+   "zh": "{count} 个步骤"
   },
-  "phase.unassigned": {
-   "en": "Unphased",
-   "zh": "未分阶段"
+  "details.event": {
+   "en": "Event details",
+   "zh": "事件详情"
   },
-  "phase.empty": {
-   "en": "Empty phase name",
-   "zh": "空阶段名"
+  "details.resize": {
+   "en": "Resize event details",
+   "zh": "调整事件详情宽度"
   },
-  "statusCount.running": {
-   "en": "Running {count}",
-   "zh": "运行中 {count}"
+  "details.resizeTitle": {
+   "en": "Drag to resize. Double-click to reset.",
+   "zh": "拖动调整大小；双击恢复默认值。"
   },
-  "statusCount.completed": {
-   "en": "Completed {count}",
-   "zh": "已完成 {count}"
+  "details.close": {
+   "en": "Close details",
+   "zh": "关闭详情"
   },
-  "statusCount.failed": {
-   "en": "Failed {count}",
-   "zh": "失败 {count}"
+  "details.status": {
+   "en": "Status",
+   "zh": "状态"
   },
-  "statusCount.cancelled": {
-   "en": "Cancelled {count}",
-   "zh": "已取消 {count}"
+  "details.purpose": {
+   "en": "Purpose",
+   "zh": "用途"
   },
-  "statusCount.interrupted": {
-   "en": "Interrupted {count}",
-   "zh": "已中断 {count}"
+  "details.provider": {
+   "en": "Provider",
+   "zh": "提供方"
   },
-  "member.empty": {
-   "en": "Empty member name",
-   "zh": "空成员名"
+  "details.model": {
+   "en": "Model",
+   "zh": "模型"
   },
-  "member.open": {
-   "en": "Open {name}",
-   "zh": "打开 {name}"
+  "details.toolCalls": {
+   "en": "Tool calls",
+   "zh": "工具调用"
   },
-  "status.running": {
-   "en": "Running",
-   "zh": "运行中"
+  "details.subtoolCalls": {
+   "en": "Subtool calls",
+   "zh": "子工具调用"
   },
-  "status.completed": {
-   "en": "Completed",
-   "zh": "已完成"
+  "details.error": {
+   "en": "Error",
+   "zh": "错误"
   },
-  "status.failed": {
-   "en": "Failed",
-   "zh": "失败"
+  "details.failure.auth": {
+   "en": "API key is invalid",
+   "zh": "API 密钥无效"
   },
-  "status.cancelled": {
-   "en": "Cancelled",
-   "zh": "已取消"
+  "details.retry": {
+   "en": "Retry",
+   "zh": "重试"
   },
-  "status.interrupted": {
-   "en": "Interrupted",
-   "zh": "已中断"
+  "details.scheduled": {
+   "en": "Scheduled",
+   "zh": "已计划"
+  },
+  "details.retryDelay": {
+   "en": "Retry delay",
+   "zh": "重试延迟"
+  },
+  "details.result": {
+   "en": "Result",
+   "zh": "结果"
+  },
+  "details.compacted": {
+   "en": "Compacted",
+   "zh": "已压缩"
+  },
+  "details.assistantMessage": {
+   "en": "Assistant Message",
+   "zh": "助手消息"
+  },
+  "details.source": {
+   "en": "Source",
+   "zh": "来源"
+  },
+  "details.hierarchy": {
+   "en": "Hierarchy",
+   "zh": "层级"
+  },
+  "details.toolCall": {
+   "en": "Tool Call",
+   "zh": "工具调用"
+  },
+  "timeline.aria": {
+   "en": "Trajectory timeline",
+   "zh": "轨迹时间线"
+  },
+  "timeline.overviewAria": {
+   "en": "Timeline overview; drag horizontally to focus events",
+   "zh": "时间线概览；水平拖动可聚焦事件"
+  },
+  "timeline.noTimingData": {
+   "en": "No timing data",
+   "zh": "无计时数据"
+  },
+  "timeline.total": {
+   "en": "Total {duration}",
+   "zh": "总计 {duration}"
+  },
+  "timeline.started": {
+   "en": "Started {time}",
+   "zh": "开始于 {time}"
+  },
+  "timeline.ttftDecoding": {
+   "en": "TTFT {ttft} · Decoding {decoding}",
+   "zh": "首 token {ttft} · 解码 {decoding}"
+  },
+  "layout.compacting": {
+   "en": "Compacting context…",
+   "zh": "正在压缩上下文…"
+  },
+  "layout.compactionFailed": {
+   "en": "Compaction failed",
+   "zh": "上下文压缩失败"
+  },
+  "layout.compacted": {
+   "en": "Context compacted",
+   "zh": "上下文已压缩"
+  },
+  "layout.toolCallOnly": {
+   "en": "Tool call only",
+   "zh": "仅工具调用"
+  },
+  "layout.imageOnly": {
+   "en": "Images ×{count}",
+   "zh": "图片 ×{count}"
+  },
+  "layout.fileAttachments": {
+   "en": "Files ×{count}",
+   "zh": "文件 ×{count}"
+  },
+  "layout.initialSystemPrompt": {
+   "en": "Initial System Prompt",
+   "zh": "初始系统提示词"
+  },
+  "layout.systemPromptUpdated": {
+   "en": "System Prompt Updated",
+   "zh": "系统提示词已更新"
+  },
+  "layout.toolsUpdated": {
+   "en": "Tools Updated",
+   "zh": "工具已更新"
+  },
+  "layout.systemPromptAndToolsUpdated": {
+   "en": "System Prompt and Tools Updated",
+   "zh": "系统提示词和工具已更新"
+  },
+  "layout.compactionInterrupted": {
+   "en": "Compaction was interrupted before completion.",
+   "zh": "上下文压缩在完成前被中断。"
   }
  }
 }

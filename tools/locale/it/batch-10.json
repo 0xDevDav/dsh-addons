@@ -1,13 +1,8 @@
 {
  "batch": "conversation#3",
  "namespace": "conversation",
+ "total": 13,
  "keys": {
-  "queue.save": "Salva messaggio in coda",
-  "queue.cancelEdit": "Annulla modifica",
-  "queue.remove": "Rimuovi messaggio in coda",
-  "queue.steer": "Guida messaggio in coda",
-  "queue.steer.unavailable": "La guida è disponibile solo mentre l'agente è in esecuzione",
-  "queue.editFailed": "Modifica non riuscita: questo messaggio potrebbe essere già stato inviato.",
   "queue.removeFailed": "Rimozione non riuscita: questo messaggio potrebbe essere già stato inviato.",
   "queue.steerFailed": "Guida non riuscita. Riprova.",
   "terminal.signal": "signal {signal}",

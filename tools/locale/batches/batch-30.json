@@ -1,27 +1,67 @@
 {
- "batch": "sidebar",
- "namespace": "sidebar",
- "total": 5,
+ "batch": "settings.archivedSessions",
+ "namespace": "settings.archivedSessions",
+ "total": 15,
  "keys": {
-  "session.new": {
-   "en": "New Session",
-   "zh": "新会话"
+  "nav": {
+   "en": "Archived sessions",
+   "zh": "已归档会话"
   },
-  "session.new.label": {
-   "en": "New session",
-   "zh": "新建会话"
+  "search": {
+   "en": "Search archived sessions",
+   "zh": "搜索已归档会话"
   },
-  "toggle.open": {
-   "en": "Open sidebar",
-   "zh": "打开侧边栏"
+  "loading": {
+   "en": "Reading sessions…",
+   "zh": "正在读取会话…"
   },
-  "toggle.collapse": {
-   "en": "Collapse sidebar",
-   "zh": "收起侧边栏"
+  "empty": {
+   "en": "No archived sessions.",
+   "zh": "暂无已归档会话。"
   },
-  "panels.label": {
-   "en": "Global panels",
-   "zh": "全局面板"
+  "unavailable": {
+   "en": "No archived session here can be restored.",
+   "zh": "这里没有可恢复的已归档会话。"
+  },
+  "emptySearch": {
+   "en": "No matching sessions.",
+   "zh": "没有匹配的会话。"
+  },
+  "unarchive": {
+   "en": "Unarchive",
+   "zh": "取消归档"
+  },
+  "unarchiveNamed": {
+   "en": "Unarchive {title}",
+   "zh": "取消归档 {title}"
+  },
+  "ungrouped": {
+   "en": "Ungrouped",
+   "zh": "未分组"
+  },
+  "time.now": {
+   "en": "now",
+   "zh": "刚刚"
+  },
+  "time.minutes": {
+   "en": "{n}min",
+   "zh": "{n}分钟"
+  },
+  "time.hours": {
+   "en": "{n}h",
+   "zh": "{n}小时"
+  },
+  "time.days": {
+   "en": "{n}d",
+   "zh": "{n}天"
+  },
+  "time.months": {
+   "en": "{n}mo",
+   "zh": "{n}个月"
+  },
+  "time.years": {
+   "en": "{n}y",
+   "zh": "{n}年"
   }
  }
 }

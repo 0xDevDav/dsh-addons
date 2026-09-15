@@ -1,7 +1,7 @@
 {
  "batch": "common",
  "namespace": "common",
- "total": 39,
+ "total": 37,
  "keys": {
   "ok": {
    "en": "OK",
@@ -130,14 +130,6 @@
   "truncated": {
    "en": "Truncated",
    "zh": "已截断"
-  },
-  "json.collapseNode": {
-   "en": "Collapse JSON node",
-   "zh": "收起 JSON 节点"
-  },
-  "json.expandNode": {
-   "en": "Expand JSON node",
-   "zh": "展开 JSON 节点"
   },
   "json.label": {
    "en": "JSON",

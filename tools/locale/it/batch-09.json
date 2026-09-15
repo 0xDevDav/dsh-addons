@@ -1,16 +1,8 @@
 {
  "batch": "conversation#2",
  "namespace": "conversation",
+ "total": 70,
  "keys": {
-  "session.hierarchy": "Gerarchia delle sessioni",
-  "todo.title": "Attività",
-  "todo.progress.done": "{done} completate",
-  "todo.progress.active": "{active} in corso",
-  "todo.progress.pending": "{pending} in attesa",
-  "todo.rowTitle": "Aggiorna elenco attività",
-  "todo.completed": "{done}/{total} completate",
-  "command.attachmentsUnsupported": "/{command} non accetta allegati; rimuovili prima",
-  "ask.rowTitle": "Poni domanda",
   "ask.waiting": "in attesa",
   "ask.cancelled": "annullata",
   "ask.cancelledDetail": "Questa serie di domande è stata annullata prima dell'invio delle risposte.",
@@ -44,6 +36,9 @@
   "tool.title.glob": "Glob",
   "tool.title.webSearch": "Ricerca",
   "tool.title.webFetch": "Recupera",
+  "tool.autoReviewRejected": "Rifiutato da Auto review",
+  "tool.autoReviewNotExecuted": "Lo strumento non è stato eseguito. Motivo: {reason}",
+  "tool.autoReviewReasonFallback": "Auto review non ha autorizzato questa azione",
   "diff.files.one": "{count} file",
   "diff.files.other": "{count} file",
   "diff.collapseAria": "Comprimi diff",
@@ -71,6 +66,12 @@
   "queue.image": "Immagine del messaggio in coda",
   "queue.file": "File in coda {name}",
   "queue.edit": "Modifica messaggio in coda",
-  "queue.edit.unsupported": "Contiene contenuto non testuale; la modifica non è ancora supportata"
+  "queue.edit.unsupported": "Contiene contenuto non testuale; la modifica non è ancora supportata",
+  "queue.save": "Salva messaggio in coda",
+  "queue.cancelEdit": "Annulla modifica",
+  "queue.remove": "Rimuovi messaggio in coda",
+  "queue.steer": "Guida messaggio in coda",
+  "queue.steer.unavailable": "La guida è disponibile solo mentre l'agente è in esecuzione",
+  "queue.editFailed": "Modifica non riuscita: questo messaggio potrebbe essere già stato inviato."
  }
 }

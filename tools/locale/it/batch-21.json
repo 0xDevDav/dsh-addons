@@ -1,6 +1,7 @@
 {
  "batch": "settings.permission",
  "namespace": "settings.permission",
+ "total": 12,
  "keys": {
   "title": "Autorizzazione",
   "description": "Scegli la modalità di autorizzazione predefinita per le nuove sessioni",

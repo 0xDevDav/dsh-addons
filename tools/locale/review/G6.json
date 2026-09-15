@@ -12,7 +12,7 @@
   },
   "changed": {
    "en": "The file has changed, showing the previous content.",
-   "zh": "文件已更新，当前显示为旧内容。",
+   "zh": "文件已更新，当前显示为旧内容",
    "it": "Il file è cambiato, è mostrato il contenuto precedente."
   },
   "reloadNow": {
@@ -52,32 +52,37 @@
   },
   "resourceUnavailable": {
    "en": "The file resource service is unavailable.",
-   "zh": "文件资源服务不可用。",
+   "zh": "文件资源服务不可用",
    "it": "Il servizio di risorse dei file non è disponibile."
   },
   "rendererUnavailable": {
    "en": "The {name} preview is unavailable.",
-   "zh": "预览器 {name} 不可用。",
+   "zh": "预览器 {name} 不可用",
    "it": "L'anteprima {name} non è disponibile."
+  },
+  "unsupportedFile": {
+   "en": "Preview is not available for this file type yet.",
+   "zh": "该格式文件暂时无法预览",
+   "it": "L'anteprima non è ancora disponibile per questo tipo di file."
   },
   "error.notFound": {
    "en": "File not found. It may have been moved or deleted.",
-   "zh": "文件不存在，可能已被移动或删除。",
+   "zh": "文件不存在，可能已被移动或删除",
    "it": "File non trovato. Potrebbe essere stato spostato o eliminato."
   },
   "error.tooLarge": {
    "en": "This page exceeds the {limit} limit and cannot be read.",
-   "zh": "单页内容超过 {limit} 上限，无法读取。",
+   "zh": "单页内容超过 {limit} 上限，无法读取",
    "it": "Questa pagina supera il limite {limit} e non può essere letta."
   },
   "error.notText": {
-   "en": "Not a text file, preview is unavailable for now.",
-   "zh": "非文本文件，暂时无法预览。",
-   "it": "Non è un file di testo, l'anteprima al momento non è disponibile."
+   "en": "Preview is not available for this file type yet.",
+   "zh": "该格式文件暂时无法预览",
+   "it": "L'anteprima non è ancora disponibile per questo tipo di file."
   },
   "error.notRegularFile": {
    "en": "Not a regular file, nothing to display.",
-   "zh": "该路径不是普通文件，没有可显示的内容。",
+   "zh": "该路径不是普通文件，没有可显示的内容",
    "it": "Non è un file normale, non c'è nulla da mostrare."
   },
   "error.unavailable": {
@@ -307,9 +312,9 @@
    "it": "Scrivi la tua risposta"
   },
   "action.skip": {
-   "en": "Skip this question",
-   "zh": "跳过本题",
-   "it": "Salta questa domanda"
+   "en": "Skip",
+   "zh": "跳过",
+   "it": "Salta"
   },
   "action.next": {
    "en": "Next",
@@ -338,35 +343,105 @@
   }
  },
  "command": {
+  "section.add": {
+   "en": "Add",
+   "zh": "添加",
+   "it": "Aggiungi"
+  },
+  "section.commands": {
+   "en": "Commands",
+   "zh": "指令",
+   "it": "Comandi"
+  },
+  "label.goal": {
+   "en": "Goal",
+   "zh": "目标",
+   "it": "Obiettivo"
+  },
+  "label.plan": {
+   "en": "Plan",
+   "zh": "计划",
+   "it": "Piano"
+  },
+  "label.feedback": {
+   "en": "Feedback",
+   "zh": "反馈",
+   "it": "Feedback"
+  },
+  "label.compact": {
+   "en": "Compact",
+   "zh": "压缩",
+   "it": "Compatta"
+  },
+  "label.permission": {
+   "en": "Permission",
+   "zh": "权限",
+   "it": "Autorizzazione"
+  },
+  "label.export": {
+   "en": "Export",
+   "zh": "下载日志",
+   "it": "Esporta"
+  },
+  "description.goal": {
+   "en": "Set or view the goal for a long-running task",
+   "zh": "设置或查看长期任务目标",
+   "it": "Imposta o visualizza l'obiettivo di un'attività di lunga durata"
+  },
+  "description.plan": {
+   "en": "Enter or leave plan mode",
+   "zh": "进入或退出计划模式",
+   "it": "Entra o esci dalla modalità piano"
+  },
+  "description.feedback": {
+   "en": "Record feedback about this session",
+   "zh": "发送关于当前会话的反馈",
+   "it": "Registra un feedback su questa sessione"
+  },
   "description.compact": {
    "en": "Compact older conversation history",
    "zh": "压缩以上对话内容",
    "it": "Compatta la cronologia della conversazione precedente"
-  },
-  "description.export": {
-   "en": "Download this Session log as a ZIP archive",
-   "zh": "将当前会话内容导出为 ZIP",
-   "it": "Scarica il log di questa sessione come archivio ZIP"
-  },
-  "description.feedback": {
-   "en": "record feedback about this session",
-   "zh": "发送关于当前会话的反馈",
-   "it": "registra un feedback su questa sessione"
-  },
-  "description.goal": {
-   "en": "set or view the goal for a long-running task",
-   "zh": "设置或查看长期任务目标",
-   "it": "imposta o visualizza l'obiettivo di un'attività di lunga durata"
   },
   "description.permission": {
    "en": "Switch the permission preset (sandbox mode + approval policy)",
    "zh": "切换权限预设（沙箱模式与审批策略）",
    "it": "Cambia il preset di autorizzazione (modalità Sandbox + politica di approvazione)"
   },
-  "description.plan": {
-   "en": "Enter or leave plan mode",
-   "zh": "进入或退出计划模式",
-   "it": "Entra o esci dalla modalità piano"
+  "description.export": {
+   "en": "Download this Session log as a ZIP archive",
+   "zh": "将当前会话内容导出为 ZIP",
+   "it": "Scarica il log di questa sessione come archivio ZIP"
+  },
+  "token.goal": {
+   "en": "goal",
+   "zh": "目标",
+   "it": "goal"
+  },
+  "token.plan": {
+   "en": "plan",
+   "zh": "计划",
+   "it": "plan"
+  },
+  "token.feedback": {
+   "en": "feedback",
+   "zh": "反馈",
+   "it": "feedback"
+  },
+  "token.compact": {
+   "en": "compact",
+   "zh": "压缩",
+   "it": "compact"
+  },
+  "token.permission": {
+   "en": "permission",
+   "zh": "权限",
+   "it": "permission"
+  },
+  "token.export": {
+   "en": "export",
+   "zh": "导出",
+   "it": "export"
   },
   "search.placeholder": {
    "en": "Search…",
@@ -700,17 +775,12 @@
   },
   "connection.error": {
    "en": "Disconnected",
-   "zh": "连接异常",
+   "zh": "连接异常，刷新重试",
    "it": "Disconnesso"
-  },
-  "connection.retry": {
-   "en": "Reconnect now",
-   "zh": "立即重连",
-   "it": "Riconnetti ora"
   },
   "connection.connecting": {
    "en": "Reconnecting",
-   "zh": "自动重连中",
+   "zh": "重新连接中",
    "it": "Riconnessione in corso"
   },
   "connection.connected": {
@@ -724,9 +794,9 @@
    "it": "Disconnesso, riconnetti ora"
   },
   "connection.restart": {
-   "en": "Reconnecting automatically, reconnect now",
-   "zh": "连接中断，正在自动重试，点击立即重连",
-   "it": "Riconnessione automatica in corso, riconnetti ora"
+   "en": "Reconnecting, reconnect now",
+   "zh": "连接中断，正在重试，点击立即重连",
+   "it": "Riconnessione in corso, riconnetti ora"
   }
  },
  "reference": {
@@ -840,9 +910,9 @@
    "it": "Pagina PDF {page}"
   },
   "loading": {
-   "en": "Opening PDF…",
-   "zh": "正在打开 PDF…",
-   "it": "Apertura PDF…"
+   "en": "Reading…",
+   "zh": "正在读取…",
+   "it": "Lettura…"
   },
   "rendering": {
    "en": "Rendering page…",
@@ -856,17 +926,17 @@
   },
   "password": {
    "en": "This PDF requires a password; password-protected previews are not supported.",
-   "zh": "此 PDF 需要密码，暂不支持预览。",
+   "zh": "此 PDF 需要密码，暂不支持预览",
    "it": "Questo PDF richiede una password; le anteprime protette da password non sono supportate."
   },
   "workerFailed": {
    "en": "The PDF rendering process could not continue. Please retry.",
-   "zh": "PDF 渲染进程无法继续，请重试。",
+   "zh": "PDF 渲染进程无法继续，请重试",
    "it": "Il processo di rendering del PDF non può continuare. Riprova."
   },
   "unsupported": {
    "en": "PDF preview requires the complete file contents.",
-   "zh": "PDF 预览需要完整文件内容。",
+   "zh": "PDF 预览需要完整文件内容",
    "it": "L'anteprima PDF richiede il contenuto completo del file."
   },
   "retry": {
@@ -970,6 +1040,16 @@
   }
  },
  "permission.access": {
+  "mode": {
+   "en": "Access mode, current: {name}",
+   "zh": "访问模式，当前：{name}",
+   "it": "Modalità di accesso, attuale: {name}"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭",
+   "it": "Chiudi"
+  },
   "preset.readOnly": {
    "en": "Read Only",
    "zh": "仅可查看",
@@ -1009,6 +1089,41 @@
    "en": "Enable Full access",
    "zh": "启用完全权限",
    "it": "Attiva l'accesso completo"
+  },
+  "auto.label": {
+   "en": "Auto review",
+   "zh": "Auto review",
+   "it": "Auto review"
+  },
+  "auto.badge": {
+   "en": "EXP",
+   "zh": "EXP",
+   "it": "EXP"
+  },
+  "auto.description": {
+   "en": "Run without a sandbox after an experimental same-model review of every native tool call and PTC inner call.",
+   "zh": "无沙箱运行；每次原生工具调用和 PTC 内层调用前由同一模型进行实验性审查。",
+   "it": "Esegue senza sandbox dopo una revisione sperimentale, da parte dello stesso modello, di ogni chiamata a strumento nativa e di ogni chiamata interna PTC."
+  },
+  "auto.confirm.title": {
+   "en": "Enable Auto review (experimental)?",
+   "zh": "确认启用 Auto review（实验）？",
+   "it": "Attivare Auto review (sperimentale)?"
+  },
+  "auto.confirm.description": {
+   "en": "Auto review runs without a sandbox. Before every native tool call and PTC inner call, the same model as the current agent reviews whether to allow it. This feature is experimental, can falsely allow or deny actions, and uses additional tokens.",
+   "zh": "Auto review 不使用沙箱。每次原生工具调用和 PTC 内层调用前，都会由与当前 agent 相同的模型进行审查。此功能仍属实验性，可能误放行或误拒绝，并会消耗额外 token。",
+   "it": "Auto review viene eseguito senza sandbox. Prima di ogni chiamata a strumento nativa e di ogni chiamata interna PTC, lo stesso modello dell'agente corrente valuta se consentirla. La funzione è sperimentale, può autorizzare o negare azioni per errore e consuma token aggiuntivi."
+  },
+  "auto.confirm.acknowledge": {
+   "en": "I understand these risks and want to continue",
+   "zh": "我已了解这些风险，并愿意继续",
+   "it": "Ho capito questi rischi e voglio continuare"
+  },
+  "auto.confirm.enable": {
+   "en": "Enable Auto review",
+   "zh": "启用 Auto review",
+   "it": "Attiva Auto review"
   }
  },
  "skill": {
@@ -1146,18 +1261,18 @@
    "it": "Anteprima immagine: {name}"
   },
   "loading": {
-   "en": "Opening image…",
-   "zh": "正在打开图片…",
-   "it": "Apertura immagine…"
+   "en": "Reading…",
+   "zh": "正在读取…",
+   "it": "Lettura…"
   },
   "failed": {
    "en": "This image could not be displayed.",
-   "zh": "无法显示这张图片。",
+   "zh": "无法显示这张图片",
    "it": "Impossibile visualizzare questa immagine."
   },
   "unsupported": {
    "en": "Image preview requires the complete file contents.",
-   "zh": "图片预览需要完整文件内容。",
+   "zh": "图片预览需要完整文件内容",
    "it": "L'anteprima immagine richiede il contenuto completo del file."
   }
  },
@@ -1195,13 +1310,13 @@
    "it": "Anteprima documento HTML"
   },
   "loading": {
-   "en": "Preparing HTML preview…",
-   "zh": "正在准备 HTML 预览…",
-   "it": "Preparazione anteprima HTML…"
+   "en": "Reading…",
+   "zh": "正在读取…",
+   "it": "Lettura…"
   },
   "failed": {
    "en": "This HTML document could not be previewed.",
-   "zh": "无法预览这份 HTML 文档。",
+   "zh": "无法预览这份 HTML 文档",
    "it": "Impossibile visualizzare l'anteprima di questo documento HTML."
   }
  },

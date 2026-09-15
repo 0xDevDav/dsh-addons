@@ -1,6 +1,7 @@
 {
  "batch": "chat#1",
  "namespace": "chat",
+ "total": 70,
  "keys": {
   "view.chat": "Chat",
   "number.groupSeparator": ",",

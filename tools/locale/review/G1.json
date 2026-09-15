@@ -162,7 +162,7 @@
   },
   "group.step": {
    "en": "Step {step}",
-   "zh": "步骤 {step}",
+   "zh": "第 {step} 步",
    "it": "Passo {step}"
   },
   "group.compaction": {
@@ -544,6 +544,41 @@
    "en": "Thinking",
    "zh": "思考",
    "it": "Ragionamento"
+  },
+  "record.wrapLines": {
+   "en": "Wrap lines",
+   "zh": "自动换行",
+   "it": "Ritorno a capo automatico"
+  },
+  "code.source": {
+   "en": "Code",
+   "zh": "代码",
+   "it": "Codice"
+  },
+  "code.output": {
+   "en": "Output",
+   "zh": "输出",
+   "it": "Output"
+  },
+  "code.copySource": {
+   "en": "Copy code",
+   "zh": "复制代码",
+   "it": "Copia codice"
+  },
+  "code.copyOutput": {
+   "en": "Copy output",
+   "zh": "复制输出",
+   "it": "Copia output"
+  },
+  "code.originalJson": {
+   "en": "Original JSON",
+   "zh": "原始 JSON",
+   "it": "JSON originale"
+  },
+  "code.running": {
+   "en": "Running…",
+   "zh": "执行中…",
+   "it": "In esecuzione…"
   },
   "record.systemPromptMissing": {
    "en": "No system prompt in this request",
@@ -1346,6 +1381,11 @@
    "en": "{minutes}m {seconds}s",
    "zh": "{minutes}分{seconds}秒",
    "it": "{minutes}m {seconds}s"
+  },
+  "duration.hours": {
+   "en": "{hours}h {minutes}m {seconds}s",
+   "zh": "{hours}小时{minutes}分{seconds}秒",
+   "it": "{hours}h {minutes}m {seconds}s"
   },
   "command.running": {
    "en": "Running…",

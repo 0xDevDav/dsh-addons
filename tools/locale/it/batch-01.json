@@ -1,6 +1,7 @@
 {
  "batch": "common",
  "namespace": "common",
+ "total": 37,
  "keys": {
   "ok": "OK",
   "cancel": "Annulla",
@@ -34,8 +35,6 @@
   "unknown": "Sconosciuto",
   "none": "Nessuno",
   "truncated": "Troncato",
-  "json.collapseNode": "Comprimi nodo JSON",
-  "json.expandNode": "Espandi nodo JSON",
   "json.label": "JSON",
   "markdown.footnotes": "Note a piè di pagina",
   "markdown.truncatedCharacters": "… troncato a {total} caratteri",

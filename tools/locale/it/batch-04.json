@@ -1,6 +1,7 @@
 {
  "batch": "approval",
  "namespace": "approval",
+ "total": 5,
  "keys": {
   "waiting": "In attesa di approvazione",
   "detail.aria": "Dettagli dell'approvazione",
