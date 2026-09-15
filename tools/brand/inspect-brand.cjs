@@ -40,10 +40,22 @@ const MEASURE = () => {
 			contentInside: top / scale <= 26.5 && (top + clip.h) / scale >= 104.5,
 		}
 	}
+	const headline = document.querySelector('[class*="_headline"]')
+	// The blank-session screen is meant to show the artwork alone: the host's own greeting
+	// and preview badge live in the sibling of the seat, so that sibling must be out of the
+	// layout. Reported with its text, which is in whatever language the client is running.
+	let heroCopy = null
+	if (headline !== null) {
+		const heroLockup = headline.querySelector('[data-dsh-brand="lockup"]')
+		const seat = heroLockup === null ? null : Array.from(headline.children).find((child) => child.contains(heroLockup))
+		const copy = Array.from(headline.children).find((child) => child !== seat)
+		if (copy !== undefined) heroCopy = { display: getComputedStyle(copy).display, text: copy.textContent }
+	}
 	return {
 		title: document.title,
 		rootScheme: document.documentElement.style.colorScheme,
 		railVisible: document.querySelector('[class*="_railMark"]') !== null,
+		heroCopy,
 		brandBox: brand === null ? null : box(brand),
 		identity: box(document.querySelector('[class*="_brandIdentity"]')),
 		lockup: box(lockup),

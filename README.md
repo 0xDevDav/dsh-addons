@@ -55,9 +55,10 @@ dsh plugin --profile web add /path/to/dsh-addons/packages/dsh-brand-davcode
   rate, with the schedule in your own timezone.
 - **Your DeepSeek balance** on the Settings row, read from the provider.
 - **The DavCode AGENT brand** instead of the shipped fish: the lockup in the sidebar row, the mark in the
-  collapsed rail, the same artwork on the blank-session screen, `DavCode AGENT` in the window title, and
-  a tab icon — swapping to the light or the dark variant with the theme. It is a *brand replacement*, not
-  a fork: nothing shipped is edited, and removing the bundle puts the fish back.
+  collapsed rail, the artwork alone on the blank-session screen (no greeting, no preview badge, in any
+  language), `DavCode AGENT` in the window title, and a tab icon — swapping to the light or the dark
+  variant with the theme. It is a *brand replacement*, not a fork: nothing shipped is edited, and removing
+  the bundle puts the fish and its greeting back.
 
 ## Updating the language pack after a DSH release
 

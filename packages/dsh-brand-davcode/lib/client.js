@@ -314,6 +314,36 @@ window.__ModuleLoader__.load({
 		}
 
 		/**
+		 * On the blank-session screen the host draws its own greeting and preview badge beside
+		 * this pack's artwork. The brand is meant to stand alone there, and the request is that
+		 * it does so in every language — so nothing is translated or emptied: the sibling of
+		 * the seat's own box is hidden, whoever wrote it and in whatever language the client is
+		 * running. Derived from the DOM around the artwork rather than from a class name, so a
+		 * renamed module class or reworded string changes nothing here.
+		 */
+		function watchHero() {
+			const reconcile = () => {
+				for (const lockup of document.querySelectorAll('[data-dsh-brand="lockup"]')) {
+					const headline = lockup.closest('[class*="_headline"]');
+					if (headline === null) continue;
+					const own = Array.from(headline.children).find((child) => child.contains(lockup));
+					for (const child of Array.from(headline.children)) {
+						child.style.display = child === own ? "" : "none";
+					}
+				}
+			};
+			reconcile();
+			const observer = new MutationObserver(reconcile);
+			observer.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ["class", "style"] });
+			return () => {
+				observer.disconnect();
+				for (const headline of document.querySelectorAll('[class*="_headline"]')) {
+					for (const child of Array.from(headline.children)) child.style.display = "";
+				}
+			};
+		}
+
+		/**
 		 * Follow the colour scheme the layout declares on the root element, so both canvases
 		 * swap to the palette the author drew for the other ground. The media query is the
 		 * fallback for a preference of `system` before the theme service has answered.
@@ -367,6 +397,7 @@ window.__ModuleLoader__.load({
 			ctx.effect(() => watchTitle(), "brand: window title");
 			ctx.effect(() => installTabIcon(), "brand: tab icon");
 			ctx.effect(() => watchSeats(), "brand: rail and row");
+			ctx.effect(() => watchHero(), "brand: hero alone");
 			ctx.effect(() => watchScheme(), "brand: colour scheme");
 		}
 

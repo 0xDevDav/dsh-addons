@@ -57,6 +57,14 @@ class Element {
 		}
 		return false
 	}
+	closest(selector) {
+		let node = this
+		while (node !== null && node !== undefined) {
+			if (matches(node, selector)) return node
+			node = node.parentElement
+		}
+		return null
+	}
 	getAttribute(name) { return this.attributes.has(name) ? this.attributes.get(name) : null }
 	setAttribute(name, value) { this.attributes.set(name, String(value)) }
 	removeAttribute(name) { this.attributes.delete(name) }
@@ -109,11 +117,20 @@ const otherMarkSeat = new Element('span', ['hHd-Xa_brandMark'], { children: [new
 const row = new Element('div', ['hHd-Xa_logoRow'], { children: [markSeat, nameSeat] })
 const otherRow = new Element('div', ['hHd-Xa_logoRow'], { children: [otherMarkSeat] })
 
+// the blank-session screen: the seat, and the host's own copy beside it
+const heroLockup = new Element('svg')
+heroLockup.setAttribute('data-dsh-brand', 'lockup')
+const heroSeat = new Element('span', ['pXSMma_fishHitbox'], { children: [heroLockup] })
+const heroGreeting = new Element('span', [], { children: [] })
+const heroBadge = new Element('span', ['pXSMma_previewBadge'], { children: [] })
+const heroCopy = new Element('span', ['pXSMma_titleGroup'], { children: [heroGreeting, heroBadge] })
+const heroHeadline = new Element('div', ['pXSMma_headline'], { children: [heroSeat, heroCopy] })
+
 const titleElement = new Element('title')
 const shippedIcon = new Element('link')
 shippedIcon.setAttribute('rel', 'icon')
 shippedIcon.setAttribute('href', './favicon.svg')
-const body = new Element('body', [], { children: [row, otherRow] })
+const body = new Element('body', [], { children: [row, otherRow, heroHeadline] })
 const head = new Element('head', [], { children: [titleElement, shippedIcon] })
 const root = new Element('html', [], { children: [head, body] })
 
@@ -313,6 +330,17 @@ lockupNode.rect = { width: 0, height: 0 }
 seatsObserver?.fire()
 check(markSeat.style.display === '', 'in the rail, where the artwork is not laid out, the mark must come back')
 
+// ── the blank-session screen: the brand alone, whatever the language ────────
+/** Both reconcilers watch the body; either of them re-runs the whole pass. */
+const fireBody = () => { for (const observer of observers.filter((entry) => entry.target === body)) observer.fire() }
+check(heroCopy.style.display === 'none', 'the hero greeting and preview badge must be hidden beside the artwork')
+check(heroSeat.style.display === '' || heroSeat.style.display === undefined, 'the seat holding the artwork must stay visible')
+for (const greeting of ['Into the Unknown', "Verso l'ignoto", '探索未至之境']) {
+	heroGreeting.text = greeting
+	fireBody()
+	check(heroCopy.style.display === 'none', `the hero copy is not hidden with the headline "${greeting}"`)
+}
+
 // ── disposing must give everything back ─────────────────────────────────────
 for (const effect of effects) check(typeof effect.dispose === 'function', `effect "${effect.label}" returned no disposer`)
 for (const effect of effects) effect.dispose()
@@ -320,6 +348,7 @@ check(disposed.filter((entry) => entry.startsWith('register:')).length === 3, 'd
 check(observers.every((observer) => observer.disconnected), 'disposing left an observer running')
 check(tabIcon.removed === true, 'disposing left the tab icon in the document')
 check(shippedIcon.parentElement === head, 'disposing did not put the shipped icon link back')
+check(heroCopy.style.display === '', 'disposing did not give the host its hero copy back')
 
 // ── what is installed is what is in this repository ────────────────────────
 const digest = (file) => createHash('sha256').update(fs.readFileSync(file)).digest('hex').slice(0, 12)

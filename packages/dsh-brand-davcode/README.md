@@ -11,7 +11,7 @@ shipped file is modified, and removing the row restores the original marks.
 |---|---|---|
 | `sidebar.brand.mark` | `dsh-client-ui-sidebar` | the fish mark in the brand row and the collapsed rail |
 | `sidebar.brand.name` | `dsh-client-ui-sidebar` | the "DeepSeek Harness" wordmark |
-| `conversation.hero.brand.mark` | `dsh-client-ui-conversation` | the animated fish on the blank-session screen |
+| `conversation.hero.brand.mark` | `dsh-client-ui-conversation` | the animated fish on the blank-session screen, and the greeting and preview badge beside it |
 | the window title | `dsh-client-ui-layout` | the product half of `«session title» — DeepSeek Harness` |
 | the tab icon | the served page | the shipped favicon |
 
@@ -19,6 +19,18 @@ The hero seat is the interesting one: it is declared `single` with **no occupant
 a `replaceRisk` of `none`, which is what the shipped brand bundle means when it says the
 official build "registers nothing there" and leaves the animated fish as a fallback. It
 is a seat built to be filled.
+
+## The blank-session screen shows the brand alone
+
+The host draws its own greeting and preview badge in the same row as the artwork
+("Into the Unknown", "Verso l'ignoto", "探索未至之境" …). The brand is meant to stand there by
+itself, and it does so in **every language**, because nothing is translated, emptied or
+keyed on a locale: the reconciler finds the box that holds this pack's artwork, keeps it,
+and takes the *sibling* out of the layout (`display: none`, restored on unload). It is
+derived from the DOM around the artwork — not from a class name, not from a string — so a
+renamed module class or a reworded greeting changes nothing here. `tools/brand/test-brand.mjs`
+drives the same three strings through it and asserts the copy stays out of the layout,
+and `tools/brand/inspect-brand.cjs` reports the live `display` of that box in the running UI.
 
 ## The artwork
 
