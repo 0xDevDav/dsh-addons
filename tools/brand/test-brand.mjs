@@ -37,9 +37,12 @@ class Element {
 		this.style = {}
 		this.dataset = options.dataset ? { ...options.dataset } : {}
 		this.rect = options.rect ?? { width: 400, height: 300 }
+		this.computed = options.computed ?? {}
 		this.removed = false
 		for (const child of options.children ?? []) this.append(child)
 	}
+	/** The width a fit may use, which a real flex item reports without its overflow. */
+	get clientWidth() { return Math.round(this.rect.width) }
 	append(child) { child.parentElement = this; this.children.push(child); return child }
 	remove() {
 		this.removed = true
@@ -114,7 +117,11 @@ lockupNode.setAttribute('data-dsh-brand', 'lockup')
 const markSeat = new Element('span', ['hHd-Xa_brandMark'], { children: [new Element('svg')] })
 const nameSeat = new Element('span', ['hHd-Xa_brandName'], { children: [lockupNode] })
 const otherMarkSeat = new Element('span', ['hHd-Xa_brandMark'], { children: [new Element('svg')] })
-const row = new Element('div', ['hHd-Xa_logoRow'], { children: [markSeat, nameSeat] })
+// the shipped shape: an identity inside a brand button inside the row, and the brand box is
+// the one that clips (it is what the fit opens)
+const identity = new Element('span', ['hHd-Xa_brandIdentity'], { children: [markSeat, nameSeat] })
+const brandButton = new Element('button', ['hHd-Xa_brand'], { children: [identity], rect: { width: 165, height: 24 }, computed: { overflow: 'hidden' } })
+const row = new Element('div', ['hHd-Xa_logoRow'], { children: [brandButton] })
 const otherRow = new Element('div', ['hHd-Xa_logoRow'], { children: [otherMarkSeat] })
 
 // the blank-session screen: the seat, and the host's own copy beside it
@@ -153,10 +160,20 @@ globalThis.MutationObserver = class {
 	disconnect() { this.disconnected = true }
 	fire() { this.callback([]) }
 }
+/** What the browser reports for a box: the fixture's own `computed`, else the CSS default. */
+globalThis.getComputedStyle = (node) => ({ overflow: node.computed?.overflow ?? 'visible' })
 
 // ── the module loader, the slot registry and the effect scope ───────────────
 let captured
-globalThis.window = { __ModuleLoader__: { load(definition) { captured = definition } } }
+const windowListeners = []
+globalThis.window = {
+	__ModuleLoader__: { load(definition) { captured = definition } },
+	addEventListener(type, handler) { windowListeners.push({ type, handler }) },
+	removeEventListener(type, handler) {
+		const at = windowListeners.findIndex((entry) => entry.type === type && entry.handler === handler)
+		if (at >= 0) windowListeners.splice(at, 1)
+	},
+}
 
 const jsx = (type, props) => ({ type, props: props ?? {} })
 /**
@@ -322,6 +339,8 @@ check(href.includes(DARK.ink), 'the tab icon does not carry the dark-ground ink'
 check(href.includes('#141414'), 'the tab icon does not sit on the dark ground of the artwork')
 
 // ── the rail: the separate mark seat shows only when the artwork does not ───
+/** Every reconciler watches the body; any of them re-runs the whole pass. */
+const fireBody = () => { for (const observer of observers.filter((entry) => entry.target === body)) observer.fire() }
 const seatsObserver = observers.find((observer) => observer.target === body)
 check(seatsObserver !== undefined, 'the document is not watched for the rail and the row')
 check(markSeat.style.display === 'none', 'with the artwork laid out, the separate rail mark must be hidden')
@@ -330,9 +349,23 @@ lockupNode.rect = { width: 0, height: 0 }
 seatsObserver?.fire()
 check(markSeat.style.display === '', 'in the rail, where the artwork is not laid out, the mark must come back')
 
+// ── the row's size: the drawing fills the row, not a 24px box that clips ────
+// the brand box clips; the fit opens it and sizes the canvas to the room beside the toggle
+check(brandButton.style.overflow === 'visible', 'the clipping brand box must be opened, or the artwork is cut')
+check(lockupNode.style.height === '40px', `with 165px of room the artwork is ${lockupNode.style.height}, not 40px (165 / 4.125)`)
+check(lockupNode.style.width === '165px', `with 165px of room the artwork is ${lockupNode.style.width} wide, not 165px`)
+check(windowListeners.some((entry) => entry.type === 'resize'), 'a dragged sidebar must be followed, and nothing listens for it')
+// a narrower sidebar scales the artwork down with it, and never past the readable floor
+brandButton.rect = { width: 99, height: 24 }
+fireBody()
+check(lockupNode.style.height === '24px', `at 99px of room the artwork must stop at the 24px floor, not ${lockupNode.style.height}`)
+brandButton.rect = { width: 600, height: 24 }
+fireBody()
+check(lockupNode.style.height === '44px', `a wide sidebar must stop at the row's content height, not ${lockupNode.style.height}`)
+brandButton.rect = { width: 165, height: 24 }
+fireBody()
+
 // ── the blank-session screen: the brand alone, whatever the language ────────
-/** Both reconcilers watch the body; either of them re-runs the whole pass. */
-const fireBody = () => { for (const observer of observers.filter((entry) => entry.target === body)) observer.fire() }
 check(heroCopy.style.display === 'none', 'the hero greeting and preview badge must be hidden beside the artwork')
 check(heroSeat.style.display === '' || heroSeat.style.display === undefined, 'the seat holding the artwork must stay visible')
 for (const greeting of ['Into the Unknown', "Verso l'ignoto", '探索未至之境']) {
@@ -349,6 +382,9 @@ check(observers.every((observer) => observer.disconnected), 'disposing left an o
 check(tabIcon.removed === true, 'disposing left the tab icon in the document')
 check(shippedIcon.parentElement === head, 'disposing did not put the shipped icon link back')
 check(heroCopy.style.display === '', 'disposing did not give the host its hero copy back')
+check(brandButton.style.overflow === '', 'disposing left the brand box opened')
+check(lockupNode.style.height === '' && lockupNode.style.width === '', 'disposing left the artwork at a size of its own')
+check(windowListeners.length === 0, 'disposing left a window listener behind')
 
 // ── what is installed is what is in this repository ────────────────────────
 const digest = (file) => createHash('sha256').update(fs.readFileSync(file)).digest('hex').slice(0, 12)

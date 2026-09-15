@@ -125,9 +125,10 @@ is a test result rather than an assumption. The three browser tools need a resol
 
 - **The brand artwork is data, not a redraw.** Every coordinate, weight, anchor and colour of the
   supplied drawings is transcribed into `packages/dsh-brand-davcode/lib/client.js`, and
-  `tools/brand/test-brand.mjs` asserts all of them in both palettes. The row renders the drawn canvas at
-  30 units because that is the scale at which the whole art fits the 24px brand box the shipped CSS
-  gives it — a scale, never a crop or a re-centring. The pack README spells out the arithmetic.
+  `tools/brand/test-brand.mjs` asserts all of them in both palettes. The row opens the 24px box the
+  shipped CSS gives the brand and draws the canvas at the height the row really has (44px, or less in a
+  narrow sidebar, never below 24) — a scale, never a crop or a re-centring. The pack README spells out
+  the arithmetic.
 - **Prices are data, not code.** `packages/dsh-session-cost/prices.json` carries the published rates,
   the peak windows (in UTC), the model aliases, and the URL and date they were read from. Editing that
   file reprices every session on its next read, with no restart and no refold. A release that changes

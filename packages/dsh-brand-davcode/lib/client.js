@@ -217,15 +217,65 @@ window.__ModuleLoader__.load({
 		}
 
 		/**
-		 * The artwork as the sidebar row shows it. The row's brand box is 24px tall and clips
-		 * symmetrically, and the drawn canvas is 120 units tall with the art itself between
-		 * 26.5 and 104.5 — so 30 units is the scale at which the whole drawing is inside that
-		 * box, with the drawn margins left and right as the author spaced them. It is a scale,
-		 * never a move: no coordinate inside the artwork changes.
+		 * The artwork as the sidebar row shows it.
+		 *
+		 * The row is 60px tall with 8px of padding, so 44 is the tallest the drawing can be
+		 * without intruding on that padding; the shipped row gives the artwork a 24px box that
+		 * clips, which is what made this read too small. `fitRow` therefore opens that box and
+		 * sizes the canvas to the room the row actually has — a scale, never a move: no
+		 * coordinate inside the artwork changes, and the drawn canvas and its margins are the
+		 * author's own. This value is what React renders, and what stands if the row cannot be
+		 * measured at all: small enough to be whole inside even the clipped box.
 		 */
 		const ROW_HEIGHT = 30;
+		/** The tallest the artwork may be drawn in the row, in the row's own content height. */
+		const ROW_MAX_HEIGHT = 44;
+		/** The artwork's own aspect, so the fit stays uniform. */
+		const ROW_RATIO = ART.canvas.width / ART.canvas.height;
+		/** Below this the wordmark stops being readable; the fit never goes smaller. */
+		const ROW_MIN_HEIGHT = 24;
 		function RowLockup() {
 			return jsx(Lockup, { size: ROW_HEIGHT });
+		}
+
+		/**
+		 * Give the row's artwork the room the row has.
+		 *
+		 * The box that holds the seats declares `height: 24px` and clips at it, which is what
+		 * made the wordmark read small. That box is found structurally — the outermost ancestor
+		 * of the artwork that is still inside the row, with every clipping ancestor up to it
+		 * opened (`overflow: visible`; the row's own padding box is what then bounds the
+		 * drawing) — never by class name, so a renamed module class changes nothing here.
+		 *
+		 * The height is then the smaller of the row's content height and what the width beside
+		 * the panel toggle allows, so a narrow sidebar scales the artwork down instead of
+		 * pushing it over the toggle. Both axes move together: the aspect is the drawing's.
+		 *
+		 * @param lockup - the artwork element.
+		 * @param row - the row that contains it.
+		 * @param opened - collects every element whose overflow this pass changed, for restore.
+		 * @returns the box the fit measured against, or null when the row has no such box.
+		 */
+		function fitRow(lockup, row, opened) {
+			const seen = [];
+			let box = null;
+			for (let node = lockup.parentElement; node !== null && node !== row; node = node.parentElement) {
+				if (getComputedStyle(node).overflow !== "visible") {
+					node.style.overflow = "visible";
+					opened.add(node);
+				}
+				seen.push(node);
+				box = node;
+			}
+			if (box === null) return null;
+			const available = box.clientWidth;
+			const height = Math.max(
+				ROW_MIN_HEIGHT,
+				Math.min(ROW_MAX_HEIGHT, available > 0 ? available / ROW_RATIO : ROW_MAX_HEIGHT),
+			);
+			lockup.style.height = height + "px";
+			lockup.style.width = height * ROW_RATIO + "px";
+			return { box, seen, height };
 		}
 
 		/**
@@ -292,11 +342,16 @@ window.__ModuleLoader__.load({
 		 * exists for the collapsed rail, where the artwork is not shown, so it is hidden only
 		 * while the artwork is actually laid out — measured, not assumed, so either way the app
 		 * hides the name (unmounted or styled) leaves the rail with its icon.
+		 *
+		 * The same pass sizes the artwork to the row (`fitRow`), and the window's own resize is
+		 * followed because a dragged sidebar changes width without touching the DOM.
 		 */
 		function watchSeats() {
+			const opened = new Set();
 			const reconcile = () => {
 				for (const row of document.querySelectorAll('[class*="_logoRow"]')) {
 					const lockup = row.querySelector('[data-dsh-brand="lockup"]');
+					if (lockup !== null) fitRow(lockup, row, opened);
 					const shown = lockup !== null && lockup.getBoundingClientRect().width > 0;
 					for (const mark of row.querySelectorAll('[class*="_brandMark"]')) {
 						const hide = shown && !mark.contains(lockup);
@@ -307,9 +362,17 @@ window.__ModuleLoader__.load({
 			reconcile();
 			const observer = new MutationObserver(reconcile);
 			observer.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ["class", "style"] });
+			window.addEventListener("resize", reconcile);
 			return () => {
 				observer.disconnect();
+				window.removeEventListener("resize", reconcile);
 				for (const mark of document.querySelectorAll('[class*="_brandMark"]')) mark.style.display = "";
+				for (const node of opened) node.style.overflow = "";
+				opened.clear();
+				for (const lockup of document.querySelectorAll('[data-dsh-brand="lockup"]')) {
+					lockup.style.height = "";
+					lockup.style.width = "";
+				}
 			};
 		}
 

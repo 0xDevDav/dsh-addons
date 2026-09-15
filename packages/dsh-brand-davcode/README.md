@@ -56,15 +56,21 @@ Two things are structural rather than literal, and neither moves a coordinate:
   stored as that pair and resolved from the active colour scheme, so the brand follows the
   theme instead of the ground it was exported for. The tab icon is the one exception: a
   browser tab has no theme to inherit, so it keeps the dark pair on a `#141414` ground.
-- **The row is a scale, not a crop.** The row's brand box is 24px tall and clips
-  symmetrically; the drawn canvas is 120 units tall with the art itself between 26.5 and
-  104.5. At 30 units (**123.75 × 30**) the whole drawing falls inside that box, with the
-  drawn margins left and right exactly as the author spaced them. Verified in the running
-  UI: the visible band is canvas y 12 → 108, and the art is inside it on both sides.
+- **The row is a scale, not a crop.** The row's brand box declares `height: 24px` and clips at
+  it, which is what made the wordmark read too small: the shipped row actually has 60px with
+  8px of padding, so the artwork may be **44** tall. The pack opens that box (it is found
+  structurally — the outermost ancestor of the artwork still inside the row — and every
+  clipping ancestor up to it is set to `overflow: visible`; the row's own padding box is then
+  what bounds the drawing) and sizes the canvas to the room the row has, so a dragged-narrow
+  sidebar scales it down instead of pushing it over the panel toggle, and never below 24.
+  Both axes move together: the aspect is the drawing's. Measured in the running UI at a 280px
+  sidebar: **181.5 × 44**, the whole canvas in the clear, with the name rendering at 18.3px
+  (the shipped row's own name size is 18px); at 164px of room the fit gives 164 × 39.75.
 
-`Mark` is the mark alone (the rail and the toggle button, 24×24 as the seat asks),
-`Lockup` is the whole artwork at whatever edge the host passes — 30 in the row, 34 in the
-hero — and both scale uniformly by that one factor.
+`Mark` is the mark alone (the rail and the toggle button, 24×24 as the seat asks), `Lockup`
+is the whole artwork at whatever edge the host passes — 34 in the hero, and in the row
+whatever `fitRow` measures, from 30 on the first paint — and both scale uniformly by that
+one factor.
 
 ## How the scheme is followed
 

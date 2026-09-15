@@ -23,18 +23,31 @@ const MEASURE = () => {
 		const r = node.getBoundingClientRect()
 		return { w: +r.width.toFixed(2), h: +r.height.toFixed(2), x: +r.x.toFixed(1), y: +r.y.toFixed(1) }
 	}
-	const lockup = document.querySelector('[data-dsh-brand="lockup"]')
-	const brand = lockup === null ? null : lockup.closest('[class*="_brand"]')
-	// The drawn canvas is 120 units tall; the row's brand box clips, so what is actually
-	// visible is the band of the canvas the box covers. Reported in canvas units.
+	const row = document.querySelector('[class*="_logoRow"]')
+	const lockup = row === null ? null : row.querySelector('[data-dsh-brand="lockup"]')
+	// The box the fit measured against: the outermost ancestor of the artwork inside the row.
+	const brand = (() => {
+		if (lockup === null || row === null) return null
+		let node = lockup
+		while (node.parentElement !== null && node.parentElement !== row) node = node.parentElement
+		return node.parentElement === row ? node : null
+	})()
+	// The drawn canvas is 120 units tall. If anything still clips the artwork — the row, if the
+	// pack failed to open the brand box — the visible band of the canvas is narrower than the
+	// whole. Reported in canvas units, with the clipper named, so a regression is a number.
 	let band = null
 	if (lockup !== null && brand !== null) {
 		const svg = box(lockup)
-		const clip = box(brand)
+		let clipper = null
+		for (let node = lockup.parentElement; node !== null; node = node.parentElement) {
+			if (getComputedStyle(node).overflow !== 'visible') { clipper = node; break }
+		}
+		const clip = clipper === null ? svg : box(clipper)
 		const scale = svg.h / 120
-		const top = (svg.h - clip.h) / 2
+		const top = clipper === null ? 0 : (svg.h - clip.h) / 2
 		band = {
 			scale: +scale.toFixed(4),
+			clipper: clipper === null ? null : clipper.className.split(' ')[0],
 			from: +(top / scale).toFixed(1),
 			to: +((top + clip.h) / scale).toFixed(1),
 			contentInside: top / scale <= 26.5 && (top + clip.h) / scale >= 104.5,
@@ -57,6 +70,8 @@ const MEASURE = () => {
 		railVisible: document.querySelector('[class*="_railMark"]') !== null,
 		heroCopy,
 		brandBox: brand === null ? null : box(brand),
+		brandRoom: brand === null ? null : { clientWidth: brand.clientWidth, overflow: getComputedStyle(brand).overflow },
+		row: box(row),
 		identity: box(document.querySelector('[class*="_brandIdentity"]')),
 		lockup: box(lockup),
 		mark: box(document.querySelector('[data-dsh-brand="mark"]')),
@@ -80,6 +95,27 @@ const capture = async (browser, scheme) => {
 	const row = await page.$('[class*="_logoRow"]')
 	if (row) await row.screenshot({ path: path.join(LAB, `row-${scheme}.png`) })
 	console.log(scheme + ' row: ' + JSON.stringify(await page.evaluate(MEASURE)))
+
+	// A dragged sidebar is a narrower room for the same drawing. Rather than open a settings
+	// write, the row is narrowed for one dispatch — 204px leaves the artwork 164px of room,
+	// which is 164 / 4.125 = 39.76px of art. (The room itself, not `_brand`, is what narrows:
+	// the brand box is a `flex: 1` item, so its width comes from the row, not from CSS.)
+	const narrow = await page.evaluate(() => {
+		const row = document.querySelector('[class*="_logoRow"]')
+		const lockup = row === null ? null : row.querySelector('[data-dsh-brand="lockup"]')
+		if (lockup === null) return null
+		let box = lockup
+		while (box.parentElement !== row) box = box.parentElement
+		const before = row.style.width
+		row.style.width = '204px'
+		window.dispatchEvent(new Event('resize'))
+		const r = lockup.getBoundingClientRect()
+		const after = { room: box.clientWidth, w: +r.width.toFixed(2), h: +r.height.toFixed(2) }
+		row.style.width = before
+		window.dispatchEvent(new Event('resize'))
+		return after
+	})
+	console.log(scheme + ' narrow fit (204px row): ' + JSON.stringify(narrow))
 
 	// The rail: collapse the sidebar and capture the mark seat on its own.
 	const toggle = await page.$('[class*="_toggle"]')
