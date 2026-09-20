@@ -105,6 +105,14 @@ at all — the pill renders in its own cell (`dsc_root`) in the same band.
 Either way only the pill is added: the shipped component keeps rendering its own two pills,
 so nothing shipped is replaced, shadowed, or reimplemented.
 
+The cell **hugs its pill** — no `width: 100%`, no horizontal padding, no auto margins. That is
+not cosmetic: the dock is a flex row, so a cell that stretches takes the space between the
+statistics and the context meter with it, and the footer reads as three spread items with the
+cost floating in the middle. Measured on 0.1.6-alpha.2 at a 280px sidebar: the stretched cell
+was 284px wide around a 70px pill and left a ~200px hole before the meter; hugging it turns the
+footer back into one group of four — `49 turni 1362 passi · 255 tok/s`, `555M tok · Cache hit
+99.6%`, `3,68 $`, `44%` — with the 12px gap the row already uses.
+
 Reusing the shipped `stats` id would instead *replace* the cell, forcing a reimplementation
 of shipped UI that a DSH update could silently leave behind.
 

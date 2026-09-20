@@ -14,12 +14,14 @@ if ! command -v node >/dev/null 2>&1; then
 fi
 
 echo "Avvio DavCode AGENT (DSH $DSH_VERSION, Web UI su http://127.0.0.1:3080)..."
-if npx -y "@deepseek-ai/dsh@$DSH_VERSION" web; then
+
+# A cache of its own. An npx run interrupted in the shared npm cache leaves a lock there, and
+# npm then reports ECOMPROMISED / "Lock compromised" for every later run without starting
+# anything; a half-extracted tree does the same. Keeping this launcher's cache separate means a
+# launch can neither damage nor be damaged by whatever else uses npm on this machine.
+if npm_config_cache="${XDG_CACHE_HOME:-$HOME/.cache}/dsh-npm" npx -y "@deepseek-ai/dsh@$DSH_VERSION" web; then
   exit 0
 fi
 
-# The shared npm cache can hold a stale npx lock from an interrupted install, which npm
-# reports as ECOMPROMISED / "Lock compromised" without starting anything at all. A cache of
-# its own cannot collide with another process, so the second attempt is the one that runs.
-echo "Primo tentativo non riuscito: riprovo con una cache npm dedicata..." >&2
-npm_config_cache="${XDG_CACHE_HOME:-$HOME/.cache}/dsh-npm" npx -y "@deepseek-ai/dsh@$DSH_VERSION" web
+echo "Cache dedicata non utilizzabile: riprovo con la cache npm condivisa..." >&2
+npx -y "@deepseek-ai/dsh@$DSH_VERSION" web
