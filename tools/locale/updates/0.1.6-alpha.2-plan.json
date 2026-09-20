@@ -1,0 +1,1418 @@
+{
+ "added": {
+  "conversation": {
+   "error.sessionInUse": {
+    "en": "This session is already in use, possibly by another running DSH instance (such as dsh web or the desktop app). Quit other running DSH instances and try again.",
+    "zh": "当前会话已被占用，可能是其他正在运行的 DSH 导致的（如其他 dsh web、桌面端），请退出其他正在运行的 DSH 后重试。"
+   },
+   "terminal.noExitCode": {
+    "en": "no exit code",
+    "zh": "未正常退出"
+   }
+  },
+  "deliverables": {
+   "changes.title": {
+    "en": "Edited {count} files",
+    "zh": "已编辑 {count} 个文件"
+   },
+   "changes.added": {
+    "en": "+{count}",
+    "zh": "+{count}"
+   },
+   "changes.deleted": {
+    "en": "-{count}",
+    "zh": "-{count}"
+   },
+   "changes.binary": {
+    "en": "binary",
+    "zh": "二进制"
+   },
+   "changes.openReview": {
+    "en": "Review this turn’s changes in the sidebar",
+    "zh": "在侧边栏查看本轮改动"
+   },
+   "changes.all": {
+    "en": "All {count} files",
+    "zh": "全部 {count} 个文件"
+   },
+   "changes.expandAria": {
+    "en": "Show all {count} changed files",
+    "zh": "展开全部 {count} 个改动文件"
+   },
+   "changes.collapse": {
+    "en": "Collapse",
+    "zh": "收起"
+   },
+   "changes.collapseAria": {
+    "en": "Collapse changed files",
+    "zh": "收起改动文件列表"
+   },
+   "changes.oversized": {
+    "en": "too large",
+    "zh": "过大"
+   },
+   "changes.viewDiff": {
+    "en": "View changes to {name}",
+    "zh": "查看 {name} 的改动"
+   },
+   "review.title": {
+    "en": "Review · turn {turn}",
+    "zh": "第 {turn} 轮改动"
+   },
+   "review.selectFile": {
+    "en": "Choose the file to review",
+    "zh": "选择要查看的文件"
+   },
+   "review.split": {
+    "en": "Switch to split view",
+    "zh": "切换为左右对比"
+   },
+   "review.unified": {
+    "en": "Switch to unified view",
+    "zh": "切换为单栏对比"
+   },
+   "review.splitAria": {
+    "en": "Split view",
+    "zh": "左右对比"
+   },
+   "review.wrap": {
+    "en": "Enable line wrap",
+    "zh": "开启自动换行"
+   },
+   "review.nowrap": {
+    "en": "Disable line wrap",
+    "zh": "关闭自动换行"
+   },
+   "review.wrapAria": {
+    "en": "Line wrap",
+    "zh": "自动换行"
+   },
+   "review.openFile": {
+    "en": "Open the whole file in the sidebar",
+    "zh": "在侧边栏打开整个文件"
+   },
+   "review.openFileAria": {
+    "en": "Open {name} in sidebar",
+    "zh": "在侧边栏打开 {name}"
+   },
+   "diff.openNativeAria": {
+    "en": "Open {name} in default app",
+    "zh": "用默认应用打开 {name}"
+   },
+   "diff.loading": {
+    "en": "Reading changes…",
+    "zh": "正在读取改动…"
+   },
+   "diff.missing": {
+    "en": "The contents of this turn’s changes are no longer available",
+    "zh": "这轮改动的内容已不可用"
+   },
+   "diff.error": {
+    "en": "Could not read the changes",
+    "zh": "无法读取改动"
+   },
+   "diff.binary": {
+    "en": "Binary file; changes cannot be shown",
+    "zh": "二进制文件，无法显示改动"
+   },
+   "diff.oversized": {
+    "en": "File too large; changes cannot be shown",
+    "zh": "文件过大，无法显示改动"
+   },
+   "diff.created": {
+    "en": "Created in this turn",
+    "zh": "本轮新建的文件"
+   },
+   "diff.deleted": {
+    "en": "Deleted in this turn",
+    "zh": "本轮删除的文件"
+   },
+   "diff.unchanged": {
+    "en": "Both sides hold the same lines",
+    "zh": "两侧内容相同"
+   },
+   "diff.coarse": {
+    "en": "Line comparison timed out; shown as a whole-file replacement",
+    "zh": "逐行对比超时，按整个文件替换显示"
+   },
+   "diff.truncated": {
+    "en": "Showing the first {count} lines",
+    "zh": "只显示前 {count} 行"
+   },
+   "diff.openNative": {
+    "en": "Open in default app",
+    "zh": "用默认应用打开"
+   },
+   "diff.openNativeError": {
+    "en": "Could not open. Click to retry.",
+    "zh": "打开失败，点击重试"
+   }
+  },
+  "model": {
+   "error.sessionInUse": {
+    "en": "This session is already in use, possibly by another running DSH instance (such as dsh web or the desktop app). Quit other running DSH instances and try again.",
+    "zh": "当前会话已被占用，可能是其他正在运行的 DSH 导致的（如其他 dsh web、桌面端），请退出其他正在运行的 DSH 后重试。"
+   }
+  },
+  "plan": {
+   "preview.title": {
+    "en": "Plan",
+    "zh": "计划"
+   },
+   "preview.document": {
+    "en": "Plan · Markdown",
+    "zh": "计划 · Markdown"
+   },
+   "preview.action": {
+    "en": "Open",
+    "zh": "打开"
+   },
+   "preview.open": {
+    "en": "Open plan in sidebar",
+    "zh": "在侧边栏打开计划"
+   },
+   "preview.full": {
+    "en": "View full plan",
+    "zh": "查看全文"
+   },
+   "preview.openNamed": {
+    "en": "Open plan: {title}",
+    "zh": "打开计划：{title}"
+   },
+   "preview.loading": {
+    "en": "Loading plan…",
+    "zh": "正在读取计划…"
+   },
+   "preview.failed": {
+    "en": "Could not load plan",
+    "zh": "无法读取计划"
+   },
+   "preview.invalidAddress": {
+    "en": "Invalid plan address",
+    "zh": "计划地址无效"
+   },
+   "preview.historyUnavailable": {
+    "en": "Session history is unavailable",
+    "zh": "无法读取会话历史"
+   },
+   "preview.notFound": {
+    "en": "This plan was not found",
+    "zh": "未找到这份计划"
+   },
+   "preview.unavailable": {
+    "en": "Plan preview is unavailable",
+    "zh": "计划预览不可用"
+   },
+   "preview.expired": {
+    "en": "This temporary plan preview has expired. Reopen it from the pending review card.",
+    "zh": "临时计划预览已失效，请从仍在等待审批的卡片重新打开。"
+   }
+  },
+  "pluginManager": {
+   "panel": {
+    "en": "Plugins",
+    "zh": "插件"
+   },
+   "title": {
+    "en": "Plugins",
+    "zh": "插件"
+   },
+   "intro": {
+    "en": "Add and manage plugins",
+    "zh": "添加和管理插件"
+   },
+   "loading": {
+    "en": "Reading plugins…",
+    "zh": "正在读取插件…"
+   },
+   "error": {
+    "en": "Plugins are temporarily unavailable.",
+    "zh": "暂时无法读取插件。"
+   },
+   "unavailable": {
+    "en": "This deployment runs without a manageable profile, so plugins cannot be installed or switched here.",
+    "zh": "本部署没有可管理的 profile，无法安装或启停插件。"
+   },
+   "retry": {
+    "en": "Retry",
+    "zh": "重试"
+   },
+   "refresh": {
+    "en": "Refresh",
+    "zh": "刷新"
+   },
+   "empty": {
+    "en": "No plugins are installed yet.",
+    "zh": "还没有安装任何插件。"
+   },
+   "addPlugin": {
+    "en": "Add plugin",
+    "zh": "添加插件"
+   },
+   "restartNotice": {
+    "en": "The change takes effect at the next start",
+    "zh": "更改将在下次启动生效"
+   },
+   "overriddenNotice": {
+    "en": "{name} was saved, but a higher-priority configuration overrides it, so it is not in effect",
+    "zh": "{name} 已保存，但被更高优先级的配置覆盖，当前未生效"
+   },
+   "bundlesTitle": {
+    "en": "Installed",
+    "zh": "已安装"
+   },
+   "officialTitle": {
+    "en": "Official",
+    "zh": "官方"
+   },
+   "builtinAgentTeamTitle": {
+    "en": "Agent Teams",
+    "zh": "智能体团队"
+   },
+   "builtinAgentTeamDescription": {
+    "en": "Enable agent team collaboration and team tools.",
+    "zh": "启用智能体团队协作与团队工具。"
+   },
+   "builtinAgentTeamWebTitle": {
+    "en": "Agent Teams Web UI",
+    "zh": "智能体团队 Web 界面"
+   },
+   "builtinAgentTeamWebDescription": {
+    "en": "View team members, the task board, and teammate sessions in the browser.",
+    "zh": "在浏览器中查看团队成员、任务看板和成员会话。"
+   },
+   "builtinAutoReviewTitle": {
+    "en": "Auto Authorization Review",
+    "zh": "自动授权审查"
+   },
+   "builtinAutoReviewDescription": {
+    "en": "Add an Auto review permission mode that uses the model to assess authorization before each tool call.",
+    "zh": "提供自动审查权限模式，由模型在每次工具调用前判断是否授权。"
+   },
+   "statusProblem": {
+    "en": "Problem",
+    "zh": "异常"
+   },
+   "statusBeta": {
+    "en": "Beta",
+    "zh": "Beta"
+   },
+   "reasonLabel": {
+    "en": "Reason",
+    "zh": "原因"
+   },
+   "versionTag": {
+    "en": "v{version}",
+    "zh": "v{version}"
+   },
+   "noDescription": {
+    "en": "No description.",
+    "zh": "暂无描述。"
+   },
+   "partsLabel": {
+    "en": "Components",
+    "zh": "包含的组件"
+   },
+   "partsEmpty": {
+    "en": "This plugin pack contains no components.",
+    "zh": "这个插件包不包含任何组件。"
+   },
+   "partsCountTotal": {
+    "en": "{count} total",
+    "zh": "共 {count} 个"
+   },
+   "partsCountRunning": {
+    "en": "{count} running",
+    "zh": "{count} 运行中"
+   },
+   "partsCountOff": {
+    "en": "{count} off",
+    "zh": "{count} 已停用"
+   },
+   "partOff": {
+    "en": "Off",
+    "zh": "已关闭"
+   },
+   "partsCountFailed": {
+    "en": "{count} failed",
+    "zh": "{count} 异常"
+   },
+   "partsFilter": {
+    "en": "Filter components",
+    "zh": "筛选组件"
+   },
+   "partsFilterEmpty": {
+    "en": "No component matches.",
+    "zh": "没有匹配的组件。"
+   },
+   "partToggle": {
+    "en": "Enable component {name}",
+    "zh": "启用组件 {name}"
+   },
+   "rowPhasePending": {
+    "en": "Waiting for dependencies",
+    "zh": "等待依赖"
+   },
+   "rowPhaseLoading": {
+    "en": "Loading",
+    "zh": "加载中"
+   },
+   "rowPhaseActive": {
+    "en": "Running",
+    "zh": "运行中"
+   },
+   "rowPhaseFailed": {
+    "en": "Problem",
+    "zh": "异常"
+   },
+   "rowPhaseUnloading": {
+    "en": "Unloading",
+    "zh": "卸载中"
+   },
+   "enableToggle": {
+    "en": "Enable {name}",
+    "zh": "启用 {name}"
+   },
+   "openDetail": {
+    "en": "View {name}",
+    "zh": "查看 {name}"
+   },
+   "backToList": {
+    "en": "Back to plugins",
+    "zh": "返回插件列表"
+   },
+   "crumbRoot": {
+    "en": "Plugins",
+    "zh": "插件列表"
+   },
+   "backToPackage": {
+    "en": "Back to {name}",
+    "zh": "返回 {name}"
+   },
+   "configureRow": {
+    "en": "Configure {name}",
+    "zh": "配置 {name}"
+   },
+   "rowStateIdle": {
+    "en": "Not running",
+    "zh": "未运行"
+   },
+   "uninstall": {
+    "en": "Uninstall",
+    "zh": "卸载"
+   },
+   "uninstallLabel": {
+    "en": "Uninstall {name}",
+    "zh": "卸载 {name}"
+   },
+   "installTitle": {
+    "en": "Add plugin",
+    "zh": "添加插件"
+   },
+   "installDescription": {
+    "en": "Enter the plugin's package name, GitHub repository address, or local directory path.",
+    "zh": "输入插件的包名、GitHub 仓库地址或本地目录路径。"
+   },
+   "installSpecLabel": {
+    "en": "Package name or address",
+    "zh": "包名或地址"
+   },
+   "installSpecPlaceholder": {
+    "en": "for example @deepseek-ai/dsh-experimental-auto-review",
+    "zh": "例如 @deepseek-ai/dsh-experimental-auto-review"
+   },
+   "installGuideToggle": {
+    "en": "Not sure what to enter?",
+    "zh": "不知道该填什么？"
+   },
+   "installGuideHide": {
+    "en": "Hide the guide",
+    "zh": "收起引导"
+   },
+   "installGuideIntro": {
+    "en": "Copy any one of these from the plugin's README or release page.",
+    "zh": "从插件的 README 或发布页面复制以下任意一项。"
+   },
+   "installGuideIdNote": {
+    "en": "The package name is the npm package name, usually dsh-xxx or @author/plugin; the display name is not one.",
+    "zh": "包名即 npm 包名，常见形式为 dsh-xxx 或 @作者/插件名；插件的显示名称不是包名。"
+   },
+   "installGuideIdTitle": {
+    "en": "Package name",
+    "zh": "包名"
+   },
+   "installGuideIdExample": {
+    "en": "@deepseek-ai/dsh-experimental-auto-review",
+    "zh": "@deepseek-ai/dsh-experimental-auto-review"
+   },
+   "installGuideIdHint": {
+    "en": "The part after dsh plugin add or pnpm add in the README's install command.",
+    "zh": "README 安装命令中 dsh plugin add 或 pnpm add 之后的部分。"
+   },
+   "installGuideGitTitle": {
+    "en": "GitHub repository address",
+    "zh": "GitHub 仓库地址"
+   },
+   "installGuideGitExample": {
+    "en": "https://github.com/author/dsh-plugin",
+    "zh": "https://github.com/author/dsh-plugin"
+   },
+   "installGuideGitHint": {
+    "en": "The address of the plugin's open-source repository on GitHub; other Git hosts work too.",
+    "zh": "插件在 GitHub 上的开源仓库地址，也支持其他 Git 仓库。"
+   },
+   "installGuidePathTitle": {
+    "en": "Local plugin directory",
+    "zh": "本地插件目录"
+   },
+   "installGuidePathExample": {
+    "en": "/Users/name/my-plugin",
+    "zh": "/Users/name/my-plugin"
+   },
+   "installGuidePathHint": {
+    "en": "The absolute path of a plugin directory on this machine, developed here or downloaded.",
+    "zh": "本机上插件目录的绝对路径，适用于自行开发或已下载的插件。"
+   },
+   "installGuideExampleLabel": {
+    "en": "Example: ",
+    "zh": "示例："
+   },
+   "installGuideFill": {
+    "en": "Use example",
+    "zh": "填入示例"
+   },
+   "installGuideFillAria": {
+    "en": "Use the example {example}",
+    "zh": "填入示例 {example}"
+   },
+   "installGuideSafety": {
+    "en": "Install only plugins you trust: they run with your permissions and can damage DeepSeek Harness or leak your data.",
+    "zh": "请确认插件来源可信。插件在本机以你的权限运行，来源不明的插件可能损坏 DeepSeek Harness，或读取和泄露你的数据。"
+   },
+   "installRun": {
+    "en": "Install",
+    "zh": "安装"
+   },
+   "installChecking": {
+    "en": "Checking…",
+    "zh": "正在检查…"
+   },
+   "installProblemInvalid": {
+    "en": "This is not a package name or address that can be installed: {reason}",
+    "zh": "无法识别这个包名或地址：{reason}"
+   },
+   "installProblemInstalled": {
+    "en": "This plugin is already installed",
+    "zh": "该插件已安装"
+   },
+   "installProblemNotFound": {
+    "en": "No such plugin was found",
+    "zh": "未找到相关插件"
+   },
+   "installProblemNotPackage": {
+    "en": "The path does not exist or is not a valid plugin package",
+    "zh": "该路径不存在或不是有效的插件包"
+   },
+   "installProblemNotBundle": {
+    "en": "This package declares no bundle, so it cannot be installed as a plugin: {reason}",
+    "zh": "这个包没有声明组合包，无法作为插件安装：{reason}"
+   },
+   "installProblemNetwork": {
+    "en": "The plugin registry could not be reached; check the network and try again",
+    "zh": "无法连接插件源，请检查网络后重试"
+   },
+   "installProblemUnknown": {
+    "en": "The plugin could not be looked up: {reason}",
+    "zh": "无法获取插件信息：{reason}"
+   },
+   "installingTitle": {
+    "en": "Installing the plugin…",
+    "zh": "插件安装中…"
+   },
+   "installedTitle": {
+    "en": "Installed",
+    "zh": "已安装"
+   },
+   "installFailedTitle": {
+    "en": "The plugin could not be installed",
+    "zh": "插件安装失败"
+   },
+   "installEdit": {
+    "en": "Edit",
+    "zh": "编辑"
+   },
+   "installEditAria": {
+    "en": "Back to editing",
+    "zh": "返回编辑"
+   },
+   "installCancel": {
+    "en": "Cancel install",
+    "zh": "取消安装"
+   },
+   "installCloseCancels": {
+    "en": "Cancel install and close",
+    "zh": "取消安装并关闭"
+   },
+   "installStarting": {
+    "en": "Preparing installation…",
+    "zh": "正在准备安装…"
+   },
+   "installCancelling": {
+    "en": "Stopping installation…",
+    "zh": "正在停止安装…"
+   },
+   "installApplying": {
+    "en": "Applying configuration, please wait…",
+    "zh": "正在应用配置，请稍候…"
+   },
+   "installCancelledShort": {
+    "en": "Cancelled",
+    "zh": "已取消"
+   },
+   "installCancelled": {
+    "en": "Installation cancelled; the plugin is not enabled, and downloaded files may remain",
+    "zh": "已取消安装，插件未启用，下载的文件可能保留"
+   },
+   "installCancelUnconfirmed": {
+    "en": "Installation has not been confirmed stopped. Retry cancellation or wait for the installation result. {reason}",
+    "zh": "尚未确认安装已停止，请重试取消或等待安装结果。{reason}"
+   },
+   "installEnableNow": {
+    "en": "Enable now",
+    "zh": "立即启用"
+   },
+   "installDetailsShow": {
+    "en": "Show install details",
+    "zh": "查看安装详情"
+   },
+   "installDetailsHide": {
+    "en": "Hide install details",
+    "zh": "收起安装详情"
+   },
+   "installVersion": {
+    "en": "Version {version}",
+    "zh": "版本 {version}"
+   },
+   "installSubjectPath": {
+    "en": "Local directory",
+    "zh": "本地目录"
+   },
+   "installSubjectGit": {
+    "en": "Git repository",
+    "zh": "Git 仓库"
+   },
+   "installSubjectTarball": {
+    "en": "Tarball",
+    "zh": "压缩包"
+   },
+   "installLocation": {
+    "en": "Installs into {dir}",
+    "zh": "安装位置：{dir}"
+   },
+   "installRetry": {
+    "en": "Retry",
+    "zh": "重试"
+   },
+   "installFailureNetwork": {
+    "en": "The network connection failed",
+    "zh": "网络连接失败"
+   },
+   "installFailureNotFound": {
+    "en": "No such plugin was found",
+    "zh": "未找到相关插件"
+   },
+   "installFailureNoMatchingVersion": {
+    "en": "No version matches the request",
+    "zh": "没有匹配的版本"
+   },
+   "installFailureDiskFull": {
+    "en": "The disk is full; the install stopped",
+    "zh": "磁盘空间不足，安装已停止"
+   },
+   "installFailurePermission": {
+    "en": "No write permission; the plugin cannot be installed",
+    "zh": "没有写入权限，无法安装"
+   },
+   "installFailureBuildBlocked": {
+    "en": "A dependency's install scripts need your permission before the install can continue",
+    "zh": "有依赖的安装脚本需要你允许后才能继续"
+   },
+   "installFailureBuildBlockedManual": {
+    "en": "pnpm blocked install scripts; allow them under allowBuilds in pnpm-workspace.yaml and retry",
+    "zh": "有依赖的安装脚本被 pnpm 拦下，请在 profile 的 pnpm-workspace.yaml 的 allowBuilds 中放行后重试"
+   },
+   "installFailureIntegrity": {
+    "en": "The downloaded package failed its integrity check",
+    "zh": "下载的安装包校验失败"
+   },
+   "installFailureTimeout": {
+    "en": "The install timed out",
+    "zh": "安装超时"
+   },
+   "installFailurePnpmMissing": {
+    "en": "pnpm was not found, so nothing can be installed",
+    "zh": "没有找到 pnpm，无法安装"
+   },
+   "installFailureGeneric": {
+    "en": "Something went wrong during the install; the details say what",
+    "zh": "安装过程中出错，原因见安装详情"
+   },
+   "terminalRunning": {
+    "en": "Running",
+    "zh": "运行中"
+   },
+   "terminalFailed": {
+    "en": "Failed",
+    "zh": "失败"
+   },
+   "terminalDone": {
+    "en": "Done",
+    "zh": "已完成"
+   },
+   "terminalCopy": {
+    "en": "Copy",
+    "zh": "复制"
+   },
+   "terminalCopied": {
+    "en": "Copied",
+    "zh": "复制成功"
+   },
+   "terminalNoOutput": {
+    "en": "No output",
+    "zh": "无输出"
+   },
+   "terminalCollapseAria": {
+    "en": "Collapse output",
+    "zh": "收起输出"
+   },
+   "terminalCollapse": {
+    "en": "Collapse",
+    "zh": "收起"
+   },
+   "terminalExpandAria": {
+    "en": "Expand the remaining {n} output lines",
+    "zh": "展开其余 {n} 行输出"
+   },
+   "terminalExpand": {
+    "en": "… {n} more lines",
+    "zh": "… 其余 {n} 行"
+   },
+   "terminalExitCode": {
+    "en": "exit code {code}",
+    "zh": "退出码 {code}"
+   },
+   "terminalSignal": {
+    "en": "signal {signal}",
+    "zh": "信号 {signal}"
+   },
+   "terminalNoExitCode": {
+    "en": "no exit code",
+    "zh": "未正常退出"
+   },
+   "installDoneNothing": {
+    "en": "Install finished with no new dependency.",
+    "zh": "安装完成，没有新增依赖。"
+   },
+   "installDoneRestart": {
+    "en": "Installed; it loads at the next start.",
+    "zh": "已安装，下次启动后加载。"
+   },
+   "installDoneApproved": {
+    "en": "Install scripts allowed for {names}",
+    "zh": "已允许运行安装脚本：{names}"
+   },
+   "installApprovalTitle": {
+    "en": "Install scripts need permission",
+    "zh": "需要允许安装脚本"
+   },
+   "installApprovalDescription": {
+    "en": "These packages have install scripts that pnpm did not run.",
+    "zh": "以下包声明了安装脚本，pnpm 默认不运行。"
+   },
+   "installApprovalConsequence": {
+    "en": "Once allowed, the scripts run here with your permissions, and the permission is saved in this profile.",
+    "zh": "允许后，脚本会以你的权限在本机运行，授权保存在当前 profile，之后不再询问。"
+   },
+   "installApprovalCaution": {
+    "en": "Allow only packages you trust.",
+    "zh": "只在信任这些包时允许。"
+   },
+   "installApproveAndRetry": {
+    "en": "Allow these scripts and retry",
+    "zh": "允许这些脚本并重试"
+   },
+   "installClose": {
+    "en": "Done",
+    "zh": "完成"
+   },
+   "close": {
+    "en": "Close",
+    "zh": "关闭"
+   },
+   "cancel": {
+    "en": "Cancel",
+    "zh": "取消"
+   },
+   "confirmUninstallTitle": {
+    "en": "Uninstall \"{name}\"?",
+    "zh": "卸载「{name}」？"
+   },
+   "confirmUninstallDescription": {
+    "en": "What it provides goes away once it is uninstalled.",
+    "zh": "卸载后它提供的功能会消失。"
+   },
+   "confirmUninstall": {
+    "en": "Uninstall",
+    "zh": "卸载"
+   },
+   "failedEnable": {
+    "en": "Could not enable: {reason}",
+    "zh": "启用失败：{reason}"
+   },
+   "failedDisable": {
+    "en": "Could not disable: {reason}",
+    "zh": "停用失败：{reason}"
+   },
+   "failedUninstall": {
+    "en": "Could not uninstall: {reason}",
+    "zh": "卸载失败：{reason}"
+   },
+   "failedRowEnable": {
+    "en": "Could not enable the component: {reason}",
+    "zh": "组件启用失败：{reason}"
+   },
+   "failedRowDisable": {
+    "en": "Could not disable the component: {reason}",
+    "zh": "组件停用失败：{reason}"
+   },
+   "reasonManagementRequired": {
+    "en": "Plugin management needs it; it cannot be switched off or uninstalled.",
+    "zh": "插件管理所需，不能停用或卸载"
+   },
+   "reasonUnaddressable": {
+    "en": "The profile patch cannot address this one uniquely.",
+    "zh": "当前 profile 的 patch 无法唯一定位这一项"
+   },
+   "reasonUnknownPlugin": {
+    "en": "No such plugin.",
+    "zh": "找不到该插件"
+   },
+   "reasonInvalidSpec": {
+    "en": "Enter a valid package name or address.",
+    "zh": "请输入有效的包名或地址"
+   },
+   "reasonAmbiguousInstall": {
+    "en": "Which package was installed cannot be told from the dependency change.",
+    "zh": "无法从依赖变更中确定安装了哪一个包"
+   },
+   "reasonNotBundle": {
+    "en": "This package declares no bundle, so it cannot be managed as a plugin.",
+    "zh": "这个包没有声明组合包，不能作为插件管理"
+   },
+   "reasonNotRemovable": {
+    "en": "This package is not owned by the profile, or plugin management needs it.",
+    "zh": "这个包不属于当前 profile，或者是插件管理所需的组件"
+   },
+   "reasonStopProfile": {
+    "en": "This profile runs without HMR; stop it and uninstall the package with dsh plugin.",
+    "zh": "这个 profile 没有启用 HMR，正在使用的包要停止后用 dsh plugin 卸载"
+   },
+   "reasonBundleInUse": {
+    "en": "Other configuration still uses this bundle's components; switch them off first.",
+    "zh": "其他配置仍在使用这个组合包的组件，请先停用它们"
+   },
+   "reasonStaleApproval": {
+    "en": "The pending script approvals changed; install again to refresh them.",
+    "zh": "待允许的安装脚本列表已变化，请重新安装以刷新"
+   },
+   "reasonOperationError": {
+    "en": "The Host reported an error.",
+    "zh": "Host 报告了一个错误"
+   }
+  },
+  "reference": {
+   "section.subagents": {
+    "en": "Subagents",
+    "zh": "子智能体"
+   }
+  },
+  "settings": {
+   "desktop.update.available": {
+    "en": "Update",
+    "zh": "新版本"
+   },
+   "desktop.update.checking": {
+    "en": "Checking for updates…",
+    "zh": "正在检查更新…"
+   },
+   "desktop.update.progress": {
+    "en": "{percent}%…",
+    "zh": "{percent}%…"
+   },
+   "desktop.update.verifying": {
+    "en": "Verifying update files…",
+    "zh": "正在校验更新文件…"
+   },
+   "desktop.update.installing": {
+    "en": "Preparing to restart…",
+    "zh": "正在准备重启…"
+   },
+   "desktop.update.ready": {
+    "en": "Install and Restart",
+    "zh": "安装并重启"
+   },
+   "desktop.update.retry": {
+    "en": "Retry update",
+    "zh": "重试更新"
+   },
+   "desktop.update.versionDetail": {
+    "en": "{label} — V{version}",
+    "zh": "{label} — V{version}"
+   },
+   "desktop.update.downloadDetail": {
+    "en": "Downloading update: {percent}%\nTarget version: V{version}",
+    "zh": "正在下载更新：{percent}%\n目标版本：V{version}"
+   },
+   "desktop.update.checkFailed": {
+    "en": "Could not check for updates. Please try again later.",
+    "zh": "检查更新失败，请稍后重试。"
+   },
+   "desktop.update.downloadFailed": {
+    "en": "Could not download the update. Please try again.",
+    "zh": "下载更新失败，请重试。"
+   },
+   "desktop.update.installFailed": {
+    "en": "Could not install the update. Please try again later.",
+    "zh": "安装更新失败，请稍后重试。"
+   },
+   "desktop.update.checkNetworkFailed": {
+    "en": "Could not check for updates. Please try again later. The connection was interrupted. Check your network and try again.",
+    "zh": "检查更新失败，请稍后重试。网络连接异常，请检查网络后重试。"
+   },
+   "desktop.update.downloadNetworkFailed": {
+    "en": "Could not download the update. Please try again. The connection was interrupted. Check your network and try again.",
+    "zh": "下载更新失败，请重试。网络连接异常，请检查网络后重试。"
+   },
+   "desktop.update.installNetworkFailed": {
+    "en": "Could not install the update. Please try again later. The connection was interrupted. Check your network and try again.",
+    "zh": "安装更新失败，请稍后重试。网络连接异常，请检查网络后重试。"
+   },
+   "desktop.update.stopFailed": {
+    "en": "Tasks could not be stopped safely. The update was not installed. Please try again later.",
+    "zh": "未能安全停止任务，更新未安装。请稍后重试。"
+   },
+   "desktop.update.tasksChanged": {
+    "en": "New tasks started. Review the update confirmation again.",
+    "zh": "有新任务开始，请重新确认更新。"
+   },
+   "desktop.update.tasksUnavailable": {
+    "en": "Task status is unavailable. Try updating again when the workspace is ready.",
+    "zh": "无法确认任务状态，请在工作区就绪后重试更新。"
+   }
+  },
+  "settings.models": {
+   "modelInputTypes": {
+    "en": "Input types",
+    "zh": "输入类型"
+   },
+   "modelInputText": {
+    "en": "Text",
+    "zh": "文本"
+   },
+   "modelInputImage": {
+    "en": "Image",
+    "zh": "图片"
+   }
+  },
+  "settings.pluginInventory": {
+   "clientSyncing": {
+    "en": "Syncing plugins on this page…",
+    "zh": "正在同步本页面的插件…"
+   },
+   "clientSyncFailed": {
+    "en": "Some plugins could not sync on this page. Host enablement is unchanged.",
+    "zh": "本页面的插件未能完成同步；服务端的启用状态保持不变。"
+   },
+   "clientSyncRetry": {
+    "en": "Retry this page",
+    "zh": "重试本页面同步"
+   }
+  },
+  "settings.plugins": {
+   "unavailable": {
+    "en": "This plugin is not loaded, so it cannot be configured right now.",
+    "zh": "该插件当前未加载，暂时无法配置。"
+   },
+   "subagentTitle": {
+    "en": "Subagent",
+    "zh": "Subagent"
+   },
+   "subagentDescription": {
+    "en": "Set Subagent recursion depth, count, and models.",
+    "zh": "设置 Subagent 的递归层级、数量和模型。"
+   },
+   "subagentLimitsTitle": {
+    "en": "Limits",
+    "zh": "运行限制"
+   },
+   "subagentMaxDepth": {
+    "en": "Maximum recursion depth",
+    "zh": "最大递归深度"
+   },
+   "subagentDepthHelpLabel": {
+    "en": "About maximum recursion depth",
+    "zh": "最大递归深度说明"
+   },
+   "subagentDepthHelp": {
+    "en": "Limits how many levels of Subagents an Agent can create.",
+    "zh": "限制 Agent 创建 Subagent 的递归层级。"
+   },
+   "subagentDepthZero": {
+    "en": "Disable Subagents",
+    "zh": "禁用 Subagent"
+   },
+   "subagentDepthOne": {
+    "en": "Only the main Agent can create Subagents",
+    "zh": "仅允许主 Agent 创建 Subagent"
+   },
+   "subagentDepthOverride": {
+    "en": "If a tool defines its own maximum recursion depth, that setting takes precedence.",
+    "zh": "如果某个工具单独设置了最大递归深度，以该工具的设置为准。"
+   },
+   "subagentMaxActive": {
+    "en": "Subagent parallelism limit",
+    "zh": "Subagent 并行数量上限"
+   },
+   "subagentCapacityHelpLabel": {
+    "en": "About the Subagent parallelism limit",
+    "zh": "Subagent 并行数量上限说明"
+   },
+   "subagentCapacityHelp": {
+    "en": "Total live Subagents under the same main Agent, across all recursion levels. The main Agent is excluded. New start requests are rejected when the limit is reached.",
+    "zh": "同一主 Agent 下，所有递归层级同时存活的 Subagent 总数，主 Agent 不计入。达到上限时，新的启动请求会被拒绝。"
+   },
+   "subagentDepthInvalid": {
+    "en": "Enter a whole number of 0 or more.",
+    "zh": "请输入不小于 0 的整数。"
+   },
+   "subagentCapacityInvalid": {
+    "en": "Enter a whole number of 1 or more.",
+    "zh": "请输入不小于 1 的整数。"
+   }
+  },
+  "sidebarBrowser": {
+   "type.label": {
+    "en": "Browser",
+    "zh": "浏览器"
+   },
+   "guide.title": {
+    "en": "Browser",
+    "zh": "浏览器"
+   },
+   "guide.description": {
+    "en": "Browse HTTP(S) pages",
+    "zh": "浏览 HTTP(S) 网页"
+   },
+   "address.placeholder": {
+    "en": "Enter an HTTP(S) address",
+    "zh": "输入 HTTP(S) 地址"
+   },
+   "address.changed": {
+    "en": "URL changed",
+    "zh": "URL 已变化"
+   },
+   "back": {
+    "en": "Back",
+    "zh": "后退"
+   },
+   "forward": {
+    "en": "Forward",
+    "zh": "前进"
+   },
+   "reload": {
+    "en": "Reload",
+    "zh": "刷新"
+   },
+   "go": {
+    "en": "Go",
+    "zh": "前往"
+   },
+   "external": {
+    "en": "Open in system browser",
+    "zh": "在系统浏览器中打开"
+   },
+   "sandbox.disable": {
+    "en": "Disable sandbox restrictions",
+    "zh": "关闭沙箱限制"
+   },
+   "sandbox.enable": {
+    "en": "Restore sandbox restrictions",
+    "zh": "恢复沙箱限制"
+   },
+   "sandbox.warning": {
+    "en": "Sandbox restrictions are disabled; the page can navigate the top-level app and use downloads, modal dialogs, and input locks.",
+    "zh": "沙箱限制已关闭；页面可以导航顶层应用，并使用下载、模态对话框与输入锁定。"
+   },
+   "start": {
+    "en": "Enter an HTTP(S) address to start browsing",
+    "zh": "输入 HTTP(S) 地址开始浏览"
+   },
+   "loading": {
+    "en": "Opening…",
+    "zh": "正在打开…"
+   },
+   "error.empty": {
+    "en": "Enter an address.",
+    "zh": "请输入地址。"
+   },
+   "error.invalid": {
+    "en": "That address is invalid or too long.",
+    "zh": "这个地址无效或过长。"
+   },
+   "error.protocol": {
+    "en": "Only HTTP and HTTPS addresses are supported; use Document Preview for local files.",
+    "zh": "只支持 HTTP 和 HTTPS 地址；本地文件请使用文档预览。"
+   },
+   "error.credentials": {
+    "en": "Addresses cannot contain a username or password.",
+    "zh": "地址不能包含用户名或密码。"
+   },
+   "error.application-origin": {
+    "en": "The embedded browser cannot open the DSH application itself.",
+    "zh": "不能在嵌入浏览器中打开 DSH 应用自身。"
+   },
+   "web.loadFailed": {
+    "en": "The page reported a load failure or may block embedding; try opening it in the system browser.",
+    "zh": "页面报告加载失败或可能禁止嵌入；可尝试在系统浏览器中打开。"
+   },
+   "web.unknown": {
+    "en": "The page navigated inside the iframe; Web mode cannot read its current URL.",
+    "zh": "页面已在 iframe 内跳转；Web 模式无法读取当前 URL。"
+   }
+  },
+  "sidebarOffice": {
+   "title": {
+    "en": "Office document",
+    "zh": "Office 文档"
+   },
+   "loading": {
+    "en": "Reading…",
+    "zh": "正在读取…"
+   },
+   "retry": {
+    "en": "Retry",
+    "zh": "重试"
+   },
+   "missingFonts": {
+    "en": "Fonts used in this document are unavailable: {fonts}. Text and layout may differ.",
+    "zh": "缺少文档使用的字体：{fonts}，可能影响文字和排版。"
+   },
+   "showMore": {
+    "en": "Show more",
+    "zh": "显示更多"
+   },
+   "dismissNotice": {
+    "en": "Dismiss font notice",
+    "zh": "关闭字体提示"
+   },
+   "missingFontsTitle": {
+    "en": "Missing fonts",
+    "zh": "缺失的字体"
+   },
+   "missingFontsDescription": {
+    "en": "These fonts are unavailable for this preview. Text and layout may differ from the original document.",
+    "zh": "本次预览无法使用以下字体，预览中的文字和排版可能与原文档不同。"
+   },
+   "missingFontsCount": {
+    "en": "Fonts: {count}",
+    "zh": "{count} 种字体"
+   },
+   "closeDetails": {
+    "en": "Close font details",
+    "zh": "关闭字体详情"
+   },
+   "unavailable": {
+    "en": "Office previews are unavailable. Enable the document preview service on the computer running DeepSeek Harness.",
+    "zh": "Office 预览不可用。请在运行 DeepSeek Harness 的主机上启用文档预览服务。"
+   },
+   "invalid": {
+    "en": "This Office file cannot be previewed. It may be damaged, password protected, or have the wrong extension.",
+    "zh": "无法预览此 Office 文件。文件可能已损坏、受密码保护，或与扩展名不符。"
+   },
+   "tooLarge": {
+    "en": "The Office file or converted PDF exceeds the preview size limit. Reduce the file size or adjust the preview configuration.",
+    "zh": "Office 文件或转换后的 PDF 超过预览大小上限，请缩小文件或调整预览配置。"
+   },
+   "failed": {
+    "en": "Office conversion did not produce a usable PDF. Check the file and try again.",
+    "zh": "Office 转换失败，未生成可用的 PDF。请检查该文件后重试。"
+   },
+   "timeout": {
+    "en": "Office conversion timed out. Try again.",
+    "zh": "Office 转换超时，请重试。"
+   },
+   "busy": {
+    "en": "Office preview is busy. Try again shortly.",
+    "zh": "Office 预览任务较多，请稍后重试。"
+   },
+   "changed": {
+    "en": "The file changed while being read. Reopen the preview.",
+    "zh": "文件在读取时已更改，请重新打开预览。"
+   }
+  },
+  "subagent": {
+   "open.sidebar": {
+    "en": "Open {label} in sidebar",
+    "zh": "在侧边栏打开 {label}"
+   },
+   "sidebar.chat": {
+    "en": "Chat",
+    "zh": "聊天"
+   }
+  },
+  "trajectory": {
+   "attachment.list": {
+    "en": "Attachments",
+    "zh": "附件"
+   },
+   "attachment.imageName": {
+    "en": "Image {index}",
+    "zh": "图片 {index}"
+   },
+   "layout.imageCount": {
+    "en": "Images ×{count}",
+    "zh": "图片 ×{count}"
+   }
+  },
+  "workspace": {
+   "groupBy.workspaceTree": {
+    "en": "Workspace Tree",
+    "zh": "按工作区树"
+   }
+  },
+  "agent-team": {
+   "trigger": {
+    "en": "Agent Team",
+    "zh": "Agent Team"
+   },
+   "refresh": {
+    "en": "Refresh Team",
+    "zh": "刷新 Team"
+   },
+   "close": {
+    "en": "Close",
+    "zh": "关闭"
+   },
+   "loading": {
+    "en": "Loading Team…",
+    "zh": "正在加载 Team…"
+   },
+   "empty": {
+    "en": "No shared tasks yet",
+    "zh": "还没有共享任务"
+   },
+   "roster": {
+    "en": "Members",
+    "zh": "成员"
+   },
+   "tasks": {
+    "en": "Shared tasks",
+    "zh": "共享任务"
+   },
+   "model": {
+    "en": "Model",
+    "zh": "模型"
+   },
+   "open": {
+    "en": "Open teammate conversation",
+    "zh": "打开 teammate 会话"
+   },
+   "create": {
+    "en": "New task",
+    "zh": "新建任务"
+   },
+   "subject": {
+    "en": "Task subject",
+    "zh": "任务标题"
+   },
+   "description": {
+    "en": "Task description",
+    "zh": "任务描述"
+   },
+   "blockers": {
+    "en": "Blocking task ids (comma separated)",
+    "zh": "依赖任务 id（逗号分隔）"
+   },
+   "scopes": {
+    "en": "Write scopes (comma separated)",
+    "zh": "写入范围（逗号分隔）"
+   },
+   "save": {
+    "en": "Save",
+    "zh": "保存"
+   },
+   "cancel": {
+    "en": "Cancel",
+    "zh": "取消"
+   },
+   "edit": {
+    "en": "Edit",
+    "zh": "编辑"
+   },
+   "complete": {
+    "en": "Complete",
+    "zh": "完成"
+   },
+   "reopen": {
+    "en": "Reopen",
+    "zh": "重开"
+   },
+   "delete": {
+    "en": "Delete",
+    "zh": "删除"
+   },
+   "owner": {
+    "en": "Owner",
+    "zh": "Owner"
+   },
+   "unowned": {
+    "en": "Unowned",
+    "zh": "未分配"
+   },
+   "blockedBy": {
+    "en": "Blocked by",
+    "zh": "依赖"
+   },
+   "writeScopes": {
+    "en": "Write scopes",
+    "zh": "写入范围"
+   },
+   "ready": {
+    "en": "Ready",
+    "zh": "可开始"
+   },
+   "blocked": {
+    "en": "Blocked by dependencies",
+    "zh": "被依赖阻塞"
+   },
+   "conflict": {
+    "en": "Task state changed and was reloaded. Review it before retrying.",
+    "zh": "任务状态已变化，已重新加载；请检查后重试。"
+   },
+   "memberStatus.running": {
+    "en": "Running",
+    "zh": "运行中"
+   },
+   "memberStatus.idle": {
+    "en": "Idle",
+    "zh": "空闲"
+   },
+   "memberStatus.inactive": {
+    "en": "Inactive",
+    "zh": "未运行"
+   },
+   "memberStatus.provisioning": {
+    "en": "Provisioning",
+    "zh": "准备中"
+   },
+   "memberStatus.failed": {
+    "en": "Failed",
+    "zh": "失败"
+   },
+   "status.pending": {
+    "en": "Pending",
+    "zh": "待处理"
+   },
+   "status.in_progress": {
+    "en": "In progress",
+    "zh": "进行中"
+   },
+   "status.completed": {
+    "en": "Completed",
+    "zh": "已完成"
+   }
+  }
+ },
+ "reworded": {
+  "settings.agentPreset": {
+   "presetCordisDescription": {
+    "en": "Built for creating custom agent presets, with all Standard mode capabilities plus runtime inspection, persistent plugin management, and preset-authoring guidance.",
+    "wasEn": "Built for creating custom agent presets, with all Standard mode capabilities plus runtime inspection, plugin experiments, and preset-authoring guidance.",
+    "currentIt": "Pensata per creare preset di agenti personalizzati: offre tutte le capacità della modalità standard più l'ispezione a runtime, gli esperimenti con i Plugin e le linee guida per la creazione dei preset."
+   }
+  },
+  "deliverables": {
+   "presented.unavailable": {
+    "en": "This Host has no desktop available to open files or folders in external apps. Files can still be previewed in the sidebar.",
+    "wasEn": "This Host has no desktop available to open files or folders",
+    "currentIt": "Questo Host non ha un desktop disponibile per aprire file o cartelle"
+   }
+  },
+  "settings.models": {
+   "modelAdvanced": {
+    "en": "Model options",
+    "wasEn": "Capacities",
+    "currentIt": "Capacità"
+   }
+  },
+  "settings.plugins": {
+   "nav": {
+    "en": "Built-in plugins",
+    "wasEn": "Plugins",
+    "currentIt": "Plugin"
+   },
+   "title": {
+    "en": "Built-in plugins",
+    "wasEn": "Plugins",
+    "currentIt": "Plugin"
+   },
+   "intro": {
+    "en": "Inspect the plugins this deployment ships.",
+    "wasEn": "Configure and inspect the plugins installed in this deployment.",
+    "currentIt": "Configura e ispeziona i Plugin installati in questa distribuzione."
+   },
+   "empty": {
+    "en": "This deployment exposes no plugin views.",
+    "wasEn": "This deployment exposes no plugin settings.",
+    "currentIt": "Questa distribuzione non espone impostazioni dei Plugin."
+   },
+   "subagentModelSelectionTitle": {
+    "en": "Model selection",
+    "wasEn": "Subagent",
+    "currentIt": "Subagente"
+   },
+   "subagentModelSelectionToggle": {
+    "en": "Allow agents to choose models for Subagents",
+    "wasEn": "Allow agents to choose models for subagents",
+    "currentIt": "Consenti agli agenti di scegliere i modelli per i subagenti"
+   },
+   "subagentModelSelectionChoose": {
+    "en": "When enabled, agents can choose a provider, model, and reasoning effort for each Subagent from the authorized models below. Applies only to new sessions.",
+    "wasEn": "When enabled, agents can choose a provider, model, and reasoning effort for each subagent from the authorized models below. Applies only to new sessions.",
+    "currentIt": "Se attivo, gli agenti possono scegliere un provider, un modello e un livello di ragionamento per ogni subagente tra i modelli autorizzati riportati sotto. Si applica solo alle nuove sessioni."
+   }
+  },
+  "question": {
+   "plan.discuss": {
+    "en": "Request changes",
+    "wasEn": "Chat about it",
+    "currentIt": "Discuti in chat"
+   }
+  }
+ },
+ "removed": [
+  "deliverables.produced.label",
+  "deliverables.produced.moreOne",
+  "deliverables.produced.more",
+  "deliverables.produced.open",
+  "settings.models.modelContextWindow",
+  "settings.models.modelMaxTokens",
+  "settings.plugins.configurableTab",
+  "settings.plugins.expand",
+  "settings.plugins.collapse",
+  "settings.plugins.discard",
+  "settings.plugins.unsaved",
+  "settings.plugins.subagentModelSelectionDescription",
+  "trajectory.layout.imageOnly"
+ ]
+}

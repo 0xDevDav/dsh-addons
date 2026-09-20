@@ -1,0 +1,43 @@
+{
+ "batch": "session-log-download",
+ "namespace": "session-log-download",
+ "total": 9,
+ "keys": {
+  "header.more": {
+   "en": "More actions",
+   "zh": "更多操作"
+  },
+  "menu.download": {
+   "en": "Download session log",
+   "zh": "下载 Session 日志"
+  },
+  "dialog.preparingTitle": {
+   "en": "Exporting Session",
+   "zh": "正在导出 Session"
+  },
+  "dialog.preparingDescription": {
+   "en": "Preparing a ZIP containing this Session, its sub-Sessions, and attachments.",
+   "zh": "正在准备包含当前 Session、子 Session 和附件的 ZIP 文件。"
+  },
+  "dialog.successTitle": {
+   "en": "Session download started",
+   "zh": "Session 导出已开始下载"
+  },
+  "dialog.successDescription": {
+   "en": "The browser is downloading the Session ZIP.",
+   "zh": "浏览器正在下载 Session ZIP 文件。"
+  },
+  "dialog.errorTitle": {
+   "en": "Session export failed",
+   "zh": "Session 导出失败"
+  },
+  "dialog.close": {
+   "en": "Close",
+   "zh": "关闭"
+  },
+  "dialog.commandFailed": {
+   "en": "Could not start the Session export.",
+   "zh": "无法启动 Session 导出。"
+  }
+ }
+}

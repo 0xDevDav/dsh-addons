@@ -1,13 +1,13 @@
 # Put the DavCode AGENT launcher where a shortcut can point at it, and (re)create the
 # Desktop shortcut with the brand's own icon.
 #
-#   pwsh -File install/shortcut.ps1 [-Version 0.1.6-alpha.1] [-Name 'DavCode AGENT']
+#   pwsh -File install/shortcut.ps1 [-Version 0.1.6-alpha.2] [-Name 'DavCode AGENT']
 #
 # Re-running it is the way to refresh the icon: Explorer caches icons per path, and a
 # rewritten .lnk plus a shell icon-cache nudge is what makes the new mark show at once.
 # Nothing else on the Desktop is touched.
 param(
-  [string]$Version = '0.1.6-alpha.1',
+  [string]$Version = '0.1.6-alpha.2',
   [string]$Name = 'DavCode AGENT'
 )
 $ErrorActionPreference = 'Stop'

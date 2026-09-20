@@ -19,7 +19,7 @@
   "presetMinimalName": "Modalità minimale",
   "presetMinimalDescription": "Agente di codifica con un solo strumento e una shell persistente.",
   "presetCordisName": "Modalità Creator",
-  "presetCordisDescription": "Pensata per creare preset di agenti personalizzati: offre tutte le capacità della modalità standard più l'ispezione a runtime, gli esperimenti con i Plugin e le linee guida per la creazione dei preset.",
+  "presetCordisDescription": "Pensata per creare preset di agenti personalizzati: offre tutte le capacità della modalità standard più l'ispezione a runtime, la gestione persistente dei Plugin e le linee guida per la creazione dei preset.",
   "duplicate": "Duplica",
   "duplicateUnavailable": "Questa installazione non ha una cartella dei preset scrivibile",
   "delete": "Elimina",

@@ -13,7 +13,7 @@ Non mi interessa come lo fai. Mi interessa che alla fine sia vero, e che tu me l
 
 1. **DeepSeek Harness**, nella versione per cui il repository dichiara di essere stato costruito e
    verificato — leggi il README del repository, che lo dice esplicitamente (al momento in cui scrivo:
-   `0.1.6-alpha.1`). **La versione conta**: il pacchetto italiano copre le stringhe di quella release e
+   `0.1.6-alpha.2`). **La versione conta**: il pacchetto italiano copre le stringhe di quella release e
    il pacchetto del marchio aggancia sedi e classi di quella release; su una release diversa alcune voci
    resterebbero in inglese e il marchio potrebbe non comparire. **Il collegamento di avvio deve essere
    fissato a quella versione esatta**, così non può partire in silenzio una versione diversa: la riga da

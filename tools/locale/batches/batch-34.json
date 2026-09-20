@@ -1,27 +1,27 @@
 {
- "batch": "sidebarImage",
- "namespace": "sidebarImage",
+ "batch": "sidebar",
+ "namespace": "sidebar",
  "total": 5,
  "keys": {
-  "title": {
-   "en": "Image",
-   "zh": "图片"
+  "session.new": {
+   "en": "New Session",
+   "zh": "新会话"
   },
-  "preview": {
-   "en": "Image preview: {name}",
-   "zh": "图片预览：{name}"
+  "session.new.label": {
+   "en": "New session",
+   "zh": "新建会话"
   },
-  "loading": {
-   "en": "Reading…",
-   "zh": "正在读取…"
+  "toggle.open": {
+   "en": "Open sidebar",
+   "zh": "打开侧边栏"
   },
-  "failed": {
-   "en": "This image could not be displayed.",
-   "zh": "无法显示这张图片"
+  "toggle.collapse": {
+   "en": "Collapse sidebar",
+   "zh": "收起侧边栏"
   },
-  "unsupported": {
-   "en": "Image preview requires the complete file contents.",
-   "zh": "图片预览需要完整文件内容"
+  "panels.label": {
+   "en": "Global panels",
+   "zh": "全局面板"
   }
  }
 }

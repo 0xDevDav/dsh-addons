@@ -4,13 +4,13 @@ Personal additions for the [DeepSeek Harness](https://github.com/deepseek-ai/dee
 packaged as **profile bundles** so they survive a DSH update and install on any machine with two commands.
 With them the surface calls itself **DavCode AGENT**: Italian, with cost surfaces and its own brand.
 
-Built and verified on DSH `0.1.6-alpha.1`, Windows, Node 24, pnpm 10.
+Built and verified on DSH `0.1.6-alpha.2`, Windows, Node 24, pnpm 10.
 
 ## What is in here
 
 | Path | What it is |
 |---|---|
-| `packages/dsh-locale-it` | **Italian language pack**: 1 331 strings across all 44 shipped client locale namespaces, registered as the `it` language |
+| `packages/dsh-locale-it` | **Italian language pack**: 1 643 strings across all 48 shipped client locale namespaces, registered as the `it` language |
 | `packages/dsh-session-cost` | **Cost surfaces**: the session-tree cost pill beside the composer statistics, a peak/off-peak hour widget above *New session*, and the account balance inside the Settings row |
 | `packages/dsh-brand-davcode` | **The identity**: the DavCode AGENT lockup in the sidebar brand row, the mark in the collapsed rail, the artwork alone on the blank-session screen, the product name in the window title, and a tab icon — each in the light and the dark variant of the drawing |
 | `tools/locale` | The pipeline that builds the language pack: dictionary extraction, batching, validation, review data, and the incremental update tools |

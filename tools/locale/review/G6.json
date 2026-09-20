@@ -328,7 +328,7 @@
   },
   "plan.approve": {
    "en": "Approve",
-   "zh": "确认执行",
+   "zh": "同意执行",
    "it": "Approva"
   },
   "plan.decline": {
@@ -337,9 +337,9 @@
    "it": "Rifiuta"
   },
   "plan.discuss": {
-   "en": "Chat about it",
-   "zh": "去聊天里说",
-   "it": "Discuti in chat"
+   "en": "Request changes",
+   "zh": "要求修改",
+   "it": "Richiedi modifiche"
   }
  },
  "command": {
@@ -748,6 +748,96 @@
    "zh": "设置",
    "it": "Impostazioni"
   },
+  "desktop.update.available": {
+   "en": "Update",
+   "zh": "新版本",
+   "it": "Aggiorna"
+  },
+  "desktop.update.checking": {
+   "en": "Checking for updates…",
+   "zh": "正在检查更新…",
+   "it": "Ricerca di aggiornamenti…"
+  },
+  "desktop.update.progress": {
+   "en": "{percent}%…",
+   "zh": "{percent}%…",
+   "it": "{percent}%…"
+  },
+  "desktop.update.verifying": {
+   "en": "Verifying update files…",
+   "zh": "正在校验更新文件…",
+   "it": "Verifica dei file di aggiornamento…"
+  },
+  "desktop.update.installing": {
+   "en": "Preparing to restart…",
+   "zh": "正在准备重启…",
+   "it": "Preparazione del riavvio…"
+  },
+  "desktop.update.ready": {
+   "en": "Install and Restart",
+   "zh": "安装并重启",
+   "it": "Installa e riavvia"
+  },
+  "desktop.update.retry": {
+   "en": "Retry update",
+   "zh": "重试更新",
+   "it": "Riprova aggiornamento"
+  },
+  "desktop.update.versionDetail": {
+   "en": "{label} — V{version}",
+   "zh": "{label} — V{version}",
+   "it": "{label} — V{version}"
+  },
+  "desktop.update.downloadDetail": {
+   "en": "Downloading update: {percent}%\nTarget version: V{version}",
+   "zh": "正在下载更新：{percent}%\n目标版本：V{version}",
+   "it": "Download dell'aggiornamento: {percent}%\nVersione di destinazione: V{version}"
+  },
+  "desktop.update.checkFailed": {
+   "en": "Could not check for updates. Please try again later.",
+   "zh": "检查更新失败，请稍后重试。",
+   "it": "Impossibile cercare aggiornamenti. Riprova più tardi."
+  },
+  "desktop.update.downloadFailed": {
+   "en": "Could not download the update. Please try again.",
+   "zh": "下载更新失败，请重试。",
+   "it": "Impossibile scaricare l'aggiornamento. Riprova."
+  },
+  "desktop.update.installFailed": {
+   "en": "Could not install the update. Please try again later.",
+   "zh": "安装更新失败，请稍后重试。",
+   "it": "Impossibile installare l'aggiornamento. Riprova più tardi."
+  },
+  "desktop.update.checkNetworkFailed": {
+   "en": "Could not check for updates. Please try again later. The connection was interrupted. Check your network and try again.",
+   "zh": "检查更新失败，请稍后重试。网络连接异常，请检查网络后重试。",
+   "it": "Impossibile cercare aggiornamenti. Riprova più tardi. La connessione è stata interrotta. Controlla la rete e riprova."
+  },
+  "desktop.update.downloadNetworkFailed": {
+   "en": "Could not download the update. Please try again. The connection was interrupted. Check your network and try again.",
+   "zh": "下载更新失败，请重试。网络连接异常，请检查网络后重试。",
+   "it": "Impossibile scaricare l'aggiornamento. Riprova. La connessione è stata interrotta. Controlla la rete e riprova."
+  },
+  "desktop.update.installNetworkFailed": {
+   "en": "Could not install the update. Please try again later. The connection was interrupted. Check your network and try again.",
+   "zh": "安装更新失败，请稍后重试。网络连接异常，请检查网络后重试。",
+   "it": "Impossibile installare l'aggiornamento. Riprova più tardi. La connessione è stata interrotta. Controlla la rete e riprova."
+  },
+  "desktop.update.stopFailed": {
+   "en": "Tasks could not be stopped safely. The update was not installed. Please try again later.",
+   "zh": "未能安全停止任务，更新未安装。请稍后重试。",
+   "it": "Non è stato possibile interrompere le attività in sicurezza. L'aggiornamento non è stato installato. Riprova più tardi."
+  },
+  "desktop.update.tasksChanged": {
+   "en": "New tasks started. Review the update confirmation again.",
+   "zh": "有新任务开始，请重新确认更新。",
+   "it": "Sono state avviate nuove attività. Rivedi la conferma dell'aggiornamento."
+  },
+  "desktop.update.tasksUnavailable": {
+   "en": "Task status is unavailable. Try updating again when the workspace is ready.",
+   "zh": "无法确认任务状态，请在工作区就绪后重试更新。",
+   "it": "Lo stato delle attività non è disponibile. Riprova l'aggiornamento quando l'area di lavoro è pronta."
+  },
   "title": {
    "en": "Settings",
    "zh": "设置",
@@ -804,6 +894,11 @@
    "en": "Files & folders",
    "zh": "文件与文件夹",
    "it": "File e cartelle"
+  },
+  "section.subagents": {
+   "en": "Subagents",
+   "zh": "子智能体",
+   "it": "Subagenti"
   },
   "section.sessions": {
    "en": "Sessions",
@@ -1168,6 +1263,71 @@
    "en": "Plan",
    "zh": "Plan",
    "it": "Piano"
+  },
+  "preview.title": {
+   "en": "Plan",
+   "zh": "计划",
+   "it": "Piano"
+  },
+  "preview.document": {
+   "en": "Plan · Markdown",
+   "zh": "计划 · Markdown",
+   "it": "Piano · Markdown"
+  },
+  "preview.action": {
+   "en": "Open",
+   "zh": "打开",
+   "it": "Apri"
+  },
+  "preview.open": {
+   "en": "Open plan in sidebar",
+   "zh": "在侧边栏打开计划",
+   "it": "Apri il piano nella barra laterale"
+  },
+  "preview.full": {
+   "en": "View full plan",
+   "zh": "查看全文",
+   "it": "Vedi il piano completo"
+  },
+  "preview.openNamed": {
+   "en": "Open plan: {title}",
+   "zh": "打开计划：{title}",
+   "it": "Apri il piano: {title}"
+  },
+  "preview.loading": {
+   "en": "Loading plan…",
+   "zh": "正在读取计划…",
+   "it": "Caricamento del piano…"
+  },
+  "preview.failed": {
+   "en": "Could not load plan",
+   "zh": "无法读取计划",
+   "it": "Impossibile caricare il piano"
+  },
+  "preview.invalidAddress": {
+   "en": "Invalid plan address",
+   "zh": "计划地址无效",
+   "it": "Indirizzo del piano non valido"
+  },
+  "preview.historyUnavailable": {
+   "en": "Session history is unavailable",
+   "zh": "无法读取会话历史",
+   "it": "La cronologia della sessione non è disponibile"
+  },
+  "preview.notFound": {
+   "en": "This plan was not found",
+   "zh": "未找到这份计划",
+   "it": "Questo piano non è stato trovato"
+  },
+  "preview.unavailable": {
+   "en": "Plan preview is unavailable",
+   "zh": "计划预览不可用",
+   "it": "L'anteprima del piano non è disponibile"
+  },
+  "preview.expired": {
+   "en": "This temporary plan preview has expired. Reopen it from the pending review card.",
+   "zh": "临时计划预览已失效，请从仍在等待审批的卡片重新打开。",
+   "it": "Questa anteprima temporanea del piano è scaduta. Riaaprila dalla scheda di revisione in sospeso."
   },
   "chip.on.aria": {
    "en": "Plan mode on, press to turn off",

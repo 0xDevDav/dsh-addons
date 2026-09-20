@@ -1,14 +1,24 @@
 {
- "batch": "skill",
- "namespace": "skill",
- "total": 7,
+ "batch": "sidebarOffice",
+ "namespace": "sidebarOffice",
+ "total": 17,
  "keys": {
-  "row.title": "Skill",
-  "row.running": "Caricamento Skill",
-  "row.failed": "Caricamento Skill non riuscito",
-  "row.stopped": "Caricamento Skill interrotto",
-  "row.instructions": "Istruzioni",
-  "row.inspect": "Ispeziona",
-  "menu.userOnly": "solo utente"
+  "title": "Documento Office",
+  "loading": "Lettura…",
+  "retry": "Riprova",
+  "missingFonts": "I font usati in questo documento non sono disponibili: {fonts}. Testo e impaginazione potrebbero differire.",
+  "showMore": "Mostra altro",
+  "dismissNotice": "Ignora l'avviso sui font",
+  "missingFontsTitle": "Font mancanti",
+  "missingFontsDescription": "Questi font non sono disponibili per questa anteprima. Testo e impaginazione potrebbero differire dal documento originale.",
+  "missingFontsCount": "Font: {count}",
+  "closeDetails": "Chiudi i dettagli sui font",
+  "unavailable": "Le anteprime Office non sono disponibili. Attiva il servizio di anteprima documenti sul computer che esegue DSH.",
+  "invalid": "Impossibile visualizzare questo file Office. Potrebbe essere danneggiato, protetto da password o avere l'estensione sbagliata.",
+  "tooLarge": "Il file Office o il PDF convertito supera il limite di dimensione per l'anteprima. Riduci la dimensione del file o regola la configurazione dell'anteprima.",
+  "failed": "La conversione Office non ha prodotto un PDF utilizzabile. Controlla il file e riprova.",
+  "timeout": "Timeout della conversione Office. Riprova.",
+  "busy": "L'anteprima Office è occupata. Riprova tra poco.",
+  "changed": "Il file è cambiato durante la lettura. Riapri l'anteprima."
  }
 }

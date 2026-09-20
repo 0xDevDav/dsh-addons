@@ -1,215 +1,287 @@
 {
- "batch": "settings.plugins",
- "namespace": "settings.plugins",
- "total": 52,
+ "batch": "settings.models#1",
+ "namespace": "settings.models",
+ "total": 70,
  "keys": {
   "nav": {
-   "en": "Plugins",
-   "zh": "插件"
+   "en": "Models",
+   "zh": "模型"
   },
   "title": {
-   "en": "Plugins",
-   "zh": "插件"
+   "en": "Models",
+   "zh": "模型"
   },
   "intro": {
-   "en": "Configure and inspect the plugins installed in this deployment.",
-   "zh": "配置和查看本部署已安装的插件。"
+   "en": "Enter your API keys to use models from the following providers.",
+   "zh": "填入各提供方的 API 密钥即可使用其模型。"
   },
-  "tabs": {
-   "en": "Plugin views",
-   "zh": "插件视图"
+  "edit": {
+   "en": "Edit",
+   "zh": "编辑"
   },
-  "configurableTab": {
-   "en": "Plugin configuration",
-   "zh": "插件配置"
+  "editProvider": {
+   "en": "Edit {provider}",
+   "zh": "编辑 {provider}"
   },
-  "empty": {
-   "en": "This deployment exposes no plugin settings.",
-   "zh": "本部署没有开放任何插件设置。"
+  "remove": {
+   "en": "Delete",
+   "zh": "删除"
   },
-  "overridden": {
-   "en": "Overridden",
-   "zh": "已覆盖"
+  "removeProvider": {
+   "en": "Delete {provider}",
+   "zh": "删除 {provider}"
   },
-  "reset": {
-   "en": "Reset to default",
-   "zh": "恢复默认"
+  "deleteTitle": {
+   "en": "Delete {provider}?",
+   "zh": "删除 {provider}？"
   },
-  "readOnly": {
-   "en": "This deployment stores settings read-only.",
-   "zh": "本部署的设置为只读。"
+  "deleteDescription": {
+   "en": "Deleting {provider} removes its configuration. Any credential it uses is managed elsewhere and will be kept.",
+   "zh": "删除 {provider} 会移除其配置；其使用的凭证（如有）由其他位置管理，将会保留。"
   },
-  "expand": {
-   "en": "Show settings",
-   "zh": "展开设置"
+  "deleteDescriptionWithCredential": {
+   "en": "Deleting {provider} removes its configuration and stored API key.",
+   "zh": "删除 {provider} 会移除其配置和存储的 API 密钥。"
   },
-  "collapse": {
-   "en": "Hide settings",
-   "zh": "收起设置"
+  "deleteConfirm": {
+   "en": "Delete {provider}",
+   "zh": "删除 {provider}"
   },
-  "save": {
-   "en": "Save",
+  "deleting": {
+   "en": "Deleting {provider}…",
+   "zh": "正在删除 {provider}…"
+  },
+  "add": {
+   "en": "Add provider",
+   "zh": "添加提供方"
+  },
+  "provider": {
+   "en": "Provider",
+   "zh": "提供方"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭"
+  },
+  "cancel": {
+   "en": "Cancel",
+   "zh": "取消"
+  },
+  "apply": {
+   "en": "Apply",
    "zh": "保存"
   },
-  "saving": {
-   "en": "Saving…",
+  "applying": {
+   "en": "Applying…",
    "zh": "保存中…"
   },
-  "discard": {
-   "en": "Discard",
-   "zh": "放弃修改"
+  "savedProvider": {
+   "en": "Saved {provider}.",
+   "zh": "已保存 {provider}。"
   },
-  "unsaved": {
-   "en": "Unsaved",
-   "zh": "未保存"
+  "credentialConfigured": {
+   "en": "API key configured",
+   "zh": "API 密钥已配置"
   },
-  "saveFailed": {
-   "en": "The deployment did not accept these values; they were left for you to correct.",
-   "zh": "本部署没有接受这些值，已保留供你修改。"
+  "credentialMissing": {
+   "en": "API key missing",
+   "zh": "API 密钥缺失"
   },
-  "invalidNumber": {
-   "en": "Enter a number, or leave blank to use the default.",
-   "zh": "请填数字；留空表示使用默认值。"
+  "readOnly": {
+   "en": "The settings document is read-only in this deployment.",
+   "zh": "当前部署的设置文档为只读。"
   },
-  "bashTitle": {
-   "en": "Shell",
-   "zh": "终端"
+  "loadFailed": {
+   "en": "Loading the provider directory failed",
+   "zh": "加载提供方目录失败"
   },
-  "bashDescription": {
-   "en": "Limits every command the agent runs.",
-   "zh": "限制 agent 运行的每一条命令。"
+  "conflict": {
+   "en": "Someone else changed these settings while this card was open. Close it and reopen to edit the current values.",
+   "zh": "这张卡片打开期间，这些设置已被其他地方改动。请关闭后重新打开，在当前值上编辑。"
   },
-  "bashTimeoutMs": {
-   "en": "Command timeout (ms)",
-   "zh": "命令超时（毫秒）"
-  },
-  "bashTimeoutMsHint": {
-   "en": "How long one command may run before it is terminated.",
-   "zh": "单条命令允许运行多久，超时即终止。"
-  },
-  "bashMaxOutputBytes": {
-   "en": "Output cap per stream (bytes)",
-   "zh": "单流输出上限（字节）"
-  },
-  "bashMaxOutputBytesHint": {
-   "en": "Output beyond this spills to a temporary file rather than being lost.",
-   "zh": "超出部分会转存到临时文件，而不是被丢弃。"
-  },
-  "agentLoopTitle": {
-   "en": "Agent loop",
-   "zh": "Agent 循环"
-  },
-  "agentLoopDescription": {
-   "en": "How the agent dispatches tool calls.",
-   "zh": "Agent 如何派发工具调用。"
-  },
-  "agentLoopMaxParallel": {
-   "en": "Parallel tool calls",
-   "zh": "并行工具调用数"
-  },
-  "agentLoopMaxParallelHint": {
-   "en": "Upper bound on parallel-safe calls running at once within one step.",
-   "zh": "同一步内最多同时运行多少个可并行的调用。"
-  },
-  "webSearchTitle": {
-   "en": "Web search",
-   "zh": "网页搜索"
-  },
-  "webSearchDescription": {
-   "en": "The DeepSeek search provider.",
-   "zh": "DeepSeek 搜索提供方。"
-  },
-  "webSearchApiKey": {
-   "en": "API key",
-   "zh": "API Key"
-  },
-  "webSearchApiKeyHint": {
-   "en": "Stored outside the settings file. Leave blank to keep the current key.",
-   "zh": "不写入设置文件。留空表示保持当前密钥。"
-  },
-  "webSearchApiKeySet": {
-   "en": "A key is configured.",
-   "zh": "已配置密钥。"
-  },
-  "webSearchApiKeyUnset": {
-   "en": "No key is configured; search is unavailable until one is.",
-   "zh": "未配置密钥；配置之前搜索不可用。"
-  },
-  "webSearchBaseUrl": {
-   "en": "Endpoint",
-   "zh": "接口地址"
-  },
-  "webSearchBaseUrlHint": {
-   "en": "Leave blank to use the provider default.",
-   "zh": "留空则使用提供方默认地址。"
-  },
-  "webSearchMaxUses": {
-   "en": "Max searches per request",
-   "zh": "单次请求最多搜索次数"
-  },
-  "webSearchMaxUsesHint": {
-   "en": "How many times one request may search before it must answer.",
-   "zh": "一次请求在必须作答前最多可以搜索多少次。"
-  },
-  "subagentModelSelectionTitle": {
-   "en": "Subagent",
-   "zh": "Subagent"
-  },
-  "subagentModelSelectionDescription": {
-   "en": "Control which models agents may choose for subagents.",
-   "zh": "控制 Agent 为 Subagent 选择模型的权限。"
-  },
-  "subagentModelSelectionToggle": {
-   "en": "Allow agents to choose models for subagents",
-   "zh": "允许 Agent 为 Subagent 选择模型"
-  },
-  "subagentModelSelectionChoose": {
-   "en": "When enabled, agents can choose a provider, model, and reasoning effort for each subagent from the authorized models below. Applies only to new sessions.",
-   "zh": "开启后，Agent 可以从下方授权模型中，为每个 Subagent 选择提供方、模型和推理强度。仅影响新会话。"
-  },
-  "subagentModelSelectionAllowed": {
-   "en": "Models agents may choose",
-   "zh": "Agent 可选择的模型"
-  },
-  "subagentModelSelectionLoading": {
-   "en": "Loading models…",
-   "zh": "正在加载模型…"
-  },
-  "subagentModelSelectionLoadFailed": {
-   "en": "Models could not be loaded.",
-   "zh": "无法加载模型。"
-  },
-  "subagentModelSelectionRetry": {
+  "retry": {
    "en": "Retry",
    "zh": "重试"
   },
-  "subagentModelSelectionPartial": {
-   "en": "Some model providers could not be loaded; saved choices remain removable.",
-   "zh": "部分模型提供方暂时无法加载；已保存的选择仍可移除。"
+  "keyInput": {
+   "en": "API key",
+   "zh": "API 密钥"
   },
-  "subagentModelSelectionUnavailable": {
-   "en": "Currently unavailable",
-   "zh": "当前不可用"
+  "keyPlaceholder": {
+   "en": "Enter your API key",
+   "zh": "输入 API 密钥"
   },
-  "subagentModelSelectionUnavailableGroup": {
-   "en": "Saved but currently unavailable",
-   "zh": "已保存但当前不可用"
+  "keyPlaceholderNative": {
+   "en": "Enter an API key, or leave blank to use environment authentication",
+   "zh": "输入 API 密钥，或留空使用环境认证"
   },
-  "subagentModelSelectionEmpty": {
-   "en": "No model provider currently advertises a model.",
-   "zh": "当前没有模型提供方公布模型。"
+  "keyStored": {
+   "en": "Configured — enter a new value to replace",
+   "zh": "已配置——输入新值可替换"
   },
-  "subagentModelSelectionRequired": {
-   "en": "Select at least one model before saving.",
-   "zh": "保存前请至少选择一个模型。"
+  "keyEnvLocked": {
+   "en": "Provided by the launch environment (read-only)",
+   "zh": "由启动环境提供（只读）"
   },
-  "subagentModelSelectionConflict": {
-   "en": "Settings changed elsewhere. Discard your draft and try again.",
-   "zh": "设置已在其他位置更新。请放弃修改后重试。"
+  "customized": {
+   "en": "Customized settings",
+   "zh": "自定义设置"
   },
-  "subagentModelSelectionOff": {
-   "en": "Subagents use configured defaults or inherit the parent agent's model. Saved model choices are retained.",
-   "zh": "关闭后，Subagent 使用配置的默认模型或继承父 Agent 的模型；已选模型会保留。"
+  "baseUrl": {
+   "en": "Base URL",
+   "zh": "API 地址"
+  },
+  "baseUrlDefault": {
+   "en": "Provider default",
+   "zh": "提供方默认"
+  },
+  "deepSeekChatBaseUrl": {
+   "en": "https://api.deepseek.com",
+   "zh": "https://api.deepseek.com"
+  },
+  "deepSeekMessagesBaseUrl": {
+   "en": "https://api.deepseek.com/anthropic",
+   "zh": "https://api.deepseek.com/anthropic"
+  },
+  "deepSeekEndpointHint": {
+   "en": "Use an endpoint compatible with the configured connection.",
+   "zh": "请填写与当前连接配置兼容的 API 地址。"
+  },
+  "models": {
+   "en": "Models",
+   "zh": "模型目录"
+  },
+  "modelsInherited": {
+   "en": "Using the adapter defaults",
+   "zh": "正在使用适配器默认模型"
+  },
+  "modelsCustomized": {
+   "en": "Customized model catalog",
+   "zh": "已自定义模型目录"
+  },
+  "resetModels": {
+   "en": "Restore defaults",
+   "zh": "恢复默认模型"
+  },
+  "model": {
+   "en": "Model",
+   "zh": "模型"
+  },
+  "modelId": {
+   "en": "Model ID",
+   "zh": "模型 ID"
+  },
+  "modelName": {
+   "en": "Display name",
+   "zh": "显示名称"
+  },
+  "modelNamePlaceholder": {
+   "en": "Uses the model ID when empty",
+   "zh": "留空时使用模型 ID"
+  },
+  "contextWindow": {
+   "en": "Context window",
+   "zh": "上下文窗口"
+  },
+  "contextWindowPlaceholder": {
+   "en": "Uses the provider default",
+   "zh": "使用提供方默认值"
+  },
+  "maxTokens": {
+   "en": "Max output tokens",
+   "zh": "最大输出 token 数"
+  },
+  "maxTokensPlaceholder": {
+   "en": "Uses the provider default",
+   "zh": "使用提供方默认值"
+  },
+  "modelAdvanced": {
+   "en": "Model options",
+   "zh": "模型选项"
+  },
+  "modelInputTypes": {
+   "en": "Input types",
+   "zh": "输入类型"
+  },
+  "modelInputText": {
+   "en": "Text",
+   "zh": "文本"
+  },
+  "modelInputImage": {
+   "en": "Image",
+   "zh": "图片"
+  },
+  "addModel": {
+   "en": "Add model",
+   "zh": "添加模型"
+  },
+  "removeModel": {
+   "en": "Delete model",
+   "zh": "删除模型"
+  },
+  "modelsEmpty": {
+   "en": "No models will be shown in the selector. Unlisted IDs can still be sent directly.",
+   "zh": "模型选择器中将不显示任何模型；目录外 ID 仍可直接发送。"
+  },
+  "keyBlank": {
+   "en": "Enter the API key, or leave the field empty to keep the stored one.",
+   "zh": "请输入 API 密钥；留空则保持已存储的密钥。"
+  },
+  "keyBlankNew": {
+   "en": "Enter the API key, or leave the field empty if this provider authenticates another way.",
+   "zh": "请输入 API 密钥；若该提供方以其他方式鉴权，可以留空。"
+  },
+  "keyIllegalCharacters": {
+   "en": "This API key is not in a valid format. Please check it.",
+   "zh": "该 API 密钥格式错误，请检查。"
+  },
+  "modelIdRequired": {
+   "en": "Model ID is required.",
+   "zh": "模型 ID 不能为空。"
+  },
+  "modelIdDuplicate": {
+   "en": "Model ID must be unique.",
+   "zh": "模型 ID 不能重复。"
+  },
+  "modelNameInvalid": {
+   "en": "Display name cannot be empty.",
+   "zh": "显示名称不能为空。"
+  },
+  "modelContextInvalid": {
+   "en": "Context window must be a positive count, like 131072, 256K, or 1M.",
+   "zh": "上下文窗口必须是正数，例如 131072、256K 或 1M。"
+  },
+  "modelMaxTokensInvalid": {
+   "en": "Max output tokens must be a positive count, like 8192, 64K, or 1M.",
+   "zh": "最大输出 token 数必须是正数，例如 8192、64K 或 1M。"
+  },
+  "advancedHint": {
+   "en": "Other fields live in settings.yaml; edit that section directly.",
+   "zh": "其余字段在 settings.yaml 中，请直接编辑对应段。"
+  },
+  "modelCapacityInvalid": {
+   "en": "A capacity must be a number, optionally suffixed K or M.",
+   "zh": "容量需为数字，可加 K 或 M 后缀。"
+  },
+  "modelDuplicate": {
+   "en": "Each model ID may appear once.",
+   "zh": "每个模型 ID 只能出现一次。"
+  },
+  "fetchModels": {
+   "en": "Fetch available models",
+   "zh": "获取可用模型"
+  },
+  "fetching": {
+   "en": "Asking the provider…",
+   "zh": "正在询问提供方…"
+  },
+  "fetchNeedsBaseUrl": {
+   "en": "Enter the base URL first, then fetch.",
+   "zh": "请先填写 API 地址，再获取。"
+  },
+  "fetchEmpty": {
+   "en": "The provider listed no models. Add them by hand.",
+   "zh": "该提供方没有列出任何模型，请手动添加。"
   }
  }
 }

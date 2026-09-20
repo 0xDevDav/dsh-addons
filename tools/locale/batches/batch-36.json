@@ -1,19 +1,23 @@
 {
- "batch": "sidebarCodePreview",
- "namespace": "sidebarCodePreview",
- "total": 3,
+ "batch": "documentMarkdown",
+ "namespace": "documentMarkdown",
+ "total": 4,
  "keys": {
-  "title": {
-   "en": "Code",
-   "zh": "代码"
+  "viewer.label": {
+   "en": "Markdown",
+   "zh": "Markdown"
   },
-  "copy": {
+  "code.copy": {
    "en": "Copy",
    "zh": "复制"
   },
-  "copied": {
+  "code.copied": {
    "en": "Copied",
    "zh": "已复制"
+  },
+  "footnotes": {
+   "en": "Footnotes",
+   "zh": "脚注"
   }
  }
 }

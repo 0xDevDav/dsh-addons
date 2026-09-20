@@ -1,8 +1,12 @@
 {
  "batch": "conversation#3",
  "namespace": "conversation",
- "total": 13,
+ "total": 15,
  "keys": {
+  "queue.editFailed": {
+   "en": "Edit failed: this message may have already started sending.",
+   "zh": "编辑失败：这条消息可能已经开始发送。"
+  },
   "queue.removeFailed": {
    "en": "Removal failed: this message may have already started sending.",
    "zh": "删除失败：这条消息可能已经开始发送。"
@@ -18,6 +22,10 @@
   "terminal.exitCode": {
    "en": "exit code {code}",
    "zh": "退出码 {code}"
+  },
+  "terminal.noExitCode": {
+   "en": "no exit code",
+   "zh": "未正常退出"
   },
   "terminal.running": {
    "en": "Running",

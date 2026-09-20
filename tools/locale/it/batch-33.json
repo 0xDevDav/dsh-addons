@@ -1,11 +1,22 @@
 {
- "batch": "documentHtml",
- "namespace": "documentHtml",
- "total": 4,
+ "batch": "settings.archivedSessions",
+ "namespace": "settings.archivedSessions",
+ "total": 15,
  "keys": {
-  "title": "HTML",
-  "frame": "Anteprima documento HTML",
-  "loading": "Lettura…",
-  "failed": "Impossibile visualizzare l'anteprima di questo documento HTML."
+  "nav": "Sessioni archiviate",
+  "search": "Cerca nelle sessioni archiviate",
+  "loading": "Lettura delle sessioni…",
+  "empty": "Nessuna sessione archiviata.",
+  "unavailable": "Nessuna sessione archiviata qui può essere ripristinata.",
+  "emptySearch": "Nessuna sessione corrispondente.",
+  "unarchive": "Ripristina",
+  "unarchiveNamed": "Ripristina {title}",
+  "ungrouped": "Senza gruppo",
+  "time.now": "adesso",
+  "time.minutes": "{n}min",
+  "time.hours": "{n}h",
+  "time.days": "{n}g",
+  "time.months": "{n}mes",
+  "time.years": "{n}a"
  }
 }

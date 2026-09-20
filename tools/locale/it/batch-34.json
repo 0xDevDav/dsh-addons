@@ -1,12 +1,12 @@
 {
- "batch": "sidebarImage",
- "namespace": "sidebarImage",
+ "batch": "sidebar",
+ "namespace": "sidebar",
  "total": 5,
  "keys": {
-  "title": "Immagine",
-  "preview": "Anteprima immagine: {name}",
-  "loading": "Lettura…",
-  "failed": "Impossibile visualizzare questa immagine.",
-  "unsupported": "L'anteprima immagine richiede il contenuto completo del file."
+  "session.new": "Nuova sessione",
+  "session.new.label": "Nuova sessione",
+  "toggle.open": "Apri barra laterale",
+  "toggle.collapse": "Comprimi barra laterale",
+  "panels.label": "Pannelli globali"
  }
 }

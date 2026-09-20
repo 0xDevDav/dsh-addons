@@ -1,91 +1,43 @@
 {
- "batch": "sidebarRight",
- "namespace": "sidebarRight",
- "total": 21,
+ "batch": "sidebarPdf",
+ "namespace": "sidebarPdf",
+ "total": 9,
  "keys": {
-  "chrome.expand": {
-   "en": "Open sidebar",
-   "zh": "打开侧边栏"
+  "title": {
+   "en": "PDF",
+   "zh": "PDF"
   },
-  "chrome.expandAria": {
-   "en": "Open right sidebar",
-   "zh": "打开右侧边栏"
+  "pageImage": {
+   "en": "PDF page {page}",
+   "zh": "PDF 第 {page} 页"
   },
-  "chrome.collapse": {
-   "en": "Collapse sidebar",
-   "zh": "收起侧边栏"
+  "loading": {
+   "en": "Reading…",
+   "zh": "正在读取…"
   },
-  "chrome.collapseAria": {
-   "en": "Collapse right sidebar",
-   "zh": "收起右侧边栏"
+  "rendering": {
+   "en": "Rendering page…",
+   "zh": "正在绘制页面…"
   },
-  "chrome.toFullscreen": {
-   "en": "Fullscreen",
-   "zh": "全屏"
+  "failed": {
+   "en": "Cannot display PDF: {message}",
+   "zh": "无法显示 PDF：{message}"
   },
-  "chrome.exitFullscreen": {
-   "en": "Exit fullscreen",
-   "zh": "退出全屏"
+  "password": {
+   "en": "This PDF requires a password; password-protected previews are not supported.",
+   "zh": "此 PDF 需要密码，暂不支持预览"
   },
-  "dock.emptyPane": {
-   "en": "Empty pane",
-   "zh": "空面板"
+  "workerFailed": {
+   "en": "The PDF rendering process could not continue. Please retry.",
+   "zh": "PDF 渲染进程无法继续，请重试"
   },
-  "dock.splitPane": {
-   "en": "Split",
-   "zh": "分栏"
+  "unsupported": {
+   "en": "PDF preview requires the complete file contents.",
+   "zh": "PDF 预览需要完整文件内容"
   },
-  "dock.splitPaneDisabled": {
-   "en": "Two panes is the limit",
-   "zh": "已达两格上限"
-  },
-  "dock.splitPaneNarrow": {
-   "en": "Not enough width to split, widen the sidebar",
-   "zh": "栏宽不足，拖宽侧边栏后再分栏"
-  },
-  "dock.closeTab": {
-   "en": "Close",
-   "zh": "关闭"
-  },
-  "dock.addTab": {
-   "en": "New tab",
-   "zh": "新标签页"
-  },
-  "dock.dockFloat": {
-   "en": "Send back to the sidebar",
-   "zh": "收回到侧边栏"
-  },
-  "dock.closeFloat": {
-   "en": "Close",
-   "zh": "关闭"
-  },
-  "dock.drop.center": {
-   "en": "Move here",
-   "zh": "移到这里"
-  },
-  "dock.drop.left": {
-   "en": "Add left split",
-   "zh": "左分栏"
-  },
-  "dock.drop.right": {
-   "en": "Add right split",
-   "zh": "右分栏"
-  },
-  "dock.drop.top": {
-   "en": "Add top split",
-   "zh": "上分栏"
-  },
-  "dock.drop.bottom": {
-   "en": "Add bottom split",
-   "zh": "下分栏"
-  },
-  "tab.guide.title": {
-   "en": "Start",
-   "zh": "开始"
-  },
-  "tab.unavailable": {
-   "en": "Nothing here can view this kind of content yet.",
-   "zh": "这类内容还没有可用的查看方式。"
+  "retry": {
+   "en": "Retry",
+   "zh": "重试"
   }
  }
 }

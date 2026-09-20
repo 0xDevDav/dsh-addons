@@ -1,79 +1,43 @@
 {
- "batch": "workflowRun",
- "namespace": "workflowRun",
- "total": 18,
+ "batch": "settings.theme",
+ "namespace": "settings.theme",
+ "total": 9,
  "keys": {
-  "run.title": {
-   "en": "{name}",
-   "zh": "{name}"
+  "appearance.title": {
+   "en": "Appearance",
+   "zh": "外观"
   },
-  "run.members.one": {
-   "en": "{count} member",
-   "zh": "{count} 个成员"
+  "appearance.light": {
+   "en": "Light",
+   "zh": "浅色"
   },
-  "run.members.other": {
-   "en": "{count} members",
-   "zh": "{count} 个成员"
+  "appearance.dark": {
+   "en": "Dark",
+   "zh": "深色"
   },
-  "run.empty": {
-   "en": "No members started",
-   "zh": "没有启动成员"
+  "appearance.system": {
+   "en": "System",
+   "zh": "跟随系统"
   },
-  "phase.unassigned": {
-   "en": "Unphased",
-   "zh": "未分阶段"
+  "fontSize.title": {
+   "en": "Font size",
+   "zh": "字号大小"
   },
-  "phase.empty": {
-   "en": "Empty phase name",
-   "zh": "空阶段名"
+  "fontSize.description": {
+   "en": "Only affects conversation content",
+   "zh": "仅影响会话内容的字号"
   },
-  "statusCount.running": {
-   "en": "Running {count}",
-   "zh": "运行中 {count}"
+  "fontSize.unit": {
+   "en": "px",
+   "zh": "px"
   },
-  "statusCount.completed": {
-   "en": "Completed {count}",
-   "zh": "已完成 {count}"
+  "fontSize.increase": {
+   "en": "Increase font size",
+   "zh": "增大字号"
   },
-  "statusCount.failed": {
-   "en": "Failed {count}",
-   "zh": "失败 {count}"
-  },
-  "statusCount.cancelled": {
-   "en": "Cancelled {count}",
-   "zh": "已取消 {count}"
-  },
-  "statusCount.interrupted": {
-   "en": "Interrupted {count}",
-   "zh": "已中断 {count}"
-  },
-  "member.empty": {
-   "en": "Empty member name",
-   "zh": "空成员名"
-  },
-  "member.open": {
-   "en": "Open {name}",
-   "zh": "打开 {name}"
-  },
-  "status.running": {
-   "en": "Running",
-   "zh": "运行中"
-  },
-  "status.completed": {
-   "en": "Completed",
-   "zh": "已完成"
-  },
-  "status.failed": {
-   "en": "Failed",
-   "zh": "失败"
-  },
-  "status.cancelled": {
-   "en": "Cancelled",
-   "zh": "已取消"
-  },
-  "status.interrupted": {
-   "en": "Interrupted",
-   "zh": "已中断"
+  "fontSize.decrease": {
+   "en": "Decrease font size",
+   "zh": "减小字号"
   }
  }
 }

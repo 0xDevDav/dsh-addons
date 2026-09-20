@@ -165,6 +165,16 @@
    "zh": "子代理会话",
    "it": "Sessioni dei subagenti"
   },
+  "open.sidebar": {
+   "en": "Open {label} in sidebar",
+   "zh": "在侧边栏打开 {label}",
+   "it": "Apri {label} nella barra laterale"
+  },
+  "sidebar.chat": {
+   "en": "Chat",
+   "zh": "聊天",
+   "it": "Chat"
+  },
   "readonly.oneShot.title": {
    "en": "One-shot subagent record",
    "zh": "一次性子代理记录",
@@ -475,6 +485,11 @@
    "en": "Model operation failed: {message}",
    "zh": "模型操作失败：{message}",
    "it": "Operazione sul modello non riuscita: {message}"
+  },
+  "error.sessionInUse": {
+   "en": "This session is already in use, possibly by another running DSH instance (such as dsh web or the desktop app). Quit other running DSH instances and try again.",
+   "zh": "当前会话已被占用，可能是其他正在运行的 DSH 导致的（如其他 dsh web、桌面端），请退出其他正在运行的 DSH 后重试。",
+   "it": "Questa sessione è già in uso, probabilmente da un'altra istanza DSH in esecuzione (ad esempio dsh web o l'app desktop). Chiudi le altre istanze DSH in esecuzione e riprova."
   },
   "action.reload": {
    "en": "Reload",

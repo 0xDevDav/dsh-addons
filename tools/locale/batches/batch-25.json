@@ -1,51 +1,67 @@
 {
- "batch": "settings",
- "namespace": "settings",
- "total": 11,
+ "batch": "pluginManager#3",
+ "namespace": "pluginManager",
+ "total": 15,
  "keys": {
-  "trigger": {
-   "en": "Settings",
-   "zh": "设置"
+  "failedDisable": {
+   "en": "Could not disable: {reason}",
+   "zh": "停用失败：{reason}"
   },
-  "title": {
-   "en": "Settings",
-   "zh": "设置"
+  "failedUninstall": {
+   "en": "Could not uninstall: {reason}",
+   "zh": "卸载失败：{reason}"
   },
-  "close": {
-   "en": "Close",
-   "zh": "关闭"
+  "failedRowEnable": {
+   "en": "Could not enable the component: {reason}",
+   "zh": "组件启用失败：{reason}"
   },
-  "openDocument": {
-   "en": "Open configuration file",
-   "zh": "打开配置文件"
+  "failedRowDisable": {
+   "en": "Could not disable the component: {reason}",
+   "zh": "组件停用失败：{reason}"
   },
-  "openDocument.error": {
-   "en": "Could not open configuration file",
-   "zh": "无法打开配置文件"
+  "reasonManagementRequired": {
+   "en": "Plugin management needs it; it cannot be switched off or uninstalled.",
+   "zh": "插件管理所需，不能停用或卸载"
   },
-  "general.nav": {
-   "en": "General",
-   "zh": "通用设置"
+  "reasonUnaddressable": {
+   "en": "The profile patch cannot address this one uniquely.",
+   "zh": "当前 profile 的 patch 无法唯一定位这一项"
   },
-  "connection.error": {
-   "en": "Disconnected",
-   "zh": "连接异常，刷新重试"
+  "reasonUnknownPlugin": {
+   "en": "No such plugin.",
+   "zh": "找不到该插件"
   },
-  "connection.connecting": {
-   "en": "Reconnecting",
-   "zh": "重新连接中"
+  "reasonInvalidSpec": {
+   "en": "Enter a valid package name or address.",
+   "zh": "请输入有效的包名或地址"
   },
-  "connection.connected": {
-   "en": "Connected",
-   "zh": "连接成功"
+  "reasonAmbiguousInstall": {
+   "en": "Which package was installed cannot be told from the dependency change.",
+   "zh": "无法从依赖变更中确定安装了哪一个包"
   },
-  "connection.reconnect": {
-   "en": "Disconnected, reconnect now",
-   "zh": "连接异常，点击立即重连"
+  "reasonNotBundle": {
+   "en": "This package declares no bundle, so it cannot be managed as a plugin.",
+   "zh": "这个包没有声明组合包，不能作为插件管理"
   },
-  "connection.restart": {
-   "en": "Reconnecting, reconnect now",
-   "zh": "连接中断，正在重试，点击立即重连"
+  "reasonNotRemovable": {
+   "en": "This package is not owned by the profile, or plugin management needs it.",
+   "zh": "这个包不属于当前 profile，或者是插件管理所需的组件"
+  },
+  "reasonStopProfile": {
+   "en": "This profile runs without HMR; stop it and uninstall the package with dsh plugin.",
+   "zh": "这个 profile 没有启用 HMR，正在使用的包要停止后用 dsh plugin 卸载"
+  },
+  "reasonBundleInUse": {
+   "en": "Other configuration still uses this bundle's components; switch them off first.",
+   "zh": "其他配置仍在使用这个组合包的组件，请先停用它们"
+  },
+  "reasonStaleApproval": {
+   "en": "The pending script approvals changed; install again to refresh them.",
+   "zh": "待允许的安装脚本列表已变化，请重新安装以刷新"
+  },
+  "reasonOperationError": {
+   "en": "The Host reported an error.",
+   "zh": "Host 报告了一个错误"
   }
  }
 }

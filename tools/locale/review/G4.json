@@ -35,6 +35,11 @@
    "zh": "按工作区",
    "it": "Area di lavoro"
   },
+  "groupBy.workspaceTree": {
+   "en": "Workspace Tree",
+   "zh": "按工作区树",
+   "it": "Albero delle aree di lavoro"
+  },
   "groupBy.flat": {
    "en": "In one list",
    "zh": "单列表",
@@ -398,9 +403,9 @@
    "it": "Modalità Creator"
   },
   "presetCordisDescription": {
-   "en": "Built for creating custom agent presets, with all Standard mode capabilities plus runtime inspection, plugin experiments, and preset-authoring guidance.",
-   "zh": "用于创建自定义 Agent preset：具备标准模式的全部能力，并提供运行时检查、插件实验和 preset 创作指导。",
-   "it": "Pensata per creare preset di agenti personalizzati: offre tutte le capacità della modalità standard più l'ispezione a runtime, gli esperimenti con i Plugin e le linee guida per la creazione dei preset."
+   "en": "Built for creating custom agent presets, with all Standard mode capabilities plus runtime inspection, persistent plugin management, and preset-authoring guidance.",
+   "zh": "用于创建自定义 Agent preset：具备标准模式的全部能力，并提供运行时检查、持久化插件管理和 preset 创作指导。",
+   "it": "Pensata per creare preset di agenti personalizzati: offre tutte le capacità della modalità standard più l'ispezione a runtime, la gestione persistente dei Plugin e le linee guida per la creazione dei preset."
   },
   "duplicate": {
    "en": "Duplicate",
@@ -892,9 +897,9 @@
    "it": "Visualizzazione nel file manager…"
   },
   "presented.unavailable": {
-   "en": "This Host has no desktop available to open files or folders",
-   "zh": "此主机没有可用的桌面，无法打开文件或文件夹",
-   "it": "Questo Host non ha un desktop disponibile per aprire file o cartelle"
+   "en": "This Host has no desktop available to open files or folders in external apps. Files can still be previewed in the sidebar.",
+   "zh": "此主机没有可用的桌面，无法使用外部程序打开文件或文件夹；文件仍可在侧边栏预览",
+   "it": "Questo Host non ha un desktop disponibile per aprire file o cartelle in app esterne. I file si possono comunque visualizzare in anteprima nella barra laterale."
   },
   "presented.retry": {
    "en": "Retry",
@@ -1021,25 +1026,175 @@
    "zh": "查看调用",
    "it": "Ispeziona chiamata"
   },
-  "produced.label": {
-   "en": "Files changed",
-   "zh": "本轮文件改动",
-   "it": "File modificati"
+  "changes.title": {
+   "en": "Edited {count} files",
+   "zh": "已编辑 {count} 个文件",
+   "it": "{count} file modificati"
   },
-  "produced.moreOne": {
-   "en": "+ 1 file",
-   "zh": "+ 1 个文件",
-   "it": "+ 1 file"
+  "changes.added": {
+   "en": "+{count}",
+   "zh": "+{count}",
+   "it": "+{count}"
   },
-  "produced.more": {
-   "en": "+ {count} files",
-   "zh": "+ {count} 个文件",
-   "it": "+ {count} file"
+  "changes.deleted": {
+   "en": "-{count}",
+   "zh": "-{count}",
+   "it": "-{count}"
   },
-  "produced.open": {
-   "en": "Open {name}",
-   "zh": "打开 {name}",
-   "it": "Apri {name}"
+  "changes.binary": {
+   "en": "binary",
+   "zh": "二进制",
+   "it": "binario"
+  },
+  "changes.openReview": {
+   "en": "Review this turn’s changes in the sidebar",
+   "zh": "在侧边栏查看本轮改动",
+   "it": "Esamina le modifiche di questo turno nella barra laterale"
+  },
+  "changes.all": {
+   "en": "All {count} files",
+   "zh": "全部 {count} 个文件",
+   "it": "Tutti i {count} file"
+  },
+  "changes.expandAria": {
+   "en": "Show all {count} changed files",
+   "zh": "展开全部 {count} 个改动文件",
+   "it": "Mostra tutti i {count} file modificati"
+  },
+  "changes.collapse": {
+   "en": "Collapse",
+   "zh": "收起",
+   "it": "Comprimi"
+  },
+  "changes.collapseAria": {
+   "en": "Collapse changed files",
+   "zh": "收起改动文件列表",
+   "it": "Comprimi i file modificati"
+  },
+  "changes.oversized": {
+   "en": "too large",
+   "zh": "过大",
+   "it": "troppo grande"
+  },
+  "changes.viewDiff": {
+   "en": "View changes to {name}",
+   "zh": "查看 {name} 的改动",
+   "it": "Vedi le modifiche di {name}"
+  },
+  "review.title": {
+   "en": "Review · turn {turn}",
+   "zh": "第 {turn} 轮改动",
+   "it": "Revisione · turno {turn}"
+  },
+  "review.selectFile": {
+   "en": "Choose the file to review",
+   "zh": "选择要查看的文件",
+   "it": "Scegli il file da revisionare"
+  },
+  "review.split": {
+   "en": "Switch to split view",
+   "zh": "切换为左右对比",
+   "it": "Passa alla vista affiancata"
+  },
+  "review.unified": {
+   "en": "Switch to unified view",
+   "zh": "切换为单栏对比",
+   "it": "Passa alla vista unificata"
+  },
+  "review.splitAria": {
+   "en": "Split view",
+   "zh": "左右对比",
+   "it": "Vista affiancata"
+  },
+  "review.wrap": {
+   "en": "Enable line wrap",
+   "zh": "开启自动换行",
+   "it": "Attiva a capo automatico"
+  },
+  "review.nowrap": {
+   "en": "Disable line wrap",
+   "zh": "关闭自动换行",
+   "it": "Disattiva a capo automatico"
+  },
+  "review.wrapAria": {
+   "en": "Line wrap",
+   "zh": "自动换行",
+   "it": "A capo automatico"
+  },
+  "review.openFile": {
+   "en": "Open the whole file in the sidebar",
+   "zh": "在侧边栏打开整个文件",
+   "it": "Apri l'intero file nella barra laterale"
+  },
+  "review.openFileAria": {
+   "en": "Open {name} in sidebar",
+   "zh": "在侧边栏打开 {name}",
+   "it": "Apri {name} nella barra laterale"
+  },
+  "diff.openNativeAria": {
+   "en": "Open {name} in default app",
+   "zh": "用默认应用打开 {name}",
+   "it": "Apri {name} con l'app predefinita"
+  },
+  "diff.loading": {
+   "en": "Reading changes…",
+   "zh": "正在读取改动…",
+   "it": "Lettura delle modifiche…"
+  },
+  "diff.missing": {
+   "en": "The contents of this turn’s changes are no longer available",
+   "zh": "这轮改动的内容已不可用",
+   "it": "Il contenuto delle modifiche di questo turno non è più disponibile"
+  },
+  "diff.error": {
+   "en": "Could not read the changes",
+   "zh": "无法读取改动",
+   "it": "Impossibile leggere le modifiche"
+  },
+  "diff.binary": {
+   "en": "Binary file; changes cannot be shown",
+   "zh": "二进制文件，无法显示改动",
+   "it": "File binario; impossibile mostrare le modifiche"
+  },
+  "diff.oversized": {
+   "en": "File too large; changes cannot be shown",
+   "zh": "文件过大，无法显示改动",
+   "it": "File troppo grande; impossibile mostrare le modifiche"
+  },
+  "diff.created": {
+   "en": "Created in this turn",
+   "zh": "本轮新建的文件",
+   "it": "Creato in questo turno"
+  },
+  "diff.deleted": {
+   "en": "Deleted in this turn",
+   "zh": "本轮删除的文件",
+   "it": "Eliminato in questo turno"
+  },
+  "diff.unchanged": {
+   "en": "Both sides hold the same lines",
+   "zh": "两侧内容相同",
+   "it": "Entrambi i lati contengono le stesse righe"
+  },
+  "diff.coarse": {
+   "en": "Line comparison timed out; shown as a whole-file replacement",
+   "zh": "逐行对比超时，按整个文件替换显示",
+   "it": "Confronto riga per riga scaduto; mostrato come sostituzione dell'intero file"
+  },
+  "diff.truncated": {
+   "en": "Showing the first {count} lines",
+   "zh": "只显示前 {count} 行",
+   "it": "Visualizzate le prime {count} righe"
+  },
+  "diff.openNative": {
+   "en": "Open in default app",
+   "zh": "用默认应用打开",
+   "it": "Apri con l'app predefinita"
+  },
+  "diff.openNativeError": {
+   "en": "Could not open. Click to retry.",
+   "zh": "打开失败，点击重试",
+   "it": "Impossibile aprire. Clicca per riprovare."
   }
  }
 }

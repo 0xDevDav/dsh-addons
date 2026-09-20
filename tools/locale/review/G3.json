@@ -241,9 +241,24 @@
    "it": "Usa il valore predefinito del provider"
   },
   "modelAdvanced": {
-   "en": "Capacities",
-   "zh": "容量",
-   "it": "Capacità"
+   "en": "Model options",
+   "zh": "模型选项",
+   "it": "Opzioni del modello"
+  },
+  "modelInputTypes": {
+   "en": "Input types",
+   "zh": "输入类型",
+   "it": "Tipi di input"
+  },
+  "modelInputText": {
+   "en": "Text",
+   "zh": "文本",
+   "it": "Testo"
+  },
+  "modelInputImage": {
+   "en": "Image",
+   "zh": "图片",
+   "it": "Immagine"
   },
   "addModel": {
    "en": "Add model",
@@ -314,16 +329,6 @@
    "en": "Each model ID may appear once.",
    "zh": "每个模型 ID 只能出现一次。",
    "it": "Ogni Model ID può comparire una sola volta."
-  },
-  "modelContextWindow": {
-   "en": "Context window",
-   "zh": "上下文窗口",
-   "it": "Finestra di contesto"
-  },
-  "modelMaxTokens": {
-   "en": "Max output tokens",
-   "zh": "最大输出 token",
-   "it": "Token massimi in output"
   },
   "fetchModels": {
    "en": "Fetch available models",
@@ -518,34 +523,29 @@
  },
  "settings.plugins": {
   "nav": {
-   "en": "Plugins",
-   "zh": "插件",
-   "it": "Plugin"
+   "en": "Built-in plugins",
+   "zh": "内置插件",
+   "it": "Plugin integrati"
   },
   "title": {
-   "en": "Plugins",
-   "zh": "插件",
-   "it": "Plugin"
+   "en": "Built-in plugins",
+   "zh": "内置插件",
+   "it": "Plugin integrati"
   },
   "intro": {
-   "en": "Configure and inspect the plugins installed in this deployment.",
-   "zh": "配置和查看本部署已安装的插件。",
-   "it": "Configura e ispeziona i Plugin installati in questa distribuzione."
+   "en": "Inspect the plugins this deployment ships.",
+   "zh": "查看内置部署的插件列表",
+   "it": "Ispeziona i Plugin inclusi in questa distribuzione."
   },
   "tabs": {
    "en": "Plugin views",
    "zh": "插件视图",
    "it": "Viste dei Plugin"
   },
-  "configurableTab": {
-   "en": "Plugin configuration",
-   "zh": "插件配置",
-   "it": "Configurazione dei Plugin"
-  },
   "empty": {
-   "en": "This deployment exposes no plugin settings.",
-   "zh": "本部署没有开放任何插件设置。",
-   "it": "Questa distribuzione non espone impostazioni dei Plugin."
+   "en": "This deployment exposes no plugin views.",
+   "zh": "本部署没有开放任何插件视图。",
+   "it": "Questa distribuzione non espone viste dei Plugin."
   },
   "overridden": {
    "en": "Overridden",
@@ -562,15 +562,10 @@
    "zh": "本部署的设置为只读。",
    "it": "Questa distribuzione archivia le impostazioni in sola lettura."
   },
-  "expand": {
-   "en": "Show settings",
-   "zh": "展开设置",
-   "it": "Mostra impostazioni"
-  },
-  "collapse": {
-   "en": "Hide settings",
-   "zh": "收起设置",
-   "it": "Nascondi impostazioni"
+  "unavailable": {
+   "en": "This plugin is not loaded, so it cannot be configured right now.",
+   "zh": "该插件当前未加载，暂时无法配置。",
+   "it": "Questo Plugin non è caricato, quindi al momento non può essere configurato."
   },
   "save": {
    "en": "Save",
@@ -581,16 +576,6 @@
    "en": "Saving…",
    "zh": "保存中…",
    "it": "Salvataggio…"
-  },
-  "discard": {
-   "en": "Discard",
-   "zh": "放弃修改",
-   "it": "Scarta"
-  },
-  "unsaved": {
-   "en": "Unsaved",
-   "zh": "未保存",
-   "it": "Non salvato"
   },
   "saveFailed": {
    "en": "The deployment did not accept these values; they were left for you to correct.",
@@ -702,25 +687,90 @@
    "zh": "一次请求在必须作答前最多可以搜索多少次。",
    "it": "Quante volte una richiesta può cercare prima di dover rispondere."
   },
-  "subagentModelSelectionTitle": {
+  "subagentTitle": {
    "en": "Subagent",
    "zh": "Subagent",
    "it": "Subagente"
   },
-  "subagentModelSelectionDescription": {
-   "en": "Control which models agents may choose for subagents.",
-   "zh": "控制 Agent 为 Subagent 选择模型的权限。",
-   "it": "Controlla quali modelli gli agenti possono scegliere per i subagenti."
+  "subagentDescription": {
+   "en": "Set Subagent recursion depth, count, and models.",
+   "zh": "设置 Subagent 的递归层级、数量和模型。",
+   "it": "Imposta profondità di ricorsione, numero e modelli dei subagenti."
+  },
+  "subagentLimitsTitle": {
+   "en": "Limits",
+   "zh": "运行限制",
+   "it": "Limiti"
+  },
+  "subagentMaxDepth": {
+   "en": "Maximum recursion depth",
+   "zh": "最大递归深度",
+   "it": "Profondità massima di ricorsione"
+  },
+  "subagentDepthHelpLabel": {
+   "en": "About maximum recursion depth",
+   "zh": "最大递归深度说明",
+   "it": "Informazioni sulla profondità massima di ricorsione"
+  },
+  "subagentDepthHelp": {
+   "en": "Limits how many levels of Subagents an Agent can create.",
+   "zh": "限制 Agent 创建 Subagent 的递归层级。",
+   "it": "Limita quanti livelli di subagenti può creare un agente."
+  },
+  "subagentDepthZero": {
+   "en": "Disable Subagents",
+   "zh": "禁用 Subagent",
+   "it": "Disattiva i subagenti"
+  },
+  "subagentDepthOne": {
+   "en": "Only the main Agent can create Subagents",
+   "zh": "仅允许主 Agent 创建 Subagent",
+   "it": "Solo l'agente principale può creare subagenti"
+  },
+  "subagentDepthOverride": {
+   "en": "If a tool defines its own maximum recursion depth, that setting takes precedence.",
+   "zh": "如果某个工具单独设置了最大递归深度，以该工具的设置为准。",
+   "it": "Se uno strumento definisce una propria profondità massima di ricorsione, vale quest'ultima."
+  },
+  "subagentMaxActive": {
+   "en": "Subagent parallelism limit",
+   "zh": "Subagent 并行数量上限",
+   "it": "Limite di parallelismo dei subagenti"
+  },
+  "subagentCapacityHelpLabel": {
+   "en": "About the Subagent parallelism limit",
+   "zh": "Subagent 并行数量上限说明",
+   "it": "Informazioni sul limite di parallelismo dei subagenti"
+  },
+  "subagentCapacityHelp": {
+   "en": "Total live Subagents under the same main Agent, across all recursion levels. The main Agent is excluded. New start requests are rejected when the limit is reached.",
+   "zh": "同一主 Agent 下，所有递归层级同时存活的 Subagent 总数，主 Agent 不计入。达到上限时，新的启动请求会被拒绝。",
+   "it": "Totale dei subagenti attivi sotto lo stesso agente principale, su tutti i livelli di ricorsione. L'agente principale è escluso. Al raggiungimento del limite, le nuove richieste di avvio vengono rifiutate."
+  },
+  "subagentDepthInvalid": {
+   "en": "Enter a whole number of 0 or more.",
+   "zh": "请输入不小于 0 的整数。",
+   "it": "Inserisci un numero intero maggiore o uguale a 0."
+  },
+  "subagentCapacityInvalid": {
+   "en": "Enter a whole number of 1 or more.",
+   "zh": "请输入不小于 1 的整数。",
+   "it": "Inserisci un numero intero maggiore o uguale a 1."
+  },
+  "subagentModelSelectionTitle": {
+   "en": "Model selection",
+   "zh": "模型选择",
+   "it": "Selezione del modello"
   },
   "subagentModelSelectionToggle": {
-   "en": "Allow agents to choose models for subagents",
+   "en": "Allow agents to choose models for Subagents",
    "zh": "允许 Agent 为 Subagent 选择模型",
    "it": "Consenti agli agenti di scegliere i modelli per i subagenti"
   },
   "subagentModelSelectionChoose": {
-   "en": "When enabled, agents can choose a provider, model, and reasoning effort for each subagent from the authorized models below. Applies only to new sessions.",
+   "en": "When enabled, agents can choose a provider, model, and reasoning effort for each Subagent from the authorized models below. Applies only to new sessions.",
    "zh": "开启后，Agent 可以从下方授权模型中，为每个 Subagent 选择提供方、模型和推理强度。仅影响新会话。",
-   "it": "Se attivo, gli agenti possono scegliere un provider, un modello e il reasoning effort per ogni subagente tra i modelli autorizzati riportati sotto. Si applica solo alle nuove sessioni."
+   "it": "Se attivo, gli agenti possono scegliere un provider, un modello e un livello di ragionamento per ogni subagente tra i modelli autorizzati riportati sotto. Si applica solo alle nuove sessioni."
   },
   "subagentModelSelectionAllowed": {
    "en": "Models agents may choose",
@@ -788,6 +838,21 @@
    "en": "Reading plugins…",
    "zh": "正在读取插件…",
    "it": "Lettura plugin…"
+  },
+  "clientSyncing": {
+   "en": "Syncing plugins on this page…",
+   "zh": "正在同步本页面的插件…",
+   "it": "Sincronizzazione dei Plugin in questa pagina…"
+  },
+  "clientSyncFailed": {
+   "en": "Some plugins could not sync on this page. Host enablement is unchanged.",
+   "zh": "本页面的插件未能完成同步；服务端的启用状态保持不变。",
+   "it": "Alcuni Plugin non sono stati sincronizzati in questa pagina. L'attivazione sull'Host è invariata."
+  },
+  "clientSyncRetry": {
+   "en": "Retry this page",
+   "zh": "重试本页面同步",
+   "it": "Riprova questa pagina"
   },
   "error": {
    "en": "Plugins are temporarily unavailable.",

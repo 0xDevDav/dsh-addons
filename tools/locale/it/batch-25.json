@@ -1,18 +1,22 @@
 {
- "batch": "settings",
- "namespace": "settings",
- "total": 11,
+ "batch": "pluginManager#3",
+ "namespace": "pluginManager",
+ "total": 15,
  "keys": {
-  "trigger": "Impostazioni",
-  "title": "Impostazioni",
-  "close": "Chiudi",
-  "openDocument": "Apri file di configurazione",
-  "openDocument.error": "Impossibile aprire il file di configurazione",
-  "general.nav": "Generali",
-  "connection.error": "Disconnesso",
-  "connection.connecting": "Riconnessione in corso",
-  "connection.connected": "Connesso",
-  "connection.reconnect": "Disconnesso, riconnetti ora",
-  "connection.restart": "Riconnessione in corso, riconnetti ora"
+  "failedDisable": "Disattivazione non riuscita: {reason}",
+  "failedUninstall": "Disinstallazione non riuscita: {reason}",
+  "failedRowEnable": "Attivazione del componente non riuscita: {reason}",
+  "failedRowDisable": "Disattivazione del componente non riuscita: {reason}",
+  "reasonManagementRequired": "È necessario alla gestione dei plugin; non può essere disattivato o disinstallato.",
+  "reasonUnaddressable": "La patch del profilo non riesce a individuare questa voce in modo univoco.",
+  "reasonUnknownPlugin": "Plugin non trovato.",
+  "reasonInvalidSpec": "Inserisci un nome di pacchetto o un indirizzo valido.",
+  "reasonAmbiguousInstall": "Non è possibile capire dalle modifiche alle dipendenze quale pacchetto sia stato installato.",
+  "reasonNotBundle": "Questo pacchetto non dichiara alcuna composizione, quindi non può essere gestito come plugin.",
+  "reasonNotRemovable": "Questo pacchetto non appartiene al profilo, oppure è necessario alla gestione dei plugin.",
+  "reasonStopProfile": "Questo profilo viene eseguito senza HMR; interrompilo e disinstalla il pacchetto con dsh plugin.",
+  "reasonBundleInUse": "Altre configurazioni usano ancora i componenti di questa composizione; disattivale prima.",
+  "reasonStaleApproval": "Le approvazioni degli script in sospeso sono cambiate; installa di nuovo per aggiornarle.",
+  "reasonOperationError": "L'Host ha segnalato un errore."
  }
 }

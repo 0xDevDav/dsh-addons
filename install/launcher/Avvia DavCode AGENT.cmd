@@ -9,12 +9,22 @@ rem and verified against one release, and starting a different one silently woul
 rem strings a release adds in English and could move the seats the brand uses. To move to a
 rem newer release, change the line below (or run `install\install.ps1 -Version <version>`),
 rem then run the repository's own suites again.
-set DSH_VERSION=0.1.6-alpha.1
+set DSH_VERSION=0.1.6-alpha.2
 
 title DavCode AGENT
 where node >nul 2>nul || (echo Node.js non trovato. Installa da https://nodejs.org & pause & exit /b 1)
 echo Avvio DavCode AGENT (DSH %DSH_VERSION%, Web UI su http://127.0.0.1:3080)...
 npx -y @deepseek-ai/dsh@%DSH_VERSION% web
+
+rem The shared npm cache can hold a stale npx lock from an interrupted install, which npm
+rem reports as ECOMPROMISED / "Lock compromised" without starting anything at all. A cache of
+rem its own cannot collide with another process, so the second attempt is the one that runs.
+if errorlevel 1 (
+  echo Primo tentativo non riuscito: riprovo con una cache npm dedicata...
+  set npm_config_cache=%LOCALAPPDATA%\dsh\npm-cache
+  npx -y @deepseek-ai/dsh@%DSH_VERSION% web
+)
+
 echo.
 echo DavCode AGENT terminato.
 pause

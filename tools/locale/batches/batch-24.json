@@ -1,79 +1,287 @@
 {
- "batch": "schedule.catalog",
- "namespace": "schedule.catalog",
- "total": 18,
+ "batch": "pluginManager#2",
+ "namespace": "pluginManager",
+ "total": 70,
  "keys": {
-  "trigger.one": {
-   "en": "{count} reminder",
-   "zh": "{count} 个提醒"
+  "installRun": {
+   "en": "Install",
+   "zh": "安装"
   },
-  "trigger.other": {
-   "en": "{count} reminders",
-   "zh": "{count} 个提醒"
+  "installChecking": {
+   "en": "Checking…",
+   "zh": "正在检查…"
   },
-  "list.aria": {
-   "en": "Active reminders",
-   "zh": "活动提醒"
+  "installProblemInvalid": {
+   "en": "This is not a package name or address that can be installed: {reason}",
+   "zh": "无法识别这个包名或地址：{reason}"
   },
-  "status.scheduled": {
-   "en": "Scheduled",
-   "zh": "等待中"
+  "installProblemInstalled": {
+   "en": "This plugin is already installed",
+   "zh": "该插件已安装"
   },
-  "status.overdue": {
-   "en": "Overdue",
-   "zh": "已逾期"
+  "installProblemNotFound": {
+   "en": "No such plugin was found",
+   "zh": "未找到相关插件"
   },
-  "frequency.once": {
-   "en": "Once",
-   "zh": "单次"
+  "installProblemNotPackage": {
+   "en": "The path does not exist or is not a valid plugin package",
+   "zh": "该路径不存在或不是有效的插件包"
   },
-  "frequency.every": {
-   "en": "Every {value} {unit}",
-   "zh": "{value}{unit}一次"
+  "installProblemNotBundle": {
+   "en": "This package declares no bundle, so it cannot be installed as a plugin: {reason}",
+   "zh": "这个包没有声明组合包，无法作为插件安装：{reason}"
   },
-  "unit.day.one": {
-   "en": "day",
-   "zh": "天"
+  "installProblemNetwork": {
+   "en": "The plugin registry could not be reached; check the network and try again",
+   "zh": "无法连接插件源，请检查网络后重试"
   },
-  "unit.day.other": {
-   "en": "days",
-   "zh": "天"
+  "installProblemUnknown": {
+   "en": "The plugin could not be looked up: {reason}",
+   "zh": "无法获取插件信息：{reason}"
   },
-  "unit.hour.one": {
-   "en": "hour",
-   "zh": "小时"
+  "installingTitle": {
+   "en": "Installing the plugin…",
+   "zh": "插件安装中…"
   },
-  "unit.hour.other": {
-   "en": "hours",
-   "zh": "小时"
+  "installedTitle": {
+   "en": "Installed",
+   "zh": "已安装"
   },
-  "unit.minute.one": {
-   "en": "minute",
-   "zh": "分钟"
+  "installFailedTitle": {
+   "en": "The plugin could not be installed",
+   "zh": "插件安装失败"
   },
-  "unit.minute.other": {
-   "en": "minutes",
-   "zh": "分钟"
+  "installEdit": {
+   "en": "Edit",
+   "zh": "编辑"
   },
-  "unit.second.one": {
-   "en": "second",
-   "zh": "秒"
+  "installEditAria": {
+   "en": "Back to editing",
+   "zh": "返回编辑"
   },
-  "unit.second.other": {
-   "en": "seconds",
-   "zh": "秒"
+  "installCancel": {
+   "en": "Cancel install",
+   "zh": "取消安装"
   },
-  "relative.now": {
-   "en": "Due now",
-   "zh": "现在到期"
+  "installCloseCancels": {
+   "en": "Cancel install and close",
+   "zh": "取消安装并关闭"
   },
-  "relative.future": {
-   "en": "in {value} {unit}",
-   "zh": "{value}{unit}后"
+  "installStarting": {
+   "en": "Preparing installation…",
+   "zh": "正在准备安装…"
   },
-  "relative.overdue": {
-   "en": "{value} {unit} overdue",
-   "zh": "已逾期 {value}{unit}"
+  "installCancelling": {
+   "en": "Stopping installation…",
+   "zh": "正在停止安装…"
+  },
+  "installApplying": {
+   "en": "Applying configuration, please wait…",
+   "zh": "正在应用配置，请稍候…"
+  },
+  "installCancelledShort": {
+   "en": "Cancelled",
+   "zh": "已取消"
+  },
+  "installCancelled": {
+   "en": "Installation cancelled; the plugin is not enabled, and downloaded files may remain",
+   "zh": "已取消安装，插件未启用，下载的文件可能保留"
+  },
+  "installCancelUnconfirmed": {
+   "en": "Installation has not been confirmed stopped. Retry cancellation or wait for the installation result. {reason}",
+   "zh": "尚未确认安装已停止，请重试取消或等待安装结果。{reason}"
+  },
+  "installEnableNow": {
+   "en": "Enable now",
+   "zh": "立即启用"
+  },
+  "installDetailsShow": {
+   "en": "Show install details",
+   "zh": "查看安装详情"
+  },
+  "installDetailsHide": {
+   "en": "Hide install details",
+   "zh": "收起安装详情"
+  },
+  "installVersion": {
+   "en": "Version {version}",
+   "zh": "版本 {version}"
+  },
+  "installSubjectPath": {
+   "en": "Local directory",
+   "zh": "本地目录"
+  },
+  "installSubjectGit": {
+   "en": "Git repository",
+   "zh": "Git 仓库"
+  },
+  "installSubjectTarball": {
+   "en": "Tarball",
+   "zh": "压缩包"
+  },
+  "installLocation": {
+   "en": "Installs into {dir}",
+   "zh": "安装位置：{dir}"
+  },
+  "installRetry": {
+   "en": "Retry",
+   "zh": "重试"
+  },
+  "installFailureNetwork": {
+   "en": "The network connection failed",
+   "zh": "网络连接失败"
+  },
+  "installFailureNotFound": {
+   "en": "No such plugin was found",
+   "zh": "未找到相关插件"
+  },
+  "installFailureNoMatchingVersion": {
+   "en": "No version matches the request",
+   "zh": "没有匹配的版本"
+  },
+  "installFailureDiskFull": {
+   "en": "The disk is full; the install stopped",
+   "zh": "磁盘空间不足，安装已停止"
+  },
+  "installFailurePermission": {
+   "en": "No write permission; the plugin cannot be installed",
+   "zh": "没有写入权限，无法安装"
+  },
+  "installFailureBuildBlocked": {
+   "en": "A dependency's install scripts need your permission before the install can continue",
+   "zh": "有依赖的安装脚本需要你允许后才能继续"
+  },
+  "installFailureBuildBlockedManual": {
+   "en": "pnpm blocked install scripts; allow them under allowBuilds in pnpm-workspace.yaml and retry",
+   "zh": "有依赖的安装脚本被 pnpm 拦下，请在 profile 的 pnpm-workspace.yaml 的 allowBuilds 中放行后重试"
+  },
+  "installFailureIntegrity": {
+   "en": "The downloaded package failed its integrity check",
+   "zh": "下载的安装包校验失败"
+  },
+  "installFailureTimeout": {
+   "en": "The install timed out",
+   "zh": "安装超时"
+  },
+  "installFailurePnpmMissing": {
+   "en": "pnpm was not found, so nothing can be installed",
+   "zh": "没有找到 pnpm，无法安装"
+  },
+  "installFailureGeneric": {
+   "en": "Something went wrong during the install; the details say what",
+   "zh": "安装过程中出错，原因见安装详情"
+  },
+  "terminalRunning": {
+   "en": "Running",
+   "zh": "运行中"
+  },
+  "terminalFailed": {
+   "en": "Failed",
+   "zh": "失败"
+  },
+  "terminalDone": {
+   "en": "Done",
+   "zh": "已完成"
+  },
+  "terminalCopy": {
+   "en": "Copy",
+   "zh": "复制"
+  },
+  "terminalCopied": {
+   "en": "Copied",
+   "zh": "复制成功"
+  },
+  "terminalNoOutput": {
+   "en": "No output",
+   "zh": "无输出"
+  },
+  "terminalCollapseAria": {
+   "en": "Collapse output",
+   "zh": "收起输出"
+  },
+  "terminalCollapse": {
+   "en": "Collapse",
+   "zh": "收起"
+  },
+  "terminalExpandAria": {
+   "en": "Expand the remaining {n} output lines",
+   "zh": "展开其余 {n} 行输出"
+  },
+  "terminalExpand": {
+   "en": "… {n} more lines",
+   "zh": "… 其余 {n} 行"
+  },
+  "terminalExitCode": {
+   "en": "exit code {code}",
+   "zh": "退出码 {code}"
+  },
+  "terminalSignal": {
+   "en": "signal {signal}",
+   "zh": "信号 {signal}"
+  },
+  "terminalNoExitCode": {
+   "en": "no exit code",
+   "zh": "未正常退出"
+  },
+  "installDoneNothing": {
+   "en": "Install finished with no new dependency.",
+   "zh": "安装完成，没有新增依赖。"
+  },
+  "installDoneRestart": {
+   "en": "Installed; it loads at the next start.",
+   "zh": "已安装，下次启动后加载。"
+  },
+  "installDoneApproved": {
+   "en": "Install scripts allowed for {names}",
+   "zh": "已允许运行安装脚本：{names}"
+  },
+  "installApprovalTitle": {
+   "en": "Install scripts need permission",
+   "zh": "需要允许安装脚本"
+  },
+  "installApprovalDescription": {
+   "en": "These packages have install scripts that pnpm did not run.",
+   "zh": "以下包声明了安装脚本，pnpm 默认不运行。"
+  },
+  "installApprovalConsequence": {
+   "en": "Once allowed, the scripts run here with your permissions, and the permission is saved in this profile.",
+   "zh": "允许后，脚本会以你的权限在本机运行，授权保存在当前 profile，之后不再询问。"
+  },
+  "installApprovalCaution": {
+   "en": "Allow only packages you trust.",
+   "zh": "只在信任这些包时允许。"
+  },
+  "installApproveAndRetry": {
+   "en": "Allow these scripts and retry",
+   "zh": "允许这些脚本并重试"
+  },
+  "installClose": {
+   "en": "Done",
+   "zh": "完成"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭"
+  },
+  "cancel": {
+   "en": "Cancel",
+   "zh": "取消"
+  },
+  "confirmUninstallTitle": {
+   "en": "Uninstall \"{name}\"?",
+   "zh": "卸载「{name}」？"
+  },
+  "confirmUninstallDescription": {
+   "en": "What it provides goes away once it is uninstalled.",
+   "zh": "卸载后它提供的功能会消失。"
+  },
+  "confirmUninstall": {
+   "en": "Uninstall",
+   "zh": "卸载"
+  },
+  "failedEnable": {
+   "en": "Could not enable: {reason}",
+   "zh": "启用失败：{reason}"
   }
  }
 }

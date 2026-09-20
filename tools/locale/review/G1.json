@@ -875,7 +875,17 @@
    "zh": "仅工具调用",
    "it": "Solo chiamata a strumento"
   },
-  "layout.imageOnly": {
+  "attachment.list": {
+   "en": "Attachments",
+   "zh": "附件",
+   "it": "Allegati"
+  },
+  "attachment.imageName": {
+   "en": "Image {index}",
+   "zh": "图片 {index}",
+   "it": "Immagine {index}"
+  },
+  "layout.imageCount": {
    "en": "Images ×{count}",
    "zh": "图片 ×{count}",
    "it": "Immagini ×{count}"

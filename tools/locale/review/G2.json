@@ -695,6 +695,11 @@
    "zh": "仅运行中可插话发送",
    "it": "La guida è disponibile solo mentre l'agente è in esecuzione"
   },
+  "error.sessionInUse": {
+   "en": "This session is already in use, possibly by another running DSH instance (such as dsh web or the desktop app). Quit other running DSH instances and try again.",
+   "zh": "当前会话已被占用，可能是其他正在运行的 DSH 导致的（如其他 dsh web、桌面端），请退出其他正在运行的 DSH 后重试。",
+   "it": "Questa sessione è già in uso, probabilmente da un'altra istanza DSH in esecuzione (ad esempio dsh web o l'app desktop). Chiudi le altre istanze DSH in esecuzione e riprova."
+  },
   "queue.editFailed": {
    "en": "Edit failed: this message may have already started sending.",
    "zh": "编辑失败：这条消息可能已经开始发送。",
@@ -719,6 +724,11 @@
    "en": "exit code {code}",
    "zh": "退出码 {code}",
    "it": "codice di uscita {code}"
+  },
+  "terminal.noExitCode": {
+   "en": "no exit code",
+   "zh": "未正常退出",
+   "it": "nessun codice di uscita"
   },
   "terminal.running": {
    "en": "Running",

@@ -1,11 +1,63 @@
 {
  "batch": "plan",
  "namespace": "plan",
- "total": 6,
+ "total": 19,
  "keys": {
   "chip.label": {
    "en": "Plan",
    "zh": "Plan"
+  },
+  "preview.title": {
+   "en": "Plan",
+   "zh": "计划"
+  },
+  "preview.document": {
+   "en": "Plan · Markdown",
+   "zh": "计划 · Markdown"
+  },
+  "preview.action": {
+   "en": "Open",
+   "zh": "打开"
+  },
+  "preview.open": {
+   "en": "Open plan in sidebar",
+   "zh": "在侧边栏打开计划"
+  },
+  "preview.full": {
+   "en": "View full plan",
+   "zh": "查看全文"
+  },
+  "preview.openNamed": {
+   "en": "Open plan: {title}",
+   "zh": "打开计划：{title}"
+  },
+  "preview.loading": {
+   "en": "Loading plan…",
+   "zh": "正在读取计划…"
+  },
+  "preview.failed": {
+   "en": "Could not load plan",
+   "zh": "无法读取计划"
+  },
+  "preview.invalidAddress": {
+   "en": "Invalid plan address",
+   "zh": "计划地址无效"
+  },
+  "preview.historyUnavailable": {
+   "en": "Session history is unavailable",
+   "zh": "无法读取会话历史"
+  },
+  "preview.notFound": {
+   "en": "This plan was not found",
+   "zh": "未找到这份计划"
+  },
+  "preview.unavailable": {
+   "en": "Plan preview is unavailable",
+   "zh": "计划预览不可用"
+  },
+  "preview.expired": {
+   "en": "This temporary plan preview has expired. Reopen it from the pending review card.",
+   "zh": "临时计划预览已失效，请从仍在等待审批的卡片重新打开。"
   },
   "chip.on.aria": {
    "en": "Plan mode on, press to turn off",

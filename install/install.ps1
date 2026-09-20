@@ -1,12 +1,12 @@
 # Install every package of this repository into the local DSH Web profile and leave a
 # DavCode AGENT shortcut on the Desktop.
 #
-#   pwsh -File install/install.ps1 [-Version 0.1.6-alpha.1] [-NoShortcut]
+#   pwsh -File install/install.ps1 [-Version 0.1.6-alpha.2] [-NoShortcut]
 #   (or: powershell -ExecutionPolicy Bypass -File ...)
 #
 # Requires: the `dsh` CLI and pnpm on PATH. Set DSH_CMD to override the command.
 param(
-  [string]$Version = '0.1.6-alpha.1',
+  [string]$Version = '0.1.6-alpha.2',
   [switch]$NoShortcut
 )
 $ErrorActionPreference = 'Stop'

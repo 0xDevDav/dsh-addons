@@ -72,6 +72,6 @@
   "queue.remove": "Rimuovi messaggio in coda",
   "queue.steer": "Guida messaggio in coda",
   "queue.steer.unavailable": "La guida è disponibile solo mentre l'agente è in esecuzione",
-  "queue.editFailed": "Modifica non riuscita: questo messaggio potrebbe essere già stato inviato."
+  "error.sessionInUse": "Questa sessione è già in uso, probabilmente da un'altra istanza DSH in esecuzione (ad esempio dsh web o l'app desktop). Chiudi le altre istanze DSH in esecuzione e riprova."
  }
 }

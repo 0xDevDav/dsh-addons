@@ -89,17 +89,21 @@ The statistics strip is a terminal component (`StatsPills`, the `stats` cell of 
 `conversation.composer.dock` list slot) whose figures come from the `sessionStats` and
 `tokenUsage` projections; it exposes no per-item seat. This pack therefore registers its
 **own** cell in the same dock — the documented additive path ("a fresh id is added beside
-the shipped entries") — and then portals its pill **into the shipped row itself**, the
-element `StatsPills` marks with `data-composer-stats`. Inside that flex row the pill is a
-sibling of the time and usage pills, so the cost reads as a third item on the same line
-rather than a line of its own.
+the shipped entries") — which is what puts the cost on the same line as the time and usage
+pills.
 
-The row is located through that published attribute rather than a class name, and only the
-pill is inserted: the shipped component keeps rendering its own two pills, so nothing
-shipped is replaced, shadowed, or reimplemented. If the attribute ever disappears the pill
-degrades to its own row in the same band (`dsc_root`) instead of vanishing — and the
-shipped row really is absent for a session before its first billed request, when
-`StatsPills` renders nothing at all.
+On 0.1.6-alpha.2 that is the whole story: `StatsPills` became a dock cell itself (it was
+inline markup in the dock before), the dock is a centered flex row, and the two cells render
+side by side. Should the row ever publish a hook again, the pack takes the older path and
+portals its pill **inside** the shipped row instead, so the cost still reads as a third item
+beside the time and usage pills rather than next to their box. That path is what
+`data-composer-stats` was for, and it is kept for exactly that case: the element is located
+through the published attribute rather than a class name, and if it is absent — as it is on
+alpha.2, or for a session before its first billed request, when `StatsPills` renders nothing
+at all — the pill renders in its own cell (`dsc_root`) in the same band.
+
+Either way only the pill is added: the shipped component keeps rendering its own two pills,
+so nothing shipped is replaced, shadowed, or reimplemented.
 
 Reusing the shipped `stats` id would instead *replace* the cell, forcing a reimplementation
 of shipped UI that a DSH update could silently leave behind.

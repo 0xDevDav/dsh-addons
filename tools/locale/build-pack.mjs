@@ -5,7 +5,10 @@ import path from 'node:path'
 
 const DIR = import.meta.dirname
 const dict = JSON.parse(fs.readFileSync(`${DIR}/it-dictionaries.json`, 'utf8'))
-const PACK = packPath('dsh-locale-it')
+/** The artifact this repository keeps, which is what another machine installs from. */
+const PACK = path.resolve(DIR, '../../packages/dsh-locale-it')
+/** …and the copy the local profile serves. Mirrored at the end when the pack is installed. */
+const INSTALLED = packPath('dsh-locale-it')
 
 const nsCount = Object.keys(dict).length
 const keyCount = Object.values(dict).reduce((a, d) => a + Object.keys(d).length, 0)
@@ -156,9 +159,18 @@ supplies it.
 `
 fs.writeFileSync(path.join(PACK, 'README.md'), readme)
 
+// The repository holds the artifact; the profile holds the copy it serves from. Mirroring
+// here is what keeps the two identical instead of leaving one of them stale — `dsh plugin add`
+// copies, so an unrebuilt copy on either side is a silent difference.
+if (fs.existsSync(INSTALLED)) {
+	fs.rmSync(INSTALLED, { recursive: true, force: true })
+	fs.cpSync(PACK, INSTALLED, { recursive: true })
+}
+
 console.log(`pack written: ${PACK}`)
 for (const f of fs.readdirSync(PACK, { recursive: true })) {
   const p = path.join(PACK, f)
   if (fs.statSync(p).isFile()) console.log(`  ${f}  ${(fs.statSync(p).size / 1024).toFixed(1)} KiB`)
 }
+if (fs.existsSync(INSTALLED)) console.log(`installed copy refreshed: ${INSTALLED}`)
 console.log(`\nnamespaces: ${nsCount}  keys: ${keyCount}`)

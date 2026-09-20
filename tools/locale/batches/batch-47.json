@@ -1,67 +1,163 @@
 {
- "batch": "question",
- "namespace": "question",
- "total": 15,
+ "batch": "subagent",
+ "namespace": "subagent",
+ "total": 39,
  "keys": {
-  "error.incomplete": {
-   "en": "Please complete this question first.",
-   "zh": "请先完成这道问题。"
+  "diagnostic.corrupt": {
+   "en": "corrupted session record",
+   "zh": "会话记录损坏"
   },
-  "error.unanswered": {
-   "en": "Please select an option or enter a custom answer.",
-   "zh": "请选择一个选项或填写自定义答案。"
+  "diagnostic.unsupported": {
+   "en": "unsupported subagent record version",
+   "zh": "子代理记录版本不受支持"
   },
-  "nav.prev": {
-   "en": "Previous question",
-   "zh": "上一题"
+  "diagnostic.unavailable": {
+   "en": "session record temporarily unavailable",
+   "zh": "会话记录暂不可用"
   },
-  "nav.next": {
-   "en": "Next question",
-   "zh": "下一题"
+  "duration.seconds": {
+   "en": "{seconds}s",
+   "zh": "{seconds}秒"
   },
-  "nav.minimize": {
-   "en": "Collapse the question card",
-   "zh": "收起问题卡片"
+  "duration.minutes": {
+   "en": "{minutes}m {seconds}s",
+   "zh": "{minutes}分{seconds}秒"
   },
-  "nav.maximize": {
-   "en": "Expand the question card",
-   "zh": "展开问题卡片"
+  "duration.hours": {
+   "en": "{hours}h {minutes}m {seconds}s",
+   "zh": "{hours}小时{minutes}分{seconds}秒"
   },
-  "nav.cancel": {
-   "en": "Dismiss all questions",
-   "zh": "放弃整组问题"
+  "duration.days": {
+   "en": "{days}d",
+   "zh": "{days}天"
   },
-  "option.recommended": {
-   "en": "Recommended",
-   "zh": "推荐"
+  "duration.daysHours": {
+   "en": "{days}d {hours}h",
+   "zh": "{days}天{hours}小时"
   },
-  "custom.placeholder": {
-   "en": "Type your answer",
-   "zh": "输入你的答案"
+  "duration.months": {
+   "en": "~{months}mo",
+   "zh": "约{months}个月"
   },
-  "action.skip": {
-   "en": "Skip",
-   "zh": "跳过"
+  "duration.monthsDays": {
+   "en": "~{months}mo {days}d",
+   "zh": "约{months}个月{days}天"
   },
-  "action.next": {
-   "en": "Next",
-   "zh": "下一题"
+  "duration.years": {
+   "en": "~{years}y",
+   "zh": "约{years}年"
   },
-  "plan.header": {
-   "en": "Plan review",
-   "zh": "计划待审"
+  "duration.yearsMonths": {
+   "en": "~{years}y {months}mo",
+   "zh": "约{years}年{months}个月"
   },
-  "plan.approve": {
-   "en": "Approve",
-   "zh": "确认执行"
+  "duration.exactDays": {
+   "en": "{days}d {hours}h {minutes}m {seconds}s",
+   "zh": "{days}天{hours}小时{minutes}分{seconds}秒"
   },
-  "plan.decline": {
-   "en": "Refuse",
-   "zh": "拒绝"
+  "duration.exactTitle": {
+   "en": "Total active duration: {duration}",
+   "zh": "总活跃耗时：{duration}"
   },
-  "plan.discuss": {
-   "en": "Chat about it",
-   "zh": "去聊天里说"
+  "tokens.thousand": {
+   "en": "{value}K",
+   "zh": "{value}K"
+  },
+  "tokens.million": {
+   "en": "{value}M",
+   "zh": "{value}M"
+  },
+  "tokens.total": {
+   "en": "{value} tok",
+   "zh": "{value} tok"
+  },
+  "loading.label": {
+   "en": "Loading subagents…",
+   "zh": "正在加载子代理…"
+  },
+  "loading.aria": {
+   "en": "Loading subagents",
+   "zh": "正在加载子代理"
+  },
+  "load.error": {
+   "en": "Unable to load subagents",
+   "zh": "无法加载子代理"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试"
+  },
+  "mode.oneShot": {
+   "en": "one-shot",
+   "zh": "一次性"
+  },
+  "mode.continuable": {
+   "en": "continuable",
+   "zh": "可继续"
+  },
+  "activity.running": {
+   "en": "running",
+   "zh": "正在运行"
+  },
+  "activity.inactive": {
+   "en": "not running",
+   "zh": "当前未运行"
+  },
+  "branch.collapse": {
+   "en": "Collapse {label} descendants",
+   "zh": "收起 {label} 的下级子代理"
+  },
+  "branch.expand": {
+   "en": "Expand {label} descendants",
+   "zh": "展开 {label} 的下级子代理"
+  },
+  "count.total.one": {
+   "en": "{count} subagent",
+   "zh": "{count} 个子代理"
+  },
+  "count.total.other": {
+   "en": "{count} subagents",
+   "zh": "{count} 个子代理"
+  },
+  "count.running.one": {
+   "en": "{count} subagent running",
+   "zh": "{count} 个子代理，正在运行"
+  },
+  "count.running.other": {
+   "en": "{count} subagents running",
+   "zh": "{count} 个子代理，正在运行"
+  },
+  "switcher.aria": {
+   "en": "Switch subagent: {title}",
+   "zh": "切换子代理：{title}"
+  },
+  "tree.aria": {
+   "en": "Subagent sessions",
+   "zh": "子代理会话"
+  },
+  "open.sidebar": {
+   "en": "Open {label} in sidebar",
+   "zh": "在侧边栏打开 {label}"
+  },
+  "sidebar.chat": {
+   "en": "Chat",
+   "zh": "聊天"
+  },
+  "readonly.oneShot.title": {
+   "en": "One-shot subagent record",
+   "zh": "一次性子代理记录"
+  },
+  "readonly.title": {
+   "en": "This subagent is read-only for now",
+   "zh": "此子代理暂时只读"
+  },
+  "readonly.oneShot.body": {
+   "en": "One-shot tasks do not accept follow-ups; review the full execution record here.",
+   "zh": "一次性任务不支持后续消息，可在这里查看完整执行记录。"
+  },
+  "readonly.body": {
+   "en": "The parent session is offline; reopen it to continue sending messages.",
+   "zh": "父会话当前不在线，重新打开父会话后即可继续发送消息。"
   }
  }
 }

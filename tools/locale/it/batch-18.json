@@ -1,7 +1,7 @@
 {
  "batch": "model",
  "namespace": "model",
- "total": 21,
+ "total": 22,
  "keys": {
   "command.label": "Modello",
   "command.description": "Seleziona il modello per questa conversazione",
@@ -19,6 +19,7 @@
   "effort.providerDefault": "Predefinito",
   "status.loading": "Aggiornamento dell'elenco dei modelli…",
   "error.action": "Operazione sul modello non riuscita: {message}",
+  "error.sessionInUse": "Questa sessione è già in uso, probabilmente da un'altra istanza DSH in esecuzione (ad esempio dsh web o l'app desktop). Chiudi le altre istanze DSH in esecuzione e riprova.",
   "action.reload": "Ricarica",
   "warning.groupLoad": "Caricamento di {name} non riuscito: {message}",
   "empty.models": "Nessun modello disponibile.",
