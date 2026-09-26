@@ -1,0 +1,107 @@
+{
+ "batch": "agent-team",
+ "namespace": "agent-team",
+ "total": 25,
+ "keys": {
+  "trigger": {
+   "en": "Agent Team",
+   "zh": "智能体团队"
+  },
+  "loading": {
+   "en": "Loading Team…",
+   "zh": "正在加载团队…"
+  },
+  "unavailable": {
+   "en": "Team is unavailable",
+   "zh": "Team 暂不可用"
+  },
+  "failure": {
+   "en": "Invalid persisted Team record: {message}",
+   "zh": "团队持久记录无效：{message}"
+  },
+  "empty": {
+   "en": "No shared tasks yet. Create them through the conversation.",
+   "zh": "暂无共享任务，可以通过对话创建"
+  },
+  "roster": {
+   "en": "Members",
+   "zh": "成员"
+  },
+  "tasks": {
+   "en": "Shared tasks",
+   "zh": "共享任务"
+  },
+  "model": {
+   "en": "Model",
+   "zh": "模型"
+  },
+  "open": {
+   "en": "Open member conversation",
+   "zh": "打开成员会话"
+  },
+  "current": {
+   "en": "Current chat",
+   "zh": "当前会话"
+  },
+  "owner": {
+   "en": "Owner",
+   "zh": "Owner"
+  },
+  "unowned": {
+   "en": "Unowned",
+   "zh": "未分配"
+  },
+  "blockedBy": {
+   "en": "Blocked by",
+   "zh": "依赖"
+  },
+  "writeScopes": {
+   "en": "Write scopes",
+   "zh": "写入范围"
+  },
+  "ready": {
+   "en": "Ready",
+   "zh": "可开始"
+  },
+  "blocked": {
+   "en": "Blocked by dependencies",
+   "zh": "被依赖阻塞"
+  },
+  "task.expand": {
+   "en": "Show more",
+   "zh": "展开"
+  },
+  "task.collapse": {
+   "en": "Show less",
+   "zh": "收起"
+  },
+  "memberStatus.running": {
+   "en": "Running",
+   "zh": "运行中"
+  },
+  "memberStatus.inactive": {
+   "en": "Inactive",
+   "zh": "未运行"
+  },
+  "memberStatus.provisioning": {
+   "en": "Provisioning",
+   "zh": "准备中"
+  },
+  "memberStatus.failed": {
+   "en": "Failed",
+   "zh": "失败"
+  },
+  "status.pending": {
+   "en": "Pending",
+   "zh": "待处理"
+  },
+  "status.in_progress": {
+   "en": "In progress",
+   "zh": "进行中"
+  },
+  "status.completed": {
+   "en": "Completed",
+   "zh": "已完成"
+  }
+ }
+}

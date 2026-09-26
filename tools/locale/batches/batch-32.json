@@ -1,251 +1,287 @@
 {
- "batch": "settings.plugins",
- "namespace": "settings.plugins",
- "total": 61,
+ "batch": "schedule.catalog",
+ "namespace": "schedule.catalog",
+ "total": 70,
  "keys": {
-  "nav": {
-   "en": "Built-in plugins",
-   "zh": "内置插件"
+  "trigger.label": {
+   "en": "Reminders",
+   "zh": "提醒"
   },
-  "title": {
-   "en": "Built-in plugins",
-   "zh": "内置插件"
+  "list.loading": {
+   "en": "Loading reminders…",
+   "zh": "正在加载提醒…"
   },
-  "intro": {
-   "en": "Inspect the plugins this deployment ships.",
-   "zh": "查看内置部署的插件列表"
+  "list.error": {
+   "en": "Could not load reminders.",
+   "zh": "无法加载提醒。"
   },
-  "tabs": {
-   "en": "Plugin views",
-   "zh": "插件视图"
-  },
-  "empty": {
-   "en": "This deployment exposes no plugin views.",
-   "zh": "本部署没有开放任何插件视图。"
-  },
-  "overridden": {
-   "en": "Overridden",
-   "zh": "已覆盖"
-  },
-  "reset": {
-   "en": "Reset to default",
-   "zh": "恢复默认"
-  },
-  "readOnly": {
-   "en": "This deployment stores settings read-only.",
-   "zh": "本部署的设置为只读。"
-  },
-  "unavailable": {
-   "en": "This plugin is not loaded, so it cannot be configured right now.",
-   "zh": "该插件当前未加载，暂时无法配置。"
-  },
-  "save": {
-   "en": "Save",
-   "zh": "保存"
-  },
-  "saving": {
-   "en": "Saving…",
-   "zh": "保存中…"
-  },
-  "saveFailed": {
-   "en": "The deployment did not accept these values; they were left for you to correct.",
-   "zh": "本部署没有接受这些值，已保留供你修改。"
-  },
-  "invalidNumber": {
-   "en": "Enter a number, or leave blank to use the default.",
-   "zh": "请填数字；留空表示使用默认值。"
-  },
-  "bashTitle": {
-   "en": "Shell",
-   "zh": "终端"
-  },
-  "bashDescription": {
-   "en": "Limits every command the agent runs.",
-   "zh": "限制 agent 运行的每一条命令。"
-  },
-  "bashTimeoutMs": {
-   "en": "Command timeout (ms)",
-   "zh": "命令超时（毫秒）"
-  },
-  "bashTimeoutMsHint": {
-   "en": "How long one command may run before it is terminated.",
-   "zh": "单条命令允许运行多久，超时即终止。"
-  },
-  "bashMaxOutputBytes": {
-   "en": "Output cap per stream (bytes)",
-   "zh": "单流输出上限（字节）"
-  },
-  "bashMaxOutputBytesHint": {
-   "en": "Output beyond this spills to a temporary file rather than being lost.",
-   "zh": "超出部分会转存到临时文件，而不是被丢弃。"
-  },
-  "agentLoopTitle": {
-   "en": "Agent loop",
-   "zh": "Agent 循环"
-  },
-  "agentLoopDescription": {
-   "en": "How the agent dispatches tool calls.",
-   "zh": "Agent 如何派发工具调用。"
-  },
-  "agentLoopMaxParallel": {
-   "en": "Parallel tool calls",
-   "zh": "并行工具调用数"
-  },
-  "agentLoopMaxParallelHint": {
-   "en": "Upper bound on parallel-safe calls running at once within one step.",
-   "zh": "同一步内最多同时运行多少个可并行的调用。"
-  },
-  "webSearchTitle": {
-   "en": "Web search",
-   "zh": "网页搜索"
-  },
-  "webSearchDescription": {
-   "en": "The DeepSeek search provider.",
-   "zh": "DeepSeek 搜索提供方。"
-  },
-  "webSearchApiKey": {
-   "en": "API key",
-   "zh": "API Key"
-  },
-  "webSearchApiKeyHint": {
-   "en": "Stored outside the settings file. Leave blank to keep the current key.",
-   "zh": "不写入设置文件。留空表示保持当前密钥。"
-  },
-  "webSearchApiKeySet": {
-   "en": "A key is configured.",
-   "zh": "已配置密钥。"
-  },
-  "webSearchApiKeyUnset": {
-   "en": "No key is configured; search is unavailable until one is.",
-   "zh": "未配置密钥；配置之前搜索不可用。"
-  },
-  "webSearchBaseUrl": {
-   "en": "Endpoint",
-   "zh": "接口地址"
-  },
-  "webSearchBaseUrlHint": {
-   "en": "Leave blank to use the provider default.",
-   "zh": "留空则使用提供方默认地址。"
-  },
-  "webSearchMaxUses": {
-   "en": "Max searches per request",
-   "zh": "单次请求最多搜索次数"
-  },
-  "webSearchMaxUsesHint": {
-   "en": "How many times one request may search before it must answer.",
-   "zh": "一次请求在必须作答前最多可以搜索多少次。"
-  },
-  "subagentTitle": {
-   "en": "Subagent",
-   "zh": "Subagent"
-  },
-  "subagentDescription": {
-   "en": "Set Subagent recursion depth, count, and models.",
-   "zh": "设置 Subagent 的递归层级、数量和模型。"
-  },
-  "subagentLimitsTitle": {
-   "en": "Limits",
-   "zh": "运行限制"
-  },
-  "subagentMaxDepth": {
-   "en": "Maximum recursion depth",
-   "zh": "最大递归深度"
-  },
-  "subagentDepthHelpLabel": {
-   "en": "About maximum recursion depth",
-   "zh": "最大递归深度说明"
-  },
-  "subagentDepthHelp": {
-   "en": "Limits how many levels of Subagents an Agent can create.",
-   "zh": "限制 Agent 创建 Subagent 的递归层级。"
-  },
-  "subagentDepthZero": {
-   "en": "Disable Subagents",
-   "zh": "禁用 Subagent"
-  },
-  "subagentDepthOne": {
-   "en": "Only the main Agent can create Subagents",
-   "zh": "仅允许主 Agent 创建 Subagent"
-  },
-  "subagentDepthOverride": {
-   "en": "If a tool defines its own maximum recursion depth, that setting takes precedence.",
-   "zh": "如果某个工具单独设置了最大递归深度，以该工具的设置为准。"
-  },
-  "subagentMaxActive": {
-   "en": "Subagent parallelism limit",
-   "zh": "Subagent 并行数量上限"
-  },
-  "subagentCapacityHelpLabel": {
-   "en": "About the Subagent parallelism limit",
-   "zh": "Subagent 并行数量上限说明"
-  },
-  "subagentCapacityHelp": {
-   "en": "Total live Subagents under the same main Agent, across all recursion levels. The main Agent is excluded. New start requests are rejected when the limit is reached.",
-   "zh": "同一主 Agent 下，所有递归层级同时存活的 Subagent 总数，主 Agent 不计入。达到上限时，新的启动请求会被拒绝。"
-  },
-  "subagentDepthInvalid": {
-   "en": "Enter a whole number of 0 or more.",
-   "zh": "请输入不小于 0 的整数。"
-  },
-  "subagentCapacityInvalid": {
-   "en": "Enter a whole number of 1 or more.",
-   "zh": "请输入不小于 1 的整数。"
-  },
-  "subagentModelSelectionTitle": {
-   "en": "Model selection",
-   "zh": "模型选择"
-  },
-  "subagentModelSelectionToggle": {
-   "en": "Allow agents to choose models for Subagents",
-   "zh": "允许 Agent 为 Subagent 选择模型"
-  },
-  "subagentModelSelectionChoose": {
-   "en": "When enabled, agents can choose a provider, model, and reasoning effort for each Subagent from the authorized models below. Applies only to new sessions.",
-   "zh": "开启后，Agent 可以从下方授权模型中，为每个 Subagent 选择提供方、模型和推理强度。仅影响新会话。"
-  },
-  "subagentModelSelectionAllowed": {
-   "en": "Models agents may choose",
-   "zh": "Agent 可选择的模型"
-  },
-  "subagentModelSelectionLoading": {
-   "en": "Loading models…",
-   "zh": "正在加载模型…"
-  },
-  "subagentModelSelectionLoadFailed": {
-   "en": "Models could not be loaded.",
-   "zh": "无法加载模型。"
-  },
-  "subagentModelSelectionRetry": {
+  "list.retry": {
    "en": "Retry",
    "zh": "重试"
   },
-  "subagentModelSelectionPartial": {
-   "en": "Some model providers could not be loaded; saved choices remain removable.",
-   "zh": "部分模型提供方暂时无法加载；已保存的选择仍可移除。"
+  "delete.action": {
+   "en": "Delete",
+   "zh": "删除"
   },
-  "subagentModelSelectionUnavailable": {
-   "en": "Currently unavailable",
-   "zh": "当前不可用"
+  "delete.pending": {
+   "en": "Deleting…",
+   "zh": "正在删除…"
   },
-  "subagentModelSelectionUnavailableGroup": {
-   "en": "Saved but currently unavailable",
-   "zh": "已保存但当前不可用"
+  "delete.label": {
+   "en": "Delete reminder: {title}",
+   "zh": "删除提醒：{title}"
   },
-  "subagentModelSelectionEmpty": {
-   "en": "No model provider currently advertises a model.",
-   "zh": "当前没有模型提供方公布模型。"
+  "list.open": {
+   "en": "Open reminder details: {title}",
+   "zh": "打开提醒详情：{title}"
   },
-  "subagentModelSelectionRequired": {
-   "en": "Select at least one model before saving.",
-   "zh": "保存前请至少选择一个模型。"
+  "trigger.one": {
+   "en": "{count} reminder",
+   "zh": "{count} 个提醒"
   },
-  "subagentModelSelectionConflict": {
-   "en": "Settings changed elsewhere. Discard your draft and try again.",
-   "zh": "设置已在其他位置更新。请放弃修改后重试。"
+  "trigger.other": {
+   "en": "{count} reminders",
+   "zh": "{count} 个提醒"
   },
-  "subagentModelSelectionOff": {
-   "en": "Subagents use configured defaults or inherit the parent agent's model. Saved model choices are retained.",
-   "zh": "关闭后，Subagent 使用配置的默认模型或继承父 Agent 的模型；已选模型会保留。"
+  "list.aria": {
+   "en": "Active reminders",
+   "zh": "活动提醒"
+  },
+  "list.nextRun": {
+   "en": "Next run",
+   "zh": "下次运行"
+  },
+  "frequency.once": {
+   "en": "Once",
+   "zh": "单次"
+  },
+  "frequency.every": {
+   "en": "Every {value} {unit}",
+   "zh": "{value}{unit}一次"
+  },
+  "time.locale": {
+   "en": "en",
+   "zh": "zh-CN"
+  },
+  "time.utcPrefix": {
+   "en": "UTC",
+   "zh": "UTC"
+  },
+  "frequency.daily": {
+   "en": "Daily at {time} ({timeZone})",
+   "zh": "每天 {time}（{timeZone}）"
+  },
+  "frequency.dailyLocal": {
+   "en": "Daily at {time}",
+   "zh": "每天 {time}"
+  },
+  "frequency.weekly": {
+   "en": "Weekly on {weekdays} at {time} ({timeZone})",
+   "zh": "每周{weekdays} {time}（{timeZone}）"
+  },
+  "frequency.weeklyLocal": {
+   "en": "Weekly on {weekdays} at {time}",
+   "zh": "每周{weekdays} {time}"
+  },
+  "frequency.cron": {
+   "en": "Cron {expression} ({timeZone})",
+   "zh": "Cron {expression}（{timeZone}）"
+  },
+  "frequency.cronLocal": {
+   "en": "Cron {expression}",
+   "zh": "Cron {expression}"
+  },
+  "frequency.cronRule": {
+   "en": "{rule} ({timeZone})",
+   "zh": "{rule}（{timeZone}）"
+  },
+  "cron.list.join": {
+   "en": ", ",
+   "zh": "、"
+  },
+  "cron.part.join": {
+   "en": " ",
+   "zh": " "
+  },
+  "cron.weekday.name": {
+   "en": "{weekday}",
+   "zh": "周{weekday}"
+  },
+  "cron.weekday.range": {
+   "en": "{from}–{to}",
+   "zh": "{from}至{to}"
+  },
+  "cron.months": {
+   "en": " in {months}",
+   "zh": "（{months}）"
+  },
+  "cron.day.every": {
+   "en": "Every day{months}",
+   "zh": "每天{months}"
+  },
+  "cron.day.weekdays": {
+   "en": "{weekdays}{months}",
+   "zh": "{weekdays}{months}"
+  },
+  "cron.day.monthDays": {
+   "en": "Day {days} of every month{months}",
+   "zh": "每月 {days} 日{months}"
+  },
+  "cron.day.both": {
+   "en": "Day {days} of every month or {weekdays}{months}",
+   "zh": "每月 {days} 日或{weekdays}{months}"
+  },
+  "cron.day.bothStarred": {
+   "en": "Day {days} of every month and {weekdays}{months}",
+   "zh": "每月 {days} 日且{weekdays}{months}"
+  },
+  "cron.hours.range": {
+   "en": "{from}–{to}",
+   "zh": "{from} 至 {to}"
+  },
+  "cron.hours.list": {
+   "en": "{hours}",
+   "zh": "{hours}"
+  },
+  "cron.time.everyMinute": {
+   "en": "Every minute",
+   "zh": "每分钟"
+  },
+  "cron.time.everyMinutes": {
+   "en": "Every {step} minutes",
+   "zh": "每 {step} 分钟"
+  },
+  "cron.time.joinedEveryMinute": {
+   "en": "every minute",
+   "zh": "每分钟"
+  },
+  "cron.time.joinedEveryMinutes": {
+   "en": "every {step} minutes",
+   "zh": "每 {step} 分钟"
+  },
+  "cron.time.everyHour": {
+   "en": "Every hour",
+   "zh": "每小时"
+  },
+  "cron.time.joinedEveryHour": {
+   "en": "every hour",
+   "zh": "每小时"
+  },
+  "cron.time.everyNHours": {
+   "en": "Every {count} hours",
+   "zh": "每 {count} 小时"
+  },
+  "cron.time.joinedEveryNHours": {
+   "en": "every {count} hours",
+   "zh": "每 {count} 小时"
+  },
+  "cron.time.hourlyAt": {
+   "en": "Every hour at minute {minutes}",
+   "zh": "每小时的第 {minutes} 分钟"
+  },
+  "cron.time.joinedHourlyAt": {
+   "en": "every hour at minute {minutes}",
+   "zh": "每小时的第 {minutes} 分钟"
+  },
+  "cron.time.hoursEveryMinute": {
+   "en": "every minute during hours {hours}",
+   "zh": "{hours} 点的每分钟"
+  },
+  "cron.time.hoursEveryMinutes": {
+   "en": "every {step} minutes during hours {hours}",
+   "zh": "{hours} 点内每 {step} 分钟"
+  },
+  "cron.time.at": {
+   "en": "at {times}",
+   "zh": "{times}"
+  },
+  "cron.time.hoursAt": {
+   "en": "at minute {minutes} of hours {hours}",
+   "zh": "{hours} 点的第 {minutes} 分钟"
+  },
+  "frequency.weekday.join": {
+   "en": ", ",
+   "zh": "、"
+  },
+  "frequency.weekday.1": {
+   "en": "Mon",
+   "zh": "一"
+  },
+  "frequency.weekday.2": {
+   "en": "Tue",
+   "zh": "二"
+  },
+  "frequency.weekday.3": {
+   "en": "Wed",
+   "zh": "三"
+  },
+  "frequency.weekday.4": {
+   "en": "Thu",
+   "zh": "四"
+  },
+  "frequency.weekday.5": {
+   "en": "Fri",
+   "zh": "五"
+  },
+  "frequency.weekday.6": {
+   "en": "Sat",
+   "zh": "六"
+  },
+  "frequency.weekday.7": {
+   "en": "Sun",
+   "zh": "日"
+  },
+  "unit.day.one": {
+   "en": "day",
+   "zh": "天"
+  },
+  "unit.day.other": {
+   "en": "days",
+   "zh": "天"
+  },
+  "unit.hour.one": {
+   "en": "hour",
+   "zh": "小时"
+  },
+  "unit.hour.other": {
+   "en": "hours",
+   "zh": "小时"
+  },
+  "unit.minute.one": {
+   "en": "minute",
+   "zh": "分钟"
+  },
+  "unit.minute.other": {
+   "en": "minutes",
+   "zh": "分钟"
+  },
+  "unit.second.one": {
+   "en": "second",
+   "zh": "秒"
+  },
+  "unit.second.other": {
+   "en": "seconds",
+   "zh": "秒"
+  },
+  "relative.now": {
+   "en": "Due now",
+   "zh": "现在到期"
+  },
+  "relative.future": {
+   "en": "in {value} {unit}",
+   "zh": "{value}{unit}后"
+  },
+  "relative.overdue": {
+   "en": "{value} {unit} overdue",
+   "zh": "已逾期 {value}{unit}"
+  },
+  "mark.aria": {
+   "en": "{count} scheduled tasks",
+   "zh": "{count} 个自动化任务"
+  },
+  "hover.more": {
+   "en": "{count} more",
+   "zh": "另有 {count} 个任务"
   }
  }
 }

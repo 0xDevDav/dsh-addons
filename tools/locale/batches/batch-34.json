@@ -1,27 +1,287 @@
 {
- "batch": "sidebar",
- "namespace": "sidebar",
- "total": 5,
+ "batch": "schedule.manager#2",
+ "namespace": "schedule.manager",
+ "total": 70,
  "keys": {
-  "session.new": {
-   "en": "New Session",
-   "zh": "新会话"
+  "cron.day.every": {
+   "en": "Every day{months}",
+   "zh": "每天{months}"
   },
-  "session.new.label": {
-   "en": "New session",
-   "zh": "新建会话"
+  "cron.day.weekdays": {
+   "en": "{weekdays}{months}",
+   "zh": "{weekdays}{months}"
   },
-  "toggle.open": {
-   "en": "Open sidebar",
-   "zh": "打开侧边栏"
+  "cron.day.monthDays": {
+   "en": "Day {days} of every month{months}",
+   "zh": "每月 {days} 日{months}"
   },
-  "toggle.collapse": {
-   "en": "Collapse sidebar",
-   "zh": "收起侧边栏"
+  "cron.day.both": {
+   "en": "Day {days} of every month or {weekdays}{months}",
+   "zh": "每月 {days} 日或{weekdays}{months}"
   },
-  "panels.label": {
-   "en": "Global panels",
-   "zh": "全局面板"
+  "cron.day.bothStarred": {
+   "en": "Day {days} of every month and {weekdays}{months}",
+   "zh": "每月 {days} 日且{weekdays}{months}"
+  },
+  "cron.hours.range": {
+   "en": "{from}–{to}",
+   "zh": "{from} 至 {to}"
+  },
+  "cron.hours.list": {
+   "en": "{hours}",
+   "zh": "{hours}"
+  },
+  "cron.time.everyMinute": {
+   "en": "Every minute",
+   "zh": "每分钟"
+  },
+  "cron.time.everyMinutes": {
+   "en": "Every {step} minutes",
+   "zh": "每 {step} 分钟"
+  },
+  "cron.time.joinedEveryMinute": {
+   "en": "every minute",
+   "zh": "每分钟"
+  },
+  "cron.time.joinedEveryMinutes": {
+   "en": "every {step} minutes",
+   "zh": "每 {step} 分钟"
+  },
+  "cron.time.everyHour": {
+   "en": "Every hour",
+   "zh": "每小时"
+  },
+  "cron.time.joinedEveryHour": {
+   "en": "every hour",
+   "zh": "每小时"
+  },
+  "cron.time.everyNHours": {
+   "en": "Every {count} hours",
+   "zh": "每 {count} 小时"
+  },
+  "cron.time.joinedEveryNHours": {
+   "en": "every {count} hours",
+   "zh": "每 {count} 小时"
+  },
+  "cron.time.hourlyAt": {
+   "en": "Every hour at minute {minutes}",
+   "zh": "每小时的第 {minutes} 分钟"
+  },
+  "cron.time.joinedHourlyAt": {
+   "en": "every hour at minute {minutes}",
+   "zh": "每小时的第 {minutes} 分钟"
+  },
+  "cron.time.hoursEveryMinute": {
+   "en": "every minute during hours {hours}",
+   "zh": "{hours} 点的每分钟"
+  },
+  "cron.time.hoursEveryMinutes": {
+   "en": "every {step} minutes during hours {hours}",
+   "zh": "{hours} 点内每 {step} 分钟"
+  },
+  "cron.time.at": {
+   "en": "at {times}",
+   "zh": "{times}"
+  },
+  "cron.time.hoursAt": {
+   "en": "at minute {minutes} of hours {hours}",
+   "zh": "{hours} 点的第 {minutes} 分钟"
+  },
+  "frequency.weekday.join": {
+   "en": ", ",
+   "zh": "、"
+  },
+  "frequency.weekday.1": {
+   "en": "Mon",
+   "zh": "一"
+  },
+  "frequency.weekday.2": {
+   "en": "Tue",
+   "zh": "二"
+  },
+  "frequency.weekday.3": {
+   "en": "Wed",
+   "zh": "三"
+  },
+  "frequency.weekday.4": {
+   "en": "Thu",
+   "zh": "四"
+  },
+  "frequency.weekday.5": {
+   "en": "Fri",
+   "zh": "五"
+  },
+  "frequency.weekday.6": {
+   "en": "Sat",
+   "zh": "六"
+  },
+  "frequency.weekday.7": {
+   "en": "Sun",
+   "zh": "日"
+  },
+  "unit.day.one": {
+   "en": "day",
+   "zh": "天"
+  },
+  "unit.day.other": {
+   "en": "days",
+   "zh": "天"
+  },
+  "unit.hour.one": {
+   "en": "hour",
+   "zh": "小时"
+  },
+  "unit.hour.other": {
+   "en": "hours",
+   "zh": "小时"
+  },
+  "unit.minute.one": {
+   "en": "minute",
+   "zh": "分钟"
+  },
+  "unit.minute.other": {
+   "en": "minutes",
+   "zh": "分钟"
+  },
+  "unit.second.one": {
+   "en": "second",
+   "zh": "秒"
+  },
+  "unit.second.other": {
+   "en": "seconds",
+   "zh": "秒"
+  },
+  "relative.now": {
+   "en": "Due now",
+   "zh": "现在到期"
+  },
+  "relative.future": {
+   "en": "in {value} {unit}",
+   "zh": "{value}{unit}后"
+  },
+  "relative.overdue": {
+   "en": "{value} {unit} overdue",
+   "zh": "已逾期 {value}{unit}"
+  },
+  "timing.date": {
+   "en": "Date",
+   "zh": "日期"
+  },
+  "timing.time": {
+   "en": "Time",
+   "zh": "时间"
+  },
+  "timing.hour": {
+   "en": "Hour",
+   "zh": "时"
+  },
+  "timing.minute": {
+   "en": "Minute",
+   "zh": "分"
+  },
+  "timing.second": {
+   "en": "Second",
+   "zh": "秒"
+  },
+  "timing.prevMonth": {
+   "en": "Previous month",
+   "zh": "上个月"
+  },
+  "timing.nextMonth": {
+   "en": "Next month",
+   "zh": "下个月"
+  },
+  "timing.zone": {
+   "en": "Time zone",
+   "zh": "时区"
+  },
+  "timing.zoneSearch": {
+   "en": "Search by UTC offset, IANA ID, or city",
+   "zh": "搜索 UTC 偏移、IANA 标识或城市"
+  },
+  "timing.zoneNoResults": {
+   "en": "No matching time zones",
+   "zh": "没有匹配的时区"
+  },
+  "timing.interval": {
+   "en": "Repeat every",
+   "zh": "重复间隔"
+  },
+  "timing.intervalIncrease": {
+   "en": "Increase interval",
+   "zh": "增大间隔"
+  },
+  "timing.intervalDecrease": {
+   "en": "Decrease interval",
+   "zh": "减小间隔"
+  },
+  "timing.unit.hour": {
+   "en": "hours",
+   "zh": "小时"
+  },
+  "timing.unit.minute": {
+   "en": "minutes",
+   "zh": "分钟"
+  },
+  "timing.unit.second": {
+   "en": "seconds",
+   "zh": "秒"
+  },
+  "timing.intervalHint.hour": {
+   "en": "At least 1 hour. The interval counts from task creation or the last rule change and is independent of time zones.",
+   "zh": "至少 1 小时。间隔自任务创建或上次修改规则时起计，不受时区影响"
+  },
+  "timing.intervalHint.minute": {
+   "en": "At least 1 minute. The interval counts from task creation or the last rule change and is independent of time zones.",
+   "zh": "至少 1 分钟。间隔自任务创建或上次修改规则时起计，不受时区影响"
+  },
+  "timing.intervalHint.second": {
+   "en": "At least 60 seconds. The interval counts from task creation or the last rule change and is independent of time zones.",
+   "zh": "至少 60 秒。间隔自任务创建或上次修改规则时起计，不受时区影响"
+  },
+  "timing.zoneNoStored": {
+   "en": "A one-time task stores only its target moment, not a time zone. The date and time are interpreted in the selected time zone.",
+   "zh": "单次任务只保存触发时刻，不保存时区；日期和时间按所选时区换算"
+  },
+  "timing.inactive": {
+   "en": "Inactive tasks are read-only. Their timing cannot be edited.",
+   "zh": "已结束的任务为只读，无法修改时间"
+  },
+  "timing.conflict": {
+   "en": "This task changed while you were editing. Your draft is retained. Cancel and reopen after refresh to edit the latest rule.",
+   "zh": "编辑期间任务已变化，草稿已保留。请在刷新后取消并重新打开编辑器，以修改最新规则"
+  },
+  "timing.notFound": {
+   "en": "This task is no longer available. Your draft is retained; cancel to close the editor.",
+   "zh": "此任务当前不可用，草稿已保留。请取消以关闭编辑器"
+  },
+  "timing.invalid": {
+   "en": "Enter a valid date and time, or check the timing fields.",
+   "zh": "请输入有效的日期和时间，或检查时间字段"
+  },
+  "timing.invalidZone": {
+   "en": "Enter a valid IANA time zone, for example Asia/Shanghai.",
+   "zh": "请输入有效的 IANA 时区，例如 Asia/Shanghai"
+  },
+  "timing.notFuture": {
+   "en": "Choose a date and time in the future.",
+   "zh": "请选择未来的日期和时间"
+  },
+  "timing.invalidInterval": {
+   "en": "Enter an interval of at least 1 minute.",
+   "zh": "请输入至少 1 分钟的间隔"
+  },
+  "timing.invalidInterval.hour": {
+   "en": "Enter an interval of at least 1 hour.",
+   "zh": "请输入至少 1 小时的间隔"
+  },
+  "timing.invalidInterval.minute": {
+   "en": "Enter an interval of at least 1 minute.",
+   "zh": "请输入至少 1 分钟的间隔"
+  },
+  "timing.invalidInterval.second": {
+   "en": "Enter an interval of at least 60 seconds.",
+   "zh": "请输入至少 60 秒的间隔"
   }
  }
 }

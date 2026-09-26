@@ -1,0 +1,171 @@
+{
+ "batch": "workspace#2",
+ "namespace": "workspace",
+ "total": 41,
+ "keys": {
+  "archive.confirm.other.other": {
+   "en": "{n} other items of work ({kind})",
+   "zh": "{n} 项其他工作（{kind}）"
+  },
+  "archive.confirm.listSeparator": {
+   "en": ", ",
+   "zh": "、"
+  },
+  "archive.confirm.action": {
+   "en": "Stop and archive",
+   "zh": "停止并归档"
+  },
+  "archive.confirm.pending": {
+   "en": "Stopping and archiving…",
+   "zh": "正在停止并归档…"
+  },
+  "toast.archivedUndo": {
+   "en": "undo",
+   "zh": "撤销"
+  },
+  "toast.archivedOr": {
+   "en": " or ",
+   "zh": "或"
+  },
+  "toast.archivedFilter": {
+   "en": "filter archived sessions",
+   "zh": "筛选已归档会话"
+  },
+  "toast.pinFailed": {
+   "en": "Pin failed. Try again later.",
+   "zh": "置顶失败，请稍后重试"
+  },
+  "toast.unpinFailed": {
+   "en": "Unpin failed. Try again later.",
+   "zh": "取消置顶失败，请稍后重试"
+  },
+  "toast.createFailed": {
+   "en": "New session failed: {message}",
+   "zh": "新建会话失败：{message}"
+  },
+  "sessions.count.one": {
+   "en": "{n} session",
+   "zh": "{n} 个会话"
+  },
+  "sessions.count.other": {
+   "en": "{n} sessions",
+   "zh": "{n} 个会话"
+  },
+  "actions.workspace.aria": {
+   "en": "Workspace actions for {name}",
+   "zh": "工作区“{name}”的操作"
+  },
+  "actions.session.aria": {
+   "en": "Session actions for {name}",
+   "zh": "会话“{name}”的操作"
+  },
+  "actions.archive": {
+   "en": "Archive",
+   "zh": "归档会话"
+  },
+  "actions.unarchive": {
+   "en": "Unarchive",
+   "zh": "取消归档"
+  },
+  "actions.pin": {
+   "en": "Pin",
+   "zh": "置顶会话"
+  },
+  "actions.unpin": {
+   "en": "Unpin",
+   "zh": "取消置顶"
+  },
+  "actions.newSession": {
+   "en": "New session",
+   "zh": "新会话"
+  },
+  "actions.newSession.aria": {
+   "en": "New session in {name}",
+   "zh": "在“{name}”中新建会话"
+  },
+  "status.running": {
+   "en": "Running",
+   "zh": "进行中"
+  },
+  "status.subagentsRunning.one": {
+   "en": "{n} subagent running",
+   "zh": "{n} 个子智能体运行中"
+  },
+  "status.subagentsRunning.other": {
+   "en": "{n} subagents running",
+   "zh": "{n} 个子智能体运行中"
+  },
+  "status.idle": {
+   "en": "Idle",
+   "zh": "空闲"
+  },
+  "status.waitingApproval": {
+   "en": "Waiting for approval",
+   "zh": "等待审批"
+  },
+  "status.planReview": {
+   "en": "Plan awaiting review",
+   "zh": "计划待审"
+  },
+  "status.waitingAnswer": {
+   "en": "Waiting for answer",
+   "zh": "等待回答"
+  },
+  "status.compact.approval": {
+   "en": "Approval",
+   "zh": "待审批"
+  },
+  "status.compact.planReview": {
+   "en": "Plan review",
+   "zh": "计划待审"
+  },
+  "status.compact.answer": {
+   "en": "Answer",
+   "zh": "待回答"
+  },
+  "status.completed": {
+   "en": "Completed",
+   "zh": "已完成"
+  },
+  "hover.created": {
+   "en": "Created {time}",
+   "zh": "创建于 {time}"
+  },
+  "hover.copied": {
+   "en": "Copied",
+   "zh": "已复制"
+  },
+  "date.ymd": {
+   "en": "{y}-{m}-{d}",
+   "zh": "{y}年{m}月{d}日"
+  },
+  "time.now": {
+   "en": "now",
+   "zh": "刚刚"
+  },
+  "time.minutes": {
+   "en": "{n}min",
+   "zh": "{n}分钟"
+  },
+  "time.hours": {
+   "en": "{n}h",
+   "zh": "{n}小时"
+  },
+  "time.days": {
+   "en": "{n}d",
+   "zh": "{n}天"
+  },
+  "time.months": {
+   "en": "{n}mo",
+   "zh": "{n}个月"
+  },
+  "time.years": {
+   "en": "{n}y",
+   "zh": "{n}年"
+  },
+  "time.ago": {
+   "en": "{t} ago",
+   "zh": "{t}前"
+  }
+ }
+}

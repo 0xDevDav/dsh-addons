@@ -1,0 +1,39 @@
+{
+ "batch": "skill",
+ "namespace": "skill",
+ "total": 8,
+ "keys": {
+  "row.title": {
+   "en": "Skill",
+   "zh": "加载技能"
+  },
+  "row.running": {
+   "en": "Loading skill",
+   "zh": "正在加载 skill"
+  },
+  "row.preparing": {
+   "en": "Preparing to load a skill",
+   "zh": "准备加载技能"
+  },
+  "row.failed": {
+   "en": "Skill load failed",
+   "zh": "skill 加载失败"
+  },
+  "row.stopped": {
+   "en": "Skill load stopped",
+   "zh": "skill 加载已中止"
+  },
+  "row.instructions": {
+   "en": "Instructions",
+   "zh": "说明"
+  },
+  "row.inspect": {
+   "en": "Inspect",
+   "zh": "查看"
+  },
+  "menu.userOnly": {
+   "en": "user-only",
+   "zh": "仅用户"
+  }
+ }
+}

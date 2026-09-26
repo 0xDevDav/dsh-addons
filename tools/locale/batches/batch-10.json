@@ -1,67 +1,287 @@
 {
- "batch": "conversation#3",
+ "batch": "conversation#2",
  "namespace": "conversation",
- "total": 15,
+ "total": 70,
  "keys": {
-  "queue.editFailed": {
-   "en": "Edit failed: this message may have already started sending.",
-   "zh": "编辑失败：这条消息可能已经开始发送。"
+  "todo.progress.done": {
+   "en": "{done} completed",
+   "zh": "{done} 已完成"
   },
-  "queue.removeFailed": {
-   "en": "Removal failed: this message may have already started sending.",
-   "zh": "删除失败：这条消息可能已经开始发送。"
+  "todo.progress.active": {
+   "en": "{active} in progress",
+   "zh": "{active} 进行中"
   },
-  "queue.steerFailed": {
-   "en": "Steering failed. Try again.",
-   "zh": "插话发送失败，请重试。"
+  "todo.progress.pending": {
+   "en": "{pending} pending",
+   "zh": "{pending} 待处理"
   },
-  "terminal.signal": {
-   "en": "signal {signal}",
-   "zh": "信号 {signal}"
-  },
-  "terminal.exitCode": {
-   "en": "exit code {code}",
-   "zh": "退出码 {code}"
-  },
-  "terminal.noExitCode": {
-   "en": "no exit code",
-   "zh": "未正常退出"
-  },
-  "terminal.running": {
-   "en": "Running",
-   "zh": "运行中"
-  },
-  "terminal.failed": {
-   "en": "Failed",
-   "zh": "失败"
-  },
-  "terminal.done": {
-   "en": "Done",
+  "todo.status.completed": {
+   "en": "Completed",
    "zh": "已完成"
   },
-  "terminal.noOutput": {
-   "en": "No output",
-   "zh": "无输出"
+  "todo.status.inProgress": {
+   "en": "In progress",
+   "zh": "进行中"
   },
-  "terminal.collapseAria": {
-   "en": "Collapse output",
-   "zh": "收起输出"
+  "todo.status.pending": {
+   "en": "Pending",
+   "zh": "待处理"
   },
-  "terminal.expandAria": {
-   "en": "Expand the remaining {n} output lines",
-   "zh": "展开其余 {n} 行输出"
+  "todo.rowTitle": {
+   "en": "Update to-do list",
+   "zh": "更新任务清单"
   },
-  "terminal.expandRest": {
-   "en": "… {n} more lines",
-   "zh": "… 其余 {n} 行"
+  "tool.title.createGoal": {
+   "en": "Create goal",
+   "zh": "创建目标"
   },
-  "terminal.sendInput": {
-   "en": "(send input)",
-   "zh": "（发送输入）"
+  "tool.title.getGoal": {
+   "en": "View goal",
+   "zh": "查看目标"
   },
-  "terminal.session": {
-   "en": "Terminal {sessionId}",
-   "zh": "终端 {sessionId}"
+  "tool.title.updateGoal": {
+   "en": "Update goal",
+   "zh": "更新目标"
+  },
+  "tool.preparing.content": {
+   "en": "Preparing content {kilobytes}KB",
+   "zh": "正在准备内容 {kilobytes}KB"
+  },
+  "tool.title.createSchedule": {
+   "en": "Create reminder",
+   "zh": "创建定时任务"
+  },
+  "tool.title.listSchedules": {
+   "en": "List reminders",
+   "zh": "查看定时任务"
+  },
+  "tool.title.deleteSchedule": {
+   "en": "Delete reminder",
+   "zh": "删除定时任务"
+  },
+  "tool.title.updateSchedule": {
+   "en": "Update reminder",
+   "zh": "修改定时任务"
+  },
+  "detail.state": {
+   "en": "Status",
+   "zh": "状态"
+  },
+  "detail.todo.completed": {
+   "en": "Completed",
+   "zh": "已完成"
+  },
+  "detail.todo.in_progress": {
+   "en": "In progress",
+   "zh": "进行中"
+  },
+  "detail.todo.pending": {
+   "en": "Pending",
+   "zh": "待处理"
+  },
+  "detail.todo.empty": {
+   "en": "The to-do list is empty",
+   "zh": "任务清单为空"
+  },
+  "todo.diff.initial": {
+   "en": "Initial list",
+   "zh": "首次记录"
+  },
+  "todo.diff.compare": {
+   "en": "Changes since the previous list",
+   "zh": "与上次清单相比"
+  },
+  "todo.diff.unavailable": {
+   "en": "Previous list unavailable",
+   "zh": "旧清单不可用"
+  },
+  "todo.diff.noChanges": {
+   "en": "No changes to the list",
+   "zh": "清单没有变化"
+  },
+  "todo.diff.added": {
+   "en": "{count} added",
+   "zh": "新增 {count}"
+  },
+  "todo.diff.updated": {
+   "en": "{count} updated",
+   "zh": "更新 {count}"
+  },
+  "todo.diff.removed": {
+   "en": "{count} removed",
+   "zh": "移除 {count}"
+  },
+  "todo.diff.unchanged": {
+   "en": "{count} unchanged",
+   "zh": "{count} 项未变化"
+  },
+  "todo.diff.addedItem": {
+   "en": "Added",
+   "zh": "新增"
+  },
+  "todo.diff.updatedItem": {
+   "en": "Status changed",
+   "zh": "状态变化"
+  },
+  "todo.diff.movedItem": {
+   "en": "Reordered",
+   "zh": "顺序调整"
+  },
+  "todo.diff.removedItem": {
+   "en": "Removed",
+   "zh": "移除"
+  },
+  "detail.goal.empty": {
+   "en": "No goal",
+   "zh": "没有目标"
+  },
+  "detail.goal.active": {
+   "en": "Active",
+   "zh": "进行中"
+  },
+  "detail.goal.disarmed": {
+   "en": "Awaiting continuation",
+   "zh": "等待继续"
+  },
+  "detail.goal.paused": {
+   "en": "Paused",
+   "zh": "已暂停"
+  },
+  "detail.goal.blocked": {
+   "en": "Blocked",
+   "zh": "受阻"
+  },
+  "detail.goal.complete": {
+   "en": "Completed",
+   "zh": "已完成"
+  },
+  "detail.goal.rounds": {
+   "en": "Rounds",
+   "zh": "执行轮次"
+  },
+  "detail.goal.reason": {
+   "en": "Blocker",
+   "zh": "受阻原因"
+  },
+  "detail.days": {
+   "en": "{count} d",
+   "zh": "{count} 天"
+  },
+  "detail.hours": {
+   "en": "{count} h",
+   "zh": "{count} 小时"
+  },
+  "detail.minutes": {
+   "en": "{count} min",
+   "zh": "{count} 分钟"
+  },
+  "detail.seconds": {
+   "en": "{count} s",
+   "zh": "{count} 秒"
+  },
+  "detail.schedule.once": {
+   "en": "Once",
+   "zh": "单次"
+  },
+  "detail.schedule.every": {
+   "en": "Every {interval}",
+   "zh": "每 {interval}"
+  },
+  "detail.schedule.when": {
+   "en": "Scheduled for",
+   "zh": "计划时间"
+  },
+  "detail.schedule.frequency": {
+   "en": "Repeat",
+   "zh": "重复"
+  },
+  "detail.schedule.scheduled": {
+   "en": "Scheduled",
+   "zh": "等待触发"
+  },
+  "detail.schedule.overdue": {
+   "en": "Overdue, awaiting session resume",
+   "zh": "已到期，等待会话恢复"
+  },
+  "detail.schedule.empty": {
+   "en": "No reminders",
+   "zh": "没有定时任务"
+  },
+  "detail.schedule.deleted": {
+   "en": "Deleted",
+   "zh": "已删除"
+  },
+  "detail.schedule.count": {
+   "en": "{count} reminders",
+   "zh": "{count} 个定时任务"
+  },
+  "detail.schedule.daily": {
+   "en": "Every day at {time} ({zone})",
+   "zh": "每天 {time}（{zone}）"
+  },
+  "detail.schedule.weekly": {
+   "en": "Weekly on {days} at {time} ({zone})",
+   "zh": "每周 {days} {time}（{zone}）"
+  },
+  "detail.schedule.cron": {
+   "en": "Cron {expression} ({zone})",
+   "zh": "Cron {expression}（{zone}）"
+  },
+  "detail.weekday.1": {
+   "en": "Mon",
+   "zh": "周一"
+  },
+  "detail.weekday.2": {
+   "en": "Tue",
+   "zh": "周二"
+  },
+  "detail.weekday.3": {
+   "en": "Wed",
+   "zh": "周三"
+  },
+  "detail.weekday.4": {
+   "en": "Thu",
+   "zh": "周四"
+  },
+  "detail.weekday.5": {
+   "en": "Fri",
+   "zh": "周五"
+  },
+  "detail.weekday.6": {
+   "en": "Sat",
+   "zh": "周六"
+  },
+  "detail.weekday.7": {
+   "en": "Sun",
+   "zh": "周日"
+  },
+  "detail.weekday.join": {
+   "en": ", ",
+   "zh": "、"
+  },
+  "tool.title.inspectProviders": {
+   "en": "Inspect providers",
+   "zh": "检查提供方"
+  },
+  "tool.title.queryRuntime": {
+   "en": "Query runtime",
+   "zh": "查询运行时"
+  },
+  "tool.title.inspectPlugins": {
+   "en": "Inspect plugins",
+   "zh": "检查动态插件"
+  },
+  "tool.title.workflow": {
+   "en": "Run workflow",
+   "zh": "运行工作流"
+  },
+  "tool.title.ralph": {
+   "en": "Run ralph loop",
+   "zh": "运行循环工作流"
+  },
+  "tool.title.readEvent": {
+   "en": "Read event",
+   "zh": "读取事件"
   }
  }
 }

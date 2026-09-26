@@ -1,147 +1,67 @@
 {
- "batch": "agent-team",
- "namespace": "agent-team",
- "total": 35,
+ "batch": "sidebarOffice",
+ "namespace": "sidebarOffice",
+ "total": 15,
  "keys": {
-  "trigger": {
-   "en": "Agent Team",
-   "zh": "Agent Team"
-  },
-  "refresh": {
-   "en": "Refresh Team",
-   "zh": "刷新 Team"
-  },
-  "close": {
-   "en": "Close",
-   "zh": "关闭"
+  "title": {
+   "en": "Office document",
+   "zh": "Office 文档"
   },
   "loading": {
-   "en": "Loading Team…",
-   "zh": "正在加载 Team…"
+   "en": "Rendering document...",
+   "zh": "文档渲染中..."
   },
-  "empty": {
-   "en": "No shared tasks yet",
-   "zh": "还没有共享任务"
+  "retry": {
+   "en": "Retry",
+   "zh": "重试"
   },
-  "roster": {
-   "en": "Members",
-   "zh": "成员"
+  "viewMissingFonts": {
+   "en": "Missing fonts: {count}. Click to view.",
+   "zh": "缺失 {count} 种字体，点击查看"
   },
-  "tasks": {
-   "en": "Shared tasks",
-   "zh": "共享任务"
+  "missingFontsTitle": {
+   "en": "Missing fonts",
+   "zh": "缺失的字体"
   },
-  "model": {
-   "en": "Model",
-   "zh": "模型"
+  "missingFontsDescription": {
+   "en": "These fonts are unavailable for this preview. Text and layout may differ from the original document.",
+   "zh": "本次预览无法使用以下字体，预览中的文字和排版可能与原文档不同。"
   },
-  "open": {
-   "en": "Open teammate conversation",
-   "zh": "打开 teammate 会话"
+  "missingFontsCount": {
+   "en": "Fonts: {count}",
+   "zh": "{count} 种字体"
   },
-  "create": {
-   "en": "New task",
-   "zh": "新建任务"
+  "closeDetails": {
+   "en": "Close font details",
+   "zh": "关闭字体详情"
   },
-  "subject": {
-   "en": "Task subject",
-   "zh": "任务标题"
+  "unavailable": {
+   "en": "Office previews are unavailable. Enable the document preview service on the computer running DeepSeek Harness.",
+   "zh": "Office 预览不可用。请在运行 DeepSeek Harness 的主机上启用文档预览服务。"
   },
-  "description": {
-   "en": "Task description",
-   "zh": "任务描述"
+  "invalid": {
+   "en": "This Office file cannot be previewed. It may be damaged, password protected, or have the wrong extension.",
+   "zh": "无法预览此 Office 文件。文件可能已损坏、受密码保护，或与扩展名不符。"
   },
-  "blockers": {
-   "en": "Blocking task ids (comma separated)",
-   "zh": "依赖任务 id（逗号分隔）"
+  "tooLarge": {
+   "en": "The Office file or converted PDF exceeds the preview size limit. Reduce the file size or adjust the preview configuration.",
+   "zh": "Office 文件或转换后的 PDF 超过预览大小上限，请缩小文件或调整预览配置。"
   },
-  "scopes": {
-   "en": "Write scopes (comma separated)",
-   "zh": "写入范围（逗号分隔）"
+  "failed": {
+   "en": "Office conversion did not produce a usable PDF. Check the file and try again.",
+   "zh": "Office 转换失败，未生成可用的 PDF。请检查该文件后重试。"
   },
-  "save": {
-   "en": "Save",
-   "zh": "保存"
+  "timeout": {
+   "en": "Office conversion timed out. Try again.",
+   "zh": "Office 转换超时，请重试。"
   },
-  "cancel": {
-   "en": "Cancel",
-   "zh": "取消"
+  "busy": {
+   "en": "Office preview is busy. Try again shortly.",
+   "zh": "Office 预览任务较多，请稍后重试。"
   },
-  "edit": {
-   "en": "Edit",
-   "zh": "编辑"
-  },
-  "complete": {
-   "en": "Complete",
-   "zh": "完成"
-  },
-  "reopen": {
-   "en": "Reopen",
-   "zh": "重开"
-  },
-  "delete": {
-   "en": "Delete",
-   "zh": "删除"
-  },
-  "owner": {
-   "en": "Owner",
-   "zh": "Owner"
-  },
-  "unowned": {
-   "en": "Unowned",
-   "zh": "未分配"
-  },
-  "blockedBy": {
-   "en": "Blocked by",
-   "zh": "依赖"
-  },
-  "writeScopes": {
-   "en": "Write scopes",
-   "zh": "写入范围"
-  },
-  "ready": {
-   "en": "Ready",
-   "zh": "可开始"
-  },
-  "blocked": {
-   "en": "Blocked by dependencies",
-   "zh": "被依赖阻塞"
-  },
-  "conflict": {
-   "en": "Task state changed and was reloaded. Review it before retrying.",
-   "zh": "任务状态已变化，已重新加载；请检查后重试。"
-  },
-  "memberStatus.running": {
-   "en": "Running",
-   "zh": "运行中"
-  },
-  "memberStatus.idle": {
-   "en": "Idle",
-   "zh": "空闲"
-  },
-  "memberStatus.inactive": {
-   "en": "Inactive",
-   "zh": "未运行"
-  },
-  "memberStatus.provisioning": {
-   "en": "Provisioning",
-   "zh": "准备中"
-  },
-  "memberStatus.failed": {
-   "en": "Failed",
-   "zh": "失败"
-  },
-  "status.pending": {
-   "en": "Pending",
-   "zh": "待处理"
-  },
-  "status.in_progress": {
-   "en": "In progress",
-   "zh": "进行中"
-  },
-  "status.completed": {
-   "en": "Completed",
-   "zh": "已完成"
+  "changed": {
+   "en": "The file changed while being read. Reopen the preview.",
+   "zh": "文件在读取时已更改，请重新打开预览。"
   }
  }
 }

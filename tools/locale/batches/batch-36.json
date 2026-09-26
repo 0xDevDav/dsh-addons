@@ -1,23 +1,287 @@
 {
- "batch": "documentMarkdown",
- "namespace": "documentMarkdown",
- "total": 4,
+ "batch": "settings.account#1",
+ "namespace": "settings.account",
+ "total": 70,
  "keys": {
-  "viewer.label": {
-   "en": "Markdown",
-   "zh": "Markdown"
+  "modelSignInRequired": {
+   "en": "Model unavailable. Please sign in and try again.",
+   "zh": "当前模型暂不可用，请登录后再试"
   },
-  "code.copy": {
-   "en": "Copy",
-   "zh": "复制"
+  "sessionExpired": {
+   "en": "You have signed out of your account, please log in again.",
+   "zh": "登录信息已失效，请重新登录"
   },
-  "code.copied": {
-   "en": "Copied",
-   "zh": "已复制"
+  "onboardingArtworkLocale": {
+   "en": "en",
+   "zh": "zh"
   },
-  "footnotes": {
-   "en": "Footnotes",
-   "zh": "脚注"
+  "onboardingWelcome": {
+   "en": "Welcome to",
+   "zh": "欢迎使用"
+  },
+  "onboardingBrand": {
+   "en": "DeepSeek Harness",
+   "zh": "DeepSeek Harness"
+  },
+  "onboardingIntroduction": {
+   "en": "DeepSeek Harness works in a local folder and uses tools to read and write files on your computer. It can help you research and organize information, create documents and spreadsheets, write code, troubleshoot issues, and more.",
+   "zh": "DeepSeek Harness 会以本地文件夹作为工作区，通过调用各种工具，读写本机文件，完成搜索整理资料、制作文档表格、编写代码、排查问题等各种任务。"
+  },
+  "onboardingStart": {
+   "en": "Get started",
+   "zh": "开始设置"
+  },
+  "onboardingCredit": {
+   "en": "Add credits",
+   "zh": "准备可用额度"
+  },
+  "onboardingCreditDescription": {
+   "en": "DeepSeek Harness charges credits based on the tokens used by models and tools. Add credits in advance to keep your tasks running without interruption. Your balance is only used while the agent is working on a task.",
+   "zh": "DeepSeek Harness 执行任务时，会根据模型与工具使用的 token 量扣除额度。请提前添加额度，避免任务在执行过程中被迫中断。你的余额只会在 Agent 实际执行任务时消耗。"
+  },
+  "onboardingTopUp": {
+   "en": "Add credits",
+   "zh": "去充值"
+  },
+  "onboardingLater": {
+   "en": "Next",
+   "zh": "下一步"
+  },
+  "onboardingFundedTopUp": {
+   "en": "Add credits",
+   "zh": "去充值"
+  },
+  "onboardingPurposePrefix": {
+   "en": "What would you like",
+   "zh": "你希望"
+  },
+  "onboardingPurposeSuffix": {
+   "en": "to help with?",
+   "zh": "帮你做什么？"
+  },
+  "onboardingPurposeDescription": {
+   "en": "We’ll tailor the interface and tools to fit the way you work.",
+   "zh": "我们会根据你的选择调整界面和工具，以更适合你的工作方式。"
+  },
+  "onboardingOffice": {
+   "en": "Office & creative work",
+   "zh": "办公与创作"
+  },
+  "onboardingOfficeDescription": {
+   "en": "Edit documents, organize data, create presentations, and more",
+   "zh": "编辑文档、整理数据和制作演示文稿等"
+  },
+  "onboardingDevelopment": {
+   "en": "Coding & development",
+   "zh": "代码与开发"
+  },
+  "onboardingDevelopmentDescription": {
+   "en": "Edit code, debug issues, run commands, manage project files, and more",
+   "zh": "修改代码、调试问题、运行命令和管理项目文件等"
+  },
+  "onboardingContinue": {
+   "en": "Continue",
+   "zh": "继续"
+  },
+  "onboardingProcess": {
+   "en": "How much detail would you like to see?",
+   "zh": "你希望看到多少工作过程？"
+  },
+  "onboardingProcessDescription": {
+   "en": "This only changes how progress is shown, not what DeepSeek Harness can do.",
+   "zh": "这只会影响工作过程的展示方式，不会影响 DeepSeek Harness 的工作能力。"
+  },
+  "onboardingCompact": {
+   "en": "Results only",
+   "zh": "聚焦结果"
+  },
+  "onboardingCompactDescription": {
+   "en": "See just the results in a clean, simple interface",
+   "zh": "只看结果，保持界面简洁明了"
+  },
+  "onboardingStandard": {
+   "en": "Key details",
+   "zh": "关键细节"
+  },
+  "onboardingStandardDescription": {
+   "en": "Focus on results, with only the most important steps and actions shown",
+   "zh": "结果优先，仅展示重要步骤和关键操作"
+  },
+  "onboardingDetailed": {
+   "en": "Full details",
+   "zh": "完整过程"
+  },
+  "onboardingDetailedDescription": {
+   "en": "See the full process for easier debugging and troubleshooting",
+   "zh": "查看完整工作过程，方便调试和排查问题"
+  },
+  "onboardingEnter": {
+   "en": "Open app",
+   "zh": "进入应用"
+  },
+  "onboardingBack": {
+   "en": "Back",
+   "zh": "上一步"
+  },
+  "onboardingSkip": {
+   "en": "Skip",
+   "zh": "跳过"
+  },
+  "onboardingSkipTitle": {
+   "en": "Skip setup?",
+   "zh": "跳过设置？"
+  },
+  "onboardingSkipDescription": {
+   "en": "You can change how progress, performance, and usage are displayed, or enable Coding Tools, anytime in Profile → General Settings.",
+   "zh": "你可以随时前往 个人中心 → 通用设置 中调整工作过程、性能与用量展示方式或开启代码工作工具。"
+  },
+  "onboardingKeepSetting": {
+   "en": "Continue setup",
+   "zh": "继续设置"
+  },
+  "onboardingNoCreditTitle": {
+   "en": "Skip adding credits?",
+   "zh": "暂时跳过充值？"
+  },
+  "onboardingNoCreditDescription": {
+   "en": "DeepSeek Harness can’t start new tasks without credits. You can add them later in Profile → Accounts.",
+   "zh": "没有可用额度时，DeepSeek Harness 将无法开始新的任务。你可以稍后前往 个人中心 → 账号与余额 进行充值。"
+  },
+  "onboardingUnderstood": {
+   "en": "Got it",
+   "zh": "我知道了"
+  },
+  "onboardingGoTopUp": {
+   "en": "Add credits",
+   "zh": "前往充值"
+  },
+  "onboardingSaveFailed": {
+   "en": "Could not save settings. Try again.",
+   "zh": "未能保存设置，请重试。"
+  },
+  "onboardingRetry": {
+   "en": "Retry",
+   "zh": "重试"
+  },
+  "onboardingLoading": {
+   "en": "Loading settings…",
+   "zh": "正在加载设置…"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭"
+  },
+  "addApiKey": {
+   "en": "Add API Key",
+   "zh": "添加 API Key"
+  },
+  "retry": {
+   "en": "Sign in again",
+   "zh": "重新登录"
+  },
+  "loginTitle": {
+   "en": "Get started",
+   "zh": "开始使用"
+  },
+  "loginDescription": {
+   "en": "Sign in to your DeepSeek account or add an API Key to get started. Your projects and files are stored locally.",
+   "zh": "登录 DeepSeek 账号，或添加 API Key，即可开始使用。你的项目和文件保存在本地。"
+  },
+  "browserTitle": {
+   "en": "Waiting for sign in",
+   "zh": "等待登录"
+  },
+  "browserPrompt": {
+   "en": "Page did not open automatically? ",
+   "zh": "没有自动打开新页面？"
+  },
+  "copyLink": {
+   "en": "Copy sign-in link",
+   "zh": "复制登录链接"
+  },
+  "copiedLink": {
+   "en": "Link copied",
+   "zh": "链接已复制"
+  },
+  "copyFailed": {
+   "en": "Copy failed",
+   "zh": "复制失败"
+  },
+  "browserDescription": {
+   "en": ", then open it in your browser to finish signing in.",
+   "zh": "，手动打开登录页完成登录。"
+  },
+  "timeoutTitle": {
+   "en": "Sign in timed out",
+   "zh": "登录已超时"
+  },
+  "timeoutDescription": {
+   "en": "Sign in again to continue.",
+   "zh": "请重新登录后继续操作。"
+  },
+  "failureTitle": {
+   "en": "Could not sign in",
+   "zh": "登录失败"
+  },
+  "platformFailed": {
+   "en": "Could not complete the operation. Try again.",
+   "zh": "操作未完成，请重试"
+  },
+  "platformRetry": {
+   "en": "Retry",
+   "zh": "重试"
+  },
+  "loading": {
+   "en": "Loading…",
+   "zh": "加载中…"
+  },
+  "backToHarness": {
+   "en": "Back to DeepSeek Harness",
+   "zh": "返回 DeepSeek Harness"
+  },
+  "settings": {
+   "en": "Settings",
+   "zh": "设置"
+  },
+  "contactUs": {
+   "en": "Feedback",
+   "zh": "意见反馈"
+  },
+  "contactUsSignedOut": {
+   "en": "Contact us",
+   "zh": "联系我们"
+  },
+  "menu": {
+   "en": "Account menu",
+   "zh": "账号菜单"
+  },
+  "nav": {
+   "en": "Account",
+   "zh": "账号与余额"
+  },
+  "signedIn": {
+   "en": "Signed in to DeepSeek",
+   "zh": "已登录 DeepSeek"
+  },
+  "signedOut": {
+   "en": "Not signed in",
+   "zh": "尚未登录"
+  },
+  "signIn": {
+   "en": "Sign in",
+   "zh": "登录"
+  },
+  "signOut": {
+   "en": "Sign out",
+   "zh": "退出登录"
+  },
+  "signOutUnknownDescription": {
+   "en": "Could not check running tasks. Signing out may interrupt tasks using this account. Sign out now?",
+   "zh": "暂时无法确认任务状态。退出登录可能会中断使用此账号的任务，是否继续？"
+  },
+  "signOutDescription": {
+   "en": "Signing out will not delete any data. You can sign in to this account again.",
+   "zh": "退出登录不会丢失任何数据，你仍可以登录此账号。"
   }
  }
 }

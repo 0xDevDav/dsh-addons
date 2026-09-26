@@ -1,5 +1,25 @@
 {
  "conversation": {
+  "shortcut.newline": {
+   "en": "New line",
+   "zh": "换行",
+   "it": "Nuova riga"
+  },
+  "shortcut.complementary": {
+   "en": "Use the complementary Queue / Steer action",
+   "zh": "使用互补的 Queue／Steer 方式",
+   "it": "Usa l'azione complementare Coda / Guida"
+  },
+  "shortcut.slash": {
+   "en": "Open command menu",
+   "zh": "打开命令菜单",
+   "it": "Apri il menu dei comandi"
+  },
+  "shortcut.mention": {
+   "en": "Open reference menu",
+   "zh": "打开引用菜单",
+   "it": "Apri il menu dei riferimenti"
+  },
   "hint.plan": {
    "en": "describe your task to generate plan",
    "zh": "描述你的任务以生成计划",
@@ -109,6 +129,21 @@
    "en": "Files and images cannot be added right now",
    "zh": "当前无法添加文件或图片",
    "it": "Al momento non è possibile aggiungere file o immagini"
+  },
+  "attachment.directoryDesktopOnly": {
+   "en": "Folders can only be added in the desktop app; add individual files in the browser",
+   "zh": "只有桌面端支持添加文件夹，浏览器里请添加单个文件",
+   "it": "Le cartelle si possono aggiungere solo nell'app desktop; nel browser aggiungi i singoli file"
+  },
+  "attachment.pathUnavailable": {
+   "en": "Could not obtain the folder path; drag it in again",
+   "zh": "无法获取文件夹路径，请重新拖入",
+   "it": "Impossibile ottenere il percorso della cartella; trascinala di nuovo"
+  },
+  "attachment.pathUnsupported": {
+   "en": "The path contains characters a reference cannot carry; rename it and try again",
+   "zh": "路径含有无法引用的字符，请改名后再试",
+   "it": "Il percorso contiene caratteri non utilizzabili in un riferimento; rinominalo e riprova"
   },
   "image.pending": {
    "en": "Pending images",
@@ -330,10 +365,1020 @@
    "zh": "{pending} 待处理",
    "it": "{pending} in attesa"
   },
+  "todo.status.completed": {
+   "en": "Completed",
+   "zh": "已完成",
+   "it": "Completata"
+  },
+  "todo.status.inProgress": {
+   "en": "In progress",
+   "zh": "进行中",
+   "it": "In corso"
+  },
+  "todo.status.pending": {
+   "en": "Pending",
+   "zh": "待处理",
+   "it": "In attesa"
+  },
   "todo.rowTitle": {
    "en": "Update to-do list",
    "zh": "更新任务清单",
    "it": "Aggiorna elenco attività"
+  },
+  "tool.title.createGoal": {
+   "en": "Create goal",
+   "zh": "创建目标",
+   "it": "Crea obiettivo"
+  },
+  "tool.title.getGoal": {
+   "en": "View goal",
+   "zh": "查看目标",
+   "it": "Visualizza obiettivo"
+  },
+  "tool.title.updateGoal": {
+   "en": "Update goal",
+   "zh": "更新目标",
+   "it": "Aggiorna obiettivo"
+  },
+  "tool.preparing.content": {
+   "en": "Preparing content {kilobytes}KB",
+   "zh": "正在准备内容 {kilobytes}KB",
+   "it": "Preparazione contenuto {kilobytes}KB"
+  },
+  "tool.title.createSchedule": {
+   "en": "Create reminder",
+   "zh": "创建定时任务",
+   "it": "Crea promemoria"
+  },
+  "tool.title.listSchedules": {
+   "en": "List reminders",
+   "zh": "查看定时任务",
+   "it": "Elenca promemoria"
+  },
+  "tool.title.deleteSchedule": {
+   "en": "Delete reminder",
+   "zh": "删除定时任务",
+   "it": "Elimina promemoria"
+  },
+  "tool.title.updateSchedule": {
+   "en": "Update reminder",
+   "zh": "修改定时任务",
+   "it": "Aggiorna promemoria"
+  },
+  "detail.state": {
+   "en": "Status",
+   "zh": "状态",
+   "it": "Stato"
+  },
+  "detail.todo.completed": {
+   "en": "Completed",
+   "zh": "已完成",
+   "it": "Completata"
+  },
+  "detail.todo.in_progress": {
+   "en": "In progress",
+   "zh": "进行中",
+   "it": "In corso"
+  },
+  "detail.todo.pending": {
+   "en": "Pending",
+   "zh": "待处理",
+   "it": "In attesa"
+  },
+  "detail.todo.empty": {
+   "en": "The to-do list is empty",
+   "zh": "任务清单为空",
+   "it": "L'elenco delle attività è vuoto"
+  },
+  "todo.diff.initial": {
+   "en": "Initial list",
+   "zh": "首次记录",
+   "it": "Elenco iniziale"
+  },
+  "todo.diff.compare": {
+   "en": "Changes since the previous list",
+   "zh": "与上次清单相比",
+   "it": "Modifiche rispetto all'elenco precedente"
+  },
+  "todo.diff.unavailable": {
+   "en": "Previous list unavailable",
+   "zh": "旧清单不可用",
+   "it": "Elenco precedente non disponibile"
+  },
+  "todo.diff.noChanges": {
+   "en": "No changes to the list",
+   "zh": "清单没有变化",
+   "it": "Nessuna modifica all'elenco"
+  },
+  "todo.diff.added": {
+   "en": "{count} added",
+   "zh": "新增 {count}",
+   "it": "{count} aggiunte"
+  },
+  "todo.diff.updated": {
+   "en": "{count} updated",
+   "zh": "更新 {count}",
+   "it": "{count} aggiornate"
+  },
+  "todo.diff.removed": {
+   "en": "{count} removed",
+   "zh": "移除 {count}",
+   "it": "{count} rimosse"
+  },
+  "todo.diff.unchanged": {
+   "en": "{count} unchanged",
+   "zh": "{count} 项未变化",
+   "it": "{count} invariate"
+  },
+  "todo.diff.addedItem": {
+   "en": "Added",
+   "zh": "新增",
+   "it": "Aggiunta"
+  },
+  "todo.diff.updatedItem": {
+   "en": "Status changed",
+   "zh": "状态变化",
+   "it": "Stato cambiato"
+  },
+  "todo.diff.movedItem": {
+   "en": "Reordered",
+   "zh": "顺序调整",
+   "it": "Riordinata"
+  },
+  "todo.diff.removedItem": {
+   "en": "Removed",
+   "zh": "移除",
+   "it": "Rimossa"
+  },
+  "detail.goal.empty": {
+   "en": "No goal",
+   "zh": "没有目标",
+   "it": "Nessun obiettivo"
+  },
+  "detail.goal.active": {
+   "en": "Active",
+   "zh": "进行中",
+   "it": "Attivo"
+  },
+  "detail.goal.disarmed": {
+   "en": "Awaiting continuation",
+   "zh": "等待继续",
+   "it": "In attesa di continuazione"
+  },
+  "detail.goal.paused": {
+   "en": "Paused",
+   "zh": "已暂停",
+   "it": "In pausa"
+  },
+  "detail.goal.blocked": {
+   "en": "Blocked",
+   "zh": "受阻",
+   "it": "Bloccato"
+  },
+  "detail.goal.complete": {
+   "en": "Completed",
+   "zh": "已完成",
+   "it": "Completato"
+  },
+  "detail.goal.rounds": {
+   "en": "Rounds",
+   "zh": "执行轮次",
+   "it": "Cicli"
+  },
+  "detail.goal.reason": {
+   "en": "Blocker",
+   "zh": "受阻原因",
+   "it": "Blocco"
+  },
+  "detail.days": {
+   "en": "{count} d",
+   "zh": "{count} 天",
+   "it": "{count} g"
+  },
+  "detail.hours": {
+   "en": "{count} h",
+   "zh": "{count} 小时",
+   "it": "{count} h"
+  },
+  "detail.minutes": {
+   "en": "{count} min",
+   "zh": "{count} 分钟",
+   "it": "{count} min"
+  },
+  "detail.seconds": {
+   "en": "{count} s",
+   "zh": "{count} 秒",
+   "it": "{count} s"
+  },
+  "detail.schedule.once": {
+   "en": "Once",
+   "zh": "单次",
+   "it": "Una volta"
+  },
+  "detail.schedule.every": {
+   "en": "Every {interval}",
+   "zh": "每 {interval}",
+   "it": "Ogni {interval}"
+  },
+  "detail.schedule.when": {
+   "en": "Scheduled for",
+   "zh": "计划时间",
+   "it": "Programmato per"
+  },
+  "detail.schedule.frequency": {
+   "en": "Repeat",
+   "zh": "重复",
+   "it": "Ripetizione"
+  },
+  "detail.schedule.scheduled": {
+   "en": "Scheduled",
+   "zh": "等待触发",
+   "it": "Programmato"
+  },
+  "detail.schedule.overdue": {
+   "en": "Overdue, awaiting session resume",
+   "zh": "已到期，等待会话恢复",
+   "it": "Scaduto, in attesa della ripresa della sessione"
+  },
+  "detail.schedule.empty": {
+   "en": "No reminders",
+   "zh": "没有定时任务",
+   "it": "Nessun promemoria"
+  },
+  "detail.schedule.deleted": {
+   "en": "Deleted",
+   "zh": "已删除",
+   "it": "Eliminato"
+  },
+  "detail.schedule.count": {
+   "en": "{count} reminders",
+   "zh": "{count} 个定时任务",
+   "it": "{count} promemoria"
+  },
+  "detail.schedule.daily": {
+   "en": "Every day at {time} ({zone})",
+   "zh": "每天 {time}（{zone}）",
+   "it": "Ogni giorno alle {time} ({zone})"
+  },
+  "detail.schedule.weekly": {
+   "en": "Weekly on {days} at {time} ({zone})",
+   "zh": "每周 {days} {time}（{zone}）",
+   "it": "Ogni settimana il {days} alle {time} ({zone})"
+  },
+  "detail.schedule.cron": {
+   "en": "Cron {expression} ({zone})",
+   "zh": "Cron {expression}（{zone}）",
+   "it": "Cron {expression} ({zone})"
+  },
+  "detail.weekday.1": {
+   "en": "Mon",
+   "zh": "周一",
+   "it": "Lun"
+  },
+  "detail.weekday.2": {
+   "en": "Tue",
+   "zh": "周二",
+   "it": "Mar"
+  },
+  "detail.weekday.3": {
+   "en": "Wed",
+   "zh": "周三",
+   "it": "Mer"
+  },
+  "detail.weekday.4": {
+   "en": "Thu",
+   "zh": "周四",
+   "it": "Gio"
+  },
+  "detail.weekday.5": {
+   "en": "Fri",
+   "zh": "周五",
+   "it": "Ven"
+  },
+  "detail.weekday.6": {
+   "en": "Sat",
+   "zh": "周六",
+   "it": "Sab"
+  },
+  "detail.weekday.7": {
+   "en": "Sun",
+   "zh": "周日",
+   "it": "Dom"
+  },
+  "detail.weekday.join": {
+   "en": ", ",
+   "zh": "、",
+   "it": ", "
+  },
+  "tool.title.inspectProviders": {
+   "en": "Inspect providers",
+   "zh": "检查提供方",
+   "it": "Ispeziona provider"
+  },
+  "tool.title.queryRuntime": {
+   "en": "Query runtime",
+   "zh": "查询运行时",
+   "it": "Interroga runtime"
+  },
+  "tool.title.inspectPlugins": {
+   "en": "Inspect plugins",
+   "zh": "检查动态插件",
+   "it": "Ispeziona Plugin"
+  },
+  "tool.title.workflow": {
+   "en": "Run workflow",
+   "zh": "运行工作流",
+   "it": "Esegui Workflow"
+  },
+  "tool.title.ralph": {
+   "en": "Run ralph loop",
+   "zh": "运行循环工作流",
+   "it": "Esegui ciclo ralph"
+  },
+  "tool.title.readEvent": {
+   "en": "Read event",
+   "zh": "读取事件",
+   "it": "Leggi evento"
+  },
+  "tool.title.searchEvents": {
+   "en": "Search events",
+   "zh": "搜索事件",
+   "it": "Cerca eventi"
+  },
+  "tool.title.traceEvent": {
+   "en": "Trace event",
+   "zh": "追踪事件",
+   "it": "Traccia evento"
+  },
+  "tool.title.searchSessions": {
+   "en": "Search sessions",
+   "zh": "搜索会话",
+   "it": "Cerca sessioni"
+  },
+  "tool.title.traceSession": {
+   "en": "Trace session",
+   "zh": "追踪会话",
+   "it": "Traccia sessione"
+  },
+  "tool.title.listModels": {
+   "en": "List models",
+   "zh": "查看可用模型",
+   "it": "Elenca modelli"
+  },
+  "tool.title.subagent": {
+   "en": "Create subagent",
+   "zh": "创建代理",
+   "it": "Crea subagente"
+  },
+  "tool.title.listAgents": {
+   "en": "List subagents",
+   "zh": "查看代理",
+   "it": "Elenca subagenti"
+  },
+  "tool.title.sendMessage": {
+   "en": "Send message",
+   "zh": "发送消息",
+   "it": "Invia messaggio"
+  },
+  "tool.title.interruptAgent": {
+   "en": "Interrupt agent",
+   "zh": "中断代理",
+   "it": "Interrompi agente"
+  },
+  "tool.title.listJobs": {
+   "en": "List background jobs",
+   "zh": "查看后台任务",
+   "it": "Elenca attività in background"
+  },
+  "tool.title.readJob": {
+   "en": "Read job output",
+   "zh": "读取任务输出",
+   "it": "Leggi output dell'attività"
+  },
+  "tool.title.killJob": {
+   "en": "Cancel background job",
+   "zh": "取消后台任务",
+   "it": "Annulla attività in background"
+  },
+  "tool.title.openTerminal": {
+   "en": "Open terminal",
+   "zh": "创建终端",
+   "it": "Apri terminale"
+  },
+  "tool.title.readTerminal": {
+   "en": "Read terminal",
+   "zh": "读取终端",
+   "it": "Leggi terminale"
+  },
+  "tool.title.listTerminals": {
+   "en": "List terminals",
+   "zh": "查看终端",
+   "it": "Elenca terminali"
+  },
+  "tool.title.signalTerminal": {
+   "en": "Signal terminal",
+   "zh": "发送终端信号",
+   "it": "Invia segnale al terminale"
+  },
+  "tool.title.closeTerminal": {
+   "en": "Close terminal",
+   "zh": "关闭终端",
+   "it": "Chiudi terminale"
+  },
+  "tool.title.lsp": {
+   "en": "Query code symbols",
+   "zh": "查询代码符号",
+   "it": "Interroga simboli del codice"
+  },
+  "tool.title.findDefinition": {
+   "en": "Find definition",
+   "zh": "查找定义",
+   "it": "Trova definizione"
+  },
+  "tool.title.findReferences": {
+   "en": "Find references",
+   "zh": "查找引用",
+   "it": "Trova riferimenti"
+  },
+  "tool.title.findImplementation": {
+   "en": "Find implementation",
+   "zh": "查找实现",
+   "it": "Trova implementazione"
+  },
+  "tool.title.hoverSymbol": {
+   "en": "Inspect symbol",
+   "zh": "查看符号信息",
+   "it": "Ispeziona simbolo"
+  },
+  "tool.title.spawnTeammate": {
+   "en": "Create teammate",
+   "zh": "创建队友",
+   "it": "Crea membro del team"
+  },
+  "tool.title.createTeamTask": {
+   "en": "Create team task",
+   "zh": "创建团队任务",
+   "it": "Crea compito del team"
+  },
+  "tool.title.getTeamTask": {
+   "en": "Read team task",
+   "zh": "读取团队任务",
+   "it": "Leggi compito del team"
+  },
+  "tool.title.updateTeamTask": {
+   "en": "Update team task",
+   "zh": "更新团队任务",
+   "it": "Aggiorna compito del team"
+  },
+  "tool.title.listTeamTasks": {
+   "en": "List team tasks",
+   "zh": "查看团队任务",
+   "it": "Elenca compiti del team"
+  },
+  "tool.title.waitAgent": {
+   "en": "Wait for subagent",
+   "zh": "等待子智能体",
+   "it": "Attendi subagente"
+  },
+  "detail.recordedResult": {
+   "en": "Recorded result",
+   "zh": "调用结果",
+   "it": "Risultato registrato"
+  },
+  "detail.empty": {
+   "en": "No results",
+   "zh": "暂无结果",
+   "it": "Nessun risultato"
+  },
+  "detail.none": {
+   "en": "None",
+   "zh": "无",
+   "it": "Nessuno"
+  },
+  "detail.yes": {
+   "en": "Yes",
+   "zh": "是",
+   "it": "Sì"
+  },
+  "detail.no": {
+   "en": "No",
+   "zh": "否",
+   "it": "No"
+  },
+  "detail.moreInInspect": {
+   "en": "{count} more items available in Inspect",
+   "zh": "另有 {count} 项，可在「查看」中读取",
+   "it": "Altri {count} elementi disponibili in Ispeziona"
+  },
+  "detail.status.running": {
+   "en": "Running",
+   "zh": "运行中",
+   "it": "In esecuzione"
+  },
+  "detail.status.idle": {
+   "en": "Idle",
+   "zh": "空闲",
+   "it": "Inattivo"
+  },
+  "detail.status.ready": {
+   "en": "Ready",
+   "zh": "就绪",
+   "it": "Pronto"
+  },
+  "detail.status.inactive": {
+   "en": "Inactive",
+   "zh": "未运行",
+   "it": "Non in esecuzione"
+  },
+  "detail.status.provisioning": {
+   "en": "Provisioning",
+   "zh": "准备中",
+   "it": "In preparazione"
+  },
+  "detail.status.failed": {
+   "en": "Failed",
+   "zh": "失败",
+   "it": "Non riuscito"
+  },
+  "detail.status.completed": {
+   "en": "Completed",
+   "zh": "已完成",
+   "it": "Completato"
+  },
+  "detail.status.deleted": {
+   "en": "Deleted",
+   "zh": "已删除",
+   "it": "Eliminato"
+  },
+  "detail.status.killed": {
+   "en": "Cancelled",
+   "zh": "已取消",
+   "it": "Annullato"
+  },
+  "detail.status.accepted": {
+   "en": "Accepted",
+   "zh": "已接收",
+   "it": "Accettato"
+  },
+  "detail.status.queued": {
+   "en": "Queued",
+   "zh": "已入队",
+   "it": "In coda"
+  },
+  "detail.status.exited": {
+   "en": "Exited",
+   "zh": "已退出",
+   "it": "Terminato"
+  },
+  "detail.field.id": {
+   "en": "ID",
+   "zh": "ID",
+   "it": "ID"
+  },
+  "detail.field.revision": {
+   "en": "Revision",
+   "zh": "版本",
+   "it": "Revisione"
+  },
+  "detail.field.platform": {
+   "en": "Platform",
+   "zh": "平台",
+   "it": "Piattaforma"
+  },
+  "detail.field.provider": {
+   "en": "Provider",
+   "zh": "提供方",
+   "it": "Provider"
+  },
+  "detail.field.model": {
+   "en": "Model",
+   "zh": "模型",
+   "it": "Modello"
+  },
+  "detail.field.role": {
+   "en": "Role",
+   "zh": "角色",
+   "it": "Ruolo"
+  },
+  "detail.field.context": {
+   "en": "Context",
+   "zh": "上下文",
+   "it": "Contesto"
+  },
+  "detail.field.owner": {
+   "en": "Owner",
+   "zh": "负责人",
+   "it": "Proprietario"
+  },
+  "detail.field.ready": {
+   "en": "Ready",
+   "zh": "可开始",
+   "it": "Pronto"
+  },
+  "detail.field.dependencies": {
+   "en": "Dependencies",
+   "zh": "前置任务",
+   "it": "Dipendenze"
+  },
+  "detail.field.writeScopes": {
+   "en": "Write scopes",
+   "zh": "文件范围",
+   "it": "Ambiti di scrittura"
+  },
+  "detail.field.warnings": {
+   "en": "Warnings",
+   "zh": "提示",
+   "it": "Avvisi"
+  },
+  "detail.field.diagnostics": {
+   "en": "Diagnostics",
+   "zh": "诊断",
+   "it": "Diagnostica"
+  },
+  "detail.field.methods": {
+   "en": "Methods",
+   "zh": "方法",
+   "it": "Metodi"
+  },
+  "detail.field.inputSchema": {
+   "en": "Input schema",
+   "zh": "输入 Schema",
+   "it": "Schema di input"
+  },
+  "detail.field.outputSchema": {
+   "en": "Output schema",
+   "zh": "输出 Schema",
+   "it": "Schema di output"
+  },
+  "detail.field.currentPackage": {
+   "en": "Current package",
+   "zh": "当前包",
+   "it": "Pacchetto attuale"
+  },
+  "detail.field.nextPackage": {
+   "en": "Next package",
+   "zh": "待运行的包",
+   "it": "Pacchetto successivo"
+  },
+  "detail.field.latestRun": {
+   "en": "Latest run",
+   "zh": "最近运行",
+   "it": "Ultima esecuzione"
+  },
+  "detail.field.packages": {
+   "en": "Packages",
+   "zh": "版本包",
+   "it": "Pacchetti"
+  },
+  "detail.field.registrations": {
+   "en": "Registrations",
+   "zh": "注册项",
+   "it": "Registrazioni"
+  },
+  "detail.field.props": {
+   "en": "Props",
+   "zh": "属性",
+   "it": "Proprietà"
+  },
+  "detail.field.data": {
+   "en": "Data",
+   "zh": "数据",
+   "it": "Dati"
+  },
+  "detail.field.source": {
+   "en": "Source",
+   "zh": "来源",
+   "it": "Origine"
+  },
+  "detail.field.content": {
+   "en": "Content",
+   "zh": "内容",
+   "it": "Contenuto"
+  },
+  "detail.field.message": {
+   "en": "Message",
+   "zh": "消息",
+   "it": "Messaggio"
+  },
+  "detail.field.messageId": {
+   "en": "Message ID",
+   "zh": "消息 ID",
+   "it": "ID messaggio"
+  },
+  "detail.field.root": {
+   "en": "Root",
+   "zh": "根节点",
+   "it": "Radice"
+  },
+  "detail.field.pid": {
+   "en": "Process ID",
+   "zh": "进程 ID",
+   "it": "ID processo"
+  },
+  "detail.field.type": {
+   "en": "Type",
+   "zh": "类型",
+   "it": "Tipo"
+  },
+  "detail.field.time": {
+   "en": "Time",
+   "zh": "时间",
+   "it": "Ora"
+  },
+  "detail.field.seq": {
+   "en": "Event sequence",
+   "zh": "事件序号",
+   "it": "Sequenza evento"
+  },
+  "detail.field.turn": {
+   "en": "Turn",
+   "zh": "轮次",
+   "it": "Turno"
+  },
+  "detail.field.step": {
+   "en": "Step",
+   "zh": "步骤",
+   "it": "Passo"
+  },
+  "detail.field.callId": {
+   "en": "Call ID",
+   "zh": "调用 ID",
+   "it": "ID chiamata"
+  },
+  "detail.field.agents": {
+   "en": "Agents started",
+   "zh": "启动代理数",
+   "it": "Agenti avviati"
+  },
+  "detail.field.result": {
+   "en": "Result",
+   "zh": "结果",
+   "it": "Risultato"
+  },
+  "detail.field.parent": {
+   "en": "Parent",
+   "zh": "父级",
+   "it": "Padre"
+  },
+  "detail.field.depth": {
+   "en": "Depth",
+   "zh": "层级",
+   "it": "Profondità"
+  },
+  "detail.field.exitCode": {
+   "en": "Exit code",
+   "zh": "退出码",
+   "it": "Codice di uscita"
+  },
+  "detail.field.signal": {
+   "en": "Signal",
+   "zh": "信号",
+   "it": "Segnale"
+  },
+  "detail.field.previousStatus": {
+   "en": "Previous status",
+   "zh": "中断前状态",
+   "it": "Stato precedente"
+  },
+  "detail.field.agent": {
+   "en": "Agent ID",
+   "zh": "代理 ID",
+   "it": "ID agente"
+  },
+  "detail.field.job": {
+   "en": "Job ID",
+   "zh": "任务 ID",
+   "it": "Job ID"
+  },
+  "detail.field.task": {
+   "en": "Task",
+   "zh": "任务内容",
+   "it": "Compito"
+  },
+  "detail.field.processGroup": {
+   "en": "Process group",
+   "zh": "进程组",
+   "it": "Gruppo di processi"
+  },
+  "detail.field.availability": {
+   "en": "Availability",
+   "zh": "可用状态",
+   "it": "Disponibilità"
+  },
+  "detail.field.bestMatch": {
+   "en": "Best match",
+   "zh": "最相关事件",
+   "it": "Corrispondenza migliore"
+  },
+  "detail.field.target": {
+   "en": "Target event",
+   "zh": "目标事件",
+   "it": "Evento di destinazione"
+  },
+  "detail.field.surface": {
+   "en": "Record status",
+   "zh": "记录状态",
+   "it": "Stato del record"
+  },
+  "detail.agents.count": {
+   "en": "{count} agents",
+   "zh": "{count} 个代理",
+   "it": "{count} agenti"
+  },
+  "detail.jobs.count": {
+   "en": "{count} background jobs",
+   "zh": "{count} 个后台任务",
+   "it": "{count} attività in background"
+  },
+  "detail.terminals.count": {
+   "en": "{count} terminals",
+   "zh": "{count} 个终端",
+   "it": "{count} terminali"
+  },
+  "detail.tasks.count": {
+   "en": "{count} team tasks",
+   "zh": "{count} 个团队任务",
+   "it": "{count} compiti del team"
+  },
+  "detail.tasks.nextPage": {
+   "en": "More tasks available; next cursor is {cursor}",
+   "zh": "后面还有任务；下一页位置为 {cursor}",
+   "it": "Altri compiti disponibili; il cursore successivo è {cursor}"
+  },
+  "detail.locations.count": {
+   "en": "{count} locations",
+   "zh": "{count} 个位置",
+   "it": "{count} posizioni"
+  },
+  "detail.location": {
+   "en": "Line {line}, column {column}",
+   "zh": "第 {line} 行，第 {column} 列",
+   "it": "Riga {line}, colonna {column}"
+  },
+  "detail.receipt.delivered": {
+   "en": "Message delivered",
+   "zh": "消息已送达",
+   "it": "Messaggio consegnato"
+  },
+  "detail.receipt.interrupt": {
+   "en": "Interrupt requested",
+   "zh": "已请求中断",
+   "it": "Interruzione richiesta"
+  },
+  "detail.receipt.started": {
+   "en": "Started",
+   "zh": "已启动",
+   "it": "Avviato"
+  },
+  "detail.receipt.cancel": {
+   "en": "Cancellation requested",
+   "zh": "已请求取消",
+   "it": "Annullamento richiesto"
+  },
+  "detail.receipt.alreadyFinished": {
+   "en": "Already finished",
+   "zh": "任务已结束",
+   "it": "Già terminato"
+  },
+  "detail.receipt.signal": {
+   "en": "Signal delivered",
+   "zh": "信号已发送",
+   "it": "Segnale inviato"
+  },
+  "detail.receipt.closed": {
+   "en": "Closed",
+   "zh": "已关闭",
+   "it": "Chiuso"
+  },
+  "detail.receipt.closing": {
+   "en": "Closing",
+   "zh": "关闭中",
+   "it": "Chiusura in corso"
+  },
+  "detail.wait.noProgress": {
+   "en": "No active subagents",
+   "zh": "没有正在运行的子智能体",
+   "it": "Nessun subagente attivo"
+  },
+  "detail.wait.title": {
+   "en": "Subagent activity",
+   "zh": "子智能体状态",
+   "it": "Attività dei subagenti"
+  },
+  "detail.wait.timeout": {
+   "en": "Wait timed out",
+   "zh": "等待超时",
+   "it": "Tempo di attesa scaduto"
+  },
+  "detail.wait.changed": {
+   "en": "Change detected",
+   "zh": "检测到变化",
+   "it": "Modifica rilevata"
+  },
+  "detail.agent.reply": {
+   "en": "Agent response",
+   "zh": "代理回复",
+   "it": "Risposta dell'agente"
+  },
+  "detail.models.title": {
+   "en": "Available models",
+   "zh": "可用模型",
+   "it": "Modelli disponibili"
+  },
+  "detail.output.lines": {
+   "en": "Lines {begin}–{end} of {total}",
+   "zh": "第 {begin}–{end} 行，共 {total} 行",
+   "it": "Righe {begin}–{end} di {total}"
+  },
+  "detail.output.truncated": {
+   "en": "Output truncated",
+   "zh": "输出已截断",
+   "it": "Output troncato"
+  },
+  "detail.providers.count": {
+   "en": "{count} inspect providers",
+   "zh": "{count} 个检查提供方",
+   "it": "{count} provider di ispezione"
+  },
+  "detail.plugins.count": {
+   "en": "{count} dynamic plugins",
+   "zh": "{count} 个动态插件",
+   "it": "{count} Plugin dinamici"
+  },
+  "detail.workflow.script": {
+   "en": "Workflow script",
+   "zh": "工作流脚本",
+   "it": "Script del Workflow"
+  },
+  "detail.ralph.reportedComplete": {
+   "en": "Worker reported completion",
+   "zh": "代理报告完成",
+   "it": "L'esecutore ha segnalato il completamento"
+  },
+  "detail.ralph.reportedBlocker": {
+   "en": "Worker reported a blocker",
+   "zh": "代理报告受阻",
+   "it": "L'esecutore ha segnalato un blocco"
+  },
+  "detail.ralph.limit": {
+   "en": "Round limit reached",
+   "zh": "已达到轮次上限",
+   "it": "Limite di cicli raggiunto"
+  },
+  "detail.report.nextSteps": {
+   "en": "Remaining work",
+   "zh": "待完成事项",
+   "it": "Lavoro rimanente"
+  },
+  "detail.trace.replacedBy": {
+   "en": "Replaced by",
+   "zh": "被替换为",
+   "it": "Sostituito da"
+  },
+  "detail.trace.replacementChain": {
+   "en": "Replacement chain",
+   "zh": "替换链",
+   "it": "Catena di sostituzione"
+  },
+  "detail.trace.replaces": {
+   "en": "Replaced events",
+   "zh": "替换的事件",
+   "it": "Eventi sostituiti"
+  },
+  "detail.trace.sources": {
+   "en": "Source events",
+   "zh": "引用来源",
+   "it": "Eventi di origine"
+  },
+  "detail.trace.derived": {
+   "en": "Derived events",
+   "zh": "派生事件",
+   "it": "Eventi derivati"
+  },
+  "detail.trace.ancestors": {
+   "en": "Ancestor sessions",
+   "zh": "祖先会话",
+   "it": "Sessioni antenate"
+  },
+  "detail.trace.descendants": {
+   "en": "Descendant sessions",
+   "zh": "后代会话",
+   "it": "Sessioni discendenti"
+  },
+  "detail.matches.count": {
+   "en": "{count} matches",
+   "zh": "{count} 条匹配",
+   "it": "{count} corrispondenze"
+  },
+  "detail.matches.capped": {
+   "en": "Result limit reached; narrow the search for more",
+   "zh": "已达到结果上限，可缩小搜索范围",
+   "it": "Limite di risultati raggiunto; restringi la ricerca per vederne altri"
+  },
+  "detail.event.neighbors": {
+   "en": "Surrounding events",
+   "zh": "前后事件",
+   "it": "Eventi circostanti"
   },
   "todo.completed": {
    "en": "{done}/{total} completed",
@@ -405,6 +1450,11 @@
    "zh": "运行中",
    "it": "In esecuzione"
   },
+  "row.preparing": {
+   "en": "Preparing tool call",
+   "zh": "正在准备调用",
+   "it": "Preparazione della chiamata a strumento"
+  },
   "row.failed": {
    "en": "Failed",
    "zh": "失败",
@@ -442,7 +1492,7 @@
   },
   "tool.title.bash": {
    "en": "Bash",
-   "zh": "Bash",
+   "zh": "运行命令",
    "it": "Bash"
   },
   "tool.title.write": {
@@ -466,9 +1516,9 @@
    "it": "Chiamata a strumento"
   },
   "tool.title.inspect": {
-   "en": "Inspect",
-   "zh": "查看",
-   "it": "Ispeziona"
+   "en": "Query Cordis environment",
+   "zh": "查询 Cordis 环境",
+   "it": "Interroga l'ambiente Cordis"
   },
   "tool.title.runCordis": {
    "en": "Run Cordis Plugin",
@@ -487,7 +1537,7 @@
   },
   "tool.title.pwsh": {
    "en": "Pwsh",
-   "zh": "Pwsh",
+   "zh": "运行命令",
    "it": "Pwsh"
   },
   "tool.title.readImage": {
@@ -497,12 +1547,12 @@
   },
   "tool.title.grep": {
    "en": "Grep",
-   "zh": "Grep",
+   "zh": "搜索文件内容",
    "it": "Grep"
   },
   "tool.title.glob": {
    "en": "Glob",
-   "zh": "Glob",
+   "zh": "查找文件",
    "it": "Glob"
   },
   "tool.title.webSearch": {
@@ -529,16 +1579,6 @@
    "en": "Auto review did not authorize this action",
    "zh": "Auto review 未授权此次操作",
    "it": "Auto review non ha autorizzato questa azione"
-  },
-  "diff.files.one": {
-   "en": "{count} file",
-   "zh": "{count} 个文件",
-   "it": "{count} file"
-  },
-  "diff.files.other": {
-   "en": "{count} files",
-   "zh": "{count} 个文件",
-   "it": "{count} file"
   },
   "diff.collapseAria": {
    "en": "Collapse diff",
@@ -802,6 +1842,21 @@
    "zh": "复制成功",
    "it": "Copiato"
   },
+  "codeBlock.title": {
+   "en": "Code block",
+   "zh": "代码块",
+   "it": "Blocco di codice"
+  },
+  "codeBlock.wrap": {
+   "en": "Wrap lines",
+   "zh": "自动换行",
+   "it": "Attiva a capo automatico"
+  },
+  "codeBlock.unwrap": {
+   "en": "Do not wrap lines",
+   "zh": "取消自动换行",
+   "it": "Disattiva a capo automatico"
+  },
   "copy.failed": {
    "en": "Copy failed",
    "zh": "复制失败",
@@ -921,6 +1976,11 @@
    "en": "DSH Local Build",
    "zh": "DSH 本地构建",
    "it": "Build locale DSH"
+  },
+  "workspace.defaultName": {
+   "en": "Default workspace",
+   "zh": "默认工作区",
+   "it": "Area di lavoro predefinita"
   },
   "unknown": {
    "en": "Unknown",

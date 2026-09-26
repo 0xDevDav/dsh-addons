@@ -1,287 +1,95 @@
 {
- "batch": "pluginManager#1",
- "namespace": "pluginManager",
- "total": 70,
+ "batch": "model",
+ "namespace": "model",
+ "total": 22,
  "keys": {
-  "panel": {
-   "en": "Plugins",
-   "zh": "插件"
-  },
-  "title": {
-   "en": "Plugins",
-   "zh": "插件"
-  },
-  "intro": {
-   "en": "Add and manage plugins",
-   "zh": "添加和管理插件"
-  },
-  "loading": {
-   "en": "Reading plugins…",
-   "zh": "正在读取插件…"
-  },
-  "error": {
-   "en": "Plugins are temporarily unavailable.",
-   "zh": "暂时无法读取插件。"
-  },
-  "unavailable": {
-   "en": "This deployment runs without a manageable profile, so plugins cannot be installed or switched here.",
-   "zh": "本部署没有可管理的 profile，无法安装或启停插件。"
-  },
-  "retry": {
-   "en": "Retry",
-   "zh": "重试"
-  },
-  "refresh": {
-   "en": "Refresh",
-   "zh": "刷新"
-  },
-  "empty": {
-   "en": "No plugins are installed yet.",
-   "zh": "还没有安装任何插件。"
-  },
-  "addPlugin": {
-   "en": "Add plugin",
-   "zh": "添加插件"
-  },
-  "restartNotice": {
-   "en": "The change takes effect at the next start",
-   "zh": "更改将在下次启动生效"
-  },
-  "overriddenNotice": {
-   "en": "{name} was saved, but a higher-priority configuration overrides it, so it is not in effect",
-   "zh": "{name} 已保存，但被更高优先级的配置覆盖，当前未生效"
-  },
-  "bundlesTitle": {
-   "en": "Installed",
-   "zh": "已安装"
-  },
-  "officialTitle": {
-   "en": "Official",
-   "zh": "官方"
-  },
-  "builtinAgentTeamTitle": {
-   "en": "Agent Teams",
-   "zh": "智能体团队"
-  },
-  "builtinAgentTeamDescription": {
-   "en": "Enable agent team collaboration and team tools.",
-   "zh": "启用智能体团队协作与团队工具。"
-  },
-  "builtinAgentTeamWebTitle": {
-   "en": "Agent Teams Web UI",
-   "zh": "智能体团队 Web 界面"
-  },
-  "builtinAgentTeamWebDescription": {
-   "en": "View team members, the task board, and teammate sessions in the browser.",
-   "zh": "在浏览器中查看团队成员、任务看板和成员会话。"
-  },
-  "builtinAutoReviewTitle": {
-   "en": "Auto Authorization Review",
-   "zh": "自动授权审查"
-  },
-  "builtinAutoReviewDescription": {
-   "en": "Add an Auto review permission mode that uses the model to assess authorization before each tool call.",
-   "zh": "提供自动审查权限模式，由模型在每次工具调用前判断是否授权。"
-  },
-  "statusProblem": {
-   "en": "Problem",
-   "zh": "异常"
-  },
-  "statusBeta": {
-   "en": "Beta",
-   "zh": "Beta"
-  },
-  "reasonLabel": {
-   "en": "Reason",
-   "zh": "原因"
-  },
-  "versionTag": {
-   "en": "v{version}",
-   "zh": "v{version}"
-  },
-  "noDescription": {
-   "en": "No description.",
-   "zh": "暂无描述。"
-  },
-  "partsLabel": {
-   "en": "Components",
-   "zh": "包含的组件"
-  },
-  "partsEmpty": {
-   "en": "This plugin pack contains no components.",
-   "zh": "这个插件包不包含任何组件。"
-  },
-  "partsCountTotal": {
-   "en": "{count} total",
-   "zh": "共 {count} 个"
-  },
-  "partsCountRunning": {
-   "en": "{count} running",
-   "zh": "{count} 运行中"
-  },
-  "partsCountOff": {
-   "en": "{count} off",
-   "zh": "{count} 已停用"
-  },
-  "partOff": {
-   "en": "Off",
-   "zh": "已关闭"
-  },
-  "partsCountFailed": {
-   "en": "{count} failed",
-   "zh": "{count} 异常"
-  },
-  "partsFilter": {
-   "en": "Filter components",
-   "zh": "筛选组件"
-  },
-  "partsFilterEmpty": {
-   "en": "No component matches.",
-   "zh": "没有匹配的组件。"
-  },
-  "partToggle": {
-   "en": "Enable component {name}",
-   "zh": "启用组件 {name}"
-  },
-  "rowPhasePending": {
-   "en": "Waiting for dependencies",
-   "zh": "等待依赖"
-  },
-  "rowPhaseLoading": {
-   "en": "Loading",
-   "zh": "加载中"
-  },
-  "rowPhaseActive": {
-   "en": "Running",
-   "zh": "运行中"
-  },
-  "rowPhaseFailed": {
-   "en": "Problem",
-   "zh": "异常"
-  },
-  "rowPhaseUnloading": {
-   "en": "Unloading",
-   "zh": "卸载中"
-  },
-  "enableToggle": {
-   "en": "Enable {name}",
-   "zh": "启用 {name}"
-  },
-  "openDetail": {
-   "en": "View {name}",
-   "zh": "查看 {name}"
-  },
-  "backToList": {
-   "en": "Back to plugins",
-   "zh": "返回插件列表"
-  },
-  "crumbRoot": {
-   "en": "Plugins",
-   "zh": "插件列表"
-  },
-  "backToPackage": {
-   "en": "Back to {name}",
-   "zh": "返回 {name}"
-  },
-  "configureRow": {
-   "en": "Configure {name}",
-   "zh": "配置 {name}"
-  },
-  "rowStateIdle": {
-   "en": "Not running",
-   "zh": "未运行"
-  },
-  "uninstall": {
-   "en": "Uninstall",
-   "zh": "卸载"
-  },
-  "uninstallLabel": {
-   "en": "Uninstall {name}",
-   "zh": "卸载 {name}"
-  },
-  "installTitle": {
-   "en": "Add plugin",
-   "zh": "添加插件"
-  },
-  "installDescription": {
-   "en": "Enter the plugin's package name, GitHub repository address, or local directory path.",
-   "zh": "输入插件的包名、GitHub 仓库地址或本地目录路径。"
-  },
-  "installSpecLabel": {
-   "en": "Package name or address",
-   "zh": "包名或地址"
-  },
-  "installSpecPlaceholder": {
-   "en": "for example @deepseek-ai/dsh-experimental-auto-review",
-   "zh": "例如 @deepseek-ai/dsh-experimental-auto-review"
-  },
-  "installGuideToggle": {
-   "en": "Not sure what to enter?",
-   "zh": "不知道该填什么？"
-  },
-  "installGuideHide": {
-   "en": "Hide the guide",
-   "zh": "收起引导"
-  },
-  "installGuideIntro": {
-   "en": "Copy any one of these from the plugin's README or release page.",
-   "zh": "从插件的 README 或发布页面复制以下任意一项。"
-  },
-  "installGuideIdNote": {
-   "en": "The package name is the npm package name, usually dsh-xxx or @author/plugin; the display name is not one.",
-   "zh": "包名即 npm 包名，常见形式为 dsh-xxx 或 @作者/插件名；插件的显示名称不是包名。"
-  },
-  "installGuideIdTitle": {
-   "en": "Package name",
-   "zh": "包名"
-  },
-  "installGuideIdExample": {
-   "en": "@deepseek-ai/dsh-experimental-auto-review",
-   "zh": "@deepseek-ai/dsh-experimental-auto-review"
-  },
-  "installGuideIdHint": {
-   "en": "The part after dsh plugin add or pnpm add in the README's install command.",
-   "zh": "README 安装命令中 dsh plugin add 或 pnpm add 之后的部分。"
-  },
-  "installGuideGitTitle": {
-   "en": "GitHub repository address",
-   "zh": "GitHub 仓库地址"
-  },
-  "installGuideGitExample": {
-   "en": "https://github.com/author/dsh-plugin",
-   "zh": "https://github.com/author/dsh-plugin"
-  },
-  "installGuideGitHint": {
-   "en": "The address of the plugin's open-source repository on GitHub; other Git hosts work too.",
-   "zh": "插件在 GitHub 上的开源仓库地址，也支持其他 Git 仓库。"
-  },
-  "installGuidePathTitle": {
-   "en": "Local plugin directory",
-   "zh": "本地插件目录"
-  },
-  "installGuidePathExample": {
-   "en": "/Users/name/my-plugin",
-   "zh": "/Users/name/my-plugin"
-  },
-  "installGuidePathHint": {
-   "en": "The absolute path of a plugin directory on this machine, developed here or downloaded.",
-   "zh": "本机上插件目录的绝对路径，适用于自行开发或已下载的插件。"
-  },
-  "installGuideExampleLabel": {
-   "en": "Example: ",
-   "zh": "示例："
-  },
-  "installGuideFill": {
-   "en": "Use example",
-   "zh": "填入示例"
-  },
-  "installGuideFillAria": {
-   "en": "Use the example {example}",
-   "zh": "填入示例 {example}"
-  },
-  "installGuideSafety": {
-   "en": "Install only plugins you trust: they run with your permissions and can damage DeepSeek Harness or leak your data.",
-   "zh": "请确认插件来源可信。插件在本机以你的权限运行，来源不明的插件可能损坏 DeepSeek Harness，或读取和泄露你的数据。"
+  "provider.account": {
+   "en": "DeepSeek Account",
+   "zh": "DeepSeek 账号"
+  },
+  "command.label": {
+   "en": "Model",
+   "zh": "模型"
+  },
+  "command.description": {
+   "en": "Select the model for this conversation",
+   "zh": "选择本会话使用的模型"
+  },
+  "option.loadError": {
+   "en": "Catalog failed to load: {message}",
+   "zh": "目录加载失败：{message}"
+  },
+  "option.deepseekV4Flash.description": {
+   "en": "Fast, efficient, and economical; suited to focused, routine, or parallel tasks.",
+   "zh": "快速、高效且经济；适合目标明确、常规或并行任务。"
+  },
+  "option.deepseekV4Pro.description": {
+   "en": "Stronger agentic coding, knowledge, and difficult reasoning; suited to complex or quality-critical tasks at higher cost.",
+   "zh": "更强的自主编码、知识与复杂推理能力；适合复杂或质量优先的任务，但成本更高。"
+  },
+  "trigger.fallback": {
+   "en": "Select model",
+   "zh": "请选择模型"
+  },
+  "trigger.loading": {
+   "en": "Loading models…",
+   "zh": "正在加载模型…"
+  },
+  "trigger.selectAria": {
+   "en": "Select model",
+   "zh": "请选择模型"
+  },
+  "trigger.aria": {
+   "en": "Select model, current {model}",
+   "zh": "选择模型，当前 {model}"
+  },
+  "trigger.ariaEffort": {
+   "en": "Select model, current {model}, reasoning effort {effort}",
+   "zh": "选择模型，当前 {model}，推理等级 {effort}"
+  },
+  "menu.aria": {
+   "en": "Model and reasoning effort",
+   "zh": "模型与推理等级"
+  },
+  "menu.model": {
+   "en": "Model",
+   "zh": "模型"
+  },
+  "menu.effort": {
+   "en": "Effort",
+   "zh": "推理等级"
+  },
+  "effort.providerDefault": {
+   "en": "Default",
+   "zh": "Default"
+  },
+  "status.loading": {
+   "en": "Refreshing model list…",
+   "zh": "正在刷新模型列表…"
+  },
+  "error.action": {
+   "en": "Model operation failed: {message}",
+   "zh": "模型操作失败：{message}"
+  },
+  "error.sessionInUse": {
+   "en": "This session is already in use, possibly by another running DSH instance (such as dsh web or the desktop app). Quit other running DSH instances and try again.",
+   "zh": "当前会话已被占用，可能是其他正在运行的 DSH 导致的（如其他 dsh web、桌面端），请退出其他正在运行的 DSH 后重试。"
+  },
+  "action.reload": {
+   "en": "Reload",
+   "zh": "重新加载"
+  },
+  "warning.groupLoad": {
+   "en": "{name} failed to load: {message}",
+   "zh": "{name} 加载失败：{message}"
+  },
+  "empty.models": {
+   "en": "No models available.",
+   "zh": "没有可用的模型。"
+  },
+  "empty.efforts": {
+   "en": "This model provides no reasoning effort levels.",
+   "zh": "当前模型未提供推理等级。"
   }
  }
 }

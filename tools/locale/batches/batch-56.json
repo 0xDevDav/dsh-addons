@@ -1,43 +1,67 @@
 {
- "batch": "session-log-download",
- "namespace": "session-log-download",
- "total": 9,
+ "batch": "sidebarExcel",
+ "namespace": "sidebarExcel",
+ "total": 15,
  "keys": {
-  "header.more": {
-   "en": "More actions",
-   "zh": "更多操作"
+  "title": {
+   "en": "Spreadsheet",
+   "zh": "表格"
   },
-  "menu.download": {
-   "en": "Download session log",
-   "zh": "下载 Session 日志"
+  "language": {
+   "en": "en",
+   "zh": "zh"
   },
-  "dialog.preparingTitle": {
-   "en": "Exporting Session",
-   "zh": "正在导出 Session"
+  "loading": {
+   "en": "Rendering document...",
+   "zh": "文档渲染中..."
   },
-  "dialog.preparingDescription": {
-   "en": "Preparing a ZIP containing this Session, its sub-Sessions, and attachments.",
-   "zh": "正在准备包含当前 Session、子 Session 和附件的 ZIP 文件。"
+  "invalid": {
+   "en": "This spreadsheet could not be opened. Check its format, contents, or password protection.",
+   "zh": "无法打开此表格。请检查文件格式、内容或密码保护。"
   },
-  "dialog.successTitle": {
-   "en": "Session download started",
-   "zh": "Session 导出已开始下载"
+  "tooLarge": {
+   "en": "This workbook exceeds the preview size limit.",
+   "zh": "此表格超过预览大小限制。"
   },
-  "dialog.successDescription": {
-   "en": "The browser is downloading the Session ZIP.",
-   "zh": "浏览器正在下载 Session ZIP 文件。"
+  "timeout": {
+   "en": "Opening this workbook timed out. Try a smaller file.",
+   "zh": "打开表格超时。请缩小文件后重试。"
   },
-  "dialog.errorTitle": {
-   "en": "Session export failed",
-   "zh": "Session 导出失败"
+  "encoding": {
+   "en": "This text encoding could not be read. Save the file as UTF-8 or UTF-16 with a BOM and retry.",
+   "zh": "无法识别此文本文件的编码。请另存为 UTF-8 或带 BOM 的 UTF-16 后重试。"
   },
-  "dialog.close": {
-   "en": "Close",
-   "zh": "关闭"
+  "formulaWarning": {
+   "en": "This workbook contains formulas. Displayed results may be missing or inaccurate.",
+   "zh": "此工作簿包含公式，显示结果可能缺失或不准确。"
   },
-  "dialog.commandFailed": {
-   "en": "Could not start the Session export.",
-   "zh": "无法启动 Session 导出。"
+  "unsupportedNotice": {
+   "en": "This preview does not support {features} in this workbook. Open it in a system application for the full experience.",
+   "zh": "当前预览不支持此工作簿中的{features}。请使用系统应用打开，以获得完整体验。"
+  },
+  "charts": {
+   "en": "charts",
+   "zh": "图表"
+  },
+  "images": {
+   "en": "images",
+   "zh": "图片"
+  },
+  "shapes": {
+   "en": "shapes",
+   "zh": "形状"
+  },
+  "conditionalFormatting": {
+   "en": "conditional formatting",
+   "zh": "条件格式"
+  },
+  "featureSeparator": {
+   "en": ", ",
+   "zh": "、"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试"
   }
  }
 }

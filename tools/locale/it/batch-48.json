@@ -1,16 +1,12 @@
 {
- "batch": "settings.theme",
- "namespace": "settings.theme",
- "total": 9,
+ "batch": "sidebar",
+ "namespace": "sidebar",
+ "total": 5,
  "keys": {
-  "appearance.title": "Aspetto",
-  "appearance.light": "Chiaro",
-  "appearance.dark": "Scuro",
-  "appearance.system": "Sistema",
-  "fontSize.title": "Dimensione carattere",
-  "fontSize.description": "Influisce solo sul contenuto della conversazione",
-  "fontSize.unit": "px",
-  "fontSize.increase": "Aumenta dimensione carattere",
-  "fontSize.decrease": "Riduci dimensione carattere"
+  "session.new": "Nuova sessione",
+  "session.new.label": "Nuova sessione",
+  "toggle.open": "Apri barra laterale",
+  "toggle.collapse": "Comprimi barra laterale",
+  "panels.label": "Pannelli globali"
  }
 }

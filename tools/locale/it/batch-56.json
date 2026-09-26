@@ -1,16 +1,22 @@
 {
- "batch": "session-log-download",
- "namespace": "session-log-download",
- "total": 9,
+ "batch": "sidebarExcel",
+ "namespace": "sidebarExcel",
+ "total": 15,
  "keys": {
-  "header.more": "Altre azioni",
-  "menu.download": "Scarica il log della sessione",
-  "dialog.preparingTitle": "Esportazione della sessione",
-  "dialog.preparingDescription": "Preparazione di un ZIP contenente questa sessione, le sue sotto-sessioni e gli allegati.",
-  "dialog.successTitle": "Download della sessione avviato",
-  "dialog.successDescription": "Il browser sta scaricando lo ZIP della sessione.",
-  "dialog.errorTitle": "Esportazione della sessione non riuscita",
-  "dialog.close": "Chiudi",
-  "dialog.commandFailed": "Impossibile avviare l'esportazione della sessione."
+  "title": "Foglio di calcolo",
+  "language": "en",
+  "loading": "Rendering del documento…",
+  "invalid": "Impossibile aprire questo foglio di calcolo. Controlla formato, contenuto o protezione con password.",
+  "tooLarge": "Questa cartella di lavoro supera il limite di dimensione per l'anteprima.",
+  "timeout": "Timeout nell'apertura della cartella di lavoro. Prova con un file più piccolo.",
+  "encoding": "Impossibile leggere la codifica di questo testo. Salva il file come UTF-8 o UTF-16 con BOM e riprova.",
+  "formulaWarning": "Questa cartella di lavoro contiene formule. I risultati mostrati potrebbero mancare o essere imprecisi.",
+  "unsupportedNotice": "Questa anteprima non supporta {features} presenti in questa cartella di lavoro. Aprila in un'applicazione di sistema per la visualizzazione completa.",
+  "charts": "grafici",
+  "images": "immagini",
+  "shapes": "forme",
+  "conditionalFormatting": "formattazione condizionale",
+  "featureSeparator": ", ",
+  "retry": "Riprova"
  }
 }

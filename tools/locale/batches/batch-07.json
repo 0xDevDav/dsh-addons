@@ -1,119 +1,191 @@
 {
- "batch": "command",
- "namespace": "command",
- "total": 28,
+ "batch": "chat#3",
+ "namespace": "chat",
+ "total": 46,
  "keys": {
-  "section.add": {
-   "en": "Add",
-   "zh": "添加"
+  "message.turnProcess.messages.other": {
+   "en": "{count} messages",
+   "zh": "{count} 条消息"
   },
-  "section.commands": {
-   "en": "Commands",
+  "message.turnProcess.subagents.one": {
+   "en": "{count} subagent",
+   "zh": "{count} 个 subagent"
+  },
+  "message.turnProcess.subagents.other": {
+   "en": "{count} subagents",
+   "zh": "{count} 个 subagent"
+  },
+  "message.turnProcess.thoughtForAWhile": {
+   "en": "Thought for a while",
+   "zh": "已思考"
+  },
+  "message.turnProcess.separator": {
+   "en": " · ",
+   "zh": " · "
+  },
+  "message.stopped": {
+   "en": "Stopped",
+   "zh": "已停止"
+  },
+  "message.branch": {
+   "en": "Branch into a new conversation",
+   "zh": "在新对话中分支"
+  },
+  "message.branchUnavailable": {
+   "en": "Available only on the last message of a completed turn",
+   "zh": "仅可从已完成轮次的最后一条消息分支"
+  },
+  "message.retry.active": {
+   "en": "Retrying model request",
+   "zh": "正在重试模型请求"
+  },
+  "message.retry.cancelled": {
+   "en": "Model request retry cancelled",
+   "zh": "模型请求重试已取消"
+  },
+  "message.retry.started": {
+   "en": "Retried model request",
+   "zh": "已重试模型请求"
+  },
+  "message.retry.scheduled": {
+   "en": "Waiting to retry model request",
+   "zh": "等待重试模型请求"
+  },
+  "message.retry.status": {
+   "en": "{label} ({retry}/{maximum}) · {seconds}s",
+   "zh": "{label}（{retry}/{maximum}） · {seconds}s"
+  },
+  "message.retry.delay": {
+   "en": "Retry delay: ",
+   "zh": "重试延迟："
+  },
+  "message.retry.failure": {
+   "en": "Failure reason: ",
+   "zh": "失败原因："
+  },
+  "message.failure.auth": {
+   "en": "API key is invalid",
+   "zh": "API 密钥无效"
+  },
+  "message.accountStopped": {
+   "en": "Task stopped",
+   "zh": "任务已停止"
+  },
+  "message.failure.accountSignedOut": {
+   "en": "Stopped because you signed out of DeepSeek.",
+   "zh": "任务已因退出 DeepSeek 登录而停止。"
+  },
+  "message.failure.accountSignInRequired": {
+   "en": "Sign in to DeepSeek and ensure the request destination supports account authentication.",
+   "zh": "请先登录 DeepSeek，并确认请求地址支持账号认证。"
+  },
+  "message.failure.quota": {
+   "en": "Request quota exhausted.",
+   "zh": "当前请求的额度已用尽"
+  },
+  "message.turnError": {
+   "en": "This turn failed",
+   "zh": "本轮运行失败"
+  },
+  "message.maxTokens": {
+   "en": "Output token limit reached",
+   "zh": "已达到输出 token 上限"
+  },
+  "message.maxTokens.hint": {
+   "en": "The reply was cut off; earlier output is preserved in the conversation. Send \"continue\" to let the model resume.",
+   "zh": "回答被截断，已有输出保留在对话中。发送“继续”可让模型接着输出。"
+  },
+  "message.tokensPerSecond": {
+   "en": "{tps} tok/s",
+   "zh": "{tps} tok/s"
+  },
+  "message.turnUsage.title": {
+   "en": "Turn usage",
+   "zh": "本轮用量"
+  },
+  "message.turnUsage.consumed": {
+   "en": "Usage {total}",
+   "zh": "用量 {total}"
+  },
+  "message.turnUsage.model": {
+   "en": "Provider / model",
+   "zh": "提供方 / 模型"
+  },
+  "message.turnUsage.cacheHit": {
+   "en": "Cache hit",
+   "zh": "缓存命中"
+  },
+  "message.turnUsage.input": {
+   "en": "Uncached input",
+   "zh": "未缓存输入"
+  },
+  "message.turnUsage.cacheRead": {
+   "en": "Cached input",
+   "zh": "缓存读取"
+  },
+  "message.turnUsage.cacheWrite": {
+   "en": "Cache write",
+   "zh": "缓存写入"
+  },
+  "message.turnUsage.output": {
+   "en": "Output",
+   "zh": "输出"
+  },
+  "message.turnUsage.reasoning": {
+   "en": " ({tokens} reasoning)",
+   "zh": "（其中推理 {tokens}）"
+  },
+  "message.turnUsage.count": {
+   "en": "{count} tok",
+   "zh": "{count} tok"
+  },
+  "duration.seconds": {
+   "en": "{seconds}s",
+   "zh": "{seconds}秒"
+  },
+  "duration.minutes": {
+   "en": "{minutes}m {seconds}s",
+   "zh": "{minutes}分{seconds}秒"
+  },
+  "duration.hours": {
+   "en": "{hours}h {minutes}m {seconds}s",
+   "zh": "{hours}小时{minutes}分{seconds}秒"
+  },
+  "command.running": {
+   "en": "Running…",
+   "zh": "执行中…"
+  },
+  "command.failed": {
+   "en": "Command failed",
+   "zh": "指令失败"
+  },
+  "command.done": {
+   "en": "Completed",
+   "zh": "已完成"
+  },
+  "command.title": {
+   "en": "Command",
    "zh": "指令"
   },
-  "label.goal": {
-   "en": "Goal",
-   "zh": "目标"
+  "row.running": {
+   "en": "Running",
+   "zh": "运行中"
   },
-  "label.plan": {
-   "en": "Plan",
-   "zh": "计划"
+  "row.failed": {
+   "en": "Failed",
+   "zh": "失败"
   },
-  "label.feedback": {
-   "en": "Feedback",
-   "zh": "反馈"
+  "json.truncated": {
+   "en": "… truncated, {total} characters total",
+   "zh": "… 已截断，共 {total} 字符"
   },
-  "label.compact": {
-   "en": "Compact",
-   "zh": "压缩"
+  "clock.md": {
+   "en": "{m}/{d}",
+   "zh": "{m}月{d}日"
   },
-  "label.permission": {
-   "en": "Permission",
-   "zh": "权限"
-  },
-  "label.export": {
-   "en": "Export",
-   "zh": "下载日志"
-  },
-  "description.goal": {
-   "en": "Set or view the goal for a long-running task",
-   "zh": "设置或查看长期任务目标"
-  },
-  "description.plan": {
-   "en": "Enter or leave plan mode",
-   "zh": "进入或退出计划模式"
-  },
-  "description.feedback": {
-   "en": "Record feedback about this session",
-   "zh": "发送关于当前会话的反馈"
-  },
-  "description.compact": {
-   "en": "Compact older conversation history",
-   "zh": "压缩以上对话内容"
-  },
-  "description.permission": {
-   "en": "Switch the permission preset (sandbox mode + approval policy)",
-   "zh": "切换权限预设（沙箱模式与审批策略）"
-  },
-  "description.export": {
-   "en": "Download this Session log as a ZIP archive",
-   "zh": "将当前会话内容导出为 ZIP"
-  },
-  "token.goal": {
-   "en": "goal",
-   "zh": "目标"
-  },
-  "token.plan": {
-   "en": "plan",
-   "zh": "计划"
-  },
-  "token.feedback": {
-   "en": "feedback",
-   "zh": "反馈"
-  },
-  "token.compact": {
-   "en": "compact",
-   "zh": "压缩"
-  },
-  "token.permission": {
-   "en": "permission",
-   "zh": "权限"
-  },
-  "token.export": {
-   "en": "export",
-   "zh": "导出"
-  },
-  "search.placeholder": {
-   "en": "Search…",
-   "zh": "搜索…"
-  },
-  "search.aria": {
-   "en": "Filter options",
-   "zh": "筛选选项"
-  },
-  "status.loading": {
-   "en": "Loading options…",
-   "zh": "正在加载选项…"
-  },
-  "status.applying": {
-   "en": "Applying…",
-   "zh": "正在应用…"
-  },
-  "status.empty": {
-   "en": "No options",
-   "zh": "无选项"
-  },
-  "overlay.aria": {
-   "en": "/{command} options",
-   "zh": "/{command} 选项"
-  },
-  "listbox.aria": {
-   "en": "/{command} matches",
-   "zh": "/{command} 匹配项"
-  },
-  "notice.attachmentsUnsupported": {
-   "en": "/{command} does not accept attachments; remove them first",
-   "zh": "/{command} 不接受附件，请先移除附件"
+  "clock.ymd": {
+   "en": "{y}-{m}-{d}",
+   "zh": "{y}年{m}月{d}日"
   }
  }
 }

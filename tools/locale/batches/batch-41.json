@@ -1,75 +1,179 @@
 {
- "batch": "sidebarOffice",
- "namespace": "sidebarOffice",
- "total": 17,
+ "batch": "settings.models#2",
+ "namespace": "settings.models",
+ "total": 43,
  "keys": {
-  "title": {
-   "en": "Office document",
-   "zh": "Office 文档"
+  "advancedHint": {
+   "en": "Other fields live in cordis.patch.yml; edit that section directly.",
+   "zh": "其余字段在 cordis.patch.yml 中，请直接编辑对应段。"
   },
-  "loading": {
-   "en": "Reading…",
-   "zh": "正在读取…"
+  "modelCapacityInvalid": {
+   "en": "A capacity must be a number, optionally suffixed K or M.",
+   "zh": "容量需为数字，可加 K 或 M 后缀。"
   },
-  "retry": {
-   "en": "Retry",
-   "zh": "重试"
+  "modelDuplicate": {
+   "en": "Each model ID may appear once.",
+   "zh": "每个模型 ID 只能出现一次。"
   },
-  "missingFonts": {
-   "en": "Fonts used in this document are unavailable: {fonts}. Text and layout may differ.",
-   "zh": "缺少文档使用的字体：{fonts}，可能影响文字和排版。"
+  "fetchModels": {
+   "en": "Fetch available models",
+   "zh": "获取可用模型"
   },
-  "showMore": {
-   "en": "Show more",
-   "zh": "显示更多"
+  "fetching": {
+   "en": "Asking the provider…",
+   "zh": "正在询问提供商…"
   },
-  "dismissNotice": {
-   "en": "Dismiss font notice",
-   "zh": "关闭字体提示"
+  "fetchNeedsBaseUrl": {
+   "en": "Enter the base URL first, then fetch.",
+   "zh": "请先填写 API 地址，再获取。"
   },
-  "missingFontsTitle": {
-   "en": "Missing fonts",
-   "zh": "缺失的字体"
+  "fetchEmpty": {
+   "en": "The provider listed no models. Add them by hand.",
+   "zh": "该提供商没有列出任何模型，请手动添加。"
   },
-  "missingFontsDescription": {
-   "en": "These fonts are unavailable for this preview. Text and layout may differ from the original document.",
-   "zh": "本次预览无法使用以下字体，预览中的文字和排版可能与原文档不同。"
+  "fetchTitle": {
+   "en": "Choose models to add",
+   "zh": "选择要添加的模型"
   },
-  "missingFontsCount": {
-   "en": "Fonts: {count}",
-   "zh": "{count} 种字体"
+  "fetchDescription": {
+   "en": "These are the models this provider has available. Choose the ones to add.",
+   "zh": "以下是模型提供商的可用模型，勾选要添加的模型。"
   },
-  "closeDetails": {
-   "en": "Close font details",
-   "zh": "关闭字体详情"
+  "fetchSearch": {
+   "en": "Search models",
+   "zh": "搜索模型"
   },
-  "unavailable": {
-   "en": "Office previews are unavailable. Enable the document preview service on the computer running DeepSeek Harness.",
-   "zh": "Office 预览不可用。请在运行 DeepSeek Harness 的主机上启用文档预览服务。"
+  "fetchNoMatches": {
+   "en": "No matching models.",
+   "zh": "没有匹配的模型。"
   },
-  "invalid": {
-   "en": "This Office file cannot be previewed. It may be damaged, password protected, or have the wrong extension.",
-   "zh": "无法预览此 Office 文件。文件可能已损坏、受密码保护，或与扩展名不符。"
+  "fetchSelectAll": {
+   "en": "Select all",
+   "zh": "全选"
   },
-  "tooLarge": {
-   "en": "The Office file or converted PDF exceeds the preview size limit. Reduce the file size or adjust the preview configuration.",
-   "zh": "Office 文件或转换后的 PDF 超过预览大小上限，请缩小文件或调整预览配置。"
+  "fetchDeselectAll": {
+   "en": "Deselect all",
+   "zh": "取消全选"
   },
-  "failed": {
-   "en": "Office conversion did not produce a usable PDF. Check the file and try again.",
-   "zh": "Office 转换失败，未生成可用的 PDF。请检查该文件后重试。"
+  "fetchAdopt": {
+   "en": "Add selected",
+   "zh": "添加所选"
   },
-  "timeout": {
-   "en": "Office conversion timed out. Try again.",
-   "zh": "Office 转换超时，请重试。"
+  "customTag": {
+   "en": "Custom",
+   "zh": "自定义"
   },
-  "busy": {
-   "en": "Office preview is busy. Try again shortly.",
-   "zh": "Office 预览任务较多，请稍后重试。"
+  "customRoute": {
+   "en": "Provider ID",
+   "zh": "Provider ID"
   },
-  "changed": {
-   "en": "The file changed while being read. Reopen the preview.",
-   "zh": "文件在读取时已更改，请重新打开预览。"
+  "customRouteHint": {
+   "en": "Lowercase identifier, starting with a letter, that uniquely names this provider in requests and as its credential name.",
+   "zh": "以小写字母开头的标识，在请求中唯一标识该提供商，并用于派生凭据名。"
+  },
+  "customRouteInvalid": {
+   "en": "Start with a lowercase letter; then lowercase letters, digits, and dashes.",
+   "zh": "需以小写字母开头，之后可用小写字母、数字和短横线。"
+  },
+  "customRouteTaken": {
+   "en": "A provider already uses this ID.",
+   "zh": "已有提供商使用了这个 ID。"
+  },
+  "customDisplayName": {
+   "en": "Display name",
+   "zh": "显示名称"
+  },
+  "customApi": {
+   "en": "API protocol",
+   "zh": "API 协议"
+  },
+  "customApiUnset": {
+   "en": "Not selected",
+   "zh": "未选择"
+  },
+  "protocolOpenAiCompletions": {
+   "en": "OpenAI Chat Completions",
+   "zh": "OpenAI Chat Completions"
+  },
+  "protocolOpenAiResponses": {
+   "en": "OpenAI Responses",
+   "zh": "OpenAI Responses"
+  },
+  "protocolAnthropicMessages": {
+   "en": "Anthropic Messages",
+   "zh": "Anthropic Messages"
+  },
+  "customNeedsBaseUrl": {
+   "en": "A custom provider needs a base URL.",
+   "zh": "自定义模型 API 需要填写 API 地址。"
+  },
+  "customBaseUrlInvalid": {
+   "en": "Enter a valid HTTP or HTTPS URL.",
+   "zh": "请输入有效的 HTTP 或 HTTPS 地址。"
+  },
+  "customNeedsModels": {
+   "en": "A custom provider needs at least one model.",
+   "zh": "自定义模型 API 至少需要一个模型。"
+  },
+  "customBaseUrlPlaceholder": {
+   "en": "https://gateway.example/v1",
+   "zh": "https://gateway.example/v1"
+  },
+  "customAnthropicBaseUrlPlaceholder": {
+   "en": "https://gateway.example",
+   "zh": "https://gateway.example"
+  },
+  "settingsPathUnresolvable": {
+   "en": "unresolvable settings path",
+   "zh": "无法解析设置路径"
+  },
+  "create": {
+   "en": "Create provider",
+   "zh": "创建提供商"
+  },
+  "creating": {
+   "en": "Creating…",
+   "zh": "创建中…"
+  },
+  "welcomeTitle": {
+   "en": "Internal Testing Notice",
+   "zh": "内测声明"
+  },
+  "welcomeBody": {
+   "en": "DeepSeek Harness 0.1 remains in testing for Harness developers. Many areas need further improvement, and we welcome feedback from the developer community. DeepSeek Harness's core plugins and foundational APIs will continue to evolve rapidly over the coming months.\n\nWe look forward to exploring the limits of intelligence with developers around the world, building on open-source, open, reusable, and composable infrastructure. We welcome Harness developers everywhere to join the DSH plugin ecosystem.",
+   "zh": "DeepSeek Harness 目前的 0.1 版本仍处在面向 Harness 开发者进行测试的阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者的反馈建议。预计 DeepSeek Harness 的核心插件以及基础 API 都会在接下来的一段时间内快速迭代、持续演化。\n\n我们期待与全球开发者一起，在开源、开放、可复用、可组合的基础设施之上，共同探索智能上限。欢迎全球 Harness 开发者加入 DSH 插件生态。"
+  },
+  "welcomeContinue": {
+   "en": "Continue",
+   "zh": "继续"
+  },
+  "welcomeError": {
+   "en": "The acknowledgement could not be saved. Please try again.",
+   "zh": "暂时无法保存确认状态，请重试。"
+  },
+  "onboardingTitle": {
+   "en": "Add an API key to get started",
+   "zh": "添加一个 API Key 开始使用"
+  },
+  "onboardingDescription": {
+   "en": "Configure the official DeepSeek provider to start building.",
+   "zh": "配置 DeepSeek 官方模型，即可开始使用。"
+  },
+  "onboardingLater": {
+   "en": "Configure later",
+   "zh": "稍后配置"
+  },
+  "onboardingSave": {
+   "en": "Save and continue",
+   "zh": "保存并继续"
+  },
+  "onboardingSaving": {
+   "en": "Saving…",
+   "zh": "保存中…"
+  },
+  "keyRequired": {
+   "en": "Enter an API key to continue.",
+   "zh": "请输入 API 密钥后继续。"
   }
  }
 }

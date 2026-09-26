@@ -1,4 +1,4 @@
-import { packPath, packagesRoot, sessionsRoot, newestSessionLog, rootSessionId } from '../paths.mjs'
+import { packPath, packagesRoot, sessionsRoot, sessionLogIn, newestSessionLog, rootSessionId } from '../paths.mjs'
 // Reconcile the per-session cost with the account figure: fold every session log
 // on disk through the shipped projection definition and group by UTC day.
 import fs from 'node:fs'
@@ -18,8 +18,8 @@ for (const workspace of fs.readdirSync(ROOT)) {
   const dir = path.join(ROOT, workspace)
   if (!fs.statSync(dir).isDirectory()) continue
   for (const session of fs.readdirSync(dir)) {
-    const file = path.join(dir, session, 'session.v3.jsonl.zstd')
-    if (fs.existsSync(file)) logs.push({ workspace, session, file })
+    const file = sessionLogIn(path.join(dir, session))
+    if (file !== undefined) logs.push({ workspace, session, file })
   }
 }
 logs.sort((a, b) => fs.statSync(a.file).mtimeMs - fs.statSync(b.file).mtimeMs)
@@ -46,7 +46,7 @@ for (const entry of logs) {
     day: new Date(first).toISOString().slice(0, 10),
     first: new Date(first).toISOString(),
     last: new Date(last).toISOString(),
-    models: view.models.map((m) => `${m.model}:${m.requests}`).join('+')
+    models: Object.entries(state.buckets).map(([model, record]) => `${model}:${record.peak.requests + record.offPeak.requests}`).join('+')
   })
 }
 

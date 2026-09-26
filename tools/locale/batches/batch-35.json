@@ -1,95 +1,195 @@
 {
- "batch": "sidebarBrowser",
- "namespace": "sidebarBrowser",
- "total": 22,
+ "batch": "schedule.manager#3",
+ "namespace": "schedule.manager",
+ "total": 47,
  "keys": {
-  "type.label": {
-   "en": "Browser",
-   "zh": "浏览器"
+  "timing.error": {
+   "en": "Could not confirm the timing update. Your draft is retained. Check the task before retrying.",
+   "zh": "无法确认时间修改是否已保存。草稿已保留，请在重试前检查任务"
   },
-  "guide.title": {
-   "en": "Browser",
-   "zh": "浏览器"
+  "rule.title": {
+   "en": "Run time",
+   "zh": "运行时间"
   },
-  "guide.description": {
-   "en": "Browse HTTP(S) pages",
-   "zh": "浏览 HTTP(S) 网页"
+  "rule.repeat": {
+   "en": "Repeat",
+   "zh": "重复"
   },
-  "address.placeholder": {
-   "en": "Enter an HTTP(S) address",
-   "zh": "输入 HTTP(S) 地址"
+  "rule.weekday": {
+   "en": "Weekday",
+   "zh": "星期"
   },
-  "address.changed": {
-   "en": "URL changed",
-   "zh": "URL 已变化"
+  "rule.weekdayOption": {
+   "en": "Weekday {weekday}",
+   "zh": "星期{weekday}"
   },
-  "back": {
-   "en": "Back",
-   "zh": "后退"
+  "rule.unsaved": {
+   "en": "Unsaved changes",
+   "zh": "有未保存的修改"
   },
-  "forward": {
-   "en": "Forward",
-   "zh": "前进"
+  "rule.save": {
+   "en": "Save changes",
+   "zh": "保存修改"
   },
-  "reload": {
-   "en": "Reload",
-   "zh": "刷新"
+  "rule.saving": {
+   "en": "Saving…",
+   "zh": "保存中…"
   },
-  "go": {
-   "en": "Go",
-   "zh": "前往"
+  "rule.cancel": {
+   "en": "Cancel",
+   "zh": "取消"
   },
-  "external": {
-   "en": "Open in system browser",
-   "zh": "在系统浏览器中打开"
+  "rule.invalidTitle": {
+   "en": "Enter a task name of at most 120 characters.",
+   "zh": "请输入不超过 120 个字符的任务名称"
   },
-  "sandbox.disable": {
-   "en": "Disable sandbox restrictions",
-   "zh": "关闭沙箱限制"
+  "rule.invalidPrompt": {
+   "en": "Enter a task instruction.",
+   "zh": "请输入任务内容"
   },
-  "sandbox.enable": {
-   "en": "Restore sandbox restrictions",
-   "zh": "恢复沙箱限制"
+  "rule.once": {
+   "en": "Once",
+   "zh": "仅一次"
   },
-  "sandbox.warning": {
-   "en": "Sandbox restrictions are disabled; the page can navigate the top-level app and use downloads, modal dialogs, and input locks.",
-   "zh": "沙箱限制已关闭；页面可以导航顶层应用，并使用下载、模态对话框与输入锁定。"
+  "rule.everyMinutes": {
+   "en": "Every N minutes",
+   "zh": "每 N 分钟"
   },
-  "start": {
-   "en": "Enter an HTTP(S) address to start browsing",
-   "zh": "输入 HTTP(S) 地址开始浏览"
+  "rule.everyHours": {
+   "en": "Every N hours",
+   "zh": "每 N 小时"
   },
-  "loading": {
-   "en": "Opening…",
-   "zh": "正在打开…"
+  "rule.everySeconds": {
+   "en": "Every N seconds",
+   "zh": "每 N 秒"
   },
-  "error.empty": {
-   "en": "Enter an address.",
-   "zh": "请输入地址。"
+  "rule.daily": {
+   "en": "Every day",
+   "zh": "每天"
   },
-  "error.invalid": {
-   "en": "That address is invalid or too long.",
-   "zh": "这个地址无效或过长。"
+  "rule.weekdays": {
+   "en": "Monday to Friday",
+   "zh": "周一至周五"
   },
-  "error.protocol": {
-   "en": "Only HTTP and HTTPS addresses are supported; use Document Preview for local files.",
-   "zh": "只支持 HTTP 和 HTTPS 地址；本地文件请使用文档预览。"
+  "rule.weekly": {
+   "en": "Weekly",
+   "zh": "每周"
   },
-  "error.credentials": {
-   "en": "Addresses cannot contain a username or password.",
-   "zh": "地址不能包含用户名或密码。"
+  "rule.cron": {
+   "en": "Custom",
+   "zh": "自定义"
   },
-  "error.application-origin": {
-   "en": "The embedded browser cannot open the DSH application itself.",
-   "zh": "不能在嵌入浏览器中打开 DSH 应用自身。"
+  "rule.cronLabel": {
+   "en": "Cron expression",
+   "zh": "Cron 表达式"
   },
-  "web.loadFailed": {
-   "en": "The page reported a load failure or may block embedding; try opening it in the system browser.",
-   "zh": "页面报告加载失败或可能禁止嵌入；可尝试在系统浏览器中打开。"
+  "rule.cronInvalid": {
+   "en": "Enter a five-field cron expression, for example 0 9 * * 1-5.",
+   "zh": "请输入 5 字段的 cron 表达式，例如 0 9 * * 1-5"
   },
-  "web.unknown": {
-   "en": "The page navigated inside the iframe; Web mode cannot read its current URL.",
-   "zh": "页面已在 iframe 内跳转；Web 模式无法读取当前 URL。"
+  "cronForm.frequency": {
+   "en": "Frequency",
+   "zh": "频率"
+  },
+  "cronForm.monthly": {
+   "en": "Monthly",
+   "zh": "每月"
+  },
+  "cronForm.weekly": {
+   "en": "Weekly",
+   "zh": "每周"
+  },
+  "cronForm.daily": {
+   "en": "Every day",
+   "zh": "每天"
+  },
+  "cronForm.dates": {
+   "en": "On dates",
+   "zh": "在以下日期"
+  },
+  "cronForm.dateOption": {
+   "en": "Day {day}",
+   "zh": "{day} 日"
+  },
+  "cronForm.atMinute": {
+   "en": "At minute",
+   "zh": "在第几分钟"
+  },
+  "cronForm.minuteIncrease": {
+   "en": "Increase minute",
+   "zh": "增大分钟"
+  },
+  "cronForm.minuteDecrease": {
+   "en": "Decrease minute",
+   "zh": "减小分钟"
+  },
+  "rule.zone.system": {
+   "en": " (system)",
+   "zh": "（系统）"
+  },
+  "rule.error.conflict": {
+   "en": "This task changed before the update was saved. The row shows the saved rule; try again.",
+   "zh": "任务在保存前已发生变化。当前显示已保存的规则，请重试"
+  },
+  "rule.error.notFound": {
+   "en": "This task is no longer available.",
+   "zh": "此任务当前不可用"
+  },
+  "rule.error.unknown": {
+   "en": "Could not confirm the rule update. The row shows the saved rule.",
+   "zh": "无法确认规则是否已更新。当前显示已保存的规则"
+  },
+  "delete.action": {
+   "en": "Delete task",
+   "zh": "删除任务"
+  },
+  "delete.title": {
+   "en": "Delete this task?",
+   "zh": "删除此任务？"
+  },
+  "delete.description": {
+   "en": "This stops the task from triggering and deletes it together with its saved delivery records. The original session and its messages remain; queued messages are not withdrawn.",
+   "zh": "任务将停止触发，并连同其已保存的任务运行记录一并删除。原会话及其消息仍然保留；已排队的消息不会被撤回。"
+  },
+  "delete.confirm": {
+   "en": "Confirm deletion",
+   "zh": "确认删除"
+  },
+  "delete.cancel": {
+   "en": "Cancel",
+   "zh": "取消"
+  },
+  "delete.close": {
+   "en": "Close deletion confirmation",
+   "zh": "关闭删除确认"
+  },
+  "delete.pending": {
+   "en": "Deleting…",
+   "zh": "正在删除…"
+  },
+  "toast.deleted": {
+   "en": "Task deleted.",
+   "zh": "任务已删除"
+  },
+  "toast.deleteFailed": {
+   "en": "Could not delete the task.",
+   "zh": "无法删除任务"
+  },
+  "card.open": {
+   "en": "Open",
+   "zh": "打开"
+  },
+  "card.openLabel": {
+   "en": "Open task details: {title}",
+   "zh": "打开任务详情：{title}"
+  },
+  "card.deleted": {
+   "en": "Deleted",
+   "zh": "已删除"
+  },
+  "tool.invoked": {
+   "en": "Invoked {name}",
+   "zh": "已调用 {name}"
   }
  }
 }

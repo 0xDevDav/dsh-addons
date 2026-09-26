@@ -3,9 +3,269 @@
  "namespace": "chat",
  "total": 70,
  "keys": {
+  "message.stepProcess.thinking": {
+   "en": "Analyzing the request",
+   "zh": "正在分析请求"
+  },
+  "message.stepProcess.read": {
+   "en": "Reading files",
+   "zh": "正在读取文件"
+  },
+  "message.stepProcess.readImage": {
+   "en": "Reading images",
+   "zh": "正在读取图片"
+  },
+  "message.stepProcess.write": {
+   "en": "Writing files",
+   "zh": "正在写入文件"
+  },
+  "message.stepProcess.search": {
+   "en": "Searching code",
+   "zh": "正在搜索代码"
+  },
+  "message.stepProcess.edit": {
+   "en": "Editing files",
+   "zh": "正在编辑文件"
+  },
+  "message.stepProcess.commands": {
+   "en": "Running commands",
+   "zh": "正在运行命令"
+  },
+  "message.stepProcess.code": {
+   "en": "Running code",
+   "zh": "正在运行代码"
+  },
+  "message.stepProcess.webSearch": {
+   "en": "Searching the web",
+   "zh": "正在搜索网页"
+  },
+  "message.stepProcess.webFetch": {
+   "en": "Visiting web pages",
+   "zh": "正在访问网页"
+  },
+  "message.stepProcess.subagents": {
+   "en": "Coordinating subagents",
+   "zh": "正在协调子智能体"
+  },
+  "message.stepProcess.plan": {
+   "en": "Updating the plan",
+   "zh": "正在更新计划"
+  },
+  "message.stepProcess.questions": {
+   "en": "Waiting for your action",
+   "zh": "等待你的操作"
+  },
+  "message.stepProcess.tools": {
+   "en": "Calling tools",
+   "zh": "正在调用工具"
+  },
+  "message.stepProcess.prepare.read": {
+   "en": "Preparing to read files",
+   "zh": "准备读取文件"
+  },
+  "message.stepProcess.prepare.readImage": {
+   "en": "Preparing to read images",
+   "zh": "准备读取图片"
+  },
+  "message.stepProcess.prepare.write": {
+   "en": "Preparing to write files",
+   "zh": "准备写入文件"
+  },
+  "message.stepProcess.prepare.search": {
+   "en": "Preparing to search code",
+   "zh": "准备搜索代码"
+  },
+  "message.stepProcess.prepare.edit": {
+   "en": "Preparing to edit files",
+   "zh": "准备编辑文件"
+  },
+  "message.stepProcess.prepare.commands": {
+   "en": "Preparing to run commands",
+   "zh": "准备运行命令"
+  },
+  "message.stepProcess.prepare.code": {
+   "en": "Preparing to run code",
+   "zh": "准备运行代码"
+  },
+  "message.stepProcess.prepare.webSearch": {
+   "en": "Preparing to search the web",
+   "zh": "准备搜索网页"
+  },
+  "message.stepProcess.prepare.webFetch": {
+   "en": "Preparing to visit web pages",
+   "zh": "准备访问网页"
+  },
+  "message.stepProcess.prepare.subagents": {
+   "en": "Preparing to coordinate subagents",
+   "zh": "准备协调子智能体"
+  },
+  "message.stepProcess.prepare.plan": {
+   "en": "Preparing to update the plan",
+   "zh": "准备更新计划"
+  },
+  "message.stepProcess.prepare.questions": {
+   "en": "Preparing questions",
+   "zh": "准备提问"
+  },
+  "message.stepProcess.prepare.tools": {
+   "en": "Preparing tool calls",
+   "zh": "准备调用工具"
+  },
+  "message.stepProcess.done.thinking": {
+   "en": "Analysis completed",
+   "zh": "已完成分析"
+  },
+  "message.stepProcess.done.read": {
+   "en": "Read files",
+   "zh": "已读取文件"
+  },
+  "message.stepProcess.done.readImage": {
+   "en": "Read images",
+   "zh": "已读取图片"
+  },
+  "message.stepProcess.done.write": {
+   "en": "Wrote files",
+   "zh": "已写入文件"
+  },
+  "message.stepProcess.done.search": {
+   "en": "Searched code",
+   "zh": "已搜索代码"
+  },
+  "message.stepProcess.done.edit": {
+   "en": "Edited files",
+   "zh": "修改了文件"
+  },
+  "message.stepProcess.done.commands": {
+   "en": "Ran commands",
+   "zh": "执行了命令"
+  },
+  "message.stepProcess.done.code": {
+   "en": "Ran code",
+   "zh": "运行了代码"
+  },
+  "message.stepProcess.done.webSearch": {
+   "en": "Searched the web",
+   "zh": "已搜索网页"
+  },
+  "message.stepProcess.done.webFetch": {
+   "en": "Visited web pages",
+   "zh": "已访问网页"
+  },
+  "message.stepProcess.done.subagents": {
+   "en": "Coordinated subagents",
+   "zh": "已协调子智能体"
+  },
+  "message.stepProcess.done.plan": {
+   "en": "Updated the plan",
+   "zh": "更新了计划"
+  },
+  "message.stepProcess.done.questions": {
+   "en": "Asked questions",
+   "zh": "向用户提出了问题"
+  },
+  "message.stepProcess.done.tools": {
+   "en": "Called tools",
+   "zh": "已调用工具"
+  },
+  "message.stepProcess.joinTwo": {
+   "en": "{first} and {second}",
+   "zh": "{first}并{second}"
+  },
+  "message.stepProcess.comma": {
+   "en": ", ",
+   "zh": "，"
+  },
+  "message.stepProcess.sharedPrefix": {
+   "en": "",
+   "zh": "已"
+  },
+  "message.stepProcess.more": {
+   "en": "{title}, etc.",
+   "zh": "{title}等"
+  },
+  "message.trigger.request": {
+   "en": "Execution requested",
+   "zh": "收到执行请求"
+  },
+  "message.trigger.goal": {
+   "en": "Continuing goal",
+   "zh": "继续执行目标"
+  },
+  "message.trigger.agent": {
+   "en": "Task message received",
+   "zh": "收到任务消息"
+  },
+  "message.trigger.team": {
+   "en": "Team message received",
+   "zh": "收到团队消息"
+  },
+  "message.trigger.subagent": {
+   "en": "Subtask status updated",
+   "zh": "子任务状态更新"
+  },
+  "message.trigger.github": {
+   "en": "GitHub event received",
+   "zh": "收到 GitHub 事件"
+  },
+  "message.trigger.webhook": {
+   "en": "External event received",
+   "zh": "收到外部事件"
+  },
+  "message.trigger.schedule": {
+   "en": "Scheduled task",
+   "zh": "定时任务"
+  },
+  "message.trigger.job": {
+   "en": "Background task updated",
+   "zh": "后台任务状态更新"
+  },
+  "message.trigger.plugin": {
+   "en": "Plugin status updated",
+   "zh": "插件状态更新"
+  },
+  "message.trigger.explanation": {
+   "en": "This notification triggered this response.",
+   "zh": "这条通知触发了本轮回复。"
+  },
+  "message.turnProcess.worked": {
+   "en": "Worked",
+   "zh": "已完成工作"
+  },
+  "message.turnProcess.deepDivingFor": {
+   "en": "Deep diving for {duration}",
+   "zh": "深度求索中，用时{duration}"
+  },
+  "message.turnProcess.took": {
+   "en": "Took {duration}",
+   "zh": "用时 {duration}"
+  },
+  "message.turnProcess.failed": {
+   "en": "Failed",
+   "zh": "处理失败"
+  },
   "view.chat": {
    "en": "Chat",
    "zh": "对话"
+  },
+  "image.open": {
+   "en": "View full image",
+   "zh": "查看大图"
+  },
+  "image.loading": {
+   "en": "Loading image…",
+   "zh": "加载图片…"
+  },
+  "image.failed": {
+   "en": "Image preview unavailable",
+   "zh": "图片无法预览"
+  },
+  "image.dialog": {
+   "en": "Image preview",
+   "zh": "图片预览"
+  },
+  "image.close": {
+   "en": "Close image preview",
+   "zh": "关闭图片预览"
   },
   "number.groupSeparator": {
    "en": ",",
@@ -22,266 +282,6 @@
   "duration.milliseconds": {
    "en": "{milliseconds}ms",
    "zh": "{milliseconds}毫秒"
-  },
-  "stats.counts": {
-   "en": "{turns} turns {steps} steps",
-   "zh": "{turns} 轮 {steps} 步"
-  },
-  "stats.cacheHit": {
-   "en": "Cache hit {percent}%",
-   "zh": "缓存命中 {percent}%"
-  },
-  "stats.dialog.title": {
-   "en": "Session statistics",
-   "zh": "会话统计"
-  },
-  "stats.dialog.usageTitle": {
-   "en": "Token usage",
-   "zh": "Token 用量"
-  },
-  "stats.dialog.llmTime": {
-   "en": "LLM time",
-   "zh": "模型用时"
-  },
-  "stats.dialog.toolTime": {
-   "en": "Tool time",
-   "zh": "工具调用用时"
-  },
-  "stats.dialog.ttft": {
-   "en": "Avg time to first token (TTFT)",
-   "zh": "首 token 平均（TTFT）"
-  },
-  "stats.dialog.speed": {
-   "en": "Tokens per second (TPS)",
-   "zh": "输出速度（TPS）"
-  },
-  "chat.loadingHistory": {
-   "en": "Loading history…",
-   "zh": "载入历史…"
-  },
-  "chat.loadError": {
-   "en": "Failed to load history: {message} ({code})",
-   "zh": "历史加载失败：{message}（{code}）"
-  },
-  "chat.loadOlder": {
-   "en": "Load earlier",
-   "zh": "加载更早"
-  },
-  "chat.toBottom": {
-   "en": "Back to bottom",
-   "zh": "回到底部"
-  },
-  "chat.deepDiving": {
-   "en": "Deep diving...",
-   "zh": "深度求索中..."
-  },
-  "chat.turnNavigation.label": {
-   "en": "Turn navigation",
-   "zh": "轮次导航"
-  },
-  "chat.turnNavigation.jump": {
-   "en": "Jump to turn {turn}",
-   "zh": "跳转到第 {turn} 轮"
-  },
-  "chat.turnNavigation.jumpLoad": {
-   "en": "Load and jump to turn {turn}",
-   "zh": "加载并跳转到第 {turn} 轮"
-  },
-  "chat.turnNavigation.turn": {
-   "en": "Turn {turn}",
-   "zh": "第 {turn} 轮"
-  },
-  "settings.transcript.title": {
-   "en": "Conversation display",
-   "zh": "对话显示"
-  },
-  "settings.transcript.description": {
-   "en": "Controls process content in completed turns",
-   "zh": "控制已完成轮次的过程内容"
-  },
-  "settings.transcript.normal": {
-   "en": "Normal",
-   "zh": "标准"
-  },
-  "settings.transcript.compact": {
-   "en": "Compact",
-   "zh": "紧凑"
-  },
-  "fileOpen.title": {
-   "en": "Couldn’t open file",
-   "zh": "无法打开文件"
-  },
-  "fileOpen.unknown": {
-   "en": "Couldn’t open this file",
-   "zh": "无法打开此文件"
-  },
-  "message.extraBlock": {
-   "en": "Extra content block",
-   "zh": "附加内容块"
-  },
-  "message.systemPrompt": {
-   "en": "System prompt",
-   "zh": "系统提示词"
-  },
-  "message.systemPromptUpdate": {
-   "en": "System prompt update",
-   "zh": "系统提示词更新"
-  },
-  "message.contextInjection": {
-   "en": "Context injection",
-   "zh": "上下文注入"
-  },
-  "message.contextRecall": {
-   "en": "Session recall",
-   "zh": "跨会话召回"
-  },
-  "message.referenceSummary": {
-   "en": "Referenced session · {labels}",
-   "zh": "引用会话 · {labels}"
-  },
-  "message.referenceSeparator": {
-   "en": ", ",
-   "zh": "、"
-  },
-  "message.context.instructions.loaded": {
-   "en": "loaded",
-   "zh": "已载入"
-  },
-  "message.context.instructions.added": {
-   "en": "added",
-   "zh": "已新增"
-  },
-  "message.context.instructions.updated": {
-   "en": "updated",
-   "zh": "已更新"
-  },
-  "message.context.instructions.removed": {
-   "en": "removed",
-   "zh": "已移除"
-  },
-  "message.context.catalog.replaced": {
-   "en": "Replacement catalog",
-   "zh": "替换目录"
-  },
-  "message.context.catalog.more": {
-   "en": "… {count} more",
-   "zh": "…还有 {count} 条"
-  },
-  "message.context.snapshot.supersedes": {
-   "en": "Supersedes earlier snapshots",
-   "zh": "取代先前的快照"
-  },
-  "message.context.relay.from": {
-   "en": "From session {session}",
-   "zh": "来自会话 {session}"
-  },
-  "message.context.recall.counts": {
-   "en": "{retained} kept · {omitted} omitted",
-   "zh": "保留 {retained} 条 · 省略 {omitted} 条"
-  },
-  "message.context.recall.truncated": {
-   "en": "truncated",
-   "zh": "已截断"
-  },
-  "message.compaction": {
-   "en": "Context compacted",
-   "zh": "上下文已压缩"
-  },
-  "message.compaction.running": {
-   "en": "Compacting context…",
-   "zh": "正在压缩…"
-  },
-  "message.compaction.completed": {
-   "en": "Compacted {items} history items (~{tokens} tokens)",
-   "zh": "已压缩 {items} 条历史记录（约 {tokens} tokens）"
-  },
-  "message.compaction.expand": {
-   "en": "View compaction summary",
-   "zh": "点击查看压缩摘要"
-  },
-  "message.compaction.unavailable": {
-   "en": "Compaction summary unavailable",
-   "zh": "压缩摘要不可用"
-  },
-  "message.compaction.commandTitle": {
-   "en": "compact",
-   "zh": "compact"
-  },
-  "message.think": {
-   "en": "Think",
-   "zh": "思考"
-  },
-  "message.unknownSurface": {
-   "en": "Unknown surface event: {type}",
-   "zh": "未知 surface 事件：{type}"
-  },
-  "message.unknownBlock": {
-   "en": "Unknown content block",
-   "zh": "未知内容块"
-  },
-  "message.turnProcess.toolCalls.one": {
-   "en": "{count} tool call",
-   "zh": "{count} 次工具调用"
-  },
-  "message.turnProcess.toolCalls.other": {
-   "en": "{count} tool calls",
-   "zh": "{count} 次工具调用"
-  },
-  "message.turnProcess.messages.one": {
-   "en": "{count} message",
-   "zh": "{count} 条消息"
-  },
-  "message.turnProcess.messages.other": {
-   "en": "{count} messages",
-   "zh": "{count} 条消息"
-  },
-  "message.turnProcess.subagents.one": {
-   "en": "{count} subagent",
-   "zh": "{count} 个 subagent"
-  },
-  "message.turnProcess.subagents.other": {
-   "en": "{count} subagents",
-   "zh": "{count} 个 subagent"
-  },
-  "message.turnProcess.thoughtForAWhile": {
-   "en": "Thought for a while",
-   "zh": "已思考"
-  },
-  "message.turnProcess.separator": {
-   "en": " · ",
-   "zh": " · "
-  },
-  "message.stopped": {
-   "en": "Stopped",
-   "zh": "已停止"
-  },
-  "message.branch": {
-   "en": "Branch into a new conversation",
-   "zh": "在新对话中分支"
-  },
-  "message.branchUnavailable": {
-   "en": "Available only on the last message of a completed turn",
-   "zh": "仅可从已完成轮次的最后一条消息分支"
-  },
-  "message.retry.active": {
-   "en": "Retrying model request",
-   "zh": "正在重试模型请求"
-  },
-  "message.retry.cancelled": {
-   "en": "Model request retry cancelled",
-   "zh": "模型请求重试已取消"
-  },
-  "message.retry.started": {
-   "en": "Retried model request",
-   "zh": "已重试模型请求"
-  },
-  "message.retry.scheduled": {
-   "en": "Waiting to retry model request",
-   "zh": "等待重试模型请求"
-  },
-  "message.retry.status": {
-   "en": "{label} ({retry}/{maximum}) · {seconds}s",
-   "zh": "{label}（{retry}/{maximum}） · {seconds}s"
   }
  }
 }

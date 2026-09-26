@@ -5,6 +5,11 @@
    "zh": "模型",
    "it": "Modelli"
   },
+  "deepSeekAccount": {
+   "en": "DeepSeek Account",
+   "zh": "DeepSeek 账号",
+   "it": "Account DeepSeek"
+  },
   "title": {
    "en": "Models",
    "zh": "模型",
@@ -12,7 +17,7 @@
   },
   "intro": {
    "en": "Enter your API keys to use models from the following providers.",
-   "zh": "填入各提供方的 API 密钥即可使用其模型。",
+   "zh": "填入各提供商的 API 密钥即可使用其模型。",
    "it": "Inserisci le tue chiavi API per usare i modelli dei seguenti provider."
   },
   "edit": {
@@ -61,13 +66,48 @@
    "it": "Eliminazione di {provider}…"
   },
   "add": {
-   "en": "Add provider",
-   "zh": "添加提供方",
-   "it": "Aggiungi provider"
+   "en": "Add model provider",
+   "zh": "添加模型提供商",
+   "it": "Aggiungi provider di modelli"
+  },
+  "addMode": {
+   "en": "How to add",
+   "zh": "添加方式",
+   "it": "Modalità di aggiunta"
+  },
+  "addCatalog": {
+   "en": "Third-party model provider",
+   "zh": "第三方模型提供商",
+   "it": "Provider di modelli di terze parti"
+  },
+  "addCustom": {
+   "en": "Custom model API",
+   "zh": "自定义模型 API",
+   "it": "API di modelli personalizzata"
+  },
+  "addCatalogHint": {
+   "en": "Pick OpenAI, Anthropic, Kimi, or another provider from the built-in catalog and enter its API key.",
+   "zh": "从内置目录中选择 OpenAI、Anthropic、Kimi 等提供商，填入其 API 密钥即可使用。",
+   "it": "Scegli OpenAI, Anthropic, Kimi o un altro provider dal catalogo integrato e inserisci la sua chiave API."
+  },
+  "addCustomHint": {
+   "en": "Connect a relay, a self-hosted server, or any other OpenAI- or Anthropic-compatible endpoint by its base URL, protocol, and models.",
+   "zh": "连接中转站、自部署服务或其他兼容 OpenAI / Anthropic 协议的接口，需填写 API 地址、协议和模型。",
+   "it": "Collega un relay, un server self-hosted o qualsiasi altro endpoint compatibile con OpenAI o Anthropic indicandone URL di base, protocollo e modelli."
+  },
+  "addCatalogExhausted": {
+   "en": "Every catalog provider is already configured.",
+   "zh": "目录中的提供商都已添加。",
+   "it": "Tutti i provider del catalogo sono già configurati."
+  },
+  "addCustomUnavailable": {
+   "en": "No API protocol is available to declare.",
+   "zh": "没有可用的 API 协议。",
+   "it": "Nessun protocollo API disponibile da dichiarare."
   },
   "provider": {
    "en": "Provider",
-   "zh": "提供方",
+   "zh": "提供商",
    "it": "Provider"
   },
   "close": {
@@ -112,7 +152,7 @@
   },
   "loadFailed": {
    "en": "Loading the provider directory failed",
-   "zh": "加载提供方目录失败",
+   "zh": "加载提供商目录失败",
    "it": "Caricamento dell'elenco dei provider non riuscito"
   },
   "conflict": {
@@ -162,23 +202,18 @@
   },
   "baseUrlDefault": {
    "en": "Provider default",
-   "zh": "提供方默认",
+   "zh": "提供商默认",
    "it": "Predefinito del provider"
   },
-  "deepSeekChatBaseUrl": {
-   "en": "https://api.deepseek.com",
-   "zh": "https://api.deepseek.com",
-   "it": "https://api.deepseek.com"
-  },
-  "deepSeekMessagesBaseUrl": {
+  "deepSeekBaseUrl": {
    "en": "https://api.deepseek.com/anthropic",
    "zh": "https://api.deepseek.com/anthropic",
    "it": "https://api.deepseek.com/anthropic"
   },
   "deepSeekEndpointHint": {
-   "en": "Use an endpoint compatible with the configured connection.",
-   "zh": "请填写与当前连接配置兼容的 API 地址。",
-   "it": "Usa un endpoint compatibile con la connessione configurata."
+   "en": "Use an API endpoint compatible with Anthropic Messages.",
+   "zh": "请填写兼容 Anthropic Messages 协议的 API 地址。",
+   "it": "Usa un endpoint API compatibile con Anthropic Messages."
   },
   "models": {
    "en": "Models",
@@ -227,7 +262,7 @@
   },
   "contextWindowPlaceholder": {
    "en": "Uses the provider default",
-   "zh": "使用提供方默认值",
+   "zh": "使用提供商默认值",
    "it": "Usa il valore predefinito del provider"
   },
   "maxTokens": {
@@ -237,7 +272,7 @@
   },
   "maxTokensPlaceholder": {
    "en": "Uses the provider default",
-   "zh": "使用提供方默认值",
+   "zh": "使用提供商默认值",
    "it": "Usa il valore predefinito del provider"
   },
   "modelAdvanced": {
@@ -282,7 +317,7 @@
   },
   "keyBlankNew": {
    "en": "Enter the API key, or leave the field empty if this provider authenticates another way.",
-   "zh": "请输入 API 密钥；若该提供方以其他方式鉴权，可以留空。",
+   "zh": "请输入 API 密钥；若该提供商以其他方式鉴权，可以留空。",
    "it": "Inserisci la chiave API o lascia il campo vuoto se questo provider si autentica in un altro modo."
   },
   "keyIllegalCharacters": {
@@ -316,9 +351,9 @@
    "it": "I token massimi in output devono essere un numero positivo, come 8192, 64K o 1M."
   },
   "advancedHint": {
-   "en": "Other fields live in settings.yaml; edit that section directly.",
-   "zh": "其余字段在 settings.yaml 中，请直接编辑对应段。",
-   "it": "Gli altri campi si trovano in settings.yaml; modifica direttamente quella sezione."
+   "en": "Other fields live in cordis.patch.yml; edit that section directly.",
+   "zh": "其余字段在 cordis.patch.yml 中，请直接编辑对应段。",
+   "it": "Gli altri campi si trovano in cordis.patch.yml; modifica direttamente quella sezione."
   },
   "modelCapacityInvalid": {
    "en": "A capacity must be a number, optionally suffixed K or M.",
@@ -337,7 +372,7 @@
   },
   "fetching": {
    "en": "Asking the provider…",
-   "zh": "正在询问提供方…",
+   "zh": "正在询问提供商…",
    "it": "Interrogazione del provider…"
   },
   "fetchNeedsBaseUrl": {
@@ -347,7 +382,7 @@
   },
   "fetchEmpty": {
    "en": "The provider listed no models. Add them by hand.",
-   "zh": "该提供方没有列出任何模型，请手动添加。",
+   "zh": "该提供商没有列出任何模型，请手动添加。",
    "it": "Il provider non ha elencato alcun modello. Aggiungili manualmente."
   },
   "fetchTitle": {
@@ -357,7 +392,7 @@
   },
   "fetchDescription": {
    "en": "These are the models this provider has available. Choose the ones to add.",
-   "zh": "以下是模型提供方的可用模型，勾选要添加的模型。",
+   "zh": "以下是模型提供商的可用模型，勾选要添加的模型。",
    "it": "Questi sono i modelli disponibili presso il provider. Scegli quelli da aggiungere."
   },
   "fetchSearch": {
@@ -385,16 +420,6 @@
    "zh": "添加所选",
    "it": "Aggiungi selezionati"
   },
-  "customAdd": {
-   "en": "Add a custom provider",
-   "zh": "添加自定义提供方",
-   "it": "Aggiungi un provider personalizzato"
-  },
-  "customTitle": {
-   "en": "Custom provider",
-   "zh": "自定义提供方",
-   "it": "Provider personalizzato"
-  },
   "customTag": {
    "en": "Custom",
    "zh": "自定义",
@@ -407,7 +432,7 @@
   },
   "customRouteHint": {
    "en": "Lowercase identifier, starting with a letter, that uniquely names this provider in requests and as its credential name.",
-   "zh": "以小写字母开头的标识，在请求中唯一标识该提供方，并用于派生凭据名。",
+   "zh": "以小写字母开头的标识，在请求中唯一标识该提供商，并用于派生凭据名。",
    "it": "Identificatore in minuscolo, che inizia con una lettera, che nomina in modo univoco questo provider nelle richieste e come nome della sua credenziale."
   },
   "customRouteInvalid": {
@@ -417,7 +442,7 @@
   },
   "customRouteTaken": {
    "en": "A provider already uses this ID.",
-   "zh": "已有提供方使用了这个 ID。",
+   "zh": "已有提供商使用了这个 ID。",
    "it": "Un provider usa già questo ID."
   },
   "customDisplayName": {
@@ -435,9 +460,24 @@
    "zh": "未选择",
    "it": "Non selezionato"
   },
+  "protocolOpenAiCompletions": {
+   "en": "OpenAI Chat Completions",
+   "zh": "OpenAI Chat Completions",
+   "it": "OpenAI Chat Completions"
+  },
+  "protocolOpenAiResponses": {
+   "en": "OpenAI Responses",
+   "zh": "OpenAI Responses",
+   "it": "OpenAI Responses"
+  },
+  "protocolAnthropicMessages": {
+   "en": "Anthropic Messages",
+   "zh": "Anthropic Messages",
+   "it": "Anthropic Messages"
+  },
   "customNeedsBaseUrl": {
    "en": "A custom provider needs a base URL.",
-   "zh": "自定义提供方需要填写 API 地址。",
+   "zh": "自定义模型 API 需要填写 API 地址。",
    "it": "Un provider personalizzato richiede un URL di base."
   },
   "customBaseUrlInvalid": {
@@ -447,13 +487,18 @@
   },
   "customNeedsModels": {
    "en": "A custom provider needs at least one model.",
-   "zh": "自定义提供方至少需要一个模型。",
+   "zh": "自定义模型 API 至少需要一个模型。",
    "it": "Un provider personalizzato richiede almeno un modello."
   },
   "customBaseUrlPlaceholder": {
    "en": "https://gateway.example/v1",
    "zh": "https://gateway.example/v1",
    "it": "https://gateway.example/v1"
+  },
+  "customAnthropicBaseUrlPlaceholder": {
+   "en": "https://gateway.example",
+   "zh": "https://gateway.example",
+   "it": "https://gateway.example"
   },
   "settingsPathUnresolvable": {
    "en": "unresolvable settings path",
@@ -462,7 +507,7 @@
   },
   "create": {
    "en": "Create provider",
-   "zh": "创建提供方",
+   "zh": "创建提供商",
    "it": "Crea provider"
   },
   "creating": {
@@ -546,286 +591,6 @@
    "en": "This deployment exposes no plugin views.",
    "zh": "本部署没有开放任何插件视图。",
    "it": "Questa distribuzione non espone viste dei Plugin."
-  },
-  "overridden": {
-   "en": "Overridden",
-   "zh": "已覆盖",
-   "it": "Sovrascritto"
-  },
-  "reset": {
-   "en": "Reset to default",
-   "zh": "恢复默认",
-   "it": "Reimposta predefinito"
-  },
-  "readOnly": {
-   "en": "This deployment stores settings read-only.",
-   "zh": "本部署的设置为只读。",
-   "it": "Questa distribuzione archivia le impostazioni in sola lettura."
-  },
-  "unavailable": {
-   "en": "This plugin is not loaded, so it cannot be configured right now.",
-   "zh": "该插件当前未加载，暂时无法配置。",
-   "it": "Questo Plugin non è caricato, quindi al momento non può essere configurato."
-  },
-  "save": {
-   "en": "Save",
-   "zh": "保存",
-   "it": "Salva"
-  },
-  "saving": {
-   "en": "Saving…",
-   "zh": "保存中…",
-   "it": "Salvataggio…"
-  },
-  "saveFailed": {
-   "en": "The deployment did not accept these values; they were left for you to correct.",
-   "zh": "本部署没有接受这些值，已保留供你修改。",
-   "it": "La distribuzione non ha accettato questi valori; sono stati lasciati per la correzione."
-  },
-  "invalidNumber": {
-   "en": "Enter a number, or leave blank to use the default.",
-   "zh": "请填数字；留空表示使用默认值。",
-   "it": "Inserisci un numero o lascia vuoto per usare il valore predefinito."
-  },
-  "bashTitle": {
-   "en": "Shell",
-   "zh": "终端",
-   "it": "Terminale"
-  },
-  "bashDescription": {
-   "en": "Limits every command the agent runs.",
-   "zh": "限制 agent 运行的每一条命令。",
-   "it": "Limita ogni comando eseguito dall'agente."
-  },
-  "bashTimeoutMs": {
-   "en": "Command timeout (ms)",
-   "zh": "命令超时（毫秒）",
-   "it": "Timeout del comando (ms)"
-  },
-  "bashTimeoutMsHint": {
-   "en": "How long one command may run before it is terminated.",
-   "zh": "单条命令允许运行多久，超时即终止。",
-   "it": "Per quanto un comando può essere eseguito prima di essere terminato."
-  },
-  "bashMaxOutputBytes": {
-   "en": "Output cap per stream (bytes)",
-   "zh": "单流输出上限（字节）",
-   "it": "Limite di output per flusso (byte)"
-  },
-  "bashMaxOutputBytesHint": {
-   "en": "Output beyond this spills to a temporary file rather than being lost.",
-   "zh": "超出部分会转存到临时文件，而不是被丢弃。",
-   "it": "L'output in eccesso viene salvato in un file temporaneo invece di andare perso."
-  },
-  "agentLoopTitle": {
-   "en": "Agent loop",
-   "zh": "Agent 循环",
-   "it": "Ciclo dell'agente"
-  },
-  "agentLoopDescription": {
-   "en": "How the agent dispatches tool calls.",
-   "zh": "Agent 如何派发工具调用。",
-   "it": "Come l'agente distribuisce le chiamate a strumento."
-  },
-  "agentLoopMaxParallel": {
-   "en": "Parallel tool calls",
-   "zh": "并行工具调用数",
-   "it": "Chiamate a strumento in parallelo"
-  },
-  "agentLoopMaxParallelHint": {
-   "en": "Upper bound on parallel-safe calls running at once within one step.",
-   "zh": "同一步内最多同时运行多少个可并行的调用。",
-   "it": "Numero massimo di chiamate parallelizzabili eseguite contemporaneamente in un passo."
-  },
-  "webSearchTitle": {
-   "en": "Web search",
-   "zh": "网页搜索",
-   "it": "Ricerca web"
-  },
-  "webSearchDescription": {
-   "en": "The DeepSeek search provider.",
-   "zh": "DeepSeek 搜索提供方。",
-   "it": "Il provider di ricerca DeepSeek."
-  },
-  "webSearchApiKey": {
-   "en": "API key",
-   "zh": "API Key",
-   "it": "Chiave API"
-  },
-  "webSearchApiKeyHint": {
-   "en": "Stored outside the settings file. Leave blank to keep the current key.",
-   "zh": "不写入设置文件。留空表示保持当前密钥。",
-   "it": "Memorizzata fuori dal file delle impostazioni. Lascia vuoto per mantenere la chiave attuale."
-  },
-  "webSearchApiKeySet": {
-   "en": "A key is configured.",
-   "zh": "已配置密钥。",
-   "it": "Una chiave è configurata."
-  },
-  "webSearchApiKeyUnset": {
-   "en": "No key is configured; search is unavailable until one is.",
-   "zh": "未配置密钥；配置之前搜索不可用。",
-   "it": "Nessuna chiave configurata; la ricerca non è disponibile finché non ne viene configurata una."
-  },
-  "webSearchBaseUrl": {
-   "en": "Endpoint",
-   "zh": "接口地址",
-   "it": "Endpoint"
-  },
-  "webSearchBaseUrlHint": {
-   "en": "Leave blank to use the provider default.",
-   "zh": "留空则使用提供方默认地址。",
-   "it": "Lascia vuoto per usare il valore predefinito del provider."
-  },
-  "webSearchMaxUses": {
-   "en": "Max searches per request",
-   "zh": "单次请求最多搜索次数",
-   "it": "Ricerche massime per richiesta"
-  },
-  "webSearchMaxUsesHint": {
-   "en": "How many times one request may search before it must answer.",
-   "zh": "一次请求在必须作答前最多可以搜索多少次。",
-   "it": "Quante volte una richiesta può cercare prima di dover rispondere."
-  },
-  "subagentTitle": {
-   "en": "Subagent",
-   "zh": "Subagent",
-   "it": "Subagente"
-  },
-  "subagentDescription": {
-   "en": "Set Subagent recursion depth, count, and models.",
-   "zh": "设置 Subagent 的递归层级、数量和模型。",
-   "it": "Imposta profondità di ricorsione, numero e modelli dei subagenti."
-  },
-  "subagentLimitsTitle": {
-   "en": "Limits",
-   "zh": "运行限制",
-   "it": "Limiti"
-  },
-  "subagentMaxDepth": {
-   "en": "Maximum recursion depth",
-   "zh": "最大递归深度",
-   "it": "Profondità massima di ricorsione"
-  },
-  "subagentDepthHelpLabel": {
-   "en": "About maximum recursion depth",
-   "zh": "最大递归深度说明",
-   "it": "Informazioni sulla profondità massima di ricorsione"
-  },
-  "subagentDepthHelp": {
-   "en": "Limits how many levels of Subagents an Agent can create.",
-   "zh": "限制 Agent 创建 Subagent 的递归层级。",
-   "it": "Limita quanti livelli di subagenti può creare un agente."
-  },
-  "subagentDepthZero": {
-   "en": "Disable Subagents",
-   "zh": "禁用 Subagent",
-   "it": "Disattiva i subagenti"
-  },
-  "subagentDepthOne": {
-   "en": "Only the main Agent can create Subagents",
-   "zh": "仅允许主 Agent 创建 Subagent",
-   "it": "Solo l'agente principale può creare subagenti"
-  },
-  "subagentDepthOverride": {
-   "en": "If a tool defines its own maximum recursion depth, that setting takes precedence.",
-   "zh": "如果某个工具单独设置了最大递归深度，以该工具的设置为准。",
-   "it": "Se uno strumento definisce una propria profondità massima di ricorsione, vale quest'ultima."
-  },
-  "subagentMaxActive": {
-   "en": "Subagent parallelism limit",
-   "zh": "Subagent 并行数量上限",
-   "it": "Limite di parallelismo dei subagenti"
-  },
-  "subagentCapacityHelpLabel": {
-   "en": "About the Subagent parallelism limit",
-   "zh": "Subagent 并行数量上限说明",
-   "it": "Informazioni sul limite di parallelismo dei subagenti"
-  },
-  "subagentCapacityHelp": {
-   "en": "Total live Subagents under the same main Agent, across all recursion levels. The main Agent is excluded. New start requests are rejected when the limit is reached.",
-   "zh": "同一主 Agent 下，所有递归层级同时存活的 Subagent 总数，主 Agent 不计入。达到上限时，新的启动请求会被拒绝。",
-   "it": "Totale dei subagenti attivi sotto lo stesso agente principale, su tutti i livelli di ricorsione. L'agente principale è escluso. Al raggiungimento del limite, le nuove richieste di avvio vengono rifiutate."
-  },
-  "subagentDepthInvalid": {
-   "en": "Enter a whole number of 0 or more.",
-   "zh": "请输入不小于 0 的整数。",
-   "it": "Inserisci un numero intero maggiore o uguale a 0."
-  },
-  "subagentCapacityInvalid": {
-   "en": "Enter a whole number of 1 or more.",
-   "zh": "请输入不小于 1 的整数。",
-   "it": "Inserisci un numero intero maggiore o uguale a 1."
-  },
-  "subagentModelSelectionTitle": {
-   "en": "Model selection",
-   "zh": "模型选择",
-   "it": "Selezione del modello"
-  },
-  "subagentModelSelectionToggle": {
-   "en": "Allow agents to choose models for Subagents",
-   "zh": "允许 Agent 为 Subagent 选择模型",
-   "it": "Consenti agli agenti di scegliere i modelli per i subagenti"
-  },
-  "subagentModelSelectionChoose": {
-   "en": "When enabled, agents can choose a provider, model, and reasoning effort for each Subagent from the authorized models below. Applies only to new sessions.",
-   "zh": "开启后，Agent 可以从下方授权模型中，为每个 Subagent 选择提供方、模型和推理强度。仅影响新会话。",
-   "it": "Se attivo, gli agenti possono scegliere un provider, un modello e un livello di ragionamento per ogni subagente tra i modelli autorizzati riportati sotto. Si applica solo alle nuove sessioni."
-  },
-  "subagentModelSelectionAllowed": {
-   "en": "Models agents may choose",
-   "zh": "Agent 可选择的模型",
-   "it": "Modelli che gli agenti possono scegliere"
-  },
-  "subagentModelSelectionLoading": {
-   "en": "Loading models…",
-   "zh": "正在加载模型…",
-   "it": "Caricamento modelli…"
-  },
-  "subagentModelSelectionLoadFailed": {
-   "en": "Models could not be loaded.",
-   "zh": "无法加载模型。",
-   "it": "Impossibile caricare i modelli."
-  },
-  "subagentModelSelectionRetry": {
-   "en": "Retry",
-   "zh": "重试",
-   "it": "Riprova"
-  },
-  "subagentModelSelectionPartial": {
-   "en": "Some model providers could not be loaded; saved choices remain removable.",
-   "zh": "部分模型提供方暂时无法加载；已保存的选择仍可移除。",
-   "it": "Alcuni provider di modelli non sono stati caricati; le scelte salvate restano rimovibili."
-  },
-  "subagentModelSelectionUnavailable": {
-   "en": "Currently unavailable",
-   "zh": "当前不可用",
-   "it": "Attualmente non disponibile"
-  },
-  "subagentModelSelectionUnavailableGroup": {
-   "en": "Saved but currently unavailable",
-   "zh": "已保存但当前不可用",
-   "it": "Salvato ma attualmente non disponibile"
-  },
-  "subagentModelSelectionEmpty": {
-   "en": "No model provider currently advertises a model.",
-   "zh": "当前没有模型提供方公布模型。",
-   "it": "Nessun provider di modelli pubblica attualmente un modello."
-  },
-  "subagentModelSelectionRequired": {
-   "en": "Select at least one model before saving.",
-   "zh": "保存前请至少选择一个模型。",
-   "it": "Seleziona almeno un modello prima di salvare."
-  },
-  "subagentModelSelectionConflict": {
-   "en": "Settings changed elsewhere. Discard your draft and try again.",
-   "zh": "设置已在其他位置更新。请放弃修改后重试。",
-   "it": "Le impostazioni sono cambiate altrove. Scarta la bozza e riprova."
-  },
-  "subagentModelSelectionOff": {
-   "en": "Subagents use configured defaults or inherit the parent agent's model. Saved model choices are retained.",
-   "zh": "关闭后，Subagent 使用配置的默认模型或继承父 Agent 的模型；已选模型会保留。",
-   "it": "I subagenti usano i valori predefiniti configurati o ereditano il modello dell'agente padre. Le scelte di modello salvate vengono mantenute."
   }
  },
  "settings.pluginInventory": {
@@ -858,6 +623,11 @@
    "en": "Plugins are temporarily unavailable.",
    "zh": "暂时无法读取插件。",
    "it": "Plugin temporaneamente non disponibili."
+  },
+  "metadataError": {
+   "en": "Package metadata error: {error}",
+   "zh": "包元信息错误：{error}",
+   "it": "Errore nei metadati del pacchetto: {error}"
   },
   "retry": {
    "en": "Retry",

@@ -1,20 +1,5 @@
 {
  "subagent": {
-  "diagnostic.corrupt": {
-   "en": "corrupted session record",
-   "zh": "会话记录损坏",
-   "it": "record della sessione danneggiato"
-  },
-  "diagnostic.unsupported": {
-   "en": "unsupported subagent record version",
-   "zh": "子代理记录版本不受支持",
-   "it": "versione del record del subagente non supportata"
-  },
-  "diagnostic.unavailable": {
-   "en": "session record temporarily unavailable",
-   "zh": "会话记录暂不可用",
-   "it": "record della sessione temporaneamente non disponibile"
-  },
   "duration.seconds": {
    "en": "{seconds}s",
    "zh": "{seconds}秒",
@@ -87,17 +72,12 @@
   },
   "loading.label": {
    "en": "Loading subagents…",
-   "zh": "正在加载子代理…",
+   "zh": "正在加载子智能体…",
    "it": "Caricamento subagenti…"
-  },
-  "loading.aria": {
-   "en": "Loading subagents",
-   "zh": "正在加载子代理",
-   "it": "Caricamento subagenti"
   },
   "load.error": {
    "en": "Unable to load subagents",
-   "zh": "无法加载子代理",
+   "zh": "无法加载子智能体",
    "it": "Impossibile caricare i subagenti"
   },
   "retry": {
@@ -115,10 +95,25 @@
    "zh": "可继续",
    "it": "continuabile"
   },
+  "mode.unknown": {
+   "en": "unknown mode",
+   "zh": "模式未知",
+   "it": "modalità sconosciuta"
+  },
+  "readonly.unknown.body": {
+   "en": "Read the child session to determine whether it can be continued.",
+   "zh": "读取子会话后才能确定是否可继续。",
+   "it": "Leggi la sessione figlia per stabilire se può essere continuata."
+  },
   "activity.running": {
    "en": "running",
    "zh": "正在运行",
    "it": "in esecuzione"
+  },
+  "activity.completed": {
+   "en": "completed",
+   "zh": "已完成",
+   "it": "completato"
   },
   "activity.inactive": {
    "en": "not running",
@@ -127,45 +122,50 @@
   },
   "branch.collapse": {
    "en": "Collapse {label} descendants",
-   "zh": "收起 {label} 的下级子代理",
+   "zh": "收起 {label} 的下级子智能体",
    "it": "Comprimi i discendenti di {label}"
   },
   "branch.expand": {
    "en": "Expand {label} descendants",
-   "zh": "展开 {label} 的下级子代理",
+   "zh": "展开 {label} 的下级子智能体",
    "it": "Espandi i discendenti di {label}"
   },
   "count.total.one": {
    "en": "{count} subagent",
-   "zh": "{count} 个子代理",
+   "zh": "{count} 个子智能体",
    "it": "{count} subagente"
   },
   "count.total.other": {
    "en": "{count} subagents",
-   "zh": "{count} 个子代理",
+   "zh": "{count} 个子智能体",
    "it": "{count} subagenti"
   },
   "count.running.one": {
    "en": "{count} subagent running",
-   "zh": "{count} 个子代理，正在运行",
+   "zh": "{count} 个子智能体，正在运行",
    "it": "{count} subagente in esecuzione"
   },
   "count.running.other": {
    "en": "{count} subagents running",
-   "zh": "{count} 个子代理，正在运行",
+   "zh": "{count} 个子智能体，正在运行",
    "it": "{count} subagenti in esecuzione"
   },
   "switcher.aria": {
    "en": "Switch subagent: {title}",
-   "zh": "切换子代理：{title}",
+   "zh": "切换子智能体：{title}",
    "it": "Cambia subagente: {title}"
   },
   "tree.aria": {
    "en": "Subagent sessions",
-   "zh": "子代理会话",
+   "zh": "子智能体会话",
    "it": "Sessioni dei subagenti"
   },
   "open.sidebar": {
+   "en": "Open in sidebar",
+   "zh": "在侧边栏打开",
+   "it": "Apri nella barra laterale"
+  },
+  "open.sidebar.aria": {
    "en": "Open {label} in sidebar",
    "zh": "在侧边栏打开 {label}",
    "it": "Apri {label} nella barra laterale"
@@ -177,12 +177,12 @@
   },
   "readonly.oneShot.title": {
    "en": "One-shot subagent record",
-   "zh": "一次性子代理记录",
+   "zh": "一次性子智能体记录",
    "it": "Record del subagente una tantum"
   },
   "readonly.title": {
    "en": "This subagent is read-only for now",
-   "zh": "此子代理暂时只读",
+   "zh": "此子智能体暂时只读",
    "it": "Questo subagente è in sola lettura per ora"
   },
   "readonly.oneShot.body": {
@@ -197,6 +197,71 @@
   }
  },
  "sidebarRight": {
+  "command.close": {
+   "en": "Close current page or window",
+   "zh": "关闭当前页面／窗口",
+   "it": "Chiudi pagina o finestra corrente"
+  },
+  "command.refresh": {
+   "en": "Refresh current page",
+   "zh": "刷新当前页面",
+   "it": "Aggiorna pagina corrente"
+  },
+  "command.noRefresh": {
+   "en": "This page cannot be refreshed",
+   "zh": "当前页面不支持刷新",
+   "it": "Questa pagina non può essere aggiornata"
+  },
+  "command.toggle": {
+   "en": "Toggle right sidebar",
+   "zh": "展开／收起右侧栏",
+   "it": "Mostra/nascondi barra laterale destra"
+  },
+  "command.fullscreen": {
+   "en": "Toggle panel fullscreen",
+   "zh": "面板全屏／退出全屏",
+   "it": "Attiva/disattiva schermo intero del pannello"
+  },
+  "command.noSession": {
+   "en": "Select a session first",
+   "zh": "请先选择会话",
+   "it": "Seleziona prima una sessione"
+  },
+  "command.noFocus": {
+   "en": "Focus a right sidebar pane first",
+   "zh": "请先聚焦右侧面板",
+   "it": "Metti prima a fuoco un pannello della barra laterale destra"
+  },
+  "command.stale": {
+   "en": "The page changed; focus it again",
+   "zh": "页面已切换，请重新聚焦",
+   "it": "La pagina è cambiata; rimettila a fuoco"
+  },
+  "command.collapsed": {
+   "en": "Expand the right sidebar first",
+   "zh": "请先展开右侧栏",
+   "it": "Espandi prima la barra laterale destra"
+  },
+  "command.float": {
+   "en": "This action is unavailable in a floating panel",
+   "zh": "浮动面板不支持此操作",
+   "it": "Questa azione non è disponibile in un pannello mobile"
+  },
+  "command.empty": {
+   "en": "Open a page first",
+   "zh": "请先打开页面",
+   "it": "Apri prima una pagina"
+  },
+  "command.budget": {
+   "en": "Two panes is the limit",
+   "zh": "已达两格上限",
+   "it": "Il limite è di due pannelli"
+  },
+  "command.width": {
+   "en": "Not enough width to split, widen the sidebar",
+   "zh": "栏宽不足，拖宽侧边栏后再分栏",
+   "it": "Larghezza insufficiente per dividere, allarga la barra laterale"
+  },
   "chrome.expand": {
    "en": "Open sidebar",
    "zh": "打开侧边栏",
@@ -406,6 +471,11 @@
   }
  },
  "model": {
+  "provider.account": {
+   "en": "DeepSeek Account",
+   "zh": "DeepSeek 账号",
+   "it": "Account DeepSeek"
+  },
   "command.label": {
    "en": "Model",
    "zh": "模型",
@@ -433,7 +503,7 @@
   },
   "trigger.fallback": {
    "en": "Select model",
-   "zh": "选择模型",
+   "zh": "请选择模型",
    "it": "Seleziona modello"
   },
   "trigger.loading": {
@@ -443,7 +513,7 @@
   },
   "trigger.selectAria": {
    "en": "Select model",
-   "zh": "选择模型",
+   "zh": "请选择模型",
    "it": "Seleziona modello"
   },
   "trigger.aria": {
@@ -506,11 +576,6 @@
    "zh": "没有可用的模型。",
    "it": "Nessun modello disponibile."
   },
-  "blocked.composer": {
-   "en": "This model is unavailable — select one to continue",
-   "zh": "当前模型不可用，请先选择模型",
-   "it": "Questo modello non è disponibile — selezionane uno per continuare"
-  },
   "empty.efforts": {
    "en": "This model provides no reasoning effort levels.",
    "zh": "当前模型未提供推理等级。",
@@ -518,6 +583,46 @@
   }
  },
  "schedule.catalog": {
+  "trigger.label": {
+   "en": "Reminders",
+   "zh": "提醒",
+   "it": "Promemoria"
+  },
+  "list.loading": {
+   "en": "Loading reminders…",
+   "zh": "正在加载提醒…",
+   "it": "Caricamento dei promemoria…"
+  },
+  "list.error": {
+   "en": "Could not load reminders.",
+   "zh": "无法加载提醒。",
+   "it": "Impossibile caricare i promemoria."
+  },
+  "list.retry": {
+   "en": "Retry",
+   "zh": "重试",
+   "it": "Riprova"
+  },
+  "delete.action": {
+   "en": "Delete",
+   "zh": "删除",
+   "it": "Elimina"
+  },
+  "delete.pending": {
+   "en": "Deleting…",
+   "zh": "正在删除…",
+   "it": "Eliminazione…"
+  },
+  "delete.label": {
+   "en": "Delete reminder: {title}",
+   "zh": "删除提醒：{title}",
+   "it": "Elimina promemoria: {title}"
+  },
+  "list.open": {
+   "en": "Open reminder details: {title}",
+   "zh": "打开提醒详情：{title}",
+   "it": "Apri i dettagli del promemoria: {title}"
+  },
   "trigger.one": {
    "en": "{count} reminder",
    "zh": "{count} 个提醒",
@@ -533,15 +638,10 @@
    "zh": "活动提醒",
    "it": "Promemoria attivi"
   },
-  "status.scheduled": {
-   "en": "Scheduled",
-   "zh": "等待中",
-   "it": "Programmato"
-  },
-  "status.overdue": {
-   "en": "Overdue",
-   "zh": "已逾期",
-   "it": "Scaduto"
+  "list.nextRun": {
+   "en": "Next run",
+   "zh": "下次运行",
+   "it": "Prossima esecuzione"
   },
   "frequency.once": {
    "en": "Once",
@@ -552,6 +652,221 @@
    "en": "Every {value} {unit}",
    "zh": "{value}{unit}一次",
    "it": "Ogni {value} {unit}"
+  },
+  "time.locale": {
+   "en": "en",
+   "zh": "zh-CN",
+   "it": "it"
+  },
+  "time.utcPrefix": {
+   "en": "UTC",
+   "zh": "UTC",
+   "it": "UTC"
+  },
+  "frequency.daily": {
+   "en": "Daily at {time} ({timeZone})",
+   "zh": "每天 {time}（{timeZone}）",
+   "it": "Ogni giorno alle {time} ({timeZone})"
+  },
+  "frequency.dailyLocal": {
+   "en": "Daily at {time}",
+   "zh": "每天 {time}",
+   "it": "Ogni giorno alle {time}"
+  },
+  "frequency.weekly": {
+   "en": "Weekly on {weekdays} at {time} ({timeZone})",
+   "zh": "每周{weekdays} {time}（{timeZone}）",
+   "it": "Ogni settimana, {weekdays} alle {time} ({timeZone})"
+  },
+  "frequency.weeklyLocal": {
+   "en": "Weekly on {weekdays} at {time}",
+   "zh": "每周{weekdays} {time}",
+   "it": "Ogni settimana, {weekdays} alle {time}"
+  },
+  "frequency.cron": {
+   "en": "Cron {expression} ({timeZone})",
+   "zh": "Cron {expression}（{timeZone}）",
+   "it": "Cron {expression} ({timeZone})"
+  },
+  "frequency.cronLocal": {
+   "en": "Cron {expression}",
+   "zh": "Cron {expression}",
+   "it": "Cron {expression}"
+  },
+  "frequency.cronRule": {
+   "en": "{rule} ({timeZone})",
+   "zh": "{rule}（{timeZone}）",
+   "it": "{rule} ({timeZone})"
+  },
+  "cron.list.join": {
+   "en": ", ",
+   "zh": "、",
+   "it": ", "
+  },
+  "cron.part.join": {
+   "en": " ",
+   "zh": " ",
+   "it": " "
+  },
+  "cron.weekday.name": {
+   "en": "{weekday}",
+   "zh": "周{weekday}",
+   "it": "{weekday}"
+  },
+  "cron.weekday.range": {
+   "en": "{from}–{to}",
+   "zh": "{from}至{to}",
+   "it": "{from}–{to}"
+  },
+  "cron.months": {
+   "en": " in {months}",
+   "zh": "（{months}）",
+   "it": " in {months}"
+  },
+  "cron.day.every": {
+   "en": "Every day{months}",
+   "zh": "每天{months}",
+   "it": "Ogni giorno{months}"
+  },
+  "cron.day.weekdays": {
+   "en": "{weekdays}{months}",
+   "zh": "{weekdays}{months}",
+   "it": "{weekdays}{months}"
+  },
+  "cron.day.monthDays": {
+   "en": "Day {days} of every month{months}",
+   "zh": "每月 {days} 日{months}",
+   "it": "Il giorno {days} di ogni mese{months}"
+  },
+  "cron.day.both": {
+   "en": "Day {days} of every month or {weekdays}{months}",
+   "zh": "每月 {days} 日或{weekdays}{months}",
+   "it": "Il giorno {days} di ogni mese o {weekdays}{months}"
+  },
+  "cron.day.bothStarred": {
+   "en": "Day {days} of every month and {weekdays}{months}",
+   "zh": "每月 {days} 日且{weekdays}{months}",
+   "it": "Il giorno {days} di ogni mese e {weekdays}{months}"
+  },
+  "cron.hours.range": {
+   "en": "{from}–{to}",
+   "zh": "{from} 至 {to}",
+   "it": "{from}–{to}"
+  },
+  "cron.hours.list": {
+   "en": "{hours}",
+   "zh": "{hours}",
+   "it": "{hours}"
+  },
+  "cron.time.everyMinute": {
+   "en": "Every minute",
+   "zh": "每分钟",
+   "it": "Ogni minuto"
+  },
+  "cron.time.everyMinutes": {
+   "en": "Every {step} minutes",
+   "zh": "每 {step} 分钟",
+   "it": "Ogni {step} minuti"
+  },
+  "cron.time.joinedEveryMinute": {
+   "en": "every minute",
+   "zh": "每分钟",
+   "it": "ogni minuto"
+  },
+  "cron.time.joinedEveryMinutes": {
+   "en": "every {step} minutes",
+   "zh": "每 {step} 分钟",
+   "it": "ogni {step} minuti"
+  },
+  "cron.time.everyHour": {
+   "en": "Every hour",
+   "zh": "每小时",
+   "it": "Ogni ora"
+  },
+  "cron.time.joinedEveryHour": {
+   "en": "every hour",
+   "zh": "每小时",
+   "it": "ogni ora"
+  },
+  "cron.time.everyNHours": {
+   "en": "Every {count} hours",
+   "zh": "每 {count} 小时",
+   "it": "Ogni {count} ore"
+  },
+  "cron.time.joinedEveryNHours": {
+   "en": "every {count} hours",
+   "zh": "每 {count} 小时",
+   "it": "ogni {count} ore"
+  },
+  "cron.time.hourlyAt": {
+   "en": "Every hour at minute {minutes}",
+   "zh": "每小时的第 {minutes} 分钟",
+   "it": "Ogni ora al minuto {minutes}"
+  },
+  "cron.time.joinedHourlyAt": {
+   "en": "every hour at minute {minutes}",
+   "zh": "每小时的第 {minutes} 分钟",
+   "it": "ogni ora al minuto {minutes}"
+  },
+  "cron.time.hoursEveryMinute": {
+   "en": "every minute during hours {hours}",
+   "zh": "{hours} 点的每分钟",
+   "it": "ogni minuto durante le ore {hours}"
+  },
+  "cron.time.hoursEveryMinutes": {
+   "en": "every {step} minutes during hours {hours}",
+   "zh": "{hours} 点内每 {step} 分钟",
+   "it": "ogni {step} minuti durante le ore {hours}"
+  },
+  "cron.time.at": {
+   "en": "at {times}",
+   "zh": "{times}",
+   "it": "alle {times}"
+  },
+  "cron.time.hoursAt": {
+   "en": "at minute {minutes} of hours {hours}",
+   "zh": "{hours} 点的第 {minutes} 分钟",
+   "it": "al minuto {minutes} delle ore {hours}"
+  },
+  "frequency.weekday.join": {
+   "en": ", ",
+   "zh": "、",
+   "it": ", "
+  },
+  "frequency.weekday.1": {
+   "en": "Mon",
+   "zh": "一",
+   "it": "Lun"
+  },
+  "frequency.weekday.2": {
+   "en": "Tue",
+   "zh": "二",
+   "it": "Mar"
+  },
+  "frequency.weekday.3": {
+   "en": "Wed",
+   "zh": "三",
+   "it": "Mer"
+  },
+  "frequency.weekday.4": {
+   "en": "Thu",
+   "zh": "四",
+   "it": "Gio"
+  },
+  "frequency.weekday.5": {
+   "en": "Fri",
+   "zh": "五",
+   "it": "Ven"
+  },
+  "frequency.weekday.6": {
+   "en": "Sat",
+   "zh": "六",
+   "it": "Sab"
+  },
+  "frequency.weekday.7": {
+   "en": "Sun",
+   "zh": "日",
+   "it": "Dom"
   },
   "unit.day.one": {
    "en": "day",
@@ -607,33 +922,73 @@
    "en": "{value} {unit} overdue",
    "zh": "已逾期 {value}{unit}",
    "it": "{value} {unit} di ritardo"
+  },
+  "mark.aria": {
+   "en": "{count} scheduled tasks",
+   "zh": "{count} 个自动化任务",
+   "it": "{count} attività pianificate"
+  },
+  "hover.more": {
+   "en": "{count} more",
+   "zh": "另有 {count} 个任务",
+   "it": "Altre {count}"
   }
  },
  "open-in-app": {
   "open.title": {
-   "en": "Open workspace in {app}",
-   "zh": "在 {app} 中打开工作目录",
-   "it": "Apri area di lavoro in {app}"
+   "en": "Open in {app}",
+   "zh": "用 {app} 打开",
+   "it": "Apri in {app}"
+  },
+  "path.appDefault": {
+   "en": "{app} (default)",
+   "zh": "{app}（默认）",
+   "it": "{app} (predefinita)"
+  },
+  "path.appsError": {
+   "en": "Could not load applications",
+   "zh": "无法获取应用列表",
+   "it": "Impossibile caricare le applicazioni"
+  },
+  "shortcut.busy": {
+   "en": "Opening workspace",
+   "zh": "正在打开工作区",
+   "it": "Apertura dell'area di lavoro"
+  },
+  "shortcut.unavailable": {
+   "en": "Current workspace or local application unavailable",
+   "zh": "当前工作区或本地应用不可用",
+   "it": "Area di lavoro corrente o applicazione locale non disponibile"
   },
   "open.tooltip": {
    "en": "Open locally",
    "zh": "在本地打开",
    "it": "Apri in locale"
   },
-  "open.error": {
-   "en": "Failed to open",
-   "zh": "打开失败",
-   "it": "Apertura non riuscita"
+  "path.open": {
+   "en": "Open",
+   "zh": "打开",
+   "it": "Apri"
   },
-  "menu.toggle": {
-   "en": "Choose an app to open in",
-   "zh": "选择打开方式",
-   "it": "Scegli l'app con cui aprire"
+  "path.more": {
+   "en": "More ways to open",
+   "zh": "更多打开方式",
+   "it": "Altri modi di apertura"
   },
-  "menu.aria": {
-   "en": "Open in",
-   "zh": "打开方式",
-   "it": "Apri con"
+  "path.reveal": {
+   "en": "Show file location",
+   "zh": "显示文件位置",
+   "it": "Mostra percorso del file"
+  },
+  "path.openError": {
+   "en": "Could not open. Try again.",
+   "zh": "打开失败，请重试",
+   "it": "Apertura non riuscita. Riprova."
+  },
+  "path.revealError": {
+   "en": "Could not show the file location. Try again.",
+   "zh": "无法显示文件位置，请重试",
+   "it": "Impossibile mostrare il percorso del file. Riprova."
   },
   "app.cursor": {
    "en": "Cursor",

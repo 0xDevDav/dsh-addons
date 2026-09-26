@@ -1,83 +1,87 @@
 {
- "batch": "plan",
- "namespace": "plan",
- "total": 19,
+ "batch": "feedback",
+ "namespace": "feedback",
+ "total": 20,
  "keys": {
-  "chip.label": {
-   "en": "Plan",
-   "zh": "Plan"
+  "action.like": {
+   "en": "Good response",
+   "zh": "好的回答"
   },
-  "preview.title": {
-   "en": "Plan",
-   "zh": "计划"
+  "action.likeActive": {
+   "en": "Remove rating",
+   "zh": "取消标记"
   },
-  "preview.document": {
-   "en": "Plan · Markdown",
-   "zh": "计划 · Markdown"
+  "action.dislike": {
+   "en": "Bad response",
+   "zh": "有问题的回答"
   },
-  "preview.action": {
-   "en": "Open",
-   "zh": "打开"
+  "action.dislikeActive": {
+   "en": "Remove rating",
+   "zh": "取消标记"
   },
-  "preview.open": {
-   "en": "Open plan in sidebar",
-   "zh": "在侧边栏打开计划"
+  "dialog.title": {
+   "en": "Submit feedback",
+   "zh": "提交反馈"
   },
-  "preview.full": {
-   "en": "View full plan",
-   "zh": "查看全文"
+  "dialog.categories": {
+   "en": "Feedback category",
+   "zh": "反馈分类"
   },
-  "preview.openNamed": {
-   "en": "Open plan: {title}",
-   "zh": "打开计划：{title}"
+  "dialog.detail": {
+   "en": "Feedback details",
+   "zh": "反馈详情"
   },
-  "preview.loading": {
-   "en": "Loading plan…",
-   "zh": "正在读取计划…"
+  "dialog.hint": {
+   "en": "Add details to help us improve. Your submission will include the current conversation log.",
+   "zh": "填写详情以帮助我们改进体验，提交内容会包括当前对话的日志"
   },
-  "preview.failed": {
-   "en": "Could not load plan",
-   "zh": "无法读取计划"
+  "category.task-result": {
+   "en": "Task result",
+   "zh": "任务结果"
   },
-  "preview.invalidAddress": {
-   "en": "Invalid plan address",
-   "zh": "计划地址无效"
+  "category.instruction-following": {
+   "en": "Instruction understanding and following",
+   "zh": "指令理解与遵循"
   },
-  "preview.historyUnavailable": {
-   "en": "Session history is unavailable",
-   "zh": "无法读取会话历史"
+  "category.product-interaction": {
+   "en": "Product features and interaction",
+   "zh": "产品功能与交互"
   },
-  "preview.notFound": {
-   "en": "This plan was not found",
-   "zh": "未找到这份计划"
+  "category.service-stability": {
+   "en": "Stability and speed",
+   "zh": "稳定性和速度"
   },
-  "preview.unavailable": {
-   "en": "Plan preview is unavailable",
-   "zh": "计划预览不可用"
+  "category.resource-cost": {
+   "en": "Resource usage and cost",
+   "zh": "资源使用与费用"
   },
-  "preview.expired": {
-   "en": "This temporary plan preview has expired. Reopen it from the pending review card.",
-   "zh": "临时计划预览已失效，请从仍在等待审批的卡片重新打开。"
+  "category.security-privacy-permission": {
+   "en": "Security, privacy, and permissions",
+   "zh": "安全隐私与权限"
   },
-  "chip.on.aria": {
-   "en": "Plan mode on, press to turn off",
-   "zh": "plan mode 已开启，按下关闭"
+  "category.other": {
+   "en": "Other",
+   "zh": "其他"
   },
-  "chip.on.title": {
-   "en": "Plan mode on — click to turn off (/plan off)",
-   "zh": "plan mode 已开启 — 点击关闭（/plan off）"
+  "toast.recorded": {
+   "en": "Thanks for your feedback",
+   "zh": "感谢你的反馈"
   },
-  "chip.off.aria": {
-   "en": "Plan mode off, press to turn on",
-   "zh": "plan mode 已关闭，按下开启"
+  "error.conflict": {
+   "en": "This feedback changed elsewhere; the latest state is shown",
+   "zh": "这条反馈已在别处改动，已显示最新状态"
   },
-  "chip.off.title": {
-   "en": "Plan mode off — click to turn on (/plan)",
-   "zh": "plan mode 已关闭 — 点击开启（/plan）"
+  "error.load": {
+   "en": "Could not load feedback",
+   "zh": "反馈状态加载失败"
   },
-  "chip.exitFailed": {
-   "en": "Failed to exit plan mode",
-   "zh": "退出 plan mode 失败"
+  "error.generic": {
+   "en": "Could not save feedback",
+   "zh": "反馈保存失败"
+  },
+  "error.noteTooLarge": {
+   "en": "The description is too long; shorten it and submit again",
+   "zh": "描述太长，请缩短后再提交"
   }
  }
 }

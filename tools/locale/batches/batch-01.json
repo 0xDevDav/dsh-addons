@@ -1,7 +1,7 @@
 {
  "batch": "common",
  "namespace": "common",
- "total": 37,
+ "total": 41,
  "keys": {
   "ok": {
    "en": "OK",
@@ -22,6 +22,18 @@
   "copied": {
    "en": "Copied",
    "zh": "复制成功"
+  },
+  "codeBlock.title": {
+   "en": "Code block",
+   "zh": "代码块"
+  },
+  "codeBlock.wrap": {
+   "en": "Wrap lines",
+   "zh": "自动换行"
+  },
+  "codeBlock.unwrap": {
+   "en": "Do not wrap lines",
+   "zh": "取消自动换行"
   },
   "copy.failed": {
    "en": "Copy failed",
@@ -118,6 +130,10 @@
   "brand.localBuild": {
    "en": "DSH Local Build",
    "zh": "DSH 本地构建"
+  },
+  "workspace.defaultName": {
+   "en": "Default workspace",
+   "zh": "默认工作区"
   },
   "unknown": {
    "en": "Unknown",

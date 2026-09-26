@@ -1,22 +1,18 @@
 {
- "batch": "question",
- "namespace": "question",
- "total": 15,
+ "batch": "sidebarImage",
+ "namespace": "sidebarImage",
+ "total": 11,
  "keys": {
-  "error.incomplete": "Completa prima questa domanda.",
-  "error.unanswered": "Seleziona un'opzione o inserisci una risposta personalizzata.",
-  "nav.prev": "Domanda precedente",
-  "nav.next": "Domanda successiva",
-  "nav.minimize": "Comprimi la scheda della domanda",
-  "nav.maximize": "Espandi la scheda della domanda",
-  "nav.cancel": "Ignora tutte le domande",
-  "option.recommended": "Consigliato",
-  "custom.placeholder": "Scrivi la tua risposta",
-  "action.skip": "Salta",
-  "action.next": "Avanti",
-  "plan.header": "Revisione del piano",
-  "plan.approve": "Approva",
-  "plan.decline": "Rifiuta",
-  "plan.discuss": "Richiedi modifiche"
+  "zoomControls": "Controlli dello zoom",
+  "zoomMenu": "Scegli lo zoom",
+  "zoomOut": "Riduci",
+  "zoomIn": "Ingrandisci",
+  "zoomFitWidth": "Adatta alla larghezza",
+  "zoomValue": "{percent}%",
+  "title": "Immagine",
+  "preview": "Anteprima immagine: {name}",
+  "loading": "Rendering del documento…",
+  "failed": "Impossibile visualizzare questa immagine.",
+  "unsupported": "L'anteprima immagine richiede il contenuto completo del file."
  }
 }

@@ -1,0 +1,131 @@
+{
+ "batch": "voice-input#2",
+ "namespace": "voice-input",
+ "total": 31,
+ "keys": {
+  "preparation.cancelled": {
+   "en": "Preparation cancelled. Completed downloads are retained.",
+   "zh": "准备已取消，已完成的下载会保留。"
+  },
+  "preparation.cancelling": {
+   "en": "Cancelling preparation…",
+   "zh": "正在取消准备…"
+  },
+  "cloudReady": {
+   "en": "Cloud speech recognition is ready.",
+   "zh": "云端语音识别已就绪。"
+  },
+  "discard": {
+   "en": "Discard transcript",
+   "zh": "丢弃识别文字"
+  },
+  "transcribingShort": {
+   "en": "Transcribing…",
+   "zh": "识别中…"
+  },
+  "wakingShort": {
+   "en": "Waking…",
+   "zh": "唤醒中…"
+  },
+  "provider": {
+   "en": "Recognition service",
+   "zh": "识别服务"
+  },
+  "language": {
+   "en": "Recognition language",
+   "zh": "识别语言"
+  },
+  "auto": {
+   "en": "Detect automatically",
+   "zh": "自动识别"
+  },
+  "zh": {
+   "en": "Chinese",
+   "zh": "中文"
+  },
+  "en": {
+   "en": "English",
+   "zh": "英语"
+  },
+  "yue": {
+   "en": "Cantonese",
+   "zh": "粤语"
+  },
+  "ja": {
+   "en": "Japanese",
+   "zh": "日语"
+  },
+  "ko": {
+   "en": "Korean",
+   "zh": "韩语"
+  },
+  "start": {
+   "en": "Start recording",
+   "zh": "开始录音"
+  },
+  "stop": {
+   "en": "Stop and transcribe",
+   "zh": "停止并识别"
+  },
+  "cancel": {
+   "en": "Cancel",
+   "zh": "取消"
+  },
+  "insert": {
+   "en": "Insert text",
+   "zh": "插入文字"
+  },
+  "loading": {
+   "en": "Loading recognition services…",
+   "zh": "正在读取识别服务…"
+  },
+  "requesting": {
+   "en": "Allow microphone access to continue…",
+   "zh": "请允许使用麦克风…"
+  },
+  "recording": {
+   "en": "Recording…",
+   "zh": "正在录音…"
+  },
+  "interrupted": {
+   "en": "Recording was interrupted. Please try again.",
+   "zh": "录音中断，请重试。"
+  },
+  "local": {
+   "en": "Audio is recognized on the machine running DSH. If models need downloading, that machine must be able to reach the selected source and its file services. Configure a proxy on that machine if needed.",
+   "zh": "音频在运行 DSH 的机器上识别。需要下载模型时，请确保该机器能访问所选下载源及其文件服务。如需代理，请在该机器上配置。"
+  },
+  "cloud": {
+   "en": "Audio will be sent to the selected cloud service.",
+   "zh": "音频将发送至所选云端服务。"
+  },
+  "empty": {
+   "en": "No speech recognized",
+   "zh": "未识别到语音"
+  },
+  "cancelled": {
+   "en": "Voice input cancelled.",
+   "zh": "已取消语音输入。"
+  },
+  "conflict": {
+   "en": "Your draft changed. The transcript is preserved and can be inserted at the current cursor.",
+   "zh": "草稿已被修改。识别文字已保留，可在当前光标位置插入。"
+  },
+  "failed": {
+   "en": "Speech recognition failed: {message}",
+   "zh": "语音识别失败：{message}"
+  },
+  "unavailable": {
+   "en": "This browser cannot record audio. Use a browser with microphone support.",
+   "zh": "当前浏览器不支持录音，请使用支持麦克风的浏览器。"
+  },
+  "permission": {
+   "en": "Microphone access is disabled. Allow it in browser and system settings.",
+   "zh": "麦克风权限未开启，请在浏览器和系统设置中允许访问。"
+  },
+  "tooLarge": {
+   "en": "The recording exceeds the service limit. Try a shorter recording.",
+   "zh": "录音超过服务限制，请缩短录音后重试。"
+  }
+ }
+}

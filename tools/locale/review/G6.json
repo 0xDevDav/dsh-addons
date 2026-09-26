@@ -1,9 +1,9 @@
 {
  "sidebarDocumentPreview": {
   "loading": {
-   "en": "Reading…",
-   "zh": "正在读取…",
-   "it": "Lettura…"
+   "en": "Rendering document...",
+   "zh": "文档渲染中...",
+   "it": "Rendering del documento…"
   },
   "loadMore": {
    "en": "Load more",
@@ -24,6 +24,21 @@
    "en": "Read the file again",
    "zh": "重新读取文件",
    "it": "Leggi di nuovo il file"
+  },
+  "autoRefresh": {
+   "en": "Auto refresh",
+   "zh": "自动刷新",
+   "it": "Aggiornamento automatico"
+  },
+  "autoRefresh.enable": {
+   "en": "Enable auto refresh",
+   "zh": "开启自动刷新",
+   "it": "Attiva aggiornamento automatico"
+  },
+  "autoRefresh.disable": {
+   "en": "Disable auto refresh",
+   "zh": "关闭自动刷新",
+   "it": "Disattiva aggiornamento automatico"
   },
   "wrap.enable": {
    "en": "Turn on line wrap",
@@ -214,6 +229,51 @@
    "zh": "后台任务",
    "it": "Attività in background"
   },
+  "section.live": {
+   "en": "Running",
+   "zh": "进行中",
+   "it": "In esecuzione"
+  },
+  "section.settledCount": {
+   "en": "Finished {count}",
+   "zh": "已结束 {count}",
+   "it": "Terminate {count}"
+  },
+  "section.clear": {
+   "en": "Clear",
+   "zh": "清空",
+   "it": "Svuota"
+  },
+  "row.expandAria": {
+   "en": "Show live output of {label}",
+   "zh": "展开 {label} 的实时输出",
+   "it": "Mostra l'output in tempo reale di {label}"
+  },
+  "row.collapseAria": {
+   "en": "Hide live output of {label}",
+   "zh": "收起 {label} 的实时输出",
+   "it": "Nascondi l'output in tempo reale di {label}"
+  },
+  "kill.stop": {
+   "en": "Stop task {label}",
+   "zh": "停止任务 {label}",
+   "it": "Interrompi l'attività {label}"
+  },
+  "kill.confirm": {
+   "en": "Click again to confirm",
+   "zh": "再次点击确认停止",
+   "it": "Fai di nuovo clic per confermare"
+  },
+  "kill.confirmAction": {
+   "en": "Confirm stop",
+   "zh": "确认停止",
+   "it": "Conferma interruzione"
+  },
+  "kill.failed": {
+   "en": "Stop failed",
+   "zh": "停止失败",
+   "it": "Interruzione non riuscita"
+  },
   "status.running": {
    "en": "running",
    "zh": "运行中",
@@ -263,6 +323,81 @@
    "en": "Took {duration}",
    "zh": "耗时 {duration}",
    "it": "Ha richiesto {duration}"
+  },
+  "output.gap": {
+   "en": "… earlier output dropped …",
+   "zh": "……较早的输出已丢弃……",
+   "it": "… output precedente scartato …"
+  },
+  "output.error": {
+   "en": "live output stream interrupted: {error}",
+   "zh": "实时输出流中断：{error}",
+   "it": "flusso dell'output in tempo reale interrotto: {error}"
+  },
+  "terminal.signal": {
+   "en": "signal {signal}",
+   "zh": "信号 {signal}",
+   "it": "segnale {signal}"
+  },
+  "terminal.exitCode": {
+   "en": "exit {code}",
+   "zh": "退出码 {code}",
+   "it": "codice di uscita {code}"
+  },
+  "terminal.noExitCode": {
+   "en": "no exit code",
+   "zh": "未正常退出",
+   "it": "nessun codice di uscita"
+  },
+  "terminal.running": {
+   "en": "running",
+   "zh": "运行中",
+   "it": "in esecuzione"
+  },
+  "terminal.failed": {
+   "en": "failed",
+   "zh": "已失败",
+   "it": "non riuscito"
+  },
+  "terminal.done": {
+   "en": "done",
+   "zh": "已完成",
+   "it": "completato"
+  },
+  "terminal.copy": {
+   "en": "Copy",
+   "zh": "复制",
+   "it": "Copia"
+  },
+  "terminal.copied": {
+   "en": "Copied",
+   "zh": "已复制",
+   "it": "Copiato"
+  },
+  "terminal.noOutput": {
+   "en": "(no output)",
+   "zh": "（无输出）",
+   "it": "(nessun output)"
+  },
+  "terminal.collapse": {
+   "en": "Collapse",
+   "zh": "收起",
+   "it": "Comprimi"
+  },
+  "terminal.collapseAria": {
+   "en": "Collapse output",
+   "zh": "收起输出",
+   "it": "Comprimi output"
+  },
+  "terminal.expand": {
+   "en": "Show {n} more lines",
+   "zh": "展开其余 {n} 行",
+   "it": "Mostra altre {n} righe"
+  },
+  "terminal.expandAria": {
+   "en": "Expand {n} collapsed output lines",
+   "zh": "展开被折叠的 {n} 行输出",
+   "it": "Espandi {n} righe di output compresse"
   }
  },
  "question": {
@@ -552,6 +687,11 @@
   }
  },
  "sidebarFiles": {
+  "shortcut.noSession": {
+   "en": "Select a session first",
+   "zh": "请先选择会话",
+   "it": "Seleziona prima una sessione"
+  },
   "type.label": {
    "en": "Files",
    "zh": "文件",
@@ -591,6 +731,21 @@
    "en": "Reload",
    "zh": "重新读取",
    "it": "Ricarica"
+  },
+  "autoRefresh": {
+   "en": "Auto refresh",
+   "zh": "自动刷新",
+   "it": "Aggiornamento automatico"
+  },
+  "autoRefresh.enable": {
+   "en": "Enable auto refresh",
+   "zh": "开启自动刷新",
+   "it": "Attiva aggiornamento automatico"
+  },
+  "autoRefresh.disable": {
+   "en": "Disable auto refresh",
+   "zh": "关闭自动刷新",
+   "it": "Disattiva aggiornamento automatico"
   },
   "entry.other": {
    "en": "Not a file or a directory, so it cannot be opened.",
@@ -748,6 +903,11 @@
    "zh": "设置",
    "it": "Impostazioni"
   },
+  "shortcut.open": {
+   "en": "Open settings",
+   "zh": "打开设置",
+   "it": "Apri impostazioni"
+  },
   "desktop.update.available": {
    "en": "Update",
    "zh": "新版本",
@@ -759,9 +919,9 @@
    "it": "Ricerca di aggiornamenti…"
   },
   "desktop.update.progress": {
-   "en": "{percent}%…",
-   "zh": "{percent}%…",
-   "it": "{percent}%…"
+   "en": "{percent}%",
+   "zh": "{percent}%",
+   "it": "{percent}%"
   },
   "desktop.update.verifying": {
    "en": "Verifying update files…",
@@ -862,6 +1022,26 @@
    "en": "General",
    "zh": "通用设置",
    "it": "Generali"
+  },
+  "general.currentVersion": {
+   "en": "Current version: {version}",
+   "zh": "当前版本：{version}",
+   "it": "Versione attuale: {version}"
+  },
+  "developerTools.title": {
+   "en": "Coding Tools",
+   "zh": "代码工作工具",
+   "it": "Strumenti di programmazione"
+  },
+  "developerTools.error": {
+   "en": "Could not save. Please try again.",
+   "zh": "保存失败，请重试",
+   "it": "Impossibile salvare. Riprova."
+  },
+  "developerTools.description": {
+   "en": "Shows trajectory, code diffs, and Agent preset switching in new chats",
+   "zh": "开启后显示轨迹、本轮代码差异，新对话中的 Agent 预设切换",
+   "it": "Mostra registro, Diff del codice e cambio di Preset agente nelle nuove chat"
   },
   "connection.error": {
    "en": "Disconnected",
@@ -994,6 +1174,36 @@
   }
  },
  "sidebarPdf": {
+  "zoomControls": {
+   "en": "Zoom controls",
+   "zh": "缩放控件",
+   "it": "Controlli zoom"
+  },
+  "zoomMenu": {
+   "en": "Choose zoom",
+   "zh": "选择缩放比例",
+   "it": "Scegli lo zoom"
+  },
+  "zoomOut": {
+   "en": "Zoom out",
+   "zh": "缩小",
+   "it": "Riduci"
+  },
+  "zoomIn": {
+   "en": "Zoom in",
+   "zh": "放大",
+   "it": "Ingrandisci"
+  },
+  "zoomFitWidth": {
+   "en": "Fit width",
+   "zh": "适应宽度",
+   "it": "Adatta alla larghezza"
+  },
+  "zoomValue": {
+   "en": "{percent}%",
+   "zh": "{percent}%",
+   "it": "{percent}%"
+  },
   "title": {
    "en": "PDF",
    "zh": "PDF",
@@ -1005,9 +1215,9 @@
    "it": "Pagina PDF {page}"
   },
   "loading": {
-   "en": "Reading…",
-   "zh": "正在读取…",
-   "it": "Lettura…"
+   "en": "Rendering document...",
+   "zh": "文档渲染中...",
+   "it": "Rendering del documento…"
   },
   "rendering": {
    "en": "Rendering page…",
@@ -1097,6 +1307,11 @@
    "en": "Download session log",
    "zh": "下载 Session 日志",
    "it": "Scarica il log della sessione"
+  },
+  "menu.feedback": {
+   "en": "Feedback",
+   "zh": "反馈",
+   "it": "Feedback"
   },
   "dialog.preparingTitle": {
    "en": "Exporting Session",
@@ -1206,9 +1421,9 @@
    "it": "Attivare Auto review (sperimentale)?"
   },
   "auto.confirm.description": {
-   "en": "Auto review runs without a sandbox. Before every native tool call and PTC inner call, the same model as the current agent reviews whether to allow it. This feature is experimental, can falsely allow or deny actions, and uses additional tokens.",
-   "zh": "Auto review 不使用沙箱。每次原生工具调用和 PTC 内层调用前，都会由与当前 agent 相同的模型进行审查。此功能仍属实验性，可能误放行或误拒绝，并会消耗额外 token。",
-   "it": "Auto review viene eseguito senza sandbox. Prima di ogni chiamata a strumento nativa e di ogni chiamata interna PTC, lo stesso modello dell'agente corrente valuta se consentirla. La funzione è sperimentale, può autorizzare o negare azioni per errore e consuma token aggiuntivi."
+   "en": "Auto review runs without a sandbox. Before every native tool call and PTC inner call, the same model as the current agent reviews whether to allow it; you approve or reject each call it denies. This feature is experimental, can falsely allow or deny actions, and uses additional tokens.",
+   "zh": "Auto review 不使用沙箱。每次原生工具调用和 PTC 内层调用前，都会由与当前 agent 相同的模型进行审查；审查拒绝的调用由你批准或拒绝。此功能仍属实验性，可能误放行或误拒绝，并会消耗额外 token。",
+   "it": "Auto review viene eseguito senza sandbox. Prima di ogni chiamata a strumento nativa e di ogni chiamata interna PTC, lo stesso modello dell'agente corrente valuta se consentirla; ogni chiamata che nega passa a te da approvare o rifiutare. La funzione è sperimentale, può autorizzare o negare azioni per errore e consuma token aggiuntivi."
   },
   "auto.confirm.acknowledge": {
    "en": "I understand these risks and want to continue",
@@ -1224,13 +1439,18 @@
  "skill": {
   "row.title": {
    "en": "Skill",
-   "zh": "Skill",
+   "zh": "加载技能",
    "it": "Skill"
   },
   "row.running": {
    "en": "Loading skill",
    "zh": "正在加载 skill",
    "it": "Caricamento Skill"
+  },
+  "row.preparing": {
+   "en": "Preparing to load a skill",
+   "zh": "准备加载技能",
+   "it": "Preparazione al caricamento di una Skill"
   },
   "row.failed": {
    "en": "Skill load failed",
@@ -1261,7 +1481,7 @@
  "plan": {
   "chip.label": {
    "en": "Plan",
-   "zh": "Plan",
+   "zh": "计划",
    "it": "Piano"
   },
   "preview.title": {
@@ -1331,27 +1551,17 @@
   },
   "chip.on.aria": {
    "en": "Plan mode on, press to turn off",
-   "zh": "plan mode 已开启，按下关闭",
+   "zh": "计划模式已开启，按下关闭",
    "it": "Modalità piano attiva, premi per disattivarla"
   },
   "chip.on.title": {
    "en": "Plan mode on — click to turn off (/plan off)",
-   "zh": "plan mode 已开启 — 点击关闭（/plan off）",
+   "zh": "计划模式已开启 — 点击关闭（/plan off）",
    "it": "Modalità piano attiva — fai clic per disattivarla (/plan off)"
-  },
-  "chip.off.aria": {
-   "en": "Plan mode off, press to turn on",
-   "zh": "plan mode 已关闭，按下开启",
-   "it": "Modalità piano disattiva, premi per attivarla"
-  },
-  "chip.off.title": {
-   "en": "Plan mode off — click to turn on (/plan)",
-   "zh": "plan mode 已关闭 — 点击开启（/plan）",
-   "it": "Modalità piano disattiva — fai clic per attivarla (/plan)"
   },
   "chip.exitFailed": {
    "en": "Failed to exit plan mode",
-   "zh": "退出 plan mode 失败",
+   "zh": "退出计划模式失败",
    "it": "Uscita dalla modalità piano non riuscita"
   }
  },
@@ -1410,6 +1620,36 @@
   }
  },
  "sidebarImage": {
+  "zoomControls": {
+   "en": "Zoom controls",
+   "zh": "缩放控件",
+   "it": "Controlli dello zoom"
+  },
+  "zoomMenu": {
+   "en": "Choose zoom",
+   "zh": "选择缩放比例",
+   "it": "Scegli lo zoom"
+  },
+  "zoomOut": {
+   "en": "Zoom out",
+   "zh": "缩小",
+   "it": "Riduci"
+  },
+  "zoomIn": {
+   "en": "Zoom in",
+   "zh": "放大",
+   "it": "Ingrandisci"
+  },
+  "zoomFitWidth": {
+   "en": "Fit width",
+   "zh": "适应宽度",
+   "it": "Adatta alla larghezza"
+  },
+  "zoomValue": {
+   "en": "{percent}%",
+   "zh": "{percent}%",
+   "it": "{percent}%"
+  },
   "title": {
    "en": "Image",
    "zh": "图片",
@@ -1421,9 +1661,9 @@
    "it": "Anteprima immagine: {name}"
   },
   "loading": {
-   "en": "Reading…",
-   "zh": "正在读取…",
-   "it": "Lettura…"
+   "en": "Rendering document...",
+   "zh": "文档渲染中...",
+   "it": "Rendering del documento…"
   },
   "failed": {
    "en": "This image could not be displayed.",
@@ -1470,9 +1710,9 @@
    "it": "Anteprima documento HTML"
   },
   "loading": {
-   "en": "Reading…",
-   "zh": "正在读取…",
-   "it": "Lettura…"
+   "en": "Rendering document...",
+   "zh": "文档渲染中...",
+   "it": "Rendering del documento…"
   },
   "failed": {
    "en": "This HTML document could not be previewed.",

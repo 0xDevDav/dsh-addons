@@ -1,123 +1,287 @@
 {
- "batch": "settings",
- "namespace": "settings",
- "total": 29,
+ "batch": "pluginManager#1",
+ "namespace": "pluginManager",
+ "total": 70,
  "keys": {
-  "trigger": {
-   "en": "Settings",
-   "zh": "设置"
-  },
-  "desktop.update.available": {
-   "en": "Update",
-   "zh": "新版本"
-  },
-  "desktop.update.checking": {
-   "en": "Checking for updates…",
-   "zh": "正在检查更新…"
-  },
-  "desktop.update.progress": {
-   "en": "{percent}%…",
-   "zh": "{percent}%…"
-  },
-  "desktop.update.verifying": {
-   "en": "Verifying update files…",
-   "zh": "正在校验更新文件…"
-  },
-  "desktop.update.installing": {
-   "en": "Preparing to restart…",
-   "zh": "正在准备重启…"
-  },
-  "desktop.update.ready": {
-   "en": "Install and Restart",
-   "zh": "安装并重启"
-  },
-  "desktop.update.retry": {
-   "en": "Retry update",
-   "zh": "重试更新"
-  },
-  "desktop.update.versionDetail": {
-   "en": "{label} — V{version}",
-   "zh": "{label} — V{version}"
-  },
-  "desktop.update.downloadDetail": {
-   "en": "Downloading update: {percent}%\nTarget version: V{version}",
-   "zh": "正在下载更新：{percent}%\n目标版本：V{version}"
-  },
-  "desktop.update.checkFailed": {
-   "en": "Could not check for updates. Please try again later.",
-   "zh": "检查更新失败，请稍后重试。"
-  },
-  "desktop.update.downloadFailed": {
-   "en": "Could not download the update. Please try again.",
-   "zh": "下载更新失败，请重试。"
-  },
-  "desktop.update.installFailed": {
-   "en": "Could not install the update. Please try again later.",
-   "zh": "安装更新失败，请稍后重试。"
-  },
-  "desktop.update.checkNetworkFailed": {
-   "en": "Could not check for updates. Please try again later. The connection was interrupted. Check your network and try again.",
-   "zh": "检查更新失败，请稍后重试。网络连接异常，请检查网络后重试。"
-  },
-  "desktop.update.downloadNetworkFailed": {
-   "en": "Could not download the update. Please try again. The connection was interrupted. Check your network and try again.",
-   "zh": "下载更新失败，请重试。网络连接异常，请检查网络后重试。"
-  },
-  "desktop.update.installNetworkFailed": {
-   "en": "Could not install the update. Please try again later. The connection was interrupted. Check your network and try again.",
-   "zh": "安装更新失败，请稍后重试。网络连接异常，请检查网络后重试。"
-  },
-  "desktop.update.stopFailed": {
-   "en": "Tasks could not be stopped safely. The update was not installed. Please try again later.",
-   "zh": "未能安全停止任务，更新未安装。请稍后重试。"
-  },
-  "desktop.update.tasksChanged": {
-   "en": "New tasks started. Review the update confirmation again.",
-   "zh": "有新任务开始，请重新确认更新。"
-  },
-  "desktop.update.tasksUnavailable": {
-   "en": "Task status is unavailable. Try updating again when the workspace is ready.",
-   "zh": "无法确认任务状态，请在工作区就绪后重试更新。"
+  "panel": {
+   "en": "Plugins",
+   "zh": "插件"
   },
   "title": {
-   "en": "Settings",
-   "zh": "设置"
+   "en": "Plugins",
+   "zh": "插件"
   },
-  "close": {
-   "en": "Close",
-   "zh": "关闭"
+  "intro": {
+   "en": "Add and manage plugins",
+   "zh": "添加和管理插件"
   },
-  "openDocument": {
-   "en": "Open configuration file",
-   "zh": "打开配置文件"
+  "loading": {
+   "en": "Reading plugins…",
+   "zh": "正在读取插件…"
   },
-  "openDocument.error": {
-   "en": "Could not open configuration file",
-   "zh": "无法打开配置文件"
+  "error": {
+   "en": "Could not read all plugins, possibly due to a network problem",
+   "zh": "可能由于网络问题，无法读取全部插件"
   },
-  "general.nav": {
-   "en": "General",
-   "zh": "通用设置"
+  "unavailable": {
+   "en": "This deployment runs without a manageable profile, so plugins cannot be installed or switched here.",
+   "zh": "本部署没有可管理的 profile，无法安装或启停插件。"
   },
-  "connection.error": {
-   "en": "Disconnected",
-   "zh": "连接异常，刷新重试"
+  "retry": {
+   "en": "Retry",
+   "zh": "重试"
   },
-  "connection.connecting": {
-   "en": "Reconnecting",
-   "zh": "重新连接中"
+  "refresh": {
+   "en": "Refresh",
+   "zh": "刷新"
   },
-  "connection.connected": {
-   "en": "Connected",
-   "zh": "连接成功"
+  "empty": {
+   "en": "No plugins are installed yet.",
+   "zh": "还没有安装任何插件。"
   },
-  "connection.reconnect": {
-   "en": "Disconnected, reconnect now",
-   "zh": "连接异常，点击立即重连"
+  "addPlugin": {
+   "en": "Add plugin",
+   "zh": "添加插件"
   },
-  "connection.restart": {
-   "en": "Reconnecting, reconnect now",
-   "zh": "连接中断，正在重试，点击立即重连"
+  "restartNotice": {
+   "en": "The change takes effect at the next start",
+   "zh": "更改将在下次启动生效"
+  },
+  "overriddenNotice": {
+   "en": "{name} was saved, but a higher-priority configuration overrides it, so it is not in effect",
+   "zh": "{name} 已保存，但被更高优先级的配置覆盖，当前未生效"
+  },
+  "bundlesTitle": {
+   "en": "Installed",
+   "zh": "已安装"
+  },
+  "officialTitle": {
+   "en": "Official",
+   "zh": "官方"
+  },
+  "statusProblem": {
+   "en": "Problem",
+   "zh": "异常"
+  },
+  "statusBeta": {
+   "en": "Experimental",
+   "zh": "实验性"
+  },
+  "reasonLabel": {
+   "en": "Reason",
+   "zh": "原因"
+  },
+  "metadataError": {
+   "en": "Package metadata error: {error}",
+   "zh": "包元信息错误：{error}"
+  },
+  "versionTag": {
+   "en": "v{version}",
+   "zh": "v{version}"
+  },
+  "partsLabel": {
+   "en": "Components",
+   "zh": "包含的组件"
+  },
+  "partsEmpty": {
+   "en": "This plugin pack contains no components.",
+   "zh": "这个插件包不包含任何组件。"
+  },
+  "partsCountTotal": {
+   "en": "{count} total",
+   "zh": "共 {count} 个"
+  },
+  "partsCountRunning": {
+   "en": "{count} running",
+   "zh": "{count} 运行中"
+  },
+  "partsCountOff": {
+   "en": "{count} off",
+   "zh": "{count} 已停用"
+  },
+  "partOff": {
+   "en": "Off",
+   "zh": "已关闭"
+  },
+  "partsCountFailed": {
+   "en": "{count} failed",
+   "zh": "{count} 异常"
+  },
+  "partsFilter": {
+   "en": "Filter components",
+   "zh": "筛选组件"
+  },
+  "partsFilterEmpty": {
+   "en": "No component matches.",
+   "zh": "没有匹配的组件。"
+  },
+  "partToggle": {
+   "en": "Enable component {name}",
+   "zh": "启用组件 {name}"
+  },
+  "rowPhasePending": {
+   "en": "Waiting for dependencies",
+   "zh": "等待依赖"
+  },
+  "rowPhaseLoading": {
+   "en": "Loading",
+   "zh": "加载中"
+  },
+  "rowPhaseActive": {
+   "en": "Running",
+   "zh": "运行中"
+  },
+  "rowPhaseFailed": {
+   "en": "Problem",
+   "zh": "异常"
+  },
+  "rowPhaseUnloading": {
+   "en": "Unloading",
+   "zh": "卸载中"
+  },
+  "enableToggle": {
+   "en": "Enable {name}",
+   "zh": "启用 {name}"
+  },
+  "openDetail": {
+   "en": "View {name}",
+   "zh": "查看 {name}"
+  },
+  "backToList": {
+   "en": "Back to plugins",
+   "zh": "返回插件列表"
+  },
+  "crumbRoot": {
+   "en": "Plugins",
+   "zh": "插件列表"
+  },
+  "backToPackage": {
+   "en": "Back to {name}",
+   "zh": "返回 {name}"
+  },
+  "configureRow": {
+   "en": "Configure {name}",
+   "zh": "配置 {name}"
+  },
+  "rowStateIdle": {
+   "en": "Not running",
+   "zh": "未运行"
+  },
+  "uninstall": {
+   "en": "Uninstall",
+   "zh": "卸载"
+  },
+  "uninstallLabel": {
+   "en": "Uninstall {name}",
+   "zh": "卸载 {name}"
+  },
+  "installTitle": {
+   "en": "Add plugin",
+   "zh": "添加插件"
+  },
+  "installDescription": {
+   "en": "Enter the plugin's package name, GitHub repository address, or local directory path.",
+   "zh": "输入插件的包名、GitHub 仓库地址或本地目录路径。"
+  },
+  "installSpecLabel": {
+   "en": "Package name or address",
+   "zh": "包名或地址"
+  },
+  "installSpecPlaceholder": {
+   "en": "for example @deepseek-ai/dsh-subagent-codex",
+   "zh": "例如 @deepseek-ai/dsh-subagent-codex"
+  },
+  "installGuideToggle": {
+   "en": "Install guide and examples",
+   "zh": "插件安装引导和示例"
+  },
+  "installGuideHide": {
+   "en": "Hide the guide",
+   "zh": "收起引导"
+  },
+  "installGuideIdTitle": {
+   "en": "Package name",
+   "zh": "包名"
+  },
+  "installGuideIdExample": {
+   "en": "@deepseek-ai/dsh-subagent-codex",
+   "zh": "@deepseek-ai/dsh-subagent-codex"
+  },
+  "installGuideIdHint": {
+   "en": "The plugin package name is the npm package name (like dsh-xxx or @author/plugin): the part after dsh plugin add or pnpm add in a community plugin's README install command.",
+   "zh": "插件包名即 npm 包名（如 dsh-xxx 或 @作者/插件名），社区插件的 README 安装命令中 dsh plugin add 或 pnpm add 之后的部分。"
+  },
+  "installGuideGitTitle": {
+   "en": "GitHub repository address",
+   "zh": "GitHub 仓库地址"
+  },
+  "installGuideGitExample": {
+   "en": "https://github.com/author/dsh-plugin",
+   "zh": "https://github.com/author/dsh-plugin"
+  },
+  "installGuideGitHint": {
+   "en": "The address of the plugin's open-source repository on GitHub; other Git hosts work too.",
+   "zh": "插件在 GitHub 上的开源仓库地址，也支持其他 Git 仓库。"
+  },
+  "installGuidePathTitle": {
+   "en": "Local plugin directory",
+   "zh": "本地插件目录"
+  },
+  "installGuidePathExample": {
+   "en": "/Users/name/my-plugin",
+   "zh": "/Users/name/my-plugin"
+  },
+  "installGuidePathHint": {
+   "en": "The absolute path of a plugin directory on this machine, developed here or downloaded.",
+   "zh": "本机上插件目录的绝对路径，适用于自行开发或已下载的插件。"
+  },
+  "installGuideExampleLabel": {
+   "en": "Example: ",
+   "zh": "示例："
+  },
+  "installGuideFill": {
+   "en": "Use example",
+   "zh": "填入示例"
+  },
+  "installGuideFillAria": {
+   "en": "Use the example {example}",
+   "zh": "填入示例 {example}"
+  },
+  "installGuideSafety": {
+   "en": "Install only plugins you trust: they run with your permissions and can damage DeepSeek Harness or leak your data.",
+   "zh": "请确认插件来源可信。插件在本机以你的权限运行，来源不明的插件可能损坏 DeepSeek Harness，或读取和泄露你的数据。"
+  },
+  "registryToggle": {
+   "en": "Registry",
+   "zh": "安装源"
+  },
+  "registryLegend": {
+   "en": "The npm registry the plugin is downloaded from",
+   "zh": "从哪个 npm 源下载插件"
+  },
+  "registryDefault": {
+   "en": "Default registry",
+   "zh": "默认安装源"
+  },
+  "registryOfficial": {
+   "en": "Official npm registry",
+   "zh": "npm 官方源"
+  },
+  "registryNpmmirror": {
+   "en": "Mainland China mirror",
+   "zh": "中国大陆镜像源"
+  },
+  "registryWithHost": {
+   "en": "{name} ({host})",
+   "zh": "{name}（{host}）"
+  },
+  "registryCustom": {
+   "en": "Custom address",
+   "zh": "自定义地址"
+  },
+  "registryCustomPlaceholder": {
+   "en": "https://npm.example.com/",
+   "zh": "https://npm.example.com/"
   }
  }
 }

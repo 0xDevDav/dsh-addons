@@ -1,67 +1,75 @@
 {
- "batch": "pluginManager#3",
- "namespace": "pluginManager",
- "total": 15,
+ "batch": "permission.access",
+ "namespace": "permission.access",
+ "total": 17,
  "keys": {
-  "failedDisable": {
-   "en": "Could not disable: {reason}",
-   "zh": "停用失败：{reason}"
+  "mode": {
+   "en": "Access mode, current: {name}",
+   "zh": "访问模式，当前：{name}"
   },
-  "failedUninstall": {
-   "en": "Could not uninstall: {reason}",
-   "zh": "卸载失败：{reason}"
+  "close": {
+   "en": "Close",
+   "zh": "关闭"
   },
-  "failedRowEnable": {
-   "en": "Could not enable the component: {reason}",
-   "zh": "组件启用失败：{reason}"
+  "preset.readOnly": {
+   "en": "Read Only",
+   "zh": "仅可查看"
   },
-  "failedRowDisable": {
-   "en": "Could not disable the component: {reason}",
-   "zh": "组件停用失败：{reason}"
+  "preset.workspaceWrite": {
+   "en": "Workspace Write",
+   "zh": "工作区内修改"
   },
-  "reasonManagementRequired": {
-   "en": "Plugin management needs it; it cannot be switched off or uninstalled.",
-   "zh": "插件管理所需，不能停用或卸载"
+  "preset.fullAccess": {
+   "en": "Full access",
+   "zh": "完全权限"
   },
-  "reasonUnaddressable": {
-   "en": "The profile patch cannot address this one uniquely.",
-   "zh": "当前 profile 的 patch 无法唯一定位这一项"
+  "confirm.title": {
+   "en": "Enable Full access?",
+   "zh": "确认启用完全权限？"
   },
-  "reasonUnknownPlugin": {
-   "en": "No such plugin.",
-   "zh": "找不到该插件"
+  "confirm.description": {
+   "en": "Full access reduces confirmation steps and lets the agent perform more actions directly, including sensitive operations, file changes, or external commands. Only use it when you trust the current task.",
+   "zh": "启用完全权限后，智能体将减少确认步骤，并且可以直接执行更多操作，包括敏感操作、文件修改或外部命令。仅建议在你信任当前任务时使用。"
   },
-  "reasonInvalidSpec": {
-   "en": "Enter a valid package name or address.",
-   "zh": "请输入有效的包名或地址"
+  "confirm.acknowledge": {
+   "en": "I understand the risks and want to continue",
+   "zh": "我已了解风险，并愿意继续"
   },
-  "reasonAmbiguousInstall": {
-   "en": "Which package was installed cannot be told from the dependency change.",
-   "zh": "无法从依赖变更中确定安装了哪一个包"
+  "confirm.cancel": {
+   "en": "Cancel",
+   "zh": "取消"
   },
-  "reasonNotBundle": {
-   "en": "This package declares no bundle, so it cannot be managed as a plugin.",
-   "zh": "这个包没有声明组合包，不能作为插件管理"
+  "confirm.enable": {
+   "en": "Enable Full access",
+   "zh": "启用完全权限"
   },
-  "reasonNotRemovable": {
-   "en": "This package is not owned by the profile, or plugin management needs it.",
-   "zh": "这个包不属于当前 profile，或者是插件管理所需的组件"
+  "auto.label": {
+   "en": "Auto review",
+   "zh": "Auto review"
   },
-  "reasonStopProfile": {
-   "en": "This profile runs without HMR; stop it and uninstall the package with dsh plugin.",
-   "zh": "这个 profile 没有启用 HMR，正在使用的包要停止后用 dsh plugin 卸载"
+  "auto.badge": {
+   "en": "EXP",
+   "zh": "EXP"
   },
-  "reasonBundleInUse": {
-   "en": "Other configuration still uses this bundle's components; switch them off first.",
-   "zh": "其他配置仍在使用这个组合包的组件，请先停用它们"
+  "auto.description": {
+   "en": "Run without a sandbox after an experimental same-model review of every native tool call and PTC inner call.",
+   "zh": "无沙箱运行；每次原生工具调用和 PTC 内层调用前由同一模型进行实验性审查。"
   },
-  "reasonStaleApproval": {
-   "en": "The pending script approvals changed; install again to refresh them.",
-   "zh": "待允许的安装脚本列表已变化，请重新安装以刷新"
+  "auto.confirm.title": {
+   "en": "Enable Auto review (experimental)?",
+   "zh": "确认启用 Auto review（实验）？"
   },
-  "reasonOperationError": {
-   "en": "The Host reported an error.",
-   "zh": "Host 报告了一个错误"
+  "auto.confirm.description": {
+   "en": "Auto review runs without a sandbox. Before every native tool call and PTC inner call, the same model as the current agent reviews whether to allow it; you approve or reject each call it denies. This feature is experimental, can falsely allow or deny actions, and uses additional tokens.",
+   "zh": "Auto review 不使用沙箱。每次原生工具调用和 PTC 内层调用前，都会由与当前 agent 相同的模型进行审查；审查拒绝的调用由你批准或拒绝。此功能仍属实验性，可能误放行或误拒绝，并会消耗额外 token。"
+  },
+  "auto.confirm.acknowledge": {
+   "en": "I understand these risks and want to continue",
+   "zh": "我已了解这些风险，并愿意继续"
+  },
+  "auto.confirm.enable": {
+   "en": "Enable Auto review",
+   "zh": "启用 Auto review"
   }
  }
 }

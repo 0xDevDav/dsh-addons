@@ -29,18 +29,33 @@ export function sessionsRoot() {
   return path.join(harnessHome(), 'sessions')
 }
 
-/** Every `session.v3.jsonl.zstd` log under the session store. */
+/**
+ * The log of one session directory: the newest `session.v<N>.jsonl.zstd` from
+ * generation 3 on. DSH 0.1.7 writes V4 and leaves a V3 log in place when it
+ * carries a session forward, so the highest generation is the session.
+ */
+export function sessionLogIn(dir) {
+  let names
+  try { names = fs.readdirSync(dir) } catch { return undefined }
+  let best
+  for (const name of names) {
+    const match = /^session\.v([1-9][0-9]*)\.jsonl\.zstd$/.exec(name)
+    const generation = match === null ? 0 : Number(match[1])
+    if (generation >= 3 && (best === undefined || generation > best.generation)) best = { generation, name }
+  }
+  return best === undefined ? undefined : path.join(dir, best.name)
+}
+
+/** Every session log under the session store, one per session directory. */
 export function sessionLogs(root = sessionsRoot()) {
   const found = []
   const visit = (dir, depth) => {
     if (depth > 4) return
     let entries
     try { entries = fs.readdirSync(dir, { withFileTypes: true }) } catch { return }
-    for (const entry of entries) {
-      const full = path.join(dir, entry.name)
-      if (entry.isDirectory()) visit(full, depth + 1)
-      else if (entry.name === 'session.v3.jsonl.zstd') found.push(full)
-    }
+    const own = sessionLogIn(dir)
+    if (own !== undefined) found.push(own)
+    for (const entry of entries) if (entry.isDirectory()) visit(path.join(dir, entry.name), depth + 1)
   }
   visit(root, 0)
   return found

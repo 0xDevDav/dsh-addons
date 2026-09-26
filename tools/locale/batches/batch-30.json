@@ -1,143 +1,191 @@
 {
- "batch": "settings.models#2",
- "namespace": "settings.models",
- "total": 34,
+ "batch": "pluginManager#3",
+ "namespace": "pluginManager",
+ "total": 46,
  "keys": {
-  "fetchTitle": {
-   "en": "Choose models to add",
-   "zh": "选择要添加的模型"
+  "installFailureGeneric": {
+   "en": "Something went wrong during the install; the details say what",
+   "zh": "安装过程中出错，原因见安装详情"
   },
-  "fetchDescription": {
-   "en": "These are the models this provider has available. Choose the ones to add.",
-   "zh": "以下是模型提供方的可用模型，勾选要添加的模型。"
+  "terminalRunning": {
+   "en": "Running",
+   "zh": "运行中"
   },
-  "fetchSearch": {
-   "en": "Search models",
-   "zh": "搜索模型"
+  "terminalFailed": {
+   "en": "Failed",
+   "zh": "失败"
   },
-  "fetchNoMatches": {
-   "en": "No matching models.",
-   "zh": "没有匹配的模型。"
+  "terminalDone": {
+   "en": "Done",
+   "zh": "已完成"
   },
-  "fetchSelectAll": {
-   "en": "Select all",
-   "zh": "全选"
+  "terminalCopy": {
+   "en": "Copy",
+   "zh": "复制"
   },
-  "fetchDeselectAll": {
-   "en": "Deselect all",
-   "zh": "取消全选"
+  "terminalCopied": {
+   "en": "Copied",
+   "zh": "复制成功"
   },
-  "fetchAdopt": {
-   "en": "Add selected",
-   "zh": "添加所选"
+  "terminalNoOutput": {
+   "en": "No output",
+   "zh": "无输出"
   },
-  "customAdd": {
-   "en": "Add a custom provider",
-   "zh": "添加自定义提供方"
+  "terminalCollapseAria": {
+   "en": "Collapse output",
+   "zh": "收起输出"
   },
-  "customTitle": {
-   "en": "Custom provider",
-   "zh": "自定义提供方"
+  "terminalCollapse": {
+   "en": "Collapse",
+   "zh": "收起"
   },
-  "customTag": {
-   "en": "Custom",
-   "zh": "自定义"
+  "terminalExpandAria": {
+   "en": "Expand the remaining {n} output lines",
+   "zh": "展开其余 {n} 行输出"
   },
-  "customRoute": {
-   "en": "Provider ID",
-   "zh": "Provider ID"
+  "terminalExpand": {
+   "en": "… {n} more lines",
+   "zh": "… 其余 {n} 行"
   },
-  "customRouteHint": {
-   "en": "Lowercase identifier, starting with a letter, that uniquely names this provider in requests and as its credential name.",
-   "zh": "以小写字母开头的标识，在请求中唯一标识该提供方，并用于派生凭据名。"
+  "terminalExitCode": {
+   "en": "exit code {code}",
+   "zh": "退出码 {code}"
   },
-  "customRouteInvalid": {
-   "en": "Start with a lowercase letter; then lowercase letters, digits, and dashes.",
-   "zh": "需以小写字母开头，之后可用小写字母、数字和短横线。"
+  "terminalSignal": {
+   "en": "signal {signal}",
+   "zh": "信号 {signal}"
   },
-  "customRouteTaken": {
-   "en": "A provider already uses this ID.",
-   "zh": "已有提供方使用了这个 ID。"
+  "terminalNoExitCode": {
+   "en": "no exit code",
+   "zh": "未正常退出"
   },
-  "customDisplayName": {
-   "en": "Display name",
-   "zh": "显示名称"
+  "installDoneNothing": {
+   "en": "Install finished with no new dependency.",
+   "zh": "安装完成，没有新增依赖。"
   },
-  "customApi": {
-   "en": "API protocol",
-   "zh": "API 协议"
+  "installDoneRestart": {
+   "en": "Installed; it loads at the next start.",
+   "zh": "已安装，下次启动后加载。"
   },
-  "customApiUnset": {
-   "en": "Not selected",
-   "zh": "未选择"
+  "installDoneApproved": {
+   "en": "Install scripts allowed for {names}",
+   "zh": "已允许运行安装脚本：{names}"
   },
-  "customNeedsBaseUrl": {
-   "en": "A custom provider needs a base URL.",
-   "zh": "自定义提供方需要填写 API 地址。"
+  "installApprovalTitle": {
+   "en": "Install scripts need permission",
+   "zh": "需要允许安装脚本"
   },
-  "customBaseUrlInvalid": {
-   "en": "Enter a valid HTTP or HTTPS URL.",
-   "zh": "请输入有效的 HTTP 或 HTTPS 地址。"
+  "installApprovalDescription": {
+   "en": "These packages have install scripts that pnpm did not run.",
+   "zh": "以下包声明了安装脚本，pnpm 默认不运行。"
   },
-  "customNeedsModels": {
-   "en": "A custom provider needs at least one model.",
-   "zh": "自定义提供方至少需要一个模型。"
+  "installApprovalConsequence": {
+   "en": "Once allowed, the scripts run here with your permissions, and the permission is saved in this profile.",
+   "zh": "允许后，脚本会以你的权限在本机运行，授权保存在当前 profile，之后不再询问。"
   },
-  "customBaseUrlPlaceholder": {
-   "en": "https://gateway.example/v1",
-   "zh": "https://gateway.example/v1"
+  "installApprovalCaution": {
+   "en": "Allow only packages you trust.",
+   "zh": "只在信任这些包时允许。"
   },
-  "settingsPathUnresolvable": {
-   "en": "unresolvable settings path",
-   "zh": "无法解析设置路径"
+  "installApproveAndRetry": {
+   "en": "Allow these scripts and retry",
+   "zh": "允许这些脚本并重试"
   },
-  "create": {
-   "en": "Create provider",
-   "zh": "创建提供方"
+  "installClose": {
+   "en": "Done",
+   "zh": "完成"
   },
-  "creating": {
-   "en": "Creating…",
-   "zh": "创建中…"
+  "close": {
+   "en": "Close",
+   "zh": "关闭"
   },
-  "welcomeTitle": {
-   "en": "Internal Testing Notice",
-   "zh": "内测声明"
+  "cancel": {
+   "en": "Cancel",
+   "zh": "取消"
   },
-  "welcomeBody": {
-   "en": "DeepSeek Harness 0.1 remains in testing for Harness developers. Many areas need further improvement, and we welcome feedback from the developer community. DeepSeek Harness's core plugins and foundational APIs will continue to evolve rapidly over the coming months.\n\nWe look forward to exploring the limits of intelligence with developers around the world, building on open-source, open, reusable, and composable infrastructure. We welcome Harness developers everywhere to join the DSH plugin ecosystem.",
-   "zh": "DeepSeek Harness 目前的 0.1 版本仍处在面向 Harness 开发者进行测试的阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者的反馈建议。预计 DeepSeek Harness 的核心插件以及基础 API 都会在接下来的一段时间内快速迭代、持续演化。\n\n我们期待与全球开发者一起，在开源、开放、可复用、可组合的基础设施之上，共同探索智能上限。欢迎全球 Harness 开发者加入 DSH 插件生态。"
+  "confirmUninstallTitle": {
+   "en": "Uninstall \"{name}\"?",
+   "zh": "卸载「{name}」？"
   },
-  "welcomeContinue": {
-   "en": "Continue",
-   "zh": "继续"
+  "confirmUninstallDescription": {
+   "en": "What it provides goes away once it is uninstalled.",
+   "zh": "卸载后它提供的功能会消失。"
   },
-  "welcomeError": {
-   "en": "The acknowledgement could not be saved. Please try again.",
-   "zh": "暂时无法保存确认状态，请重试。"
+  "confirmUninstall": {
+   "en": "Uninstall",
+   "zh": "卸载"
   },
-  "onboardingTitle": {
-   "en": "Add an API key to get started",
-   "zh": "添加一个 API Key 开始使用"
+  "failedEnable": {
+   "en": "Could not enable: {reason}",
+   "zh": "启用失败：{reason}"
   },
-  "onboardingDescription": {
-   "en": "Configure the official DeepSeek provider to start building.",
-   "zh": "配置 DeepSeek 官方模型，即可开始使用。"
+  "failedDisable": {
+   "en": "Could not disable: {reason}",
+   "zh": "停用失败：{reason}"
   },
-  "onboardingLater": {
-   "en": "Configure later",
-   "zh": "稍后配置"
+  "failedUninstall": {
+   "en": "Could not uninstall: {reason}",
+   "zh": "卸载失败：{reason}"
   },
-  "onboardingSave": {
-   "en": "Save and continue",
-   "zh": "保存并继续"
+  "failedRowEnable": {
+   "en": "Could not enable the component: {reason}",
+   "zh": "组件启用失败：{reason}"
   },
-  "onboardingSaving": {
-   "en": "Saving…",
-   "zh": "保存中…"
+  "failedRowDisable": {
+   "en": "Could not disable the component: {reason}",
+   "zh": "组件停用失败：{reason}"
   },
-  "keyRequired": {
-   "en": "Enter an API key to continue.",
-   "zh": "请输入 API 密钥后继续。"
+  "reasonManagementRequired": {
+   "en": "Plugin management needs it; it cannot be switched off or uninstalled.",
+   "zh": "插件管理所需，不能停用或卸载"
+  },
+  "reasonUnaddressable": {
+   "en": "The profile patch cannot address this one uniquely.",
+   "zh": "当前 profile 的 patch 无法唯一定位这一项"
+  },
+  "reasonUnknownPlugin": {
+   "en": "No such plugin.",
+   "zh": "找不到该插件"
+  },
+  "reasonInvalidSpec": {
+   "en": "Enter a valid package name or address.",
+   "zh": "请输入有效的包名或地址"
+  },
+  "reasonAmbiguousInstall": {
+   "en": "Which package was installed cannot be told from the dependency change.",
+   "zh": "无法从依赖变更中确定安装了哪一个包"
+  },
+  "reasonNotBundle": {
+   "en": "This package declares no bundle, so it cannot be managed as a plugin.",
+   "zh": "这个包没有声明组合包，不能作为插件管理"
+  },
+  "reasonNotRemovable": {
+   "en": "This package is not owned by the profile, or plugin management needs it.",
+   "zh": "这个包不属于当前 profile，或者是插件管理所需的组件"
+  },
+  "reasonStopProfile": {
+   "en": "This profile runs without HMR; stop it and uninstall the package with dsh plugin.",
+   "zh": "这个 profile 没有启用 HMR，正在使用的包要停止后用 dsh plugin 卸载"
+  },
+  "reasonBundleInUse": {
+   "en": "Other configuration still uses this bundle's components; switch them off first.",
+   "zh": "其他配置仍在使用这个组合包的组件，请先停用它们"
+  },
+  "reasonStaleApproval": {
+   "en": "The pending script approvals changed; install again to refresh them.",
+   "zh": "待允许的安装脚本列表已变化，请重新安装以刷新"
+  },
+  "reasonIncompatibleVersion": {
+   "en": "{plugin} is incompatible with DSH {runtime} (requires {peers}); running it may cause crashes or data loss. Install a plugin version compatible with this DSH.",
+   "zh": "{plugin} 与 DSH {runtime} 不兼容（要求 {peers}），运行它可能导致崩溃或数据丢失。请安装与当前 DSH 兼容的插件版本。"
+  },
+  "reasonIncompatibleVersionUnnamed": {
+   "en": "This plugin is incompatible with the running DSH version; running it may cause crashes or data loss.",
+   "zh": "这个插件与当前 DSH 版本不兼容，运行它可能导致崩溃或数据丢失"
+  },
+  "reasonOperationError": {
+   "en": "The Host reported an error.",
+   "zh": "Host 报告了一个错误"
   }
  }
 }

@@ -1,55 +1,59 @@
 {
- "batch": "goal",
- "namespace": "goal",
- "total": 12,
+ "batch": "conversation#6",
+ "namespace": "conversation",
+ "total": 13,
  "keys": {
-  "phase.active": {
-   "en": "Ongoing Goal",
-   "zh": "进行中的目标"
+  "queue.steerFailed": {
+   "en": "Steering failed. Try again.",
+   "zh": "插话发送失败，请重试。"
   },
-  "phase.active.disarmed": {
-   "en": "Inactive Goal",
-   "zh": "未运行的目标"
+  "terminal.signal": {
+   "en": "signal {signal}",
+   "zh": "信号 {signal}"
   },
-  "phase.paused": {
-   "en": "Paused Goal",
-   "zh": "已暂停的目标"
+  "terminal.exitCode": {
+   "en": "exit code {code}",
+   "zh": "退出码 {code}"
   },
-  "phase.blocked": {
-   "en": "Blocked Goal",
-   "zh": "受阻的目标"
+  "terminal.noExitCode": {
+   "en": "no exit code",
+   "zh": "未正常退出"
   },
-  "objective.aria": {
-   "en": "Goal objective",
-   "zh": "目标内容"
+  "terminal.running": {
+   "en": "Running",
+   "zh": "运行中"
   },
-  "commandInput.aria": {
-   "en": "Command input",
-   "zh": "指令输入"
+  "terminal.failed": {
+   "en": "Failed",
+   "zh": "失败"
   },
-  "action.save": {
-   "en": "Save goal",
-   "zh": "保存目标"
+  "terminal.done": {
+   "en": "Done",
+   "zh": "已完成"
   },
-  "action.cancel": {
-   "en": "Cancel edit",
-   "zh": "取消编辑"
+  "terminal.noOutput": {
+   "en": "No output",
+   "zh": "无输出"
   },
-  "action.pause": {
-   "en": "Pause goal",
-   "zh": "暂停目标"
+  "terminal.collapseAria": {
+   "en": "Collapse output",
+   "zh": "收起输出"
   },
-  "action.resume": {
-   "en": "Resume goal",
-   "zh": "恢复目标"
+  "terminal.expandAria": {
+   "en": "Expand the remaining {n} output lines",
+   "zh": "展开其余 {n} 行输出"
   },
-  "action.edit": {
-   "en": "Edit goal",
-   "zh": "编辑目标"
+  "terminal.expandRest": {
+   "en": "… {n} more lines",
+   "zh": "… 其余 {n} 行"
   },
-  "action.clear": {
-   "en": "Clear goal",
-   "zh": "清除目标"
+  "terminal.sendInput": {
+   "en": "(send input)",
+   "zh": "（发送输入）"
+  },
+  "terminal.session": {
+   "en": "Terminal {sessionId}",
+   "zh": "终端 {sessionId}"
   }
  }
 }

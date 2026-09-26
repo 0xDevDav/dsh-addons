@@ -1,14 +1,25 @@
 {
- "batch": "skill",
- "namespace": "skill",
- "total": 7,
+ "batch": "settings.webSearch",
+ "namespace": "settings.webSearch",
+ "total": 18,
  "keys": {
-  "row.title": "Skill",
-  "row.running": "Caricamento Skill",
-  "row.failed": "Caricamento Skill non riuscito",
-  "row.stopped": "Caricamento Skill interrotto",
-  "row.instructions": "Istruzioni",
-  "row.inspect": "Ispeziona",
-  "menu.userOnly": "solo utente"
+  "title": "Ricerca web",
+  "description": "Configura il provider di ricerca DeepSeek.",
+  "apiKey": "Chiave API",
+  "apiKeyHint": "Memorizzata fuori dal file delle impostazioni. Lascia vuoto per mantenere la chiave attuale.",
+  "apiKeySet": "Una chiave è configurata.",
+  "apiKeyUnset": "Nessuna chiave configurata; la ricerca non è disponibile finché non ne viene configurata una.",
+  "baseUrl": "Endpoint",
+  "baseUrlHint": "Lascia vuoto per usare il valore predefinito del provider.",
+  "maxUses": "Ricerche massime per richiesta",
+  "maxUsesHint": "Quante volte una richiesta può cercare prima di dover rispondere.",
+  "overridden": "Sovrascritto",
+  "reset": "Reimposta predefinito",
+  "readOnly": "Questa distribuzione archivia le impostazioni in sola lettura.",
+  "unavailable": "Questo plugin non è caricato, quindi al momento non può essere configurato.",
+  "save": "Salva",
+  "saving": "Salvataggio…",
+  "saveFailed": "La distribuzione non ha accettato questi valori; sono stati lasciati per la correzione.",
+  "invalidNumber": "Inserisci un numero o lascia vuoto per usare il valore predefinito."
  }
 }

@@ -1,0 +1,32 @@
+{
+ "batch": "agent-team",
+ "namespace": "agent-team",
+ "total": 25,
+ "keys": {
+  "trigger": "Team di agenti",
+  "loading": "Caricamento del team…",
+  "unavailable": "Team non disponibile",
+  "failure": "Record del team salvato non valido: {message}",
+  "empty": "Nessun compito condiviso per ora. Creali tramite la conversazione.",
+  "roster": "Membri",
+  "tasks": "Compiti condivisi",
+  "model": "Modello",
+  "open": "Apri la conversazione del membro",
+  "current": "Chat corrente",
+  "owner": "Proprietario",
+  "unowned": "Non assegnato",
+  "blockedBy": "Bloccato da",
+  "writeScopes": "Ambiti di scrittura",
+  "ready": "Pronto",
+  "blocked": "Bloccato dalle dipendenze",
+  "task.expand": "Mostra altro",
+  "task.collapse": "Mostra meno",
+  "memberStatus.running": "In esecuzione",
+  "memberStatus.inactive": "Non in esecuzione",
+  "memberStatus.provisioning": "In preparazione",
+  "memberStatus.failed": "Non riuscito",
+  "status.pending": "In attesa",
+  "status.in_progress": "In corso",
+  "status.completed": "Completato"
+ }
+}

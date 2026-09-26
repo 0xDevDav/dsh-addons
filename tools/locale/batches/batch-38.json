@@ -1,27 +1,55 @@
 {
- "batch": "sidebarImage",
- "namespace": "sidebarImage",
- "total": 5,
+ "batch": "settings.agentLoop",
+ "namespace": "settings.agentLoop",
+ "total": 12,
  "keys": {
   "title": {
-   "en": "Image",
-   "zh": "图片"
+   "en": "Agent loop",
+   "zh": "Agent 循环"
   },
-  "preview": {
-   "en": "Image preview: {name}",
-   "zh": "图片预览：{name}"
+  "description": {
+   "en": "Control how the Agent dispatches tool calls.",
+   "zh": "控制 Agent 派发工具调用的方式。"
   },
-  "loading": {
-   "en": "Reading…",
-   "zh": "正在读取…"
+  "maxParallel": {
+   "en": "Parallel tool calls",
+   "zh": "并行工具调用数"
   },
-  "failed": {
-   "en": "This image could not be displayed.",
-   "zh": "无法显示这张图片"
+  "maxParallelHint": {
+   "en": "Upper bound on parallel-safe calls running at once within one step.",
+   "zh": "同一步内最多同时运行多少个可并行的调用。"
   },
-  "unsupported": {
-   "en": "Image preview requires the complete file contents.",
-   "zh": "图片预览需要完整文件内容"
+  "overridden": {
+   "en": "Overridden",
+   "zh": "已覆盖"
+  },
+  "reset": {
+   "en": "Reset to default",
+   "zh": "恢复默认"
+  },
+  "readOnly": {
+   "en": "This deployment stores settings read-only.",
+   "zh": "本部署的设置为只读。"
+  },
+  "unavailable": {
+   "en": "This plugin is not loaded, so it cannot be configured right now.",
+   "zh": "该插件当前未加载，暂时无法配置。"
+  },
+  "save": {
+   "en": "Save",
+   "zh": "保存"
+  },
+  "saving": {
+   "en": "Saving…",
+   "zh": "保存中…"
+  },
+  "saveFailed": {
+   "en": "The deployment did not accept these values; they were left for you to correct.",
+   "zh": "本部署没有接受这些值，已保留供你修改。"
+  },
+  "invalidNumber": {
+   "en": "Enter a number, or leave blank to use the default.",
+   "zh": "请填数字；留空表示使用默认值。"
   }
  }
 }

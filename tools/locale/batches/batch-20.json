@@ -1,75 +1,163 @@
 {
- "batch": "permission.access",
- "namespace": "permission.access",
- "total": 17,
+ "batch": "job",
+ "namespace": "job",
+ "total": 39,
  "keys": {
-  "mode": {
-   "en": "Access mode, current: {name}",
-   "zh": "访问模式，当前：{name}"
+  "count.live.one": {
+   "en": "{count} background job running",
+   "zh": "{count} 个后台任务运行中"
   },
-  "close": {
-   "en": "Close",
-   "zh": "关闭"
+  "count.live.other": {
+   "en": "{count} background jobs running",
+   "zh": "{count} 个后台任务运行中"
   },
-  "preset.readOnly": {
-   "en": "Read Only",
-   "zh": "仅可查看"
+  "count.idle.one": {
+   "en": "{count} background job",
+   "zh": "{count} 个后台任务"
   },
-  "preset.workspaceWrite": {
-   "en": "Workspace Write",
-   "zh": "工作区内修改"
+  "count.idle.other": {
+   "en": "{count} background jobs",
+   "zh": "{count} 个后台任务"
   },
-  "preset.fullAccess": {
-   "en": "Full access",
-   "zh": "完全权限"
+  "list.aria": {
+   "en": "Background jobs",
+   "zh": "后台任务"
   },
-  "confirm.title": {
-   "en": "Enable Full access?",
-   "zh": "确认启用完全权限？"
+  "section.live": {
+   "en": "Running",
+   "zh": "进行中"
   },
-  "confirm.description": {
-   "en": "Full access reduces confirmation steps and lets the agent perform more actions directly, including sensitive operations, file changes, or external commands. Only use it when you trust the current task.",
-   "zh": "启用完全权限后，智能体将减少确认步骤，并且可以直接执行更多操作，包括敏感操作、文件修改或外部命令。仅建议在你信任当前任务时使用。"
+  "section.settledCount": {
+   "en": "Finished {count}",
+   "zh": "已结束 {count}"
   },
-  "confirm.acknowledge": {
-   "en": "I understand the risks and want to continue",
-   "zh": "我已了解风险，并愿意继续"
+  "section.clear": {
+   "en": "Clear",
+   "zh": "清空"
   },
-  "confirm.cancel": {
-   "en": "Cancel",
-   "zh": "取消"
+  "row.expandAria": {
+   "en": "Show live output of {label}",
+   "zh": "展开 {label} 的实时输出"
   },
-  "confirm.enable": {
-   "en": "Enable Full access",
-   "zh": "启用完全权限"
+  "row.collapseAria": {
+   "en": "Hide live output of {label}",
+   "zh": "收起 {label} 的实时输出"
   },
-  "auto.label": {
-   "en": "Auto review",
-   "zh": "Auto review"
+  "kill.stop": {
+   "en": "Stop task {label}",
+   "zh": "停止任务 {label}"
   },
-  "auto.badge": {
-   "en": "EXP",
-   "zh": "EXP"
+  "kill.confirm": {
+   "en": "Click again to confirm",
+   "zh": "再次点击确认停止"
   },
-  "auto.description": {
-   "en": "Run without a sandbox after an experimental same-model review of every native tool call and PTC inner call.",
-   "zh": "无沙箱运行；每次原生工具调用和 PTC 内层调用前由同一模型进行实验性审查。"
+  "kill.confirmAction": {
+   "en": "Confirm stop",
+   "zh": "确认停止"
   },
-  "auto.confirm.title": {
-   "en": "Enable Auto review (experimental)?",
-   "zh": "确认启用 Auto review（实验）？"
+  "kill.failed": {
+   "en": "Stop failed",
+   "zh": "停止失败"
   },
-  "auto.confirm.description": {
-   "en": "Auto review runs without a sandbox. Before every native tool call and PTC inner call, the same model as the current agent reviews whether to allow it. This feature is experimental, can falsely allow or deny actions, and uses additional tokens.",
-   "zh": "Auto review 不使用沙箱。每次原生工具调用和 PTC 内层调用前，都会由与当前 agent 相同的模型进行审查。此功能仍属实验性，可能误放行或误拒绝，并会消耗额外 token。"
+  "status.running": {
+   "en": "running",
+   "zh": "运行中"
   },
-  "auto.confirm.acknowledge": {
-   "en": "I understand these risks and want to continue",
-   "zh": "我已了解这些风险，并愿意继续"
+  "status.stopping": {
+   "en": "stopping",
+   "zh": "正在停止"
   },
-  "auto.confirm.enable": {
-   "en": "Enable Auto review",
-   "zh": "启用 Auto review"
+  "status.completed": {
+   "en": "completed",
+   "zh": "已完成"
+  },
+  "status.killed": {
+   "en": "cancelled",
+   "zh": "已取消"
+  },
+  "status.failed": {
+   "en": "failed",
+   "zh": "已失败"
+  },
+  "duration.seconds": {
+   "en": "{seconds}s",
+   "zh": "{seconds}秒"
+  },
+  "duration.minutes": {
+   "en": "{minutes}m {seconds}s",
+   "zh": "{minutes}分{seconds}秒"
+  },
+  "duration.hours": {
+   "en": "{hours}h {minutes}m",
+   "zh": "{hours}小时{minutes}分"
+  },
+  "duration.title.live": {
+   "en": "Running for {duration}",
+   "zh": "已运行 {duration}"
+  },
+  "duration.title.done": {
+   "en": "Took {duration}",
+   "zh": "耗时 {duration}"
+  },
+  "output.gap": {
+   "en": "… earlier output dropped …",
+   "zh": "……较早的输出已丢弃……"
+  },
+  "output.error": {
+   "en": "live output stream interrupted: {error}",
+   "zh": "实时输出流中断：{error}"
+  },
+  "terminal.signal": {
+   "en": "signal {signal}",
+   "zh": "信号 {signal}"
+  },
+  "terminal.exitCode": {
+   "en": "exit {code}",
+   "zh": "退出码 {code}"
+  },
+  "terminal.noExitCode": {
+   "en": "no exit code",
+   "zh": "未正常退出"
+  },
+  "terminal.running": {
+   "en": "running",
+   "zh": "运行中"
+  },
+  "terminal.failed": {
+   "en": "failed",
+   "zh": "已失败"
+  },
+  "terminal.done": {
+   "en": "done",
+   "zh": "已完成"
+  },
+  "terminal.copy": {
+   "en": "Copy",
+   "zh": "复制"
+  },
+  "terminal.copied": {
+   "en": "Copied",
+   "zh": "已复制"
+  },
+  "terminal.noOutput": {
+   "en": "(no output)",
+   "zh": "（无输出）"
+  },
+  "terminal.collapse": {
+   "en": "Collapse",
+   "zh": "收起"
+  },
+  "terminal.collapseAria": {
+   "en": "Collapse output",
+   "zh": "收起输出"
+  },
+  "terminal.expand": {
+   "en": "Show {n} more lines",
+   "zh": "展开其余 {n} 行"
+  },
+  "terminal.expandAria": {
+   "en": "Expand {n} collapsed output lines",
+   "zh": "展开被折叠的 {n} 行输出"
   }
  }
 }

@@ -1,67 +1,287 @@
 {
- "batch": "settings.archivedSessions",
- "namespace": "settings.archivedSessions",
- "total": 15,
+ "batch": "schedule.manager#1",
+ "namespace": "schedule.manager",
+ "total": 70,
  "keys": {
-  "nav": {
-   "en": "Archived sessions",
-   "zh": "已归档会话"
+  "panel": {
+   "en": "Automation tasks",
+   "zh": "自动化任务"
   },
-  "search": {
-   "en": "Search archived sessions",
-   "zh": "搜索已归档会话"
+  "title": {
+   "en": "Automation tasks",
+   "zh": "自动化任务"
   },
-  "loading": {
-   "en": "Reading sessions…",
-   "zh": "正在读取会话…"
+  "new.action": {
+   "en": "New",
+   "zh": "新建"
   },
-  "empty": {
-   "en": "No archived sessions.",
-   "zh": "暂无已归档会话。"
+  "list.label": {
+   "en": "Task catalog",
+   "zh": "任务列表"
   },
-  "unavailable": {
-   "en": "No archived session here can be restored.",
-   "zh": "这里没有可恢复的已归档会话。"
+  "list.nextPrefix": {
+   "en": "Next scheduled time: ",
+   "zh": "下次计划时间："
   },
-  "emptySearch": {
-   "en": "No matching sessions.",
-   "zh": "没有匹配的会话。"
+  "list.loading": {
+   "en": "Loading tasks…",
+   "zh": "正在加载任务…"
   },
-  "unarchive": {
-   "en": "Unarchive",
-   "zh": "取消归档"
+  "list.error": {
+   "en": "Could not load tasks.",
+   "zh": "无法加载任务"
   },
-  "unarchiveNamed": {
-   "en": "Unarchive {title}",
-   "zh": "取消归档 {title}"
+  "list.retry": {
+   "en": "Retry",
+   "zh": "重试"
   },
-  "ungrouped": {
-   "en": "Ungrouped",
-   "zh": "未分组"
+  "list.empty": {
+   "en": "No tasks yet. Tasks created in your sessions appear here.",
+   "zh": "还没有自动化任务，在会话中创建的任务会显示在这里"
   },
-  "time.now": {
-   "en": "now",
-   "zh": "刚刚"
+  "list.emptyInactive": {
+   "en": "No inactive automation tasks",
+   "zh": "没有已结束的自动化任务"
   },
-  "time.minutes": {
-   "en": "{n}min",
-   "zh": "{n}分钟"
+  "list.noMatches": {
+   "en": "No matching tasks",
+   "zh": "没有匹配的自动化任务"
   },
-  "time.hours": {
-   "en": "{n}h",
-   "zh": "{n}小时"
+  "search.label": {
+   "en": "Search tasks",
+   "zh": "搜索任务"
   },
-  "time.days": {
-   "en": "{n}d",
-   "zh": "{n}天"
+  "search.placeholder": {
+   "en": "Search automation tasks",
+   "zh": "搜索自动化任务"
   },
-  "time.months": {
-   "en": "{n}mo",
-   "zh": "{n}个月"
+  "search.clear": {
+   "en": "Clear search",
+   "zh": "清空搜索"
   },
-  "time.years": {
-   "en": "{n}y",
-   "zh": "{n}年"
+  "empty.action": {
+   "en": "New automation task",
+   "zh": "新建自动化任务"
+  },
+  "statusFilter.label": {
+   "en": "Task status",
+   "zh": "任务状态"
+  },
+  "statusFilter.all": {
+   "en": "All",
+   "zh": "全部"
+  },
+  "status.active": {
+   "en": "Enabled",
+   "zh": "已开启"
+  },
+  "status.inactive": {
+   "en": "Inactive",
+   "zh": "已结束"
+  },
+  "detail.label": {
+   "en": "Task details",
+   "zh": "任务详情"
+  },
+  "detail.close": {
+   "en": "Close details",
+   "zh": "关闭详情"
+  },
+  "detail.more": {
+   "en": "Automation task actions",
+   "zh": "自动化任务操作"
+  },
+  "detail.nextRun": {
+   "en": "Next run",
+   "zh": "下次运行"
+  },
+  "detail.tabs": {
+   "en": "Task detail views",
+   "zh": "任务详情视图"
+  },
+  "detail.rule": {
+   "en": "Rules",
+   "zh": "规则"
+  },
+  "detail.records": {
+   "en": "Delivery records",
+   "zh": "任务运行记录"
+  },
+  "delivery.empty": {
+   "en": "No delivery record available",
+   "zh": "暂无任务运行记录"
+  },
+  "delivery.loading": {
+   "en": "Loading delivery records…",
+   "zh": "正在加载任务运行记录…"
+  },
+  "delivery.error": {
+   "en": "Could not load delivery records.",
+   "zh": "无法加载任务运行记录"
+  },
+  "delivery.notFound": {
+   "en": "This task is no longer available.",
+   "zh": "任务已不可用"
+  },
+  "delivery.cursorError": {
+   "en": "Records were updated.",
+   "zh": "记录已更新"
+  },
+  "delivery.retry": {
+   "en": "Retry",
+   "zh": "重试"
+  },
+  "delivery.refresh": {
+   "en": "Refresh",
+   "zh": "刷新"
+  },
+  "delivery.loadMore": {
+   "en": "Load more",
+   "zh": "加载更多"
+  },
+  "delivery.expand": {
+   "en": "Expand",
+   "zh": "展开"
+  },
+  "delivery.collapse": {
+   "en": "Collapse",
+   "zh": "收起"
+  },
+  "delivery.pruned": {
+   "en": "Earlier delivery records have been cleared",
+   "zh": "更早的运行记录已清理"
+  },
+  "delivery.retention": {
+   "en": "Retention rules",
+   "zh": "保留规则"
+  },
+  "delivery.retentionBounds": {
+   "en": "Each task keeps up to {records} delivery records from the last {days} days.",
+   "zh": "每个任务最多保留近 {days} 天内的 {records} 条运行记录。"
+  },
+  "delivery.retentionExplanation": {
+   "en": "When a new record is saved, older records outside these limits are cleared automatically. Clearing records does not stop the task.",
+   "zh": "产生新记录时，超出范围的旧记录会自动清理。清理记录不影响任务继续运行。"
+  },
+  "detail.name": {
+   "en": "Automation task name",
+   "zh": "自动化任务名称"
+  },
+  "detail.instruction": {
+   "en": "Automation task instruction",
+   "zh": "自动化任务内容"
+  },
+  "detail.status": {
+   "en": "Status",
+   "zh": "状态"
+  },
+  "detail.next": {
+   "en": "Next scheduled time",
+   "zh": "下次计划时间"
+  },
+  "detail.frequency": {
+   "en": "Frequency",
+   "zh": "提醒频率"
+  },
+  "detail.id": {
+   "en": "Task ID",
+   "zh": "任务 ID"
+  },
+  "detail.session": {
+   "en": "Linked session",
+   "zh": "关联会话"
+  },
+  "detail.openSession": {
+   "en": "Linked session: open original session",
+   "zh": "关联会话：打开原会话"
+  },
+  "detail.openSessionTitle": {
+   "en": "Linked session {title}: open original session",
+   "zh": "关联会话 {title}：打开原会话"
+  },
+  "detail.sessionLoading": {
+   "en": "Loading original session information.",
+   "zh": "正在加载原会话信息"
+  },
+  "detail.sessionArchived": {
+   "en": "The original session is archived.",
+   "zh": "原会话已归档"
+  },
+  "detail.sessionUnavailable": {
+   "en": "The original session is unavailable.",
+   "zh": "原会话当前不可用"
+  },
+  "detail.missing": {
+   "en": "Task unavailable. It may have been deleted.",
+   "zh": "任务已不可用，可能已被删除"
+  },
+  "delivery.label": {
+   "en": "Saved delivery record",
+   "zh": "已保存的任务运行记录"
+  },
+  "frequency.once": {
+   "en": "Once",
+   "zh": "仅一次"
+  },
+  "frequency.every": {
+   "en": "Every {value} {unit}",
+   "zh": "每 {value} {unit}"
+  },
+  "time.locale": {
+   "en": "en",
+   "zh": "zh-CN"
+  },
+  "time.utcPrefix": {
+   "en": "UTC",
+   "zh": "UTC"
+  },
+  "frequency.daily": {
+   "en": "Daily at {time} ({timeZone})",
+   "zh": "每天 {time}（{timeZone}）"
+  },
+  "frequency.dailyLocal": {
+   "en": "Daily at {time}",
+   "zh": "每天 {time}"
+  },
+  "frequency.weekly": {
+   "en": "Weekly on {weekdays} at {time} ({timeZone})",
+   "zh": "每周{weekdays} {time}（{timeZone}）"
+  },
+  "frequency.weeklyLocal": {
+   "en": "Weekly on {weekdays} at {time}",
+   "zh": "每周{weekdays} {time}"
+  },
+  "frequency.cron": {
+   "en": "Cron {expression} ({timeZone})",
+   "zh": "Cron {expression}（{timeZone}）"
+  },
+  "frequency.cronLocal": {
+   "en": "Cron {expression}",
+   "zh": "Cron {expression}"
+  },
+  "frequency.cronRule": {
+   "en": "{rule} ({timeZone})",
+   "zh": "{rule}（{timeZone}）"
+  },
+  "cron.list.join": {
+   "en": ", ",
+   "zh": "、"
+  },
+  "cron.part.join": {
+   "en": " ",
+   "zh": " "
+  },
+  "cron.weekday.name": {
+   "en": "{weekday}",
+   "zh": "周{weekday}"
+  },
+  "cron.weekday.range": {
+   "en": "{from}–{to}",
+   "zh": "{from}至{to}"
+  },
+  "cron.months": {
+   "en": " in {months}",
+   "zh": "（{months}）"
   }
  }
 }

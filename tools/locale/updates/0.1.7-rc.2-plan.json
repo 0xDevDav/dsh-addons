@@ -1,0 +1,4930 @@
+{
+ "added": {
+  "common": {
+   "codeBlock.title": {
+    "en": "Code block",
+    "zh": "代码块"
+   },
+   "codeBlock.wrap": {
+    "en": "Wrap lines",
+    "zh": "自动换行"
+   },
+   "codeBlock.unwrap": {
+    "en": "Do not wrap lines",
+    "zh": "取消自动换行"
+   },
+   "workspace.defaultName": {
+    "en": "Default workspace",
+    "zh": "默认工作区"
+   }
+  },
+  "settings.agentPreset": {
+   "modeExplanation": {
+    "en": "Mode details",
+    "zh": "模式说明"
+   },
+   "howToUse": {
+    "en": "How to use",
+    "zh": "如何使用"
+   },
+   "guideSections": {
+    "en": "Guide sections",
+    "zh": "帮助内容"
+   },
+   "guideExampleTask": {
+    "en": "Example task",
+    "zh": "示例任务"
+   },
+   "guideCopy": {
+    "en": "Copy",
+    "zh": "复制"
+   },
+   "guideCopied": {
+    "en": "Copied",
+    "zh": "已复制"
+   },
+   "guideFootnotes": {
+    "en": "Footnotes",
+    "zh": "脚注"
+   },
+   "guideStandardIntro": {
+    "en": "Choose Standard mode when starting a new task. Describe what you want to accomplish, point to the relevant files, and explain how to check the result.",
+    "zh": "新建任务时选择「标准模式」，说明要完成什么、相关文件在哪里，以及怎样判断任务完成。"
+   },
+   "guideStandardExplanation": {
+    "en": "### How it works\n\nThe agent calls tools directly to read and edit files, search, and run terminal commands. It includes Skills, planning, goals, subagents, workflows, and context compaction.\n\n### When to choose it\n\nStart here for everyday coding, file work, and research. Standard mode can also write scripts and process files in batches. PTC changes how tool calls are organized; it is not required for batch tasks.",
+    "zh": "### 工作方式\n\nAgent 直接调用工具来读写文件、检索资料和执行终端命令。包含 Skills、计划、目标、子 Agent、工作流和上下文压缩等能力。\n\n### 什么时候选\n\n日常编程、文件处理和资料整理可以从这里开始。标准模式也能编写脚本、批量处理文件；PTC 改变的是工具调用方式，批量任务并不必须使用 PTC。"
+   },
+   "guideStandardUsage": {
+    "en": "### Fix a bug\n\n> Find out why submitting the search form twice makes the results disappear. Fix it and run the relevant tests. Explain the cause and what changed.\n\nExpected output: a code change, the relevant test results, and an explanation of the cause.\n\n### Organize project notes\n\n> Read the Markdown notes in this project. Summarize the agreed decisions and open questions, with links to the source files.\n\nExpected output: a summary with references that you can check against the original notes.",
+    "zh": "### 修复一个问题\n\n> 搜索表单连续提交两次后，结果会消失。请定位原因、修复问题并运行相关测试，最后说明原因和修改内容。\n\n预期产出：代码修改、相关测试结果，以及问题原因说明。\n\n### 整理项目资料\n\n> 阅读项目中的 Markdown 记录，整理已经达成的结论和仍待确认的问题，并附上对应文件链接。\n\n预期产出：一份带来源引用的总结，方便回到原文核对。"
+   },
+   "guidePtcIntro": {
+    "en": "Choose PTC mode when starting a new task. Specify the input files, processing rules, and output format. The agent writes the code.",
+    "zh": "新建任务时选择「PTC 模式」，说明输入文件、处理规则和输出格式。代码由 Agent 编写。"
+   },
+   "guidePtcExplanation": {
+    "en": "### How tools are called\n\nPTC means Programmatic Tool Calling. In this built-in preset, the agent uses run_code to write a TypeScript program that calls tools through a generated SDK. The program can use loops, conditions, error handling, and concurrent calls where appropriate.\n\n### What reaches the model\n\nTool results first reach the program, which can filter and combine them. The model receives what the program prints or returns; image results are attached separately. Nested tool calls are still recorded and remain subject to tool permissions.\n\n### Compared with Standard mode\n\nBoth modes can handle coding and batch tasks. Standard mode exposes individual tools directly; PTC organizes tool calls in code. The current PTC preset leaves the workflow tool disabled. Speed and token use depend on the task and how the program handles its results.",
+    "zh": "### 怎样调用工具\n\nPTC 是 Programmatic Tool Calling，即通过程序调用工具。当前内置预设让 Agent 通过 run_code 编写 TypeScript 程序，使用生成的工具 SDK 发起调用。程序可以组织循环、条件判断、错误处理，以及适合并发执行的调用。\n\n### 哪些结果交给模型\n\n工具返回的数据先交给程序，经过筛选、计算或合并，再通过输出或返回值交给模型；图片结果会另行附加。程序中的工具调用仍会被记录，也仍受工具权限约束。\n\n### 与标准模式的区别\n\n两种模式都能编程、批量处理文件。标准模式直接向模型提供各个工具；PTC 让模型用代码组织工具调用。当前 PTC 预设未启用 workflow 工具。速度和 token 用量取决于具体任务与结果处理方式。"
+   },
+   "guidePtcUsage": {
+    "en": "### Check a set of configuration files\n\n> Check all JSON files in configs/. List missing required fields and invalid values against schema.json. Save a CSV with one row per issue. Include unreadable files in the report and keep checking the rest. Leave the original files unchanged.\n\nExpected output: an issue summary and a CSV report. The program can repeat the same checks, handle individual failures, and collect the results.\n\n### Summarize error logs\n\n> Analyze the log files in logs/. Group errors by service and error type. Show the ten most frequent groups and one example from each. Save the full counts to a CSV.\n\nExpected output: the top error groups and a complete count table. Intermediate data can be aggregated in the program before the summary reaches the model.",
+    "zh": "### 批量检查配置文件\n\n> 检查 configs/ 下所有 JSON 文件，按照 schema.json 找出缺失字段和不合法的值。每个问题写成 CSV 中的一行；读取失败的文件也记入报告，继续检查其余文件。保留原文件。\n\n预期产出：问题汇总和一份 CSV 报告。程序可以对多份文件执行相同检查，处理单个文件的失败，再汇总结果。\n\n### 汇总错误日志\n\n> 分析 logs/ 下的日志，按服务和错误类型统计次数，列出出现最多的十类错误，每类保留一条示例。完整统计另存为 CSV。\n\n预期产出：高频错误摘要和完整统计表。中间数据可以先在程序中聚合，再把汇总交给模型。"
+   },
+   "guideMinimalIntro": {
+    "en": "Choose Minimal mode for a new task. For a comparison, hold the model, permissions, input, and starting workspace state constant across runs.",
+    "zh": "新建任务时选择「极简模式」。做对照测试时，保持模型、权限、任务输入和工作区起始状态一致。"
+   },
+   "guideMinimalExplanation": {
+    "en": "### What is included\n\nOne persistent shell tool and a fixed system prompt. The built-in preset does not load Skills, planning, context compaction, or the standard runtime context.\n\n### When to choose it\n\nUse it as a baseline for experiments and comparisons. It can still read files and execute scripts through shell commands, but offers fewer built-in ways to manage a long task. Fewer tools does not necessarily make it easier for a beginner.",
+    "zh": "### 保留哪些能力\n\n仅提供一个持久 Shell 工具，并使用固定系统提示词。内置预设不加载 Skills、计划、上下文压缩，也不注入标准运行时上下文。\n\n### 什么时候选\n\n适合作为实验和对照测试的基线。Agent 仍能通过终端命令读写文件、运行脚本，但缺少管理长任务的内置辅助能力。工具少，不代表对新手更容易。"
+   },
+   "guideMinimalUsage": {
+    "en": "### Compare performance on a small bug fix\n\n> Run the tests for this project, find the cause of the failure, and make the smallest fix. Run the relevant tests again and report the result.\n\nRun the same task separately in Standard and Minimal modes from the same starting state. Compare task completion, tool calls, and the resulting changes. Minimal mode performs the work through terminal commands.",
+    "zh": "### 对比基础修复表现\n\n> 运行这个项目的测试，找出失败原因，做最小修复，再运行相关测试并报告结果。\n\n分别用标准模式和极简模式，从相同的工作区状态执行这条任务，对比完成情况、工具调用和最终修改。极简模式会通过终端命令完成这些操作。"
+   },
+   "guideCordisIntro": {
+    "en": "Choose Creator mode for a new task. Describe the capability you want, where it should appear, and how you will verify it.",
+    "zh": "新建任务时选择「创造模式」，说明希望增加什么能力、从哪里使用，以及怎样验证效果。"
+   },
+   "guideCordisExplanation": {
+    "en": "### What you can create\n\nCreator mode includes the standard task tools plus runtime inspection, persistent plugin management, and guidance for authoring Cordis plugins and agent presets. It can create a plugin that adds a capability or UI, or a preset that combines tools and prompts for a particular job.\n\n### Plugins and modes\n\nA plugin adds capabilities to DSH, such as a tool, a service connection, or a UI entry. A mode is an agent preset that selects tools and defines how the agent works in a task. A plugin can be included in a custom preset.\n\n### How the result takes effect\n\nAsk the agent to install and verify the result, not just generate source code. A plugin may load immediately or require a restart, depending on what it changes. A newly created preset is selected when starting a new task.",
+    "zh": "### 可以创造什么\n\n创造模式具备标准任务工具，并增加运行时检查、持久化插件管理，以及 Cordis 插件和 Agent 预设的开发指引。可以编写插件来添加功能或界面，也可以组合工具和提示词，创建适合特定任务的模式。\n\n### 插件与模式的关系\n\n插件为 DSH 增加能力，例如工具、服务连接或界面入口。模式是一份 Agent 预设，用来选择任务可用的工具，并约定 Agent 的工作方式。自定义模式中也可以使用自己开发的插件。\n\n### 怎样让成果生效\n\n可以要求 Agent 完成安装并验证实际效果。插件可能即时加载，也可能需要重启，取决于修改内容；新建的模式在创建新任务时选择。"
+   },
+   "guideCordisUsage": {
+    "en": "### Add a UI\n\n> Create a DSH plugin that adds a project notes entry to the sidebar. Let me browse the Markdown files in this workspace and preview a selected note. Install it and verify that the page opens.\n\nExpected output: an installed plugin with a working entry and preview page, plus any remaining activation steps.\n\n### Add a tool\n\n> Create a plugin with a tool that reads this project’s test report and summarizes the failed tests. Register it and verify it with a sample report.\n\nExpected output: a plugin with a callable tool and a verified sample call.\n\n### Create my own mode\n\n> Create a “Code review” mode based on Standard mode. Have it prioritize potential bugs and test gaps, cite file paths and lines, and ask before modifying files. Save it as a selectable preset.\n\nExpected output: a custom preset for new tasks. These review instructions guide the agent; permission settings determine which actions it can execute.",
+    "zh": "### 添加一个界面\n\n> 帮我写一个 DSH 插件，在侧栏增加「项目笔记」入口，列出当前工作区的 Markdown 文件，点击后能预览内容。完成安装并验证页面能打开。\n\n预期产出：带侧栏入口和预览页的插件，以及仍需完成的生效步骤。\n\n### 添加一个工具\n\n> 写一个插件，提供读取项目测试报告、汇总失败用例的工具。注册工具，并用一份示例报告验证调用结果。\n\n预期产出：可调用的新工具，以及一次示例调用的验证结果。\n\n### 创建自己的模式\n\n> 基于标准模式创建「代码审查」模式，优先检查潜在错误和测试缺口，指出文件与行号，修改文件前先询问我。保存成可选择的预设。\n\n预期产出：可在新任务中选择的自定义模式。审查要求用于指导 Agent，实际可执行的操作仍由权限设置决定。"
+   },
+   "enableDevToolsToSetDefault": {
+    "en": "Turn on Coding Tools in General settings to choose a default",
+    "zh": "请先在通用设置中开启代码工作工具，再设置默认值"
+   },
+   "enableDevToolsToCreate": {
+    "en": "Turn on Coding Tools in General settings to start Creator mode",
+    "zh": "请先在通用设置中开启代码工作工具，再启动创造模式"
+   }
+  },
+  "chat": {
+   "message.stepProcess.thinking": {
+    "en": "Analyzing the request",
+    "zh": "正在分析请求"
+   },
+   "message.stepProcess.read": {
+    "en": "Reading files",
+    "zh": "正在读取文件"
+   },
+   "message.stepProcess.readImage": {
+    "en": "Reading images",
+    "zh": "正在读取图片"
+   },
+   "message.stepProcess.write": {
+    "en": "Writing files",
+    "zh": "正在写入文件"
+   },
+   "message.stepProcess.search": {
+    "en": "Searching code",
+    "zh": "正在搜索代码"
+   },
+   "message.stepProcess.edit": {
+    "en": "Editing files",
+    "zh": "正在编辑文件"
+   },
+   "message.stepProcess.commands": {
+    "en": "Running commands",
+    "zh": "正在运行命令"
+   },
+   "message.stepProcess.code": {
+    "en": "Running code",
+    "zh": "正在运行代码"
+   },
+   "message.stepProcess.webSearch": {
+    "en": "Searching the web",
+    "zh": "正在搜索网页"
+   },
+   "message.stepProcess.webFetch": {
+    "en": "Visiting web pages",
+    "zh": "正在访问网页"
+   },
+   "message.stepProcess.subagents": {
+    "en": "Coordinating subagents",
+    "zh": "正在协调子智能体"
+   },
+   "message.stepProcess.plan": {
+    "en": "Updating the plan",
+    "zh": "正在更新计划"
+   },
+   "message.stepProcess.questions": {
+    "en": "Waiting for your action",
+    "zh": "等待你的操作"
+   },
+   "message.stepProcess.tools": {
+    "en": "Calling tools",
+    "zh": "正在调用工具"
+   },
+   "message.stepProcess.prepare.read": {
+    "en": "Preparing to read files",
+    "zh": "准备读取文件"
+   },
+   "message.stepProcess.prepare.readImage": {
+    "en": "Preparing to read images",
+    "zh": "准备读取图片"
+   },
+   "message.stepProcess.prepare.write": {
+    "en": "Preparing to write files",
+    "zh": "准备写入文件"
+   },
+   "message.stepProcess.prepare.search": {
+    "en": "Preparing to search code",
+    "zh": "准备搜索代码"
+   },
+   "message.stepProcess.prepare.edit": {
+    "en": "Preparing to edit files",
+    "zh": "准备编辑文件"
+   },
+   "message.stepProcess.prepare.commands": {
+    "en": "Preparing to run commands",
+    "zh": "准备运行命令"
+   },
+   "message.stepProcess.prepare.code": {
+    "en": "Preparing to run code",
+    "zh": "准备运行代码"
+   },
+   "message.stepProcess.prepare.webSearch": {
+    "en": "Preparing to search the web",
+    "zh": "准备搜索网页"
+   },
+   "message.stepProcess.prepare.webFetch": {
+    "en": "Preparing to visit web pages",
+    "zh": "准备访问网页"
+   },
+   "message.stepProcess.prepare.subagents": {
+    "en": "Preparing to coordinate subagents",
+    "zh": "准备协调子智能体"
+   },
+   "message.stepProcess.prepare.plan": {
+    "en": "Preparing to update the plan",
+    "zh": "准备更新计划"
+   },
+   "message.stepProcess.prepare.questions": {
+    "en": "Preparing questions",
+    "zh": "准备提问"
+   },
+   "message.stepProcess.prepare.tools": {
+    "en": "Preparing tool calls",
+    "zh": "准备调用工具"
+   },
+   "message.stepProcess.done.thinking": {
+    "en": "Analysis completed",
+    "zh": "已完成分析"
+   },
+   "message.stepProcess.done.read": {
+    "en": "Read files",
+    "zh": "已读取文件"
+   },
+   "message.stepProcess.done.readImage": {
+    "en": "Read images",
+    "zh": "已读取图片"
+   },
+   "message.stepProcess.done.write": {
+    "en": "Wrote files",
+    "zh": "已写入文件"
+   },
+   "message.stepProcess.done.search": {
+    "en": "Searched code",
+    "zh": "已搜索代码"
+   },
+   "message.stepProcess.done.edit": {
+    "en": "Edited files",
+    "zh": "修改了文件"
+   },
+   "message.stepProcess.done.commands": {
+    "en": "Ran commands",
+    "zh": "执行了命令"
+   },
+   "message.stepProcess.done.code": {
+    "en": "Ran code",
+    "zh": "运行了代码"
+   },
+   "message.stepProcess.done.webSearch": {
+    "en": "Searched the web",
+    "zh": "已搜索网页"
+   },
+   "message.stepProcess.done.webFetch": {
+    "en": "Visited web pages",
+    "zh": "已访问网页"
+   },
+   "message.stepProcess.done.subagents": {
+    "en": "Coordinated subagents",
+    "zh": "已协调子智能体"
+   },
+   "message.stepProcess.done.plan": {
+    "en": "Updated the plan",
+    "zh": "更新了计划"
+   },
+   "message.stepProcess.done.questions": {
+    "en": "Asked questions",
+    "zh": "向用户提出了问题"
+   },
+   "message.stepProcess.done.tools": {
+    "en": "Called tools",
+    "zh": "已调用工具"
+   },
+   "message.stepProcess.joinTwo": {
+    "en": "{first} and {second}",
+    "zh": "{first}并{second}"
+   },
+   "message.stepProcess.comma": {
+    "en": ", ",
+    "zh": "，"
+   },
+   "message.stepProcess.sharedPrefix": {
+    "en": "",
+    "zh": "已"
+   },
+   "message.stepProcess.more": {
+    "en": "{title}, etc.",
+    "zh": "{title}等"
+   },
+   "message.trigger.request": {
+    "en": "Execution requested",
+    "zh": "收到执行请求"
+   },
+   "message.trigger.goal": {
+    "en": "Continuing goal",
+    "zh": "继续执行目标"
+   },
+   "message.trigger.agent": {
+    "en": "Task message received",
+    "zh": "收到任务消息"
+   },
+   "message.trigger.team": {
+    "en": "Team message received",
+    "zh": "收到团队消息"
+   },
+   "message.trigger.subagent": {
+    "en": "Subtask status updated",
+    "zh": "子任务状态更新"
+   },
+   "message.trigger.github": {
+    "en": "GitHub event received",
+    "zh": "收到 GitHub 事件"
+   },
+   "message.trigger.webhook": {
+    "en": "External event received",
+    "zh": "收到外部事件"
+   },
+   "message.trigger.schedule": {
+    "en": "Scheduled task",
+    "zh": "定时任务"
+   },
+   "message.trigger.job": {
+    "en": "Background task updated",
+    "zh": "后台任务状态更新"
+   },
+   "message.trigger.plugin": {
+    "en": "Plugin status updated",
+    "zh": "插件状态更新"
+   },
+   "message.trigger.explanation": {
+    "en": "This notification triggered this response.",
+    "zh": "这条通知触发了本轮回复。"
+   },
+   "message.turnProcess.worked": {
+    "en": "Worked",
+    "zh": "已完成工作"
+   },
+   "message.turnProcess.deepDivingFor": {
+    "en": "Deep diving for {duration}",
+    "zh": "深度求索中，用时{duration}"
+   },
+   "message.turnProcess.took": {
+    "en": "Took {duration}",
+    "zh": "用时 {duration}"
+   },
+   "message.turnProcess.failed": {
+    "en": "Failed",
+    "zh": "处理失败"
+   },
+   "image.open": {
+    "en": "View full image",
+    "zh": "查看大图"
+   },
+   "image.loading": {
+    "en": "Loading image…",
+    "zh": "加载图片…"
+   },
+   "image.failed": {
+    "en": "Image preview unavailable",
+    "zh": "图片无法预览"
+   },
+   "image.dialog": {
+    "en": "Image preview",
+    "zh": "图片预览"
+   },
+   "image.close": {
+    "en": "Close image preview",
+    "zh": "关闭图片预览"
+   },
+   "settings.performance.title": {
+    "en": "Performance & usage",
+    "zh": "性能与用量"
+   },
+   "settings.performance.description": {
+    "en": "Choose how much performance and usage information to show",
+    "zh": "选择性能与用量信息展示的详细程度"
+   },
+   "settings.performance.compact": {
+    "en": "Compact",
+    "zh": "简洁"
+   },
+   "settings.performance.detailed": {
+    "en": "Detailed",
+    "zh": "详细"
+   },
+   "settings.links.title": {
+    "en": "Open chat links in",
+    "zh": "网页链接默认打开方式"
+   },
+   "settings.links.description": {
+    "en": "Choose where to open web links",
+    "zh": "对话中网页链接的打开位置"
+   },
+   "settings.links.sidebar": {
+    "en": "In-App Sidebar",
+    "zh": "应用内侧边栏"
+   },
+   "settings.links.newTab": {
+    "en": "Default Browser",
+    "zh": "默认浏览器"
+   },
+   "settings.transcript.standard": {
+    "en": "Standard",
+    "zh": "标准"
+   },
+   "settings.transcript.detailed": {
+    "en": "Detailed",
+    "zh": "详细"
+   },
+   "settings.transcript.verbose": {
+    "en": "Verbose",
+    "zh": "完全展开"
+   },
+   "message.toolAdded": {
+    "en": "Tool added: {name}",
+    "zh": "已添加工具：{name}"
+   },
+   "message.toolRemoved": {
+    "en": "Tool removed: {name}",
+    "zh": "已移除工具：{name}"
+   },
+   "message.toolsAdded": {
+    "en": "Added: {names}",
+    "zh": "新增：{names}"
+   },
+   "message.toolsAddedCount": {
+    "en": "{count} added",
+    "zh": "新增 {count} 个"
+   },
+   "message.toolsChanged": {
+    "en": "{added} added, {removed} removed",
+    "zh": "新增 {added} 个，移除 {removed} 个"
+   },
+   "message.toolsRemoved": {
+    "en": "Removed: {names}",
+    "zh": "移除：{names}"
+   },
+   "message.toolsRemovedCount": {
+    "en": "{count} removed",
+    "zh": "移除 {count} 个"
+   },
+   "message.toolsUpdated": {
+    "en": "Tools updated",
+    "zh": "工具已更新"
+   },
+   "message.accountStopped": {
+    "en": "Task stopped",
+    "zh": "任务已停止"
+   },
+   "message.failure.accountSignedOut": {
+    "en": "Stopped because you signed out of DeepSeek.",
+    "zh": "任务已因退出 DeepSeek 登录而停止。"
+   },
+   "message.failure.accountSignInRequired": {
+    "en": "Sign in to DeepSeek and ensure the request destination supports account authentication.",
+    "zh": "请先登录 DeepSeek，并确认请求地址支持账号认证。"
+   },
+   "message.failure.quota": {
+    "en": "Request quota exhausted.",
+    "zh": "当前请求的额度已用尽"
+   }
+  },
+  "conversation": {
+   "shortcut.newline": {
+    "en": "New line",
+    "zh": "换行"
+   },
+   "shortcut.complementary": {
+    "en": "Use the complementary Queue / Steer action",
+    "zh": "使用互补的 Queue／Steer 方式"
+   },
+   "shortcut.slash": {
+    "en": "Open command menu",
+    "zh": "打开命令菜单"
+   },
+   "shortcut.mention": {
+    "en": "Open reference menu",
+    "zh": "打开引用菜单"
+   },
+   "attachment.directoryDesktopOnly": {
+    "en": "Folders can only be added in the desktop app; add individual files in the browser",
+    "zh": "只有桌面端支持添加文件夹，浏览器里请添加单个文件"
+   },
+   "attachment.pathUnavailable": {
+    "en": "Could not obtain the folder path; drag it in again",
+    "zh": "无法获取文件夹路径，请重新拖入"
+   },
+   "attachment.pathUnsupported": {
+    "en": "The path contains characters a reference cannot carry; rename it and try again",
+    "zh": "路径含有无法引用的字符，请改名后再试"
+   },
+   "todo.status.completed": {
+    "en": "Completed",
+    "zh": "已完成"
+   },
+   "todo.status.inProgress": {
+    "en": "In progress",
+    "zh": "进行中"
+   },
+   "todo.status.pending": {
+    "en": "Pending",
+    "zh": "待处理"
+   },
+   "tool.title.createGoal": {
+    "en": "Create goal",
+    "zh": "创建目标"
+   },
+   "tool.title.getGoal": {
+    "en": "View goal",
+    "zh": "查看目标"
+   },
+   "tool.title.updateGoal": {
+    "en": "Update goal",
+    "zh": "更新目标"
+   },
+   "tool.preparing.content": {
+    "en": "Preparing content {kilobytes}KB",
+    "zh": "正在准备内容 {kilobytes}KB"
+   },
+   "tool.title.createSchedule": {
+    "en": "Create reminder",
+    "zh": "创建定时任务"
+   },
+   "tool.title.listSchedules": {
+    "en": "List reminders",
+    "zh": "查看定时任务"
+   },
+   "tool.title.deleteSchedule": {
+    "en": "Delete reminder",
+    "zh": "删除定时任务"
+   },
+   "tool.title.updateSchedule": {
+    "en": "Update reminder",
+    "zh": "修改定时任务"
+   },
+   "detail.state": {
+    "en": "Status",
+    "zh": "状态"
+   },
+   "detail.todo.completed": {
+    "en": "Completed",
+    "zh": "已完成"
+   },
+   "detail.todo.in_progress": {
+    "en": "In progress",
+    "zh": "进行中"
+   },
+   "detail.todo.pending": {
+    "en": "Pending",
+    "zh": "待处理"
+   },
+   "detail.todo.empty": {
+    "en": "The to-do list is empty",
+    "zh": "任务清单为空"
+   },
+   "todo.diff.initial": {
+    "en": "Initial list",
+    "zh": "首次记录"
+   },
+   "todo.diff.compare": {
+    "en": "Changes since the previous list",
+    "zh": "与上次清单相比"
+   },
+   "todo.diff.unavailable": {
+    "en": "Previous list unavailable",
+    "zh": "旧清单不可用"
+   },
+   "todo.diff.noChanges": {
+    "en": "No changes to the list",
+    "zh": "清单没有变化"
+   },
+   "todo.diff.added": {
+    "en": "{count} added",
+    "zh": "新增 {count}"
+   },
+   "todo.diff.updated": {
+    "en": "{count} updated",
+    "zh": "更新 {count}"
+   },
+   "todo.diff.removed": {
+    "en": "{count} removed",
+    "zh": "移除 {count}"
+   },
+   "todo.diff.unchanged": {
+    "en": "{count} unchanged",
+    "zh": "{count} 项未变化"
+   },
+   "todo.diff.addedItem": {
+    "en": "Added",
+    "zh": "新增"
+   },
+   "todo.diff.updatedItem": {
+    "en": "Status changed",
+    "zh": "状态变化"
+   },
+   "todo.diff.movedItem": {
+    "en": "Reordered",
+    "zh": "顺序调整"
+   },
+   "todo.diff.removedItem": {
+    "en": "Removed",
+    "zh": "移除"
+   },
+   "detail.goal.empty": {
+    "en": "No goal",
+    "zh": "没有目标"
+   },
+   "detail.goal.active": {
+    "en": "Active",
+    "zh": "进行中"
+   },
+   "detail.goal.disarmed": {
+    "en": "Awaiting continuation",
+    "zh": "等待继续"
+   },
+   "detail.goal.paused": {
+    "en": "Paused",
+    "zh": "已暂停"
+   },
+   "detail.goal.blocked": {
+    "en": "Blocked",
+    "zh": "受阻"
+   },
+   "detail.goal.complete": {
+    "en": "Completed",
+    "zh": "已完成"
+   },
+   "detail.goal.rounds": {
+    "en": "Rounds",
+    "zh": "执行轮次"
+   },
+   "detail.goal.reason": {
+    "en": "Blocker",
+    "zh": "受阻原因"
+   },
+   "detail.days": {
+    "en": "{count} d",
+    "zh": "{count} 天"
+   },
+   "detail.hours": {
+    "en": "{count} h",
+    "zh": "{count} 小时"
+   },
+   "detail.minutes": {
+    "en": "{count} min",
+    "zh": "{count} 分钟"
+   },
+   "detail.seconds": {
+    "en": "{count} s",
+    "zh": "{count} 秒"
+   },
+   "detail.schedule.once": {
+    "en": "Once",
+    "zh": "单次"
+   },
+   "detail.schedule.every": {
+    "en": "Every {interval}",
+    "zh": "每 {interval}"
+   },
+   "detail.schedule.when": {
+    "en": "Scheduled for",
+    "zh": "计划时间"
+   },
+   "detail.schedule.frequency": {
+    "en": "Repeat",
+    "zh": "重复"
+   },
+   "detail.schedule.scheduled": {
+    "en": "Scheduled",
+    "zh": "等待触发"
+   },
+   "detail.schedule.overdue": {
+    "en": "Overdue, awaiting session resume",
+    "zh": "已到期，等待会话恢复"
+   },
+   "detail.schedule.empty": {
+    "en": "No reminders",
+    "zh": "没有定时任务"
+   },
+   "detail.schedule.deleted": {
+    "en": "Deleted",
+    "zh": "已删除"
+   },
+   "detail.schedule.count": {
+    "en": "{count} reminders",
+    "zh": "{count} 个定时任务"
+   },
+   "detail.schedule.daily": {
+    "en": "Every day at {time} ({zone})",
+    "zh": "每天 {time}（{zone}）"
+   },
+   "detail.schedule.weekly": {
+    "en": "Weekly on {days} at {time} ({zone})",
+    "zh": "每周 {days} {time}（{zone}）"
+   },
+   "detail.schedule.cron": {
+    "en": "Cron {expression} ({zone})",
+    "zh": "Cron {expression}（{zone}）"
+   },
+   "detail.weekday.1": {
+    "en": "Mon",
+    "zh": "周一"
+   },
+   "detail.weekday.2": {
+    "en": "Tue",
+    "zh": "周二"
+   },
+   "detail.weekday.3": {
+    "en": "Wed",
+    "zh": "周三"
+   },
+   "detail.weekday.4": {
+    "en": "Thu",
+    "zh": "周四"
+   },
+   "detail.weekday.5": {
+    "en": "Fri",
+    "zh": "周五"
+   },
+   "detail.weekday.6": {
+    "en": "Sat",
+    "zh": "周六"
+   },
+   "detail.weekday.7": {
+    "en": "Sun",
+    "zh": "周日"
+   },
+   "detail.weekday.join": {
+    "en": ", ",
+    "zh": "、"
+   },
+   "tool.title.inspectProviders": {
+    "en": "Inspect providers",
+    "zh": "检查提供方"
+   },
+   "tool.title.queryRuntime": {
+    "en": "Query runtime",
+    "zh": "查询运行时"
+   },
+   "tool.title.inspectPlugins": {
+    "en": "Inspect plugins",
+    "zh": "检查动态插件"
+   },
+   "tool.title.workflow": {
+    "en": "Run workflow",
+    "zh": "运行工作流"
+   },
+   "tool.title.ralph": {
+    "en": "Run ralph loop",
+    "zh": "运行循环工作流"
+   },
+   "tool.title.readEvent": {
+    "en": "Read event",
+    "zh": "读取事件"
+   },
+   "tool.title.searchEvents": {
+    "en": "Search events",
+    "zh": "搜索事件"
+   },
+   "tool.title.traceEvent": {
+    "en": "Trace event",
+    "zh": "追踪事件"
+   },
+   "tool.title.searchSessions": {
+    "en": "Search sessions",
+    "zh": "搜索会话"
+   },
+   "tool.title.traceSession": {
+    "en": "Trace session",
+    "zh": "追踪会话"
+   },
+   "tool.title.listModels": {
+    "en": "List models",
+    "zh": "查看可用模型"
+   },
+   "tool.title.subagent": {
+    "en": "Create subagent",
+    "zh": "创建代理"
+   },
+   "tool.title.listAgents": {
+    "en": "List subagents",
+    "zh": "查看代理"
+   },
+   "tool.title.sendMessage": {
+    "en": "Send message",
+    "zh": "发送消息"
+   },
+   "tool.title.interruptAgent": {
+    "en": "Interrupt agent",
+    "zh": "中断代理"
+   },
+   "tool.title.listJobs": {
+    "en": "List background jobs",
+    "zh": "查看后台任务"
+   },
+   "tool.title.readJob": {
+    "en": "Read job output",
+    "zh": "读取任务输出"
+   },
+   "tool.title.killJob": {
+    "en": "Cancel background job",
+    "zh": "取消后台任务"
+   },
+   "tool.title.openTerminal": {
+    "en": "Open terminal",
+    "zh": "创建终端"
+   },
+   "tool.title.readTerminal": {
+    "en": "Read terminal",
+    "zh": "读取终端"
+   },
+   "tool.title.listTerminals": {
+    "en": "List terminals",
+    "zh": "查看终端"
+   },
+   "tool.title.signalTerminal": {
+    "en": "Signal terminal",
+    "zh": "发送终端信号"
+   },
+   "tool.title.closeTerminal": {
+    "en": "Close terminal",
+    "zh": "关闭终端"
+   },
+   "tool.title.lsp": {
+    "en": "Query code symbols",
+    "zh": "查询代码符号"
+   },
+   "tool.title.findDefinition": {
+    "en": "Find definition",
+    "zh": "查找定义"
+   },
+   "tool.title.findReferences": {
+    "en": "Find references",
+    "zh": "查找引用"
+   },
+   "tool.title.findImplementation": {
+    "en": "Find implementation",
+    "zh": "查找实现"
+   },
+   "tool.title.hoverSymbol": {
+    "en": "Inspect symbol",
+    "zh": "查看符号信息"
+   },
+   "tool.title.spawnTeammate": {
+    "en": "Create teammate",
+    "zh": "创建队友"
+   },
+   "tool.title.createTeamTask": {
+    "en": "Create team task",
+    "zh": "创建团队任务"
+   },
+   "tool.title.getTeamTask": {
+    "en": "Read team task",
+    "zh": "读取团队任务"
+   },
+   "tool.title.updateTeamTask": {
+    "en": "Update team task",
+    "zh": "更新团队任务"
+   },
+   "tool.title.listTeamTasks": {
+    "en": "List team tasks",
+    "zh": "查看团队任务"
+   },
+   "tool.title.waitAgent": {
+    "en": "Wait for subagent",
+    "zh": "等待子智能体"
+   },
+   "detail.recordedResult": {
+    "en": "Recorded result",
+    "zh": "调用结果"
+   },
+   "detail.empty": {
+    "en": "No results",
+    "zh": "暂无结果"
+   },
+   "detail.none": {
+    "en": "None",
+    "zh": "无"
+   },
+   "detail.yes": {
+    "en": "Yes",
+    "zh": "是"
+   },
+   "detail.no": {
+    "en": "No",
+    "zh": "否"
+   },
+   "detail.moreInInspect": {
+    "en": "{count} more items available in Inspect",
+    "zh": "另有 {count} 项，可在「查看」中读取"
+   },
+   "detail.status.running": {
+    "en": "Running",
+    "zh": "运行中"
+   },
+   "detail.status.idle": {
+    "en": "Idle",
+    "zh": "空闲"
+   },
+   "detail.status.ready": {
+    "en": "Ready",
+    "zh": "就绪"
+   },
+   "detail.status.inactive": {
+    "en": "Inactive",
+    "zh": "未运行"
+   },
+   "detail.status.provisioning": {
+    "en": "Provisioning",
+    "zh": "准备中"
+   },
+   "detail.status.failed": {
+    "en": "Failed",
+    "zh": "失败"
+   },
+   "detail.status.completed": {
+    "en": "Completed",
+    "zh": "已完成"
+   },
+   "detail.status.deleted": {
+    "en": "Deleted",
+    "zh": "已删除"
+   },
+   "detail.status.killed": {
+    "en": "Cancelled",
+    "zh": "已取消"
+   },
+   "detail.status.accepted": {
+    "en": "Accepted",
+    "zh": "已接收"
+   },
+   "detail.status.queued": {
+    "en": "Queued",
+    "zh": "已入队"
+   },
+   "detail.status.exited": {
+    "en": "Exited",
+    "zh": "已退出"
+   },
+   "detail.field.id": {
+    "en": "ID",
+    "zh": "ID"
+   },
+   "detail.field.revision": {
+    "en": "Revision",
+    "zh": "版本"
+   },
+   "detail.field.platform": {
+    "en": "Platform",
+    "zh": "平台"
+   },
+   "detail.field.provider": {
+    "en": "Provider",
+    "zh": "提供方"
+   },
+   "detail.field.model": {
+    "en": "Model",
+    "zh": "模型"
+   },
+   "detail.field.role": {
+    "en": "Role",
+    "zh": "角色"
+   },
+   "detail.field.context": {
+    "en": "Context",
+    "zh": "上下文"
+   },
+   "detail.field.owner": {
+    "en": "Owner",
+    "zh": "负责人"
+   },
+   "detail.field.ready": {
+    "en": "Ready",
+    "zh": "可开始"
+   },
+   "detail.field.dependencies": {
+    "en": "Dependencies",
+    "zh": "前置任务"
+   },
+   "detail.field.writeScopes": {
+    "en": "Write scopes",
+    "zh": "文件范围"
+   },
+   "detail.field.warnings": {
+    "en": "Warnings",
+    "zh": "提示"
+   },
+   "detail.field.diagnostics": {
+    "en": "Diagnostics",
+    "zh": "诊断"
+   },
+   "detail.field.methods": {
+    "en": "Methods",
+    "zh": "方法"
+   },
+   "detail.field.inputSchema": {
+    "en": "Input schema",
+    "zh": "输入 Schema"
+   },
+   "detail.field.outputSchema": {
+    "en": "Output schema",
+    "zh": "输出 Schema"
+   },
+   "detail.field.currentPackage": {
+    "en": "Current package",
+    "zh": "当前包"
+   },
+   "detail.field.nextPackage": {
+    "en": "Next package",
+    "zh": "待运行的包"
+   },
+   "detail.field.latestRun": {
+    "en": "Latest run",
+    "zh": "最近运行"
+   },
+   "detail.field.packages": {
+    "en": "Packages",
+    "zh": "版本包"
+   },
+   "detail.field.registrations": {
+    "en": "Registrations",
+    "zh": "注册项"
+   },
+   "detail.field.props": {
+    "en": "Props",
+    "zh": "属性"
+   },
+   "detail.field.data": {
+    "en": "Data",
+    "zh": "数据"
+   },
+   "detail.field.source": {
+    "en": "Source",
+    "zh": "来源"
+   },
+   "detail.field.content": {
+    "en": "Content",
+    "zh": "内容"
+   },
+   "detail.field.message": {
+    "en": "Message",
+    "zh": "消息"
+   },
+   "detail.field.messageId": {
+    "en": "Message ID",
+    "zh": "消息 ID"
+   },
+   "detail.field.root": {
+    "en": "Root",
+    "zh": "根节点"
+   },
+   "detail.field.pid": {
+    "en": "Process ID",
+    "zh": "进程 ID"
+   },
+   "detail.field.type": {
+    "en": "Type",
+    "zh": "类型"
+   },
+   "detail.field.time": {
+    "en": "Time",
+    "zh": "时间"
+   },
+   "detail.field.seq": {
+    "en": "Event sequence",
+    "zh": "事件序号"
+   },
+   "detail.field.turn": {
+    "en": "Turn",
+    "zh": "轮次"
+   },
+   "detail.field.step": {
+    "en": "Step",
+    "zh": "步骤"
+   },
+   "detail.field.callId": {
+    "en": "Call ID",
+    "zh": "调用 ID"
+   },
+   "detail.field.agents": {
+    "en": "Agents started",
+    "zh": "启动代理数"
+   },
+   "detail.field.result": {
+    "en": "Result",
+    "zh": "结果"
+   },
+   "detail.field.parent": {
+    "en": "Parent",
+    "zh": "父级"
+   },
+   "detail.field.depth": {
+    "en": "Depth",
+    "zh": "层级"
+   },
+   "detail.field.exitCode": {
+    "en": "Exit code",
+    "zh": "退出码"
+   },
+   "detail.field.signal": {
+    "en": "Signal",
+    "zh": "信号"
+   },
+   "detail.field.previousStatus": {
+    "en": "Previous status",
+    "zh": "中断前状态"
+   },
+   "detail.field.agent": {
+    "en": "Agent ID",
+    "zh": "代理 ID"
+   },
+   "detail.field.job": {
+    "en": "Job ID",
+    "zh": "任务 ID"
+   },
+   "detail.field.task": {
+    "en": "Task",
+    "zh": "任务内容"
+   },
+   "detail.field.processGroup": {
+    "en": "Process group",
+    "zh": "进程组"
+   },
+   "detail.field.availability": {
+    "en": "Availability",
+    "zh": "可用状态"
+   },
+   "detail.field.bestMatch": {
+    "en": "Best match",
+    "zh": "最相关事件"
+   },
+   "detail.field.target": {
+    "en": "Target event",
+    "zh": "目标事件"
+   },
+   "detail.field.surface": {
+    "en": "Record status",
+    "zh": "记录状态"
+   },
+   "detail.agents.count": {
+    "en": "{count} agents",
+    "zh": "{count} 个代理"
+   },
+   "detail.jobs.count": {
+    "en": "{count} background jobs",
+    "zh": "{count} 个后台任务"
+   },
+   "detail.terminals.count": {
+    "en": "{count} terminals",
+    "zh": "{count} 个终端"
+   },
+   "detail.tasks.count": {
+    "en": "{count} team tasks",
+    "zh": "{count} 个团队任务"
+   },
+   "detail.tasks.nextPage": {
+    "en": "More tasks available; next cursor is {cursor}",
+    "zh": "后面还有任务；下一页位置为 {cursor}"
+   },
+   "detail.locations.count": {
+    "en": "{count} locations",
+    "zh": "{count} 个位置"
+   },
+   "detail.location": {
+    "en": "Line {line}, column {column}",
+    "zh": "第 {line} 行，第 {column} 列"
+   },
+   "detail.receipt.delivered": {
+    "en": "Message delivered",
+    "zh": "消息已送达"
+   },
+   "detail.receipt.interrupt": {
+    "en": "Interrupt requested",
+    "zh": "已请求中断"
+   },
+   "detail.receipt.started": {
+    "en": "Started",
+    "zh": "已启动"
+   },
+   "detail.receipt.cancel": {
+    "en": "Cancellation requested",
+    "zh": "已请求取消"
+   },
+   "detail.receipt.alreadyFinished": {
+    "en": "Already finished",
+    "zh": "任务已结束"
+   },
+   "detail.receipt.signal": {
+    "en": "Signal delivered",
+    "zh": "信号已发送"
+   },
+   "detail.receipt.closed": {
+    "en": "Closed",
+    "zh": "已关闭"
+   },
+   "detail.receipt.closing": {
+    "en": "Closing",
+    "zh": "关闭中"
+   },
+   "detail.wait.noProgress": {
+    "en": "No active subagents",
+    "zh": "没有正在运行的子智能体"
+   },
+   "detail.wait.title": {
+    "en": "Subagent activity",
+    "zh": "子智能体状态"
+   },
+   "detail.wait.timeout": {
+    "en": "Wait timed out",
+    "zh": "等待超时"
+   },
+   "detail.wait.changed": {
+    "en": "Change detected",
+    "zh": "检测到变化"
+   },
+   "detail.agent.reply": {
+    "en": "Agent response",
+    "zh": "代理回复"
+   },
+   "detail.models.title": {
+    "en": "Available models",
+    "zh": "可用模型"
+   },
+   "detail.output.lines": {
+    "en": "Lines {begin}–{end} of {total}",
+    "zh": "第 {begin}–{end} 行，共 {total} 行"
+   },
+   "detail.output.truncated": {
+    "en": "Output truncated",
+    "zh": "输出已截断"
+   },
+   "detail.providers.count": {
+    "en": "{count} inspect providers",
+    "zh": "{count} 个检查提供方"
+   },
+   "detail.plugins.count": {
+    "en": "{count} dynamic plugins",
+    "zh": "{count} 个动态插件"
+   },
+   "detail.workflow.script": {
+    "en": "Workflow script",
+    "zh": "工作流脚本"
+   },
+   "detail.ralph.reportedComplete": {
+    "en": "Worker reported completion",
+    "zh": "代理报告完成"
+   },
+   "detail.ralph.reportedBlocker": {
+    "en": "Worker reported a blocker",
+    "zh": "代理报告受阻"
+   },
+   "detail.ralph.limit": {
+    "en": "Round limit reached",
+    "zh": "已达到轮次上限"
+   },
+   "detail.report.nextSteps": {
+    "en": "Remaining work",
+    "zh": "待完成事项"
+   },
+   "detail.trace.replacedBy": {
+    "en": "Replaced by",
+    "zh": "被替换为"
+   },
+   "detail.trace.replacementChain": {
+    "en": "Replacement chain",
+    "zh": "替换链"
+   },
+   "detail.trace.replaces": {
+    "en": "Replaced events",
+    "zh": "替换的事件"
+   },
+   "detail.trace.sources": {
+    "en": "Source events",
+    "zh": "引用来源"
+   },
+   "detail.trace.derived": {
+    "en": "Derived events",
+    "zh": "派生事件"
+   },
+   "detail.trace.ancestors": {
+    "en": "Ancestor sessions",
+    "zh": "祖先会话"
+   },
+   "detail.trace.descendants": {
+    "en": "Descendant sessions",
+    "zh": "后代会话"
+   },
+   "detail.matches.count": {
+    "en": "{count} matches",
+    "zh": "{count} 条匹配"
+   },
+   "detail.matches.capped": {
+    "en": "Result limit reached; narrow the search for more",
+    "zh": "已达到结果上限，可缩小搜索范围"
+   },
+   "detail.event.neighbors": {
+    "en": "Surrounding events",
+    "zh": "前后事件"
+   },
+   "row.preparing": {
+    "en": "Preparing tool call",
+    "zh": "正在准备调用"
+   }
+  },
+  "cordis": {
+   "a11y.preparing": {
+    "en": "Preparing a Cordis tool call",
+    "zh": "准备调用 Cordis 工具"
+   }
+  },
+  "deliverables": {
+   "row.preparing": {
+    "en": "Preparing deliverables",
+    "zh": "准备交付"
+   },
+   "changes.singleTitle": {
+    "en": "Edited {name}",
+    "zh": "已编辑 {name}"
+   }
+  },
+  "job": {
+   "section.live": {
+    "en": "Running",
+    "zh": "进行中"
+   },
+   "section.settledCount": {
+    "en": "Finished {count}",
+    "zh": "已结束 {count}"
+   },
+   "section.clear": {
+    "en": "Clear",
+    "zh": "清空"
+   },
+   "row.expandAria": {
+    "en": "Show live output of {label}",
+    "zh": "展开 {label} 的实时输出"
+   },
+   "row.collapseAria": {
+    "en": "Hide live output of {label}",
+    "zh": "收起 {label} 的实时输出"
+   },
+   "kill.stop": {
+    "en": "Stop task {label}",
+    "zh": "停止任务 {label}"
+   },
+   "kill.confirm": {
+    "en": "Click again to confirm",
+    "zh": "再次点击确认停止"
+   },
+   "kill.confirmAction": {
+    "en": "Confirm stop",
+    "zh": "确认停止"
+   },
+   "kill.failed": {
+    "en": "Stop failed",
+    "zh": "停止失败"
+   },
+   "output.gap": {
+    "en": "… earlier output dropped …",
+    "zh": "……较早的输出已丢弃……"
+   },
+   "output.error": {
+    "en": "live output stream interrupted: {error}",
+    "zh": "实时输出流中断：{error}"
+   },
+   "terminal.signal": {
+    "en": "signal {signal}",
+    "zh": "信号 {signal}"
+   },
+   "terminal.exitCode": {
+    "en": "exit {code}",
+    "zh": "退出码 {code}"
+   },
+   "terminal.noExitCode": {
+    "en": "no exit code",
+    "zh": "未正常退出"
+   },
+   "terminal.running": {
+    "en": "running",
+    "zh": "运行中"
+   },
+   "terminal.failed": {
+    "en": "failed",
+    "zh": "已失败"
+   },
+   "terminal.done": {
+    "en": "done",
+    "zh": "已完成"
+   },
+   "terminal.copy": {
+    "en": "Copy",
+    "zh": "复制"
+   },
+   "terminal.copied": {
+    "en": "Copied",
+    "zh": "已复制"
+   },
+   "terminal.noOutput": {
+    "en": "(no output)",
+    "zh": "（无输出）"
+   },
+   "terminal.collapse": {
+    "en": "Collapse",
+    "zh": "收起"
+   },
+   "terminal.collapseAria": {
+    "en": "Collapse output",
+    "zh": "收起输出"
+   },
+   "terminal.expand": {
+    "en": "Show {n} more lines",
+    "zh": "展开其余 {n} 行"
+   },
+   "terminal.expandAria": {
+    "en": "Expand {n} collapsed output lines",
+    "zh": "展开被折叠的 {n} 行输出"
+   }
+  },
+  "shortcuts.layout": {
+   "toggle": {
+    "en": "Toggle left sidebar",
+    "zh": "展开／收起左侧栏"
+   }
+  },
+  "model": {
+   "provider.account": {
+    "en": "DeepSeek Account",
+    "zh": "DeepSeek 账号"
+   }
+  },
+  "open-in-app": {
+   "path.appDefault": {
+    "en": "{app} (default)",
+    "zh": "{app}（默认）"
+   },
+   "path.appsError": {
+    "en": "Could not load applications",
+    "zh": "无法获取应用列表"
+   },
+   "shortcut.busy": {
+    "en": "Opening workspace",
+    "zh": "正在打开工作区"
+   },
+   "shortcut.unavailable": {
+    "en": "Current workspace or local application unavailable",
+    "zh": "当前工作区或本地应用不可用"
+   },
+   "path.open": {
+    "en": "Open",
+    "zh": "打开"
+   },
+   "path.more": {
+    "en": "More ways to open",
+    "zh": "更多打开方式"
+   },
+   "path.reveal": {
+    "en": "Show file location",
+    "zh": "显示文件位置"
+   },
+   "path.openError": {
+    "en": "Could not open. Try again.",
+    "zh": "打开失败，请重试"
+   },
+   "path.revealError": {
+    "en": "Could not show the file location. Try again.",
+    "zh": "无法显示文件位置，请重试"
+   }
+  },
+  "pluginManager": {
+   "metadataError": {
+    "en": "Package metadata error: {error}",
+    "zh": "包元信息错误：{error}"
+   },
+   "registryToggle": {
+    "en": "Registry",
+    "zh": "安装源"
+   },
+   "registryLegend": {
+    "en": "The npm registry the plugin is downloaded from",
+    "zh": "从哪个 npm 源下载插件"
+   },
+   "registryDefault": {
+    "en": "Default registry",
+    "zh": "默认安装源"
+   },
+   "registryOfficial": {
+    "en": "Official npm registry",
+    "zh": "npm 官方源"
+   },
+   "registryNpmmirror": {
+    "en": "Mainland China mirror",
+    "zh": "中国大陆镜像源"
+   },
+   "registryWithHost": {
+    "en": "{name} ({host})",
+    "zh": "{name}（{host}）"
+   },
+   "registryCustom": {
+    "en": "Custom address",
+    "zh": "自定义地址"
+   },
+   "registryCustomPlaceholder": {
+    "en": "https://npm.example.com/",
+    "zh": "https://npm.example.com/"
+   },
+   "registryCustomHint": {
+    "en": "A company or private npm registry; for one that needs a login, keep the credentials in ~/.npmrc on this machine",
+    "zh": "公司内网或私有 npm 源；需要登录的源，把凭据放在本机的 ~/.npmrc 里"
+   },
+   "registryCustomInvalid": {
+    "en": "Enter an address starting with http:// or https://",
+    "zh": "请输入以 http:// 或 https:// 开头的地址"
+   },
+   "registryListSeparator": {
+    "en": ", ",
+    "zh": "、"
+   },
+   "installProblemNetworkAll": {
+    "en": "No registry could be reached (tried: {registries}); check the network or proxy settings, or change the registry",
+    "zh": "所有安装源都无法连接（已尝试：{registries}），请检查网络或代理设置，或更换安装源"
+   },
+   "installGithubFailedTitle": {
+    "en": "Cannot access GitHub",
+    "zh": "无法访问 GitHub"
+   },
+   "installGithubTimeoutTitle": {
+    "en": "GitHub connection timed out",
+    "zh": "连接 GitHub 超时"
+   },
+   "installGithubFailedDescription": {
+    "en": "Try another installation source.",
+    "zh": "请尝试其他安装来源。"
+   },
+   "installUseGithubMirror": {
+    "en": "Use mainland China mirror",
+    "zh": "改用国内镜像"
+   },
+   "installTryAnotherWay": {
+    "en": "Try another way",
+    "zh": "试试其他方式"
+   },
+   "installPackageLabel": {
+    "en": "Plugin package name",
+    "zh": "插件包名"
+   },
+   "installCancelAndEdit": {
+    "en": "Cancel installation and return to editing",
+    "zh": "取消安装并返回编辑"
+   },
+   "installApplyingCancellationError": {
+    "en": "Cancellation was not confirmed. Installation is being applied; wait for its result. {reason}",
+    "zh": "取消请求未得到确认；安装已进入收尾阶段，请等待结果。{reason}"
+   },
+   "installReconcile": {
+    "en": "Check installation status",
+    "zh": "核对安装状态"
+   },
+   "installUnknownTitle": {
+    "en": "Installation result unavailable",
+    "zh": "未能获取安装结果"
+   },
+   "installUnknownDescription": {
+    "en": "The Host has no active installation with this request id. Check the plugin list before trying again.",
+    "zh": "后端当前没有此安装任务。请检查插件列表后再尝试安装。"
+   },
+   "installResultUnconfirmed": {
+    "en": "The installation result was not received. Check installation status. {reason}",
+    "zh": "未收到安装结果，请核对安装状态。{reason}"
+   },
+   "installAwaitingAcceptance": {
+    "en": "Waiting for the Host to accept installation. Cancellation will retry automatically after confirmation.",
+    "zh": "正在等待后端接收安装任务，收到确认后会自动重试取消。"
+   },
+   "installBackgroundUnknown": {
+    "en": "Installation result unavailable. Check the plugin list.",
+    "zh": "未能获取安装结果，请检查插件列表。"
+   },
+   "installViewTask": {
+    "en": "View installation",
+    "zh": "查看安装任务"
+   },
+   "installUnconfirmedTitle": {
+    "en": "Installation status unconfirmed",
+    "zh": "安装状态尚未确认"
+   },
+   "installBackgroundDone": {
+    "en": "Installation finished. View installation details.",
+    "zh": "插件安装已完成，可查看安装结果。"
+   },
+   "installBackgroundFailed": {
+    "en": "Installation failed. View installation details.",
+    "zh": "插件安装失败，可查看安装详情。"
+   },
+   "installBackgroundUnconfirmed": {
+    "en": "Installation status is unconfirmed. View the installation for details.",
+    "zh": "安装状态暂未确认，请查看安装任务了解详情。"
+   },
+   "installBackgroundApplying": {
+    "en": "Installation is being applied and cannot be cancelled. View installation progress.",
+    "zh": "安装已进入收尾阶段，无法取消，可查看安装进度。"
+   },
+   "installChangeRegistry": {
+    "en": "Change registry",
+    "zh": "更换安装源"
+   },
+   "installAttempt": {
+    "en": "{previous} could not serve the package; retrying through {registry} (registry {index} of {total})",
+    "zh": "{previous} 不可用，正在改用 {registry} 重试（第 {index} 个源，共 {total} 个）"
+   },
+   "installAttemptBadge": {
+    "en": "Attempt {index} · {registry}",
+    "zh": "第 {index} 次 · {registry}"
+   },
+   "installFailureNetworkAll": {
+    "en": "No registry could be reached (tried: {registries}). Check the network or proxy settings, or change the registry and retry.",
+    "zh": "所有安装源都无法连接（已尝试：{registries}）。请检查网络或代理设置，或更换安装源后重试。"
+   },
+   "installFailureNetworkHost": {
+    "en": "{host} could not be reached. A GitHub address or a .tgz link is not fetched through the registry: this machine must reach it directly or through a proxy. If the plugin is also published to npm, enter its package name instead.",
+    "zh": "无法连接 {host}。GitHub 地址和 .tgz 直链不经过安装源，需要本机能直接访问它或配置代理；如果这个插件也发布到了 npm，请改填包名。"
+   },
+   "reasonIncompatibleVersion": {
+    "en": "{plugin} is incompatible with DSH {runtime} (requires {peers}); running it may cause crashes or data loss. Install a plugin version compatible with this DSH.",
+    "zh": "{plugin} 与 DSH {runtime} 不兼容（要求 {peers}），运行它可能导致崩溃或数据丢失。请安装与当前 DSH 兼容的插件版本。"
+   },
+   "reasonIncompatibleVersionUnnamed": {
+    "en": "This plugin is incompatible with the running DSH version; running it may cause crashes or data loss.",
+    "zh": "这个插件与当前 DSH 版本不兼容，运行它可能导致崩溃或数据丢失"
+   }
+  },
+  "schedule.catalog": {
+   "trigger.label": {
+    "en": "Reminders",
+    "zh": "提醒"
+   },
+   "list.loading": {
+    "en": "Loading reminders…",
+    "zh": "正在加载提醒…"
+   },
+   "list.error": {
+    "en": "Could not load reminders.",
+    "zh": "无法加载提醒。"
+   },
+   "list.retry": {
+    "en": "Retry",
+    "zh": "重试"
+   },
+   "delete.action": {
+    "en": "Delete",
+    "zh": "删除"
+   },
+   "delete.pending": {
+    "en": "Deleting…",
+    "zh": "正在删除…"
+   },
+   "delete.label": {
+    "en": "Delete reminder: {title}",
+    "zh": "删除提醒：{title}"
+   },
+   "list.open": {
+    "en": "Open reminder details: {title}",
+    "zh": "打开提醒详情：{title}"
+   },
+   "list.nextRun": {
+    "en": "Next run",
+    "zh": "下次运行"
+   },
+   "time.locale": {
+    "en": "en",
+    "zh": "zh-CN"
+   },
+   "time.utcPrefix": {
+    "en": "UTC",
+    "zh": "UTC"
+   },
+   "frequency.daily": {
+    "en": "Daily at {time} ({timeZone})",
+    "zh": "每天 {time}（{timeZone}）"
+   },
+   "frequency.dailyLocal": {
+    "en": "Daily at {time}",
+    "zh": "每天 {time}"
+   },
+   "frequency.weekly": {
+    "en": "Weekly on {weekdays} at {time} ({timeZone})",
+    "zh": "每周{weekdays} {time}（{timeZone}）"
+   },
+   "frequency.weeklyLocal": {
+    "en": "Weekly on {weekdays} at {time}",
+    "zh": "每周{weekdays} {time}"
+   },
+   "frequency.cron": {
+    "en": "Cron {expression} ({timeZone})",
+    "zh": "Cron {expression}（{timeZone}）"
+   },
+   "frequency.cronLocal": {
+    "en": "Cron {expression}",
+    "zh": "Cron {expression}"
+   },
+   "frequency.cronRule": {
+    "en": "{rule} ({timeZone})",
+    "zh": "{rule}（{timeZone}）"
+   },
+   "cron.list.join": {
+    "en": ", ",
+    "zh": "、"
+   },
+   "cron.part.join": {
+    "en": " ",
+    "zh": " "
+   },
+   "cron.weekday.name": {
+    "en": "{weekday}",
+    "zh": "周{weekday}"
+   },
+   "cron.weekday.range": {
+    "en": "{from}–{to}",
+    "zh": "{from}至{to}"
+   },
+   "cron.months": {
+    "en": " in {months}",
+    "zh": "（{months}）"
+   },
+   "cron.day.every": {
+    "en": "Every day{months}",
+    "zh": "每天{months}"
+   },
+   "cron.day.weekdays": {
+    "en": "{weekdays}{months}",
+    "zh": "{weekdays}{months}"
+   },
+   "cron.day.monthDays": {
+    "en": "Day {days} of every month{months}",
+    "zh": "每月 {days} 日{months}"
+   },
+   "cron.day.both": {
+    "en": "Day {days} of every month or {weekdays}{months}",
+    "zh": "每月 {days} 日或{weekdays}{months}"
+   },
+   "cron.day.bothStarred": {
+    "en": "Day {days} of every month and {weekdays}{months}",
+    "zh": "每月 {days} 日且{weekdays}{months}"
+   },
+   "cron.hours.range": {
+    "en": "{from}–{to}",
+    "zh": "{from} 至 {to}"
+   },
+   "cron.hours.list": {
+    "en": "{hours}",
+    "zh": "{hours}"
+   },
+   "cron.time.everyMinute": {
+    "en": "Every minute",
+    "zh": "每分钟"
+   },
+   "cron.time.everyMinutes": {
+    "en": "Every {step} minutes",
+    "zh": "每 {step} 分钟"
+   },
+   "cron.time.joinedEveryMinute": {
+    "en": "every minute",
+    "zh": "每分钟"
+   },
+   "cron.time.joinedEveryMinutes": {
+    "en": "every {step} minutes",
+    "zh": "每 {step} 分钟"
+   },
+   "cron.time.everyHour": {
+    "en": "Every hour",
+    "zh": "每小时"
+   },
+   "cron.time.joinedEveryHour": {
+    "en": "every hour",
+    "zh": "每小时"
+   },
+   "cron.time.everyNHours": {
+    "en": "Every {count} hours",
+    "zh": "每 {count} 小时"
+   },
+   "cron.time.joinedEveryNHours": {
+    "en": "every {count} hours",
+    "zh": "每 {count} 小时"
+   },
+   "cron.time.hourlyAt": {
+    "en": "Every hour at minute {minutes}",
+    "zh": "每小时的第 {minutes} 分钟"
+   },
+   "cron.time.joinedHourlyAt": {
+    "en": "every hour at minute {minutes}",
+    "zh": "每小时的第 {minutes} 分钟"
+   },
+   "cron.time.hoursEveryMinute": {
+    "en": "every minute during hours {hours}",
+    "zh": "{hours} 点的每分钟"
+   },
+   "cron.time.hoursEveryMinutes": {
+    "en": "every {step} minutes during hours {hours}",
+    "zh": "{hours} 点内每 {step} 分钟"
+   },
+   "cron.time.at": {
+    "en": "at {times}",
+    "zh": "{times}"
+   },
+   "cron.time.hoursAt": {
+    "en": "at minute {minutes} of hours {hours}",
+    "zh": "{hours} 点的第 {minutes} 分钟"
+   },
+   "frequency.weekday.join": {
+    "en": ", ",
+    "zh": "、"
+   },
+   "frequency.weekday.1": {
+    "en": "Mon",
+    "zh": "一"
+   },
+   "frequency.weekday.2": {
+    "en": "Tue",
+    "zh": "二"
+   },
+   "frequency.weekday.3": {
+    "en": "Wed",
+    "zh": "三"
+   },
+   "frequency.weekday.4": {
+    "en": "Thu",
+    "zh": "四"
+   },
+   "frequency.weekday.5": {
+    "en": "Fri",
+    "zh": "五"
+   },
+   "frequency.weekday.6": {
+    "en": "Sat",
+    "zh": "六"
+   },
+   "frequency.weekday.7": {
+    "en": "Sun",
+    "zh": "日"
+   },
+   "mark.aria": {
+    "en": "{count} scheduled tasks",
+    "zh": "{count} 个自动化任务"
+   },
+   "hover.more": {
+    "en": "{count} more",
+    "zh": "另有 {count} 个任务"
+   }
+  },
+  "schedule.manager": {
+   "panel": {
+    "en": "Automation tasks",
+    "zh": "自动化任务"
+   },
+   "title": {
+    "en": "Automation tasks",
+    "zh": "自动化任务"
+   },
+   "new.action": {
+    "en": "New",
+    "zh": "新建"
+   },
+   "list.label": {
+    "en": "Task catalog",
+    "zh": "任务列表"
+   },
+   "list.nextPrefix": {
+    "en": "Next scheduled time: ",
+    "zh": "下次计划时间："
+   },
+   "list.loading": {
+    "en": "Loading tasks…",
+    "zh": "正在加载任务…"
+   },
+   "list.error": {
+    "en": "Could not load tasks.",
+    "zh": "无法加载任务"
+   },
+   "list.retry": {
+    "en": "Retry",
+    "zh": "重试"
+   },
+   "list.empty": {
+    "en": "No tasks yet. Tasks created in your sessions appear here.",
+    "zh": "还没有自动化任务，在会话中创建的任务会显示在这里"
+   },
+   "list.emptyInactive": {
+    "en": "No inactive automation tasks",
+    "zh": "没有已结束的自动化任务"
+   },
+   "list.noMatches": {
+    "en": "No matching tasks",
+    "zh": "没有匹配的自动化任务"
+   },
+   "search.label": {
+    "en": "Search tasks",
+    "zh": "搜索任务"
+   },
+   "search.placeholder": {
+    "en": "Search automation tasks",
+    "zh": "搜索自动化任务"
+   },
+   "search.clear": {
+    "en": "Clear search",
+    "zh": "清空搜索"
+   },
+   "empty.action": {
+    "en": "New automation task",
+    "zh": "新建自动化任务"
+   },
+   "statusFilter.label": {
+    "en": "Task status",
+    "zh": "任务状态"
+   },
+   "statusFilter.all": {
+    "en": "All",
+    "zh": "全部"
+   },
+   "status.active": {
+    "en": "Enabled",
+    "zh": "已开启"
+   },
+   "status.inactive": {
+    "en": "Inactive",
+    "zh": "已结束"
+   },
+   "detail.label": {
+    "en": "Task details",
+    "zh": "任务详情"
+   },
+   "detail.close": {
+    "en": "Close details",
+    "zh": "关闭详情"
+   },
+   "detail.more": {
+    "en": "Automation task actions",
+    "zh": "自动化任务操作"
+   },
+   "detail.nextRun": {
+    "en": "Next run",
+    "zh": "下次运行"
+   },
+   "detail.tabs": {
+    "en": "Task detail views",
+    "zh": "任务详情视图"
+   },
+   "detail.rule": {
+    "en": "Rules",
+    "zh": "规则"
+   },
+   "detail.records": {
+    "en": "Delivery records",
+    "zh": "任务运行记录"
+   },
+   "delivery.empty": {
+    "en": "No delivery record available",
+    "zh": "暂无任务运行记录"
+   },
+   "delivery.loading": {
+    "en": "Loading delivery records…",
+    "zh": "正在加载任务运行记录…"
+   },
+   "delivery.error": {
+    "en": "Could not load delivery records.",
+    "zh": "无法加载任务运行记录"
+   },
+   "delivery.notFound": {
+    "en": "This task is no longer available.",
+    "zh": "任务已不可用"
+   },
+   "delivery.cursorError": {
+    "en": "Records were updated.",
+    "zh": "记录已更新"
+   },
+   "delivery.retry": {
+    "en": "Retry",
+    "zh": "重试"
+   },
+   "delivery.refresh": {
+    "en": "Refresh",
+    "zh": "刷新"
+   },
+   "delivery.loadMore": {
+    "en": "Load more",
+    "zh": "加载更多"
+   },
+   "delivery.expand": {
+    "en": "Expand",
+    "zh": "展开"
+   },
+   "delivery.collapse": {
+    "en": "Collapse",
+    "zh": "收起"
+   },
+   "delivery.pruned": {
+    "en": "Earlier delivery records have been cleared",
+    "zh": "更早的运行记录已清理"
+   },
+   "delivery.retention": {
+    "en": "Retention rules",
+    "zh": "保留规则"
+   },
+   "delivery.retentionBounds": {
+    "en": "Each task keeps up to {records} delivery records from the last {days} days.",
+    "zh": "每个任务最多保留近 {days} 天内的 {records} 条运行记录。"
+   },
+   "delivery.retentionExplanation": {
+    "en": "When a new record is saved, older records outside these limits are cleared automatically. Clearing records does not stop the task.",
+    "zh": "产生新记录时，超出范围的旧记录会自动清理。清理记录不影响任务继续运行。"
+   },
+   "detail.name": {
+    "en": "Automation task name",
+    "zh": "自动化任务名称"
+   },
+   "detail.instruction": {
+    "en": "Automation task instruction",
+    "zh": "自动化任务内容"
+   },
+   "detail.status": {
+    "en": "Status",
+    "zh": "状态"
+   },
+   "detail.next": {
+    "en": "Next scheduled time",
+    "zh": "下次计划时间"
+   },
+   "detail.frequency": {
+    "en": "Frequency",
+    "zh": "提醒频率"
+   },
+   "detail.id": {
+    "en": "Task ID",
+    "zh": "任务 ID"
+   },
+   "detail.session": {
+    "en": "Linked session",
+    "zh": "关联会话"
+   },
+   "detail.openSession": {
+    "en": "Linked session: open original session",
+    "zh": "关联会话：打开原会话"
+   },
+   "detail.openSessionTitle": {
+    "en": "Linked session {title}: open original session",
+    "zh": "关联会话 {title}：打开原会话"
+   },
+   "detail.sessionLoading": {
+    "en": "Loading original session information.",
+    "zh": "正在加载原会话信息"
+   },
+   "detail.sessionArchived": {
+    "en": "The original session is archived.",
+    "zh": "原会话已归档"
+   },
+   "detail.sessionUnavailable": {
+    "en": "The original session is unavailable.",
+    "zh": "原会话当前不可用"
+   },
+   "detail.missing": {
+    "en": "Task unavailable. It may have been deleted.",
+    "zh": "任务已不可用，可能已被删除"
+   },
+   "delivery.label": {
+    "en": "Saved delivery record",
+    "zh": "已保存的任务运行记录"
+   },
+   "frequency.once": {
+    "en": "Once",
+    "zh": "仅一次"
+   },
+   "frequency.every": {
+    "en": "Every {value} {unit}",
+    "zh": "每 {value} {unit}"
+   },
+   "time.locale": {
+    "en": "en",
+    "zh": "zh-CN"
+   },
+   "time.utcPrefix": {
+    "en": "UTC",
+    "zh": "UTC"
+   },
+   "frequency.daily": {
+    "en": "Daily at {time} ({timeZone})",
+    "zh": "每天 {time}（{timeZone}）"
+   },
+   "frequency.dailyLocal": {
+    "en": "Daily at {time}",
+    "zh": "每天 {time}"
+   },
+   "frequency.weekly": {
+    "en": "Weekly on {weekdays} at {time} ({timeZone})",
+    "zh": "每周{weekdays} {time}（{timeZone}）"
+   },
+   "frequency.weeklyLocal": {
+    "en": "Weekly on {weekdays} at {time}",
+    "zh": "每周{weekdays} {time}"
+   },
+   "frequency.cron": {
+    "en": "Cron {expression} ({timeZone})",
+    "zh": "Cron {expression}（{timeZone}）"
+   },
+   "frequency.cronLocal": {
+    "en": "Cron {expression}",
+    "zh": "Cron {expression}"
+   },
+   "frequency.cronRule": {
+    "en": "{rule} ({timeZone})",
+    "zh": "{rule}（{timeZone}）"
+   },
+   "cron.list.join": {
+    "en": ", ",
+    "zh": "、"
+   },
+   "cron.part.join": {
+    "en": " ",
+    "zh": " "
+   },
+   "cron.weekday.name": {
+    "en": "{weekday}",
+    "zh": "周{weekday}"
+   },
+   "cron.weekday.range": {
+    "en": "{from}–{to}",
+    "zh": "{from}至{to}"
+   },
+   "cron.months": {
+    "en": " in {months}",
+    "zh": "（{months}）"
+   },
+   "cron.day.every": {
+    "en": "Every day{months}",
+    "zh": "每天{months}"
+   },
+   "cron.day.weekdays": {
+    "en": "{weekdays}{months}",
+    "zh": "{weekdays}{months}"
+   },
+   "cron.day.monthDays": {
+    "en": "Day {days} of every month{months}",
+    "zh": "每月 {days} 日{months}"
+   },
+   "cron.day.both": {
+    "en": "Day {days} of every month or {weekdays}{months}",
+    "zh": "每月 {days} 日或{weekdays}{months}"
+   },
+   "cron.day.bothStarred": {
+    "en": "Day {days} of every month and {weekdays}{months}",
+    "zh": "每月 {days} 日且{weekdays}{months}"
+   },
+   "cron.hours.range": {
+    "en": "{from}–{to}",
+    "zh": "{from} 至 {to}"
+   },
+   "cron.hours.list": {
+    "en": "{hours}",
+    "zh": "{hours}"
+   },
+   "cron.time.everyMinute": {
+    "en": "Every minute",
+    "zh": "每分钟"
+   },
+   "cron.time.everyMinutes": {
+    "en": "Every {step} minutes",
+    "zh": "每 {step} 分钟"
+   },
+   "cron.time.joinedEveryMinute": {
+    "en": "every minute",
+    "zh": "每分钟"
+   },
+   "cron.time.joinedEveryMinutes": {
+    "en": "every {step} minutes",
+    "zh": "每 {step} 分钟"
+   },
+   "cron.time.everyHour": {
+    "en": "Every hour",
+    "zh": "每小时"
+   },
+   "cron.time.joinedEveryHour": {
+    "en": "every hour",
+    "zh": "每小时"
+   },
+   "cron.time.everyNHours": {
+    "en": "Every {count} hours",
+    "zh": "每 {count} 小时"
+   },
+   "cron.time.joinedEveryNHours": {
+    "en": "every {count} hours",
+    "zh": "每 {count} 小时"
+   },
+   "cron.time.hourlyAt": {
+    "en": "Every hour at minute {minutes}",
+    "zh": "每小时的第 {minutes} 分钟"
+   },
+   "cron.time.joinedHourlyAt": {
+    "en": "every hour at minute {minutes}",
+    "zh": "每小时的第 {minutes} 分钟"
+   },
+   "cron.time.hoursEveryMinute": {
+    "en": "every minute during hours {hours}",
+    "zh": "{hours} 点的每分钟"
+   },
+   "cron.time.hoursEveryMinutes": {
+    "en": "every {step} minutes during hours {hours}",
+    "zh": "{hours} 点内每 {step} 分钟"
+   },
+   "cron.time.at": {
+    "en": "at {times}",
+    "zh": "{times}"
+   },
+   "cron.time.hoursAt": {
+    "en": "at minute {minutes} of hours {hours}",
+    "zh": "{hours} 点的第 {minutes} 分钟"
+   },
+   "frequency.weekday.join": {
+    "en": ", ",
+    "zh": "、"
+   },
+   "frequency.weekday.1": {
+    "en": "Mon",
+    "zh": "一"
+   },
+   "frequency.weekday.2": {
+    "en": "Tue",
+    "zh": "二"
+   },
+   "frequency.weekday.3": {
+    "en": "Wed",
+    "zh": "三"
+   },
+   "frequency.weekday.4": {
+    "en": "Thu",
+    "zh": "四"
+   },
+   "frequency.weekday.5": {
+    "en": "Fri",
+    "zh": "五"
+   },
+   "frequency.weekday.6": {
+    "en": "Sat",
+    "zh": "六"
+   },
+   "frequency.weekday.7": {
+    "en": "Sun",
+    "zh": "日"
+   },
+   "unit.day.one": {
+    "en": "day",
+    "zh": "天"
+   },
+   "unit.day.other": {
+    "en": "days",
+    "zh": "天"
+   },
+   "unit.hour.one": {
+    "en": "hour",
+    "zh": "小时"
+   },
+   "unit.hour.other": {
+    "en": "hours",
+    "zh": "小时"
+   },
+   "unit.minute.one": {
+    "en": "minute",
+    "zh": "分钟"
+   },
+   "unit.minute.other": {
+    "en": "minutes",
+    "zh": "分钟"
+   },
+   "unit.second.one": {
+    "en": "second",
+    "zh": "秒"
+   },
+   "unit.second.other": {
+    "en": "seconds",
+    "zh": "秒"
+   },
+   "relative.now": {
+    "en": "Due now",
+    "zh": "现在到期"
+   },
+   "relative.future": {
+    "en": "in {value} {unit}",
+    "zh": "{value}{unit}后"
+   },
+   "relative.overdue": {
+    "en": "{value} {unit} overdue",
+    "zh": "已逾期 {value}{unit}"
+   },
+   "timing.date": {
+    "en": "Date",
+    "zh": "日期"
+   },
+   "timing.time": {
+    "en": "Time",
+    "zh": "时间"
+   },
+   "timing.hour": {
+    "en": "Hour",
+    "zh": "时"
+   },
+   "timing.minute": {
+    "en": "Minute",
+    "zh": "分"
+   },
+   "timing.second": {
+    "en": "Second",
+    "zh": "秒"
+   },
+   "timing.prevMonth": {
+    "en": "Previous month",
+    "zh": "上个月"
+   },
+   "timing.nextMonth": {
+    "en": "Next month",
+    "zh": "下个月"
+   },
+   "timing.zone": {
+    "en": "Time zone",
+    "zh": "时区"
+   },
+   "timing.zoneSearch": {
+    "en": "Search by UTC offset, IANA ID, or city",
+    "zh": "搜索 UTC 偏移、IANA 标识或城市"
+   },
+   "timing.zoneNoResults": {
+    "en": "No matching time zones",
+    "zh": "没有匹配的时区"
+   },
+   "timing.interval": {
+    "en": "Repeat every",
+    "zh": "重复间隔"
+   },
+   "timing.intervalIncrease": {
+    "en": "Increase interval",
+    "zh": "增大间隔"
+   },
+   "timing.intervalDecrease": {
+    "en": "Decrease interval",
+    "zh": "减小间隔"
+   },
+   "timing.unit.hour": {
+    "en": "hours",
+    "zh": "小时"
+   },
+   "timing.unit.minute": {
+    "en": "minutes",
+    "zh": "分钟"
+   },
+   "timing.unit.second": {
+    "en": "seconds",
+    "zh": "秒"
+   },
+   "timing.intervalHint.hour": {
+    "en": "At least 1 hour. The interval counts from task creation or the last rule change and is independent of time zones.",
+    "zh": "至少 1 小时。间隔自任务创建或上次修改规则时起计，不受时区影响"
+   },
+   "timing.intervalHint.minute": {
+    "en": "At least 1 minute. The interval counts from task creation or the last rule change and is independent of time zones.",
+    "zh": "至少 1 分钟。间隔自任务创建或上次修改规则时起计，不受时区影响"
+   },
+   "timing.intervalHint.second": {
+    "en": "At least 60 seconds. The interval counts from task creation or the last rule change and is independent of time zones.",
+    "zh": "至少 60 秒。间隔自任务创建或上次修改规则时起计，不受时区影响"
+   },
+   "timing.zoneNoStored": {
+    "en": "A one-time task stores only its target moment, not a time zone. The date and time are interpreted in the selected time zone.",
+    "zh": "单次任务只保存触发时刻，不保存时区；日期和时间按所选时区换算"
+   },
+   "timing.inactive": {
+    "en": "Inactive tasks are read-only. Their timing cannot be edited.",
+    "zh": "已结束的任务为只读，无法修改时间"
+   },
+   "timing.conflict": {
+    "en": "This task changed while you were editing. Your draft is retained. Cancel and reopen after refresh to edit the latest rule.",
+    "zh": "编辑期间任务已变化，草稿已保留。请在刷新后取消并重新打开编辑器，以修改最新规则"
+   },
+   "timing.notFound": {
+    "en": "This task is no longer available. Your draft is retained; cancel to close the editor.",
+    "zh": "此任务当前不可用，草稿已保留。请取消以关闭编辑器"
+   },
+   "timing.invalid": {
+    "en": "Enter a valid date and time, or check the timing fields.",
+    "zh": "请输入有效的日期和时间，或检查时间字段"
+   },
+   "timing.invalidZone": {
+    "en": "Enter a valid IANA time zone, for example Asia/Shanghai.",
+    "zh": "请输入有效的 IANA 时区，例如 Asia/Shanghai"
+   },
+   "timing.notFuture": {
+    "en": "Choose a date and time in the future.",
+    "zh": "请选择未来的日期和时间"
+   },
+   "timing.invalidInterval": {
+    "en": "Enter an interval of at least 1 minute.",
+    "zh": "请输入至少 1 分钟的间隔"
+   },
+   "timing.invalidInterval.hour": {
+    "en": "Enter an interval of at least 1 hour.",
+    "zh": "请输入至少 1 小时的间隔"
+   },
+   "timing.invalidInterval.minute": {
+    "en": "Enter an interval of at least 1 minute.",
+    "zh": "请输入至少 1 分钟的间隔"
+   },
+   "timing.invalidInterval.second": {
+    "en": "Enter an interval of at least 60 seconds.",
+    "zh": "请输入至少 60 秒的间隔"
+   },
+   "timing.error": {
+    "en": "Could not confirm the timing update. Your draft is retained. Check the task before retrying.",
+    "zh": "无法确认时间修改是否已保存。草稿已保留，请在重试前检查任务"
+   },
+   "rule.title": {
+    "en": "Run time",
+    "zh": "运行时间"
+   },
+   "rule.repeat": {
+    "en": "Repeat",
+    "zh": "重复"
+   },
+   "rule.weekday": {
+    "en": "Weekday",
+    "zh": "星期"
+   },
+   "rule.weekdayOption": {
+    "en": "Weekday {weekday}",
+    "zh": "星期{weekday}"
+   },
+   "rule.unsaved": {
+    "en": "Unsaved changes",
+    "zh": "有未保存的修改"
+   },
+   "rule.save": {
+    "en": "Save changes",
+    "zh": "保存修改"
+   },
+   "rule.saving": {
+    "en": "Saving…",
+    "zh": "保存中…"
+   },
+   "rule.cancel": {
+    "en": "Cancel",
+    "zh": "取消"
+   },
+   "rule.invalidTitle": {
+    "en": "Enter a task name of at most 120 characters.",
+    "zh": "请输入不超过 120 个字符的任务名称"
+   },
+   "rule.invalidPrompt": {
+    "en": "Enter a task instruction.",
+    "zh": "请输入任务内容"
+   },
+   "rule.once": {
+    "en": "Once",
+    "zh": "仅一次"
+   },
+   "rule.everyMinutes": {
+    "en": "Every N minutes",
+    "zh": "每 N 分钟"
+   },
+   "rule.everyHours": {
+    "en": "Every N hours",
+    "zh": "每 N 小时"
+   },
+   "rule.everySeconds": {
+    "en": "Every N seconds",
+    "zh": "每 N 秒"
+   },
+   "rule.daily": {
+    "en": "Every day",
+    "zh": "每天"
+   },
+   "rule.weekdays": {
+    "en": "Monday to Friday",
+    "zh": "周一至周五"
+   },
+   "rule.weekly": {
+    "en": "Weekly",
+    "zh": "每周"
+   },
+   "rule.cron": {
+    "en": "Custom",
+    "zh": "自定义"
+   },
+   "rule.cronLabel": {
+    "en": "Cron expression",
+    "zh": "Cron 表达式"
+   },
+   "rule.cronInvalid": {
+    "en": "Enter a five-field cron expression, for example 0 9 * * 1-5.",
+    "zh": "请输入 5 字段的 cron 表达式，例如 0 9 * * 1-5"
+   },
+   "cronForm.frequency": {
+    "en": "Frequency",
+    "zh": "频率"
+   },
+   "cronForm.monthly": {
+    "en": "Monthly",
+    "zh": "每月"
+   },
+   "cronForm.weekly": {
+    "en": "Weekly",
+    "zh": "每周"
+   },
+   "cronForm.daily": {
+    "en": "Every day",
+    "zh": "每天"
+   },
+   "cronForm.dates": {
+    "en": "On dates",
+    "zh": "在以下日期"
+   },
+   "cronForm.dateOption": {
+    "en": "Day {day}",
+    "zh": "{day} 日"
+   },
+   "cronForm.atMinute": {
+    "en": "At minute",
+    "zh": "在第几分钟"
+   },
+   "cronForm.minuteIncrease": {
+    "en": "Increase minute",
+    "zh": "增大分钟"
+   },
+   "cronForm.minuteDecrease": {
+    "en": "Decrease minute",
+    "zh": "减小分钟"
+   },
+   "rule.zone.system": {
+    "en": " (system)",
+    "zh": "（系统）"
+   },
+   "rule.error.conflict": {
+    "en": "This task changed before the update was saved. The row shows the saved rule; try again.",
+    "zh": "任务在保存前已发生变化。当前显示已保存的规则，请重试"
+   },
+   "rule.error.notFound": {
+    "en": "This task is no longer available.",
+    "zh": "此任务当前不可用"
+   },
+   "rule.error.unknown": {
+    "en": "Could not confirm the rule update. The row shows the saved rule.",
+    "zh": "无法确认规则是否已更新。当前显示已保存的规则"
+   },
+   "delete.action": {
+    "en": "Delete task",
+    "zh": "删除任务"
+   },
+   "delete.title": {
+    "en": "Delete this task?",
+    "zh": "删除此任务？"
+   },
+   "delete.description": {
+    "en": "This stops the task from triggering and deletes it together with its saved delivery records. The original session and its messages remain; queued messages are not withdrawn.",
+    "zh": "任务将停止触发，并连同其已保存的任务运行记录一并删除。原会话及其消息仍然保留；已排队的消息不会被撤回。"
+   },
+   "delete.confirm": {
+    "en": "Confirm deletion",
+    "zh": "确认删除"
+   },
+   "delete.cancel": {
+    "en": "Cancel",
+    "zh": "取消"
+   },
+   "delete.close": {
+    "en": "Close deletion confirmation",
+    "zh": "关闭删除确认"
+   },
+   "delete.pending": {
+    "en": "Deleting…",
+    "zh": "正在删除…"
+   },
+   "toast.deleted": {
+    "en": "Task deleted.",
+    "zh": "任务已删除"
+   },
+   "toast.deleteFailed": {
+    "en": "Could not delete the task.",
+    "zh": "无法删除任务"
+   },
+   "card.open": {
+    "en": "Open",
+    "zh": "打开"
+   },
+   "card.openLabel": {
+    "en": "Open task details: {title}",
+    "zh": "打开任务详情：{title}"
+   },
+   "card.deleted": {
+    "en": "Deleted",
+    "zh": "已删除"
+   },
+   "tool.invoked": {
+    "en": "Invoked {name}",
+    "zh": "已调用 {name}"
+   }
+  },
+  "settings.account": {
+   "modelSignInRequired": {
+    "en": "Model unavailable. Please sign in and try again.",
+    "zh": "当前模型暂不可用，请登录后再试"
+   },
+   "sessionExpired": {
+    "en": "You have signed out of your account, please log in again.",
+    "zh": "登录信息已失效，请重新登录"
+   },
+   "onboardingArtworkLocale": {
+    "en": "en",
+    "zh": "zh"
+   },
+   "onboardingWelcome": {
+    "en": "Welcome to",
+    "zh": "欢迎使用"
+   },
+   "onboardingBrand": {
+    "en": "DeepSeek Harness",
+    "zh": "DeepSeek Harness"
+   },
+   "onboardingIntroduction": {
+    "en": "DeepSeek Harness works in a local folder and uses tools to read and write files on your computer. It can help you research and organize information, create documents and spreadsheets, write code, troubleshoot issues, and more.",
+    "zh": "DeepSeek Harness 会以本地文件夹作为工作区，通过调用各种工具，读写本机文件，完成搜索整理资料、制作文档表格、编写代码、排查问题等各种任务。"
+   },
+   "onboardingStart": {
+    "en": "Get started",
+    "zh": "开始设置"
+   },
+   "onboardingCredit": {
+    "en": "Add credits",
+    "zh": "准备可用额度"
+   },
+   "onboardingCreditDescription": {
+    "en": "DeepSeek Harness charges credits based on the tokens used by models and tools. Add credits in advance to keep your tasks running without interruption. Your balance is only used while the agent is working on a task.",
+    "zh": "DeepSeek Harness 执行任务时，会根据模型与工具使用的 token 量扣除额度。请提前添加额度，避免任务在执行过程中被迫中断。你的余额只会在 Agent 实际执行任务时消耗。"
+   },
+   "onboardingTopUp": {
+    "en": "Add credits",
+    "zh": "去充值"
+   },
+   "onboardingLater": {
+    "en": "Next",
+    "zh": "下一步"
+   },
+   "onboardingFundedTopUp": {
+    "en": "Add credits",
+    "zh": "去充值"
+   },
+   "onboardingPurposePrefix": {
+    "en": "What would you like",
+    "zh": "你希望"
+   },
+   "onboardingPurposeSuffix": {
+    "en": "to help with?",
+    "zh": "帮你做什么？"
+   },
+   "onboardingPurposeDescription": {
+    "en": "We’ll tailor the interface and tools to fit the way you work.",
+    "zh": "我们会根据你的选择调整界面和工具，以更适合你的工作方式。"
+   },
+   "onboardingOffice": {
+    "en": "Office & creative work",
+    "zh": "办公与创作"
+   },
+   "onboardingOfficeDescription": {
+    "en": "Edit documents, organize data, create presentations, and more",
+    "zh": "编辑文档、整理数据和制作演示文稿等"
+   },
+   "onboardingDevelopment": {
+    "en": "Coding & development",
+    "zh": "代码与开发"
+   },
+   "onboardingDevelopmentDescription": {
+    "en": "Edit code, debug issues, run commands, manage project files, and more",
+    "zh": "修改代码、调试问题、运行命令和管理项目文件等"
+   },
+   "onboardingContinue": {
+    "en": "Continue",
+    "zh": "继续"
+   },
+   "onboardingProcess": {
+    "en": "How much detail would you like to see?",
+    "zh": "你希望看到多少工作过程？"
+   },
+   "onboardingProcessDescription": {
+    "en": "This only changes how progress is shown, not what DeepSeek Harness can do.",
+    "zh": "这只会影响工作过程的展示方式，不会影响 DeepSeek Harness 的工作能力。"
+   },
+   "onboardingCompact": {
+    "en": "Results only",
+    "zh": "聚焦结果"
+   },
+   "onboardingCompactDescription": {
+    "en": "See just the results in a clean, simple interface",
+    "zh": "只看结果，保持界面简洁明了"
+   },
+   "onboardingStandard": {
+    "en": "Key details",
+    "zh": "关键细节"
+   },
+   "onboardingStandardDescription": {
+    "en": "Focus on results, with only the most important steps and actions shown",
+    "zh": "结果优先，仅展示重要步骤和关键操作"
+   },
+   "onboardingDetailed": {
+    "en": "Full details",
+    "zh": "完整过程"
+   },
+   "onboardingDetailedDescription": {
+    "en": "See the full process for easier debugging and troubleshooting",
+    "zh": "查看完整工作过程，方便调试和排查问题"
+   },
+   "onboardingEnter": {
+    "en": "Open app",
+    "zh": "进入应用"
+   },
+   "onboardingBack": {
+    "en": "Back",
+    "zh": "上一步"
+   },
+   "onboardingSkip": {
+    "en": "Skip",
+    "zh": "跳过"
+   },
+   "onboardingSkipTitle": {
+    "en": "Skip setup?",
+    "zh": "跳过设置？"
+   },
+   "onboardingSkipDescription": {
+    "en": "You can change how progress, performance, and usage are displayed, or enable Coding Tools, anytime in Profile → General Settings.",
+    "zh": "你可以随时前往 个人中心 → 通用设置 中调整工作过程、性能与用量展示方式或开启代码工作工具。"
+   },
+   "onboardingKeepSetting": {
+    "en": "Continue setup",
+    "zh": "继续设置"
+   },
+   "onboardingNoCreditTitle": {
+    "en": "Skip adding credits?",
+    "zh": "暂时跳过充值？"
+   },
+   "onboardingNoCreditDescription": {
+    "en": "DeepSeek Harness can’t start new tasks without credits. You can add them later in Profile → Accounts.",
+    "zh": "没有可用额度时，DeepSeek Harness 将无法开始新的任务。你可以稍后前往 个人中心 → 账号与余额 进行充值。"
+   },
+   "onboardingUnderstood": {
+    "en": "Got it",
+    "zh": "我知道了"
+   },
+   "onboardingGoTopUp": {
+    "en": "Add credits",
+    "zh": "前往充值"
+   },
+   "onboardingSaveFailed": {
+    "en": "Could not save settings. Try again.",
+    "zh": "未能保存设置，请重试。"
+   },
+   "onboardingRetry": {
+    "en": "Retry",
+    "zh": "重试"
+   },
+   "onboardingLoading": {
+    "en": "Loading settings…",
+    "zh": "正在加载设置…"
+   },
+   "close": {
+    "en": "Close",
+    "zh": "关闭"
+   },
+   "addApiKey": {
+    "en": "Add API Key",
+    "zh": "添加 API Key"
+   },
+   "retry": {
+    "en": "Sign in again",
+    "zh": "重新登录"
+   },
+   "loginTitle": {
+    "en": "Get started",
+    "zh": "开始使用"
+   },
+   "loginDescription": {
+    "en": "Sign in to your DeepSeek account or add an API Key to get started. Your projects and files are stored locally.",
+    "zh": "登录 DeepSeek 账号，或添加 API Key，即可开始使用。你的项目和文件保存在本地。"
+   },
+   "browserTitle": {
+    "en": "Waiting for sign in",
+    "zh": "等待登录"
+   },
+   "browserPrompt": {
+    "en": "Page did not open automatically? ",
+    "zh": "没有自动打开新页面？"
+   },
+   "copyLink": {
+    "en": "Copy sign-in link",
+    "zh": "复制登录链接"
+   },
+   "copiedLink": {
+    "en": "Link copied",
+    "zh": "链接已复制"
+   },
+   "copyFailed": {
+    "en": "Copy failed",
+    "zh": "复制失败"
+   },
+   "browserDescription": {
+    "en": ", then open it in your browser to finish signing in.",
+    "zh": "，手动打开登录页完成登录。"
+   },
+   "timeoutTitle": {
+    "en": "Sign in timed out",
+    "zh": "登录已超时"
+   },
+   "timeoutDescription": {
+    "en": "Sign in again to continue.",
+    "zh": "请重新登录后继续操作。"
+   },
+   "failureTitle": {
+    "en": "Could not sign in",
+    "zh": "登录失败"
+   },
+   "platformFailed": {
+    "en": "Could not complete the operation. Try again.",
+    "zh": "操作未完成，请重试"
+   },
+   "platformRetry": {
+    "en": "Retry",
+    "zh": "重试"
+   },
+   "loading": {
+    "en": "Loading…",
+    "zh": "加载中…"
+   },
+   "backToHarness": {
+    "en": "Back to DeepSeek Harness",
+    "zh": "返回 DeepSeek Harness"
+   },
+   "settings": {
+    "en": "Settings",
+    "zh": "设置"
+   },
+   "contactUs": {
+    "en": "Feedback",
+    "zh": "意见反馈"
+   },
+   "contactUsSignedOut": {
+    "en": "Contact us",
+    "zh": "联系我们"
+   },
+   "menu": {
+    "en": "Account menu",
+    "zh": "账号菜单"
+   },
+   "nav": {
+    "en": "Account",
+    "zh": "账号与余额"
+   },
+   "signedIn": {
+    "en": "Signed in to DeepSeek",
+    "zh": "已登录 DeepSeek"
+   },
+   "signedOut": {
+    "en": "Not signed in",
+    "zh": "尚未登录"
+   },
+   "signIn": {
+    "en": "Sign in",
+    "zh": "登录"
+   },
+   "signOut": {
+    "en": "Sign out",
+    "zh": "退出登录"
+   },
+   "signOutUnknownDescription": {
+    "en": "Could not check running tasks. Signing out may interrupt tasks using this account. Sign out now?",
+    "zh": "暂时无法确认任务状态。退出登录可能会中断使用此账号的任务，是否继续？"
+   },
+   "signOutDescription": {
+    "en": "Signing out will not delete any data. You can sign in to this account again.",
+    "zh": "退出登录不会丢失任何数据，你仍可以登录此账号。"
+   },
+   "signOutRunningDescription": {
+    "en": "Tasks are currently running. Signing out will interrupt them. Sign out now?",
+    "zh": "当前有进程正在执行中，点击“退出登录”，将会打断进程，是否即刻退出登录？"
+   },
+   "cancel": {
+    "en": "Cancel",
+    "zh": "取消"
+   },
+   "open": {
+    "en": "Open browser",
+    "zh": "打开浏览器"
+   },
+   "initializing": {
+    "en": "Starting sign in…",
+    "zh": "正在发起登录…"
+   },
+   "waiting": {
+    "en": "Continue in your browser",
+    "zh": "请在浏览器中继续"
+   },
+   "completing": {
+    "en": "Completing sign in…",
+    "zh": "正在完成登录…"
+   },
+   "expired": {
+    "en": "Sign in expired. Try again.",
+    "zh": "登录已过期，请重试。"
+   },
+   "failed": {
+    "en": "Could not complete the operation. Try again.",
+    "zh": "操作未完成，请重试。"
+   },
+   "settingsSignedOutTitle": {
+    "en": "You are not signed in to DeepSeek Harness",
+    "zh": "当前未登录 DeepSeek Harness 账号"
+   },
+   "settingsSignedOutDescription": {
+    "en": "Sign in to DeepSeek Harness to get your dedicated API Key",
+    "zh": "登录 DeepSeek Harness 账号获取专属 API Key"
+   },
+   "signInDescription": {
+    "en": "Use your DeepSeek account to get started.",
+    "zh": "登录 DeepSeek 账号以开始使用"
+   },
+   "profileUnavailable": {
+    "en": "Account details are not available yet.",
+    "zh": "账号资料暂不可用"
+   },
+   "balance": {
+    "en": "Topped-up balance",
+    "zh": "充值余额"
+   },
+   "bonusBalance": {
+    "en": "Granted balance",
+    "zh": "赠金余额"
+   },
+   "balanceUnavailable": {
+    "en": "View on Platform",
+    "zh": "前往开放平台查看"
+   },
+   "balanceSignedOut": {
+    "en": "Sign in to view",
+    "zh": "登录后查看"
+   },
+   "accountInfo": {
+    "en": "More account information",
+    "zh": "更多账号信息"
+   },
+   "more": {
+    "en": "More",
+    "zh": "更多"
+   },
+   "usage": {
+    "en": "View usage",
+    "zh": "查询用量"
+   },
+   "topUp": {
+    "en": "Top up",
+    "zh": "充值"
+   },
+   "quotaTitle": {
+    "en": "No balance available",
+    "zh": "当前无可用余额"
+   },
+   "quotaDescription": {
+    "en": "DeepSeek Harness cannot start a new task with this account when no balance is available. Would you like to top up? You can also top up later in Settings → Account.",
+    "zh": "没有可用额度时，DeepSeek Harness 无法开始新的任务，是否前往充值？或者可以稍后前往 设置 → 账号与余额 进行充值。"
+   },
+   "quotaTopUp": {
+    "en": "Top up",
+    "zh": "去充值"
+   },
+   "bonusNoticeTitle": {
+    "en": "Bonus credited",
+    "zh": "赠金已到账"
+   },
+   "bonusEmpty": {
+    "en": "No bonus available",
+    "zh": "暂无可用赠金"
+   }
+  },
+  "settings.agentLoop": {
+   "title": {
+    "en": "Agent loop",
+    "zh": "Agent 循环"
+   },
+   "description": {
+    "en": "Control how the Agent dispatches tool calls.",
+    "zh": "控制 Agent 派发工具调用的方式。"
+   },
+   "maxParallel": {
+    "en": "Parallel tool calls",
+    "zh": "并行工具调用数"
+   },
+   "maxParallelHint": {
+    "en": "Upper bound on parallel-safe calls running at once within one step.",
+    "zh": "同一步内最多同时运行多少个可并行的调用。"
+   },
+   "overridden": {
+    "en": "Overridden",
+    "zh": "已覆盖"
+   },
+   "reset": {
+    "en": "Reset to default",
+    "zh": "恢复默认"
+   },
+   "readOnly": {
+    "en": "This deployment stores settings read-only.",
+    "zh": "本部署的设置为只读。"
+   },
+   "unavailable": {
+    "en": "This plugin is not loaded, so it cannot be configured right now.",
+    "zh": "该插件当前未加载，暂时无法配置。"
+   },
+   "save": {
+    "en": "Save",
+    "zh": "保存"
+   },
+   "saving": {
+    "en": "Saving…",
+    "zh": "保存中…"
+   },
+   "saveFailed": {
+    "en": "The deployment did not accept these values; they were left for you to correct.",
+    "zh": "本部署没有接受这些值，已保留供你修改。"
+   },
+   "invalidNumber": {
+    "en": "Enter a number, or leave blank to use the default.",
+    "zh": "请填数字；留空表示使用默认值。"
+   }
+  },
+  "settings": {
+   "shortcut.open": {
+    "en": "Open settings",
+    "zh": "打开设置"
+   },
+   "general.currentVersion": {
+    "en": "Current version: {version}",
+    "zh": "当前版本：{version}"
+   },
+   "developerTools.title": {
+    "en": "Coding Tools",
+    "zh": "代码工作工具"
+   },
+   "developerTools.error": {
+    "en": "Could not save. Please try again.",
+    "zh": "保存失败，请重试"
+   },
+   "developerTools.description": {
+    "en": "Shows trajectory, code diffs, and Agent preset switching in new chats",
+    "zh": "开启后显示轨迹、本轮代码差异，新对话中的 Agent 预设切换"
+   }
+  },
+  "settings.models": {
+   "deepSeekAccount": {
+    "en": "DeepSeek Account",
+    "zh": "DeepSeek 账号"
+   },
+   "addMode": {
+    "en": "How to add",
+    "zh": "添加方式"
+   },
+   "addCatalog": {
+    "en": "Third-party model provider",
+    "zh": "第三方模型提供商"
+   },
+   "addCustom": {
+    "en": "Custom model API",
+    "zh": "自定义模型 API"
+   },
+   "addCatalogHint": {
+    "en": "Pick OpenAI, Anthropic, Kimi, or another provider from the built-in catalog and enter its API key.",
+    "zh": "从内置目录中选择 OpenAI、Anthropic、Kimi 等提供商，填入其 API 密钥即可使用。"
+   },
+   "addCustomHint": {
+    "en": "Connect a relay, a self-hosted server, or any other OpenAI- or Anthropic-compatible endpoint by its base URL, protocol, and models.",
+    "zh": "连接中转站、自部署服务或其他兼容 OpenAI / Anthropic 协议的接口，需填写 API 地址、协议和模型。"
+   },
+   "addCatalogExhausted": {
+    "en": "Every catalog provider is already configured.",
+    "zh": "目录中的提供商都已添加。"
+   },
+   "addCustomUnavailable": {
+    "en": "No API protocol is available to declare.",
+    "zh": "没有可用的 API 协议。"
+   },
+   "deepSeekBaseUrl": {
+    "en": "https://api.deepseek.com/anthropic",
+    "zh": "https://api.deepseek.com/anthropic"
+   },
+   "protocolOpenAiCompletions": {
+    "en": "OpenAI Chat Completions",
+    "zh": "OpenAI Chat Completions"
+   },
+   "protocolOpenAiResponses": {
+    "en": "OpenAI Responses",
+    "zh": "OpenAI Responses"
+   },
+   "protocolAnthropicMessages": {
+    "en": "Anthropic Messages",
+    "zh": "Anthropic Messages"
+   },
+   "customAnthropicBaseUrlPlaceholder": {
+    "en": "https://gateway.example",
+    "zh": "https://gateway.example"
+   }
+  },
+  "settings.pluginInventory": {
+   "metadataError": {
+    "en": "Package metadata error: {error}",
+    "zh": "包元信息错误：{error}"
+   }
+  },
+  "settings.shell": {
+   "title": {
+    "en": "Shell",
+    "zh": "终端"
+   },
+   "description": {
+    "en": "Limit how long each command may run and how much it may output.",
+    "zh": "限制每条命令最多能跑多久、最多输出多少内容。"
+   },
+   "timeoutMs": {
+    "en": "Command timeout (ms)",
+    "zh": "命令超时（毫秒）"
+   },
+   "timeoutMsHint": {
+    "en": "How long one command may run before it is terminated.",
+    "zh": "单条命令允许运行多久，超时即终止。"
+   },
+   "maxOutputBytes": {
+    "en": "Output cap per stream (bytes)",
+    "zh": "单流输出上限（字节）"
+   },
+   "maxOutputBytesHint": {
+    "en": "Output beyond this spills to a temporary file rather than being lost.",
+    "zh": "超出部分会转存到临时文件，而不是被丢弃。"
+   },
+   "overridden": {
+    "en": "Overridden",
+    "zh": "已覆盖"
+   },
+   "reset": {
+    "en": "Reset to default",
+    "zh": "恢复默认"
+   },
+   "readOnly": {
+    "en": "This deployment stores settings read-only.",
+    "zh": "本部署的设置为只读。"
+   },
+   "unavailable": {
+    "en": "This plugin is not loaded, so it cannot be configured right now.",
+    "zh": "该插件当前未加载，暂时无法配置。"
+   },
+   "save": {
+    "en": "Save",
+    "zh": "保存"
+   },
+   "saving": {
+    "en": "Saving…",
+    "zh": "保存中…"
+   },
+   "saveFailed": {
+    "en": "The deployment did not accept these values; they were left for you to correct.",
+    "zh": "本部署没有接受这些值，已保留供你修改。"
+   },
+   "invalidNumber": {
+    "en": "Enter a number, or leave blank to use the default.",
+    "zh": "请填数字；留空表示使用默认值。"
+   }
+  },
+  "settings.subagent": {
+   "overridden": {
+    "en": "Overridden",
+    "zh": "已覆盖"
+   },
+   "reset": {
+    "en": "Reset to default",
+    "zh": "恢复默认"
+   },
+   "readOnly": {
+    "en": "This deployment stores settings read-only.",
+    "zh": "本部署的设置为只读。"
+   },
+   "unavailable": {
+    "en": "This plugin is not loaded, so it cannot be configured right now.",
+    "zh": "该插件当前未加载，暂时无法配置。"
+   },
+   "save": {
+    "en": "Save",
+    "zh": "保存"
+   },
+   "saving": {
+    "en": "Saving…",
+    "zh": "保存中…"
+   },
+   "saveFailed": {
+    "en": "The deployment did not accept these values; they were left for you to correct.",
+    "zh": "本部署没有接受这些值，已保留供你修改。"
+   },
+   "subagentTitle": {
+    "en": "Subagent",
+    "zh": "子智能体"
+   },
+   "subagentDescription": {
+    "en": "Set Subagent recursion depth, count, and models.",
+    "zh": "设置子智能体的递归层级、数量和模型。"
+   },
+   "subagentLimitsTitle": {
+    "en": "Limits",
+    "zh": "运行限制"
+   },
+   "subagentMaxDepth": {
+    "en": "Maximum recursion depth",
+    "zh": "最大递归深度"
+   },
+   "subagentDepthHelpLabel": {
+    "en": "About maximum recursion depth",
+    "zh": "最大递归深度说明"
+   },
+   "subagentDepthHelp": {
+    "en": "Limits how many levels of Subagents an Agent can create.",
+    "zh": "限制 Agent 创建子智能体的递归层级。"
+   },
+   "subagentDepthZero": {
+    "en": "Disable Subagents",
+    "zh": "禁用子智能体"
+   },
+   "subagentDepthOne": {
+    "en": "Only the main Agent can create Subagents",
+    "zh": "仅允许主 Agent 创建子智能体"
+   },
+   "subagentDepthOverride": {
+    "en": "If a tool defines its own maximum recursion depth, that setting takes precedence.",
+    "zh": "如果某个工具单独设置了最大递归深度，以该工具的设置为准。"
+   },
+   "subagentMaxActive": {
+    "en": "Subagent parallelism limit",
+    "zh": "子智能体并行数量上限"
+   },
+   "subagentCapacityHelpLabel": {
+    "en": "About the Subagent parallelism limit",
+    "zh": "子智能体并行数量上限说明"
+   },
+   "subagentCapacityHelp": {
+    "en": "Total live Subagents under the same main Agent, across all recursion levels. The main Agent is excluded. New start requests are rejected when the limit is reached.",
+    "zh": "同一主 Agent 下，所有递归层级同时存活的子智能体总数，主 Agent 不计入。达到上限时，新的启动请求会被拒绝。"
+   },
+   "subagentDepthInvalid": {
+    "en": "Enter a whole number of 0 or more.",
+    "zh": "请输入不小于 0 的整数。"
+   },
+   "subagentCapacityInvalid": {
+    "en": "Enter a whole number of 1 or more.",
+    "zh": "请输入不小于 1 的整数。"
+   },
+   "subagentModelSelectionTitle": {
+    "en": "Model selection",
+    "zh": "模型选择"
+   },
+   "subagentModelSelectionToggle": {
+    "en": "Allow agents to choose models for Subagents",
+    "zh": "允许 Agent 为子智能体选择模型"
+   },
+   "subagentModelSelectionChoose": {
+    "en": "When enabled, agents can choose a provider, model, and reasoning effort for each Subagent from the authorized models below. Applies only to new sessions.",
+    "zh": "开启后，Agent 可以从下方授权模型中，为每个子智能体选择提供方、模型和推理强度。仅影响新会话。"
+   },
+   "subagentModelSelectionAllowed": {
+    "en": "Models agents may choose",
+    "zh": "Agent 可选择的模型"
+   },
+   "subagentModelSelectionLoading": {
+    "en": "Loading models…",
+    "zh": "正在加载模型…"
+   },
+   "subagentModelSelectionLoadFailed": {
+    "en": "Models could not be loaded.",
+    "zh": "无法加载模型。"
+   },
+   "subagentModelSelectionRetry": {
+    "en": "Retry",
+    "zh": "重试"
+   },
+   "subagentModelSelectionPartial": {
+    "en": "Some model providers could not be loaded; saved choices remain removable.",
+    "zh": "部分模型提供方暂时无法加载；已保存的选择仍可移除。"
+   },
+   "subagentModelSelectionUnavailable": {
+    "en": "Currently unavailable",
+    "zh": "当前不可用"
+   },
+   "subagentModelSelectionUnavailableGroup": {
+    "en": "Saved but currently unavailable",
+    "zh": "已保存但当前不可用"
+   },
+   "subagentModelSelectionEmpty": {
+    "en": "No model provider currently advertises a model.",
+    "zh": "当前没有模型提供方公布模型。"
+   },
+   "subagentModelSelectionRequired": {
+    "en": "Select at least one model before saving.",
+    "zh": "保存前请至少选择一个模型。"
+   },
+   "subagentModelSelectionConflict": {
+    "en": "Settings changed elsewhere. Discard your draft and try again.",
+    "zh": "设置已在其他位置更新。请放弃修改后重试。"
+   },
+   "subagentModelSelectionOff": {
+    "en": "Subagents use configured defaults or inherit the parent agent's model. Saved model choices are retained.",
+    "zh": "关闭后，子智能体使用配置的默认模型或继承父 Agent 的模型；已选模型会保留。"
+   }
+  },
+  "settings.webSearch": {
+   "title": {
+    "en": "Web search",
+    "zh": "网页搜索"
+   },
+   "description": {
+    "en": "Set up the DeepSeek search provider.",
+    "zh": "设置 DeepSeek 的搜索提供方。"
+   },
+   "apiKey": {
+    "en": "API key",
+    "zh": "API Key"
+   },
+   "apiKeyHint": {
+    "en": "Stored outside the settings file. Leave blank to keep the current key.",
+    "zh": "不写入设置文件。留空表示保持当前密钥。"
+   },
+   "apiKeySet": {
+    "en": "A key is configured.",
+    "zh": "已配置密钥。"
+   },
+   "apiKeyUnset": {
+    "en": "No key is configured; search is unavailable until one is.",
+    "zh": "未配置密钥；配置之前搜索不可用。"
+   },
+   "baseUrl": {
+    "en": "Endpoint",
+    "zh": "接口地址"
+   },
+   "baseUrlHint": {
+    "en": "Leave blank to use the provider default.",
+    "zh": "留空则使用提供方默认地址。"
+   },
+   "maxUses": {
+    "en": "Max searches per request",
+    "zh": "单次请求最多搜索次数"
+   },
+   "maxUsesHint": {
+    "en": "How many times one request may search before it must answer.",
+    "zh": "一次请求在必须作答前最多可以搜索多少次。"
+   },
+   "overridden": {
+    "en": "Overridden",
+    "zh": "已覆盖"
+   },
+   "reset": {
+    "en": "Reset to default",
+    "zh": "恢复默认"
+   },
+   "readOnly": {
+    "en": "This deployment stores settings read-only.",
+    "zh": "本部署的设置为只读。"
+   },
+   "unavailable": {
+    "en": "This plugin is not loaded, so it cannot be configured right now.",
+    "zh": "该插件当前未加载，暂时无法配置。"
+   },
+   "save": {
+    "en": "Save",
+    "zh": "保存"
+   },
+   "saving": {
+    "en": "Saving…",
+    "zh": "保存中…"
+   },
+   "saveFailed": {
+    "en": "The deployment did not accept these values; they were left for you to correct.",
+    "zh": "本部署没有接受这些值，已保留供你修改。"
+   },
+   "invalidNumber": {
+    "en": "Enter a number, or leave blank to use the default.",
+    "zh": "请填数字；留空表示使用默认值。"
+   }
+  },
+  "shortcuts": {
+   "edit-label": {
+    "en": "Edit shortcut for {command}",
+    "zh": "修改{command}快捷键"
+   },
+   "record": {
+    "en": "Press a shortcut",
+    "zh": "按下快捷键"
+   },
+   "record-help": {
+    "en": "Release the keys to save. Tab moves between actions; Esc cancels.",
+    "zh": "松开组合键即保存。Tab 切换操作，Esc 退出录键。"
+   },
+   "web-help": {
+    "en": "Browser combinations: Mod+/, Mod+Shift+,, Mod+Shift+.. Mod is Command on Mac and Ctrl elsewhere.",
+    "zh": "浏览器可用组合：Mod+/、Mod+Shift+,、Mod+Shift+.。Mod 在 Mac 上为 Command，其他系统为 Ctrl。"
+   },
+   "unsupported-key": {
+    "en": "This key is not supported.",
+    "zh": "暂不支持这个按键。"
+   },
+   "reserved": {
+    "en": "This combination is reserved for system or text editing actions.",
+    "zh": "此组合由系统或文本编辑操作保留。"
+   },
+   "modifier-required": {
+    "en": "Include Command, Ctrl, or Alt in the combination.",
+    "zh": "请同时按下 Command、Ctrl 或 Alt 修饰键。"
+   },
+   "too-many-keys": {
+    "en": "Hold at most two non-modifier keys. Release the keys to try again.",
+    "zh": "最多同时按下两个非修饰键。请松开后重试。"
+   },
+   "macos-web-help": {
+    "en": "Use Command+/, Command+,, Command+Backslash, Control+Backquote, Command+Option+key, or Command+Shift+key. Combinations with three or four distinct modifiers are also supported. Browser or system shortcuts may not reach the page.",
+    "zh": "可设置 Command+/、Command+,、Command+反斜杠、Control+反引号、Command+Option+按键或 Command+Shift+按键。也支持三个或四个不同修饰键的组合。浏览器或系统占用的组合可能无法送达页面。"
+   },
+   "windows-web-help": {
+    "en": "Use Ctrl+/, Ctrl+,, Ctrl+Alt+key, or Ctrl+Shift+key. Combinations with three or four distinct modifiers are also supported. Browser or system shortcuts may not reach the page.",
+    "zh": "可设置 Ctrl+/、Ctrl+,、Ctrl+Alt+按键或 Ctrl+Shift+按键。也支持三个或四个不同修饰键的组合。浏览器或系统占用的组合可能无法送达页面。"
+   },
+   "unsupported-browser": {
+    "en": "This browser does not support this combination yet.",
+    "zh": "此浏览器暂不支持该组合。"
+   },
+   "conflict": {
+    "en": "Already used by “{commands}”",
+    "zh": "已被「{commands}」占用"
+   },
+   "saved": {
+    "en": "Modified",
+    "zh": "已修改"
+   },
+   "clear": {
+    "en": "Remove",
+    "zh": "移除"
+   },
+   "retry-save": {
+    "en": "Retry save",
+    "zh": "重试保存"
+   },
+   "reset": {
+    "en": "Restore default",
+    "zh": "恢复默认"
+   },
+   "reset-all": {
+    "en": "Restore all defaults",
+    "zh": "恢复全部默认"
+   },
+   "modified-count": {
+    "en": "{count} customized",
+    "zh": "{count} 项已自定义"
+   },
+   "reset-title": {
+    "en": "Restore all default shortcuts?",
+    "zh": "恢复全部默认快捷键？"
+   },
+   "reset-description": {
+    "en": "Restore the default shortcuts for this platform. All modified or removed shortcuts will be restored. Other platforms are unaffected.",
+    "zh": "将恢复当前平台的默认快捷键。你修改或移除的快捷键都会恢复，其他平台不受影响。"
+   },
+   "cancel": {
+    "en": "Cancel",
+    "zh": "取消"
+   },
+   "reset-saved": {
+    "en": "Default shortcuts restored",
+    "zh": "已恢复默认快捷键"
+   },
+   "close-confirmation": {
+    "en": "Close confirmation",
+    "zh": "关闭确认"
+   },
+   "reset-failed": {
+    "en": "Could not restore defaults. Your shortcuts are unchanged. Please retry.",
+    "zh": "恢复默认失败。原快捷键已保留，请重试。"
+   },
+   "review": {
+    "en": "I have reviewed the latest configuration",
+    "zh": "已核对最新配置"
+   },
+   "stale": {
+    "en": "Shortcut configuration or available commands changed. Review the latest bindings before saving.",
+    "zh": "快捷键配置或可用命令已更新。请核对最新键位后再保存。"
+   },
+   "write-failed": {
+    "en": "Could not save. Your previous shortcuts and current draft are preserved. Please retry.",
+    "zh": "保存失败。原快捷键和当前草稿已保留，请重试。"
+   },
+   "not-ready": {
+    "en": "Shortcuts are not ready. Please try again.",
+    "zh": "快捷键尚未准备好，请稍后重试。"
+   },
+   "read": {
+    "en": "Could not read {location}. Check access permissions, then {reload}.",
+    "zh": "无法读取 {location}。请检查访问权限后{reload}。"
+   },
+   "invalid": {
+    "en": "Shortcut configuration in {location} is damaged. Back up and repair this configuration, then {reload}.",
+    "zh": "{location} 的快捷键配置内容损坏。请先备份并修复该配置，然后{reload}。"
+   },
+   "future": {
+    "en": "Shortcut configuration in {location} was created by a newer version. Upgrade Harness and try again.",
+    "zh": "{location} 的快捷键配置由更新版本创建。请升级 Harness 后重试。"
+   },
+   "web-document": {
+    "en": "this site’s localStorage entry dsh.keybindings.v1",
+    "zh": "当前网站本地存储中的 dsh.keybindings.v1"
+   },
+   "desktop-document": {
+    "en": "userData/keybindings.json",
+    "zh": "userData/keybindings.json"
+   },
+   "web-reload": {
+    "en": "reload the page",
+    "zh": "刷新页面"
+   },
+   "desktop-reload": {
+    "en": "restart Harness",
+    "zh": "重新启动 Harness"
+   },
+   "using-defaults": {
+    "en": "Default bindings are active.",
+    "zh": "当前使用默认键位。"
+   },
+   "using-accepted": {
+    "en": "The last successfully read bindings remain active.",
+    "zh": "当前继续使用上次读取成功的键位。"
+   },
+   "native-failed": {
+    "en": "Could not protect desktop key recording. Exit recording and try again.",
+    "zh": "无法启用桌面录键保护，请关闭后重试。"
+   },
+   "global-hint": {
+    "en": "Open from anywhere",
+    "zh": "全局唤起查看"
+   },
+   "clear-search": {
+    "en": "Clear search",
+    "zh": "清空搜索"
+   },
+   "title": {
+    "en": "Keyboard shortcuts",
+    "zh": "快捷键"
+   },
+   "open": {
+    "en": "Open keyboard shortcuts",
+    "zh": "快捷键速查"
+   },
+   "settings": {
+    "en": "Keyboard shortcuts",
+    "zh": "快捷键"
+   },
+   "view": {
+    "en": "Edit shortcuts",
+    "zh": "编辑快捷键"
+   },
+   "description": {
+    "en": "View and edit available shortcuts and input actions",
+    "zh": "查看和编辑当前可用的快捷键和输入操作"
+   },
+   "search": {
+    "en": "Search shortcuts",
+    "zh": "搜索快捷键"
+   },
+   "close": {
+    "en": "Close keyboard shortcuts",
+    "zh": "关闭快捷键"
+   },
+   "application": {
+    "en": "Application",
+    "zh": "应用操作"
+   },
+   "input": {
+    "en": "Message input",
+    "zh": "消息输入"
+   },
+   "menus": {
+    "en": "Menus and dialogs",
+    "zh": "菜单与弹层"
+   },
+   "approval": {
+    "en": "Approval area",
+    "zh": "审批区域"
+   },
+   "unbound": {
+    "en": "No shortcut",
+    "zh": "暂无快捷键"
+   },
+   "empty": {
+    "en": "No matching shortcuts",
+    "zh": "没有匹配的快捷键"
+   },
+   "move": {
+    "en": "Move menu selection",
+    "zh": "移动菜单选择"
+   },
+   "select": {
+    "en": "Select menu item",
+    "zh": "选择菜单项"
+   },
+   "dismiss": {
+    "en": "Close menu or top dialog",
+    "zh": "关闭菜单或顶层弹窗"
+   }
+  },
+  "sidebarBrowser": {
+   "shortcut.noSession": {
+    "en": "Open a session first",
+    "zh": "请先打开一个会话"
+   },
+   "restore.previous": {
+    "en": "Previously opened",
+    "zh": "上次打开"
+   },
+   "restore.action": {
+    "en": "Restore page",
+    "zh": "恢复页面"
+   },
+   "load.failed": {
+    "en": "The page could not load; reload or open it in the system browser.",
+    "zh": "页面加载失败；请刷新重试或在系统浏览器中打开。"
+   },
+   "load.failed.detail": {
+    "en": "Page load failed ({code}): {description}",
+    "zh": "页面加载失败 ({code}): {description}"
+   },
+   "address.unknown": {
+    "en": "The page navigated; this carrier cannot read its new URL.",
+    "zh": "页面已跳转；当前载体无法读取新的 URL。"
+   }
+  },
+  "sidebarImage": {
+   "zoomControls": {
+    "en": "Zoom controls",
+    "zh": "缩放控件"
+   },
+   "zoomMenu": {
+    "en": "Choose zoom",
+    "zh": "选择缩放比例"
+   },
+   "zoomOut": {
+    "en": "Zoom out",
+    "zh": "缩小"
+   },
+   "zoomIn": {
+    "en": "Zoom in",
+    "zh": "放大"
+   },
+   "zoomFitWidth": {
+    "en": "Fit width",
+    "zh": "适应宽度"
+   },
+   "zoomValue": {
+    "en": "{percent}%",
+    "zh": "{percent}%"
+   }
+  },
+  "sidebarPdf": {
+   "zoomControls": {
+    "en": "Zoom controls",
+    "zh": "缩放控件"
+   },
+   "zoomMenu": {
+    "en": "Choose zoom",
+    "zh": "选择缩放比例"
+   },
+   "zoomOut": {
+    "en": "Zoom out",
+    "zh": "缩小"
+   },
+   "zoomIn": {
+    "en": "Zoom in",
+    "zh": "放大"
+   },
+   "zoomFitWidth": {
+    "en": "Fit width",
+    "zh": "适应宽度"
+   },
+   "zoomValue": {
+    "en": "{percent}%",
+    "zh": "{percent}%"
+   }
+  },
+  "sidebarOffice": {
+   "viewMissingFonts": {
+    "en": "Missing fonts: {count}. Click to view.",
+    "zh": "缺失 {count} 种字体，点击查看"
+   }
+  },
+  "sidebarExcel": {
+   "title": {
+    "en": "Spreadsheet",
+    "zh": "表格"
+   },
+   "language": {
+    "en": "en",
+    "zh": "zh"
+   },
+   "loading": {
+    "en": "Rendering document...",
+    "zh": "文档渲染中..."
+   },
+   "invalid": {
+    "en": "This spreadsheet could not be opened. Check its format, contents, or password protection.",
+    "zh": "无法打开此表格。请检查文件格式、内容或密码保护。"
+   },
+   "tooLarge": {
+    "en": "This workbook exceeds the preview size limit.",
+    "zh": "此表格超过预览大小限制。"
+   },
+   "timeout": {
+    "en": "Opening this workbook timed out. Try a smaller file.",
+    "zh": "打开表格超时。请缩小文件后重试。"
+   },
+   "encoding": {
+    "en": "This text encoding could not be read. Save the file as UTF-8 or UTF-16 with a BOM and retry.",
+    "zh": "无法识别此文本文件的编码。请另存为 UTF-8 或带 BOM 的 UTF-16 后重试。"
+   },
+   "formulaWarning": {
+    "en": "This workbook contains formulas. Displayed results may be missing or inaccurate.",
+    "zh": "此工作簿包含公式，显示结果可能缺失或不准确。"
+   },
+   "unsupportedNotice": {
+    "en": "This preview does not support {features} in this workbook. Open it in a system application for the full experience.",
+    "zh": "当前预览不支持此工作簿中的{features}。请使用系统应用打开，以获得完整体验。"
+   },
+   "charts": {
+    "en": "charts",
+    "zh": "图表"
+   },
+   "images": {
+    "en": "images",
+    "zh": "图片"
+   },
+   "shapes": {
+    "en": "shapes",
+    "zh": "形状"
+   },
+   "conditionalFormatting": {
+    "en": "conditional formatting",
+    "zh": "条件格式"
+   },
+   "featureSeparator": {
+    "en": ", ",
+    "zh": "、"
+   },
+   "retry": {
+    "en": "Retry",
+    "zh": "重试"
+   }
+  },
+  "sidebarDocumentPreview": {
+   "autoRefresh": {
+    "en": "Auto refresh",
+    "zh": "自动刷新"
+   },
+   "autoRefresh.enable": {
+    "en": "Enable auto refresh",
+    "zh": "开启自动刷新"
+   },
+   "autoRefresh.disable": {
+    "en": "Disable auto refresh",
+    "zh": "关闭自动刷新"
+   }
+  },
+  "sidebarFiles": {
+   "shortcut.noSession": {
+    "en": "Select a session first",
+    "zh": "请先选择会话"
+   },
+   "autoRefresh": {
+    "en": "Auto refresh",
+    "zh": "自动刷新"
+   },
+   "autoRefresh.enable": {
+    "en": "Enable auto refresh",
+    "zh": "开启自动刷新"
+   },
+   "autoRefresh.disable": {
+    "en": "Disable auto refresh",
+    "zh": "关闭自动刷新"
+   }
+  },
+  "sidebarRight": {
+   "command.close": {
+    "en": "Close current page or window",
+    "zh": "关闭当前页面／窗口"
+   },
+   "command.refresh": {
+    "en": "Refresh current page",
+    "zh": "刷新当前页面"
+   },
+   "command.noRefresh": {
+    "en": "This page cannot be refreshed",
+    "zh": "当前页面不支持刷新"
+   },
+   "command.toggle": {
+    "en": "Toggle right sidebar",
+    "zh": "展开／收起右侧栏"
+   },
+   "command.fullscreen": {
+    "en": "Toggle panel fullscreen",
+    "zh": "面板全屏／退出全屏"
+   },
+   "command.noSession": {
+    "en": "Select a session first",
+    "zh": "请先选择会话"
+   },
+   "command.noFocus": {
+    "en": "Focus a right sidebar pane first",
+    "zh": "请先聚焦右侧面板"
+   },
+   "command.stale": {
+    "en": "The page changed; focus it again",
+    "zh": "页面已切换，请重新聚焦"
+   },
+   "command.collapsed": {
+    "en": "Expand the right sidebar first",
+    "zh": "请先展开右侧栏"
+   },
+   "command.float": {
+    "en": "This action is unavailable in a floating panel",
+    "zh": "浮动面板不支持此操作"
+   },
+   "command.empty": {
+    "en": "Open a page first",
+    "zh": "请先打开页面"
+   },
+   "command.budget": {
+    "en": "Two panes is the limit",
+    "zh": "已达两格上限"
+   },
+   "command.width": {
+    "en": "Not enough width to split, widen the sidebar",
+    "zh": "栏宽不足，拖宽侧边栏后再分栏"
+   }
+  },
+  "sidebarTerminal": {
+   "shortcut.noSession": {
+    "en": "Select a session first",
+    "zh": "请先选择会话"
+   }
+  },
+  "skill": {
+   "row.preparing": {
+    "en": "Preparing to load a skill",
+    "zh": "准备加载技能"
+   }
+  },
+  "subagent": {
+   "mode.unknown": {
+    "en": "unknown mode",
+    "zh": "模式未知"
+   },
+   "readonly.unknown.body": {
+    "en": "Read the child session to determine whether it can be continued.",
+    "zh": "读取子会话后才能确定是否可继续。"
+   },
+   "activity.completed": {
+    "en": "completed",
+    "zh": "已完成"
+   },
+   "open.sidebar.aria": {
+    "en": "Open {label} in sidebar",
+    "zh": "在侧边栏打开 {label}"
+   }
+  },
+  "trajectory": {
+   "layout.toolAdded": {
+    "en": "Tool added: {name}",
+    "zh": "已添加工具：{name}"
+   },
+   "layout.toolRemoved": {
+    "en": "Tool removed: {name}",
+    "zh": "已移除工具：{name}"
+   },
+   "layout.toolUpdateNotice": {
+    "en": "Tools updated",
+    "zh": "工具已更新"
+   },
+   "layout.toolsAdded": {
+    "en": "Added: {names}",
+    "zh": "新增：{names}"
+   },
+   "layout.toolsAddedCount": {
+    "en": "{count} added",
+    "zh": "新增 {count} 个"
+   },
+   "layout.toolsChanged": {
+    "en": "{added} added, {removed} removed",
+    "zh": "新增 {added} 个，移除 {removed} 个"
+   },
+   "layout.toolsRemoved": {
+    "en": "Removed: {names}",
+    "zh": "移除：{names}"
+   },
+   "layout.toolsRemovedCount": {
+    "en": "{count} removed",
+    "zh": "移除 {count} 个"
+   }
+  },
+  "workspace": {
+   "defaultWorkspace.failed": {
+    "en": "Unable to create default workspace. Use Choose workspace to select a folder.",
+    "zh": "无法创建默认工作区，请通过“选择工作区”选择文件夹"
+   },
+   "shortcut.noSession": {
+    "en": "Select a session first",
+    "zh": "请先选择一个会话"
+   },
+   "shortcut.noPicker": {
+    "en": "Directory picker unavailable",
+    "zh": "目录选择器不可用"
+   },
+   "shortcut.directoryBusy": {
+    "en": "Selecting or adding a workspace",
+    "zh": "正在选择或添加工作区"
+   },
+   "shortcut.noCompletedTurn": {
+    "en": "This session has no completed turn",
+    "zh": "当前会话没有已结束的轮次"
+   },
+   "shortcut.forkFailed": {
+    "en": "Could not fork the session. Try again.",
+    "zh": "无法分叉会话，请重试"
+   },
+   "filterBy.label": {
+    "en": "Filter sessions",
+    "zh": "筛选会话"
+   },
+   "viewOptions.hideArchived": {
+    "en": "Hide archived",
+    "zh": "隐藏已归档"
+   },
+   "viewOptions.showArchived": {
+    "en": "All conversations (show archived)",
+    "zh": "全部对话（显示已归档）"
+   },
+   "viewOptions.onlyArchived": {
+    "en": "Archived only",
+    "zh": "仅显示已归档"
+   },
+   "empty.noneArchived": {
+    "en": "No archived sessions yet",
+    "zh": "暂无已归档会话"
+   },
+   "empty.viewOthers": {
+    "en": "View other sessions",
+    "zh": "查看其他会话"
+   },
+   "menu.unarchiveSession": {
+    "en": "Unarchive session",
+    "zh": "取消归档"
+   },
+   "menu.pinSession": {
+    "en": "Pin session",
+    "zh": "置顶会话"
+   },
+   "menu.unpinSession": {
+    "en": "Unpin session",
+    "zh": "取消置顶"
+   },
+   "row.archived": {
+    "en": "Archived",
+    "zh": "已归档"
+   },
+   "row.pinned": {
+    "en": "Pinned",
+    "zh": "已置顶"
+   },
+   "toast.archivedNotOpenable": {
+    "en": "Archived sessions cannot be opened. Unarchive it to view.",
+    "zh": "已归档对话暂时无法查看，请取消归档后查看"
+   },
+   "toast.archived": {
+    "en": "Session archived. You can ",
+    "zh": "会话已归档，可"
+   },
+   "toast.stoppedAndArchived": {
+    "en": "Session stopped and archived. You can ",
+    "zh": "已停止并归档，可"
+   },
+   "archive.confirm.title": {
+    "en": "Stop and archive this session?",
+    "zh": "停止并归档此会话？"
+   },
+   "archive.confirm.desc": {
+    "en": "“{title}” still has work in progress. Archiving stops it first; you can restore the session later from the “All conversations (show archived)” filter in the sidebar, and the stopped work will not resume on its own.",
+    "zh": "“{title}”仍有正在进行的工作。归档会先停止这些工作；之后可在侧栏筛选“全部对话（显示已归档）”中恢复会话，被停止的工作不会自动继续。"
+   },
+   "archive.confirm.activity": {
+    "en": "Work that will be stopped",
+    "zh": "将被停止的工作"
+   },
+   "archive.confirm.turn": {
+    "en": "The turn in progress",
+    "zh": "进行中的回合"
+   },
+   "archive.confirm.subagents.one": {
+    "en": "{n} running subagent: {names}",
+    "zh": "{n} 个运行中的子智能体：{names}"
+   },
+   "archive.confirm.subagents.other": {
+    "en": "{n} running subagents: {names}",
+    "zh": "{n} 个运行中的子智能体：{names}"
+   },
+   "archive.confirm.jobs.one": {
+    "en": "{n} background job: {names}",
+    "zh": "{n} 个后台任务：{names}"
+   },
+   "archive.confirm.jobs.other": {
+    "en": "{n} background jobs: {names}",
+    "zh": "{n} 个后台任务：{names}"
+   },
+   "archive.confirm.schedules.one": {
+    "en": "{n} scheduled reminder: {names}",
+    "zh": "{n} 条定时提醒：{names}"
+   },
+   "archive.confirm.schedules.other": {
+    "en": "{n} scheduled reminders: {names}",
+    "zh": "{n} 条定时提醒：{names}"
+   },
+   "archive.confirm.other.one": {
+    "en": "{n} other item of work ({kind})",
+    "zh": "{n} 项其他工作（{kind}）"
+   },
+   "archive.confirm.other.other": {
+    "en": "{n} other items of work ({kind})",
+    "zh": "{n} 项其他工作（{kind}）"
+   },
+   "archive.confirm.listSeparator": {
+    "en": ", ",
+    "zh": "、"
+   },
+   "archive.confirm.action": {
+    "en": "Stop and archive",
+    "zh": "停止并归档"
+   },
+   "archive.confirm.pending": {
+    "en": "Stopping and archiving…",
+    "zh": "正在停止并归档…"
+   },
+   "toast.archivedUndo": {
+    "en": "undo",
+    "zh": "撤销"
+   },
+   "toast.archivedOr": {
+    "en": " or ",
+    "zh": "或"
+   },
+   "toast.archivedFilter": {
+    "en": "filter archived sessions",
+    "zh": "筛选已归档会话"
+   },
+   "toast.pinFailed": {
+    "en": "Pin failed. Try again later.",
+    "zh": "置顶失败，请稍后重试"
+   },
+   "toast.unpinFailed": {
+    "en": "Unpin failed. Try again later.",
+    "zh": "取消置顶失败，请稍后重试"
+   },
+   "toast.createFailed": {
+    "en": "New session failed: {message}",
+    "zh": "新建会话失败：{message}"
+   },
+   "actions.archive": {
+    "en": "Archive",
+    "zh": "归档会话"
+   },
+   "actions.unarchive": {
+    "en": "Unarchive",
+    "zh": "取消归档"
+   },
+   "actions.pin": {
+    "en": "Pin",
+    "zh": "置顶会话"
+   },
+   "actions.unpin": {
+    "en": "Unpin",
+    "zh": "取消置顶"
+   },
+   "actions.newSession": {
+    "en": "New session",
+    "zh": "新会话"
+   },
+   "status.compact.approval": {
+    "en": "Approval",
+    "zh": "待审批"
+   },
+   "status.compact.planReview": {
+    "en": "Plan review",
+    "zh": "计划待审"
+   },
+   "status.compact.answer": {
+    "en": "Answer",
+    "zh": "待回答"
+   }
+  },
+  "agent-team": {
+   "unavailable": {
+    "en": "Team is unavailable",
+    "zh": "Team 暂不可用"
+   },
+   "failure": {
+    "en": "Invalid persisted Team record: {message}",
+    "zh": "团队持久记录无效：{message}"
+   },
+   "current": {
+    "en": "Current chat",
+    "zh": "当前会话"
+   },
+   "task.expand": {
+    "en": "Show more",
+    "zh": "展开"
+   },
+   "task.collapse": {
+    "en": "Show less",
+    "zh": "收起"
+   }
+  },
+  "voice-input": {
+   "dictate": {
+    "en": "Dictate",
+    "zh": "听写"
+   },
+   "setupPrompt.title": {
+    "en": "Set up voice input before recording",
+    "zh": "使用语音输入前需要安装"
+   },
+   "setupPrompt.body": {
+    "en": "Voice input is enabled. First use requires downloading and preparing local recognition models. Open the plugin details to review disk space, memory and time estimates before starting setup.",
+    "zh": "语音输入插件已开启。首次使用需要在本机下载并准备识别模型，请前往插件详情页查看空间、内存和时间说明，再开始安装。"
+   },
+   "setupPrompt.later": {
+    "en": "Later",
+    "zh": "稍后"
+   },
+   "setupPrompt.open": {
+    "en": "Go to setup",
+    "zh": "前往安装"
+   },
+   "setupPrompt.trigger": {
+    "en": "Open voice input setup",
+    "zh": "打开语音输入引导"
+   },
+   "setupPrompt.details": {
+    "en": "Open voice plugin settings",
+    "zh": "前往语音插件设置"
+   },
+   "setupPrompt.unavailableTitle": {
+    "en": "Speech recognition is not ready",
+    "zh": "语音识别尚未就绪"
+   },
+   "setupPrompt.unavailableBody": {
+    "en": "Open the voice plugin details to check recognition status, preparation progress, or errors.",
+    "zh": "请前往语音插件详情页查看识别服务状态、准备进度或错误信息"
+   },
+   "setup.local": {
+    "en": "Local models will be downloaded to the machine running DSH. No Python or compiler is required.",
+    "zh": "将在运行 DSH 的机器上下载本地模型，无需安装 Python 或编译工具。"
+   },
+   "setup.disk": {
+    "en": "Disk space",
+    "zh": "硬盘空间"
+   },
+   "setup.diskValue": {
+    "en": "Allow about {gb} GB for models, runtime, and download caches",
+    "zh": "建议预留约 {gb} GB，包含模型、运行时和下载缓存"
+   },
+   "setup.memory": {
+    "en": "Memory",
+    "zh": "运行内存"
+   },
+   "setup.memoryValue": {
+    "en": "About {gb} GB with the model loaded; recognition may use more",
+    "zh": "模型加载后约 {gb} GB，识别时可能更高"
+   },
+   "setup.time": {
+    "en": "First setup",
+    "zh": "首次准备"
+   },
+   "setup.timeValue": {
+    "en": "Allow roughly {min}–{max} minutes, depending on the network and machine",
+    "zh": "参考 {min}–{max} 分钟，取决于网络和机器性能"
+   },
+   "setup.estimateNote": {
+    "en": "These are estimates; slow networks may take longer. Downloads are reused; idle models release memory by default.",
+    "zh": "以上为估算；网络较慢时可能更久。已下载的资源会复用，默认在闲置后释放模型内存。"
+   },
+   "step.check": {
+    "en": "Check local resources",
+    "zh": "检查本地资源"
+   },
+   "step.model": {
+    "en": "Prepare recognition model",
+    "zh": "准备语音识别模型"
+   },
+   "step.vad": {
+    "en": "Prepare voice detection model",
+    "zh": "准备语音检测模型"
+   },
+   "step.verify": {
+    "en": "Verify model files",
+    "zh": "校验模型文件"
+   },
+   "step.load": {
+    "en": "Load {name}",
+    "zh": "加载 {name}"
+   },
+   "stepStatus.pending": {
+    "en": "Not started",
+    "zh": "未开始"
+   },
+   "stepStatus.running": {
+    "en": "In progress",
+    "zh": "进行中"
+   },
+   "stepStatus.complete": {
+    "en": "Completed",
+    "zh": "已完成"
+   },
+   "stepStatus.failed": {
+    "en": "Failed",
+    "zh": "失败"
+   },
+   "stepStatus.cancelled": {
+    "en": "Cancelled",
+    "zh": "已取消"
+   },
+   "short.downloading": {
+    "en": "Downloading",
+    "zh": "下载中"
+   },
+   "short.failed": {
+    "en": "Setup failed",
+    "zh": "准备失败"
+   },
+   "retryRecording": {
+    "en": "Record again",
+    "zh": "重新录音"
+   },
+   "preparationSteps": {
+    "en": "Preparation steps",
+    "zh": "准备步骤"
+   },
+   "prepare": {
+    "en": "Download and prepare",
+    "zh": "下载并准备"
+   },
+   "retryPrepare": {
+    "en": "Retry preparation",
+    "zh": "重试准备"
+   },
+   "cancelPrepare": {
+    "en": "Cancel preparation",
+    "zh": "取消准备"
+   },
+   "downloadProgress": {
+    "en": "Download progress",
+    "zh": "下载进度"
+   },
+   "downloadBytes": {
+    "en": "Download: {completed} / {total} MB, {percent}%",
+    "zh": "下载：{completed} / {total} MB，{percent}%"
+   },
+   "downloadUnknown": {
+    "en": "Downloaded {completed} MB",
+    "zh": "已下载 {completed} MB"
+   },
+   "elapsed": {
+    "en": "Waiting {seconds} seconds",
+    "zh": "已等待 {seconds} 秒"
+   },
+   "preparationFailed": {
+    "en": "Preparation failed: {message}",
+    "zh": "准备失败：{message}"
+   },
+   "download.network": {
+    "en": "Cannot download {resource}: connection to the download service failed.",
+    "zh": "无法下载 {resource}：连接下载服务失败。"
+   },
+   "download.dns": {
+    "en": "Cannot download {resource}: the download address could not be resolved.",
+    "zh": "无法下载 {resource}：无法解析下载地址。"
+   },
+   "download.timeout": {
+    "en": "The download of {resource} timed out.",
+    "zh": "下载 {resource} 超时。"
+   },
+   "download.certificate": {
+    "en": "Cannot download {resource}: certificate verification failed.",
+    "zh": "无法下载 {resource}：安全连接的证书校验失败。"
+   },
+   "download.http": {
+    "en": "Cannot download {resource}: the download service returned HTTP {status}.",
+    "zh": "无法下载 {resource}：下载服务返回 HTTP {status}。"
+   },
+   "download.integrity": {
+    "en": "The download of {resource} is incomplete or failed verification.",
+    "zh": "{resource} 下载不完整或文件校验失败。"
+   },
+   "download.storage": {
+    "en": "Cannot save {resource}: insufficient disk space or write permission.",
+    "zh": "无法保存 {resource}：磁盘空间不足或没有写入权限。"
+   },
+   "download.unknown": {
+    "en": "Could not prepare {resource}.",
+    "zh": "准备 {resource} 失败。"
+   },
+   "downloadAdvice.network": {
+    "en": "Check that the machine running DSH can reach the download source and its model download services. Configure a proxy on that machine if needed, then retry.",
+    "zh": "请检查运行 DSH 的机器能否访问下载来源及其模型下载服务；如需代理，请在该机器上配置后重试。"
+   },
+   "downloadAdvice.dns": {
+    "en": "Check DNS and proxy settings on the machine running DSH. Confirm that it can resolve the download source domain, then retry.",
+    "zh": "请检查运行 DSH 的机器的 DNS 和代理设置，确认可以解析下载来源的域名后重试。"
+   },
+   "downloadAdvice.timeout": {
+    "en": "Check the network or proxy connection on the machine running DSH, then retry later. Verified downloaded files are retained.",
+    "zh": "请检查运行 DSH 的机器的网络或代理连接，稍后重试。已下载并通过校验的文件会保留。"
+   },
+   "downloadAdvice.certificate": {
+    "en": "Check the system clock, trusted certificates and proxy settings on the machine running DSH, then retry.",
+    "zh": "请检查运行 DSH 的机器的系统时间、受信任证书和代理设置后重试。"
+   },
+   "downloadAdvice.http": {
+    "en": "Confirm that the download address is available and the proxy can reach the download service, or retry later.",
+    "zh": "请确认下载地址可用、代理可正常连接下载服务，或稍后重试。"
+   },
+   "downloadAdvice.integrity": {
+    "en": "Retry the download. Other completed and verified files are retained.",
+    "zh": "请重试下载。已完成并通过校验的其他文件会保留。"
+   },
+   "downloadAdvice.storage": {
+    "en": "Check available disk space and write permission for the model directory on the machine running DSH, then retry.",
+    "zh": "请检查运行 DSH 的机器的剩余磁盘空间，以及模型目录的写入权限后重试。"
+   },
+   "downloadAdvice.unknown": {
+    "en": "Check the network, disk space and model directory permissions on the machine running DSH, then retry.",
+    "zh": "请检查运行 DSH 的机器的网络、磁盘空间和模型目录权限后重试。"
+   },
+   "downloadSource": {
+    "en": "Download source: {source}",
+    "zh": "下载来源：{source}"
+   },
+   "sourceChoice": {
+    "en": "Model download source",
+    "zh": "模型下载源"
+   },
+   "sourceAuto": {
+    "en": "Automatic (recommended)",
+    "zh": "自动选择（推荐）"
+   },
+   "sourceHuggingFace": {
+    "en": "Hugging Face",
+    "zh": "Hugging Face"
+   },
+   "sourceMirror": {
+    "en": "HF-Mirror (China mirror)",
+    "zh": "HF-Mirror（国内镜像）"
+   },
+   "sourceAutoHelp": {
+    "en": "Prefer the first responding source and try another if a download fails.",
+    "zh": "优先使用响应较快的源，下载失败时自动尝试其他源。"
+   },
+   "sourceManualHelp": {
+    "en": "Download only from the selected source. Verified downloaded files are reused.",
+    "zh": "仅从所选源下载；已下载并通过校验的文件会复用。"
+   },
+   "downloadCode": {
+    "en": "Error code: {code}",
+    "zh": "错误码：{code}"
+   },
+   "reconnecting": {
+    "en": "Connecting to speech recognition…",
+    "zh": "正在连接语音服务…"
+   },
+   "preparation.unprepared": {
+    "en": "First use downloads the local recognition models.",
+    "zh": "首次使用需要下载本地识别模型。"
+   },
+   "preparation.checking": {
+    "en": "Checking local resources…",
+    "zh": "正在检查本地资源…"
+   },
+   "preparation.loading": {
+    "en": "Loading {name}…",
+    "zh": "正在加载 {name}…"
+   },
+   "preparation.waking": {
+    "en": "Waking local speech recognition…",
+    "zh": "正在唤醒本地语音…"
+   },
+   "preparation.ready": {
+    "en": "Local speech recognition is ready.",
+    "zh": "本地语音已就绪。"
+   },
+   "preparation.standby": {
+    "en": "Local resources are prepared. Recording wakes the recognizer.",
+    "zh": "本地资源已准备，录音时自动唤醒。"
+   },
+   "preparation.cancelled": {
+    "en": "Preparation cancelled. Completed downloads are retained.",
+    "zh": "准备已取消，已完成的下载会保留。"
+   },
+   "preparation.cancelling": {
+    "en": "Cancelling preparation…",
+    "zh": "正在取消准备…"
+   },
+   "cloudReady": {
+    "en": "Cloud speech recognition is ready.",
+    "zh": "云端语音识别已就绪。"
+   },
+   "discard": {
+    "en": "Discard transcript",
+    "zh": "丢弃识别文字"
+   },
+   "transcribingShort": {
+    "en": "Transcribing…",
+    "zh": "识别中…"
+   },
+   "wakingShort": {
+    "en": "Waking…",
+    "zh": "唤醒中…"
+   },
+   "provider": {
+    "en": "Recognition service",
+    "zh": "识别服务"
+   },
+   "language": {
+    "en": "Recognition language",
+    "zh": "识别语言"
+   },
+   "auto": {
+    "en": "Detect automatically",
+    "zh": "自动识别"
+   },
+   "zh": {
+    "en": "Chinese",
+    "zh": "中文"
+   },
+   "en": {
+    "en": "English",
+    "zh": "英语"
+   },
+   "yue": {
+    "en": "Cantonese",
+    "zh": "粤语"
+   },
+   "ja": {
+    "en": "Japanese",
+    "zh": "日语"
+   },
+   "ko": {
+    "en": "Korean",
+    "zh": "韩语"
+   },
+   "start": {
+    "en": "Start recording",
+    "zh": "开始录音"
+   },
+   "stop": {
+    "en": "Stop and transcribe",
+    "zh": "停止并识别"
+   },
+   "cancel": {
+    "en": "Cancel",
+    "zh": "取消"
+   },
+   "insert": {
+    "en": "Insert text",
+    "zh": "插入文字"
+   },
+   "loading": {
+    "en": "Loading recognition services…",
+    "zh": "正在读取识别服务…"
+   },
+   "requesting": {
+    "en": "Allow microphone access to continue…",
+    "zh": "请允许使用麦克风…"
+   },
+   "recording": {
+    "en": "Recording…",
+    "zh": "正在录音…"
+   },
+   "interrupted": {
+    "en": "Recording was interrupted. Please try again.",
+    "zh": "录音中断，请重试。"
+   },
+   "local": {
+    "en": "Audio is recognized on the machine running DSH. If models need downloading, that machine must be able to reach the selected source and its file services. Configure a proxy on that machine if needed.",
+    "zh": "音频在运行 DSH 的机器上识别。需要下载模型时，请确保该机器能访问所选下载源及其文件服务。如需代理，请在该机器上配置。"
+   },
+   "cloud": {
+    "en": "Audio will be sent to the selected cloud service.",
+    "zh": "音频将发送至所选云端服务。"
+   },
+   "empty": {
+    "en": "No speech recognized",
+    "zh": "未识别到语音"
+   },
+   "cancelled": {
+    "en": "Voice input cancelled.",
+    "zh": "已取消语音输入。"
+   },
+   "conflict": {
+    "en": "Your draft changed. The transcript is preserved and can be inserted at the current cursor.",
+    "zh": "草稿已被修改。识别文字已保留，可在当前光标位置插入。"
+   },
+   "failed": {
+    "en": "Speech recognition failed: {message}",
+    "zh": "语音识别失败：{message}"
+   },
+   "unavailable": {
+    "en": "This browser cannot record audio. Use a browser with microphone support.",
+    "zh": "当前浏览器不支持录音，请使用支持麦克风的浏览器。"
+   },
+   "permission": {
+    "en": "Microphone access is disabled. Allow it in browser and system settings.",
+    "zh": "麦克风权限未开启，请在浏览器和系统设置中允许访问。"
+   },
+   "tooLarge": {
+    "en": "The recording exceeds the service limit. Try a shorter recording.",
+    "zh": "录音超过服务限制，请缩短录音后重试。"
+   }
+  },
+  "session-log-download": {
+   "menu.feedback": {
+    "en": "Feedback",
+    "zh": "反馈"
+   }
+  }
+ },
+ "reworded": {
+  "settings.agentPreset": {
+   "sectionIntro": {
+    "en": "Choose the agent’s tools and how it works. Use Standard mode for everyday tasks, or Creator mode to add capabilities to DSH.",
+    "wasEn": "A preset is the plugin composition one session's agent runs — its tools, prompt, and capabilities. Duplicate an existing one and make it yours, or let the agent draft one for you in Creator mode.",
+    "currentIt": "Un preset è la composizione di Plugin con cui gira l'agente di una sessione: i suoi strumenti, il suo prompt e le sue capacità. Duplicane uno esistente e personalizzalo, oppure lascia che l'agente ne abbozzi uno per te in modalità Creator."
+   },
+   "seatHint": {
+    "en": "Choose the agent preset for your new task",
+    "wasEn": "Agent preset for the session you are about to start",
+    "currentIt": "Preset dell'agente per la sessione che stai per avviare"
+   },
+   "headerHint": {
+    "en": "The agent preset chosen when this task started",
+    "wasEn": "The agent preset this session runs, fixed when it started",
+    "currentIt": "Il preset dell'agente con cui gira questa sessione, fissato all'avvio"
+   },
+   "setDefault": {
+    "en": "Set as new task default",
+    "wasEn": "Set as default",
+    "currentIt": "Imposta come predefinito"
+   },
+   "view": {
+    "en": "View configuration",
+    "wasEn": "View",
+    "currentIt": "Visualizza"
+   },
+   "presetStandardDescription": {
+    "en": "Work with code, files, and information. Suitable for most tasks, with search, editing, terminal commands, and other tools available as needed.",
+    "wasEn": "Full coding agent with file editing, shell, file and web search, skills, planning, goals, subagents, and workflows.",
+    "currentIt": "Agente di codifica completo con modifica dei file, shell, ricerca su file e web, Skill, pianificazione, obiettivi, subagenti e Workflow."
+   },
+   "presetPtcDescription": {
+    "en": "Includes all Standard mode capabilities. Better suited to tasks that call tools in batches and then filter, organize, deduplicate, count, or summarize the results.",
+    "wasEn": "Full coding agent without the workflow tool; other tools are exposed through the PTC mode SDK so the model can combine multi-step operations in one TypeScript program.",
+    "currentIt": "Agente di codifica completo senza lo strumento workflow; gli altri strumenti sono esposti tramite l'SDK della modalità PTC, così il modello può combinare operazioni multi-passo in un unico programma TypeScript."
+   },
+   "presetMinimalDescription": {
+    "en": "The agent works using only a terminal tool. Useful for testing and comparing its basic performance.",
+    "wasEn": "Single-tool coding agent with a persistent shell.",
+    "currentIt": "Agente di codifica con un solo strumento e una shell persistente."
+   },
+   "presetCordisDescription": {
+    "en": "Customize DSH through conversation. Let the agent write plugins that add features or UI, or combine tools and prompts to create your own mode.",
+    "wasEn": "Built for creating custom agent presets, with all Standard mode capabilities plus runtime inspection, persistent plugin management, and preset-authoring guidance.",
+    "currentIt": "Pensata per creare preset di agenti personalizzati: offre tutte le capacità della modalità standard più l'ispezione a runtime, la gestione persistente dei Plugin e le linee guida per la creazione dei preset."
+   },
+   "creatorDraft": {
+    "en": "Let the agent help me create a preset",
+    "wasEn": "Draft a custom preset with Creator mode",
+    "currentIt": "Abbozza un preset personalizzato con la modalità Creator"
+   }
+  },
+  "chat": {
+   "settings.transcript.title": {
+    "en": "Work details",
+    "wasEn": "Conversation display",
+    "currentIt": "Visualizzazione conversazione"
+   },
+   "settings.transcript.description": {
+    "en": "Choose how much detail to show for tool calls",
+    "wasEn": "Controls process content in completed turns",
+    "currentIt": "Controlla il contenuto di processo nei turni completati"
+   }
+  },
+  "conversation": {
+   "tool.title.inspect": {
+    "en": "Query Cordis environment",
+    "wasEn": "Inspect",
+    "currentIt": "Ispeziona"
+   }
+  },
+  "deliverables": {
+   "presented.opened": {
+    "en": "Open requested",
+    "wasEn": "Opened in default app",
+    "currentIt": "Aperto con l'app predefinita"
+   }
+  },
+  "open-in-app": {
+   "open.title": {
+    "en": "Open in {app}",
+    "wasEn": "Open workspace in {app}",
+    "currentIt": "Apri area di lavoro in {app}"
+   }
+  },
+  "permission.access": {
+   "auto.confirm.description": {
+    "en": "Auto review runs without a sandbox. Before every native tool call and PTC inner call, the same model as the current agent reviews whether to allow it; you approve or reject each call it denies. This feature is experimental, can falsely allow or deny actions, and uses additional tokens.",
+    "wasEn": "Auto review runs without a sandbox. Before every native tool call and PTC inner call, the same model as the current agent reviews whether to allow it. This feature is experimental, can falsely allow or deny actions, and uses additional tokens.",
+    "currentIt": "Auto review viene eseguito senza sandbox. Prima di ogni chiamata a strumento nativa e di ogni chiamata interna PTC, lo stesso modello dell'agente corrente valuta se consentirla. La funzione è sperimentale, può autorizzare o negare azioni per errore e consuma token aggiuntivi."
+   }
+  },
+  "pluginManager": {
+   "error": {
+    "en": "Could not read all plugins, possibly due to a network problem",
+    "wasEn": "Plugins are temporarily unavailable.",
+    "currentIt": "Plugin temporaneamente non disponibili."
+   },
+   "statusBeta": {
+    "en": "Experimental",
+    "wasEn": "Beta",
+    "currentIt": "Beta"
+   },
+   "installSpecPlaceholder": {
+    "en": "for example @deepseek-ai/dsh-subagent-codex",
+    "wasEn": "for example @deepseek-ai/dsh-experimental-auto-review",
+    "currentIt": "per esempio @deepseek-ai/dsh-experimental-auto-review"
+   },
+   "installGuideToggle": {
+    "en": "Install guide and examples",
+    "wasEn": "Not sure what to enter?",
+    "currentIt": "Non sai cosa inserire?"
+   },
+   "installGuideIdExample": {
+    "en": "@deepseek-ai/dsh-subagent-codex",
+    "wasEn": "@deepseek-ai/dsh-experimental-auto-review",
+    "currentIt": "@deepseek-ai/dsh-experimental-auto-review"
+   },
+   "installGuideIdHint": {
+    "en": "The plugin package name is the npm package name (like dsh-xxx or @author/plugin): the part after dsh plugin add or pnpm add in a community plugin's README install command.",
+    "wasEn": "The part after dsh plugin add or pnpm add in the README's install command.",
+    "currentIt": "La parte che segue dsh plugin add o pnpm add nel comando di installazione del README."
+   }
+  },
+  "settings": {
+   "desktop.update.progress": {
+    "en": "{percent}%",
+    "wasEn": "{percent}%…",
+    "currentIt": "{percent}%…"
+   }
+  },
+  "settings.models": {
+   "add": {
+    "en": "Add model provider",
+    "wasEn": "Add provider",
+    "currentIt": "Aggiungi provider"
+   },
+   "deepSeekEndpointHint": {
+    "en": "Use an API endpoint compatible with Anthropic Messages.",
+    "wasEn": "Use an endpoint compatible with the configured connection.",
+    "currentIt": "Usa un endpoint compatibile con la connessione configurata."
+   },
+   "advancedHint": {
+    "en": "Other fields live in cordis.patch.yml; edit that section directly.",
+    "wasEn": "Other fields live in settings.yaml; edit that section directly.",
+    "currentIt": "Gli altri campi si trovano in settings.yaml; modifica direttamente quella sezione."
+   }
+  },
+  "sidebarBrowser": {
+   "guide.description": {
+    "en": "Browse web pages",
+    "wasEn": "Browse HTTP(S) pages",
+    "currentIt": "Sfoglia pagine HTTP(S)"
+   }
+  },
+  "documentHtml": {
+   "loading": {
+    "en": "Rendering document...",
+    "wasEn": "Reading…",
+    "currentIt": "Lettura…"
+   }
+  },
+  "sidebarImage": {
+   "loading": {
+    "en": "Rendering document...",
+    "wasEn": "Reading…",
+    "currentIt": "Lettura…"
+   }
+  },
+  "sidebarPdf": {
+   "loading": {
+    "en": "Rendering document...",
+    "wasEn": "Reading…",
+    "currentIt": "Lettura…"
+   }
+  },
+  "sidebarOffice": {
+   "loading": {
+    "en": "Rendering document...",
+    "wasEn": "Reading…",
+    "currentIt": "Lettura…"
+   }
+  },
+  "sidebarDocumentPreview": {
+   "loading": {
+    "en": "Rendering document...",
+    "wasEn": "Reading…",
+    "currentIt": "Lettura…"
+   }
+  },
+  "subagent": {
+   "open.sidebar": {
+    "en": "Open in sidebar",
+    "wasEn": "Open {label} in sidebar",
+    "currentIt": "Apri {label} nella barra laterale"
+   }
+  },
+  "workspace": {
+   "search.placeholder": {
+    "en": "Search session names",
+    "wasEn": "Search sessions...",
+    "currentIt": "Cerca sessioni..."
+   }
+  },
+  "agent-team": {
+   "empty": {
+    "en": "No shared tasks yet. Create them through the conversation.",
+    "wasEn": "No shared tasks yet",
+    "currentIt": "Nessun compito condiviso per ora"
+   },
+   "open": {
+    "en": "Open member conversation",
+    "wasEn": "Open teammate conversation",
+    "currentIt": "Apri la conversazione del membro"
+   }
+  }
+ },
+ "removed": [
+  "settings.agentPreset.error",
+  "settings.agentPreset.userTrust",
+  "settings.agentPreset.builtIn",
+  "settings.agentPreset.duplicate",
+  "settings.agentPreset.duplicateUnavailable",
+  "settings.agentPreset.delete",
+  "settings.agentPreset.presetId",
+  "settings.agentPreset.presetIdPlaceholder",
+  "settings.agentPreset.displayName",
+  "settings.agentPreset.displayNamePlaceholder",
+  "settings.agentPreset.selectionOffDefault",
+  "settings.agentPreset.brokenNoCopy",
+  "settings.agentPreset.copyOf",
+  "settings.agentPreset.composition",
+  "settings.agentPreset.cancel",
+  "settings.agentPreset.retry",
+  "settings.agentPreset.copyTitle",
+  "settings.agentPreset.copyIntro",
+  "settings.agentPreset.create",
+  "settings.agentPreset.creating",
+  "settings.agentPreset.openLocation",
+  "settings.agentPreset.showLocation",
+  "settings.agentPreset.revealedPathLabel",
+  "settings.agentPreset.idRequired",
+  "settings.agentPreset.idInvalid",
+  "settings.agentPreset.idTaken",
+  "settings.agentPreset.deleteTitle",
+  "settings.agentPreset.deleteDescription",
+  "settings.agentPreset.deleteConfirm",
+  "settings.agentPreset.deleting",
+  "settings.agentPreset.showPicker",
+  "settings.agentPreset.showPickerBeta",
+  "settings.agentPreset.showPickerDescription",
+  "settings.agentPreset.enablePickerToSetDefault",
+  "settings.agentPreset.enablePickerToCreate",
+  "chat.settings.transcript.normal",
+  "chat.message.ranFor",
+  "chat.message.turnTime.title",
+  "chat.message.turnTime.duration",
+  "chat.message.turnTime.speed",
+  "chat.message.turnTime.ttft",
+  "conversation.diff.files.one",
+  "conversation.diff.files.other",
+  "deliverables.presented.directory",
+  "deliverables.presented.explorer",
+  "deliverables.presented.finder",
+  "deliverables.presented.defaultApp",
+  "deliverables.presented.more",
+  "deliverables.presented.action",
+  "deliverables.diff.openNativeAria",
+  "deliverables.diff.openNative",
+  "deliverables.diff.openNativeError",
+  "model.blocked.composer",
+  "open-in-app.open.error",
+  "open-in-app.menu.toggle",
+  "open-in-app.menu.aria",
+  "plan.chip.off.aria",
+  "plan.chip.off.title",
+  "pluginManager.builtinAgentTeamTitle",
+  "pluginManager.builtinAgentTeamDescription",
+  "pluginManager.builtinAgentTeamWebTitle",
+  "pluginManager.builtinAgentTeamWebDescription",
+  "pluginManager.builtinAutoReviewTitle",
+  "pluginManager.builtinAutoReviewDescription",
+  "pluginManager.noDescription",
+  "pluginManager.installGuideIntro",
+  "pluginManager.installGuideIdNote",
+  "schedule.catalog.status.scheduled",
+  "schedule.catalog.status.overdue",
+  "settings.models.deepSeekChatBaseUrl",
+  "settings.models.deepSeekMessagesBaseUrl",
+  "settings.models.customAdd",
+  "settings.models.customTitle",
+  "settings.plugins.overridden",
+  "settings.plugins.reset",
+  "settings.plugins.readOnly",
+  "settings.plugins.unavailable",
+  "settings.plugins.save",
+  "settings.plugins.saving",
+  "settings.plugins.saveFailed",
+  "settings.plugins.invalidNumber",
+  "settings.plugins.bashTitle",
+  "settings.plugins.bashDescription",
+  "settings.plugins.bashTimeoutMs",
+  "settings.plugins.bashTimeoutMsHint",
+  "settings.plugins.bashMaxOutputBytes",
+  "settings.plugins.bashMaxOutputBytesHint",
+  "settings.plugins.agentLoopTitle",
+  "settings.plugins.agentLoopDescription",
+  "settings.plugins.agentLoopMaxParallel",
+  "settings.plugins.agentLoopMaxParallelHint",
+  "settings.plugins.webSearchTitle",
+  "settings.plugins.webSearchDescription",
+  "settings.plugins.webSearchApiKey",
+  "settings.plugins.webSearchApiKeyHint",
+  "settings.plugins.webSearchApiKeySet",
+  "settings.plugins.webSearchApiKeyUnset",
+  "settings.plugins.webSearchBaseUrl",
+  "settings.plugins.webSearchBaseUrlHint",
+  "settings.plugins.webSearchMaxUses",
+  "settings.plugins.webSearchMaxUsesHint",
+  "settings.plugins.subagentTitle",
+  "settings.plugins.subagentDescription",
+  "settings.plugins.subagentLimitsTitle",
+  "settings.plugins.subagentMaxDepth",
+  "settings.plugins.subagentDepthHelpLabel",
+  "settings.plugins.subagentDepthHelp",
+  "settings.plugins.subagentDepthZero",
+  "settings.plugins.subagentDepthOne",
+  "settings.plugins.subagentDepthOverride",
+  "settings.plugins.subagentMaxActive",
+  "settings.plugins.subagentCapacityHelpLabel",
+  "settings.plugins.subagentCapacityHelp",
+  "settings.plugins.subagentDepthInvalid",
+  "settings.plugins.subagentCapacityInvalid",
+  "settings.plugins.subagentModelSelectionTitle",
+  "settings.plugins.subagentModelSelectionToggle",
+  "settings.plugins.subagentModelSelectionChoose",
+  "settings.plugins.subagentModelSelectionAllowed",
+  "settings.plugins.subagentModelSelectionLoading",
+  "settings.plugins.subagentModelSelectionLoadFailed",
+  "settings.plugins.subagentModelSelectionRetry",
+  "settings.plugins.subagentModelSelectionPartial",
+  "settings.plugins.subagentModelSelectionUnavailable",
+  "settings.plugins.subagentModelSelectionUnavailableGroup",
+  "settings.plugins.subagentModelSelectionEmpty",
+  "settings.plugins.subagentModelSelectionRequired",
+  "settings.plugins.subagentModelSelectionConflict",
+  "settings.plugins.subagentModelSelectionOff",
+  "settings.archivedSessions.nav",
+  "settings.archivedSessions.search",
+  "settings.archivedSessions.loading",
+  "settings.archivedSessions.empty",
+  "settings.archivedSessions.unavailable",
+  "settings.archivedSessions.emptySearch",
+  "settings.archivedSessions.unarchive",
+  "settings.archivedSessions.unarchiveNamed",
+  "settings.archivedSessions.ungrouped",
+  "settings.archivedSessions.time.now",
+  "settings.archivedSessions.time.minutes",
+  "settings.archivedSessions.time.hours",
+  "settings.archivedSessions.time.days",
+  "settings.archivedSessions.time.months",
+  "settings.archivedSessions.time.years",
+  "sidebarBrowser.web.loadFailed",
+  "sidebarBrowser.web.unknown",
+  "sidebarOffice.missingFonts",
+  "sidebarOffice.showMore",
+  "sidebarOffice.dismissNotice",
+  "subagent.diagnostic.corrupt",
+  "subagent.diagnostic.unsupported",
+  "subagent.diagnostic.unavailable",
+  "subagent.loading.aria",
+  "workspace.search.unavailable",
+  "workspace.schedule.active",
+  "agent-team.refresh",
+  "agent-team.close",
+  "agent-team.create",
+  "agent-team.subject",
+  "agent-team.description",
+  "agent-team.blockers",
+  "agent-team.scopes",
+  "agent-team.save",
+  "agent-team.cancel",
+  "agent-team.edit",
+  "agent-team.complete",
+  "agent-team.reopen",
+  "agent-team.delete",
+  "agent-team.conflict",
+  "agent-team.memberStatus.idle"
+ ]
+}

@@ -1,19 +1,287 @@
 {
- "batch": "sidebarCodePreview",
- "namespace": "sidebarCodePreview",
- "total": 3,
+ "batch": "settings.models#1",
+ "namespace": "settings.models",
+ "total": 70,
  "keys": {
+  "nav": {
+   "en": "Models",
+   "zh": "模型"
+  },
+  "deepSeekAccount": {
+   "en": "DeepSeek Account",
+   "zh": "DeepSeek 账号"
+  },
   "title": {
-   "en": "Code",
-   "zh": "代码"
+   "en": "Models",
+   "zh": "模型"
   },
-  "copy": {
-   "en": "Copy",
-   "zh": "复制"
+  "intro": {
+   "en": "Enter your API keys to use models from the following providers.",
+   "zh": "填入各提供商的 API 密钥即可使用其模型。"
   },
-  "copied": {
-   "en": "Copied",
-   "zh": "已复制"
+  "edit": {
+   "en": "Edit",
+   "zh": "编辑"
+  },
+  "editProvider": {
+   "en": "Edit {provider}",
+   "zh": "编辑 {provider}"
+  },
+  "remove": {
+   "en": "Delete",
+   "zh": "删除"
+  },
+  "removeProvider": {
+   "en": "Delete {provider}",
+   "zh": "删除 {provider}"
+  },
+  "deleteTitle": {
+   "en": "Delete {provider}?",
+   "zh": "删除 {provider}？"
+  },
+  "deleteDescription": {
+   "en": "Deleting {provider} removes its configuration. Any credential it uses is managed elsewhere and will be kept.",
+   "zh": "删除 {provider} 会移除其配置；其使用的凭证（如有）由其他位置管理，将会保留。"
+  },
+  "deleteDescriptionWithCredential": {
+   "en": "Deleting {provider} removes its configuration and stored API key.",
+   "zh": "删除 {provider} 会移除其配置和存储的 API 密钥。"
+  },
+  "deleteConfirm": {
+   "en": "Delete {provider}",
+   "zh": "删除 {provider}"
+  },
+  "deleting": {
+   "en": "Deleting {provider}…",
+   "zh": "正在删除 {provider}…"
+  },
+  "add": {
+   "en": "Add model provider",
+   "zh": "添加模型提供商"
+  },
+  "addMode": {
+   "en": "How to add",
+   "zh": "添加方式"
+  },
+  "addCatalog": {
+   "en": "Third-party model provider",
+   "zh": "第三方模型提供商"
+  },
+  "addCustom": {
+   "en": "Custom model API",
+   "zh": "自定义模型 API"
+  },
+  "addCatalogHint": {
+   "en": "Pick OpenAI, Anthropic, Kimi, or another provider from the built-in catalog and enter its API key.",
+   "zh": "从内置目录中选择 OpenAI、Anthropic、Kimi 等提供商，填入其 API 密钥即可使用。"
+  },
+  "addCustomHint": {
+   "en": "Connect a relay, a self-hosted server, or any other OpenAI- or Anthropic-compatible endpoint by its base URL, protocol, and models.",
+   "zh": "连接中转站、自部署服务或其他兼容 OpenAI / Anthropic 协议的接口，需填写 API 地址、协议和模型。"
+  },
+  "addCatalogExhausted": {
+   "en": "Every catalog provider is already configured.",
+   "zh": "目录中的提供商都已添加。"
+  },
+  "addCustomUnavailable": {
+   "en": "No API protocol is available to declare.",
+   "zh": "没有可用的 API 协议。"
+  },
+  "provider": {
+   "en": "Provider",
+   "zh": "提供商"
+  },
+  "close": {
+   "en": "Close",
+   "zh": "关闭"
+  },
+  "cancel": {
+   "en": "Cancel",
+   "zh": "取消"
+  },
+  "apply": {
+   "en": "Apply",
+   "zh": "保存"
+  },
+  "applying": {
+   "en": "Applying…",
+   "zh": "保存中…"
+  },
+  "savedProvider": {
+   "en": "Saved {provider}.",
+   "zh": "已保存 {provider}。"
+  },
+  "credentialConfigured": {
+   "en": "API key configured",
+   "zh": "API 密钥已配置"
+  },
+  "credentialMissing": {
+   "en": "API key missing",
+   "zh": "API 密钥缺失"
+  },
+  "readOnly": {
+   "en": "The settings document is read-only in this deployment.",
+   "zh": "当前部署的设置文档为只读。"
+  },
+  "loadFailed": {
+   "en": "Loading the provider directory failed",
+   "zh": "加载提供商目录失败"
+  },
+  "conflict": {
+   "en": "Someone else changed these settings while this card was open. Close it and reopen to edit the current values.",
+   "zh": "这张卡片打开期间，这些设置已被其他地方改动。请关闭后重新打开，在当前值上编辑。"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试"
+  },
+  "keyInput": {
+   "en": "API key",
+   "zh": "API 密钥"
+  },
+  "keyPlaceholder": {
+   "en": "Enter your API key",
+   "zh": "输入 API 密钥"
+  },
+  "keyPlaceholderNative": {
+   "en": "Enter an API key, or leave blank to use environment authentication",
+   "zh": "输入 API 密钥，或留空使用环境认证"
+  },
+  "keyStored": {
+   "en": "Configured — enter a new value to replace",
+   "zh": "已配置——输入新值可替换"
+  },
+  "keyEnvLocked": {
+   "en": "Provided by the launch environment (read-only)",
+   "zh": "由启动环境提供（只读）"
+  },
+  "customized": {
+   "en": "Customized settings",
+   "zh": "自定义设置"
+  },
+  "baseUrl": {
+   "en": "Base URL",
+   "zh": "API 地址"
+  },
+  "baseUrlDefault": {
+   "en": "Provider default",
+   "zh": "提供商默认"
+  },
+  "deepSeekBaseUrl": {
+   "en": "https://api.deepseek.com/anthropic",
+   "zh": "https://api.deepseek.com/anthropic"
+  },
+  "deepSeekEndpointHint": {
+   "en": "Use an API endpoint compatible with Anthropic Messages.",
+   "zh": "请填写兼容 Anthropic Messages 协议的 API 地址。"
+  },
+  "models": {
+   "en": "Models",
+   "zh": "模型目录"
+  },
+  "modelsInherited": {
+   "en": "Using the adapter defaults",
+   "zh": "正在使用适配器默认模型"
+  },
+  "modelsCustomized": {
+   "en": "Customized model catalog",
+   "zh": "已自定义模型目录"
+  },
+  "resetModels": {
+   "en": "Restore defaults",
+   "zh": "恢复默认模型"
+  },
+  "model": {
+   "en": "Model",
+   "zh": "模型"
+  },
+  "modelId": {
+   "en": "Model ID",
+   "zh": "模型 ID"
+  },
+  "modelName": {
+   "en": "Display name",
+   "zh": "显示名称"
+  },
+  "modelNamePlaceholder": {
+   "en": "Uses the model ID when empty",
+   "zh": "留空时使用模型 ID"
+  },
+  "contextWindow": {
+   "en": "Context window",
+   "zh": "上下文窗口"
+  },
+  "contextWindowPlaceholder": {
+   "en": "Uses the provider default",
+   "zh": "使用提供商默认值"
+  },
+  "maxTokens": {
+   "en": "Max output tokens",
+   "zh": "最大输出 token 数"
+  },
+  "maxTokensPlaceholder": {
+   "en": "Uses the provider default",
+   "zh": "使用提供商默认值"
+  },
+  "modelAdvanced": {
+   "en": "Model options",
+   "zh": "模型选项"
+  },
+  "modelInputTypes": {
+   "en": "Input types",
+   "zh": "输入类型"
+  },
+  "modelInputText": {
+   "en": "Text",
+   "zh": "文本"
+  },
+  "modelInputImage": {
+   "en": "Image",
+   "zh": "图片"
+  },
+  "addModel": {
+   "en": "Add model",
+   "zh": "添加模型"
+  },
+  "removeModel": {
+   "en": "Delete model",
+   "zh": "删除模型"
+  },
+  "modelsEmpty": {
+   "en": "No models will be shown in the selector. Unlisted IDs can still be sent directly.",
+   "zh": "模型选择器中将不显示任何模型；目录外 ID 仍可直接发送。"
+  },
+  "keyBlank": {
+   "en": "Enter the API key, or leave the field empty to keep the stored one.",
+   "zh": "请输入 API 密钥；留空则保持已存储的密钥。"
+  },
+  "keyBlankNew": {
+   "en": "Enter the API key, or leave the field empty if this provider authenticates another way.",
+   "zh": "请输入 API 密钥；若该提供商以其他方式鉴权，可以留空。"
+  },
+  "keyIllegalCharacters": {
+   "en": "This API key is not in a valid format. Please check it.",
+   "zh": "该 API 密钥格式错误，请检查。"
+  },
+  "modelIdRequired": {
+   "en": "Model ID is required.",
+   "zh": "模型 ID 不能为空。"
+  },
+  "modelIdDuplicate": {
+   "en": "Model ID must be unique.",
+   "zh": "模型 ID 不能重复。"
+  },
+  "modelNameInvalid": {
+   "en": "Display name cannot be empty.",
+   "zh": "显示名称不能为空。"
+  },
+  "modelContextInvalid": {
+   "en": "Context window must be a positive count, like 131072, 256K, or 1M.",
+   "zh": "上下文窗口必须是正数，例如 131072、256K 或 1M。"
+  },
+  "modelMaxTokensInvalid": {
+   "en": "Max output tokens must be a positive count, like 8192, 64K, or 1M.",
+   "zh": "最大输出 token 数必须是正数，例如 8192、64K 或 1M。"
   }
  }
 }

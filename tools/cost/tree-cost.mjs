@@ -1,4 +1,4 @@
-import { packPath, packagesRoot, sessionsRoot, newestSessionLog, rootSessionId } from '../paths.mjs'
+import { packPath, packagesRoot, sessionsRoot, sessionLogIn, newestSessionLog, rootSessionId } from '../paths.mjs'
 // Cost of one session tree: the root session plus every descendant session.
 import fs from 'node:fs'
 import path from 'node:path'
@@ -26,8 +26,8 @@ for (const workspace of fs.readdirSync(ROOT)) {
   const dir = path.join(ROOT, workspace)
   if (!fs.statSync(dir).isDirectory()) continue
   for (const session of fs.readdirSync(dir)) {
-    const file = path.join(dir, session, 'session.v3.jsonl.zstd')
-    if (!fs.existsSync(file)) continue
+    const file = sessionLogIn(path.join(dir, session))
+    if (file === undefined) continue
     const events = readSession(file)
     if (events.length === 0) continue
     const header = events[0].type === 'session' ? events[0] : {}

@@ -1,4 +1,4 @@
-import { packPath, packagesRoot, sessionsRoot, newestSessionLog, rootSessionId } from '../paths.mjs'
+import { packPath, packagesRoot, harnessHome, sessionsRoot, newestSessionLog, rootSessionId } from '../paths.mjs'
 // Validate the session-tree reader against an independent scan of the same logs.
 import fs from 'node:fs'
 import path from 'node:path'
@@ -8,7 +8,7 @@ import { readSession } from './session-log.mjs'
 const PACK = packPath('dsh-session-cost')
 const { normalizeTable, buildView } = await import(`file:///${PACK}/lib/pricing.js`)
 const { createDefinition, resolveHarnessHome } = await import(`file:///${PACK}/lib/index.js`)
-const { createTreeReader, decodeSessionLog, listSessionLogs, LOG_FILENAME } = await import(`file:///${PACK}/lib/tree.js`)
+const { createTreeReader, decodeSessionLog, listSessionLogs, logGeneration } = await import(`file:///${PACK}/lib/tree.js`)
 
 const table = normalizeTable(JSON.parse(fs.readFileSync(`${PACK}/prices.json`, 'utf8')))
 const definition = createDefinition({ get: () => table })
@@ -31,9 +31,9 @@ console.log('durable log reader:')
 const logs = listSessionLogs(SESSIONS_ROOT)
 check('every session log on disk is discovered', () => assert.ok(logs.length >= 50, `found ${logs.length}`))
 check('the discovered files are the versioned session logs', () => {
-  for (const file of logs) assert.ok(file.endsWith(LOG_FILENAME), file)
+  for (const file of logs) assert.ok(logGeneration(path.basename(file)) !== undefined, file)
 })
-check('the home default follows DSH_HOME', () => assert.equal(resolveHarnessHome(), process.env.DSH_HOME))
+check('the home default follows DSH_HOME, else ~/.dsh', () => assert.equal(resolveHarnessHome(), harnessHome()))
 
 const sample = logs.reduce((best, file) => (fs.statSync(file).size > fs.statSync(best).size ? file : best), logs[0])
 const decoded = decodeSessionLog(fs.readFileSync(sample))

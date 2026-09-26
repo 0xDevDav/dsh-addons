@@ -1,79 +1,75 @@
 {
- "batch": "schedule.catalog",
- "namespace": "schedule.catalog",
- "total": 18,
+ "batch": "plan",
+ "namespace": "plan",
+ "total": 17,
  "keys": {
-  "trigger.one": {
-   "en": "{count} reminder",
-   "zh": "{count} 个提醒"
+  "chip.label": {
+   "en": "Plan",
+   "zh": "计划"
   },
-  "trigger.other": {
-   "en": "{count} reminders",
-   "zh": "{count} 个提醒"
+  "preview.title": {
+   "en": "Plan",
+   "zh": "计划"
   },
-  "list.aria": {
-   "en": "Active reminders",
-   "zh": "活动提醒"
+  "preview.document": {
+   "en": "Plan · Markdown",
+   "zh": "计划 · Markdown"
   },
-  "status.scheduled": {
-   "en": "Scheduled",
-   "zh": "等待中"
+  "preview.action": {
+   "en": "Open",
+   "zh": "打开"
   },
-  "status.overdue": {
-   "en": "Overdue",
-   "zh": "已逾期"
+  "preview.open": {
+   "en": "Open plan in sidebar",
+   "zh": "在侧边栏打开计划"
   },
-  "frequency.once": {
-   "en": "Once",
-   "zh": "单次"
+  "preview.full": {
+   "en": "View full plan",
+   "zh": "查看全文"
   },
-  "frequency.every": {
-   "en": "Every {value} {unit}",
-   "zh": "{value}{unit}一次"
+  "preview.openNamed": {
+   "en": "Open plan: {title}",
+   "zh": "打开计划：{title}"
   },
-  "unit.day.one": {
-   "en": "day",
-   "zh": "天"
+  "preview.loading": {
+   "en": "Loading plan…",
+   "zh": "正在读取计划…"
   },
-  "unit.day.other": {
-   "en": "days",
-   "zh": "天"
+  "preview.failed": {
+   "en": "Could not load plan",
+   "zh": "无法读取计划"
   },
-  "unit.hour.one": {
-   "en": "hour",
-   "zh": "小时"
+  "preview.invalidAddress": {
+   "en": "Invalid plan address",
+   "zh": "计划地址无效"
   },
-  "unit.hour.other": {
-   "en": "hours",
-   "zh": "小时"
+  "preview.historyUnavailable": {
+   "en": "Session history is unavailable",
+   "zh": "无法读取会话历史"
   },
-  "unit.minute.one": {
-   "en": "minute",
-   "zh": "分钟"
+  "preview.notFound": {
+   "en": "This plan was not found",
+   "zh": "未找到这份计划"
   },
-  "unit.minute.other": {
-   "en": "minutes",
-   "zh": "分钟"
+  "preview.unavailable": {
+   "en": "Plan preview is unavailable",
+   "zh": "计划预览不可用"
   },
-  "unit.second.one": {
-   "en": "second",
-   "zh": "秒"
+  "preview.expired": {
+   "en": "This temporary plan preview has expired. Reopen it from the pending review card.",
+   "zh": "临时计划预览已失效，请从仍在等待审批的卡片重新打开。"
   },
-  "unit.second.other": {
-   "en": "seconds",
-   "zh": "秒"
+  "chip.on.aria": {
+   "en": "Plan mode on, press to turn off",
+   "zh": "计划模式已开启，按下关闭"
   },
-  "relative.now": {
-   "en": "Due now",
-   "zh": "现在到期"
+  "chip.on.title": {
+   "en": "Plan mode on — click to turn off (/plan off)",
+   "zh": "计划模式已开启 — 点击关闭（/plan off）"
   },
-  "relative.future": {
-   "en": "in {value} {unit}",
-   "zh": "{value}{unit}后"
-  },
-  "relative.overdue": {
-   "en": "{value} {unit} overdue",
-   "zh": "已逾期 {value}{unit}"
+  "chip.exitFailed": {
+   "en": "Failed to exit plan mode",
+   "zh": "退出计划模式失败"
   }
  }
 }

@@ -1,4 +1,4 @@
-import { packPath, packagesRoot, sessionsRoot, newestSessionLog, rootSessionId } from '../paths.mjs'
+import { packPath, packagesRoot, sessionsRoot, sessionLogs, rootSessionId } from '../paths.mjs'
 // Validate the sessionCost projection against a real session log.
 import fs from 'node:fs'
 import assert from 'node:assert/strict'
@@ -63,8 +63,18 @@ check('official pro rates match the docs', () => {
 })
 
 // ── the real session ────────────────────────────────────────────────────────
-const file = process.argv[2] ?? newestSessionLog()
-const events = readSession(file)
+// With no argument, the newest log that billed at least one request: DSH 0.1.7 opens a blank
+// draft session on load, and a session with nothing billed cannot show a complete price.
+const billed = (log) => log.some((event) => event.type === 'assistant/message' && event.data?.usage != null)
+let file = process.argv[2]
+let events = file === undefined ? undefined : readSession(file)
+if (file === undefined) {
+  for (const candidate of sessionLogs().sort((a, b) => fs.statSync(b).mtimeMs - fs.statSync(a).mtimeMs)) {
+    const log = readSession(candidate)
+    if (billed(log)) { file = candidate; events = log; break }
+  }
+}
+assert.ok(events !== undefined, 'no session log on disk billed a request')
 console.log(`\nreal session: ${events.length} events`)
 
 const definition = createDefinition(loader)

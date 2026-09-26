@@ -12,7 +12,7 @@ const FIXES = {
     'menu.effort': 'Livello di ragionamento',
     'empty.efforts': 'Questo modello non offre livelli di ragionamento.',
   },
-  'settings.plugins': {
+  'settings.subagent': {
     subagentModelSelectionChoose:
       'Se attivo, gli agenti possono scegliere un provider, un modello e un livello di ragionamento per ogni subagente tra i modelli autorizzati riportati sotto. Si applica solo alle nuove sessioni.',
   },
@@ -49,7 +49,7 @@ for (const [ns, set] of Object.entries(expected)) {
     const e = got[k]
     if (!e) { problems.push(`${ns}.${k} MISSING`); continue }
     keys++
-    if (typeof e.it !== 'string' || e.it.trim() === '') problems.push(`${ns}.${k} empty`)
+    if (typeof e.it !== 'string' || (e.it.trim() === '' && e.en.trim() !== '')) problems.push(`${ns}.${k} empty`)
     if (tokens(e.en) !== tokens(e.it)) problems.push(`${ns}.${k} placeholder mismatch [${tokens(e.en)}] vs [${tokens(e.it)}]`)
   }
   const extra = Object.keys(got).filter((k) => !set.has(k))

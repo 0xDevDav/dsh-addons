@@ -1,0 +1,143 @@
+{
+ "batch": "sidebarRight",
+ "namespace": "sidebarRight",
+ "total": 34,
+ "keys": {
+  "command.close": {
+   "en": "Close current page or window",
+   "zh": "关闭当前页面／窗口"
+  },
+  "command.refresh": {
+   "en": "Refresh current page",
+   "zh": "刷新当前页面"
+  },
+  "command.noRefresh": {
+   "en": "This page cannot be refreshed",
+   "zh": "当前页面不支持刷新"
+  },
+  "command.toggle": {
+   "en": "Toggle right sidebar",
+   "zh": "展开／收起右侧栏"
+  },
+  "command.fullscreen": {
+   "en": "Toggle panel fullscreen",
+   "zh": "面板全屏／退出全屏"
+  },
+  "command.noSession": {
+   "en": "Select a session first",
+   "zh": "请先选择会话"
+  },
+  "command.noFocus": {
+   "en": "Focus a right sidebar pane first",
+   "zh": "请先聚焦右侧面板"
+  },
+  "command.stale": {
+   "en": "The page changed; focus it again",
+   "zh": "页面已切换，请重新聚焦"
+  },
+  "command.collapsed": {
+   "en": "Expand the right sidebar first",
+   "zh": "请先展开右侧栏"
+  },
+  "command.float": {
+   "en": "This action is unavailable in a floating panel",
+   "zh": "浮动面板不支持此操作"
+  },
+  "command.empty": {
+   "en": "Open a page first",
+   "zh": "请先打开页面"
+  },
+  "command.budget": {
+   "en": "Two panes is the limit",
+   "zh": "已达两格上限"
+  },
+  "command.width": {
+   "en": "Not enough width to split, widen the sidebar",
+   "zh": "栏宽不足，拖宽侧边栏后再分栏"
+  },
+  "chrome.expand": {
+   "en": "Open sidebar",
+   "zh": "打开侧边栏"
+  },
+  "chrome.expandAria": {
+   "en": "Open right sidebar",
+   "zh": "打开右侧边栏"
+  },
+  "chrome.collapse": {
+   "en": "Collapse sidebar",
+   "zh": "收起侧边栏"
+  },
+  "chrome.collapseAria": {
+   "en": "Collapse right sidebar",
+   "zh": "收起右侧边栏"
+  },
+  "chrome.toFullscreen": {
+   "en": "Fullscreen",
+   "zh": "全屏"
+  },
+  "chrome.exitFullscreen": {
+   "en": "Exit fullscreen",
+   "zh": "退出全屏"
+  },
+  "dock.emptyPane": {
+   "en": "Empty pane",
+   "zh": "空面板"
+  },
+  "dock.splitPane": {
+   "en": "Split",
+   "zh": "分栏"
+  },
+  "dock.splitPaneDisabled": {
+   "en": "Two panes is the limit",
+   "zh": "已达两格上限"
+  },
+  "dock.splitPaneNarrow": {
+   "en": "Not enough width to split, widen the sidebar",
+   "zh": "栏宽不足，拖宽侧边栏后再分栏"
+  },
+  "dock.closeTab": {
+   "en": "Close",
+   "zh": "关闭"
+  },
+  "dock.addTab": {
+   "en": "New tab",
+   "zh": "新标签页"
+  },
+  "dock.dockFloat": {
+   "en": "Send back to the sidebar",
+   "zh": "收回到侧边栏"
+  },
+  "dock.closeFloat": {
+   "en": "Close",
+   "zh": "关闭"
+  },
+  "dock.drop.center": {
+   "en": "Move here",
+   "zh": "移到这里"
+  },
+  "dock.drop.left": {
+   "en": "Add left split",
+   "zh": "左分栏"
+  },
+  "dock.drop.right": {
+   "en": "Add right split",
+   "zh": "右分栏"
+  },
+  "dock.drop.top": {
+   "en": "Add top split",
+   "zh": "上分栏"
+  },
+  "dock.drop.bottom": {
+   "en": "Add bottom split",
+   "zh": "下分栏"
+  },
+  "tab.guide.title": {
+   "en": "Start",
+   "zh": "开始"
+  },
+  "tab.unavailable": {
+   "en": "Nothing here can view this kind of content yet.",
+   "zh": "这类内容还没有可用的查看方式。"
+  }
+ }
+}

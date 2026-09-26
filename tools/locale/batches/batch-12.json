@@ -1,275 +1,287 @@
 {
- "batch": "deliverables",
- "namespace": "deliverables",
- "total": 67,
+ "batch": "conversation#4",
+ "namespace": "conversation",
+ "total": 70,
  "keys": {
-  "presented.nativeUnavailable": {
-   "en": "This file has no available Host path. Preview it in the sidebar.",
-   "zh": "此文件没有可用的主机路径，请在侧边栏预览"
-  },
-  "presented.revealError": {
-   "en": "Could not show in file manager. Try again.",
-   "zh": "无法在文件管理器中显示，请重试"
-  },
-  "presented.directoryError": {
-   "en": "Could not open containing folder. Try again.",
-   "zh": "无法打开所在文件夹，请重试"
-  },
-  "presented.directoryOpening": {
-   "en": "Opening containing folder…",
-   "zh": "正在打开所在文件夹…"
-  },
-  "presented.directoryOpened": {
-   "en": "Requested opening containing folder",
-   "zh": "已请求打开所在文件夹"
-  },
-  "presented.revealed": {
-   "en": "Requested display in file manager",
-   "zh": "已请求在文件管理器中显示"
-  },
-  "presented.revealing": {
-   "en": "Showing in file manager…",
-   "zh": "正在文件管理器中显示…"
-  },
-  "presented.unavailable": {
-   "en": "This Host has no desktop available to open files or folders in external apps. Files can still be previewed in the sidebar.",
-   "zh": "此主机没有可用的桌面，无法使用外部程序打开文件或文件夹；文件仍可在侧边栏预览"
-  },
-  "presented.retry": {
-   "en": "Retry",
-   "zh": "重试"
-  },
-  "presented.hostError": {
-   "en": "Could not read the Host desktop information",
-   "zh": "无法读取主机桌面信息"
-  },
-  "presented.directory": {
-   "en": "Open containing folder",
-   "zh": "打开所在文件夹"
-  },
-  "presented.explorer": {
-   "en": "Show in File Explorer",
-   "zh": "在文件资源管理器中显示"
-  },
-  "presented.finder": {
-   "en": "Show in Finder",
-   "zh": "在 Finder 中显示"
-  },
-  "presented.defaultApp": {
-   "en": "Open in default app",
-   "zh": "用默认应用打开"
-  },
-  "presented.more": {
-   "en": "More file actions for {name}",
-   "zh": "{name} 的更多文件操作"
-  },
-  "presented.action": {
-   "en": "Open",
-   "zh": "打开"
-  },
-  "presented.preview": {
-   "en": "Preview in sidebar",
-   "zh": "在侧边栏预览"
-  },
-  "presented.previewButton": {
-   "en": "Open {name} in sidebar",
-   "zh": "在侧边栏打开 {name}"
-  },
-  "presented.previewCard": {
-   "en": "Preview {name} in sidebar",
-   "zh": "在侧边栏预览 {name}"
-  },
-  "presented.all": {
-   "en": "All {count} files",
-   "zh": "全部 {count} 个文件"
-  },
-  "presented.expandAria": {
-   "en": "Show all {count} delivered files",
-   "zh": "展开全部 {count} 个交付文件"
-  },
-  "presented.collapse": {
-   "en": "Collapse",
-   "zh": "收起"
-  },
-  "presented.collapseAria": {
-   "en": "Collapse delivered files",
-   "zh": "收起交付文件列表"
-  },
-  "presented.opening": {
-   "en": "Opening…",
-   "zh": "正在打开…"
-  },
-  "presented.opened": {
-   "en": "Opened in default app",
-   "zh": "已在默认程序中打开"
-  },
-  "presented.error": {
-   "en": "Could not open. Click to retry.",
-   "zh": "打开失败，点击重试"
-  },
-  "presented.file": {
-   "en": "File",
-   "zh": "文件"
-  },
-  "row.title": {
-   "en": "Present files",
-   "zh": "交付文件"
-  },
-  "row.running": {
-   "en": "Delivering",
-   "zh": "正在交付"
-  },
-  "row.ok": {
-   "en": "Delivered",
-   "zh": "已交付"
-  },
-  "row.error": {
-   "en": "Delivery failed",
-   "zh": "交付失败"
-  },
-  "row.stopped": {
-   "en": "Interrupted",
-   "zh": "已中断"
-  },
-  "row.inspect": {
-   "en": "Inspect call",
-   "zh": "查看调用"
-  },
-  "changes.title": {
-   "en": "Edited {count} files",
-   "zh": "已编辑 {count} 个文件"
-  },
-  "changes.added": {
-   "en": "+{count}",
-   "zh": "+{count}"
-  },
-  "changes.deleted": {
-   "en": "-{count}",
-   "zh": "-{count}"
-  },
-  "changes.binary": {
-   "en": "binary",
-   "zh": "二进制"
-  },
-  "changes.openReview": {
-   "en": "Review this turn’s changes in the sidebar",
-   "zh": "在侧边栏查看本轮改动"
-  },
-  "changes.all": {
-   "en": "All {count} files",
-   "zh": "全部 {count} 个文件"
-  },
-  "changes.expandAria": {
-   "en": "Show all {count} changed files",
-   "zh": "展开全部 {count} 个改动文件"
-  },
-  "changes.collapse": {
-   "en": "Collapse",
-   "zh": "收起"
-  },
-  "changes.collapseAria": {
-   "en": "Collapse changed files",
-   "zh": "收起改动文件列表"
-  },
-  "changes.oversized": {
-   "en": "too large",
-   "zh": "过大"
-  },
-  "changes.viewDiff": {
-   "en": "View changes to {name}",
-   "zh": "查看 {name} 的改动"
-  },
-  "review.title": {
-   "en": "Review · turn {turn}",
-   "zh": "第 {turn} 轮改动"
-  },
-  "review.selectFile": {
-   "en": "Choose the file to review",
-   "zh": "选择要查看的文件"
-  },
-  "review.split": {
-   "en": "Switch to split view",
-   "zh": "切换为左右对比"
-  },
-  "review.unified": {
-   "en": "Switch to unified view",
-   "zh": "切换为单栏对比"
-  },
-  "review.splitAria": {
-   "en": "Split view",
-   "zh": "左右对比"
-  },
-  "review.wrap": {
-   "en": "Enable line wrap",
-   "zh": "开启自动换行"
-  },
-  "review.nowrap": {
-   "en": "Disable line wrap",
-   "zh": "关闭自动换行"
-  },
-  "review.wrapAria": {
-   "en": "Line wrap",
-   "zh": "自动换行"
-  },
-  "review.openFile": {
-   "en": "Open the whole file in the sidebar",
-   "zh": "在侧边栏打开整个文件"
-  },
-  "review.openFileAria": {
-   "en": "Open {name} in sidebar",
-   "zh": "在侧边栏打开 {name}"
-  },
-  "diff.openNativeAria": {
-   "en": "Open {name} in default app",
-   "zh": "用默认应用打开 {name}"
-  },
-  "diff.loading": {
-   "en": "Reading changes…",
-   "zh": "正在读取改动…"
-  },
-  "diff.missing": {
-   "en": "The contents of this turn’s changes are no longer available",
-   "zh": "这轮改动的内容已不可用"
-  },
-  "diff.error": {
-   "en": "Could not read the changes",
-   "zh": "无法读取改动"
-  },
-  "diff.binary": {
-   "en": "Binary file; changes cannot be shown",
-   "zh": "二进制文件，无法显示改动"
-  },
-  "diff.oversized": {
-   "en": "File too large; changes cannot be shown",
-   "zh": "文件过大，无法显示改动"
-  },
-  "diff.created": {
-   "en": "Created in this turn",
-   "zh": "本轮新建的文件"
-  },
-  "diff.deleted": {
-   "en": "Deleted in this turn",
-   "zh": "本轮删除的文件"
-  },
-  "diff.unchanged": {
-   "en": "Both sides hold the same lines",
-   "zh": "两侧内容相同"
-  },
-  "diff.coarse": {
-   "en": "Line comparison timed out; shown as a whole-file replacement",
-   "zh": "逐行对比超时，按整个文件替换显示"
-  },
-  "diff.truncated": {
-   "en": "Showing the first {count} lines",
-   "zh": "只显示前 {count} 行"
-  },
-  "diff.openNative": {
-   "en": "Open in default app",
-   "zh": "用默认应用打开"
-  },
-  "diff.openNativeError": {
-   "en": "Could not open. Click to retry.",
-   "zh": "打开失败，点击重试"
+  "detail.field.content": {
+   "en": "Content",
+   "zh": "内容"
+  },
+  "detail.field.message": {
+   "en": "Message",
+   "zh": "消息"
+  },
+  "detail.field.messageId": {
+   "en": "Message ID",
+   "zh": "消息 ID"
+  },
+  "detail.field.root": {
+   "en": "Root",
+   "zh": "根节点"
+  },
+  "detail.field.pid": {
+   "en": "Process ID",
+   "zh": "进程 ID"
+  },
+  "detail.field.type": {
+   "en": "Type",
+   "zh": "类型"
+  },
+  "detail.field.time": {
+   "en": "Time",
+   "zh": "时间"
+  },
+  "detail.field.seq": {
+   "en": "Event sequence",
+   "zh": "事件序号"
+  },
+  "detail.field.turn": {
+   "en": "Turn",
+   "zh": "轮次"
+  },
+  "detail.field.step": {
+   "en": "Step",
+   "zh": "步骤"
+  },
+  "detail.field.callId": {
+   "en": "Call ID",
+   "zh": "调用 ID"
+  },
+  "detail.field.agents": {
+   "en": "Agents started",
+   "zh": "启动代理数"
+  },
+  "detail.field.result": {
+   "en": "Result",
+   "zh": "结果"
+  },
+  "detail.field.parent": {
+   "en": "Parent",
+   "zh": "父级"
+  },
+  "detail.field.depth": {
+   "en": "Depth",
+   "zh": "层级"
+  },
+  "detail.field.exitCode": {
+   "en": "Exit code",
+   "zh": "退出码"
+  },
+  "detail.field.signal": {
+   "en": "Signal",
+   "zh": "信号"
+  },
+  "detail.field.previousStatus": {
+   "en": "Previous status",
+   "zh": "中断前状态"
+  },
+  "detail.field.agent": {
+   "en": "Agent ID",
+   "zh": "代理 ID"
+  },
+  "detail.field.job": {
+   "en": "Job ID",
+   "zh": "任务 ID"
+  },
+  "detail.field.task": {
+   "en": "Task",
+   "zh": "任务内容"
+  },
+  "detail.field.processGroup": {
+   "en": "Process group",
+   "zh": "进程组"
+  },
+  "detail.field.availability": {
+   "en": "Availability",
+   "zh": "可用状态"
+  },
+  "detail.field.bestMatch": {
+   "en": "Best match",
+   "zh": "最相关事件"
+  },
+  "detail.field.target": {
+   "en": "Target event",
+   "zh": "目标事件"
+  },
+  "detail.field.surface": {
+   "en": "Record status",
+   "zh": "记录状态"
+  },
+  "detail.agents.count": {
+   "en": "{count} agents",
+   "zh": "{count} 个代理"
+  },
+  "detail.jobs.count": {
+   "en": "{count} background jobs",
+   "zh": "{count} 个后台任务"
+  },
+  "detail.terminals.count": {
+   "en": "{count} terminals",
+   "zh": "{count} 个终端"
+  },
+  "detail.tasks.count": {
+   "en": "{count} team tasks",
+   "zh": "{count} 个团队任务"
+  },
+  "detail.tasks.nextPage": {
+   "en": "More tasks available; next cursor is {cursor}",
+   "zh": "后面还有任务；下一页位置为 {cursor}"
+  },
+  "detail.locations.count": {
+   "en": "{count} locations",
+   "zh": "{count} 个位置"
+  },
+  "detail.location": {
+   "en": "Line {line}, column {column}",
+   "zh": "第 {line} 行，第 {column} 列"
+  },
+  "detail.receipt.delivered": {
+   "en": "Message delivered",
+   "zh": "消息已送达"
+  },
+  "detail.receipt.interrupt": {
+   "en": "Interrupt requested",
+   "zh": "已请求中断"
+  },
+  "detail.receipt.started": {
+   "en": "Started",
+   "zh": "已启动"
+  },
+  "detail.receipt.cancel": {
+   "en": "Cancellation requested",
+   "zh": "已请求取消"
+  },
+  "detail.receipt.alreadyFinished": {
+   "en": "Already finished",
+   "zh": "任务已结束"
+  },
+  "detail.receipt.signal": {
+   "en": "Signal delivered",
+   "zh": "信号已发送"
+  },
+  "detail.receipt.closed": {
+   "en": "Closed",
+   "zh": "已关闭"
+  },
+  "detail.receipt.closing": {
+   "en": "Closing",
+   "zh": "关闭中"
+  },
+  "detail.wait.noProgress": {
+   "en": "No active subagents",
+   "zh": "没有正在运行的子智能体"
+  },
+  "detail.wait.title": {
+   "en": "Subagent activity",
+   "zh": "子智能体状态"
+  },
+  "detail.wait.timeout": {
+   "en": "Wait timed out",
+   "zh": "等待超时"
+  },
+  "detail.wait.changed": {
+   "en": "Change detected",
+   "zh": "检测到变化"
+  },
+  "detail.agent.reply": {
+   "en": "Agent response",
+   "zh": "代理回复"
+  },
+  "detail.models.title": {
+   "en": "Available models",
+   "zh": "可用模型"
+  },
+  "detail.output.lines": {
+   "en": "Lines {begin}–{end} of {total}",
+   "zh": "第 {begin}–{end} 行，共 {total} 行"
+  },
+  "detail.output.truncated": {
+   "en": "Output truncated",
+   "zh": "输出已截断"
+  },
+  "detail.providers.count": {
+   "en": "{count} inspect providers",
+   "zh": "{count} 个检查提供方"
+  },
+  "detail.plugins.count": {
+   "en": "{count} dynamic plugins",
+   "zh": "{count} 个动态插件"
+  },
+  "detail.workflow.script": {
+   "en": "Workflow script",
+   "zh": "工作流脚本"
+  },
+  "detail.ralph.reportedComplete": {
+   "en": "Worker reported completion",
+   "zh": "代理报告完成"
+  },
+  "detail.ralph.reportedBlocker": {
+   "en": "Worker reported a blocker",
+   "zh": "代理报告受阻"
+  },
+  "detail.ralph.limit": {
+   "en": "Round limit reached",
+   "zh": "已达到轮次上限"
+  },
+  "detail.report.nextSteps": {
+   "en": "Remaining work",
+   "zh": "待完成事项"
+  },
+  "detail.trace.replacedBy": {
+   "en": "Replaced by",
+   "zh": "被替换为"
+  },
+  "detail.trace.replacementChain": {
+   "en": "Replacement chain",
+   "zh": "替换链"
+  },
+  "detail.trace.replaces": {
+   "en": "Replaced events",
+   "zh": "替换的事件"
+  },
+  "detail.trace.sources": {
+   "en": "Source events",
+   "zh": "引用来源"
+  },
+  "detail.trace.derived": {
+   "en": "Derived events",
+   "zh": "派生事件"
+  },
+  "detail.trace.ancestors": {
+   "en": "Ancestor sessions",
+   "zh": "祖先会话"
+  },
+  "detail.trace.descendants": {
+   "en": "Descendant sessions",
+   "zh": "后代会话"
+  },
+  "detail.matches.count": {
+   "en": "{count} matches",
+   "zh": "{count} 条匹配"
+  },
+  "detail.matches.capped": {
+   "en": "Result limit reached; narrow the search for more",
+   "zh": "已达到结果上限，可缩小搜索范围"
+  },
+  "detail.event.neighbors": {
+   "en": "Surrounding events",
+   "zh": "前后事件"
+  },
+  "todo.completed": {
+   "en": "{done}/{total} completed",
+   "zh": "{done}/{total} 已完成"
+  },
+  "command.attachmentsUnsupported": {
+   "en": "/{command} does not accept attachments; remove them first",
+   "zh": "/{command} 不接受附件，请先移除附件"
+  },
+  "ask.rowTitle": {
+   "en": "Ask question",
+   "zh": "提问"
+  },
+  "ask.waiting": {
+   "en": "waiting",
+   "zh": "等待回答"
   }
  }
 }

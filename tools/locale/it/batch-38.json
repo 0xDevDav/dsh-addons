@@ -1,12 +1,19 @@
 {
- "batch": "sidebarImage",
- "namespace": "sidebarImage",
- "total": 5,
+ "batch": "settings.agentLoop",
+ "namespace": "settings.agentLoop",
+ "total": 12,
  "keys": {
-  "title": "Immagine",
-  "preview": "Anteprima immagine: {name}",
-  "loading": "Lettura…",
-  "failed": "Impossibile visualizzare questa immagine.",
-  "unsupported": "L'anteprima immagine richiede il contenuto completo del file."
+  "title": "Ciclo dell'agente",
+  "description": "Controlla come l'agente distribuisce le chiamate a strumento.",
+  "maxParallel": "Chiamate a strumento in parallelo",
+  "maxParallelHint": "Numero massimo di chiamate parallelizzabili eseguite contemporaneamente in un passo.",
+  "overridden": "Sovrascritto",
+  "reset": "Reimposta predefinito",
+  "readOnly": "Questa distribuzione archivia le impostazioni in sola lettura.",
+  "unavailable": "Questo plugin non è caricato, quindi al momento non può essere configurato.",
+  "save": "Salva",
+  "saving": "Salvataggio…",
+  "saveFailed": "La distribuzione non ha accettato questi valori; sono stati lasciati per la correzione.",
+  "invalidNumber": "Inserisci un numero o lascia vuoto per usare il valore predefinito."
  }
 }

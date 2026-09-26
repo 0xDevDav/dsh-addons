@@ -1,79 +1,67 @@
 {
- "batch": "workflowRun",
- "namespace": "workflowRun",
- "total": 18,
+ "batch": "sidebarPdf",
+ "namespace": "sidebarPdf",
+ "total": 15,
  "keys": {
-  "run.title": {
-   "en": "{name}",
-   "zh": "{name}"
+  "zoomControls": {
+   "en": "Zoom controls",
+   "zh": "缩放控件"
   },
-  "run.members.one": {
-   "en": "{count} member",
-   "zh": "{count} 个成员"
+  "zoomMenu": {
+   "en": "Choose zoom",
+   "zh": "选择缩放比例"
   },
-  "run.members.other": {
-   "en": "{count} members",
-   "zh": "{count} 个成员"
+  "zoomOut": {
+   "en": "Zoom out",
+   "zh": "缩小"
   },
-  "run.empty": {
-   "en": "No members started",
-   "zh": "没有启动成员"
+  "zoomIn": {
+   "en": "Zoom in",
+   "zh": "放大"
   },
-  "phase.unassigned": {
-   "en": "Unphased",
-   "zh": "未分阶段"
+  "zoomFitWidth": {
+   "en": "Fit width",
+   "zh": "适应宽度"
   },
-  "phase.empty": {
-   "en": "Empty phase name",
-   "zh": "空阶段名"
+  "zoomValue": {
+   "en": "{percent}%",
+   "zh": "{percent}%"
   },
-  "statusCount.running": {
-   "en": "Running {count}",
-   "zh": "运行中 {count}"
+  "title": {
+   "en": "PDF",
+   "zh": "PDF"
   },
-  "statusCount.completed": {
-   "en": "Completed {count}",
-   "zh": "已完成 {count}"
+  "pageImage": {
+   "en": "PDF page {page}",
+   "zh": "PDF 第 {page} 页"
   },
-  "statusCount.failed": {
-   "en": "Failed {count}",
-   "zh": "失败 {count}"
+  "loading": {
+   "en": "Rendering document...",
+   "zh": "文档渲染中..."
   },
-  "statusCount.cancelled": {
-   "en": "Cancelled {count}",
-   "zh": "已取消 {count}"
+  "rendering": {
+   "en": "Rendering page…",
+   "zh": "正在绘制页面…"
   },
-  "statusCount.interrupted": {
-   "en": "Interrupted {count}",
-   "zh": "已中断 {count}"
+  "failed": {
+   "en": "Cannot display PDF: {message}",
+   "zh": "无法显示 PDF：{message}"
   },
-  "member.empty": {
-   "en": "Empty member name",
-   "zh": "空成员名"
+  "password": {
+   "en": "This PDF requires a password; password-protected previews are not supported.",
+   "zh": "此 PDF 需要密码，暂不支持预览"
   },
-  "member.open": {
-   "en": "Open {name}",
-   "zh": "打开 {name}"
+  "workerFailed": {
+   "en": "The PDF rendering process could not continue. Please retry.",
+   "zh": "PDF 渲染进程无法继续，请重试"
   },
-  "status.running": {
-   "en": "Running",
-   "zh": "运行中"
+  "unsupported": {
+   "en": "PDF preview requires the complete file contents.",
+   "zh": "PDF 预览需要完整文件内容"
   },
-  "status.completed": {
-   "en": "Completed",
-   "zh": "已完成"
-  },
-  "status.failed": {
-   "en": "Failed",
-   "zh": "失败"
-  },
-  "status.cancelled": {
-   "en": "Cancelled",
-   "zh": "已取消"
-  },
-  "status.interrupted": {
-   "en": "Interrupted",
-   "zh": "已中断"
+  "retry": {
+   "en": "Retry",
+   "zh": "重试"
   }
  }
 }

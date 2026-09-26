@@ -1,23 +1,107 @@
 {
- "batch": "documentHtml",
- "namespace": "documentHtml",
- "total": 4,
+ "batch": "settings.account#2",
+ "namespace": "settings.account",
+ "total": 25,
  "keys": {
-  "title": {
-   "en": "HTML",
-   "zh": "HTML"
+  "signOutRunningDescription": {
+   "en": "Tasks are currently running. Signing out will interrupt them. Sign out now?",
+   "zh": "当前有进程正在执行中，点击“退出登录”，将会打断进程，是否即刻退出登录？"
   },
-  "frame": {
-   "en": "HTML document preview",
-   "zh": "HTML 文档预览"
+  "cancel": {
+   "en": "Cancel",
+   "zh": "取消"
   },
-  "loading": {
-   "en": "Reading…",
-   "zh": "正在读取…"
+  "open": {
+   "en": "Open browser",
+   "zh": "打开浏览器"
+  },
+  "initializing": {
+   "en": "Starting sign in…",
+   "zh": "正在发起登录…"
+  },
+  "waiting": {
+   "en": "Continue in your browser",
+   "zh": "请在浏览器中继续"
+  },
+  "completing": {
+   "en": "Completing sign in…",
+   "zh": "正在完成登录…"
+  },
+  "expired": {
+   "en": "Sign in expired. Try again.",
+   "zh": "登录已过期，请重试。"
   },
   "failed": {
-   "en": "This HTML document could not be previewed.",
-   "zh": "无法预览这份 HTML 文档"
+   "en": "Could not complete the operation. Try again.",
+   "zh": "操作未完成，请重试。"
+  },
+  "settingsSignedOutTitle": {
+   "en": "You are not signed in to DeepSeek Harness",
+   "zh": "当前未登录 DeepSeek Harness 账号"
+  },
+  "settingsSignedOutDescription": {
+   "en": "Sign in to DeepSeek Harness to get your dedicated API Key",
+   "zh": "登录 DeepSeek Harness 账号获取专属 API Key"
+  },
+  "signInDescription": {
+   "en": "Use your DeepSeek account to get started.",
+   "zh": "登录 DeepSeek 账号以开始使用"
+  },
+  "profileUnavailable": {
+   "en": "Account details are not available yet.",
+   "zh": "账号资料暂不可用"
+  },
+  "balance": {
+   "en": "Topped-up balance",
+   "zh": "充值余额"
+  },
+  "bonusBalance": {
+   "en": "Granted balance",
+   "zh": "赠金余额"
+  },
+  "balanceUnavailable": {
+   "en": "View on Platform",
+   "zh": "前往开放平台查看"
+  },
+  "balanceSignedOut": {
+   "en": "Sign in to view",
+   "zh": "登录后查看"
+  },
+  "accountInfo": {
+   "en": "More account information",
+   "zh": "更多账号信息"
+  },
+  "more": {
+   "en": "More",
+   "zh": "更多"
+  },
+  "usage": {
+   "en": "View usage",
+   "zh": "查询用量"
+  },
+  "topUp": {
+   "en": "Top up",
+   "zh": "充值"
+  },
+  "quotaTitle": {
+   "en": "No balance available",
+   "zh": "当前无可用余额"
+  },
+  "quotaDescription": {
+   "en": "DeepSeek Harness cannot start a new task with this account when no balance is available. Would you like to top up? You can also top up later in Settings → Account.",
+   "zh": "没有可用额度时，DeepSeek Harness 无法开始新的任务，是否前往充值？或者可以稍后前往 设置 → 账号与余额 进行充值。"
+  },
+  "quotaTopUp": {
+   "en": "Top up",
+   "zh": "去充值"
+  },
+  "bonusNoticeTitle": {
+   "en": "Bonus credited",
+   "zh": "赠金已到账"
+  },
+  "bonusEmpty": {
+   "en": "No bonus available",
+   "zh": "暂无可用赠金"
   }
  }
 }

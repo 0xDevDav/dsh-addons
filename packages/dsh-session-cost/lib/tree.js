@@ -25,8 +25,24 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 import { zstdDecompressSync } from 'node:zlib'
 
-/** The session log filename; the `v3` in it is the format gate this reader checks. */
-export const LOG_FILENAME = 'session.v3.jsonl.zstd'
+/**
+ * Session log filenames this reader folds: `session.v<generation>.jsonl.zstd`, from
+ * generation 3 on. DSH 0.1.7 writes V4 and restores V3 without rewriting it, and a
+ * session carried forward publishes its successor beside the old file, so one
+ * directory can hold both: only the newest generation there is the session.
+ */
+const LOG_PATTERN = /^session\.v([1-9][0-9]*)\.jsonl\.zstd$/
+
+/**
+ * The generation a filename carries, when it is a log this reader folds.
+ * @param name - a bare filename.
+ * @returns the generation, or `undefined` for any other file.
+ */
+export function logGeneration(name) {
+  const match = LOG_PATTERN.exec(name)
+  const generation = match === null ? undefined : Number(match[1])
+  return generation !== undefined && generation >= 3 ? generation : undefined
+}
 
 /** Bytes probed for a log's first frame — a session header is a few hundred. */
 const HEADER_PROBE_BYTES = 8192
@@ -110,11 +126,16 @@ export function listSessionLogs(sessionsRoot) {
     } catch {
       return
     }
+    let newest
     for (const entry of entries) {
       const path = join(dir, entry.name)
       if (entry.isDirectory()) visit(path, depth + 1)
-      else if (entry.name === LOG_FILENAME) found.push(path)
+      else {
+        const generation = logGeneration(entry.name)
+        if (generation !== undefined && (newest === undefined || generation > newest.generation)) newest = { generation, path }
+      }
     }
+    if (newest !== undefined) found.push(newest.path)
   }
   visit(sessionsRoot, 0)
   return found

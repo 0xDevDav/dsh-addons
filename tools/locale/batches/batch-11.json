@@ -1,207 +1,287 @@
 {
- "batch": "cordis",
- "namespace": "cordis",
- "total": 50,
+ "batch": "conversation#3",
+ "namespace": "conversation",
+ "total": 70,
  "keys": {
-  "row.defineTitle": {
-   "en": "Register Cordis Plugin",
-   "zh": "注册 Cordis 插件"
+  "tool.title.searchEvents": {
+   "en": "Search events",
+   "zh": "搜索事件"
   },
-  "row.runTitle": {
-   "en": "Run Cordis Plugin",
-   "zh": "运行 Cordis 插件"
+  "tool.title.traceEvent": {
+   "en": "Trace event",
+   "zh": "追踪事件"
   },
-  "row.updateTitle": {
-   "en": "Update Cordis Plugin",
-   "zh": "更新 Cordis 插件"
+  "tool.title.searchSessions": {
+   "en": "Search sessions",
+   "zh": "搜索会话"
   },
-  "row.stopTitle": {
-   "en": "Stop Cordis Plugin",
-   "zh": "停止 Cordis 插件"
+  "tool.title.traceSession": {
+   "en": "Trace session",
+   "zh": "追踪会话"
   },
-  "row.removeTitle": {
-   "en": "Remove Cordis Plugin",
-   "zh": "移除 Cordis 插件"
+  "tool.title.listModels": {
+   "en": "List models",
+   "zh": "查看可用模型"
   },
-  "purpose.missing": {
-   "en": "(no purpose given)",
-   "zh": "(未填写用途)"
+  "tool.title.subagent": {
+   "en": "Create subagent",
+   "zh": "创建代理"
   },
-  "status.idle": {
-   "en": "Ready",
-   "zh": "待激活"
+  "tool.title.listAgents": {
+   "en": "List subagents",
+   "zh": "查看代理"
   },
-  "status.awaitingApproval": {
-   "en": "Awaiting approval",
-   "zh": "待审批"
+  "tool.title.sendMessage": {
+   "en": "Send message",
+   "zh": "发送消息"
   },
-  "status.failed": {
-   "en": "Run failed",
-   "zh": "运行失败"
+  "tool.title.interruptAgent": {
+   "en": "Interrupt agent",
+   "zh": "中断代理"
   },
-  "status.clientPending": {
-   "en": "Client ready to activate",
-   "zh": "Client 待激活"
+  "tool.title.listJobs": {
+   "en": "List background jobs",
+   "zh": "查看后台任务"
   },
-  "status.running": {
+  "tool.title.readJob": {
+   "en": "Read job output",
+   "zh": "读取任务输出"
+  },
+  "tool.title.killJob": {
+   "en": "Cancel background job",
+   "zh": "取消后台任务"
+  },
+  "tool.title.openTerminal": {
+   "en": "Open terminal",
+   "zh": "创建终端"
+  },
+  "tool.title.readTerminal": {
+   "en": "Read terminal",
+   "zh": "读取终端"
+  },
+  "tool.title.listTerminals": {
+   "en": "List terminals",
+   "zh": "查看终端"
+  },
+  "tool.title.signalTerminal": {
+   "en": "Signal terminal",
+   "zh": "发送终端信号"
+  },
+  "tool.title.closeTerminal": {
+   "en": "Close terminal",
+   "zh": "关闭终端"
+  },
+  "tool.title.lsp": {
+   "en": "Query code symbols",
+   "zh": "查询代码符号"
+  },
+  "tool.title.findDefinition": {
+   "en": "Find definition",
+   "zh": "查找定义"
+  },
+  "tool.title.findReferences": {
+   "en": "Find references",
+   "zh": "查找引用"
+  },
+  "tool.title.findImplementation": {
+   "en": "Find implementation",
+   "zh": "查找实现"
+  },
+  "tool.title.hoverSymbol": {
+   "en": "Inspect symbol",
+   "zh": "查看符号信息"
+  },
+  "tool.title.spawnTeammate": {
+   "en": "Create teammate",
+   "zh": "创建队友"
+  },
+  "tool.title.createTeamTask": {
+   "en": "Create team task",
+   "zh": "创建团队任务"
+  },
+  "tool.title.getTeamTask": {
+   "en": "Read team task",
+   "zh": "读取团队任务"
+  },
+  "tool.title.updateTeamTask": {
+   "en": "Update team task",
+   "zh": "更新团队任务"
+  },
+  "tool.title.listTeamTasks": {
+   "en": "List team tasks",
+   "zh": "查看团队任务"
+  },
+  "tool.title.waitAgent": {
+   "en": "Wait for subagent",
+   "zh": "等待子智能体"
+  },
+  "detail.recordedResult": {
+   "en": "Recorded result",
+   "zh": "调用结果"
+  },
+  "detail.empty": {
+   "en": "No results",
+   "zh": "暂无结果"
+  },
+  "detail.none": {
+   "en": "None",
+   "zh": "无"
+  },
+  "detail.yes": {
+   "en": "Yes",
+   "zh": "是"
+  },
+  "detail.no": {
+   "en": "No",
+   "zh": "否"
+  },
+  "detail.moreInInspect": {
+   "en": "{count} more items available in Inspect",
+   "zh": "另有 {count} 项，可在「查看」中读取"
+  },
+  "detail.status.running": {
    "en": "Running",
    "zh": "运行中"
   },
-  "status.removed": {
-   "en": "Removed",
-   "zh": "已移除"
+  "detail.status.idle": {
+   "en": "Idle",
+   "zh": "空闲"
   },
-  "status.superseded": {
-   "en": "Newer run available",
-   "zh": "已有更新"
+  "detail.status.ready": {
+   "en": "Ready",
+   "zh": "就绪"
   },
-  "run.removed": {
-   "en": "This package no longer exists",
-   "zh": "包已不存在"
+  "detail.status.inactive": {
+   "en": "Inactive",
+   "zh": "未运行"
   },
-  "run.superseded": {
-   "en": "A newer run card is available below",
-   "zh": "已有更新的运行卡片，请查看下方"
+  "detail.status.provisioning": {
+   "en": "Provisioning",
+   "zh": "准备中"
   },
-  "panel.hint": {
-   "en": "Run controls live in the Cordis panel above Settings",
-   "zh": "运行控制在左下角设置上方的 Cordis 面板"
+  "detail.status.failed": {
+   "en": "Failed",
+   "zh": "失败"
   },
-  "panel.plugins.aria": {
-   "en": "Cordis plugins",
-   "zh": "Cordis 插件"
+  "detail.status.completed": {
+   "en": "Completed",
+   "zh": "已完成"
   },
-  "panel.approvals.aria": {
-   "en": "Cordis approvals",
-   "zh": "Cordis 审批"
+  "detail.status.deleted": {
+   "en": "Deleted",
+   "zh": "已删除"
   },
-  "panel.trigger": {
-   "en": "Cordis Plugin",
-   "zh": "Cordis Plugin"
+  "detail.status.killed": {
+   "en": "Cancelled",
+   "zh": "已取消"
   },
-  "panel.runningCount": {
-   "en": "{count} running",
-   "zh": "{count} running"
+  "detail.status.accepted": {
+   "en": "Accepted",
+   "zh": "已接收"
   },
-  "panel.title": {
-   "en": "Cordis plugins",
-   "zh": "Cordis 插件"
+  "detail.status.queued": {
+   "en": "Queued",
+   "zh": "已入队"
   },
-  "panel.empty": {
-   "en": "No plugins defined yet",
-   "zh": "还没有定义任何插件"
+  "detail.status.exited": {
+   "en": "Exited",
+   "zh": "已退出"
   },
-  "panel.loading": {
-   "en": "Reading…",
-   "zh": "读取中…"
+  "detail.field.id": {
+   "en": "ID",
+   "zh": "ID"
   },
-  "panel.readFailed": {
-   "en": "Reading the plugin inventory failed: {message}",
-   "zh": "读取插件清单失败：{message}"
-  },
-  "panel.group.current": {
-   "en": "This session",
-   "zh": "当前会话"
-  },
-  "panel.group.others": {
-   "en": "Other sessions",
-   "zh": "其他会话"
-  },
-  "panel.version": {
-   "en": "Version",
+  "detail.field.revision": {
+   "en": "Revision",
    "zh": "版本"
   },
-  "panel.current": {
-   "en": "Current: {packageId}",
-   "zh": "当前：{packageId}"
+  "detail.field.platform": {
+   "en": "Platform",
+   "zh": "平台"
   },
-  "panel.next": {
-   "en": "Next: {packageId}",
-   "zh": "待切换：{packageId}"
+  "detail.field.provider": {
+   "en": "Provider",
+   "zh": "提供方"
   },
-  "action.approve": {
-   "en": "Allow",
-   "zh": "允许"
+  "detail.field.model": {
+   "en": "Model",
+   "zh": "模型"
   },
-  "action.approveOnce": {
-   "en": "Allow this version only",
-   "zh": "仅允许此版本"
+  "detail.field.role": {
+   "en": "Role",
+   "zh": "角色"
   },
-  "action.approvePlugin": {
-   "en": "Allow future versions of this plugin",
-   "zh": "允许此插件的后续版本"
+  "detail.field.context": {
+   "en": "Context",
+   "zh": "上下文"
   },
-  "action.decline": {
-   "en": "Decline",
-   "zh": "拒绝"
+  "detail.field.owner": {
+   "en": "Owner",
+   "zh": "负责人"
   },
-  "action.run": {
-   "en": "Run",
-   "zh": "运行"
+  "detail.field.ready": {
+   "en": "Ready",
+   "zh": "可开始"
   },
-  "action.stop": {
-   "en": "Stop",
-   "zh": "停止"
+  "detail.field.dependencies": {
+   "en": "Dependencies",
+   "zh": "前置任务"
   },
-  "action.remove": {
-   "en": "Remove",
-   "zh": "移除"
+  "detail.field.writeScopes": {
+   "en": "Write scopes",
+   "zh": "文件范围"
   },
-  "action.retry": {
-   "en": "Retry",
-   "zh": "重试"
+  "detail.field.warnings": {
+   "en": "Warnings",
+   "zh": "提示"
   },
-  "action.rollback": {
-   "en": "Roll back",
-   "zh": "回退"
+  "detail.field.diagnostics": {
+   "en": "Diagnostics",
+   "zh": "诊断"
   },
-  "action.inspect": {
-   "en": "Inspect",
-   "zh": "查看"
+  "detail.field.methods": {
+   "en": "Methods",
+   "zh": "方法"
   },
-  "render.failedAbdicated": {
-   "en": "Rendering failed in {slot}; the default UI was restored:",
-   "zh": "{slot} 渲染失败，已恢复默认界面："
+  "detail.field.inputSchema": {
+   "en": "Input schema",
+   "zh": "输入 Schema"
   },
-  "render.failedHeld": {
-   "en": "Rendering failed in {slot}:",
-   "zh": "{slot} 渲染失败："
+  "detail.field.outputSchema": {
+   "en": "Output schema",
+   "zh": "输出 Schema"
   },
-  "a11y.defining": {
-   "en": "Defining the plugin",
-   "zh": "正在定义插件"
+  "detail.field.currentPackage": {
+   "en": "Current package",
+   "zh": "当前包"
   },
-  "a11y.failed": {
-   "en": "Definition failed",
-   "zh": "定义失败"
+  "detail.field.nextPackage": {
+   "en": "Next package",
+   "zh": "待运行的包"
   },
-  "a11y.stopped": {
-   "en": "Definition interrupted",
-   "zh": "定义已中断"
+  "detail.field.latestRun": {
+   "en": "Latest run",
+   "zh": "最近运行"
   },
-  "body.source": {
-   "en": "Plugin source",
-   "zh": "插件代码"
+  "detail.field.packages": {
+   "en": "Packages",
+   "zh": "版本包"
   },
-  "body.hostCode": {
-   "en": "Host",
-   "zh": "Host"
+  "detail.field.registrations": {
+   "en": "Registrations",
+   "zh": "注册项"
   },
-  "body.clientCode": {
-   "en": "Client",
-   "zh": "Client"
+  "detail.field.props": {
+   "en": "Props",
+   "zh": "属性"
   },
-  "body.output": {
-   "en": "Result",
-   "zh": "结果"
+  "detail.field.data": {
+   "en": "Data",
+   "zh": "数据"
   },
-  "body.copy": {
-   "en": "Copy",
-   "zh": "复制"
-  },
-  "body.copied": {
-   "en": "Copied",
-   "zh": "已复制"
+  "detail.field.source": {
+   "en": "Source",
+   "zh": "来源"
   }
  }
 }

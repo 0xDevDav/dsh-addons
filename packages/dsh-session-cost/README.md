@@ -92,7 +92,7 @@ The statistics strip is a terminal component (`StatsPills`, the `stats` cell of 
 the shipped entries") — which is what puts the cost on the same line as the time and usage
 pills.
 
-On 0.1.6-alpha.2 that is the whole story: `StatsPills` became a dock cell itself (it was
+From 0.1.6-alpha.2 on (and again on 0.1.7-rc.2) that is the whole story: `StatsPills` became a dock cell itself (it was
 inline markup in the dock before), the dock is a centered flex row, and the two cells render
 side by side. Should the row ever publish a hook again, the pack takes the older path and
 portals its pill **inside** the shipped row instead, so the cost still reads as a third item
@@ -112,6 +112,14 @@ cost floating in the middle. Measured on 0.1.6-alpha.2 at a 280px sidebar: the s
 was 284px wide around a 70px pill and left a ~200px hole before the meter; hugging it turns the
 footer back into one group of four — `49 turni 1362 passi · 255 tok/s`, `555M tok · Cache hit
 99.6%`, `3,68 $`, `44%` — with the 12px gap the row already uses.
+
+The panel wears the shipped **menu material**, through the same tokens the statistics pills'
+own panels use: `--dsw-specific-menu` for the fill, `--dsw-menu-backdrop-filter` for the
+frost, `--dsw-radius-lg` for the corners. Since 0.1.7 that fill is translucent (0.45 alpha in
+the dark theme) and the frost is what makes it read as a surface; a panel that takes the fill
+without the filter lets the composer's model selector show through its figures. Reading the
+tokens rather than copying their values keeps the panel identical to its neighbours whatever
+a later release does to them.
 
 Reusing the shipped `stats` id would instead *replace* the cell, forcing a reimplementation
 of shipped UI that a DSH update could silently leave behind.
@@ -165,7 +173,12 @@ Two sources answer for one session, the live one first:
    already folded, and its log may trail its in-memory state.
 2. **The durable log**, for a session that has gone cold: read, decoded (multi-frame zstd,
    torn tails dropped) and folded *through the same unit the projection uses*, so a
-   session's contribution to the tree is exactly its own projection value.
+   session's contribution to the tree is exactly its own projection value. The reader takes
+   `session.v<N>.jsonl.zstd` from generation 3 on and, per session directory, **only the
+   newest generation**: DSH 0.1.7 writes V4 and, when it carries an older session forward,
+   publishes the V4 successor beside the V3 file rather than replacing it. Reading both
+   would bill that session twice; the two generations fold to the same figure (checked on a
+   1 384-request session: $3.202176 from either file).
 
 Both are cached against each file's mtime and size, and the route's answer is cached for a
 second, so a finished tree costs a directory scan and a few stats. Browsing a *subagent's*

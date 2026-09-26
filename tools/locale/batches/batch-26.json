@@ -1,51 +1,55 @@
 {
- "batch": "reference",
- "namespace": "reference",
- "total": 11,
+ "batch": "settings.permission",
+ "namespace": "settings.permission",
+ "total": 12,
  "keys": {
-  "section.files": {
-   "en": "Files & folders",
-   "zh": "文件与文件夹"
+  "title": {
+   "en": "Permission",
+   "zh": "权限"
   },
-  "section.subagents": {
-   "en": "Subagents",
-   "zh": "子智能体"
+  "description": {
+   "en": "Choose the default permission mode for new sessions",
+   "zh": "选择新会话的默认权限模式"
   },
-  "section.sessions": {
-   "en": "Sessions",
-   "zh": "对话"
+  "loading": {
+   "en": "Loading",
+   "zh": "加载中"
   },
-  "candidate.noCwd": {
-   "en": "(no cwd)",
-   "zh": "（无工作目录）"
+  "unavailable": {
+   "en": "Unavailable",
+   "zh": "不可用"
   },
-  "crumb.root": {
-   "en": "Workspace",
-   "zh": "工作区"
+  "preset.readOnly": {
+   "en": "Read Only",
+   "zh": "仅可查看"
   },
-  "time.now": {
-   "en": "now",
-   "zh": "刚刚"
+  "preset.workspaceWrite": {
+   "en": "Workspace Write",
+   "zh": "工作区内修改"
   },
-  "time.minutes": {
-   "en": "{n}min",
-   "zh": "{n}分钟"
+  "preset.fullAccess": {
+   "en": "Full access",
+   "zh": "完全权限"
   },
-  "time.hours": {
-   "en": "{n}h",
-   "zh": "{n}小时"
+  "confirm.title": {
+   "en": "Enable Full access?",
+   "zh": "确认启用完全权限？"
   },
-  "time.days": {
-   "en": "{n}d",
-   "zh": "{n}天"
+  "confirm.description": {
+   "en": "Full access lets new sessions reduce confirmation steps and perform more actions directly, including sensitive operations, file changes, or external commands. Only use it when you trust subsequent tasks.",
+   "zh": "启用完全权限后，新会话将减少确认步骤，并且可以直接执行更多操作，包括敏感操作、文件修改或外部命令。仅建议在你信任后续任务时使用。"
   },
-  "time.months": {
-   "en": "{n}mo",
-   "zh": "{n}个月"
+  "confirm.acknowledge": {
+   "en": "I understand the risks and want to continue",
+   "zh": "我已了解风险，并愿意继续"
   },
-  "time.years": {
-   "en": "{n}y",
-   "zh": "{n}年"
+  "confirm.cancel": {
+   "en": "Cancel",
+   "zh": "取消"
+  },
+  "confirm.enable": {
+   "en": "Enable Full access",
+   "zh": "启用完全权限"
   }
  }
 }
