@@ -47,8 +47,18 @@ cost = miss_tokens  x input_rate(tier)
 
 `tier` follows the instant the request was **issued** (the recorded `step/start`, falling
 back to the message time). `prices.json` carries the official peak windows: 01:00–04:00
-and 06:00–10:00 UTC, Monday–Friday, everything else at half price. Reasoning tokens are
-already inside `completion_tokens`, so they are billed once, as output.
+and 06:00–10:00 UTC, Monday–Friday, **except Chinese public holidays**, everything else at
+half price. The holidays are calendar days in China Standard Time (`peak.holidaysChina`),
+so a request is off-peak whenever its UTC+8 date is listed. Reasoning tokens are already
+inside `completion_tokens`, so they are billed once, as output.
+
+Two kinds of record are billed requests: every `assistant/message` with usage, and every
+`compaction/summary` with usage. A compaction sends the whole context to be summarized —
+on a long session that is several hundred thousand tokens, almost all cache-miss input —
+and DSH records that call only on the summary event, never as an assistant message. It is
+billed under the model the summary names, in the tier its `compaction/start` was issued in.
+On the 1 384-request session the pack was measured against, its two compactions were
+$0.217 of $3.419.
 
 The fold stores only **price-independent facts** — token buckets per model and tier. Money
 is computed when the view is produced, so editing `prices.json` reprices every session on
@@ -56,13 +66,18 @@ its next view: no refold, no cache invalidation, no restart (the file is re-chec
 5 seconds).
 
 Because the persisted checkpoint holds facts and not money, a price change never needs a
-`stateVersion` bump. Only a change to the *state shape* does: bump `stateVersion` in
+`stateVersion` bump. A change to the *state shape* does, and so does a change to the
+**peak rules** (windows, weekdays, holidays): those decide which tier each request is folded
+into, so they only reach a session already folded when it refolds. Bump `stateVersion` in
 [`lib/index.js`](lib/index.js) and every stored row for this key refolds from the log.
 
 ## Updating prices
 
 Edit [`prices.json`](prices.json): `models.<id>.input|cacheHit|output` each carry `peak`
-and `offPeak`, and `peak.windowsUtc` / `peak.weekdaysUtc` define the tiers. Model ids not
+and `offPeak`, and `peak.windowsUtc` / `peak.weekdaysUtc` / `peak.holidaysChina` define the
+tiers. The holiday list covers the State Council's schedule for the current year; its notice
+for the next year comes out each November, and its dates go into `peak.holidaysChina` then
+(with a `stateVersion` bump, as above). Model ids not
 present in `models` — or reachable through `aliases` — are reported as *unpriced*: their
 requests are counted and excluded from the total, and the pill switches to `≥` (or `—`
 when nothing at all could be priced). No number is ever invented.

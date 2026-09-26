@@ -32,6 +32,10 @@ const cases = [
   ['2026-09-19T02:00:00Z', false, 'Saturday 02:00 — weekend is off-peak'],
   ['2026-09-20T07:00:00Z', false, 'Sunday 07:00 — weekend is off-peak'],
   ['2026-09-18T23:30:00Z', false, 'Friday 23:30 — off-peak'],
+  ['2026-09-25T07:00:00Z', false, 'Friday 25 Sep 07:00 — Mid-Autumn holiday, off-peak all day'],
+  ['2026-10-01T02:00:00Z', false, 'Thursday 1 Oct 02:00 — National Day holiday, off-peak all day'],
+  ['2026-10-07T09:59:00Z', false, 'Wednesday 7 Oct 09:59 — last holiday, still off-peak'],
+  ['2026-10-08T02:00:00Z', true, 'Thursday 8 Oct 02:00 — first working day after, peak again'],
 ]
 for (const [iso, expected, label] of cases) {
   check(label, () => assert.equal(isPeakTime(at(iso), table.peak), expected))
@@ -98,14 +102,19 @@ check('the view validates against viewSchema', () => definition.wire.viewSchema.
 const expected = { miss: 0, hit: 0, out: 0, requests: 0, missUsd: 0, hitUsd: 0, outUsd: 0 }
 let route = null
 let stepTier = null
+let compactionTier = null
 for (const event of events) {
   if (event.type === 'step/start') stepTier = isPeakTime(event.time, table.peak) ? 'peak' : 'offPeak'
+  if (event.type === 'compaction/start') compactionTier = isPeakTime(event.time, table.peak) ? 'peak' : 'offPeak'
   if (event.type === 'request/header') route = event.data.header.config.model
-  if (event.type !== 'assistant/message' || event.data.usage === undefined || event.data.usage === null) continue
+  // A compaction bills its own summarization call, under the model it names.
+  const compaction = event.type === 'compaction/summary'
+  if ((event.type !== 'assistant/message' && !compaction) || event.data.usage === undefined || event.data.usage === null) continue
   const usage = event.data.usage
-  const tier = stepTier ?? (isPeakTime(event.time, table.peak) ? 'peak' : 'offPeak')
-  const price = table.models[table.aliases[route] ?? route]
-  assert.ok(price, `route ${route} must be priced in this session`)
+  const tier = (compaction ? compactionTier : stepTier) ?? (isPeakTime(event.time, table.peak) ? 'peak' : 'offPeak')
+  const model = compaction && typeof event.data.model === 'string' ? event.data.model : route
+  const price = table.models[table.aliases[model] ?? model]
+  assert.ok(price, `route ${model} must be priced in this session`)
   expected.miss += usage.inputTokens ?? 0
   expected.hit += usage.cacheReadTokens ?? 0
   expected.out += usage.outputTokens ?? 0
@@ -177,6 +186,16 @@ check('a message before any route is billed to the unknown-model bucket', () => 
   assert.equal(v.unpricedRequests, 1)
   assert.equal(v.total, 0)
   assert.equal(s.buckets[UNKNOWN_MODEL].peak.miss, 10)
+})
+check('a compaction bills its summarization call, in the tier it started in', () => {
+  let s = definition.init({ version: 3, id: 'x', createdAt: 0, isSeeded: false }, 0)
+  s = definition.apply(s, { type: 'compaction/start', seq: 1, time: at('2026-09-14T09:59:30Z'), data: {} })
+  s = definition.apply(s, { type: 'compaction/summary', seq: 2, time: at('2026-09-14T10:00:30Z'), data: { model: 'deepseek-flash', usage: { inputTokens: 1000000, cacheReadTokens: 0, outputTokens: 0 } } })
+  s = definition.apply(s, { type: 'compaction/end', seq: 3, time: at('2026-09-14T10:00:31Z'), data: {} })
+  definition.stateSchema.parse(s)
+  assert.equal(s.requests, 1)
+  assert.equal(s.buckets['deepseek-flash'].peak.miss, 1000000)
+  assert.equal(definition.wire.view(s).total, table.models['deepseek-flash'].input.peak)
 })
 check('a missing usage record is counted, not priced', () => {
   let s = definition.init({ version: 3, id: 'x', createdAt: 0, isSeeded: false }, 0)

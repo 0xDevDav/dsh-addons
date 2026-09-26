@@ -69,8 +69,15 @@ console.log('\nprovenance recorded in the file:')
 check('the file names the source and the day it was read', () => {
   const raw = JSON.parse(fs.readFileSync(`${PACK}/prices.json`, 'utf8'))
   if (raw.source.url !== 'https://api-docs.deepseek.com/quick_start/pricing/') throw new Error(raw.source.url)
-  if (raw.source.retrievedAt !== '2026-09-14') throw new Error(raw.source.retrievedAt)
-  if (raw.version !== '2026-09-14') throw new Error(raw.version)
+  if (raw.source.retrievedAt !== '2026-09-26') throw new Error(raw.source.retrievedAt)
+  if (raw.version !== '2026-09-26') throw new Error(raw.version)
+})
+// The page, read on 2026-09-26: "Monday through Friday, excluding Chinese public holidays ...
+// including weekends and Chinese public holidays in full". The dates are the State Council's
+// 2026 schedule from the rule's start: Mid-Autumn 25-27 Sep, National Day 1-7 Oct.
+check('Chinese public holidays are off-peak, dated as the State Council publishes them', () => {
+  const expected = ['2026-09-25', '2026-09-26', '2026-09-27', '2026-10-01', '2026-10-02', '2026-10-03', '2026-10-04', '2026-10-05', '2026-10-06', '2026-10-07']
+  if (JSON.stringify(table.peak.holidaysChina) !== JSON.stringify(expected)) throw new Error(JSON.stringify(table.peak.holidaysChina))
 })
 
 console.log(`\nfailures: ${failures}`)

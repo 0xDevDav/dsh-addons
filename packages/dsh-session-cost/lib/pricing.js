@@ -58,6 +58,9 @@ export function normalizeTable(raw) {
     windows.push({ from, to })
   }
   const weekdays = peak.weekdaysUtc.filter((day) => Number.isInteger(day) && day >= 0 && day <= 6)
+  const holidays = Array.isArray(peak.holidaysChina)
+    ? peak.holidaysChina.filter((day) => typeof day === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(day))
+    : []
   const normalizedModels = {}
   for (const [id, entry] of Object.entries(models)) {
     if (typeof entry !== 'object' || entry === null) continue
@@ -90,22 +93,36 @@ export function normalizeTable(raw) {
     sourceTitle: typeof raw.source?.title === 'string' ? raw.source.title : '',
     sourceUrl: typeof raw.source?.url === 'string' ? raw.source.url : '',
     retrievedAt: typeof raw.source?.retrievedAt === 'string' ? raw.source.retrievedAt : '',
-    peak: Object.freeze({ windowsUtc: Object.freeze(windows), weekdaysUtc: Object.freeze(weekdays) }),
+    peak: Object.freeze({ windowsUtc: Object.freeze(windows), weekdaysUtc: Object.freeze(weekdays), holidaysChina: Object.freeze(holidays) }),
     models: Object.freeze(normalizedModels),
     aliases: Object.freeze(aliases)
   })
+}
+
+/** China Standard Time, the calendar the published public holidays are dated in. */
+const CHINA_OFFSET_MS = 8 * 3600000
+
+/**
+ * The calendar date an instant falls on in China Standard Time.
+ * @param timeMs - epoch milliseconds.
+ * @returns `YYYY-MM-DD`.
+ */
+export function chinaDate(timeMs) {
+  return new Date(timeMs + CHINA_OFFSET_MS).toISOString().slice(0, 10)
 }
 
 /**
  * The tier one instant is billed under.
  * @param timeMs - epoch milliseconds of the billed request.
  * @param peak - the table's peak definition.
- * @returns `true` inside a peak window on a listed weekday (UTC).
+ * @returns `true` inside a peak window on a listed weekday (UTC) that is not a
+ *   Chinese public holiday: those are off-peak in full.
  */
 export function isPeakTime(timeMs, peak) {
   if (!Number.isFinite(timeMs)) return false
   const date = new Date(timeMs)
   if (!peak.weekdaysUtc.includes(date.getUTCDay())) return false
+  if ((peak.holidaysChina ?? []).includes(chinaDate(timeMs))) return false
   const hour = date.getUTCHours() + date.getUTCMinutes() / 60
   return peak.windowsUtc.some((window) => hour >= window.from && hour < window.to)
 }

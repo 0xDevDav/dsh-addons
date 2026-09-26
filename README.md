@@ -71,7 +71,8 @@ equivalent. Re-running either is how the icon is refreshed, and `-Version <versi
 - **A cost pill** beside the composer statistics (`1 turni 107 passi` … `$0,79`), whose panel shows the
   total and the three billed buckets it is made of.
 - **A peak-hour widget** above *New session* saying whether the minute you are in is billed at the peak
-  rate, with the schedule in your own timezone.
+  rate, with the schedule in your own timezone (on a Chinese public holiday it says the whole day is
+  off-peak, as the provider bills it).
 - **Your DeepSeek balance** on the Settings row, read from the provider.
 - **The DavCode AGENT brand** instead of the shipped fish: the lockup in the sidebar row (drawn at the
   height the row really has — its name renders at 18.3px, the shipped row's own name is 18px), the mark in

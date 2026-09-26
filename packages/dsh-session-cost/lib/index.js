@@ -102,6 +102,7 @@ const stateSchema = z
       })
       .strict()
       .nullable(),
+    openCompaction: z.number().nonnegative().nullable(),
     requests: z.number().int().nonnegative(),
     usageMissing: z.number().int().nonnegative(),
     buckets: z.record(z.string(), modelStateSchema)
@@ -171,11 +172,12 @@ function createPriceTableLoader(path, logger) {
 export function createDefinition(priceTable) {
   return {
     key: PROJECTION_KEY,
-    stateVersion: 1,
+    stateVersion: 2,
     stateSchema,
     init: () => ({
       route: null,
       openStep: null,
+      openCompaction: null,
       requests: 0,
       usageMissing: 0,
       buckets: {}
@@ -218,6 +220,26 @@ export function createDefinition(priceTable) {
           const model = state.route === null ? UNKNOWN_MODEL : state.route.model
           accumulate(buckets, model, tier, usage)
           return { ...state, requests: state.requests + 1, buckets, openStep: null }
+        }
+        // Compaction is a billed model call of its own - the whole context sent
+        // to be summarized, mostly as cache-miss input - and it is recorded only
+        // here, never as an `assistant/message`. Its tier is the one it was
+        // issued in, which `compaction/start` records.
+        case 'compaction/start': {
+          return { ...state, openCompaction: event.time }
+        }
+        case 'compaction/summary': {
+          const usage = event.data?.usage
+          if (usage === undefined || usage === null) return { ...state, usageMissing: state.usageMissing + 1, openCompaction: null }
+          const at = state.openCompaction ?? event.time
+          const tier = isPeakTime(at, priceTable.get()?.peak ?? { weekdaysUtc: [], windowsUtc: [] }) ? 'peak' : 'offPeak'
+          const buckets = { ...state.buckets }
+          const model = typeof event.data?.model === 'string' && event.data.model !== '' ? event.data.model : state.route === null ? UNKNOWN_MODEL : state.route.model
+          accumulate(buckets, model, tier, usage)
+          return { ...state, requests: state.requests + 1, buckets, openCompaction: null }
+        }
+        case 'compaction/end': {
+          return state.openCompaction === null ? state : { ...state, openCompaction: null }
         }
         default:
           return state
@@ -356,6 +378,7 @@ export function peakDefinition(table) {
     available: true,
     windowsUtc: table.peak.windowsUtc.map((window) => ({ from: window.from, to: window.to })),
     weekdaysUtc: [...table.peak.weekdaysUtc],
+    holidaysChina: [...table.peak.holidaysChina],
     ...(offPeakHalf === undefined ? {} : { offPeakHalf }),
     version: table.version,
     source: table.sourceUrl

@@ -40,6 +40,7 @@ window.__ModuleLoader__.load({
 			"peak.title": "Peak hours",
 			"peak.schedule": "Peak {ranges} · {days}",
 			"peak.scheduleNone": "No peak hours published",
+			"peak.holiday": "Chinese public holiday: off-peak all day",
 			"peak.change": "changes at {time}",
 			"credit.title": "DeepSeek balance",
 			"credit.aria": "DeepSeek balance {amount}",
@@ -72,6 +73,7 @@ window.__ModuleLoader__.load({
 			"peak.title": "Ore di picco",
 			"peak.schedule": "Picco {ranges} · {days}",
 			"peak.scheduleNone": "Nessuna ora di picco pubblicata",
+			"peak.holiday": "Festività cinese: fuori punta tutto il giorno",
 			"peak.change": "cambia alle {time}",
 			"credit.title": "Saldo DeepSeek",
 			"credit.aria": "Saldo DeepSeek {amount}",
@@ -121,16 +123,29 @@ window.__ModuleLoader__.load({
 			return format.format(value);
 		}
 		/**
+		* Whether an instant falls on a published Chinese public holiday. The dates
+		* are calendar days in China Standard Time, so the instant is read at UTC+8.
+		* @param peak - the peak definition from the host route.
+		* @param time - epoch milliseconds.
+		* @returns true on a listed holiday.
+		*/
+		function isHolidayAt(peak, time) {
+			const holidays = Array.isArray(peak.holidaysChina) ? peak.holidaysChina : [];
+			return holidays.indexOf(new Date(time + 288e5).toISOString().slice(0, 10)) !== -1;
+		}
+		/**
 		* Whether an instant is billed at the peak rate. The published windows are
 		* UTC, so this reads the instant in UTC too: the answer must not depend on
 		* the browser's zone, while every *label* the widget prints does.
 		* @param peak - the peak definition from the host route.
 		* @param time - epoch milliseconds.
-		* @returns true inside a peak window on a listed weekday.
+		* @returns true inside a peak window on a listed weekday that is not a
+		*   Chinese public holiday.
 		*/
 		function isPeakAt(peak, time) {
 			const date = new Date(time);
 			if (peak.weekdaysUtc.indexOf(date.getUTCDay()) === -1) return false;
+			if (isHolidayAt(peak, time)) return false;
 			const hour = date.getUTCHours() + date.getUTCMinutes() / 60;
 			return peak.windowsUtc.some((window) => hour >= window.from && hour < window.to);
 		}
@@ -683,7 +698,7 @@ window.__ModuleLoader__.load({
 			const inPeak = isPeakAt(peak, now);
 			const status = t(inPeak ? "peak.status.peak" : "peak.status.off");
 			const groups = localSchedule(peak, now).filter((group) => group.ranges.length > 0);
-			const schedule = groups.length === 0 ? t("peak.scheduleNone") : groups.map((group) => t("peak.schedule", {
+			const schedule = isHolidayAt(peak, now) ? t("peak.holiday") : groups.length === 0 ? t("peak.scheduleNone") : groups.map((group) => t("peak.schedule", {
 				ranges: group.text,
 				days: group.label
 			})).join(" · ");
