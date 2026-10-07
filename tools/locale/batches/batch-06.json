@@ -3,10 +3,6 @@
  "namespace": "chat",
  "total": 70,
  "keys": {
-  "stats.counts": {
-   "en": "{turns} turns {steps} steps",
-   "zh": "{turns} 轮 {steps} 步"
-  },
   "stats.cacheHit": {
    "en": "Cache hit {percent}%",
    "zh": "缓存命中 {percent}%"
@@ -52,8 +48,12 @@
    "zh": "回到底部"
   },
   "chat.deepDiving": {
-   "en": "Deep diving...",
+   "en": "Deep diving",
    "zh": "深度求索中"
+  },
+  "chat.deepDivingFor": {
+   "en": "Deep diving for {duration} ···",
+   "zh": "深度求索中，用时 {duration} ···"
   },
   "chat.turnNavigation.label": {
    "en": "Turn navigation",

@@ -3,6 +3,12 @@
  "namespace": "conversation",
  "total": 70,
  "keys": {
+  "ask.pending": "proseguito; puoi ancora rispondere",
+  "ask.pendingDetail": "A queste domande in sospeso puoi ancora rispondere dal compositore.",
+  "ask.reopen": "Rispondi",
+  "ask.review": "Vedi risposte",
+  "ask.closed": "chiusa",
+  "ask.closedDetail": "Questa domanda è chiusa; l'esito è nella conversazione qui sotto.",
   "ask.cancelled": "annullata",
   "ask.cancelledDetail": "Questa serie di domande è stata annullata prima dell'invio delle risposte.",
   "ask.interrupted": "interrotta",
@@ -66,12 +72,6 @@
   "queue.edit": "Modifica messaggio in coda",
   "queue.edit.unsupported": "Contiene contenuto non testuale; la modifica non è ancora supportata",
   "queue.save": "Salva messaggio in coda",
-  "queue.cancelEdit": "Annulla modifica",
-  "queue.remove": "Rimuovi messaggio in coda",
-  "queue.steer": "Guida messaggio in coda",
-  "queue.steer.unavailable": "La guida è disponibile solo mentre l'agente è in esecuzione",
-  "error.sessionInUse": "Questa sessione è già in uso, probabilmente da un'altra istanza DSH in esecuzione (ad esempio dsh web o l'app desktop). Chiudi le altre istanze DSH in esecuzione e riprova.",
-  "queue.editFailed": "Modifica non riuscita: questo messaggio potrebbe essere già stato inviato.",
-  "queue.removeFailed": "Rimozione non riuscita: questo messaggio potrebbe essere già stato inviato."
+  "queue.cancelEdit": "Annulla modifica"
  }
 }

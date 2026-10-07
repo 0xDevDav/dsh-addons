@@ -411,6 +411,81 @@
    "zh": "请选择一个选项或填写自定义答案。",
    "it": "Seleziona un'opzione o inserisci una risposta personalizzata."
   },
+  "error.unavailable": {
+   "en": "Cannot submit right now; try again in a moment.",
+   "zh": "当前无法提交，请稍候再试。",
+   "it": "Impossibile inviare ora; riprova tra un momento."
+  },
+  "error.resubmit": {
+   "en": "The answer did not arrive before work continued; submit it again.",
+   "zh": "回答未送达，工作已继续，请再提交一次。",
+   "it": "La risposta non è arrivata prima che il lavoro proseguisse; inviala di nuovo."
+  },
+  "status.sent": {
+   "en": "Reply sent; the panel could not close.",
+   "zh": "回答已发送；面板未能关闭。",
+   "it": "Risposta inviata; non è stato possibile chiudere il pannello."
+  },
+  "wait.takeTime": {
+   "en": "Take time",
+   "zh": "慢慢回答",
+   "it": "Prenditi tempo"
+  },
+  "wait.countdown": {
+   "en": "Continuing in {seconds}s",
+   "zh": "{seconds} 秒后继续工作",
+   "it": "Si prosegue tra {seconds}s"
+  },
+  "wait.paused": {
+   "en": "Paused · {seconds}s remaining",
+   "zh": "已暂停 · 剩余 {seconds} 秒",
+   "it": "In pausa · {seconds}s rimanenti"
+  },
+  "wait.held": {
+   "en": "Waiting until you answer",
+   "zh": "会一直等你回答",
+   "it": "In attesa della tua risposta"
+  },
+  "wait.continued": {
+   "en": "Work continued — you can still answer",
+   "zh": "已继续工作，仍可回答",
+   "it": "Il lavoro è proseguito, puoi ancora rispondere"
+  },
+  "review.status": {
+   "en": "Answered",
+   "zh": "已回答",
+   "it": "Risposta data"
+  },
+  "review.skipped": {
+   "en": "This question was skipped.",
+   "zh": "这道问题当时被跳过。",
+   "it": "Questa domanda è stata saltata."
+  },
+  "reply.label": {
+   "en": "Reply to earlier pending questions",
+   "zh": "回答先前等待中的问题",
+   "it": "Rispondi alle domande in sospeso precedenti"
+  },
+  "reply.open": {
+   "en": "Open question details",
+   "zh": "展开问题详情",
+   "it": "Apri i dettagli della domanda"
+  },
+  "reply.close": {
+   "en": "Close question details",
+   "zh": "收起问题详情",
+   "it": "Chiudi i dettagli della domanda"
+  },
+  "reply.answerLabel": {
+   "en": "Answer: ",
+   "zh": "回答：",
+   "it": "Risposta: "
+  },
+  "reply.skipped": {
+   "en": "Skipped",
+   "zh": "已跳过",
+   "it": "Saltata"
+  },
   "nav.prev": {
    "en": "Previous question",
    "zh": "上一题",
@@ -435,6 +510,11 @@
    "en": "Dismiss all questions",
    "zh": "放弃整组问题",
    "it": "Ignora tutte le domande"
+  },
+  "nav.close": {
+   "en": "Close the panel — reopen it from the tool call",
+   "zh": "收起问题面板，可从工具调用重新打开",
+   "it": "Chiudi il pannello; puoi riaprirlo dalla chiamata a strumento"
   },
   "option.recommended": {
    "en": "Recommended",
@@ -944,14 +1024,14 @@
    "it": "Riprova aggiornamento"
   },
   "desktop.update.versionDetail": {
-   "en": "{label} — V{version}",
-   "zh": "{label} — V{version}",
-   "it": "{label} — V{version}"
+   "en": "{label}: {version}",
+   "zh": "{label}：{version}",
+   "it": "{label}: {version}"
   },
   "desktop.update.downloadDetail": {
-   "en": "Downloading update: {percent}%\nTarget version: V{version}",
-   "zh": "正在下载更新：{percent}%\n目标版本：V{version}",
-   "it": "Download dell'aggiornamento: {percent}%\nVersione di destinazione: V{version}"
+   "en": "Downloading update: {percent}%\nTarget version: {version}",
+   "zh": "正在下载更新：{percent}%\n目标版本：{version}",
+   "it": "Download dell'aggiornamento: {percent}%\nVersione di destinazione: {version}"
   },
   "desktop.update.checkFailed": {
    "en": "Could not check for updates. Please try again later.",
@@ -969,29 +1049,29 @@
    "it": "Impossibile installare l'aggiornamento. Riprova più tardi."
   },
   "desktop.update.checkNetworkFailed": {
-   "en": "Could not check for updates. Please try again later. The connection was interrupted. Check your network and try again.",
-   "zh": "检查更新失败，请稍后重试。网络连接异常，请检查网络后重试。",
-   "it": "Impossibile cercare aggiornamenti. Riprova più tardi. La connessione è stata interrotta. Controlla la rete e riprova."
+   "en": "Could not check for updates. Check your connection and try again.",
+   "zh": "检查更新失败，请检查网络连接后重试。",
+   "it": "Impossibile cercare aggiornamenti. Controlla la connessione e riprova."
   },
   "desktop.update.downloadNetworkFailed": {
-   "en": "Could not download the update. Please try again. The connection was interrupted. Check your network and try again.",
-   "zh": "下载更新失败，请重试。网络连接异常，请检查网络后重试。",
-   "it": "Impossibile scaricare l'aggiornamento. Riprova. La connessione è stata interrotta. Controlla la rete e riprova."
+   "en": "Could not download the update. Check your connection and try again.",
+   "zh": "下载更新失败，请检查网络连接后重试。",
+   "it": "Impossibile scaricare l'aggiornamento. Controlla la connessione e riprova."
   },
   "desktop.update.installNetworkFailed": {
-   "en": "Could not install the update. Please try again later. The connection was interrupted. Check your network and try again.",
-   "zh": "安装更新失败，请稍后重试。网络连接异常，请检查网络后重试。",
-   "it": "Impossibile installare l'aggiornamento. Riprova più tardi. La connessione è stata interrotta. Controlla la rete e riprova."
+   "en": "Could not install the update. Check your connection and try again.",
+   "zh": "安装更新失败，请检查网络连接后重试。",
+   "it": "Impossibile installare l'aggiornamento. Controlla la connessione e riprova."
   },
   "desktop.update.stopFailed": {
-   "en": "Tasks could not be stopped safely. The update was not installed. Please try again later.",
-   "zh": "未能安全停止任务，更新未安装。请稍后重试。",
-   "it": "Non è stato possibile interrompere le attività in sicurezza. L'aggiornamento non è stato installato. Riprova più tardi."
+   "en": "Could not safely stop the tasks. The update has not been installed. Please try again later.",
+   "zh": "未能安全停止任务，更新尚未安装，请稍后重试。",
+   "it": "Impossibile interrompere le attività in sicurezza. L'aggiornamento non è stato installato. Riprova più tardi."
   },
   "desktop.update.tasksChanged": {
-   "en": "New tasks started. Review the update confirmation again.",
-   "zh": "有新任务开始，请重新确认更新。",
-   "it": "Sono state avviate nuove attività. Rivedi la conferma dell'aggiornamento."
+   "en": "New tasks have started. Confirm again to stop the tasks and update.",
+   "zh": "有新任务开始运行，请重新确认是否停止任务并更新。",
+   "it": "Sono state avviate nuove attività. Conferma di nuovo per interromperle e aggiornare."
   },
   "desktop.update.tasksUnavailable": {
    "en": "Task status is unavailable. Try updating again when the workspace is ready.",
@@ -1029,9 +1109,9 @@
    "it": "Versione attuale: {version}"
   },
   "developerTools.title": {
-   "en": "Coding Tools",
-   "zh": "代码工作工具",
-   "it": "Strumenti di programmazione"
+   "en": "Show coding view",
+   "zh": "显示代码工作视图",
+   "it": "Mostra vista di programmazione"
   },
   "developerTools.error": {
    "en": "Could not save. Please try again.",
@@ -1039,9 +1119,9 @@
    "it": "Impossibile salvare. Riprova."
   },
   "developerTools.description": {
-   "en": "Shows trajectory, code diffs, and Agent preset switching in new chats",
-   "zh": "开启后显示轨迹、本轮代码差异，新对话中的 Agent 预设切换",
-   "it": "Mostra registro, Diff del codice e cambio di Preset agente nelle nuove chat"
+   "en": "Shows trajectory, code diffs, and all Agent presets",
+   "zh": "开启后，显示轨迹、本轮代码差异，可选择完整的 Agent 预设切换",
+   "it": "Mostra traiettoria, diff del codice e tutti i preset dell'agente"
   },
   "connection.error": {
    "en": "Disconnected",

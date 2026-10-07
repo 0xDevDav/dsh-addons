@@ -9,7 +9,7 @@ rem and verified against one release, and starting a different one silently woul
 rem strings a release adds in English and could move the seats the brand uses. To move to a
 rem newer release, change the line below (or run `install\install.ps1 -Version <version>`),
 rem then run the repository's own suites again.
-set DSH_VERSION=0.1.7-rc.2
+set DSH_VERSION=0.2.0-rc.2
 
 title DavCode AGENT
 where node >nul 2>nul || (echo Node.js non trovato. Installa da https://nodejs.org & pause & exit /b 1)

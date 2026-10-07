@@ -1,119 +1,143 @@
 {
- "batch": "sidebarTerminal",
- "namespace": "sidebarTerminal",
- "total": 28,
+ "batch": "sidebarRight",
+ "namespace": "sidebarRight",
+ "total": 34,
  "keys": {
-  "shortcut.noSession": {
+  "command.close": {
+   "en": "Close current page or window",
+   "zh": "关闭当前页面／窗口"
+  },
+  "command.refresh": {
+   "en": "Refresh current page",
+   "zh": "刷新当前页面"
+  },
+  "command.noRefresh": {
+   "en": "This page cannot be refreshed",
+   "zh": "当前页面不支持刷新"
+  },
+  "command.toggle": {
+   "en": "Toggle right sidebar",
+   "zh": "展开／收起右侧栏"
+  },
+  "command.fullscreen": {
+   "en": "Toggle panel fullscreen",
+   "zh": "面板全屏／退出全屏"
+  },
+  "command.noSession": {
    "en": "Select a session first",
    "zh": "请先选择会话"
   },
-  "recoveryFailed": {
-   "en": "Terminal recovery failed: {message}",
-   "zh": "恢复终端失败：{message}"
+  "command.noFocus": {
+   "en": "Focus a right sidebar pane first",
+   "zh": "请先聚焦右侧面板"
   },
-  "retryRecovery": {
-   "en": "Retry terminal recovery",
-   "zh": "重试恢复终端"
+  "command.stale": {
+   "en": "The page changed; focus it again",
+   "zh": "页面已切换，请重新聚焦"
   },
-  "shell": {
-   "en": "Choose shell",
-   "zh": "选择 Shell"
+  "command.collapsed": {
+   "en": "Expand the right sidebar first",
+   "zh": "请先展开右侧栏"
   },
-  "shellLoading": {
-   "en": "Loading shells…",
-   "zh": "正在读取 Shell…"
+  "command.float": {
+   "en": "This action is unavailable in a floating panel",
+   "zh": "浮动面板不支持此操作"
   },
-  "shellEmpty": {
-   "en": "No shells available",
-   "zh": "没有可用的 Shell"
+  "command.empty": {
+   "en": "Open a page first",
+   "zh": "请先打开页面"
   },
-  "description": {
-   "en": "Run commands in the Session workspace",
-   "zh": "在会话工作区运行命令"
+  "command.budget": {
+   "en": "Two panes is the limit",
+   "zh": "已达两格上限"
   },
-  "title": {
-   "en": "Terminal",
-   "zh": "终端"
+  "command.width": {
+   "en": "Not enough width to split, widen the sidebar",
+   "zh": "栏宽不足，拖宽侧边栏后再分栏"
   },
-  "new": {
-   "en": "New terminal",
-   "zh": "新建终端"
+  "chrome.expand": {
+   "en": "Open sidebar",
+   "zh": "打开侧边栏"
   },
-  "loading": {
-   "en": "Reading terminal environment…",
-   "zh": "正在读取终端环境…"
+  "chrome.expandAria": {
+   "en": "Open right sidebar",
+   "zh": "打开右侧边栏"
   },
-  "creating": {
-   "en": "Starting…",
-   "zh": "正在启动…"
+  "chrome.collapse": {
+   "en": "Collapse sidebar",
+   "zh": "收起侧边栏"
   },
-  "connecting": {
-   "en": "Connecting…",
-   "zh": "正在连接…"
+  "chrome.collapseAria": {
+   "en": "Collapse right sidebar",
+   "zh": "收起右侧边栏"
   },
-  "disconnected": {
-   "en": "Disconnected.",
-   "zh": "连接已断开。"
+  "chrome.toFullscreen": {
+   "en": "Fullscreen",
+   "zh": "全屏"
   },
-  "reconnect": {
-   "en": "Reconnect",
-   "zh": "重新连接"
+  "chrome.exitFullscreen": {
+   "en": "Exit fullscreen",
+   "zh": "退出全屏"
   },
-  "readonly": {
-   "en": "This view is read-only.",
-   "zh": "此页面当前只读。"
+  "dock.emptyPane": {
+   "en": "Empty pane",
+   "zh": "空面板"
   },
-  "control": {
-   "en": "Take control",
-   "zh": "接管输入"
+  "dock.splitPane": {
+   "en": "Split",
+   "zh": "分栏"
   },
-  "closed": {
-   "en": "Terminal closed.",
-   "zh": "终端已关闭。"
+  "dock.splitPaneDisabled": {
+   "en": "Two panes is the limit",
+   "zh": "已达两格上限"
   },
-  "exited": {
-   "en": "Process exited ({code})",
-   "zh": "进程已退出（{code}）"
+  "dock.splitPaneNarrow": {
+   "en": "Not enough width to split, widen the sidebar",
+   "zh": "栏宽不足，拖宽侧边栏后再分栏"
   },
-  "failed": {
-   "en": "Terminal error: {message}",
-   "zh": "终端错误：{message}"
+  "dock.closeTab": {
+   "en": "Close",
+   "zh": "关闭"
   },
-  "rename": {
-   "en": "Terminal name",
-   "zh": "终端名称"
+  "dock.addTab": {
+   "en": "New tab",
+   "zh": "新标签页"
   },
-  "unavailable": {
-   "en": "Unavailable",
-   "zh": "不可用"
+  "dock.dockFloat": {
+   "en": "Send back to the sidebar",
+   "zh": "收回到侧边栏"
   },
-  "retry": {
-   "en": "Retry",
-   "zh": "重试"
+  "dock.closeFloat": {
+   "en": "Close",
+   "zh": "关闭"
   },
-  "cleanupFailed": {
-   "en": "Terminal “{title}” could not be ended: {message}",
-   "zh": "终端「{title}」未能结束：{message}"
+  "dock.drop.center": {
+   "en": "Move here",
+   "zh": "移到这里"
   },
-  "missingTerminal": {
-   "en": "This terminal no longer exists. Open a new terminal.",
-   "zh": "此终端已不存在，请新建终端。"
+  "dock.drop.left": {
+   "en": "Add left split",
+   "zh": "左分栏"
   },
-  "inputFull": {
-   "en": "The input buffer is full. Reconnect and try again.",
-   "zh": "输入缓冲区已满，请重新连接后重试。"
+  "dock.drop.right": {
+   "en": "Add right split",
+   "zh": "右分栏"
   },
-  "attachmentEnded": {
-   "en": "The terminal connection ended. Reconnect to continue.",
-   "zh": "终端连接已结束，请重新连接。"
+  "dock.drop.top": {
+   "en": "Add top split",
+   "zh": "上分栏"
   },
-  "invalidOutput": {
-   "en": "The terminal screen could not be received. Reconnect to recover it.",
-   "zh": "终端画面传输异常，请重新连接。"
+  "dock.drop.bottom": {
+   "en": "Add bottom split",
+   "zh": "下分栏"
   },
-  "terminalLimit": {
-   "en": "The terminal limit has been reached. Close unused terminals and try again. Exited terminals also count toward the limit.",
-   "zh": "终端数量已达上限，请关闭不用的终端后重试。已退出的终端也计入数量。"
+  "tab.guide.title": {
+   "en": "Start",
+   "zh": "开始"
+  },
+  "tab.unavailable": {
+   "en": "Nothing here can view this kind of content yet.",
+   "zh": "这类内容还没有可用的查看方式。"
   }
  }
 }

@@ -1,287 +1,107 @@
 {
- "batch": "voice-input#1",
- "namespace": "voice-input",
- "total": 70,
+ "batch": "agent-team",
+ "namespace": "agent-team",
+ "total": 25,
  "keys": {
-  "dictate": {
-   "en": "Dictate",
-   "zh": "听写"
+  "trigger": {
+   "en": "Agent Team",
+   "zh": "智能体团队"
   },
-  "setupPrompt.title": {
-   "en": "Set up voice input before recording",
-   "zh": "使用语音输入前需要安装"
+  "loading": {
+   "en": "Loading Team…",
+   "zh": "正在加载团队…"
   },
-  "setupPrompt.body": {
-   "en": "Voice input is enabled. First use requires downloading and preparing local recognition models. Open the plugin details to review disk space, memory and time estimates before starting setup.",
-   "zh": "语音输入插件已开启。首次使用需要在本机下载并准备识别模型，请前往插件详情页查看空间、内存和时间说明，再开始安装。"
+  "unavailable": {
+   "en": "Team is unavailable",
+   "zh": "Team 暂不可用"
   },
-  "setupPrompt.later": {
-   "en": "Later",
-   "zh": "稍后"
+  "failure": {
+   "en": "Invalid persisted Team record: {message}",
+   "zh": "团队持久记录无效：{message}"
   },
-  "setupPrompt.open": {
-   "en": "Go to setup",
-   "zh": "前往安装"
+  "empty": {
+   "en": "No shared tasks yet. Create them through the conversation.",
+   "zh": "暂无共享任务，可以通过对话创建"
   },
-  "setupPrompt.trigger": {
-   "en": "Open voice input setup",
-   "zh": "打开语音输入引导"
+  "roster": {
+   "en": "Members",
+   "zh": "成员"
   },
-  "setupPrompt.details": {
-   "en": "Open voice plugin settings",
-   "zh": "前往语音插件设置"
+  "tasks": {
+   "en": "Shared tasks",
+   "zh": "共享任务"
   },
-  "setupPrompt.unavailableTitle": {
-   "en": "Speech recognition is not ready",
-   "zh": "语音识别尚未就绪"
+  "model": {
+   "en": "Model",
+   "zh": "模型"
   },
-  "setupPrompt.unavailableBody": {
-   "en": "Open the voice plugin details to check recognition status, preparation progress, or errors.",
-   "zh": "请前往语音插件详情页查看识别服务状态、准备进度或错误信息"
+  "open": {
+   "en": "Open member conversation",
+   "zh": "打开成员会话"
   },
-  "setup.local": {
-   "en": "Local models will be downloaded to the machine running DSH. No Python or compiler is required.",
-   "zh": "将在运行 DSH 的机器上下载本地模型，无需安装 Python 或编译工具。"
+  "current": {
+   "en": "Current chat",
+   "zh": "当前会话"
   },
-  "setup.disk": {
-   "en": "Disk space",
-   "zh": "硬盘空间"
+  "owner": {
+   "en": "Owner",
+   "zh": "Owner"
   },
-  "setup.diskValue": {
-   "en": "Allow about {gb} GB for models, runtime, and download caches",
-   "zh": "建议预留约 {gb} GB，包含模型、运行时和下载缓存"
+  "unowned": {
+   "en": "Unowned",
+   "zh": "未分配"
   },
-  "setup.memory": {
-   "en": "Memory",
-   "zh": "运行内存"
+  "blockedBy": {
+   "en": "Blocked by",
+   "zh": "依赖"
   },
-  "setup.memoryValue": {
-   "en": "About {gb} GB with the model loaded; recognition may use more",
-   "zh": "模型加载后约 {gb} GB，识别时可能更高"
+  "writeScopes": {
+   "en": "Write scopes",
+   "zh": "写入范围"
   },
-  "setup.time": {
-   "en": "First setup",
-   "zh": "首次准备"
+  "ready": {
+   "en": "Ready",
+   "zh": "可开始"
   },
-  "setup.timeValue": {
-   "en": "Allow roughly {min}–{max} minutes, depending on the network and machine",
-   "zh": "参考 {min}–{max} 分钟，取决于网络和机器性能"
+  "blocked": {
+   "en": "Blocked by dependencies",
+   "zh": "被依赖阻塞"
   },
-  "setup.estimateNote": {
-   "en": "These are estimates; slow networks may take longer. Downloads are reused; idle models release memory by default.",
-   "zh": "以上为估算；网络较慢时可能更久。已下载的资源会复用，默认在闲置后释放模型内存。"
+  "task.expand": {
+   "en": "Show more",
+   "zh": "展开"
   },
-  "step.check": {
-   "en": "Check local resources",
-   "zh": "检查本地资源"
+  "task.collapse": {
+   "en": "Show less",
+   "zh": "收起"
   },
-  "step.model": {
-   "en": "Prepare recognition model",
-   "zh": "准备语音识别模型"
+  "memberStatus.running": {
+   "en": "Running",
+   "zh": "运行中"
   },
-  "step.vad": {
-   "en": "Prepare voice detection model",
-   "zh": "准备语音检测模型"
+  "memberStatus.inactive": {
+   "en": "Inactive",
+   "zh": "未运行"
   },
-  "step.verify": {
-   "en": "Verify model files",
-   "zh": "校验模型文件"
+  "memberStatus.provisioning": {
+   "en": "Provisioning",
+   "zh": "准备中"
   },
-  "step.load": {
-   "en": "Load {name}",
-   "zh": "加载 {name}"
-  },
-  "stepStatus.pending": {
-   "en": "Not started",
-   "zh": "未开始"
-  },
-  "stepStatus.running": {
-   "en": "In progress",
-   "zh": "进行中"
-  },
-  "stepStatus.complete": {
-   "en": "Completed",
-   "zh": "已完成"
-  },
-  "stepStatus.failed": {
+  "memberStatus.failed": {
    "en": "Failed",
    "zh": "失败"
   },
-  "stepStatus.cancelled": {
-   "en": "Cancelled",
-   "zh": "已取消"
+  "status.pending": {
+   "en": "Pending",
+   "zh": "待处理"
   },
-  "short.downloading": {
-   "en": "Downloading",
-   "zh": "下载中"
+  "status.in_progress": {
+   "en": "In progress",
+   "zh": "进行中"
   },
-  "short.failed": {
-   "en": "Setup failed",
-   "zh": "准备失败"
-  },
-  "retryRecording": {
-   "en": "Record again",
-   "zh": "重新录音"
-  },
-  "preparationSteps": {
-   "en": "Preparation steps",
-   "zh": "准备步骤"
-  },
-  "prepare": {
-   "en": "Download and prepare",
-   "zh": "下载并准备"
-  },
-  "retryPrepare": {
-   "en": "Retry preparation",
-   "zh": "重试准备"
-  },
-  "cancelPrepare": {
-   "en": "Cancel preparation",
-   "zh": "取消准备"
-  },
-  "downloadProgress": {
-   "en": "Download progress",
-   "zh": "下载进度"
-  },
-  "downloadBytes": {
-   "en": "Download: {completed} / {total} MB, {percent}%",
-   "zh": "下载：{completed} / {total} MB，{percent}%"
-  },
-  "downloadUnknown": {
-   "en": "Downloaded {completed} MB",
-   "zh": "已下载 {completed} MB"
-  },
-  "elapsed": {
-   "en": "Waiting {seconds} seconds",
-   "zh": "已等待 {seconds} 秒"
-  },
-  "preparationFailed": {
-   "en": "Preparation failed: {message}",
-   "zh": "准备失败：{message}"
-  },
-  "download.network": {
-   "en": "Cannot download {resource}: connection to the download service failed.",
-   "zh": "无法下载 {resource}：连接下载服务失败。"
-  },
-  "download.dns": {
-   "en": "Cannot download {resource}: the download address could not be resolved.",
-   "zh": "无法下载 {resource}：无法解析下载地址。"
-  },
-  "download.timeout": {
-   "en": "The download of {resource} timed out.",
-   "zh": "下载 {resource} 超时。"
-  },
-  "download.certificate": {
-   "en": "Cannot download {resource}: certificate verification failed.",
-   "zh": "无法下载 {resource}：安全连接的证书校验失败。"
-  },
-  "download.http": {
-   "en": "Cannot download {resource}: the download service returned HTTP {status}.",
-   "zh": "无法下载 {resource}：下载服务返回 HTTP {status}。"
-  },
-  "download.integrity": {
-   "en": "The download of {resource} is incomplete or failed verification.",
-   "zh": "{resource} 下载不完整或文件校验失败。"
-  },
-  "download.storage": {
-   "en": "Cannot save {resource}: insufficient disk space or write permission.",
-   "zh": "无法保存 {resource}：磁盘空间不足或没有写入权限。"
-  },
-  "download.unknown": {
-   "en": "Could not prepare {resource}.",
-   "zh": "准备 {resource} 失败。"
-  },
-  "downloadAdvice.network": {
-   "en": "Check that the machine running DSH can reach the download source and its model download services. Configure a proxy on that machine if needed, then retry.",
-   "zh": "请检查运行 DSH 的机器能否访问下载来源及其模型下载服务；如需代理，请在该机器上配置后重试。"
-  },
-  "downloadAdvice.dns": {
-   "en": "Check DNS and proxy settings on the machine running DSH. Confirm that it can resolve the download source domain, then retry.",
-   "zh": "请检查运行 DSH 的机器的 DNS 和代理设置，确认可以解析下载来源的域名后重试。"
-  },
-  "downloadAdvice.timeout": {
-   "en": "Check the network or proxy connection on the machine running DSH, then retry later. Verified downloaded files are retained.",
-   "zh": "请检查运行 DSH 的机器的网络或代理连接，稍后重试。已下载并通过校验的文件会保留。"
-  },
-  "downloadAdvice.certificate": {
-   "en": "Check the system clock, trusted certificates and proxy settings on the machine running DSH, then retry.",
-   "zh": "请检查运行 DSH 的机器的系统时间、受信任证书和代理设置后重试。"
-  },
-  "downloadAdvice.http": {
-   "en": "Confirm that the download address is available and the proxy can reach the download service, or retry later.",
-   "zh": "请确认下载地址可用、代理可正常连接下载服务，或稍后重试。"
-  },
-  "downloadAdvice.integrity": {
-   "en": "Retry the download. Other completed and verified files are retained.",
-   "zh": "请重试下载。已完成并通过校验的其他文件会保留。"
-  },
-  "downloadAdvice.storage": {
-   "en": "Check available disk space and write permission for the model directory on the machine running DSH, then retry.",
-   "zh": "请检查运行 DSH 的机器的剩余磁盘空间，以及模型目录的写入权限后重试。"
-  },
-  "downloadAdvice.unknown": {
-   "en": "Check the network, disk space and model directory permissions on the machine running DSH, then retry.",
-   "zh": "请检查运行 DSH 的机器的网络、磁盘空间和模型目录权限后重试。"
-  },
-  "downloadSource": {
-   "en": "Download source: {source}",
-   "zh": "下载来源：{source}"
-  },
-  "sourceChoice": {
-   "en": "Model download source",
-   "zh": "模型下载源"
-  },
-  "sourceAuto": {
-   "en": "Automatic (recommended)",
-   "zh": "自动选择（推荐）"
-  },
-  "sourceHuggingFace": {
-   "en": "Hugging Face",
-   "zh": "Hugging Face"
-  },
-  "sourceMirror": {
-   "en": "HF-Mirror (China mirror)",
-   "zh": "HF-Mirror（国内镜像）"
-  },
-  "sourceAutoHelp": {
-   "en": "Prefer the first responding source and try another if a download fails.",
-   "zh": "优先使用响应较快的源，下载失败时自动尝试其他源。"
-  },
-  "sourceManualHelp": {
-   "en": "Download only from the selected source. Verified downloaded files are reused.",
-   "zh": "仅从所选源下载；已下载并通过校验的文件会复用。"
-  },
-  "downloadCode": {
-   "en": "Error code: {code}",
-   "zh": "错误码：{code}"
-  },
-  "reconnecting": {
-   "en": "Connecting to speech recognition…",
-   "zh": "正在连接语音服务…"
-  },
-  "preparation.unprepared": {
-   "en": "First use downloads the local recognition models.",
-   "zh": "首次使用需要下载本地识别模型。"
-  },
-  "preparation.checking": {
-   "en": "Checking local resources…",
-   "zh": "正在检查本地资源…"
-  },
-  "preparation.loading": {
-   "en": "Loading {name}…",
-   "zh": "正在加载 {name}…"
-  },
-  "preparation.waking": {
-   "en": "Waking local speech recognition…",
-   "zh": "正在唤醒本地语音…"
-  },
-  "preparation.ready": {
-   "en": "Local speech recognition is ready.",
-   "zh": "本地语音已就绪。"
-  },
-  "preparation.standby": {
-   "en": "Local resources are prepared. Recording wakes the recognizer.",
-   "zh": "本地资源已准备，录音时自动唤醒。"
+  "status.completed": {
+   "en": "Completed",
+   "zh": "已完成"
   }
  }
 }

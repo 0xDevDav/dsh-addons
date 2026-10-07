@@ -25,11 +25,11 @@
   },
   "tool.title.subagent": {
    "en": "Create subagent",
-   "zh": "创建代理"
+   "zh": "创建子智能体"
   },
   "tool.title.listAgents": {
    "en": "List subagents",
-   "zh": "查看代理"
+   "zh": "查看子智能体"
   },
   "tool.title.sendMessage": {
    "en": "Send message",
@@ -37,7 +37,7 @@
   },
   "tool.title.interruptAgent": {
    "en": "Interrupt agent",
-   "zh": "中断代理"
+   "zh": "中断智能体"
   },
   "tool.title.listJobs": {
    "en": "List background jobs",

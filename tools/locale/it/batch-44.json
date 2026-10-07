@@ -1,21 +1,11 @@
 {
- "batch": "settings.shell",
- "namespace": "settings.shell",
- "total": 14,
+ "batch": "settings.sessionLog",
+ "namespace": "settings.sessionLog",
+ "total": 4,
  "keys": {
-  "title": "Shell",
-  "description": "Limita la durata di esecuzione e la quantità di output di ogni comando.",
-  "timeoutMs": "Timeout del comando (ms)",
-  "timeoutMsHint": "Per quanto un comando può essere eseguito prima di essere terminato.",
-  "maxOutputBytes": "Limite di output per flusso (byte)",
-  "maxOutputBytesHint": "L'output in eccesso viene salvato in un file temporaneo invece di andare perso.",
-  "overridden": "Sovrascritto",
-  "reset": "Reimposta predefinito",
-  "readOnly": "Questa distribuzione archivia le impostazioni in sola lettura.",
-  "unavailable": "Questo Plugin non è caricato, quindi al momento non può essere configurato.",
-  "save": "Salva",
-  "saving": "Salvataggio…",
-  "saveFailed": "La distribuzione non ha accettato questi valori; sono stati lasciati per la correzione.",
-  "invalidNumber": "Inserisci un numero o lascia vuoto per usare il valore predefinito."
+  "title": "Carica il registro della sessione quando usi l'API ufficiale dei modelli",
+  "description": "Aiuta a migliorare i modelli e i prodotti DeepSeek.",
+  "saved": "Preferenza salvata",
+  "failed": "Impossibile salvare la preferenza"
  }
 }

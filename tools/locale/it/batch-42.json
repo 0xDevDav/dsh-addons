@@ -30,7 +30,7 @@
   "enabledTag": "Attivo",
   "disabledTag": "Disattivato",
   "conditionalTag": "Condizionale",
-  "presetEnabledTag": "Attivo tramite i preset",
+  "presetEnabledTag": "Tramite i preset",
   "failedTag": "Non riuscito",
   "moduleLabel": "Modulo",
   "fromPreset": "Da",

@@ -1,67 +1,67 @@
 {
- "batch": "sidebarExcel",
- "namespace": "sidebarExcel",
+ "batch": "sidebarOffice",
+ "namespace": "sidebarOffice",
  "total": 15,
  "keys": {
   "title": {
-   "en": "Spreadsheet",
-   "zh": "表格"
-  },
-  "language": {
-   "en": "en",
-   "zh": "zh"
+   "en": "Office document",
+   "zh": "Office 文档"
   },
   "loading": {
    "en": "Rendering document...",
    "zh": "文档渲染中..."
   },
-  "invalid": {
-   "en": "This spreadsheet could not be opened. Check its format, contents, or password protection.",
-   "zh": "无法打开此表格。请检查文件格式、内容或密码保护。"
-  },
-  "tooLarge": {
-   "en": "This workbook exceeds the preview size limit.",
-   "zh": "此表格超过预览大小限制。"
-  },
-  "timeout": {
-   "en": "Opening this workbook timed out. Try a smaller file.",
-   "zh": "打开表格超时。请缩小文件后重试。"
-  },
-  "encoding": {
-   "en": "This text encoding could not be read. Save the file as UTF-8 or UTF-16 with a BOM and retry.",
-   "zh": "无法识别此文本文件的编码。请另存为 UTF-8 或带 BOM 的 UTF-16 后重试。"
-  },
-  "formulaWarning": {
-   "en": "This workbook contains formulas. Displayed results may be missing or inaccurate.",
-   "zh": "此工作簿包含公式，显示结果可能缺失或不准确。"
-  },
-  "unsupportedNotice": {
-   "en": "This preview does not support {features} in this workbook. Open it in a system application for the full experience.",
-   "zh": "当前预览不支持此工作簿中的{features}。请使用系统应用打开，以获得完整体验。"
-  },
-  "charts": {
-   "en": "charts",
-   "zh": "图表"
-  },
-  "images": {
-   "en": "images",
-   "zh": "图片"
-  },
-  "shapes": {
-   "en": "shapes",
-   "zh": "形状"
-  },
-  "conditionalFormatting": {
-   "en": "conditional formatting",
-   "zh": "条件格式"
-  },
-  "featureSeparator": {
-   "en": ", ",
-   "zh": "、"
-  },
   "retry": {
    "en": "Retry",
    "zh": "重试"
+  },
+  "viewMissingFonts": {
+   "en": "Missing fonts: {count}. Click to view.",
+   "zh": "缺失 {count} 种字体，点击查看"
+  },
+  "missingFontsTitle": {
+   "en": "Missing fonts",
+   "zh": "缺失的字体"
+  },
+  "missingFontsDescription": {
+   "en": "These fonts are unavailable for this preview. Text and layout may differ from the original document.",
+   "zh": "本次预览无法使用以下字体，预览中的文字和排版可能与原文档不同。"
+  },
+  "missingFontsCount": {
+   "en": "Fonts: {count}",
+   "zh": "{count} 种字体"
+  },
+  "closeDetails": {
+   "en": "Close font details",
+   "zh": "关闭字体详情"
+  },
+  "unavailable": {
+   "en": "Office previews are unavailable. Enable the document preview service on the computer running DeepSeek Harness.",
+   "zh": "Office 预览不可用。请在运行 DeepSeek Harness 的主机上启用文档预览服务。"
+  },
+  "invalid": {
+   "en": "This Office file cannot be previewed. It may be damaged, password protected, or have the wrong extension.",
+   "zh": "无法预览此 Office 文件。文件可能已损坏、受密码保护，或与扩展名不符。"
+  },
+  "tooLarge": {
+   "en": "The Office file or converted PDF exceeds the preview size limit. Reduce the file size or adjust the preview configuration.",
+   "zh": "Office 文件或转换后的 PDF 超过预览大小上限，请缩小文件或调整预览配置。"
+  },
+  "failed": {
+   "en": "Office conversion did not produce a usable PDF. Check the file and try again.",
+   "zh": "Office 转换失败，未生成可用的 PDF。请检查该文件后重试。"
+  },
+  "timeout": {
+   "en": "Office conversion timed out. Try again.",
+   "zh": "Office 转换超时，请重试。"
+  },
+  "busy": {
+   "en": "Office preview is busy. Try again shortly.",
+   "zh": "Office 预览任务较多，请稍后重试。"
+  },
+  "changed": {
+   "en": "The file changed while being read. Reopen the preview.",
+   "zh": "文件在读取时已更改，请重新打开预览。"
   }
  }
 }

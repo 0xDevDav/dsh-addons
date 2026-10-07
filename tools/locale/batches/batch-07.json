@@ -139,17 +139,17 @@
    "en": "{count} tok",
    "zh": "{count} tok"
   },
-  "duration.seconds": {
-   "en": "{seconds}s",
-   "zh": "{seconds}秒"
+  "duration.secondUnit": {
+   "en": "s",
+   "zh": "秒"
   },
-  "duration.minutes": {
-   "en": "{minutes}m {seconds}s",
-   "zh": "{minutes}分{seconds}秒"
+  "duration.minuteUnit": {
+   "en": "m ",
+   "zh": "分"
   },
-  "duration.hours": {
-   "en": "{hours}h {minutes}m {seconds}s",
-   "zh": "{hours}小时{minutes}分{seconds}秒"
+  "duration.hourUnit": {
+   "en": "h ",
+   "zh": "小时"
   },
   "command.running": {
    "en": "Running…",

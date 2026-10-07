@@ -132,8 +132,8 @@
    "zh": "跳过设置？"
   },
   "onboardingSkipDescription": {
-   "en": "You can change how progress, performance, and usage are displayed, or enable Coding Tools, anytime in Profile → General Settings.",
-   "zh": "你可以随时前往 个人中心 → 通用设置 中调整工作过程、性能与用量展示方式或开启代码工作工具。"
+   "en": "You can change how progress, performance, and usage are displayed, or enable Coding Tools, anytime in Settings → General.",
+   "zh": "你可以随时前往 设置 → 通用设置 中调整工作过程、性能与用量展示方式或开启代码工作工具。"
   },
   "onboardingKeepSetting": {
    "en": "Continue setup",
@@ -144,8 +144,8 @@
    "zh": "暂时跳过充值？"
   },
   "onboardingNoCreditDescription": {
-   "en": "DeepSeek Harness can’t start new tasks without credits. You can add them later in Profile → Accounts.",
-   "zh": "没有可用额度时，DeepSeek Harness 将无法开始新的任务。你可以稍后前往 个人中心 → 账号与余额 进行充值。"
+   "en": "DeepSeek Harness can’t start new tasks without credits. You can add them later in Settings → Account.",
+   "zh": "没有可用额度时，DeepSeek Harness 将无法开始新的任务。你可以稍后前往 设置 → 账号与余额 进行充值。"
   },
   "onboardingUnderstood": {
    "en": "Got it",
@@ -247,10 +247,6 @@
    "en": "Feedback",
    "zh": "意见反馈"
   },
-  "contactUsSignedOut": {
-   "en": "Contact us",
-   "zh": "联系我们"
-  },
   "menu": {
    "en": "Account menu",
    "zh": "账号菜单"
@@ -282,6 +278,10 @@
   "signOutDescription": {
    "en": "Signing out will not delete any data. You can sign in to this account again.",
    "zh": "退出登录不会丢失任何数据，你仍可以登录此账号。"
+  },
+  "signOutRunningDescription": {
+   "en": "Tasks are currently running. Signing out will interrupt them. Sign out now?",
+   "zh": "当前有进程正在执行中，点击“退出登录”，将会打断进程，是否即刻退出登录？"
   }
  }
 }

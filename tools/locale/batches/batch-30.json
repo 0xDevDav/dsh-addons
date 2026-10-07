@@ -1,8 +1,12 @@
 {
  "batch": "pluginManager#3",
  "namespace": "pluginManager",
- "total": 46,
+ "total": 49,
  "keys": {
+  "installFailurePnpmMissing": {
+   "en": "pnpm was not found, so nothing can be installed",
+   "zh": "没有找到 pnpm，无法安装"
+  },
   "installFailureGeneric": {
    "en": "Something went wrong during the install; the details say what",
    "zh": "安装过程中出错，原因见安装详情"
@@ -176,12 +180,20 @@
    "zh": "待允许的安装脚本列表已变化，请重新安装以刷新"
   },
   "reasonIncompatibleVersion": {
-   "en": "{plugin} is incompatible with DSH {runtime} (requires {peers}); running it may cause crashes or data loss. Install a plugin version compatible with this DSH.",
-   "zh": "{plugin} 与 DSH {runtime} 不兼容（要求 {peers}），运行它可能导致崩溃或数据丢失。请安装与当前 DSH 兼容的插件版本。"
+   "en": "{plugin} is incompatible with DSH {runtime} (requires {peers}); running it may cause crashes or data loss.",
+   "zh": "{plugin} 与 DSH {runtime} 不兼容（要求 {peers}），运行它可能导致崩溃或数据丢失。"
   },
   "reasonIncompatibleVersionUnnamed": {
    "en": "This plugin is incompatible with the running DSH version; running it may cause crashes or data loss.",
-   "zh": "这个插件与当前 DSH 版本不兼容，运行它可能导致崩溃或数据丢失"
+   "zh": "这个插件与当前 DSH 版本不兼容，运行它可能导致崩溃或数据丢失。"
+  },
+  "reasonIncompatibleInstall": {
+   "en": "Install a plugin version compatible with this DSH.",
+   "zh": "请安装与当前 DSH 兼容的插件版本。"
+  },
+  "reasonIncompatibleInstalled": {
+   "en": "Uninstall it and install a version compatible with this DSH.",
+   "zh": "请卸载后重新安装与当前 DSH 兼容的版本。"
   },
   "reasonOperationError": {
    "en": "The Host reported an error.",

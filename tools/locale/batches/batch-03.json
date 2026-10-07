@@ -1,7 +1,7 @@
 {
  "batch": "settings.agentPreset",
  "namespace": "settings.agentPreset",
- "total": 43,
+ "total": 41,
  "keys": {
   "modeExplanation": {
    "en": "Mode details",
@@ -166,14 +166,6 @@
   "creatorDraft": {
    "en": "Let the agent help me create a preset",
    "zh": "让 Agent 帮我创建预设模式"
-  },
-  "enableDevToolsToSetDefault": {
-   "en": "Turn on Coding Tools in General settings to choose a default",
-   "zh": "请先在通用设置中开启代码工作工具，再设置默认值"
-  },
-  "enableDevToolsToCreate": {
-   "en": "Turn on Coding Tools in General settings to start Creator mode",
-   "zh": "请先在通用设置中开启代码工作工具，再启动创造模式"
   }
  }
 }

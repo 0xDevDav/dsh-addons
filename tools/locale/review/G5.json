@@ -491,16 +491,6 @@
    "zh": "目录加载失败：{message}",
    "it": "Caricamento del catalogo non riuscito: {message}"
   },
-  "option.deepseekV4Flash.description": {
-   "en": "Fast, efficient, and economical; suited to focused, routine, or parallel tasks.",
-   "zh": "快速、高效且经济；适合目标明确、常规或并行任务。",
-   "it": "Veloce, efficiente ed economico; adatto a compiti mirati, di routine o paralleli."
-  },
-  "option.deepseekV4Pro.description": {
-   "en": "Stronger agentic coding, knowledge, and difficult reasoning; suited to complex or quality-critical tasks at higher cost.",
-   "zh": "更强的自主编码、知识与复杂推理能力；适合复杂或质量优先的任务，但成本更高。",
-   "it": "Codifica agentica, conoscenza e ragionamento complesso più solidi; adatto a compiti complessi o critici per la qualità, a un costo maggiore."
-  },
   "trigger.fallback": {
    "en": "Select model",
    "zh": "请选择模型",
@@ -570,6 +560,21 @@
    "en": "{name} failed to load: {message}",
    "zh": "{name} 加载失败：{message}",
    "it": "Caricamento di {name} non riuscito: {message}"
+  },
+  "search.placeholder": {
+   "en": "Search models…",
+   "zh": "搜索模型…",
+   "it": "Cerca modelli…"
+  },
+  "search.clear": {
+   "en": "Clear search",
+   "zh": "清除搜索",
+   "it": "Cancella ricerca"
+  },
+  "search.empty": {
+   "en": "No matching models.",
+   "zh": "没有匹配的模型。",
+   "it": "Nessun modello corrispondente."
   },
   "empty.models": {
    "en": "No models available.",

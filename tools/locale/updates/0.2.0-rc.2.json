@@ -1,0 +1,99 @@
+{
+ "note": "Italian for DSH 0.2.0-rc.2: the 44 keys the release adds and the 26 whose English text changed. Values identical to English are deliberate: the duration units, the sentence separator and the plugin package names used as examples.",
+ "it": {
+  "chat": {
+   "chat.deepDivingFor": "Analisi approfondita da {duration} ···",
+   "duration.secondUnit": "s",
+   "duration.minuteUnit": "m ",
+   "duration.hourUnit": "h ",
+   "message.trigger.schedule": "Attività automatica",
+   "message.turnProcess.worked": "Completato",
+   "message.turnProcess.took": "Completato in ",
+   "chat.deepDiving": "Analisi approfondita"
+  },
+  "conversation": {
+   "ask.pending": "proseguito; puoi ancora rispondere",
+   "ask.pendingDetail": "A queste domande in sospeso puoi ancora rispondere dal compositore.",
+   "ask.reopen": "Rispondi",
+   "ask.review": "Vedi risposte",
+   "ask.closed": "chiusa",
+   "ask.closedDetail": "Questa domanda è chiusa; l'esito è nella conversazione qui sotto."
+  },
+  "model": {
+   "search.placeholder": "Cerca modelli…",
+   "search.clear": "Cancella ricerca",
+   "search.empty": "Nessun modello corrispondente."
+  },
+  "pluginManager": {
+   "infoLabel": "Informazioni sui plugin",
+   "infoDescription": "Qui puoi configurare i plugin ufficiali e installare o gestire altri plugin. L'elenco dei plugin integrati e il loro stato di esecuzione sono in Impostazioni → Plugin integrati.",
+   "refreshError": "Aggiornamento non riuscito. Riprova.",
+   "installGitTemplateHint": "Sostituiscilo con l'indirizzo reale del repository Git.",
+   "installPathTemplateHint": "Sostituiscilo con il percorso reale della cartella locale del plugin.",
+   "installUpgradeNotice": "I plugin installati non si aggiornano ancora da soli. Per aggiornare un plugin, disinstallalo e installa la nuova versione. Le prossime versioni miglioreranno l'aggiornamento.",
+   "sentenceSeparator": " ",
+   "installProblemShipped": "Questo plugin è incluso in DSH; aggiornando DSH si aggiorna anche lui",
+   "reasonIncompatibleInstall": "Installa una versione del plugin compatibile con questo DSH.",
+   "reasonIncompatibleInstalled": "Disinstallalo e installa una versione compatibile con questo DSH.",
+   "intro": "Installa, attiva e configura i plugin",
+   "installSpecPlaceholder": "per esempio dsh-plugin-whale-pet",
+   "installGuideIdTitle": "Inserisci il nome del pacchetto npm del plugin",
+   "installGuideIdExample": "dsh-plugin-whale-pet",
+   "registryCustomHint": "Inserisci l'indirizzo di un registro npm aziendale o privato che inizi con http:// o https://. Se richiede l'accesso, tieni le credenziali in ~/.npmrc su questa macchina.",
+   "installProblemInstalled": "Questo plugin è già installato. Per aggiornarlo, disinstallalo e installalo di nuovo",
+   "reasonIncompatibleVersion": "{plugin} non è compatibile con DSH {runtime} (richiede {peers}); eseguirlo può causare crash o perdita di dati."
+  },
+  "settings.sessionLog": {
+   "title": "Carica il registro della sessione quando usi l'API ufficiale dei modelli",
+   "description": "Aiuta a migliorare i modelli e i prodotti DeepSeek.",
+   "saved": "Preferenza salvata",
+   "failed": "Impossibile salvare la preferenza"
+  },
+  "question": {
+   "error.unavailable": "Impossibile inviare ora; riprova tra un momento.",
+   "error.resubmit": "La risposta non è arrivata prima che il lavoro proseguisse; inviala di nuovo.",
+   "status.sent": "Risposta inviata; non è stato possibile chiudere il pannello.",
+   "wait.takeTime": "Prenditi tempo",
+   "wait.countdown": "Si prosegue tra {seconds}s",
+   "wait.paused": "In pausa · {seconds}s rimanenti",
+   "wait.held": "In attesa della tua risposta",
+   "wait.continued": "Il lavoro è proseguito, puoi ancora rispondere",
+   "review.status": "Risposta data",
+   "review.skipped": "Questa domanda è stata saltata.",
+   "reply.label": "Rispondi alle domande in sospeso precedenti",
+   "reply.open": "Apri i dettagli della domanda",
+   "reply.close": "Chiudi i dettagli della domanda",
+   "reply.answerLabel": "Risposta: ",
+   "reply.skipped": "Saltata",
+   "nav.close": "Chiudi il pannello; puoi riaprirlo dalla chiamata a strumento"
+  },
+  "workspace": {
+   "session.untitled": "Senza nome"
+  },
+  "settings.account": {
+   "onboardingSkipDescription": "Puoi cambiare in qualsiasi momento come vengono mostrati avanzamento, prestazioni e utilizzo, o attivare gli strumenti di programmazione, in Impostazioni → Generali.",
+   "onboardingNoCreditDescription": "Senza credito DeepSeek Harness non può avviare nuove attività. Puoi aggiungerlo più tardi in Impostazioni → Account."
+  },
+  "settings": {
+   "desktop.update.versionDetail": "{label}: {version}",
+   "desktop.update.downloadDetail": "Download dell'aggiornamento: {percent}%\nVersione di destinazione: {version}",
+   "desktop.update.checkNetworkFailed": "Impossibile cercare aggiornamenti. Controlla la connessione e riprova.",
+   "desktop.update.downloadNetworkFailed": "Impossibile scaricare l'aggiornamento. Controlla la connessione e riprova.",
+   "desktop.update.installNetworkFailed": "Impossibile installare l'aggiornamento. Controlla la connessione e riprova.",
+   "desktop.update.stopFailed": "Impossibile interrompere le attività in sicurezza. L'aggiornamento non è stato installato. Riprova più tardi.",
+   "desktop.update.tasksChanged": "Sono state avviate nuove attività. Conferma di nuovo per interromperle e aggiornare.",
+   "developerTools.title": "Mostra vista di programmazione",
+   "developerTools.description": "Mostra traiettoria, diff del codice e tutti i preset dell'agente"
+  },
+  "settings.models": {
+   "welcomeTitle": "Avviso di anteprima",
+   "welcomeBody": "DeepSeek Harness 0.2 è ancora in anteprima e molte parti hanno bisogno di ulteriori miglioramenti. Accogliamo con piacere feedback e suggerimenti da sviluppatori e utenti. La nuova app desktop si rivolge ora a un pubblico ampio, mentre le funzioni avanzate per sviluppatori si possono attivare nelle impostazioni. Le funzioni del prodotto e le API dei plugin di DeepSeek Harness continueranno a evolversi rapidamente e si stabilizzeranno nel tempo.\n\nNon vediamo l'ora di esplorare i limiti dell'intelligenza insieme a utenti e sviluppatori di tutto il mondo, su un'infrastruttura open source, riutilizzabile e componibile. Invitiamo tutti a dare vita alle proprie idee con DeepSeek Harness e a partecipare alla comunità per arricchire l'ecosistema dei plugin."
+  },
+  "settings.pluginInventory": {
+   "presetEnabledTag": "Tramite i preset"
+  },
+  "settings.webSearch": {
+   "apiKeyUnset": "Nessuna chiave configurata; la ricerca è disponibile solo nelle conversazioni con un modello dell'account DeepSeek, tramite l'endpoint predefinito."
+  }
+ }
+}

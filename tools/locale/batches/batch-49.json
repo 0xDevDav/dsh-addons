@@ -1,111 +1,27 @@
 {
- "batch": "sidebarBrowser",
- "namespace": "sidebarBrowser",
- "total": 26,
+ "batch": "sidebar",
+ "namespace": "sidebar",
+ "total": 5,
  "keys": {
-  "type.label": {
-   "en": "Browser",
-   "zh": "浏览器"
+  "session.new": {
+   "en": "New Session",
+   "zh": "新会话"
   },
-  "guide.title": {
-   "en": "Browser",
-   "zh": "浏览器"
+  "session.new.label": {
+   "en": "New session",
+   "zh": "新建会话"
   },
-  "guide.description": {
-   "en": "Browse web pages",
-   "zh": "浏览网页"
+  "toggle.open": {
+   "en": "Open sidebar",
+   "zh": "打开侧边栏"
   },
-  "shortcut.noSession": {
-   "en": "Open a session first",
-   "zh": "请先打开一个会话"
+  "toggle.collapse": {
+   "en": "Collapse sidebar",
+   "zh": "收起侧边栏"
   },
-  "address.placeholder": {
-   "en": "Enter an HTTP(S) address",
-   "zh": "输入 HTTP(S) 地址"
-  },
-  "address.changed": {
-   "en": "URL changed",
-   "zh": "URL 已变化"
-  },
-  "back": {
-   "en": "Back",
-   "zh": "后退"
-  },
-  "forward": {
-   "en": "Forward",
-   "zh": "前进"
-  },
-  "reload": {
-   "en": "Reload",
-   "zh": "刷新"
-  },
-  "go": {
-   "en": "Go",
-   "zh": "前往"
-  },
-  "external": {
-   "en": "Open in system browser",
-   "zh": "在系统浏览器中打开"
-  },
-  "sandbox.disable": {
-   "en": "Disable sandbox restrictions",
-   "zh": "关闭沙箱限制"
-  },
-  "sandbox.enable": {
-   "en": "Restore sandbox restrictions",
-   "zh": "恢复沙箱限制"
-  },
-  "sandbox.warning": {
-   "en": "Sandbox restrictions are disabled; the page can navigate the top-level app and use downloads, modal dialogs, and input locks.",
-   "zh": "沙箱限制已关闭；页面可以导航顶层应用，并使用下载、模态对话框与输入锁定。"
-  },
-  "start": {
-   "en": "Enter an HTTP(S) address to start browsing",
-   "zh": "输入 HTTP(S) 地址开始浏览"
-  },
-  "loading": {
-   "en": "Opening…",
-   "zh": "正在打开…"
-  },
-  "restore.previous": {
-   "en": "Previously opened",
-   "zh": "上次打开"
-  },
-  "restore.action": {
-   "en": "Restore page",
-   "zh": "恢复页面"
-  },
-  "error.empty": {
-   "en": "Enter an address.",
-   "zh": "请输入地址。"
-  },
-  "error.invalid": {
-   "en": "That address is invalid or too long.",
-   "zh": "这个地址无效或过长。"
-  },
-  "error.protocol": {
-   "en": "Only HTTP and HTTPS addresses are supported; use Document Preview for local files.",
-   "zh": "只支持 HTTP 和 HTTPS 地址；本地文件请使用文档预览。"
-  },
-  "error.credentials": {
-   "en": "Addresses cannot contain a username or password.",
-   "zh": "地址不能包含用户名或密码。"
-  },
-  "error.application-origin": {
-   "en": "The embedded browser cannot open the DSH application itself.",
-   "zh": "不能在嵌入浏览器中打开 DSH 应用自身。"
-  },
-  "load.failed": {
-   "en": "The page could not load; reload or open it in the system browser.",
-   "zh": "页面加载失败；请刷新重试或在系统浏览器中打开。"
-  },
-  "load.failed.detail": {
-   "en": "Page load failed ({code}): {description}",
-   "zh": "页面加载失败 ({code}): {description}"
-  },
-  "address.unknown": {
-   "en": "The page navigated; this carrier cannot read its new URL.",
-   "zh": "页面已跳转；当前载体无法读取新的 URL。"
+  "panels.label": {
+   "en": "Global panels",
+   "zh": "全局面板"
   }
  }
 }

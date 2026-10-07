@@ -3,7 +3,6 @@
  "namespace": "chat",
  "total": 70,
  "keys": {
-  "stats.counts": "{turns} turni {steps} passi",
   "stats.cacheHit": "Cache hit {percent}%",
   "stats.dialog.title": "Statistiche della sessione",
   "stats.dialog.usageTitle": "Utilizzo dei token",
@@ -15,7 +14,8 @@
   "chat.loadError": "Caricamento cronologia non riuscito: {message} ({code})",
   "chat.loadOlder": "Carica precedenti",
   "chat.toBottom": "Torna in fondo",
-  "chat.deepDiving": "Deep diving...",
+  "chat.deepDiving": "Analisi approfondita",
+  "chat.deepDivingFor": "Analisi approfondita da {duration} ···",
   "chat.turnNavigation.label": "Navigazione turni",
   "chat.turnNavigation.jump": "Vai al turno {turn}",
   "chat.turnNavigation.jumpLoad": "Carica e vai al turno {turn}",

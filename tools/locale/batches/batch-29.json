@@ -3,10 +3,6 @@
  "namespace": "pluginManager",
  "total": 70,
  "keys": {
-  "registryCustomHint": {
-   "en": "A company or private npm registry; for one that needs a login, keep the credentials in ~/.npmrc on this machine",
-   "zh": "公司内网或私有 npm 源；需要登录的源，把凭据放在本机的 ~/.npmrc 里"
-  },
   "registryCustomInvalid": {
    "en": "Enter an address starting with http:// or https://",
    "zh": "请输入以 http:// 或 https:// 开头的地址"
@@ -14,6 +10,10 @@
   "registryListSeparator": {
    "en": ", ",
    "zh": "、"
+  },
+  "sentenceSeparator": {
+   "en": " ",
+   "zh": ""
   },
   "installRun": {
    "en": "Install",
@@ -28,8 +28,12 @@
    "zh": "无法识别这个包名或地址：{reason}"
   },
   "installProblemInstalled": {
-   "en": "This plugin is already installed",
-   "zh": "该插件已安装"
+   "en": "This plugin is already installed. To upgrade it, uninstall it and install it again",
+   "zh": "该插件已安装。如需升级，请卸载后重新安装"
+  },
+  "installProblemShipped": {
+   "en": "This plugin ships with DSH; upgrading DSH updates it",
+   "zh": "该插件随 DSH 提供，升级 DSH 即可获得新版本"
   },
   "installProblemNotFound": {
    "en": "No such plugin was found",
@@ -278,10 +282,6 @@
   "installFailureTimeout": {
    "en": "The install timed out",
    "zh": "安装超时"
-  },
-  "installFailurePnpmMissing": {
-   "en": "pnpm was not found, so nothing can be installed",
-   "zh": "没有找到 pnpm，无法安装"
   }
  }
 }

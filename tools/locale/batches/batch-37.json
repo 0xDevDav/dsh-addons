@@ -1,12 +1,8 @@
 {
  "batch": "settings.account#2",
  "namespace": "settings.account",
- "total": 25,
+ "total": 23,
  "keys": {
-  "signOutRunningDescription": {
-   "en": "Tasks are currently running. Signing out will interrupt them. Sign out now?",
-   "zh": "当前有进程正在执行中，点击“退出登录”，将会打断进程，是否即刻退出登录？"
-  },
   "cancel": {
    "en": "Cancel",
    "zh": "取消"
@@ -98,10 +94,6 @@
   "bonusNoticeTitle": {
    "en": "Bonus credited",
    "zh": "赠金已到账"
-  },
-  "bonusEmpty": {
-   "en": "No bonus available",
-   "zh": "暂无可用赠金"
   }
  }
 }

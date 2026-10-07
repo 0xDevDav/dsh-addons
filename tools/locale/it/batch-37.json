@@ -1,9 +1,8 @@
 {
  "batch": "settings.account#2",
  "namespace": "settings.account",
- "total": 25,
+ "total": 23,
  "keys": {
-  "signOutRunningDescription": "Ci sono attività in esecuzione. Uscire le interromperà. Uscire ora?",
   "cancel": "Annulla",
   "open": "Apri il browser",
   "initializing": "Avvio dell'accesso…",
@@ -26,7 +25,6 @@
   "quotaTitle": "Nessun saldo disponibile",
   "quotaDescription": "Senza saldo disponibile DeepSeek Harness non può avviare nuove attività con questo account. Vuoi ricaricare? Puoi anche ricaricare più tardi in Impostazioni → Account.",
   "quotaTopUp": "Ricarica",
-  "bonusNoticeTitle": "Bonus accreditato",
-  "bonusEmpty": "Nessun bonus disponibile"
+  "bonusNoticeTitle": "Bonus accreditato"
  }
 }

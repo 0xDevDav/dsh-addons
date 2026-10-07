@@ -3,13 +3,14 @@
  "namespace": "pluginManager",
  "total": 70,
  "keys": {
-  "registryCustomHint": "Un registro npm aziendale o privato; se richiede l'accesso, tieni le credenziali in ~/.npmrc su questa macchina",
   "registryCustomInvalid": "Inserisci un indirizzo che inizia con http:// o https://",
   "registryListSeparator": ", ",
+  "sentenceSeparator": " ",
   "installRun": "Installa",
   "installChecking": "Verifica…",
   "installProblemInvalid": "Questo non è un nome di pacchetto o un indirizzo installabile: {reason}",
-  "installProblemInstalled": "Questo plugin è già installato",
+  "installProblemInstalled": "Questo plugin è già installato. Per aggiornarlo, disinstallalo e installalo di nuovo",
+  "installProblemShipped": "Questo plugin è incluso in DSH; aggiornando DSH si aggiorna anche lui",
   "installProblemNotFound": "Nessun plugin trovato",
   "installProblemNotPackage": "Il percorso non esiste o non è un pacchetto di plugin valido",
   "installProblemNotBundle": "Questo pacchetto non dichiara alcuna composizione, quindi non può essere installato come plugin: {reason}",
@@ -71,7 +72,6 @@
   "installFailureBuildBlocked": "Gli script di installazione di una dipendenza richiedono la tua autorizzazione per proseguire",
   "installFailureBuildBlockedManual": "pnpm ha bloccato gli script di installazione; consentili in allowBuilds di pnpm-workspace.yaml e riprova",
   "installFailureIntegrity": "Il pacchetto scaricato non ha superato la verifica di integrità",
-  "installFailureTimeout": "Timeout dell'installazione",
-  "installFailurePnpmMissing": "pnpm non è stato trovato, quindi non è possibile installare nulla"
+  "installFailureTimeout": "Timeout dell'installazione"
  }
 }

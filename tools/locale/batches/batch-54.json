@@ -1,19 +1,67 @@
 {
- "batch": "sidebarCodePreview",
- "namespace": "sidebarCodePreview",
- "total": 3,
+ "batch": "sidebarPdf",
+ "namespace": "sidebarPdf",
+ "total": 15,
  "keys": {
+  "zoomControls": {
+   "en": "Zoom controls",
+   "zh": "缩放控件"
+  },
+  "zoomMenu": {
+   "en": "Choose zoom",
+   "zh": "选择缩放比例"
+  },
+  "zoomOut": {
+   "en": "Zoom out",
+   "zh": "缩小"
+  },
+  "zoomIn": {
+   "en": "Zoom in",
+   "zh": "放大"
+  },
+  "zoomFitWidth": {
+   "en": "Fit width",
+   "zh": "适应宽度"
+  },
+  "zoomValue": {
+   "en": "{percent}%",
+   "zh": "{percent}%"
+  },
   "title": {
-   "en": "Code",
-   "zh": "代码"
+   "en": "PDF",
+   "zh": "PDF"
   },
-  "copy": {
-   "en": "Copy",
-   "zh": "复制"
+  "pageImage": {
+   "en": "PDF page {page}",
+   "zh": "PDF 第 {page} 页"
   },
-  "copied": {
-   "en": "Copied",
-   "zh": "已复制"
+  "loading": {
+   "en": "Rendering document...",
+   "zh": "文档渲染中..."
+  },
+  "rendering": {
+   "en": "Rendering page…",
+   "zh": "正在绘制页面…"
+  },
+  "failed": {
+   "en": "Cannot display PDF: {message}",
+   "zh": "无法显示 PDF：{message}"
+  },
+  "password": {
+   "en": "This PDF requires a password; password-protected previews are not supported.",
+   "zh": "此 PDF 需要密码，暂不支持预览"
+  },
+  "workerFailed": {
+   "en": "The PDF rendering process could not continue. Please retry.",
+   "zh": "PDF 渲染进程无法继续，请重试"
+  },
+  "unsupported": {
+   "en": "PDF preview requires the complete file contents.",
+   "zh": "PDF 预览需要完整文件内容"
+  },
+  "retry": {
+   "en": "Retry",
+   "zh": "重试"
   }
  }
 }

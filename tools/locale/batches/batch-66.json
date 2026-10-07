@@ -1,215 +1,287 @@
 {
- "batch": "trajectory#3",
+ "batch": "trajectory#2",
  "namespace": "trajectory",
- "total": 52,
+ "total": 70,
  "keys": {
-  "summary.toolCalls.one": {
-   "en": "{count} tool call",
-   "zh": "{count} 个工具调用"
+  "usage.sessionCumulative": {
+   "en": "Session cumulative",
+   "zh": "会话累计"
   },
-  "summary.toolCalls.other": {
-   "en": "{count} tool calls",
-   "zh": "{count} 个工具调用"
+  "options.notRecorded": {
+   "en": "Options not recorded",
+   "zh": "未记录选项"
   },
-  "summary.steps.one": {
-   "en": "{count} step",
-   "zh": "{count} 个步骤"
+  "options.json": {
+   "en": "Request options JSON",
+   "zh": "请求选项 JSON"
   },
-  "summary.steps.other": {
-   "en": "{count} steps",
-   "zh": "{count} 个步骤"
+  "source.unknown": {
+   "en": "Unknown",
+   "zh": "未知"
   },
-  "details.event": {
-   "en": "Event details",
-   "zh": "事件详情"
+  "source.user": {
+   "en": "User",
+   "zh": "用户"
   },
-  "details.resize": {
-   "en": "Resize event details",
-   "zh": "调整事件详情宽度"
+  "source.plugin": {
+   "en": "Plugin",
+   "zh": "插件"
   },
-  "details.resizeTitle": {
-   "en": "Drag to resize. Double-click to reset.",
-   "zh": "拖动调整大小；双击恢复默认值。"
+  "source.pluginNamed": {
+   "en": "Plugin · {plugin}",
+   "zh": "插件 · {plugin}"
   },
-  "details.close": {
-   "en": "Close details",
-   "zh": "关闭详情"
+  "source.goal": {
+   "en": "Goal",
+   "zh": "目标"
   },
-  "details.status": {
-   "en": "Status",
-   "zh": "状态"
+  "source.goalRound": {
+   "en": "Goal · Round {round}",
+   "zh": "目标 · Round {round}"
   },
-  "details.purpose": {
-   "en": "Purpose",
-   "zh": "用途"
+  "source.notRecorded": {
+   "en": "Source not recorded",
+   "zh": "未记录来源"
   },
-  "details.provider": {
-   "en": "Provider",
-   "zh": "提供方"
+  "source.messageJson": {
+   "en": "Message source JSON",
+   "zh": "消息来源 JSON"
   },
-  "details.model": {
-   "en": "Model",
-   "zh": "模型"
+  "tab.summary": {
+   "en": "Summary",
+   "zh": "概述"
   },
-  "details.toolCalls": {
-   "en": "Tool calls",
-   "zh": "工具调用"
+  "tab.rawOutput": {
+   "en": "Raw Output",
+   "zh": "原始输出"
   },
-  "details.subtoolCalls": {
-   "en": "Subtool calls",
-   "zh": "子工具调用"
+  "tab.preview": {
+   "en": "Preview",
+   "zh": "预览"
   },
-  "details.error": {
-   "en": "Error",
-   "zh": "错误"
+  "tab.raw": {
+   "en": "Raw",
+   "zh": "原始内容"
   },
-  "details.failure.auth": {
-   "en": "API key is invalid",
-   "zh": "API 密钥无效"
-  },
-  "details.retry": {
-   "en": "Retry",
-   "zh": "重试"
-  },
-  "details.scheduled": {
-   "en": "Scheduled",
-   "zh": "已计划"
-  },
-  "details.retryDelay": {
-   "en": "Retry delay",
-   "zh": "重试延迟"
-  },
-  "details.result": {
-   "en": "Result",
-   "zh": "结果"
-  },
-  "details.compacted": {
-   "en": "Compacted",
-   "zh": "已压缩"
-  },
-  "details.assistantMessage": {
-   "en": "Assistant Message",
-   "zh": "助手消息"
-  },
-  "details.source": {
+  "tab.source": {
    "en": "Source",
    "zh": "来源"
   },
-  "details.hierarchy": {
-   "en": "Hierarchy",
-   "zh": "层级"
+  "tab.payload": {
+   "en": "Payload",
+   "zh": "参数"
   },
-  "details.toolCall": {
-   "en": "Tool Call",
-   "zh": "工具调用"
+  "tab.result": {
+   "en": "Result",
+   "zh": "结果"
   },
-  "timeline.aria": {
-   "en": "Trajectory timeline",
-   "zh": "轨迹时间线"
+  "tab.schema": {
+   "en": "Schema",
+   "zh": "Schema"
   },
-  "timeline.overviewAria": {
-   "en": "Timeline overview; drag horizontally to focus events",
-   "zh": "时间线概览；水平拖动可聚焦事件"
+  "tab.timing": {
+   "en": "Timing",
+   "zh": "计时"
   },
-  "timeline.noTimingData": {
-   "en": "No timing data",
-   "zh": "无计时数据"
+  "tab.diff": {
+   "en": "Diff",
+   "zh": "差异"
   },
-  "timeline.total": {
-   "en": "Total {duration}",
-   "zh": "总计 {duration}"
+  "tab.systemPrompt": {
+   "en": "System Prompt",
+   "zh": "系统提示词"
   },
-  "timeline.started": {
-   "en": "Started {time}",
-   "zh": "开始于 {time}"
+  "tab.tools": {
+   "en": "Tools",
+   "zh": "工具"
   },
-  "timeline.ttftDecoding": {
-   "en": "TTFT {ttft} · Decoding {decoding}",
-   "zh": "首 token {ttft} · 解码 {decoding}"
+  "tab.options": {
+   "en": "Options",
+   "zh": "选项"
   },
-  "layout.compacting": {
-   "en": "Compacting context…",
-   "zh": "正在压缩上下文…"
+  "tab.usage": {
+   "en": "Usage",
+   "zh": "用量"
   },
-  "layout.compactionFailed": {
-   "en": "Compaction failed",
-   "zh": "上下文压缩失败"
+  "record.toolCallOnly": {
+   "en": "(tool call only)",
+   "zh": "（仅工具调用）"
   },
-  "layout.compacted": {
-   "en": "Context compacted",
-   "zh": "上下文已压缩"
+  "record.noContent": {
+   "en": "No content",
+   "zh": "无内容"
   },
-  "layout.toolCallOnly": {
-   "en": "Tool call only",
-   "zh": "仅工具调用"
+  "record.noPayload": {
+   "en": "No payload captured",
+   "zh": "未捕获参数"
   },
-  "attachment.list": {
-   "en": "Attachments",
-   "zh": "附件"
+  "record.noResult": {
+   "en": "No result captured",
+   "zh": "未捕获结果"
   },
-  "attachment.imageName": {
-   "en": "Image {index}",
-   "zh": "图片 {index}"
+  "record.noOutput": {
+   "en": "No output",
+   "zh": "无输出"
   },
-  "layout.imageCount": {
-   "en": "Images ×{count}",
-   "zh": "图片 ×{count}"
+  "record.schemaUnavailable": {
+   "en": "Schema unavailable",
+   "zh": "Schema 不可用"
   },
-  "layout.fileAttachments": {
-   "en": "Files ×{count}",
-   "zh": "文件 ×{count}"
+  "record.parameters": {
+   "en": "Parameters",
+   "zh": "参数"
   },
-  "layout.initialSystemPrompt": {
-   "en": "Initial System Prompt",
-   "zh": "初始系统提示词"
+  "record.resultJson": {
+   "en": "Result JSON",
+   "zh": "结果 JSON"
   },
-  "layout.systemPromptUpdated": {
-   "en": "System Prompt Updated",
-   "zh": "系统提示词已更新"
+  "record.json": {
+   "en": "JSON",
+   "zh": "JSON"
   },
-  "layout.toolsUpdated": {
-   "en": "Tools Updated",
-   "zh": "工具已更新"
+  "record.parametersJson": {
+   "en": "parameters JSON",
+   "zh": "参数 JSON"
   },
-  "layout.toolAdded": {
-   "en": "Tool added: {name}",
-   "zh": "已添加工具：{name}"
+  "record.namedParametersJson": {
+   "en": "{name} parameters JSON",
+   "zh": "{name} 参数 JSON"
   },
-  "layout.toolRemoved": {
-   "en": "Tool removed: {name}",
-   "zh": "已移除工具：{name}"
+  "record.payloadJson": {
+   "en": "Payload JSON",
+   "zh": "参数 JSON"
   },
-  "layout.toolUpdateNotice": {
-   "en": "Tools updated",
-   "zh": "工具已更新"
+  "record.outputJson": {
+   "en": "Result JSON",
+   "zh": "结果 JSON"
   },
-  "layout.toolsAdded": {
-   "en": "Added: {names}",
-   "zh": "新增：{names}"
+  "record.thinking": {
+   "en": "Thinking",
+   "zh": "思考"
   },
-  "layout.toolsAddedCount": {
-   "en": "{count} added",
-   "zh": "新增 {count} 个"
+  "record.wrapLines": {
+   "en": "Wrap lines",
+   "zh": "自动换行"
   },
-  "layout.toolsChanged": {
-   "en": "{added} added, {removed} removed",
-   "zh": "新增 {added} 个，移除 {removed} 个"
+  "code.source": {
+   "en": "Code",
+   "zh": "代码"
   },
-  "layout.toolsRemoved": {
-   "en": "Removed: {names}",
-   "zh": "移除：{names}"
+  "code.output": {
+   "en": "Output",
+   "zh": "输出"
   },
-  "layout.toolsRemovedCount": {
-   "en": "{count} removed",
-   "zh": "移除 {count} 个"
+  "code.copySource": {
+   "en": "Copy code",
+   "zh": "复制代码"
   },
-  "layout.systemPromptAndToolsUpdated": {
-   "en": "System Prompt and Tools Updated",
-   "zh": "系统提示词和工具已更新"
+  "code.copyOutput": {
+   "en": "Copy output",
+   "zh": "复制输出"
   },
-  "layout.compactionInterrupted": {
-   "en": "Compaction was interrupted before completion.",
-   "zh": "上下文压缩在完成前被中断。"
+  "code.originalJson": {
+   "en": "Original JSON",
+   "zh": "原始 JSON"
+  },
+  "code.running": {
+   "en": "Running…",
+   "zh": "执行中…"
+  },
+  "record.systemPromptMissing": {
+   "en": "No system prompt in this request",
+   "zh": "本次请求没有系统提示词"
+  },
+  "record.toolsMissing": {
+   "en": "No tools in this request",
+   "zh": "本次请求没有工具"
+  },
+  "record.systemPrompt": {
+   "en": "System Prompt",
+   "zh": "系统提示词"
+  },
+  "record.tools": {
+   "en": "Tools",
+   "zh": "工具"
+  },
+  "block.openSummary": {
+   "en": "Open Block #{index} tool call summary",
+   "zh": "打开第 {index} 个块的工具调用概述"
+  },
+  "block.openSummaryTitle": {
+   "en": "Open tool call summary",
+   "zh": "打开工具调用概述"
+  },
+  "block.label": {
+   "en": "Block #{index} {type}",
+   "zh": "块 #{index} {type}"
+  },
+  "history.loadingTrajectory": {
+   "en": "Loading trajectory…",
+   "zh": "正在加载轨迹…"
+  },
+  "history.loadingEarlier": {
+   "en": "Loading earlier history…",
+   "zh": "正在加载更早的历史…"
+  },
+  "history.loadingEarlierAria": {
+   "en": "Loading earlier history…",
+   "zh": "正在加载更早的历史…"
+  },
+  "history.loadEarlier": {
+   "en": "Load earlier history",
+   "zh": "加载更早的历史"
+  },
+  "history.clickToLoadEarlier": {
+   "en": "Click to load earlier history",
+   "zh": "点击加载更早的历史"
+  },
+  "request.label": {
+   "en": "Request #{request}",
+   "zh": "请求 #{request}"
+  },
+  "request.labelCompaction": {
+   "en": "Request #{request} · Compaction",
+   "zh": "请求 #{request} · 压缩"
+  },
+  "request.compaction": {
+   "en": "Compaction · {section}",
+   "zh": "压缩 · {section}"
+  },
+  "request.compactionPurpose": {
+   "en": "Compaction",
+   "zh": "压缩"
+  },
+  "request.retryProgress": {
+   "en": "{retry} of {maximum}",
+   "zh": "{retry}/{maximum}"
+  },
+  "request.collapsedSummary": {
+   "en": "Collapsed {kind} summary, {summary}",
+   "zh": "已收起的{kind}概述，{summary}"
+  },
+  "request.collapsedTurn": {
+   "en": "turn",
+   "zh": "轮次"
+  },
+  "request.collapsedAssistant": {
+   "en": "assistant",
+   "zh": "助手"
+  },
+  "request.rowAria": {
+   "en": "{request}{kind}, {content}",
+   "zh": "{request}{kind}，{content}"
+  },
+  "request.rowPrefix": {
+   "en": "Request {request}, ",
+   "zh": "请求 {request}，"
+  },
+  "request.rowAriaCompaction": {
+   "en": "Request {request}, compaction",
+   "zh": "请求 {request}，压缩"
+  },
+  "request.noContent": {
+   "en": "no content",
+   "zh": "无内容"
   }
  }
 }

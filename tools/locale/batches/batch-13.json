@@ -3,6 +3,30 @@
  "namespace": "conversation",
  "total": 70,
  "keys": {
+  "ask.pending": {
+   "en": "continued; answer still available",
+   "zh": "已继续工作，仍可回答"
+  },
+  "ask.pendingDetail": {
+   "en": "These pending questions remain answerable from the composer.",
+   "zh": "等待中的问题仍可在输入框中回答"
+  },
+  "ask.reopen": {
+   "en": "Answer",
+   "zh": "回答"
+  },
+  "ask.review": {
+   "en": "View answers",
+   "zh": "查看回答"
+  },
+  "ask.closed": {
+   "en": "closed",
+   "zh": "已结束"
+  },
+  "ask.closedDetail": {
+   "en": "This question is closed; its outcome is in the conversation below.",
+   "zh": "该问题已结束，结果见下方对话"
+  },
   "ask.cancelled": {
    "en": "cancelled",
    "zh": "已取消"
@@ -258,30 +282,6 @@
   "queue.cancelEdit": {
    "en": "Cancel editing",
    "zh": "取消编辑"
-  },
-  "queue.remove": {
-   "en": "Remove queued message",
-   "zh": "删除排队消息"
-  },
-  "queue.steer": {
-   "en": "Steer queued message",
-   "zh": "插话发送"
-  },
-  "queue.steer.unavailable": {
-   "en": "Steering is available only while the agent is running",
-   "zh": "仅运行中可插话发送"
-  },
-  "error.sessionInUse": {
-   "en": "This session is already in use, possibly by another running DSH instance (such as dsh web or the desktop app). Quit other running DSH instances and try again.",
-   "zh": "当前会话已被占用，可能是其他正在运行的 DSH 导致的（如其他 dsh web、桌面端），请退出其他正在运行的 DSH 后重试。"
-  },
-  "queue.editFailed": {
-   "en": "Edit failed: this message may have already started sending.",
-   "zh": "编辑失败：这条消息可能已经开始发送。"
-  },
-  "queue.removeFailed": {
-   "en": "Removal failed: this message may have already started sending.",
-   "zh": "删除失败：这条消息可能已经开始发送。"
   }
  }
 }

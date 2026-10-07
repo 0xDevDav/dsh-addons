@@ -15,6 +15,11 @@
    "zh": "新会话",
    "it": "Nuova sessione"
   },
+  "session.untitled": {
+   "en": "Untitled",
+   "zh": "未命名",
+   "it": "Senza nome"
+  },
   "shortcut.noSession": {
    "en": "Select a session first",
    "zh": "请先选择一个会话",
@@ -761,16 +766,6 @@
    "en": "Let the agent help me create a preset",
    "zh": "让 Agent 帮我创建预设模式",
    "it": "Lascia che l'agente mi aiuti a creare un preset"
-  },
-  "enableDevToolsToSetDefault": {
-   "en": "Turn on Coding Tools in General settings to choose a default",
-   "zh": "请先在通用设置中开启代码工作工具，再设置默认值",
-   "it": "Attiva Strumenti di codifica nelle impostazioni Generali per scegliere un predefinito"
-  },
-  "enableDevToolsToCreate": {
-   "en": "Turn on Coding Tools in General settings to start Creator mode",
-   "zh": "请先在通用设置中开启代码工作工具，再启动创造模式",
-   "it": "Attiva Strumenti di codifica nelle impostazioni Generali per avviare la modalità Creator"
   }
  },
  "cordis": {

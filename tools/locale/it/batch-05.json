@@ -55,13 +55,12 @@
   "message.trigger.subagent": "Stato della sottoattività aggiornato",
   "message.trigger.github": "Evento GitHub ricevuto",
   "message.trigger.webhook": "Evento esterno ricevuto",
-  "message.trigger.schedule": "Attività pianificata",
+  "message.trigger.schedule": "Attività automatica",
   "message.trigger.job": "Attività in background aggiornata",
   "message.trigger.plugin": "Stato del Plugin aggiornato",
   "message.trigger.explanation": "Questa notifica ha attivato questa risposta.",
-  "message.turnProcess.worked": "Ha lavorato",
-  "message.turnProcess.deepDivingFor": "Analisi approfondita da {duration}",
-  "message.turnProcess.took": "Tempo impiegato: {duration}",
+  "message.turnProcess.worked": "Completato",
+  "message.turnProcess.took": "Completato in ",
   "message.turnProcess.failed": "Non riuscito",
   "view.chat": "Chat",
   "image.open": "Vedi immagine intera",
@@ -72,6 +71,7 @@
   "number.groupSeparator": ",",
   "duration.compactSeconds": "{seconds}s",
   "duration.compactMinutes": "{minutes}m{seconds}s",
-  "duration.milliseconds": "{milliseconds}ms"
+  "duration.milliseconds": "{milliseconds}ms",
+  "stats.counts": "{turns} turni {steps} passi"
  }
 }

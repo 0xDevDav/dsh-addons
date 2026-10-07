@@ -1,0 +1,359 @@
+{
+ "added": {
+  "chat": {
+   "chat.deepDivingFor": {
+    "en": "Deep diving for {duration} ···",
+    "zh": "深度求索中，用时 {duration} ···"
+   },
+   "duration.secondUnit": {
+    "en": "s",
+    "zh": "秒"
+   },
+   "duration.minuteUnit": {
+    "en": "m ",
+    "zh": "分"
+   },
+   "duration.hourUnit": {
+    "en": "h ",
+    "zh": "小时"
+   }
+  },
+  "conversation": {
+   "ask.pending": {
+    "en": "continued; answer still available",
+    "zh": "已继续工作，仍可回答"
+   },
+   "ask.pendingDetail": {
+    "en": "These pending questions remain answerable from the composer.",
+    "zh": "等待中的问题仍可在输入框中回答"
+   },
+   "ask.reopen": {
+    "en": "Answer",
+    "zh": "回答"
+   },
+   "ask.review": {
+    "en": "View answers",
+    "zh": "查看回答"
+   },
+   "ask.closed": {
+    "en": "closed",
+    "zh": "已结束"
+   },
+   "ask.closedDetail": {
+    "en": "This question is closed; its outcome is in the conversation below.",
+    "zh": "该问题已结束，结果见下方对话"
+   }
+  },
+  "model": {
+   "search.placeholder": {
+    "en": "Search models…",
+    "zh": "搜索模型…"
+   },
+   "search.clear": {
+    "en": "Clear search",
+    "zh": "清除搜索"
+   },
+   "search.empty": {
+    "en": "No matching models.",
+    "zh": "没有匹配的模型。"
+   }
+  },
+  "pluginManager": {
+   "infoLabel": {
+    "en": "About plugins",
+    "zh": "插件说明"
+   },
+   "infoDescription": {
+    "en": "Configure official plugins and install or manage other plugins here. View the built-in plugin list and runtime status in Settings → Built-in plugins.",
+    "zh": "在这里配置官方插件，安装和管理其他插件。内置插件列表及运行状态可在「设置 → 内置插件」中查看"
+   },
+   "refreshError": {
+    "en": "Refresh failed. Please try again.",
+    "zh": "刷新失败，请重试"
+   },
+   "installGitTemplateHint": {
+    "en": "Replace this with the actual Git repository address.",
+    "zh": "请替换为实际的 Git 仓库地址"
+   },
+   "installPathTemplateHint": {
+    "en": "Replace this with the actual path to your local plugin directory.",
+    "zh": "请替换为本机插件目录的实际路径"
+   },
+   "installUpgradeNotice": {
+    "en": "Installed plugins do not update automatically yet. To upgrade a plugin, uninstall it and install the new version. Later releases will keep improving the upgrade experience.",
+    "zh": "插件安装后，暂不支持自动更新。若需升级，请先卸载再安装新版，后续版本会持续改善升级体验。"
+   },
+   "sentenceSeparator": {
+    "en": " ",
+    "zh": ""
+   },
+   "installProblemShipped": {
+    "en": "This plugin ships with DSH; upgrading DSH updates it",
+    "zh": "该插件随 DSH 提供，升级 DSH 即可获得新版本"
+   },
+   "reasonIncompatibleInstall": {
+    "en": "Install a plugin version compatible with this DSH.",
+    "zh": "请安装与当前 DSH 兼容的插件版本。"
+   },
+   "reasonIncompatibleInstalled": {
+    "en": "Uninstall it and install a version compatible with this DSH.",
+    "zh": "请卸载后重新安装与当前 DSH 兼容的版本。"
+   }
+  },
+  "settings.sessionLog": {
+   "title": {
+    "en": "Upload Session Log when using the official model API",
+    "zh": "在使用官方模型 API 时上传 Session Log"
+   },
+   "description": {
+    "en": "Help improve DeepSeek models and products.",
+    "zh": "帮助改进 DeepSeek 模型与产品"
+   },
+   "saved": {
+    "en": "Preference saved",
+    "zh": "设置已保存"
+   },
+   "failed": {
+    "en": "Could not save preference",
+    "zh": "无法保存设置"
+   }
+  },
+  "question": {
+   "error.unavailable": {
+    "en": "Cannot submit right now; try again in a moment.",
+    "zh": "当前无法提交，请稍候再试。"
+   },
+   "error.resubmit": {
+    "en": "The answer did not arrive before work continued; submit it again.",
+    "zh": "回答未送达，工作已继续，请再提交一次。"
+   },
+   "status.sent": {
+    "en": "Reply sent; the panel could not close.",
+    "zh": "回答已发送；面板未能关闭。"
+   },
+   "wait.takeTime": {
+    "en": "Take time",
+    "zh": "慢慢回答"
+   },
+   "wait.countdown": {
+    "en": "Continuing in {seconds}s",
+    "zh": "{seconds} 秒后继续工作"
+   },
+   "wait.paused": {
+    "en": "Paused · {seconds}s remaining",
+    "zh": "已暂停 · 剩余 {seconds} 秒"
+   },
+   "wait.held": {
+    "en": "Waiting until you answer",
+    "zh": "会一直等你回答"
+   },
+   "wait.continued": {
+    "en": "Work continued — you can still answer",
+    "zh": "已继续工作，仍可回答"
+   },
+   "review.status": {
+    "en": "Answered",
+    "zh": "已回答"
+   },
+   "review.skipped": {
+    "en": "This question was skipped.",
+    "zh": "这道问题当时被跳过。"
+   },
+   "reply.label": {
+    "en": "Reply to earlier pending questions",
+    "zh": "回答先前等待中的问题"
+   },
+   "reply.open": {
+    "en": "Open question details",
+    "zh": "展开问题详情"
+   },
+   "reply.close": {
+    "en": "Close question details",
+    "zh": "收起问题详情"
+   },
+   "reply.answerLabel": {
+    "en": "Answer: ",
+    "zh": "回答："
+   },
+   "reply.skipped": {
+    "en": "Skipped",
+    "zh": "已跳过"
+   },
+   "nav.close": {
+    "en": "Close the panel — reopen it from the tool call",
+    "zh": "收起问题面板，可从工具调用重新打开"
+   }
+  },
+  "workspace": {
+   "session.untitled": {
+    "en": "Untitled",
+    "zh": "未命名"
+   }
+  }
+ },
+ "reworded": {
+  "chat": {
+   "message.trigger.schedule": {
+    "en": "Automation task",
+    "wasEn": "Scheduled task",
+    "currentIt": "Attività pianificata"
+   },
+   "message.turnProcess.worked": {
+    "en": "Completed",
+    "wasEn": "Worked",
+    "currentIt": "Ha lavorato"
+   },
+   "message.turnProcess.took": {
+    "en": "Completed in ",
+    "wasEn": "Took {duration}",
+    "currentIt": "Tempo impiegato: {duration}"
+   },
+   "chat.deepDiving": {
+    "en": "Deep diving",
+    "wasEn": "Deep diving...",
+    "currentIt": "Analisi approfondita…"
+   }
+  },
+  "pluginManager": {
+   "intro": {
+    "en": "Install, enable, and configure plugins",
+    "wasEn": "Add and manage plugins",
+    "currentIt": "Aggiungi e gestisci i plugin"
+   },
+   "installSpecPlaceholder": {
+    "en": "for example dsh-plugin-whale-pet",
+    "wasEn": "for example @deepseek-ai/dsh-subagent-codex",
+    "currentIt": "per esempio @deepseek-ai/dsh-subagent-codex"
+   },
+   "installGuideIdTitle": {
+    "en": "Enter the plugin's npm package name",
+    "wasEn": "Package name",
+    "currentIt": "Nome del pacchetto"
+   },
+   "installGuideIdExample": {
+    "en": "dsh-plugin-whale-pet",
+    "wasEn": "@deepseek-ai/dsh-subagent-codex",
+    "currentIt": "@deepseek-ai/dsh-subagent-codex"
+   },
+   "registryCustomHint": {
+    "en": "Enter an internal or private npm registry address starting with http:// or https://. If it requires a login, store the credentials in ~/.npmrc on this machine.",
+    "wasEn": "A company or private npm registry; for one that needs a login, keep the credentials in ~/.npmrc on this machine",
+    "currentIt": "Un registro npm aziendale o privato; se richiede l'accesso, tieni le credenziali in ~/.npmrc su questa macchina"
+   },
+   "installProblemInstalled": {
+    "en": "This plugin is already installed. To upgrade it, uninstall it and install it again",
+    "wasEn": "This plugin is already installed",
+    "currentIt": "Questo plugin è già installato"
+   },
+   "reasonIncompatibleVersion": {
+    "en": "{plugin} is incompatible with DSH {runtime} (requires {peers}); running it may cause crashes or data loss.",
+    "wasEn": "{plugin} is incompatible with DSH {runtime} (requires {peers}); running it may cause crashes or data loss. Install a plugin version compatible with this DSH.",
+    "currentIt": "{plugin} non è compatibile con DSH {runtime} (richiede {peers}); eseguirlo può causare crash o perdita di dati. Installa una versione del plugin compatibile con questo DSH."
+   }
+  },
+  "settings.account": {
+   "onboardingSkipDescription": {
+    "en": "You can change how progress, performance, and usage are displayed, or enable Coding Tools, anytime in Settings → General.",
+    "wasEn": "You can change how progress, performance, and usage are displayed, or enable Coding Tools, anytime in Profile → General Settings.",
+    "currentIt": "Puoi cambiare in qualsiasi momento come vengono mostrati avanzamento, prestazioni e utilizzo, o attivare gli strumenti di programmazione, in Profilo → Impostazioni generali."
+   },
+   "onboardingNoCreditDescription": {
+    "en": "DeepSeek Harness can’t start new tasks without credits. You can add them later in Settings → Account.",
+    "wasEn": "DeepSeek Harness can’t start new tasks without credits. You can add them later in Profile → Accounts.",
+    "currentIt": "Senza credito DeepSeek Harness non può avviare nuove attività. Puoi aggiungerlo più tardi in Profilo → Account."
+   }
+  },
+  "settings": {
+   "desktop.update.versionDetail": {
+    "en": "{label}: {version}",
+    "wasEn": "{label} — V{version}",
+    "currentIt": "{label} — V{version}"
+   },
+   "desktop.update.downloadDetail": {
+    "en": "Downloading update: {percent}%\nTarget version: {version}",
+    "wasEn": "Downloading update: {percent}%\nTarget version: V{version}",
+    "currentIt": "Download dell'aggiornamento: {percent}%\nVersione di destinazione: V{version}"
+   },
+   "desktop.update.checkNetworkFailed": {
+    "en": "Could not check for updates. Check your connection and try again.",
+    "wasEn": "Could not check for updates. Please try again later. The connection was interrupted. Check your network and try again.",
+    "currentIt": "Impossibile cercare aggiornamenti. Riprova più tardi. La connessione è stata interrotta. Controlla la rete e riprova."
+   },
+   "desktop.update.downloadNetworkFailed": {
+    "en": "Could not download the update. Check your connection and try again.",
+    "wasEn": "Could not download the update. Please try again. The connection was interrupted. Check your network and try again.",
+    "currentIt": "Impossibile scaricare l'aggiornamento. Riprova. La connessione è stata interrotta. Controlla la rete e riprova."
+   },
+   "desktop.update.installNetworkFailed": {
+    "en": "Could not install the update. Check your connection and try again.",
+    "wasEn": "Could not install the update. Please try again later. The connection was interrupted. Check your network and try again.",
+    "currentIt": "Impossibile installare l'aggiornamento. Riprova più tardi. La connessione è stata interrotta. Controlla la rete e riprova."
+   },
+   "desktop.update.stopFailed": {
+    "en": "Could not safely stop the tasks. The update has not been installed. Please try again later.",
+    "wasEn": "Tasks could not be stopped safely. The update was not installed. Please try again later.",
+    "currentIt": "Non è stato possibile interrompere le attività in sicurezza. L'aggiornamento non è stato installato. Riprova più tardi."
+   },
+   "desktop.update.tasksChanged": {
+    "en": "New tasks have started. Confirm again to stop the tasks and update.",
+    "wasEn": "New tasks started. Review the update confirmation again.",
+    "currentIt": "Sono state avviate nuove attività. Rivedi la conferma dell'aggiornamento."
+   },
+   "developerTools.title": {
+    "en": "Show coding view",
+    "wasEn": "Coding Tools",
+    "currentIt": "Strumenti di programmazione"
+   },
+   "developerTools.description": {
+    "en": "Shows trajectory, code diffs, and all Agent presets",
+    "wasEn": "Shows trajectory, code diffs, and Agent preset switching in new chats",
+    "currentIt": "Mostra registro, Diff del codice e cambio di Preset agente nelle nuove chat"
+   }
+  },
+  "settings.models": {
+   "welcomeTitle": {
+    "en": "Preview Notice",
+    "wasEn": "Internal Testing Notice",
+    "currentIt": "Avviso di test interno"
+   },
+   "welcomeBody": {
+    "en": "DeepSeek Harness 0.2 is still in preview, and many areas need continued improvement and refinement. We welcome feedback and suggestions from all developers and users. The new desktop app now targets a broad range of users, while developer-related advanced features can be enabled in the settings. DeepSeek Harness’s product features and plugin APIs are expected to continue rapid iteration and evolution, and will gradually stabilize over time.\n\nWe look forward to exploring the limits of intelligence together with users and developers around the world, building on open-source, reusable, and composable infrastructure. We welcome everyone to bring their ideas to life with DeepSeek Harness and participate in the community to enrich the plugin ecosystem.",
+    "wasEn": "DeepSeek Harness 0.1 remains in testing for Harness developers. Many areas need further improvement, and we welcome feedback from the developer community. DeepSeek Harness's core plugins and foundational APIs will continue to evolve rapidly over the coming months.\n\nWe look forward to exploring the limits of intelligence with developers around the world, building on open-source, open, reusable, and composable infrastructure. We welcome Harness developers everywhere to join the DSH plugin ecosystem.",
+    "currentIt": "DeepSeek Harness 0.1 è ancora in fase di test per gli sviluppatori Harness. Molte aree necessitano di ulteriori miglioramenti e accogliamo con favore il feedback della comunità degli sviluppatori. I Plugin principali e le API di base di DeepSeek Harness continueranno a evolversi rapidamente nei prossimi mesi.\n\nNon vediamo l'ora di esplorare i limiti dell'intelligenza con gli sviluppatori di tutto il mondo, su un'infrastruttura open source, aperta, riutilizzabile e componibile. Invitiamo gli sviluppatori Harness di tutto il mondo a unirsi all'ecosistema di Plugin DSH."
+   }
+  },
+  "settings.pluginInventory": {
+   "presetEnabledTag": {
+    "en": "Via presets",
+    "wasEn": "Enabled via presets",
+    "currentIt": "Attivo tramite i preset"
+   }
+  },
+  "settings.webSearch": {
+   "apiKeyUnset": {
+    "en": "No key is configured; only conversations using a DeepSeek Account model can search, through the default endpoint.",
+    "wasEn": "No key is configured; search is unavailable until one is.",
+    "currentIt": "Nessuna chiave configurata; la ricerca non è disponibile finché non ne viene configurata una."
+   }
+  }
+ },
+ "removed": [
+  "settings.agentPreset.enableDevToolsToSetDefault",
+  "settings.agentPreset.enableDevToolsToCreate",
+  "chat.message.turnProcess.deepDivingFor",
+  "chat.duration.seconds",
+  "chat.duration.minutes",
+  "chat.duration.hours",
+  "model.option.deepseekV4Flash.description",
+  "model.option.deepseekV4Pro.description",
+  "pluginManager.installGuideGitTitle",
+  "pluginManager.installGuideGitExample",
+  "pluginManager.installGuideGitHint",
+  "pluginManager.installGuidePathTitle",
+  "pluginManager.installGuidePathExample",
+  "pluginManager.installGuidePathHint",
+  "pluginManager.registryWithHost",
+  "settings.account.contactUsSignedOut",
+  "settings.account.bonusEmpty"
+ ]
+}

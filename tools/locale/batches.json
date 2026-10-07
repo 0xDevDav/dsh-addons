@@ -16,7 +16,7 @@
    "id": "settings.agentPreset",
    "namespace": "settings.agentPreset",
    "file": "batch-03.json",
-   "keys": 43
+   "keys": 41
   },
   {
    "id": "approval",
@@ -82,7 +82,7 @@
    "id": "conversation#6",
    "namespace": "conversation",
    "file": "batch-14.json",
-   "keys": 13
+   "keys": 19
   },
   {
    "id": "cordis",
@@ -136,7 +136,7 @@
    "id": "model",
    "namespace": "model",
    "file": "batch-23.json",
-   "keys": 22
+   "keys": 23
   },
   {
    "id": "open-in-app",
@@ -178,7 +178,7 @@
    "id": "pluginManager#3",
    "namespace": "pluginManager",
    "file": "batch-30.json",
-   "keys": 46
+   "keys": 49
   },
   {
    "id": "reference",
@@ -220,7 +220,7 @@
    "id": "settings.account#2",
    "namespace": "settings.account",
    "file": "batch-37.json",
-   "keys": 25
+   "keys": 23
   },
   {
    "id": "settings.agentLoop",
@@ -259,192 +259,198 @@
    "keys": 5
   },
   {
+   "id": "settings.sessionLog",
+   "namespace": "settings.sessionLog",
+   "file": "batch-44.json",
+   "keys": 4
+  },
+  {
    "id": "settings.shell",
    "namespace": "settings.shell",
-   "file": "batch-44.json",
+   "file": "batch-45.json",
    "keys": 14
   },
   {
    "id": "settings.subagent",
    "namespace": "settings.subagent",
-   "file": "batch-45.json",
+   "file": "batch-46.json",
    "keys": 35
   },
   {
    "id": "settings.webSearch",
    "namespace": "settings.webSearch",
-   "file": "batch-46.json",
+   "file": "batch-47.json",
    "keys": 18
   },
   {
    "id": "shortcuts",
    "namespace": "shortcuts",
-   "file": "batch-47.json",
+   "file": "batch-48.json",
    "keys": 56
   },
   {
    "id": "sidebar",
    "namespace": "sidebar",
-   "file": "batch-48.json",
+   "file": "batch-49.json",
    "keys": 5
   },
   {
    "id": "sidebarBrowser",
    "namespace": "sidebarBrowser",
-   "file": "batch-49.json",
+   "file": "batch-50.json",
    "keys": 26
   },
   {
    "id": "documentMarkdown",
    "namespace": "documentMarkdown",
-   "file": "batch-50.json",
+   "file": "batch-51.json",
    "keys": 4
   },
   {
    "id": "documentHtml",
    "namespace": "documentHtml",
-   "file": "batch-51.json",
+   "file": "batch-52.json",
    "keys": 4
   },
   {
    "id": "sidebarImage",
    "namespace": "sidebarImage",
-   "file": "batch-52.json",
+   "file": "batch-53.json",
    "keys": 11
   },
   {
    "id": "sidebarPdf",
    "namespace": "sidebarPdf",
-   "file": "batch-53.json",
+   "file": "batch-54.json",
    "keys": 15
   },
   {
    "id": "sidebarCodePreview",
    "namespace": "sidebarCodePreview",
-   "file": "batch-54.json",
+   "file": "batch-55.json",
    "keys": 3
   },
   {
    "id": "sidebarOffice",
    "namespace": "sidebarOffice",
-   "file": "batch-55.json",
+   "file": "batch-56.json",
    "keys": 15
   },
   {
    "id": "sidebarExcel",
    "namespace": "sidebarExcel",
-   "file": "batch-56.json",
+   "file": "batch-57.json",
    "keys": 15
   },
   {
    "id": "sidebarDocumentPreview",
    "namespace": "sidebarDocumentPreview",
-   "file": "batch-57.json",
+   "file": "batch-58.json",
    "keys": 22
   },
   {
    "id": "sidebarFiles",
    "namespace": "sidebarFiles",
-   "file": "batch-58.json",
+   "file": "batch-59.json",
    "keys": 17
   },
   {
    "id": "sidebarRight",
    "namespace": "sidebarRight",
-   "file": "batch-59.json",
+   "file": "batch-60.json",
    "keys": 34
   },
   {
    "id": "sidebarTerminal",
    "namespace": "sidebarTerminal",
-   "file": "batch-60.json",
+   "file": "batch-61.json",
    "keys": 28
   },
   {
    "id": "skill",
    "namespace": "skill",
-   "file": "batch-61.json",
+   "file": "batch-62.json",
    "keys": 8
   },
   {
    "id": "subagent",
    "namespace": "subagent",
-   "file": "batch-62.json",
+   "file": "batch-63.json",
    "keys": 39
   },
   {
    "id": "settings.theme",
    "namespace": "settings.theme",
-   "file": "batch-63.json",
+   "file": "batch-64.json",
    "keys": 9
   },
   {
    "id": "trajectory#1",
    "namespace": "trajectory",
-   "file": "batch-64.json",
+   "file": "batch-65.json",
    "keys": 70
   },
   {
    "id": "trajectory#2",
    "namespace": "trajectory",
-   "file": "batch-65.json",
+   "file": "batch-66.json",
    "keys": 70
   },
   {
    "id": "trajectory#3",
    "namespace": "trajectory",
-   "file": "batch-66.json",
+   "file": "batch-67.json",
    "keys": 52
   },
   {
    "id": "question",
    "namespace": "question",
-   "file": "batch-67.json",
-   "keys": 15
+   "file": "batch-68.json",
+   "keys": 31
   },
   {
    "id": "workflowRun",
    "namespace": "workflowRun",
-   "file": "batch-68.json",
+   "file": "batch-69.json",
    "keys": 18
   },
   {
    "id": "workspace#1",
    "namespace": "workspace",
-   "file": "batch-69.json",
+   "file": "batch-70.json",
    "keys": 70
   },
   {
    "id": "workspace#2",
    "namespace": "workspace",
-   "file": "batch-70.json",
-   "keys": 41
+   "file": "batch-71.json",
+   "keys": 42
   },
   {
    "id": "agent-team",
    "namespace": "agent-team",
-   "file": "batch-71.json",
+   "file": "batch-72.json",
    "keys": 25
   },
   {
    "id": "voice-input#1",
    "namespace": "voice-input",
-   "file": "batch-72.json",
+   "file": "batch-73.json",
    "keys": 70
   },
   {
    "id": "voice-input#2",
    "namespace": "voice-input",
-   "file": "batch-73.json",
+   "file": "batch-74.json",
    "keys": 31
   },
   {
    "id": "session-log-download",
    "namespace": "session-log-download",
-   "file": "batch-74.json",
+   "file": "batch-75.json",
    "keys": 10
   }
  ],
- "namespaces": 57,
- "totalKeys": 2588
+ "namespaces": 58,
+ "totalKeys": 2615
 }

@@ -107,7 +107,7 @@ The statistics strip is a terminal component (`StatsPills`, the `stats` cell of 
 the shipped entries") — which is what puts the cost on the same line as the time and usage
 pills.
 
-From 0.1.6-alpha.2 on (and again on 0.1.7-rc.2) that is the whole story: `StatsPills` became a dock cell itself (it was
+From 0.1.6-alpha.2 on (and again on 0.1.7-rc.2 and 0.2.0-rc.2) that is the whole story: `StatsPills` became a dock cell itself (it was
 inline markup in the dock before), the dock is a centered flex row, and the two cells render
 side by side. Should the row ever publish a hook again, the pack takes the older path and
 portals its pill **inside** the shipped row instead, so the cost still reads as a third item

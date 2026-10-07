@@ -1,22 +1,22 @@
 {
- "batch": "sidebarExcel",
- "namespace": "sidebarExcel",
+ "batch": "sidebarOffice",
+ "namespace": "sidebarOffice",
  "total": 15,
  "keys": {
-  "title": "Foglio di calcolo",
-  "language": "en",
+  "title": "Documento Office",
   "loading": "Rendering del documento…",
-  "invalid": "Impossibile aprire questo foglio di calcolo. Controlla formato, contenuto o protezione con password.",
-  "tooLarge": "Questa cartella di lavoro supera il limite di dimensione per l'anteprima.",
-  "timeout": "Timeout nell'apertura della cartella di lavoro. Prova con un file più piccolo.",
-  "encoding": "Impossibile leggere la codifica di questo testo. Salva il file come UTF-8 o UTF-16 con BOM e riprova.",
-  "formulaWarning": "Questa cartella di lavoro contiene formule. I risultati mostrati potrebbero mancare o essere imprecisi.",
-  "unsupportedNotice": "Questa anteprima non supporta {features} presenti in questa cartella di lavoro. Aprila in un'applicazione di sistema per la visualizzazione completa.",
-  "charts": "grafici",
-  "images": "immagini",
-  "shapes": "forme",
-  "conditionalFormatting": "formattazione condizionale",
-  "featureSeparator": ", ",
-  "retry": "Riprova"
+  "retry": "Riprova",
+  "viewMissingFonts": "Font mancanti: {count}. Clicca per vedere.",
+  "missingFontsTitle": "Font mancanti",
+  "missingFontsDescription": "Questi font non sono disponibili per questa anteprima. Testo e impaginazione potrebbero differire dal documento originale.",
+  "missingFontsCount": "Font: {count}",
+  "closeDetails": "Chiudi i dettagli sui font",
+  "unavailable": "Le anteprime Office non sono disponibili. Attiva il servizio di anteprima documenti sul computer che esegue DSH.",
+  "invalid": "Impossibile visualizzare questo file Office. Potrebbe essere danneggiato, protetto da password o avere l'estensione sbagliata.",
+  "tooLarge": "Il file Office o il PDF convertito supera il limite di dimensione per l'anteprima. Riduci la dimensione del file o regola la configurazione dell'anteprima.",
+  "failed": "La conversione Office non ha prodotto un PDF utilizzabile. Controlla il file e riprova.",
+  "timeout": "Timeout della conversione Office. Riprova.",
+  "busy": "L'anteprima Office è occupata. Riprova tra poco.",
+  "changed": "Il file è cambiato durante la lettura. Riapri l'anteprima."
  }
 }

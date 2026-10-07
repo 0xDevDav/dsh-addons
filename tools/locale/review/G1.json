@@ -1223,9 +1223,9 @@
    "it": "Evento esterno ricevuto"
   },
   "message.trigger.schedule": {
-   "en": "Scheduled task",
-   "zh": "定时任务",
-   "it": "Attività pianificata"
+   "en": "Automation task",
+   "zh": "自动化任务",
+   "it": "Attività automatica"
   },
   "message.trigger.job": {
    "en": "Background task updated",
@@ -1243,19 +1243,14 @@
    "it": "Questa notifica ha attivato questa risposta."
   },
   "message.turnProcess.worked": {
-   "en": "Worked",
-   "zh": "已完成工作",
-   "it": "Ha lavorato"
-  },
-  "message.turnProcess.deepDivingFor": {
-   "en": "Deep diving for {duration}",
-   "zh": "深度求索中，用时{duration}",
-   "it": "Analisi approfondita da {duration}"
+   "en": "Completed",
+   "zh": "已完成",
+   "it": "Completato"
   },
   "message.turnProcess.took": {
-   "en": "Took {duration}",
-   "zh": "用时 {duration}",
-   "it": "Tempo impiegato: {duration}"
+   "en": "Completed in ",
+   "zh": "已完成，用时 ",
+   "it": "Completato in "
   },
   "message.turnProcess.failed": {
    "en": "Failed",
@@ -1373,9 +1368,14 @@
    "it": "Torna in fondo"
   },
   "chat.deepDiving": {
-   "en": "Deep diving...",
+   "en": "Deep diving",
    "zh": "深度求索中",
    "it": "Analisi approfondita…"
+  },
+  "chat.deepDivingFor": {
+   "en": "Deep diving for {duration} ···",
+   "zh": "深度求索中，用时 {duration} ···",
+   "it": "Analisi approfondita da {duration} ···"
   },
   "chat.turnNavigation.label": {
    "en": "Turn navigation",
@@ -1832,20 +1832,20 @@
    "zh": "{count} tok",
    "it": "{count} tok"
   },
-  "duration.seconds": {
-   "en": "{seconds}s",
-   "zh": "{seconds}秒",
-   "it": "{seconds}s"
+  "duration.secondUnit": {
+   "en": "s",
+   "zh": "秒",
+   "it": "s"
   },
-  "duration.minutes": {
-   "en": "{minutes}m {seconds}s",
-   "zh": "{minutes}分{seconds}秒",
-   "it": "{minutes}m {seconds}s"
+  "duration.minuteUnit": {
+   "en": "m ",
+   "zh": "分",
+   "it": "m "
   },
-  "duration.hours": {
-   "en": "{hours}h {minutes}m {seconds}s",
-   "zh": "{hours}小时{minutes}分{seconds}秒",
-   "it": "{hours}h {minutes}m {seconds}s"
+  "duration.hourUnit": {
+   "en": "h ",
+   "zh": "小时",
+   "it": "h "
   },
   "command.running": {
    "en": "Running…",

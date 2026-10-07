@@ -1,22 +1,18 @@
 {
- "batch": "sidebarPdf",
- "namespace": "sidebarPdf",
- "total": 15,
+ "batch": "sidebarImage",
+ "namespace": "sidebarImage",
+ "total": 11,
  "keys": {
-  "zoomControls": "Controlli zoom",
+  "zoomControls": "Controlli dello zoom",
   "zoomMenu": "Scegli lo zoom",
   "zoomOut": "Riduci",
   "zoomIn": "Ingrandisci",
   "zoomFitWidth": "Adatta alla larghezza",
   "zoomValue": "{percent}%",
-  "title": "PDF",
-  "pageImage": "Pagina PDF {page}",
+  "title": "Immagine",
+  "preview": "Anteprima immagine: {name}",
   "loading": "Rendering del documento…",
-  "rendering": "Rendering pagina…",
-  "failed": "Impossibile visualizzare il PDF: {message}",
-  "password": "Questo PDF richiede una password; le anteprime protette da password non sono supportate.",
-  "workerFailed": "Il processo di rendering del PDF non può continuare. Riprova.",
-  "unsupported": "L'anteprima PDF richiede il contenuto completo del file.",
-  "retry": "Riprova"
+  "failed": "Impossibile visualizzare questa immagine.",
+  "unsupported": "L'anteprima immagine richiede il contenuto completo del file."
  }
 }

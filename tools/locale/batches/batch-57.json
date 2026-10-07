@@ -1,91 +1,63 @@
 {
- "batch": "sidebarDocumentPreview",
- "namespace": "sidebarDocumentPreview",
- "total": 22,
+ "batch": "sidebarExcel",
+ "namespace": "sidebarExcel",
+ "total": 15,
  "keys": {
+  "title": {
+   "en": "Spreadsheet",
+   "zh": "表格"
+  },
+  "language": {
+   "en": "en",
+   "zh": "zh"
+  },
   "loading": {
    "en": "Rendering document...",
    "zh": "文档渲染中..."
   },
-  "loadMore": {
-   "en": "Load more",
-   "zh": "加载更多"
+  "invalid": {
+   "en": "This spreadsheet could not be opened. Check its format, contents, or password protection.",
+   "zh": "无法打开此表格。请检查文件格式、内容或密码保护。"
   },
-  "changed": {
-   "en": "The file has changed, showing the previous content.",
-   "zh": "文件已更新，当前显示为旧内容"
+  "tooLarge": {
+   "en": "This workbook exceeds the preview size limit.",
+   "zh": "此表格超过预览大小限制。"
   },
-  "reloadNow": {
-   "en": "Reload",
-   "zh": "重新载入"
+  "timeout": {
+   "en": "Opening this workbook timed out. Try a smaller file.",
+   "zh": "打开表格超时。请缩小文件后重试。"
   },
-  "reload": {
-   "en": "Read the file again",
-   "zh": "重新读取文件"
+  "encoding": {
+   "en": "This text encoding could not be read. Save the file as UTF-8 or UTF-16 with a BOM and retry.",
+   "zh": "无法识别此文本文件的编码。请另存为 UTF-8 或带 BOM 的 UTF-16 后重试。"
   },
-  "autoRefresh": {
-   "en": "Auto refresh",
-   "zh": "自动刷新"
+  "formulaWarning": {
+   "en": "This workbook contains formulas. Displayed results may be missing or inaccurate.",
+   "zh": "此工作簿包含公式，显示结果可能缺失或不准确。"
   },
-  "autoRefresh.enable": {
-   "en": "Enable auto refresh",
-   "zh": "开启自动刷新"
+  "unsupportedNotice": {
+   "en": "This preview does not support {features} in this workbook. Open it in a system application for the full experience.",
+   "zh": "当前预览不支持此工作簿中的{features}。请使用系统应用打开，以获得完整体验。"
   },
-  "autoRefresh.disable": {
-   "en": "Disable auto refresh",
-   "zh": "关闭自动刷新"
+  "charts": {
+   "en": "charts",
+   "zh": "图表"
   },
-  "wrap.enable": {
-   "en": "Turn on line wrap",
-   "zh": "自动换行"
+  "images": {
+   "en": "images",
+   "zh": "图片"
   },
-  "wrap.disable": {
-   "en": "Turn off line wrap",
-   "zh": "取消换行"
+  "shapes": {
+   "en": "shapes",
+   "zh": "形状"
   },
-  "wrap.aria": {
-   "en": "Line wrap",
-   "zh": "自动换行"
+  "conditionalFormatting": {
+   "en": "conditional formatting",
+   "zh": "条件格式"
   },
-  "openWith": {
-   "en": "Open with",
-   "zh": "打开方式"
-  },
-  "viewer.text": {
-   "en": "Plain text",
-   "zh": "纯文本"
-  },
-  "resourceUnavailable": {
-   "en": "The file resource service is unavailable.",
-   "zh": "文件资源服务不可用"
-  },
-  "rendererUnavailable": {
-   "en": "The {name} preview is unavailable.",
-   "zh": "预览器 {name} 不可用"
-  },
-  "unsupportedFile": {
-   "en": "Preview is not available for this file type yet.",
-   "zh": "该格式文件暂时无法预览"
-  },
-  "error.notFound": {
-   "en": "File not found. It may have been moved or deleted.",
-   "zh": "文件不存在，可能已被移动或删除"
-  },
-  "error.tooLarge": {
-   "en": "This page exceeds the {limit} limit and cannot be read.",
-   "zh": "单页内容超过 {limit} 上限，无法读取"
-  },
-  "error.notText": {
-   "en": "Preview is not available for this file type yet.",
-   "zh": "该格式文件暂时无法预览"
-  },
-  "error.notRegularFile": {
-   "en": "Not a regular file, nothing to display.",
-   "zh": "该路径不是普通文件，没有可显示的内容"
-  },
-  "error.unavailable": {
-   "en": "Read failed: {message}",
-   "zh": "读取失败：{message}"
+  "featureSeparator": {
+   "en": ", ",
+   "zh": "、"
   },
   "retry": {
    "en": "Retry",

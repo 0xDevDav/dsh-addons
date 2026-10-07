@@ -1,231 +1,79 @@
 {
- "batch": "shortcuts",
- "namespace": "shortcuts",
- "total": 56,
+ "batch": "settings.webSearch",
+ "namespace": "settings.webSearch",
+ "total": 18,
  "keys": {
-  "edit-label": {
-   "en": "Edit shortcut for {command}",
-   "zh": "修改{command}快捷键"
-  },
-  "record": {
-   "en": "Press a shortcut",
-   "zh": "按下快捷键"
-  },
-  "record-help": {
-   "en": "Release the keys to save. Tab moves between actions; Esc cancels.",
-   "zh": "松开组合键即保存。Tab 切换操作，Esc 退出录键。"
-  },
-  "web-help": {
-   "en": "Browser combinations: Mod+/, Mod+Shift+,, Mod+Shift+.. Mod is Command on Mac and Ctrl elsewhere.",
-   "zh": "浏览器可用组合：Mod+/、Mod+Shift+,、Mod+Shift+.。Mod 在 Mac 上为 Command，其他系统为 Ctrl。"
-  },
-  "unsupported-key": {
-   "en": "This key is not supported.",
-   "zh": "暂不支持这个按键。"
-  },
-  "reserved": {
-   "en": "This combination is reserved for system or text editing actions.",
-   "zh": "此组合由系统或文本编辑操作保留。"
-  },
-  "modifier-required": {
-   "en": "Include Command, Ctrl, or Alt in the combination.",
-   "zh": "请同时按下 Command、Ctrl 或 Alt 修饰键。"
-  },
-  "too-many-keys": {
-   "en": "Hold at most two non-modifier keys. Release the keys to try again.",
-   "zh": "最多同时按下两个非修饰键。请松开后重试。"
-  },
-  "macos-web-help": {
-   "en": "Use Command+/, Command+,, Command+Backslash, Control+Backquote, Command+Option+key, or Command+Shift+key. Combinations with three or four distinct modifiers are also supported. Browser or system shortcuts may not reach the page.",
-   "zh": "可设置 Command+/、Command+,、Command+反斜杠、Control+反引号、Command+Option+按键或 Command+Shift+按键。也支持三个或四个不同修饰键的组合。浏览器或系统占用的组合可能无法送达页面。"
-  },
-  "windows-web-help": {
-   "en": "Use Ctrl+/, Ctrl+,, Ctrl+Alt+key, or Ctrl+Shift+key. Combinations with three or four distinct modifiers are also supported. Browser or system shortcuts may not reach the page.",
-   "zh": "可设置 Ctrl+/、Ctrl+,、Ctrl+Alt+按键或 Ctrl+Shift+按键。也支持三个或四个不同修饰键的组合。浏览器或系统占用的组合可能无法送达页面。"
-  },
-  "unsupported-browser": {
-   "en": "This browser does not support this combination yet.",
-   "zh": "此浏览器暂不支持该组合。"
-  },
-  "conflict": {
-   "en": "Already used by “{commands}”",
-   "zh": "已被「{commands}」占用"
-  },
-  "saved": {
-   "en": "Modified",
-   "zh": "已修改"
-  },
-  "clear": {
-   "en": "Remove",
-   "zh": "移除"
-  },
-  "retry-save": {
-   "en": "Retry save",
-   "zh": "重试保存"
-  },
-  "reset": {
-   "en": "Restore default",
-   "zh": "恢复默认"
-  },
-  "reset-all": {
-   "en": "Restore all defaults",
-   "zh": "恢复全部默认"
-  },
-  "modified-count": {
-   "en": "{count} customized",
-   "zh": "{count} 项已自定义"
-  },
-  "reset-title": {
-   "en": "Restore all default shortcuts?",
-   "zh": "恢复全部默认快捷键？"
-  },
-  "reset-description": {
-   "en": "Restore the default shortcuts for this platform. All modified or removed shortcuts will be restored. Other platforms are unaffected.",
-   "zh": "将恢复当前平台的默认快捷键。你修改或移除的快捷键都会恢复，其他平台不受影响。"
-  },
-  "cancel": {
-   "en": "Cancel",
-   "zh": "取消"
-  },
-  "reset-saved": {
-   "en": "Default shortcuts restored",
-   "zh": "已恢复默认快捷键"
-  },
-  "close-confirmation": {
-   "en": "Close confirmation",
-   "zh": "关闭确认"
-  },
-  "reset-failed": {
-   "en": "Could not restore defaults. Your shortcuts are unchanged. Please retry.",
-   "zh": "恢复默认失败。原快捷键已保留，请重试。"
-  },
-  "review": {
-   "en": "I have reviewed the latest configuration",
-   "zh": "已核对最新配置"
-  },
-  "stale": {
-   "en": "Shortcut configuration or available commands changed. Review the latest bindings before saving.",
-   "zh": "快捷键配置或可用命令已更新。请核对最新键位后再保存。"
-  },
-  "write-failed": {
-   "en": "Could not save. Your previous shortcuts and current draft are preserved. Please retry.",
-   "zh": "保存失败。原快捷键和当前草稿已保留，请重试。"
-  },
-  "not-ready": {
-   "en": "Shortcuts are not ready. Please try again.",
-   "zh": "快捷键尚未准备好，请稍后重试。"
-  },
-  "read": {
-   "en": "Could not read {location}. Check access permissions, then {reload}.",
-   "zh": "无法读取 {location}。请检查访问权限后{reload}。"
-  },
-  "invalid": {
-   "en": "Shortcut configuration in {location} is damaged. Back up and repair this configuration, then {reload}.",
-   "zh": "{location} 的快捷键配置内容损坏。请先备份并修复该配置，然后{reload}。"
-  },
-  "future": {
-   "en": "Shortcut configuration in {location} was created by a newer version. Upgrade Harness and try again.",
-   "zh": "{location} 的快捷键配置由更新版本创建。请升级 Harness 后重试。"
-  },
-  "web-document": {
-   "en": "this site’s localStorage entry dsh.keybindings.v1",
-   "zh": "当前网站本地存储中的 dsh.keybindings.v1"
-  },
-  "desktop-document": {
-   "en": "userData/keybindings.json",
-   "zh": "userData/keybindings.json"
-  },
-  "web-reload": {
-   "en": "reload the page",
-   "zh": "刷新页面"
-  },
-  "desktop-reload": {
-   "en": "restart Harness",
-   "zh": "重新启动 Harness"
-  },
-  "using-defaults": {
-   "en": "Default bindings are active.",
-   "zh": "当前使用默认键位。"
-  },
-  "using-accepted": {
-   "en": "The last successfully read bindings remain active.",
-   "zh": "当前继续使用上次读取成功的键位。"
-  },
-  "native-failed": {
-   "en": "Could not protect desktop key recording. Exit recording and try again.",
-   "zh": "无法启用桌面录键保护，请关闭后重试。"
-  },
-  "global-hint": {
-   "en": "Open from anywhere",
-   "zh": "全局唤起查看"
-  },
-  "clear-search": {
-   "en": "Clear search",
-   "zh": "清空搜索"
-  },
   "title": {
-   "en": "Keyboard shortcuts",
-   "zh": "快捷键"
-  },
-  "open": {
-   "en": "Open keyboard shortcuts",
-   "zh": "快捷键速查"
-  },
-  "settings": {
-   "en": "Keyboard shortcuts",
-   "zh": "快捷键"
-  },
-  "view": {
-   "en": "Edit shortcuts",
-   "zh": "编辑快捷键"
+   "en": "Web search",
+   "zh": "网页搜索"
   },
   "description": {
-   "en": "View and edit available shortcuts and input actions",
-   "zh": "查看和编辑当前可用的快捷键和输入操作"
+   "en": "Set up the DeepSeek search provider.",
+   "zh": "设置 DeepSeek 的搜索提供方。"
   },
-  "search": {
-   "en": "Search shortcuts",
-   "zh": "搜索快捷键"
+  "apiKey": {
+   "en": "API key",
+   "zh": "API Key"
   },
-  "close": {
-   "en": "Close keyboard shortcuts",
-   "zh": "关闭快捷键"
+  "apiKeyHint": {
+   "en": "Stored outside the settings file. Leave blank to keep the current key.",
+   "zh": "不写入设置文件。留空表示保持当前密钥。"
   },
-  "application": {
-   "en": "Application",
-   "zh": "应用操作"
+  "apiKeySet": {
+   "en": "A key is configured.",
+   "zh": "已配置密钥。"
   },
-  "input": {
-   "en": "Message input",
-   "zh": "消息输入"
+  "apiKeyUnset": {
+   "en": "No key is configured; only conversations using a DeepSeek Account model can search, through the default endpoint.",
+   "zh": "未配置密钥；仅使用 DeepSeek 账号模型的对话可以通过默认接口地址搜索。"
   },
-  "menus": {
-   "en": "Menus and dialogs",
-   "zh": "菜单与弹层"
+  "baseUrl": {
+   "en": "Endpoint",
+   "zh": "接口地址"
   },
-  "approval": {
-   "en": "Approval area",
-   "zh": "审批区域"
+  "baseUrlHint": {
+   "en": "Leave blank to use the provider default.",
+   "zh": "留空则使用提供方默认地址。"
   },
-  "unbound": {
-   "en": "No shortcut",
-   "zh": "暂无快捷键"
+  "maxUses": {
+   "en": "Max searches per request",
+   "zh": "单次请求最多搜索次数"
   },
-  "empty": {
-   "en": "No matching shortcuts",
-   "zh": "没有匹配的快捷键"
+  "maxUsesHint": {
+   "en": "How many times one request may search before it must answer.",
+   "zh": "一次请求在必须作答前最多可以搜索多少次。"
   },
-  "move": {
-   "en": "Move menu selection",
-   "zh": "移动菜单选择"
+  "overridden": {
+   "en": "Overridden",
+   "zh": "已覆盖"
   },
-  "select": {
-   "en": "Select menu item",
-   "zh": "选择菜单项"
+  "reset": {
+   "en": "Reset to default",
+   "zh": "恢复默认"
   },
-  "dismiss": {
-   "en": "Close menu or top dialog",
-   "zh": "关闭菜单或顶层弹窗"
+  "readOnly": {
+   "en": "This deployment stores settings read-only.",
+   "zh": "本部署的设置为只读。"
+  },
+  "unavailable": {
+   "en": "This plugin is not loaded, so it cannot be configured right now.",
+   "zh": "该插件当前未加载，暂时无法配置。"
+  },
+  "save": {
+   "en": "Save",
+   "zh": "保存"
+  },
+  "saving": {
+   "en": "Saving…",
+   "zh": "保存中…"
+  },
+  "saveFailed": {
+   "en": "The deployment did not accept these values; they were left for you to correct.",
+   "zh": "本部署没有接受这些值，已保留供你修改。"
+  },
+  "invalidNumber": {
+   "en": "Enter a number, or leave blank to use the default.",
+   "zh": "请填数字；留空表示使用默认值。"
   }
  }
 }

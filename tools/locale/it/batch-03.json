@@ -1,7 +1,7 @@
 {
  "batch": "settings.agentPreset",
  "namespace": "settings.agentPreset",
- "total": 43,
+ "total": 41,
  "keys": {
   "modeExplanation": "Dettagli della modalità",
   "howToUse": "Come si usa",
@@ -43,8 +43,6 @@
   "brokenBadge": "Caricamento non riuscito",
   "switchRefused": "Impossibile passare a {name}: {reason}",
   "close": "Chiudi",
-  "creatorDraft": "Lascia che l'agente mi aiuti a creare un preset",
-  "enableDevToolsToSetDefault": "Attiva Strumenti di codifica nelle impostazioni Generali per scegliere un predefinito",
-  "enableDevToolsToCreate": "Attiva Strumenti di codifica nelle impostazioni Generali per avviare la modalità Creator"
+  "creatorDraft": "Lascia che l'agente mi aiuti a creare un preset"
  }
 }

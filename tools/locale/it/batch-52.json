@@ -1,18 +1,11 @@
 {
- "batch": "sidebarImage",
- "namespace": "sidebarImage",
- "total": 11,
+ "batch": "documentHtml",
+ "namespace": "documentHtml",
+ "total": 4,
  "keys": {
-  "zoomControls": "Controlli dello zoom",
-  "zoomMenu": "Scegli lo zoom",
-  "zoomOut": "Riduci",
-  "zoomIn": "Ingrandisci",
-  "zoomFitWidth": "Adatta alla larghezza",
-  "zoomValue": "{percent}%",
-  "title": "Immagine",
-  "preview": "Anteprima immagine: {name}",
+  "title": "HTML",
+  "frame": "Anteprima documento HTML",
   "loading": "Rendering del documento…",
-  "failed": "Impossibile visualizzare questa immagine.",
-  "unsupported": "L'anteprima immagine richiede il contenuto completo del file."
+  "failed": "Impossibile visualizzare l'anteprima di questo documento HTML."
  }
 }

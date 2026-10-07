@@ -7,7 +7,7 @@
 # Re-running it refreshes both the launcher and the icon.
 set -eu
 root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
-version=${DSH_VERSION:-0.1.7-rc.2}
+version=${DSH_VERSION:-0.2.0-rc.2}
 
 bin="$HOME/.local/bin"
 icons="$HOME/.local/share/icons/hicolor/256x256/apps"

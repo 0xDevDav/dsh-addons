@@ -1,8 +1,9 @@
 {
  "batch": "pluginManager#3",
  "namespace": "pluginManager",
- "total": 46,
+ "total": 49,
  "keys": {
+  "installFailurePnpmMissing": "pnpm non è stato trovato, quindi non è possibile installare nulla",
   "installFailureGeneric": "Qualcosa è andato storto durante l'installazione; i dettagli spiegano cosa",
   "terminalRunning": "In esecuzione",
   "terminalFailed": "Non riuscito",
@@ -46,8 +47,10 @@
   "reasonStopProfile": "Questo profilo viene eseguito senza HMR; interrompilo e disinstalla il pacchetto con dsh plugin.",
   "reasonBundleInUse": "Altre configurazioni usano ancora i componenti di questa composizione; disattivale prima.",
   "reasonStaleApproval": "Le approvazioni degli script in sospeso sono cambiate; installa di nuovo per aggiornarle.",
-  "reasonIncompatibleVersion": "{plugin} non è compatibile con DSH {runtime} (richiede {peers}); eseguirlo può causare crash o perdita di dati. Installa una versione del plugin compatibile con questo DSH.",
+  "reasonIncompatibleVersion": "{plugin} non è compatibile con DSH {runtime} (richiede {peers}); eseguirlo può causare crash o perdita di dati.",
   "reasonIncompatibleVersionUnnamed": "Questo plugin non è compatibile con la versione di DSH in esecuzione; eseguirlo può causare crash o perdita di dati.",
+  "reasonIncompatibleInstall": "Installa una versione del plugin compatibile con questo DSH.",
+  "reasonIncompatibleInstalled": "Disinstallalo e installa una versione compatibile con questo DSH.",
   "reasonOperationError": "L'Host ha segnalato un errore."
  }
 }

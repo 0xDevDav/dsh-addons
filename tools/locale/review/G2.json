@@ -727,12 +727,12 @@
   },
   "tool.title.subagent": {
    "en": "Create subagent",
-   "zh": "创建代理",
+   "zh": "创建子智能体",
    "it": "Crea subagente"
   },
   "tool.title.listAgents": {
    "en": "List subagents",
-   "zh": "查看代理",
+   "zh": "查看子智能体",
    "it": "Elenca subagenti"
   },
   "tool.title.sendMessage": {
@@ -742,7 +742,7 @@
   },
   "tool.title.interruptAgent": {
    "en": "Interrupt agent",
-   "zh": "中断代理",
+   "zh": "中断智能体",
    "it": "Interrompi agente"
   },
   "tool.title.listJobs": {
@@ -1107,7 +1107,7 @@
   },
   "detail.field.agents": {
    "en": "Agents started",
-   "zh": "启动代理数",
+   "zh": "启动智能体数",
    "it": "Agenti avviati"
   },
   "detail.field.result": {
@@ -1142,7 +1142,7 @@
   },
   "detail.field.agent": {
    "en": "Agent ID",
-   "zh": "代理 ID",
+   "zh": "智能体 ID",
    "it": "ID agente"
   },
   "detail.field.job": {
@@ -1182,7 +1182,7 @@
   },
   "detail.agents.count": {
    "en": "{count} agents",
-   "zh": "{count} 个代理",
+   "zh": "{count} 个智能体",
    "it": "{count} agenti"
   },
   "detail.jobs.count": {
@@ -1277,7 +1277,7 @@
   },
   "detail.agent.reply": {
    "en": "Agent response",
-   "zh": "代理回复",
+   "zh": "智能体回复",
    "it": "Risposta dell'agente"
   },
   "detail.models.title": {
@@ -1312,12 +1312,12 @@
   },
   "detail.ralph.reportedComplete": {
    "en": "Worker reported completion",
-   "zh": "代理报告完成",
+   "zh": "智能体报告完成",
    "it": "L'esecutore ha segnalato il completamento"
   },
   "detail.ralph.reportedBlocker": {
    "en": "Worker reported a blocker",
-   "zh": "代理报告受阻",
+   "zh": "智能体报告受阻",
    "it": "L'esecutore ha segnalato un blocco"
   },
   "detail.ralph.limit": {
@@ -1399,6 +1399,36 @@
    "en": "waiting",
    "zh": "等待回答",
    "it": "in attesa"
+  },
+  "ask.pending": {
+   "en": "continued; answer still available",
+   "zh": "已继续工作，仍可回答",
+   "it": "proseguito; puoi ancora rispondere"
+  },
+  "ask.pendingDetail": {
+   "en": "These pending questions remain answerable from the composer.",
+   "zh": "等待中的问题仍可在输入框中回答",
+   "it": "A queste domande in sospeso puoi ancora rispondere dal compositore."
+  },
+  "ask.reopen": {
+   "en": "Answer",
+   "zh": "回答",
+   "it": "Rispondi"
+  },
+  "ask.review": {
+   "en": "View answers",
+   "zh": "查看回答",
+   "it": "Vedi risposte"
+  },
+  "ask.closed": {
+   "en": "closed",
+   "zh": "已结束",
+   "it": "chiusa"
+  },
+  "ask.closedDetail": {
+   "en": "This question is closed; its outcome is in the conversation below.",
+   "zh": "该问题已结束，结果见下方对话",
+   "it": "Questa domanda è chiusa; l'esito è nella conversazione qui sotto."
   },
   "ask.cancelled": {
    "en": "cancelled",

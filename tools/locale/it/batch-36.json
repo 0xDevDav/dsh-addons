@@ -35,10 +35,10 @@
   "onboardingBack": "Indietro",
   "onboardingSkip": "Salta",
   "onboardingSkipTitle": "Saltare la configurazione?",
-  "onboardingSkipDescription": "Puoi cambiare in qualsiasi momento come vengono mostrati avanzamento, prestazioni e utilizzo, o attivare gli strumenti di programmazione, in Profilo → Impostazioni generali.",
+  "onboardingSkipDescription": "Puoi cambiare in qualsiasi momento come vengono mostrati avanzamento, prestazioni e utilizzo, o attivare gli strumenti di programmazione, in Impostazioni → Generali.",
   "onboardingKeepSetting": "Continua la configurazione",
   "onboardingNoCreditTitle": "Saltare l'aggiunta di credito?",
-  "onboardingNoCreditDescription": "Senza credito DeepSeek Harness non può avviare nuove attività. Puoi aggiungerlo più tardi in Profilo → Account.",
+  "onboardingNoCreditDescription": "Senza credito DeepSeek Harness non può avviare nuove attività. Puoi aggiungerlo più tardi in Impostazioni → Account.",
   "onboardingUnderstood": "Ho capito",
   "onboardingGoTopUp": "Aggiungi credito",
   "onboardingSaveFailed": "Impossibile salvare le impostazioni. Riprova.",
@@ -64,7 +64,6 @@
   "backToHarness": "Torna a DeepSeek Harness",
   "settings": "Impostazioni",
   "contactUs": "Feedback",
-  "contactUsSignedOut": "Contattaci",
   "menu": "Menu account",
   "nav": "Account",
   "signedIn": "Accesso a DeepSeek effettuato",
@@ -72,6 +71,7 @@
   "signIn": "Accedi",
   "signOut": "Esci",
   "signOutUnknownDescription": "Impossibile verificare le attività in esecuzione. Uscire potrebbe interrompere le attività che usano questo account. Uscire ora?",
-  "signOutDescription": "Uscire non elimina alcun dato. Potrai accedere di nuovo a questo account."
+  "signOutDescription": "Uscire non elimina alcun dato. Potrai accedere di nuovo a questo account.",
+  "signOutRunningDescription": "Ci sono attività in esecuzione. Uscire le interromperà. Uscire ora?"
  }
 }
